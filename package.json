@@ -6,12 +6,15 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "del dist && parcel build src/index.html --public-url .",
+    "postbuild": "rm -rf /home/dhoko/dev/taf/Angular/build/dist && cp -r dist /home/dhoko/dev/taf/Angular/build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
     "del-cli": "^1.1.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
@@ -23,6 +26,8 @@
     "babel-polyfill": "^6.26.0",
     "lodash.debounce": "^4.0.8",
     "lodash.omit": "^4.5.0",
+    "moment": "^2.24.0",
+    "pmcrypto": "github:ProtonMail/pmcrypto.git#semver:~5.1.7",
     "preact": "^8.4.2",
     "unfetch": "^4.0.1"
   },

@@ -13,7 +13,11 @@ const whitelist = [
 
 const CACHE = {};
 
-storage.clear();
+// storage.clear();
+
+export const extend = (data) => {
+    Object.assign(CACHE, data);
+};
 
 export const getItem = (key) => {
     if (typeof key === 'string' && CACHE.hasOwnProperty(key)) {

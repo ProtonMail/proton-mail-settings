@@ -2,6 +2,7 @@ import 'babel-polyfill';
 import { h, Component } from 'preact';
 
 import { loadUser } from './lib/request';
+import ListInvoices from './components/invoices/listInvoices';
 import './App.scss';
 
 export default class App extends Component {
@@ -14,6 +15,8 @@ export default class App extends Component {
                 <button onclick={() => this.loadUser()} class="btn">
                     Load user
                 </button>
+
+                <ListInvoices />
             </div>
         );
     }
