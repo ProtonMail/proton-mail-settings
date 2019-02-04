@@ -1,7 +1,8 @@
 import { getItem, OAUTH_KEY } from './sessionStorage';
 import config from '../config';
 
-const getConfig = () => ({
+const getConfig = (method) => ({
+    method,
     credentials: 'include',
     headers: {
         'x-pm-apiversion': config('api_version'),
@@ -14,12 +15,6 @@ const getConfig = () => ({
 export const getURL = (url, params) => {
     const req = new URL([config('apiUrl')].concat(url).join('/'));
     params && (req.search = new URLSearchParams(params));
-    console.log('[REQUEST]', {
-        url,
-        params,
-        formated: [config('apiUrl')].concat(url).join('/'),
-        output: req.toString()
-    });
     return req;
 };
 
@@ -42,11 +37,24 @@ export const loadUser = async () => {
     console.log(data);
 };
 
-export async function get(url, { body, ...config }, output = 'json') {
-    const response = await fetch(getURL(url, body), {
-        ...getConfig(),
-        ...config
-    });
+const factory = (method) => {
+    return async (url, { queryParams, ...config } = {}, output = 'json') => {
+        console.log('[REQUEST]', {
+            url: getURL(url, queryParams),
+            config: {
+                ...getConfig(method),
+                ...config
+            },
+            output
+        });
+        const response = await fetch(getURL(url, queryParams), {
+            ...getConfig(method),
+            ...config
+        });
 
-    return await response[output]();
-}
+        return await response[output]();
+    };
+};
+
+export const get = factory();
+export const post = factory('POST');

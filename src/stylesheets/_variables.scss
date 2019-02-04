@@ -1,0 +1,95 @@
+// Vendors
+
+@function assets($item){
+  @return '../assets/' + $item
+}
+//============================= FontAwesome =============================//
+/* override FontAwesome font path $var */
+$fa-font-path: assets('fonts');
+
+// ProtonMail Theme variables 🎨
+//============================= Breakpoints =============================//
+$desktop:     1200px;
+$tablet-landscape:  1030px;
+$tablet-portrait: 800px;
+$mobile-landscape:  640px;
+$mobile-portrait:   480px;
+$mobile-tiny:       350px;
+
+//============================= Sizes =============================//
+$sidebarWidth:    190px;
+$sidebarMobWidth:   220px;
+$sidebarRowHeight:  36px;
+$headerHeight:    61px;
+$toolbarHeight:   63px;
+$contactsToolbar:   56px;
+$rowHeight:     36px;
+$composerRowHeight: 32px;
+$inputHeight:     32px;
+$toggleWidth:     4.4rem;
+$short:       740px;
+$panel:       400px;
+$pm_loading:    50px;
+$maxHeight:     auto;
+$sidebar-padding:   0 20px;
+$sizeColorListItem: 1.4em;
+
+//============================= Generic =============================//
+$white:       #FFF;
+$black:             #000;
+$light:       #f4f4f4;
+$orange:      #ff6600;
+$yellow:      #fded87;
+$yellow-star:       #dfdf19;
+$dark:        #4d4c5d;
+$blue:        #93b9cc;
+$light-blue:        #5fdefb;
+$blue-gray:         #AEAEBA;
+$green:       #a6cc93;
+$light-green:     #d3f422;
+$red:       #cc9393;
+$bug:       #fc2929;
+$feature:     #009800;
+$exp:       #ec6446;
+$text:        #222;
+$pgp:       #090;
+$tags:        #d4d7dc;
+$tour:        #34cc69;
+$gray:              #acb0bf;
+$alt-light:         #CCC;
+$gray-light:        #CCC;
+$danger:            #cf9696;
+$warning:           $yellow;
+$red-stripped:      repeating-linear-gradient(45deg, #F35D5D, #F35D5D 10px, #EC424A 10px, #EC424A 20px);
+$yellow-stripped:   repeating-linear-gradient(45deg, #FCF785, #FCF785 10px, #EFEA62 10px, #EFEA62 20px);
+$alert:             #f0f0f0;
+$discount:          #FF5400;
+$composerRowBackground: #F7F7F7;
+//============================= Backgrounds =============================//
+$primary:              #9397cd;
+$primary-light:            lighten($primary, 23);
+$primary-extra-light:      lighten($primary, 27);
+$secondary:            #505061;
+$tertiary:               #e6eaf0;
+
+//== Component Specific
+$body-background:          $secondary;
+$body-background-size:     cover;
+$main-background:          #FFF;
+$message-backgroud:        #FFF;
+$header-background:      #6a6f7c;
+
+
+//================================ Plans ===============================//
+$vpnbasic: #f67f60;
+$vpnplus: #9ccc23;
+$visionary: #6ddcfb;
+$plus: #C6E422;
+$professional: #D4B46E;
+$vpn: #6BB16F;
+
+//============================= Typography =============================//
+$default-color:             #555;
+$default-color-medium:      lighten($default-color, 10);
+$default-color-light:       lighten($default-color, 55);
+$default-color-hover:       #333;

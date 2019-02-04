@@ -3,7 +3,6 @@ import { h, Component } from 'preact';
 
 import { loadUser } from './lib/request';
 import ListInvoices from './components/invoices/listInvoices';
-import './App.scss';
 
 export default class App extends Component {
     loadUser() {

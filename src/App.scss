@@ -1,3 +1,5 @@
+@import 'stylesheets/_variables.scss';
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -127,61 +129,5 @@ a {
     }
 }
 
-[data-name="bottom"] {
 
-    .field-email {
-        label {
-            display: none;
-        }
-
-        input {
-            width: 100%;
-        }
-    }
-
-    .signupSubmit {
-        text-align: center;
-        margin-top: 3rem;
-
-        .link {
-            display: block;
-            margin-top: 1rem;
-        }
-    }
-}
-
-[data-name="top"] {
-
-    .field-usernameInput {
-        display: flex;
-        flex-wrap: wrap;
-
-        .error, .success {
-            width: 100%;
-        }
-    }
-
-    .field-select {
-        flex: 1;
-        margin-left: .5rem;
-    /*    right: 0;*/
-        display: flex;
-        align-items: center;
-
-        .select-mask {
-            flex: 1;
-            align-self: baseline;
-        }
-
-        &::before {
-            content: '@';
-            width: 1rem;
-            margin-right: .5rem
-        }
-    }
-
-    .field-usernameInput label, .field-select label {
-        display: none;
-    }
-}
-
+@import './stylesheets/pmTable.scss';

@@ -1,11 +1,19 @@
-import { get } from '../lib/request';
+import { get, post } from '../lib/request';
 import bridge from '../lib/bridge';
 
 const toURL = (...args) => ['payments'].concat(args);
 
 export const getInvoices = ({ Page = 0, Owner = 0, PageSize = 25 } = {}) => {
     return get(toURL('invoices'), {
-        body: { Page, Owner, PageSize }
+        queryParams: { Page, Owner, PageSize }
+    });
+};
+
+export const check = async (invoice) => {
+    const data = await post(toURL('invoices', invoice.ID, 'check'));
+    bridge('payments/invoices/pay', (i) => i)({
+        invoice,
+        checkInvoice: data
     });
 };
 
