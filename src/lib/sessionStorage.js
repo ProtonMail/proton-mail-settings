@@ -1,3 +1,5 @@
+import { decodeUtf8Base64 } from 'pmcrypto';
+
 export const OAUTH_KEY = 'proton:oauth';
 const MAILBOX_PASSWORD_KEY = 'proton:mailbox_pwd';
 
@@ -41,4 +43,11 @@ export const clear = () => {
     Object.keys(CACHE).forEach((key) => {
         delete CACHE[key];
     });
+};
+
+export const getPassword = () => {
+    const value = getItem(MAILBOX_PASSWORD_KEY);
+    if (value) {
+        return decodeUtf8Base64(value);
+    }
 };
