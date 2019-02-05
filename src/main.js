@@ -3,8 +3,11 @@ import App from './App';
 
 import { set } from './config';
 import { extend } from './lib/sessionStorage';
+import loadOpenPGP from './setupOpenPGP';
 
 const node = document.getElementById('app');
+
+loadOpenPGP();
 
 const cb = ({ data: { type, data = {} } = {} }) => {
     if (type === 'init.app' && data.fromApp) {
