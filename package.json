@@ -4,9 +4,8 @@
   "description": "POC v4",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "del dist && parcel build src/index.html --public-url .",
-    "postbuild": "cp node_modules/openpgp/dist/openpgp* dist/. && rm -rf /home/dhoko/dev/taf/Angular/build/dist && cp -r dist /home/dhoko/dev/taf/Angular/build/",
+    "start": "./tasks/run dev",
+    "build": "./tasks/run dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

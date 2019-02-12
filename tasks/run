@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+export $(grep -v '^#' .env | xargs -d '\n');
+
+APP_DIR=$(readlink -f "$CLIENT_DIR");
+
+function attachOpenPgp {
+  cp node_modules/openpgp/dist/openpgp* "$1/.";
+}
+
+function run {
+  local dir="$APP_DIR/$1/dist";
+
+  rm -rf "$dir";
+
+  if [[ "$1" = 'dist' ]]; then
+      npx parcel build src/index.html --public-url . --out-dir "$dir";
+      attachOpenPgp "$dir";
+  else
+    if [ ! -d "$dir" ]; then
+        mkdir -p "$dir";
+    fi
+
+    attachOpenPgp "$dir";
+    npx parcel src/index.html --public-url . --out-dir "$dir";
+  fi
+}
+
+if [ "$1" = 'dev' ]; then
+    run "static"
+fi
+
+if [ "$1" = 'dist' ]; then
+    run "dist"
+fi
