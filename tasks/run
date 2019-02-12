@@ -1,9 +1,23 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-export $(grep -v '^#' .env | xargs -d '\n');
 
-APP_DIR=$(readlink -f "$CLIENT_DIR");
+if [[ "$OSTYPE" = "darwin"* ]]; then
+  export $(grep -v '^#' .env | xargs -0);
+else
+  export $(grep -v '^#' .env | xargs -d '\n');
+fi
+
+# cf https://stackoverflow.com/questions/1055671/how-can-i-get-the-behavior-of-gnus-readlink-f-on-a-mac/24572274#24572274
+function getDir {
+  if [[ "$OSTYPE" = "darwin"* ]]; then
+    perl -MCwd -e 'print Cwd::abs_path shift' "$CLIENT_DIR"
+  else
+    readlink -f "$CLIENT_DIR";
+  fi
+}
+
+APP_DIR=$(getDir "$CLIENT_DIR");
 
 function attachOpenPgp {
   cp node_modules/openpgp/dist/openpgp* "$1/.";
