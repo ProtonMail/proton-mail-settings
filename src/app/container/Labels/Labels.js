@@ -9,7 +9,6 @@ import {
 import ContextApi from 'proton-shared/lib/context/api';
 import { getLabels, orderLabels, updateLabel, createLabel, deleteLabel } from 'proton-shared/lib/api/labels';
 import { debounce } from 'proton-shared/lib/helpers/function';
-import { createNotification } from 'proton-shared/lib/state/notifications/actions';
 
 import AddLabelModal from './AddLabelModal';
 
