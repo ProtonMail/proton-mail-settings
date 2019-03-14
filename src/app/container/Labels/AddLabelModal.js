@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
+import { Modal, HeaderModal, FooterModal } from 'react-components';
 
 import NewLabelForm from '../../component/Labels/NewLabelForm';
 
