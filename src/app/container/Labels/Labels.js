@@ -1,31 +1,31 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { c } from 'ttag';
-import { Title, SubTitle, Bordered, Select, Label, Button, Icon, LearnMore, PrimaryButton, Toggle } from 'react-components';
+import { Title, SubTitle, Bordered, Select, Label, Button, Icon, LearnMore, PrimaryButton, Toggle, useApiResult } from 'react-components';
 import {
   SortableContainer,
   SortableElement,
   arrayMove,
 } from 'react-sortable-hoc';
-import ContextApi from 'proton-shared/lib/context/api';
 import { getLabels, orderLabels, updateLabel, createLabel, deleteLabel } from 'proton-shared/lib/api/labels';
 import { debounce } from 'proton-shared/lib/helpers/function';
 
 import AddLabelModal from './AddLabelModal';
 
 const LabelsContainer = () => {
-    const { api } = useContext(ContextApi);
-
     const [labels, setLabels] = useState([]);
     const [modalConfig, setModalVisibility] = useState({
         show: false,
         type: '',
         label: {}
     });
-
+    const { result = {}, loading, request } =  useApiResult(getLabels);
+    // const { result, run } =  useAsync();
+    console.log('INIT', {result, loading, request})
 
     const fetch = async () => {
-        const { Labels } = await api(getLabels());
-        setLabels(Labels);
+        request()
+        console.log('FETCH', result, request);
+        // setLabels(Labels);
     };
 
     const sort = async (labels) => {

@@ -25,3 +25,4 @@ yarn-error.log*
 dist
 .eslintcache
 .idea
+src/config.js
