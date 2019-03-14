@@ -75,7 +75,6 @@ function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
 }
 
 NewLabelForm.propTypes = {
-    show: PropTypes.bool.isRequired,
     type: PropTypes.string,
     label: PropTypes.object,
     mode: PropTypes.string.isRequired,
@@ -84,7 +83,6 @@ NewLabelForm.propTypes = {
 };
 
 NewLabelForm.defaultProps = {
-    show: false,
     mode: 'create'
 };
 
