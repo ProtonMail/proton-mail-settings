@@ -17,7 +17,7 @@ import AppsContainer from '../containers/AppsContainer';
 import KeysContainer from '../containers/KeysContainer';
 import GeneralContainer from '../containers/GeneralContainer';
 import FiltersContainer from '../containers/FiltersContainer';
-import FoldersLabelsContainer from '../containers/FoldersLabelsContainer';
+import LabelsContainer from '../containers/LabelsContainer';
 import AutoReplyContainer from '../containers/AutoReplyContainer';
 
 const NotFoundContainer = () => <h1>Not found</h1>;
@@ -40,7 +40,7 @@ const Routes = () => {
                     <Route path="/settings/keys" component={KeysContainer} />
                     <Route path="/settings/apps" component={AppsContainer} />
                     <Route path="/settings/general" component={GeneralContainer} />
-                    <Route path="/settings/folders-labels" component={FoldersLabelsContainer} />
+                    <Route path="/settings/labels" component={LabelsContainer} />
                     <Route path="/settings/filters" component={FiltersContainer} />
                     <Route path="/settings/auto-reply" component={AutoReplyContainer} />
                     <Route component={NotFoundContainer} />
