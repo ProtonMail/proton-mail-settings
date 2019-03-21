@@ -1,6 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import { Dropdown, DropdownMenu } from 'react-components';
+// import { Dropdown, DropdownMenu } from 'react-components';
 
 const Header = () => {
     const list = [
@@ -11,12 +11,16 @@ const Header = () => {
         }
     ];
 
+    /*
+    <Dropdown content="Profile">
+        <DropdownMenu list={list} />
+    </Dropdown>
+     */
+
     return (
         <header className="header flex flex-nowrap flex-spacebetween reset4print">
             <img src="" alt="ProtonMail Settings" />
-            <Dropdown content="Profile">
-                <DropdownMenu list={list} />
-            </Dropdown>
+
         </header>
     );
 };
