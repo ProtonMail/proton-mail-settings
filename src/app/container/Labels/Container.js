@@ -10,33 +10,40 @@ import LabelSortableList from '../../components/Labels/LabelSortableList';
 function LabelsContainer() {
 
     const { result: { Labels = [] } = {}, loading } =  useApiResult(getLabels, []);
+    const [ list, setLabels ] = useState(Labels);
     const [modalConfig, setModalVisibility] = useState({
         show: false,
         type: '',
         label: {}
     });
 
+    useEffect(() => {
+        setLabels(Labels);
+    }, [ Labels ])
+
     const orderRequest = useApiWithoutResult(orderLabels);
     const updateRequest = useApiWithoutResult(updateLabel);
+    const createRequest = useApiWithoutResult(createLabel);
+    const deleteRequest = useApiWithoutResult(deleteLabel);
 
     const sort = async (labels) => {
         const a = await orderRequest.request({
             LabelIDs: labels.map(({ ID }) => ID)
         });
-        console.log(orderRequest, a, labels)
     };
 
     const onSortEnd = ({ oldIndex, newIndex }) => {
         const list = arrayMove(Labels, oldIndex, newIndex);
         sort(list);
-        // setLabels(list);
+        setLabels(list);
     };
 
-    const handleToggleChange = (label) => async (checked) => {
-        await updateRequest.request(label.ID, {
+    const handleToggleChange = (label) => async () => {
+        const newLabel = {
             ...label,
-            Notify: +checked
-        });
+            Notify: +(!label.Notify)
+        };
+        await updateRequest.request(label.ID, newLabel);
     };
 
     const handleClickAdd = (type) => () => {
@@ -55,22 +62,21 @@ function LabelsContainer() {
     };
 
     const handleCloseModal = ()=> {
-        console.log('CLOSE');
         setModalVisibility({ show: false });
     }
 
     const handleSubmitModal = async (model, mode)=> {
 
         if (mode === 'create') {
-            const { Label } = await api(createLabel(model));
-            setLabels(labels.concat(Label));
+            const { Label } = await createRequest.request(model);
+            setLabels(list.concat(Label));
         }
 
         if (mode === 'edition') {
-            const { Label } = await api(updateLabel(model.ID, model));
-            setLabels(labels.map((item) => {
+            await updateRequest.request(model.ID, model);
+            setLabels(list.map((item) => {
                 if (model.ID === item.ID) {
-                    return Label;
+                    return model;
                 }
                 return item;
             }));
@@ -80,8 +86,8 @@ function LabelsContainer() {
     }
 
     const handleClickDelete = ({ ID }) => async () => {
-        await api(deleteLabel(ID));
-        setLabels(labels.filter((label) => label.ID !== ID));
+        await deleteRequest.request(ID);
+        setLabels(list.filter((label) => label.ID !== ID));
     };
 
     const getScrollContainer = () => document.querySelector('.main-area');
@@ -131,10 +137,10 @@ function LabelsContainer() {
                 }
 
                 {
-                    (!loading && Labels.length) ? <LabelSortableList
+                    (!loading && list.length) ? <LabelSortableList
                         getContainer={getScrollContainer}
                         pressDelay={200}
-                        items={Labels}
+                        items={list}
                         onClickEdit={handleClickEdit}
                         onClickDelete={handleClickDelete}
                         onToggleChange={handleToggleChange}
