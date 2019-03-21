@@ -1,6 +1,20 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { c } from 'ttag';
-import { Title, SubTitle, Bordered, Select, Label, Button, Icon, LearnMore, PrimaryButton, Toggle, useApiResult, Paragraph, useApiWithoutResult } from 'react-components';
+import {
+    Title,
+    SubTitle,
+    Bordered,
+    Select,
+    Label,
+    Button,
+    Icon,
+    LearnMore,
+    PrimaryButton,
+    Toggle,
+    useApiResult,
+    Paragraph,
+    useApiWithoutResult
+} from 'react-components';
 import { arrayMove } from 'react-sortable-hoc';
 import { getLabels, orderLabels, updateLabel, createLabel, deleteLabel } from 'proton-shared/lib/api/labels';
 
@@ -8,9 +22,8 @@ import AddLabelModal from './AddLabelModal';
 import LabelSortableList from '../../components/Labels/LabelSortableList';
 
 function LabelsContainer() {
-
-    const { result: { Labels = [] } = {}, loading } =  useApiResult(getLabels, []);
-    const [ list, setLabels ] = useState(Labels);
+    const { result: { Labels = [] } = {}, loading } = useApiResult(getLabels, []);
+    const [list, setLabels] = useState(Labels);
     const [modalConfig, setModalVisibility] = useState({
         show: false,
         type: '',
@@ -19,7 +32,7 @@ function LabelsContainer() {
 
     useEffect(() => {
         setLabels(Labels);
-    }, [ Labels ])
+    }, [Labels]);
 
     const orderRequest = useApiWithoutResult(orderLabels);
     const updateRequest = useApiWithoutResult(updateLabel);
@@ -41,7 +54,7 @@ function LabelsContainer() {
     const handleToggleChange = (label) => async () => {
         const newLabel = {
             ...label,
-            Notify: +(!label.Notify)
+            Notify: +!label.Notify
         };
         await updateRequest.request(label.ID, newLabel);
     };
@@ -61,12 +74,11 @@ function LabelsContainer() {
         });
     };
 
-    const handleCloseModal = ()=> {
+    const handleCloseModal = () => {
         setModalVisibility({ show: false });
-    }
+    };
 
-    const handleSubmitModal = async (model, mode)=> {
-
+    const handleSubmitModal = async (model, mode) => {
         if (mode === 'create') {
             const { Label } = await createRequest.request(model);
             setLabels(list.concat(Label));
@@ -74,16 +86,18 @@ function LabelsContainer() {
 
         if (mode === 'edition') {
             await updateRequest.request(model.ID, model);
-            setLabels(list.map((item) => {
-                if (model.ID === item.ID) {
-                    return model;
-                }
-                return item;
-            }));
+            setLabels(
+                list.map((item) => {
+                    if (model.ID === item.ID) {
+                        return model;
+                    }
+                    return item;
+                })
+            );
         }
 
         handleCloseModal();
-    }
+    };
 
     const handleClickDelete = ({ ID }) => async () => {
         await deleteRequest.request(ID);
@@ -106,7 +120,6 @@ function LabelsContainer() {
         <>
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
             <div className="p1 center w80">
-
                 <SubTitle>Folders and labels</SubTitle>
                 <p className="block-info-standard mt1 mb1">
                     Multiple Labels can be applied to a single message, but a message can only be in a single Folder.
@@ -115,42 +128,37 @@ function LabelsContainer() {
                 </p>
                 <nav className="mb1f flex">
                     <PrimaryButton onClick={handleClickAdd('folder')}>
-                        <Icon
-                            name="folder"
-                            style={{ fill: 'currentColor' }}
-                            className="icon-16p mr0-5" />
+                        <Icon name="folder" style={{ fill: 'currentColor' }} className="icon-16p mr0-5" />
                         Add Folder
                     </PrimaryButton>
                     <PrimaryButton onClick={handleClickAdd('label')}>
-                        <Icon
-                            name="label"
-                            style={{ fill: 'currentColor' }}
-                            className="icon-16p mr0-5" />
+                        <Icon name="label" style={{ fill: 'currentColor' }} className="icon-16p mr0-5" />
                         Add Label
                     </PrimaryButton>
 
-                    <Select options={options} className="mlauto"></Select>
+                    <Select options={options} className="mlauto" />
                 </nav>
 
-                {
-                    loading ? <div aria-busy="true"></div> : null
-                }
+                {loading ? <div aria-busy="true" /> : null}
 
-                {
-                    (!loading && list.length) ? <LabelSortableList
+                {!loading && list.length ? (
+                    <LabelSortableList
                         getContainer={getScrollContainer}
                         pressDelay={200}
                         items={list}
                         onClickEdit={handleClickEdit}
                         onClickDelete={handleClickDelete}
                         onToggleChange={handleToggleChange}
-                        onSortEnd={onSortEnd} /> : <Paragraph>No labels/folders available</Paragraph>
-                }
+                        onSortEnd={onSortEnd}
+                    />
+                ) : (
+                    <Paragraph>No labels/folders available</Paragraph>
+                )}
 
                 <AddLabelModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
             </div>
         </>
     );
-};
+}
 
 export default LabelsContainer;
