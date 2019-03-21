@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-
+import { Icon, Input } from 'react-components';
 import { LABEL_COLORS } from 'proton-shared/lib/constants';
 
 function LabelColors({ selected, onClick, className }) {
@@ -32,13 +32,13 @@ function LabelColors({ selected, onClick, className }) {
 }
 
 LabelColors.propTypes = {
-    selected: PropTypes.bool,
+    selected: PropTypes.string,
     className: PropTypes.string,
     onClick: PropTypes.func.isRequired
 };
 
 LabelColors.defaultProps = {
-    selected: false
+    selected: ''
 };
 
 export default LabelColors;
