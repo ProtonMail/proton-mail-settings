@@ -1,44 +1,42 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { c } from 'ttag';
-import { Title, SubTitle, Bordered, Select, Label, Button, Icon, LearnMore, PrimaryButton, Toggle, useApiResult } from 'react-components';
-import {
-  SortableContainer,
-  SortableElement,
-  arrayMove,
-} from 'react-sortable-hoc';
+import { Title, SubTitle, Bordered, Select, Label, Button, Icon, LearnMore, PrimaryButton, Toggle, useApiResult, Paragraph, useApiWithoutResult } from 'react-components';
+import { arrayMove } from 'react-sortable-hoc';
 import { getLabels, orderLabels, updateLabel, createLabel, deleteLabel } from 'proton-shared/lib/api/labels';
-import { debounce } from 'proton-shared/lib/helpers/function';
 
 import AddLabelModal from './AddLabelModal';
+import LabelSortableList from '../../components/Labels/LabelSortableList';
 
 function LabelsContainer() {
-    const [labels, setLabels] = useState([]);
+
+    const { result: { Labels = [] } = {}, loading } =  useApiResult(getLabels, []);
     const [modalConfig, setModalVisibility] = useState({
         show: false,
         type: '',
         label: {}
     });
-    const { result = {}, loading, request } =  useApiResult(() => getLabels(), []);
-    // const { result, run } =  useAsync();
-    console.log('INIT', {result, loading, request})
+
+    const orderRequest = useApiWithoutResult(orderLabels);
+    const updateRequest = useApiWithoutResult(updateLabel);
 
     const sort = async (labels) => {
-        await api(orderLabels({
+        const a = await orderRequest.request({
             LabelIDs: labels.map(({ ID }) => ID)
-        }));
+        });
+        console.log(orderRequest, a, labels)
     };
 
     const onSortEnd = ({ oldIndex, newIndex }) => {
-        const list = arrayMove(labels, oldIndex, newIndex);
+        const list = arrayMove(Labels, oldIndex, newIndex);
         sort(list);
-        setLabels(list);
+        // setLabels(list);
     };
 
-    const handleChange = (label) => async (checked) => {
-        await api(updateLabel(label.ID, {
+    const handleToggleChange = (label) => async (checked) => {
+        await updateRequest.request(label.ID, {
             ...label,
             Notify: +checked
-        }));
+        });
     };
 
     const handleClickAdd = (type) => () => {
@@ -98,67 +96,6 @@ function LabelsContainer() {
             text: 'Sort by: A-Z'
         }
     ];
-
-    const SortableItem = SortableElement((label) => {
-        const { ID, Name, Color, Exclusive, Notify } = label;
-
-        return (<tr
-            style={{ backgroundColor: 'white', cursor: 'move' }}>
-            <td><Icon name="text-justify" /></td>
-            <td>
-                { Exclusive === 1 && <Icon
-                    name="folder"
-                    style={{ fill: Color }}
-                    className="icon-16p mr1"
-                    alt={Name} /> }
-                { Exclusive === 0 && <Icon
-                    name="label"
-                    style={{ fill: Color }}
-                    className="icon-16p mr1"
-                    alt={Name} /> }
-                { Name }
-            </td>
-            <td>
-                <div className="w10">
-                    { Exclusive === 1 && <Toggle
-                        id={`item-${ID}`}
-                        type="icon"
-                        checked={Notify === 1}
-                        onChange={debounce(handleChange(label), 300)}/>
-                    }
-                </div>
-            </td>
-            <td>
-                <Button onClick={handleClickEdit(label)}>Edit</Button>
-                <Button onClick={handleClickDelete(label)}>Delete</Button>
-            </td>
-        </tr>)
-    });
-
-    const SortableList = SortableContainer(({ items }) => {
-      return (
-        <table className="pm-simple-table noborder border-collapse mt1">
-            <caption className="sr-only">Labels/Folders</caption>
-            <thead>
-                <tr>
-                    <th scope="col" className="w5">
-                        <Icon name="what-is-this" />
-                    </th>
-                    <th scope="col" className="w45">Name</th>
-                    <th scope="col" className="w15">Notification</th>
-                    <th scope="col" className="w30">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                {items.map((value, index) => (
-                  <SortableItem key={`item-${index}`} index={index} {...value} />
-                ))}
-            </tbody>
-        </table>
-      );
-    });
-
-
     return (
         <>
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
@@ -190,14 +127,18 @@ function LabelsContainer() {
                 </nav>
 
                 {
-                    loading ? <div ariaBusy="true"></div> : null
+                    loading ? <div aria-busy="true"></div> : null
                 }
+
                 {
-                    !loading && <SortableList
+                    (!loading && Labels.length) ? <LabelSortableList
                         getContainer={getScrollContainer}
                         pressDelay={200}
-                        items={result.Labels || []}
-                        onSortEnd={onSortEnd} />
+                        items={Labels}
+                        onClickEdit={handleClickEdit}
+                        onClickDelete={handleClickDelete}
+                        onToggleChange={handleToggleChange}
+                        onSortEnd={onSortEnd} /> : <Paragraph>No labels/folders available</Paragraph>
                 }
 
                 <AddLabelModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
