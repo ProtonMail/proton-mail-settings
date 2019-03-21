@@ -1,9 +1,9 @@
 import React, { createRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-
 import { Input, Label, Button, SubTitle, Modal, HeaderModal, FooterModal, Icon } from 'react-components';
 
+import { LABEL_COLORS } from '../../constants';
 import LabelColors from './LabelColors';
 
 
