@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
-import { LABEL_COLORS } from '../../constants';
+import { LABEL_COLORS } from 'proton-shared/lib/constants';
 
 function LabelColors({ selected, onClick, className }) {
     const getClass = (className, more) => {

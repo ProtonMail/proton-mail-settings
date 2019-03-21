@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Modal, HeaderModal, FooterModal } from 'react-components';
 
-import NewLabelForm from '../../component/Labels/NewLabelForm';
+import NewLabelForm from '../../components/Labels/NewLabelForm';
 
 function AddLabelModal(props) {
     return (

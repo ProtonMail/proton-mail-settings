@@ -22,20 +22,11 @@ function LabelsContainer() {
     // const { result, run } =  useAsync();
     console.log('INIT', {result, loading, request})
 
-    const fetch = async () => {
-        console.log('FETCH', result, request);
-        // setLabels(Labels);
-    };
-
     const sort = async (labels) => {
         await api(orderLabels({
             LabelIDs: labels.map(({ ID }) => ID)
         }));
     };
-
-    useEffect(() => {
-        fetch();
-    }, []);
 
     const onSortEnd = ({ oldIndex, newIndex }) => {
         const list = arrayMove(labels, oldIndex, newIndex);
@@ -197,11 +188,17 @@ function LabelsContainer() {
 
                     <Select options={options} className="mlauto"></Select>
                 </nav>
-                <SortableList
-                    getContainer={getScrollContainer}
-                    pressDelay={200}
-                    items={labels}
-                    onSortEnd={onSortEnd} />
+
+                {
+                    loading ? <div ariaBusy="true"></div> : null
+                }
+                {
+                    !loading && <SortableList
+                        getContainer={getScrollContainer}
+                        pressDelay={200}
+                        items={result.Labels || []}
+                        onSortEnd={onSortEnd} />
+                }
 
                 <AddLabelModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
             </div>
