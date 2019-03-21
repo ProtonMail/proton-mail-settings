@@ -2,37 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
-const LABEL_COLORS = [
-    '#7272a7',
-    '#8989ac',
-
-    '#cf5858',
-    '#cf7e7e',
-
-    '#c26cc7',
-    '#c793ca',
-
-    '#7569d1',
-    '#9b94d1',
-
-    '#69a9d1',
-    '#a8c4d5',
-
-    '#5ec7b7',
-    '#97c9c1',
-
-    '#72bb75',
-    '#9db99f',
-
-    '#c3d261',
-    '#c6cd97',
-
-    '#e6c04c',
-    '#e7d292',
-
-    '#e6984c',
-    '#dfb286'
-];
+import { LABEL_COLORS } from '../../constants';
 
 function LabelColors({ selected, onClick, className }) {
     const getClass = (className, more) => {
