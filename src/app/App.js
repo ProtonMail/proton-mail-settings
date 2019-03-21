@@ -5,7 +5,7 @@ import { Icons, ApiContext } from 'react-components';
 import frLocale from '../i18n/fr.po';
 import { createApi } from './api';
 import Layout from './container/Layout';
-import LabelsContainer from './container/Labels/Labels';
+import LabelsContainer from './container/Labels/Container';
 
 const NotFoundContainer = () => <h1>Not found</h1>;
 
