@@ -6,19 +6,19 @@ import { LABEL_COLORS } from 'proton-shared/lib/constants';
 
 import LabelColors from './LabelColors';
 
-
-function randomIntFromInterval(min,max) {
-    return Math.floor(Math.random()*(max-min+1)+min);
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
-
     const Exclusive = +(type === 'folder');
-    const [ model, setModel ] = useState(label || {
-        Name: '',
-        Color: LABEL_COLORS[randomIntFromInterval(0, LABEL_COLORS.length - 1)],
-        Exclusive
-    });
+    const [model, setModel] = useState(
+        label || {
+            Name: '',
+            Color: LABEL_COLORS[randomIntFromInterval(0, LABEL_COLORS.length - 1)],
+            Exclusive
+        }
+    );
 
     const handleClick = (Color) => () => {
         setModel({
@@ -42,7 +42,7 @@ function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
         e.preventDefault();
         console.log('Model', model);
         onSubmit(model, mode);
-    }
+    };
     return (
         <form onSubmit={handleSubmit}>
             <SubTitle>{c('New Label form').t('Create a new label')}</SubTitle>
@@ -56,13 +56,12 @@ function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
                         value={model.Name}
                         onChange={handleChange}
                         placeholder={c('New Label form').t('Name')}
-                        required={true} />
+                        required={true}
+                    />
                 </div>
                 <div className="flex flex-nowrap onmobile-flex-column mb1">
                     <Label htmlFor="accountType">{c('New Label form').t('Color')} </Label>
-                    <LabelColors
-                        selected={model.Color}
-                        onClick={handleClick} />
+                    <LabelColors selected={model.Color} onClick={handleClick} />
                 </div>
             </div>
 
@@ -85,7 +84,5 @@ NewLabelForm.propTypes = {
 NewLabelForm.defaultProps = {
     mode: 'create'
 };
-
-
 
 export default NewLabelForm;

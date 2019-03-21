@@ -20,7 +20,6 @@ const Header = () => {
     return (
         <header className="header flex flex-nowrap flex-spacebetween reset4print">
             <img src="" alt="ProtonMail Settings" />
-
         </header>
     );
 };

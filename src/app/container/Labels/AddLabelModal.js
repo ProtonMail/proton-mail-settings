@@ -9,7 +9,7 @@ function AddLabelModal(props) {
     return (
         <Modal {...props}>
             <HeaderModal onClose={props.onClose}>{c('Add label/folder Modal').t`Add Label`}</HeaderModal>
-            <NewLabelForm  {...props}/>
+            <NewLabelForm {...props} />
         </Modal>
     );
 }

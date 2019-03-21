@@ -9,35 +9,32 @@ import ToggleNotify from './ToggleNotify';
 export default SortableElement(({ label, onToggleChange, onClickEdit, onClickDelete }) => {
     const { ID, Name, Color, Exclusive, Notify } = label;
 
-    return (<tr
-        style={{ backgroundColor: 'white', cursor: 'move' }}>
-        <td><Icon name="text-justify" /></td>
-        <td>
-            { Exclusive === 1 && <Icon
-                name="folder"
-                style={{ fill: Color }}
-                className="icon-16p mr1"
-                alt={Name} /> }
-            { Exclusive === 0 && <Icon
-                name="label"
-                style={{ fill: Color }}
-                className="icon-16p mr1"
-                alt={Name} /> }
-            { Name }
-        </td>
-        <td>
-            <div className="w10">
-                { Exclusive === 1 && <ToggleNotify
-                    id={`item-${ID}`}
-                    type="icon"
-                    checked={Notify === 1}
-                    onChange={debounce(onToggleChange(label), 300)}/>
-                }
-            </div>
-        </td>
-        <td>
-            <Button onClick={onClickEdit(label)}>{c('Action').t('Edit')}</Button>
-            <Button onClick={onClickDelete(label)}>{c('Action').t('Delete')}</Button>
-        </td>
-    </tr>)
+    return (
+        <tr style={{ backgroundColor: 'white', cursor: 'move' }}>
+            <td>
+                <Icon name="text-justify" />
+            </td>
+            <td>
+                {Exclusive === 1 && <Icon name="folder" style={{ fill: Color }} className="icon-16p mr1" alt={Name} />}
+                {Exclusive === 0 && <Icon name="label" style={{ fill: Color }} className="icon-16p mr1" alt={Name} />}
+                {Name}
+            </td>
+            <td>
+                <div className="w10">
+                    {Exclusive === 1 && (
+                        <ToggleNotify
+                            id={`item-${ID}`}
+                            type="icon"
+                            checked={Notify === 1}
+                            onChange={debounce(onToggleChange(label), 300)}
+                        />
+                    )}
+                </div>
+            </td>
+            <td>
+                <Button onClick={onClickEdit(label)}>{c('Action').t('Edit')}</Button>
+                <Button onClick={onClickDelete(label)}>{c('Action').t('Delete')}</Button>
+            </td>
+        </tr>
+    );
 });
