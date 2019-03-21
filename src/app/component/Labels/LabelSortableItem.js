@@ -1,7 +1,10 @@
 import React from 'react';
+import { c } from 'ttag';
 import { SortableElement } from 'react-sortable-hoc';
 import { debounce } from 'proton-shared/lib/helpers/function';
-import { Icon, Toggle, Button } from 'react-components';
+import { Icon, Button } from 'react-components';
+
+import ToggleNotify from './ToggleNotify';
 
 export default SortableElement(({ label, onToggleChange, onClickEdit, onClickDelete }) => {
     const { ID, Name, Color, Exclusive, Notify } = label;
@@ -24,17 +27,17 @@ export default SortableElement(({ label, onToggleChange, onClickEdit, onClickDel
         </td>
         <td>
             <div className="w10">
-                { Exclusive === 1 && <Toggle
+                { Exclusive === 1 && <ToggleNotify
                     id={`item-${ID}`}
                     type="icon"
                     checked={Notify === 1}
-                    onChange={debounce(onToggleChange(label))}/>
+                    onChange={debounce(onToggleChange(label), 300)}/>
                 }
             </div>
         </td>
         <td>
-            <Button onClick={onClickEdit(label)}>Edit</Button>
-            <Button onClick={onClickDelete(label)}>Delete</Button>
+            <Button onClick={onClickEdit(label)}>{c('Action').t('Edit')}</Button>
+            <Button onClick={onClickDelete(label)}>{c('Action').t('Delete')}</Button>
         </td>
     </tr>)
 });
