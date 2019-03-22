@@ -139,7 +139,7 @@ function LabelsContainer() {
                     <Select options={options} className="mlauto" />
                 </nav>
 
-                {loading ? <div aria-busy="true" /> : null}
+                {loading ? <div className="square-color bordered-container center" aria-busy="true" /> : null}
 
                 {!loading && list.length ? (
                     <LabelSortableList
