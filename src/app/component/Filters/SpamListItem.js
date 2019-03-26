@@ -2,7 +2,7 @@ import React from 'react';
 import { c } from 'ttag';
 import { SubTitle, Bordered, Button, Icon, PrimaryButton } from 'react-components';
 
-function SpamListItem({ list, type, dest, onClickMoveTo, onClickRemove }) {
+function SpamListItem({ list, type, dest, onClickMoveTo, onClickRemove, onClickAdd }) {
     const iconName = type === 'whitelist' ? `arrow-right` : `arrow-left`;
     const I18N = {
         whitelist: c('Title').t('Whitelist'),
@@ -13,7 +13,9 @@ function SpamListItem({ list, type, dest, onClickMoveTo, onClickRemove }) {
         <Bordered className="flex-autogrid-item SpamListItem-container">
             <header className="flex">
                 <SubTitle>{I18N[type]}</SubTitle>
-                <PrimaryButton className="mlauto">{c('Action').t('Add')}</PrimaryButton>
+                <PrimaryButton onClick={onClickAdd(type)} className="mlauto">
+                    {c('Action').t('Add')}
+                </PrimaryButton>
             </header>
             <ul className="unstyled scroll-if-needed SpamListItem-list p1">
                 {list.map((mail, i) => {
