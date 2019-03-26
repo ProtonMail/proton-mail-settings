@@ -10,32 +10,53 @@ import {
     PrimaryButton,
     useApiResult,
     useApiWithoutResult,
-    Search
+    Search,
+    useNotifications
 } from 'react-components';
 import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 
 import useSpamList from './useSpamList';
 import SpamListItem from '../../components/Filters/SpamListItem';
+import AddEmailToListModal from './AddEmailToListModal';
 
 function LabelsContainer() {
-    const { blackList, whiteList, loading, move } = useSpamList();
+    const { blackList, whiteList, loading, move, remove, search, create } = useSpamList();
+    const { createNotification } = useNotifications();
 
-    // const { result: { IncomingDefaults = [] } = {}, loading } =  useApiResult(getIncomingDefaults, []);
-    // const [ list, setList ] = useState(IncomingDefaults);
+    const [modalConfig, setModalVisibility] = useState({
+        show: false,
+        type: 'whitelist'
+    });
 
-    // useEffect(() => {
-    //     setList(IncomingDefaults);
-    // }, [ list ])
-
-    const handleSeachChange = console.log;
-    const handleClickMoveTo = (type, item) => () => {
-        move(type, item);
+    const handleSeachChange = (value = '') => {
+        search(value);
     };
-    const handleClickRemove = (item) => () => {
-        console.log(item);
+    const handleClickMoveTo = (type, item) => async () => {
+        await move(type, item);
+        createNotification({ text: c('Success notification').t`Email moved` });
+    };
+    const handleClickRemove = (item) => async () => {
+        await remove(item);
+        createNotification({ text: c('Success notification').t`Email removed` });
     };
 
-    console.log({ whiteList, blackList, loading });
+    const handleClickAdd = (type) => () => {
+        setModalVisibility({
+            show: true,
+            type
+        });
+    };
+
+    const handleSubmitModal = async (type, data) => {
+        await create(type, data);
+        createNotification({ text: c('Success notification').t`Email added` });
+        setModalVisibility({ show: false, type });
+    };
+
+    const handleCloseModal = () => {
+        setModalVisibility({ show: false, type: 'whitelist' });
+    };
+
     return (
         <>
             <Title>{c('FilterSettings').t`Filters`}</Title>
@@ -63,6 +84,7 @@ function LabelsContainer() {
                             list={whiteList}
                             type="whitelist"
                             dest="blacklist"
+                            onClickAdd={handleClickAdd}
                             onClickMoveTo={handleClickMoveTo}
                             onClickRemove={handleClickRemove}
                         />
@@ -70,11 +92,13 @@ function LabelsContainer() {
                             list={blackList}
                             type="blacklist"
                             dest="whitelist"
+                            onClickAdd={handleClickAdd}
                             onClickMoveTo={handleClickMoveTo}
                             onClickRemove={handleClickRemove}
                         />
                     </div>
                 ) : null}
+                <AddEmailToListModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
             </div>
         </>
     );
