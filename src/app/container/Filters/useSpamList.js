@@ -12,7 +12,7 @@ import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
 
-const useSpamList = (initialStep = 0) => {
+const useSpamList = () => {
     const getWhiteList = () => getIncomingDefaults({ Location: WHITELIST_TYPE });
     const getBlackList = () => getIncomingDefaults({ Location: BLACKLIST_TYPE });
 
