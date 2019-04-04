@@ -6,6 +6,7 @@ import { Icon, Button, ConfirmModal } from 'react-components';
 
 import ToggleNotify from '../Labels/ToggleNotify';
 import RemoveFilter from './RemoveFilter';
+import EditFilterButton from './EditFilterButton';
 
 export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveFilter }) => {
     const { ID, Name, Status } = filter;
@@ -27,8 +28,8 @@ export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveF
                 </div>
             </td>
             <td>
-                <Button onClick={onClickEdit(filter)}>{c('Action').t('Edit')}</Button>
-                <Button onClick={onClickEdit(filter, 'sieve')}>{c('Action').t('Edit Sieve')}</Button>
+                <EditFilterButton filter={filter} textContent={c('Action').t('Edit')} />
+                <EditFilterButton filter={filter} mode={'sieve'} textContent={c('Action').t('Edit Sieve')} />
                 <RemoveFilter filter={filter} onRemoveFilter={onRemoveFilter} />
             </td>
         </tr>

@@ -19,6 +19,8 @@ import {
 
 import useFilters from './useFilters';
 import FilterSortableList from '../../components/Filters/SortableList';
+import ActionsFilterToolbar from '../../components/Filters/ActionsFilterToolbar';
+import AddFilterModal from './AddFilterModal';
 
 function FiltersContainer() {
     const { createNotification } = useNotifications();
@@ -56,8 +58,7 @@ function FiltersContainer() {
                 </p>
 
                 <Group>
-                    <PrimaryButton>{c('Action').t('Add Filter')}</PrimaryButton>
-                    <Button className="ml1">{c('Action').t('Add Sieve Filter')}</Button>
+                    <ActionsFilterToolbar />
                 </Group>
 
                 {loading ? <div className="square-color bordered-container center w100" aria-busy="true" /> : null}
