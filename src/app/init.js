@@ -7,7 +7,7 @@ import * as config from './config';
 import AuthenticatedAppRoutes from './AuthenticatedAppRoutes';
 
 const UnAuthenticatedAppRoutes = () => {
-    //document.location.replace(document.location.origin);
+    document.location.replace(document.location.origin);
     return 'Redirecting';
 };
 
