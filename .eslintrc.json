@@ -31,6 +31,8 @@
         "react/display-name": "off",
         "react/prop-types": "warn",
         "react-hooks/rules-of-hooks": "error",
-        "react/jsx-uses-react": "error"
+        "react/jsx-uses-react": "error",
+        "no-sequences": "warn",
+        "no-param-reassign": "warn"
     }
 }
