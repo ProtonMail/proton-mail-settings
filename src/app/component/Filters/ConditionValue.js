@@ -8,7 +8,7 @@ function ConditionValue({ value, onClick }) {
     return (
         <li>
             {value}
-            <Icon name="delete" style={{ fill: 'red' }} onClick={handleClick} />
+            <Icon name="delete" className="icon-16p ml1" style={{ fill: 'red' }} onClick={handleClick} />
         </li>
     );
 }

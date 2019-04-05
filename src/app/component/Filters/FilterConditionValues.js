@@ -26,7 +26,7 @@ function FilterConditionValues({ condition, options, onClickValue, onChangeCondi
             />
 
             <div className="flex-autogrid onmobile-flex-column w100 mb1">
-                <ul className="flex-autogrid-item ml1">
+                <ul className="flex-autogrid-item m0 p0 ml1">
                     {condition.Values.map((value, i) => {
                         return <ConditionValue value={value} onClick={handleClick} key={'index' + i} />;
                     })}

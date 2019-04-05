@@ -96,9 +96,7 @@ function AddFilterModal({ filter, type, ...props }) {
                 </div>
 
                 {filter ? (
-                    <pre style={{ maxHeight: '150px', overflow: 'auto' }}>
-                        {JSON.stringify(filter.Simple.Conditions, null, 2)}
-                    </pre>
+                    <pre style={{ maxHeight: '150px', overflow: 'auto' }}>{JSON.stringify(filter.Simple, null, 2)}</pre>
                 ) : null}
                 {model.Name ? <FilterEditor filter={model} /> : null}
             </form>
