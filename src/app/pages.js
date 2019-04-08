@@ -3,177 +3,177 @@ import { c } from 'ttag';
 export default [
     {
         text: c('Title').t`Subscription`,
-        route: 'subscription',
+        route: '/settings/subscription',
         sections: [
             {
                 text: c('Title').t`Plans & prices`,
-                route: 'subscription#plans-prices'
+                route: '/settings/subscription#plans-prices'
             },
             {
                 text: c('Title').t`Payment methods`,
-                route: 'subscription#payment-methods'
+                route: '/settings/subscription#payment-methods'
             },
             {
                 text: c('Title').t`Invoices`,
-                route: 'subscription#invoices'
+                route: '/settings/subscription#invoices'
             }
         ]
     },
     {
         text: c('Title').t`Organization/users`,
-        route: 'organization',
+        route: '/settings/organization',
         sections: [
             {
                 text: c('Title').t`Name & details`,
-                route: 'organization#name'
+                route: '/settings/organization#name'
             },
             {
                 text: c('Title').t`Password & key`,
-                route: 'organization#password'
+                route: '/settings/organization#password'
             },
             {
                 text: c('Title').t`Users`,
-                route: 'organization#members'
+                route: '/settings/organization#members'
             }
         ]
     },
     {
         text: c('Title').t`Custom domain`,
-        route: 'domains'
+        route: '/settings/domains'
     },
     {
         text: c('Title').t`Account`,
-        route: 'account',
+        route: '/settings/account',
         sections: [
             {
                 text: c('Title').t`Username`,
-                route: 'account#username'
+                route: '/settings/account#username'
             },
             {
                 text: c('Title').t`Passwords`,
-                route: 'account#passwords'
+                route: '/settings/account#passwords'
             },
             {
                 text: c('Title').t`Recovery`,
-                route: 'account#recovery'
+                route: '/settings/account#recovery'
             },
             {
                 text: c('Title').t`Notification`,
-                route: 'account#notification'
+                route: '/settings/account#notification'
             },
             {
                 text: c('Title').t`Email subscriptions`,
-                route: 'account#email-subscriptions'
+                route: '/settings/account#email-subscriptions'
             },
             {
                 text: c('Title').t`Delete account`,
-                route: 'account#delete'
+                route: '/settings/account#delete'
             }
         ]
     },
     {
         text: c('Title').t`Addresses`,
-        route: 'addresses'
+        route: '/settings/addresses'
     },
     {
         text: c('Title').t`Identity`,
-        route: 'identity'
+        route: '/settings/identity'
     },
     {
         text: c('Title').t`General`,
-        route: 'general',
+        route: '/settings/general',
         sections: [
             {
                 text: c('Title').t`Language`,
-                route: 'general#language'
+                route: '/settings/general#language'
             },
             {
                 text: c('Title').t`Messages`,
-                route: 'general#messages'
+                route: '/settings/general#messages'
             },
             {
                 text: c('Title').t`Search`,
-                route: 'general#search'
+                route: '/settings/general#search'
             },
             {
                 text: c('Title').t`Shortcuts`,
-                route: 'general#shortcuts'
+                route: '/settings/general#shortcuts'
             }
         ]
     },
     {
         text: c('Title').t`Appearance`,
-        route: 'appearance',
+        route: '/settings/appearance',
         sections: [
             {
                 text: c('Title').t`Layouts`,
-                route: 'appearance#layouts'
+                route: '/settings/appearance#layouts'
             },
             {
                 text: c('Title').t`Navigation`,
-                route: 'appearance#navigation'
+                route: '/settings/appearance#navigation'
             },
             {
                 text: c('Title').t`Toolbar`,
-                route: 'appearance#toolbar'
+                route: '/settings/appearance#toolbar'
             },
             {
                 text: c('Title').t`Theme`,
-                route: 'appearance#theme'
+                route: '/settings/appearance#theme'
             }
         ]
     },
     {
         text: c('Title').t`Filters`,
-        route: 'filters',
+        route: '/settings/filters',
         sections: [
             {
                 text: c('Title').t`Custom filters`,
-                route: 'appearance#custom'
+                route: '/settings/appearance#custom'
             },
             {
                 text: c('Title').t`Spam filters`,
-                route: 'appearance#spam'
+                route: '/settings/appearance#spam'
             }
         ]
     },
     {
         text: c('Title').t`Folders/Labels`,
-        route: 'folders-labels'
+        route: '/settings/folders-labels'
     },
     {
         text: c('Title').t`Keys`,
-        route: 'keys',
+        route: '/settings/keys',
         sections: [
             {
                 text: c('Title').t`Email encryption keys`,
-                route: 'keys#addresses'
+                route: '/settings/keys#addresses'
             },
             {
                 text: c('Title').t`Contact encryption keys`,
-                route: 'keys#user'
+                route: '/settings/keys#user'
             }
         ]
     },
     {
         text: c('Title').t`Auto-reply`,
-        route: 'auto-reply'
+        route: '/settings/auto-reply'
     },
     {
         text: c('Title').t`Security`,
-        route: 'security',
+        route: '/settings/security',
         sections: [
             {
                 text: c('Title').t`Session management`,
-                route: 'security#sessions'
+                route: '/settings/security#sessions'
             },
             {
                 text: c('Title').t`Authentication Logs`,
-                route: 'security#logs'
+                route: '/settings/security#logs'
             },
             {
                 text: c('Title').t`Address verification`,
-                route: 'security#address-verification'
+                route: '/settings/security#address-verification'
             }
         ]
     }

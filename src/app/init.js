@@ -4,7 +4,7 @@ import { setConfig } from 'react-hot-loader';
 import { createApp } from 'react-components';
 import * as config from './config';
 
-import AuthenticatedAppRoutes from './AuthenticatedAppRoutes';
+const AuthenticatedAppRoutes = React.lazy(() => import('./content/AuthenticatedAppRoutes'));
 
 const UnAuthenticatedAppRoutes = () => {
     document.location.replace(document.location.origin);
