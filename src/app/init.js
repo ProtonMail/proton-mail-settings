@@ -1,8 +1,15 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { setConfig } from 'react-hot-loader';
+import { createApp } from 'react-components';
+import * as config from './config';
 
-import createApp from './App';
+const AuthenticatedAppRoutes = React.lazy(() => import('./content/AuthenticatedAppRoutes'));
+
+const UnAuthenticatedAppRoutes = () => {
+    document.location.replace(document.location.origin);
+    return 'Redirecting';
+};
 
 setConfig({
     ignoreSFC: true, // RHL will be __completely__ disabled for SFC
@@ -10,6 +17,6 @@ setConfig({
 });
 
 export default () => {
-    const App = createApp();
+    const App = createApp(config, AuthenticatedAppRoutes, UnAuthenticatedAppRoutes);
     ReactDOM.render(<App />, document.querySelector('.app-root'));
 };
