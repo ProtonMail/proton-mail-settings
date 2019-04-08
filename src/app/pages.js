@@ -10,6 +10,14 @@ export default [
                 route: '/settings/subscription#plans-prices'
             },
             {
+                text: c('Title').t`Subscription`,
+                route: '/settings/subscription#subscription'
+            },
+            {
+                text: c('Title').t`Billing details`,
+                route: '/settings/subscription#billing'
+            },
+            {
                 text: c('Title').t`Payment methods`,
                 route: '/settings/subscription#payment-methods'
             },
@@ -18,28 +26,6 @@ export default [
                 route: '/settings/subscription#invoices'
             }
         ]
-    },
-    {
-        text: c('Title').t`Organization/users`,
-        route: '/settings/organization',
-        sections: [
-            {
-                text: c('Title').t`Name & details`,
-                route: '/settings/organization#name'
-            },
-            {
-                text: c('Title').t`Password & key`,
-                route: '/settings/organization#password'
-            },
-            {
-                text: c('Title').t`Users`,
-                route: '/settings/organization#members'
-            }
-        ]
-    },
-    {
-        text: c('Title').t`Custom domain`,
-        route: '/settings/domains'
     },
     {
         text: c('Title').t`Account`,
@@ -72,12 +58,60 @@ export default [
         ]
     },
     {
+        text: c('Title').t`Organization`,
+        route: '/settings/organization',
+        sections: [
+            {
+                text: c('Title').t`Name`,
+                route: '/settings/organization#name'
+            },
+            {
+                text: c('Title').t`Password & key`,
+                route: '/settings/organization#password'
+            }
+        ]
+    },
+    {
+        text: c('Title').t`Users`,
+        route: '/settings/members'
+    },
+    {
+        text: c('Title').t`Custom domain`,
+        route: '/settings/domains',
+        sections: [
+            {
+                text: c('Title').t`Custom domain`,
+                route: '/settings/domains'
+            },
+            {
+                text: c('Title').t`Catch-all`,
+                route: '/settings/domains#catch-all'
+            }
+        ]
+    },
+    {
         text: c('Title').t`Addresses`,
-        route: '/settings/addresses'
+        route: '/settings/addresses',
+        sections: [
+            {
+                text: c('Title').t`Addresses`,
+                route: '/settings/addresses'
+            }
+        ]
     },
     {
         text: c('Title').t`Identity`,
-        route: '/settings/identity'
+        route: '/settings/identity',
+        sections: [
+            {
+                text: c('Title').t`Display name & signature`,
+                route: '/settings/identity#name-signature'
+            },
+            {
+                text: c('Title').t`Short domain (@pm.me)`,
+                route: '/settings/identity#pmme'
+            }
+        ]
     },
     {
         text: c('Title').t`General`,
@@ -88,8 +122,16 @@ export default [
                 route: '/settings/general#language'
             },
             {
+                text: c('Title').t`Desktop notifications`,
+                route: '/settings/general#desktop-notifications'
+            },
+            {
                 text: c('Title').t`Messages`,
                 route: '/settings/general#messages'
+            },
+            {
+                text: c('Title').t`Messages`,
+                route: '/settings/general#contacts'
             },
             {
                 text: c('Title').t`Search`,
@@ -108,10 +150,6 @@ export default [
             {
                 text: c('Title').t`Layouts`,
                 route: '/settings/appearance#layouts'
-            },
-            {
-                text: c('Title').t`Navigation`,
-                route: '/settings/appearance#navigation'
             },
             {
                 text: c('Title').t`Toolbar`,
@@ -142,6 +180,10 @@ export default [
         route: '/settings/folders-labels'
     },
     {
+        text: c('Title').t`Auto-reply`,
+        route: '/settings/auto-reply'
+    },
+    {
         text: c('Title').t`Keys`,
         route: '/settings/keys',
         sections: [
@@ -156,10 +198,6 @@ export default [
         ]
     },
     {
-        text: c('Title').t`Auto-reply`,
-        route: '/settings/auto-reply'
-    },
-    {
         text: c('Title').t`Security`,
         route: '/settings/security',
         sections: [
@@ -168,12 +206,16 @@ export default [
                 route: '/settings/security#sessions'
             },
             {
-                text: c('Title').t`Authentication Logs`,
+                text: c('Title').t`Authentication logs`,
                 route: '/settings/security#logs'
             },
             {
                 text: c('Title').t`Address verification`,
                 route: '/settings/security#address-verification'
+            },
+            {
+                text: c('Title').t`External PGP settings`,
+                route: '/settings/security#pgp-settings'
             }
         ]
     }
