@@ -1,8 +1,8 @@
 import React from 'react';
-import { MembersSection } from 'react-components';
+import { OrganizationSection } from 'react-components';
 
 const OrganizationContainer = () => {
-    return <MembersSection />;
+    return <OrganizationSection />;
 };
 
 export default OrganizationContainer;

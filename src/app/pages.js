@@ -218,5 +218,27 @@ export default [
                 route: '/settings/security#pgp-settings'
             }
         ]
+    },
+    {
+        text: c('Title').t`Apps`,
+        route: '/settings/apps',
+        sections: [
+            {
+                text: c('Title').t`ProtonMail apps`,
+                route: '/settings/apps#protonmail'
+            },
+            {
+                text: c('Title').t`ProtonMail bridge`,
+                route: '/settings/apps#bridge'
+            },
+            {
+                text: c('Title').t`ProtonVPN apps`,
+                route: '/settings/apps#protonvpn'
+            },
+            {
+                text: c('Title').t`Beta sign up`,
+                route: '/settings/apps#beta'
+            }
+        ]
     }
 ];
