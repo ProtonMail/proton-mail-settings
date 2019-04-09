@@ -182,7 +182,7 @@ export default [
     {
         text: c('Title').t`Folders/Labels`,
         icon: 'folder-label',
-        route: '/settings/folders-labels'
+        route: '/settings/labels'
     },
     {
         text: c('Title').t`Auto-reply`,
