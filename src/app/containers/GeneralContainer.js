@@ -1,7 +1,15 @@
 import React from 'react';
+import { LanguageSection, DesktopNotificationSection, MessagesSection, ShortcutsSection } from 'react-components';
 
 const GeneralContainer = () => {
-    return 'GeneralSection';
+    return (
+        <>
+            <LanguageSection />
+            <DesktopNotificationSection />
+            <MessagesSection />
+            <ShortcutsSection />
+        </>
+    );
 };
 
 export default GeneralContainer;

@@ -1,8 +1,14 @@
 import React from 'react';
-import { AddressesSection } from 'react-components';
+import { UsernameSection, NewsSection, DeleteSection } from 'react-components';
 
 const AccountContainer = () => {
-    return <AddressesSection />;
+    return (
+        <>
+            <UsernameSection />
+            <NewsSection />
+            <DeleteSection />
+        </>
+    );
 };
 
 export default AccountContainer;

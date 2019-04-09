@@ -40,16 +40,16 @@ export default [
                 route: '/settings/account#passwords'
             },
             {
-                text: c('Title').t`Recovery`,
-                route: '/settings/account#recovery'
+                text: c('Title').t`Two factor authentication`,
+                route: '/settings/account#2fa'
             },
             {
-                text: c('Title').t`Notification`,
-                route: '/settings/account#notification'
+                text: c('Title').t`Recovery & notification`,
+                route: '/settings/account#recovery-notification'
             },
             {
                 text: c('Title').t`Email subscriptions`,
-                route: '/settings/account#email-subscriptions'
+                route: '/settings/account#news'
             },
             {
                 text: c('Title').t`Delete account`,
@@ -130,7 +130,7 @@ export default [
                 route: '/settings/general#messages'
             },
             {
-                text: c('Title').t`Messages`,
+                text: c('Title').t`Contacts`,
                 route: '/settings/general#contacts'
             },
             {
@@ -152,12 +152,12 @@ export default [
                 route: '/settings/appearance#layouts'
             },
             {
-                text: c('Title').t`Toolbar`,
-                route: '/settings/appearance#toolbar'
+                text: c('Title').t`Toolbars`,
+                route: '/settings/appearance#toolbars'
             },
             {
-                text: c('Title').t`Theme`,
-                route: '/settings/appearance#theme'
+                text: c('Title').t`Themes`,
+                route: '/settings/appearance#themes'
             }
         ]
     },
