@@ -28,3 +28,4 @@ dist
 
 src/app/config.js
 env.json
+.env
