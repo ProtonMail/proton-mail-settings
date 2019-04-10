@@ -1,7 +1,7 @@
-import React, { createRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Input, Label, Button, SubTitle, Modal, HeaderModal, FooterModal, Icon } from 'react-components';
+import { Input, Label, Icon } from 'react-components';
 import { LABEL_COLORS } from 'proton-shared/lib/constants';
 
 import LabelColors from './LabelColors';
@@ -10,7 +10,7 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
+function NewLabelForm({ onSubmit, type, label, onUpdate }) {
     const Exclusive = +(type === 'folder');
     const [model, setModel] = useState(
         label || {
@@ -20,13 +20,16 @@ function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
         }
     );
 
+    useEffect(() => {
+        onUpdate(model);
+    }, [model]);
+
     const handleClick = (Color) => () => {
         setModel({
             ...model,
             Exclusive,
             Color
         });
-        console.log('Set color', model);
     };
 
     const handleChange = ({ target }) => {
@@ -35,54 +38,33 @@ function NewLabelForm({ onClose, onSubmit, type, label, mode }) {
             Exclusive,
             Name: target.value
         });
-        console.log('Set name', model);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Model', model);
-        onSubmit(model, mode);
-    };
     return (
-        <form onSubmit={handleSubmit}>
-            <SubTitle>{c('New Label form').t('Create a new label')}</SubTitle>
-
-            <div className="w90 center flex-item-fluid">
-                <div className="flex flex-nowrap onmobile-flex-column mb1">
-                    <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                    <Input
-                        id="accountName"
-                        type="text"
-                        value={model.Name}
-                        onChange={handleChange}
-                        placeholder={c('New Label form').t('Name')}
-                        required={true}
-                    />
-                </div>
-                <div className="flex flex-nowrap onmobile-flex-column mb1">
-                    <Label htmlFor="accountType">{c('New Label form').t('Color')} </Label>
-                    <LabelColors selected={model.Color} onClick={handleClick} />
-                </div>
+        <div className="w90 center flex-item-fluid">
+            <div className="flex flex-nowrap onmobile-flex-column mb1">
+                <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
+                <Input
+                    id="accountName"
+                    type="text"
+                    value={model.Name}
+                    onChange={handleChange}
+                    placeholder={c('New Label form').t('Name')}
+                    required={true}
+                />
             </div>
-
-            <FooterModal>
-                <Button onClick={onClose}>{c('New Label form').t`Cancel`}</Button>
-                <Button type="submit">{c('New Label form').t`Save`}</Button>
-            </FooterModal>
-        </form>
+            <div className="flex flex-nowrap onmobile-flex-column mb1">
+                <Label htmlFor="accountType">{c('New Label form').t('Color')} </Label>
+                <LabelColors selected={model.Color} onClick={handleClick} />
+            </div>
+        </div>
     );
 }
 
 NewLabelForm.propTypes = {
     type: PropTypes.string,
     label: PropTypes.object,
-    mode: PropTypes.string.isRequired,
-    onClose: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired
-};
-
-NewLabelForm.defaultProps = {
-    mode: 'create'
+    onUpdate: PropTypes.func.isRequired
 };
 
 export default NewLabelForm;

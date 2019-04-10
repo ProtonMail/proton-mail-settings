@@ -26,7 +26,7 @@ function LabelColors({ selected, onClick, className }) {
                             className="LabelColors-input-color"
                         />
                         <div className="LabelColors-item-mask flex">
-                            <Icon name="on" style={{ margin: 'auto' }} />
+                            <Icon name="on" className="mauto" fill="none" />
                         </div>
                     </li>
                 );

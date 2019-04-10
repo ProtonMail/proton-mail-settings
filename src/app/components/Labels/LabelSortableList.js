@@ -5,7 +5,7 @@ import { Icon } from 'react-components';
 
 import LabelSortableItem from './LabelSortableItem';
 
-export default SortableContainer(({ items, onClickEdit, onClickDelete, onToggleChange }) => {
+export default SortableContainer(({ items, onEditLabel, onClickDelete, onToggleChange }) => {
     return (
         <table className="pm-simple-table noborder border-collapse mt1">
             <caption className="sr-only">{c('Settings/labels').t('Labels/Folders')}</caption>
@@ -32,7 +32,7 @@ export default SortableContainer(({ items, onClickEdit, onClickDelete, onToggleC
                         index={index}
                         label={label}
                         onToggleChange={onToggleChange}
-                        onClickEdit={onClickEdit}
+                        onEditLabel={onEditLabel}
                         onClickDelete={onClickDelete}
                     />
                 ))}

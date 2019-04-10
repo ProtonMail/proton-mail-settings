@@ -5,8 +5,9 @@ import { debounce } from 'proton-shared/lib/helpers/function';
 import { Icon, Button } from 'react-components';
 
 import ToggleNotify from './ToggleNotify';
+import EditLabelButton from './EditLabelButton';
 
-export default SortableElement(({ label, onToggleChange, onClickEdit, onClickDelete }) => {
+export default SortableElement(({ label, onToggleChange, onEditLabel, onClickDelete }) => {
     const { ID, Name, Color, Exclusive, Notify } = label;
 
     return (
@@ -32,7 +33,7 @@ export default SortableElement(({ label, onToggleChange, onClickEdit, onClickDel
                 </div>
             </td>
             <td>
-                <Button onClick={onClickEdit(label)}>{c('Action').t('Edit')}</Button>
+                <EditLabelButton onChange={onEditLabel} label={label} className="mr1" />
                 <Button onClick={onClickDelete(label)}>{c('Action').t('Delete')}</Button>
             </td>
         </tr>
