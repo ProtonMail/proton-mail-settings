@@ -1,13 +1,14 @@
 import React from 'react';
-import { UsernameSection, NewsSection, DeleteSection } from 'react-components';
+import { UsernameSection, NewsSection, DeleteSection, EmailSection, ObserverSections } from 'react-components';
 
 const AccountContainer = () => {
     return (
-        <>
-            <UsernameSection />
-            <NewsSection />
-            <DeleteSection />
-        </>
+        <ObserverSections>
+            <UsernameSection id="username" />
+            <EmailSection id="email" />
+            <NewsSection id="news" />
+            <DeleteSection id="delete" />
+        </ObserverSections>
     );
 };
 

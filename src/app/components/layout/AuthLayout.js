@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Route } from 'react-router';
-import { Sidebar } from 'react-components';
+import { Route, withRouter } from 'react-router';
+import { Sidebar, SubSidebar } from 'react-components';
 
 import pages from '../../pages';
 import AuthHeader from './AuthHeader';
 
-const AuthLayout = ({ children }) => {
+const AuthLayout = ({ children, history }) => {
+    const [subSidebarList, setSubSidebarList] = useState([]);
+
+    const buildSubSidebar = (location) => {
+        const { sections = [] } = pages.find(({ route }) => location.pathname === route) || {};
+        setSubSidebarList(sections);
+    };
+
+    useEffect(() => {
+        buildSubSidebar(location);
+        const unsubscribe = history.listen(buildSubSidebar);
+
+        return () => {
+            unsubscribe();
+        };
+    }, []);
+
     return (
         <>
             <AuthHeader />
@@ -15,7 +31,12 @@ const AuthLayout = ({ children }) => {
                     path="/:path"
                     render={() => <Sidebar list={pages.map(({ text, route: link }) => ({ text, link }))} />}
                 />
-                <main className="main flex-item-fluid main-area main-area-content">{children}</main>
+                <div className="main flex-item-fluid main-area">
+                    <div className="flex flex-reverse">
+                        <SubSidebar list={subSidebarList} />
+                        <main className="main-area-content p2 flex-item-fluid">{children}</main>
+                    </div>
+                </div>
             </div>
         </>
     );
@@ -25,4 +46,4 @@ AuthLayout.propTypes = {
     children: PropTypes.node.isRequired
 };
 
-export default AuthLayout;
+export default withRouter(AuthLayout);

@@ -4,17 +4,23 @@ import { Link } from 'react-router-dom';
 import pages from '../pages';
 
 const buildSections = ({ text, route, sections = [] }) => {
-    const list = sections.length ? sections : [{ text, route }];
-
     return (
         <ul className="unstyled mt0-5">
-            {list.map(({ text, route }) => {
-                return (
-                    <li key={route}>
-                        <Link to={route}>{text}</Link>
-                    </li>
-                );
-            })}
+            {sections
+                .reduce(
+                    (acc, { text, id }) => {
+                        acc.push({ text, id, route: `${route}#${id}` });
+                        return acc;
+                    },
+                    [{ text, route }]
+                )
+                .map(({ text, id, route }) => {
+                    return (
+                        <li key={id}>
+                            <Link to={route}>{text}</Link>
+                        </li>
+                    );
+                })}
         </ul>
     );
 };
