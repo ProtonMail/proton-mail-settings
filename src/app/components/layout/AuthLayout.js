@@ -33,7 +33,7 @@ const AuthLayout = ({ children, history }) => {
                 />
                 <div className="main flex-item-fluid main-area">
                     <div className="flex flex-reverse">
-                        <SubSidebar list={subSidebarList} />
+                        {subSidebarList.length ? <SubSidebar list={subSidebarList} /> : null}
                         <main className="main-area-content p2 flex-item-fluid">{children}</main>
                     </div>
                 </div>
@@ -43,7 +43,8 @@ const AuthLayout = ({ children, history }) => {
 };
 
 AuthLayout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    history: PropTypes.object.isRequired
 };
 
 export default withRouter(AuthLayout);

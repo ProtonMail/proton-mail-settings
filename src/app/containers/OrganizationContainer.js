@@ -1,8 +1,12 @@
 import React from 'react';
-import { OrganizationSection } from 'react-components';
+import { ObserverSections, OrganizationSection } from 'react-components';
 
 const OrganizationContainer = () => {
-    return <OrganizationSection />;
+    return (
+        <ObserverSections>
+            <OrganizationSection id="name" />
+        </ObserverSections>
+    );
 };
 
 export default OrganizationContainer;

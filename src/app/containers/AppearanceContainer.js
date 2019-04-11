@@ -1,12 +1,12 @@
 import React from 'react';
-import { LayoutsSection, ThemesSection } from 'react-components';
+import { LayoutsSection, ThemesSection, ObserverSections } from 'react-components';
 
 const AppearanceContainer = () => {
     return (
-        <>
-            <LayoutsSection />
-            <ThemesSection />
-        </>
+        <ObserverSections>
+            <LayoutsSection id="layouts" />
+            <ThemesSection id="themes" />
+        </ObserverSections>
     );
 };
 

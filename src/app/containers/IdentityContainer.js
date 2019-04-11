@@ -1,12 +1,12 @@
 import React from 'react';
-import { IdentitySection, PmMeSection } from 'react-components';
+import { ObserverSections, IdentitySection, PmMeSection } from 'react-components';
 
 const IdentityContainer = () => {
     return (
-        <>
-            <IdentitySection />
-            <PmMeSection />
-        </>
+        <ObserverSections>
+            <IdentitySection id="name-signature" />
+            <PmMeSection id="pmme" />
+        </ObserverSections>
     );
 };
 
