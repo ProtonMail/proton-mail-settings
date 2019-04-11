@@ -16,7 +16,7 @@ import AppearanceContainer from '../containers/AppearanceContainer';
 import AppsContainer from '../containers/AppsContainer';
 import KeysContainer from '../containers/KeysContainer';
 import GeneralContainer from '../containers/GeneralContainer';
-import FiltersContainer from '../containers/FiltersContainer';
+import FiltersContainer from '../containers/Filters/Container';
 import FoldersLabelsContainer from '../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../containers/AutoReplyContainer';
 
