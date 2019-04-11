@@ -4,7 +4,7 @@ import { SortableElement } from 'react-sortable-hoc';
 import { debounce } from 'proton-shared/lib/helpers/function';
 import { Icon, Button, ConfirmModal } from 'react-components';
 
-import ToggleNotify from '../Labels/ToggleNotify';
+import ToggleBoolean from '../ui/ToggleBoolean';
 import RemoveFilter from './RemoveFilter';
 import EditFilterButton from './EditFilterButton';
 
@@ -19,7 +19,7 @@ export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveF
             <td>{Name}</td>
             <td>
                 <div className="w10">
-                    <ToggleNotify
+                    <ToggleBoolean
                         id={`item-${ID}`}
                         type="icon"
                         checked={Status === 1}
