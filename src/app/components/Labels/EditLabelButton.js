@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Button, useModal, useApiWithoutResult, useNotifications } from 'react-components';
+import { Button, useModal, useEventManager, useApiWithoutResult, useNotifications } from 'react-components';
 import { updateLabel } from 'proton-shared/lib/api/labels';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import EditLabelModal from '../../containers/Labels/modals/Edit';
 
 function EditLabelButton({ label, onChange, className }) {
+    const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(updateLabel);
     const { isOpen: isOpenModal, open: openModal, close: closeModal } = useModal();
@@ -17,6 +18,7 @@ function EditLabelButton({ label, onChange, className }) {
 
     const handleSubmitModal = async (label = {}) => {
         await request(label.ID, label);
+        call();
         createNotification({
             text: c('Filter notification').t`${label.Name} updated`
         });

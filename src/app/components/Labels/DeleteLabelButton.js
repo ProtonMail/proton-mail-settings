@@ -1,12 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { ConfirmModal, Alert, Button, useModal, useApiWithoutResult, useNotifications } from 'react-components';
+import {
+    ConfirmModal,
+    Alert,
+    Button,
+    useModal,
+    useApiWithoutResult,
+    useEventManager,
+    useNotifications
+} from 'react-components';
 import { deleteLabel } from 'proton-shared/lib/api/labels';
 import { noop } from 'proton-shared/lib/helpers/function';
 import { LABEL_TYPES } from 'proton-shared/lib/constants';
 
 function DeleteLabelButton({ label, onRemove }) {
+    const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(deleteLabel);
     const { isOpen: isOpenConfirmModal, open: openConfirmModal, close: closeConfirmModal } = useModal();
@@ -16,6 +25,7 @@ function DeleteLabelButton({ label, onRemove }) {
 
     const handleConfirmConfirmModal = async () => {
         await request(label.ID);
+        call();
         createNotification({
             text: c('Filter notification').t`${label.Name} removed`
         });

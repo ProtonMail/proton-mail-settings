@@ -9,7 +9,7 @@ import ToggleNotify from './ToggleNotify';
 import EditLabelButton from './EditLabelButton';
 import DeleteLabelButton from './DeleteLabelButton';
 
-function LabelItem({ label, onToggleChange, onEditLabel, onRemoveLabel }) {
+function LabelItem({ label, onEditLabel, onRemoveLabel }) {
     const { ID, Name, Color, Exclusive, Notify } = label;
 
     return (
@@ -23,16 +23,7 @@ function LabelItem({ label, onToggleChange, onEditLabel, onRemoveLabel }) {
                 {Name}
             </td>
             <td>
-                <div className="w10">
-                    {Exclusive === 1 && (
-                        <ToggleNotify
-                            id={`item-${ID}`}
-                            type="icon"
-                            checked={Notify === 1}
-                            onChange={debounce(onToggleChange(label), 300)}
-                        />
-                    )}
-                </div>
+                <div className="w10">{Exclusive === 1 && <ToggleNotify label={label} />}</div>
             </td>
             <td>
                 <EditLabelButton onChange={onEditLabel} label={label} className="mr1" />

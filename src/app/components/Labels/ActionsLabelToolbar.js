@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { PrimaryButton, Select, Icon, useModal, useApiWithoutResult, useNotifications } from 'react-components';
+import {
+    PrimaryButton,
+    Select,
+    Icon,
+    useModal,
+    useApiWithoutResult,
+    useEventManager,
+    useNotifications
+} from 'react-components';
 import { createLabel } from 'proton-shared/lib/api/labels';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import EditLabelModal from '../../containers/Labels/modals/Edit';
 
 function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
+    const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(createLabel);
     const [type, setType] = useState('');
@@ -21,6 +30,7 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
 
     const handleSubmitModal = async (label = {}) => {
         const { Label } = await request(label);
+        call();
         createNotification({
             text: c('label/folder notification').t`${label.Name} created`
         });
