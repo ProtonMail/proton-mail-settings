@@ -46,37 +46,34 @@ function FiltersContainer() {
 
     return (
         <>
-            <Title>{c('FilterSettings').t`Filters`}</Title>
-            <div className="p1 center w80">
-                <SubTitle>{c('FilterSettings').t('Custom Filters')}</SubTitle>
-                <p className="block-info-standard mt1 mb1">
-                    {c('FilterSettings').t(
-                        'Add a custom filter to perform actions suche as automatically labeling or archiving messages.'
-                    )}
-                    <br />
-                    <LearnMore url="https://protonmail.com" />
-                </p>
-
-                <Group>
-                    <ActionsFilterToolbar />
-                </Group>
-
-                {loading ? <div className="square-color bordered-container center w100" aria-busy="true" /> : null}
-
-                {!loading && list.length ? (
-                    <FilterSortableList
-                        getContainer={getScrollContainer}
-                        pressDelay={200}
-                        items={list}
-                        onClickEdit={handleClickEdit}
-                        onRemoveFilter={handleRemoveFilter}
-                        onChangeStatus={handleChangeStatus}
-                        onSortEnd={onSortEnd}
-                    />
-                ) : (
-                    <Paragraph>No filers available</Paragraph>
+            <SubTitle>{c('FilterSettings').t('Custom Filters')}</SubTitle>
+            <p className="block-info-standard mt1 mb1">
+                {c('FilterSettings').t(
+                    'Add a custom filter to perform actions suche as automatically labeling or archiving messages.'
                 )}
-            </div>
+                <br />
+                <LearnMore url="https://protonmail.com" />
+            </p>
+
+            <Group>
+                <ActionsFilterToolbar />
+            </Group>
+
+            {loading ? <div className="square-color bordered-container center w100" aria-busy="true" /> : null}
+
+            {!loading && list.length ? (
+                <FilterSortableList
+                    getContainer={getScrollContainer}
+                    pressDelay={200}
+                    items={list}
+                    onClickEdit={handleClickEdit}
+                    onRemoveFilter={handleRemoveFilter}
+                    onChangeStatus={handleChangeStatus}
+                    onSortEnd={onSortEnd}
+                />
+            ) : (
+                <Paragraph>No filers available</Paragraph>
+            )}
         </>
     );
 }

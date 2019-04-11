@@ -2,6 +2,8 @@ import React from 'react';
 import { c } from 'ttag';
 
 import Page from '../components/Page';
+import FilterContainer from './Filters/Container';
+import SpamContainer from './Filters/SpamContainer';
 
 export const getFiltersPage = () => {
     return {
@@ -22,7 +24,10 @@ export const getFiltersPage = () => {
 };
 
 const FiltersContainer = () => {
-    return <Page config={getFiltersPage()} />;
+    return (<Page config={getFiltersPage()}>
+        <FilterContainer />
+        <SpamContainer />
+    </Page>);
 };
 
 export default FiltersContainer;

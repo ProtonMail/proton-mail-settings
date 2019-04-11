@@ -18,6 +18,7 @@ import AppsContainer from '../containers/AppsContainer';
 import KeysContainer from '../containers/KeysContainer';
 import GeneralContainer from '../containers/GeneralContainer';
 import FiltersContainer from '../containers/FiltersContainer';
+import LabelsContainer from '../containers/Labels/Container';
 import AutoReplyContainer from '../containers/AutoReplyContainer';
 
 const NotFoundContainer = () => <h1>Not found</h1>;

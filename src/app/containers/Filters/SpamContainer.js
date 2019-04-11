@@ -59,47 +59,44 @@ function SpamFiltersContainer() {
 
     return (
         <>
-            <Title>{c('FilterSettings').t`Filters`}</Title>
-            <div className="p1 center w80">
-                <SubTitle>{c('FilterSettings').t('Spam Filters')}</SubTitle>
-                <p className="block-info-standard mt1 mb1">
-                    {c('FilterSettings').t(
-                        'Sender specific spam rules can be applied here. Whitelist addresses always go to Inbox while Blacklist addresses always go to Spam. Marking a message as spam adds the address to the Blacklist. Marking a message as not spam adds it to the Whitelist.'
-                    )}
-                    <br />
-                    <LearnMore url="https://protonmail.com" />
-                </p>
+            <SubTitle>{c('FilterSettings').t('Spam Filters')}</SubTitle>
+            <p className="block-info-standard mt1 mb1">
+                {c('FilterSettings').t(
+                    'Sender specific spam rules can be applied here. Whitelist addresses always go to Inbox while Blacklist addresses always go to Spam. Marking a message as spam adds the address to the Blacklist. Marking a message as not spam adds it to the Whitelist.'
+                )}
+                <br />
+                <LearnMore url="https://protonmail.com" />
+            </p>
 
-                <Search
-                    className="w100"
-                    onChange={handleSeachChange}
-                    placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}
-                />
+            <Search
+                className="w100"
+                onChange={handleSeachChange}
+                placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}
+            />
 
-                {loading ? <div className="square-color bordered-container center" aria-busy="true" /> : null}
+            {loading ? <div className="square-color bordered-container center" aria-busy="true" /> : null}
 
-                {!loading ? (
-                    <div className="flex-autogrid p1">
-                        <SpamListItem
-                            list={whiteList}
-                            type="whitelist"
-                            dest="blacklist"
-                            onClickAdd={handleClickAdd}
-                            onClickMoveTo={handleClickMoveTo}
-                            onClickRemove={handleClickRemove}
-                        />
-                        <SpamListItem
-                            list={blackList}
-                            type="blacklist"
-                            dest="whitelist"
-                            onClickAdd={handleClickAdd}
-                            onClickMoveTo={handleClickMoveTo}
-                            onClickRemove={handleClickRemove}
-                        />
-                    </div>
-                ) : null}
-                <AddEmailToListModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
-            </div>
+            {!loading ? (
+                <div className="flex-autogrid p1">
+                    <SpamListItem
+                        list={whiteList}
+                        type="whitelist"
+                        dest="blacklist"
+                        onClickAdd={handleClickAdd}
+                        onClickMoveTo={handleClickMoveTo}
+                        onClickRemove={handleClickRemove}
+                    />
+                    <SpamListItem
+                        list={blackList}
+                        type="blacklist"
+                        dest="whitelist"
+                        onClickAdd={handleClickAdd}
+                        onClickMoveTo={handleClickMoveTo}
+                        onClickRemove={handleClickRemove}
+                    />
+                </div>
+            ) : null}
+            <AddEmailToListModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
         </>
     );
 }
