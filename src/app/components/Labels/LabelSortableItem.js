@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { SortableElement } from 'react-sortable-hoc';
-import { debounce } from 'proton-shared/lib/helpers/function';
+import { debounce, noop } from 'proton-shared/lib/helpers/function';
 import { Icon, Button } from 'react-components';
 
 import ToggleNotify from './ToggleNotify';
 import EditLabelButton from './EditLabelButton';
+import DeleteLabelButton from './DeleteLabelButton';
 
-export default SortableElement(({ label, onToggleChange, onEditLabel, onClickDelete }) => {
+function LabelItem({ label, onToggleChange, onEditLabel, onRemoveLabel }) {
     const { ID, Name, Color, Exclusive, Notify } = label;
 
     return (
@@ -34,8 +36,23 @@ export default SortableElement(({ label, onToggleChange, onEditLabel, onClickDel
             </td>
             <td>
                 <EditLabelButton onChange={onEditLabel} label={label} className="mr1" />
-                <Button onClick={onClickDelete(label)}>{c('Action').t('Delete')}</Button>
+                <DeleteLabelButton label={label} onRemove={onRemoveLabel} />
             </td>
         </tr>
     );
-});
+}
+
+LabelItem.propTypes = {
+    label: PropTypes.object.isRequired,
+    onToggleChange: PropTypes.func,
+    onEditLabel: PropTypes.func,
+    onRemoveLabel: PropTypes.func
+};
+
+LabelItem.defaultProps = {
+    onToggleChange: noop,
+    onEditLabel: noop,
+    onRemoveLabel: noop
+};
+
+export default SortableElement(LabelItem);

@@ -10,7 +10,7 @@ import {
     useNotifications
 } from 'react-components';
 import { arrayMove } from 'react-sortable-hoc';
-import { getLabels, orderLabels, updateLabel, createLabel, deleteLabel } from 'proton-shared/lib/api/labels';
+import { getLabels, orderLabels, updateLabel, createLabel } from 'proton-shared/lib/api/labels';
 
 import LabelSortableList from '../../components/Labels/LabelSortableList';
 import ActionsLabelToolbar from '../../components/Labels/ActionsLabelToolbar';
@@ -26,7 +26,6 @@ function LabelsContainer() {
 
     const updateRequest = useApiWithoutResult(updateLabel);
     const orderRequest = useApiWithoutResult(orderLabels);
-    const deleteRequest = useApiWithoutResult(deleteLabel);
 
     const sort = async (labels) => {
         await orderRequest.request({
@@ -66,8 +65,7 @@ function LabelsContainer() {
         );
     };
 
-    const handleClickDelete = ({ ID }) => async () => {
-        await deleteRequest.request(ID);
+    const handleRemoveLabel = ({ ID }) => {
         setLabels(list.filter((label) => label.ID !== ID));
     };
 
@@ -77,7 +75,7 @@ function LabelsContainer() {
         <>
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
             <div className="p1 center w80">
-                <SubTitle>Folders and labels</SubTitle>
+                <SubTitle>{c('LabelSettings').t('Folders and labels')}</SubTitle>
                 <p className="block-info-standard mt1 mb1">
                     {c('LabelSettings').t(
                         'Multiple Labels can be applied to a single message, but a message can only be in a single Folder.'
@@ -97,7 +95,7 @@ function LabelsContainer() {
                         pressDelay={200}
                         items={list}
                         onEditLabel={handleEditLabel}
-                        onClickDelete={handleClickDelete}
+                        onRemoveLabel={handleRemoveLabel}
                         onToggleChange={handleToggleChange}
                         onSortEnd={onSortEnd}
                     />
