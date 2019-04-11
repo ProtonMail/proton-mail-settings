@@ -3,6 +3,7 @@ import { c } from 'ttag';
 export default [
     {
         text: c('Title').t`Subscription`,
+        icon: 'alias',
         route: '/settings/subscription',
         sections: [
             {
@@ -29,6 +30,7 @@ export default [
     },
     {
         text: c('Title').t`Account`,
+        icon: 'account',
         route: '/settings/account',
         sections: [
             {
@@ -59,6 +61,7 @@ export default [
     },
     {
         text: c('Title').t`Organization`,
+        icon: 'organization',
         route: '/settings/organization',
         sections: [
             {
@@ -73,10 +76,12 @@ export default [
     },
     {
         text: c('Title').t`Users`,
+        icon: 'contacts-group-people',
         route: '/settings/members'
     },
     {
         text: c('Title').t`Custom domain`,
+        icon: 'domain',
         route: '/settings/domains',
         sections: [
             {
@@ -91,10 +96,12 @@ export default [
     },
     {
         text: c('Title').t`Addresses`,
+        icon: 'email-address',
         route: '/settings/addresses'
     },
     {
         text: c('Title').t`Identity`,
+        icon: 'alias',
         route: '/settings/identity',
         sections: [
             {
@@ -109,6 +116,7 @@ export default [
     },
     {
         text: c('Title').t`General`,
+        icon: 'alias',
         route: '/settings/general',
         sections: [
             {
@@ -139,6 +147,7 @@ export default [
     },
     {
         text: c('Title').t`Appearance`,
+        icon: 'apparence',
         route: '/settings/appearance',
         sections: [
             {
@@ -157,6 +166,7 @@ export default [
     },
     {
         text: c('Title').t`Filters`,
+        icon: 'filter',
         route: '/settings/filters',
         sections: [
             {
@@ -171,14 +181,17 @@ export default [
     },
     {
         text: c('Title').t`Folders/Labels`,
+        icon: 'folder-label',
         route: '/settings/folders-labels'
     },
     {
         text: c('Title').t`Auto-reply`,
+        icon: 'auto-reply',
         route: '/settings/auto-reply'
     },
     {
         text: c('Title').t`Keys`,
+        icon: 'keys',
         route: '/settings/keys',
         sections: [
             {
@@ -193,6 +206,7 @@ export default [
     },
     {
         text: c('Title').t`Security`,
+        icon: 'security',
         route: '/settings/security',
         sections: [
             {
@@ -215,6 +229,7 @@ export default [
     },
     {
         text: c('Title').t`Apps`,
+        icon: 'alias',
         route: '/settings/apps',
         sections: [
             {

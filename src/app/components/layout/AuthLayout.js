@@ -29,7 +29,7 @@ const AuthLayout = ({ children, history }) => {
             <div className="flex flex-nowrap">
                 <Route
                     path="/:path"
-                    render={() => <Sidebar list={pages.map(({ text, route: link }) => ({ text, link }))} />}
+                    render={() => <Sidebar list={pages.map(({ text, route: link, icon }) => ({ text, link, icon }))} />}
                 />
                 <div className="main flex-item-fluid main-area">
                     <div className="flex flex-reverse">
