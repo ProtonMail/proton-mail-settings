@@ -41,7 +41,7 @@ function EditFilterButton({ filter, mode, className, onEditFilter, textContent }
 EditFilterButton.propTypes = {
     filter: PropTypes.object.isRequired,
     className: PropTypes.string,
-    onEditFilter: PropTypes.fun
+    onEditFilter: PropTypes.func
 };
 
 EditFilterButton.defaultProps = {

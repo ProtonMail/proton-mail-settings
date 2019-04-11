@@ -43,7 +43,7 @@ function RemoveFilter({ filter, className, onRemoveFilter }) {
 RemoveFilter.propTypes = {
     filter: PropTypes.object.isRequired,
     className: PropTypes.string,
-    onRemoveFilter: PropTypes.fun
+    onRemoveFilter: PropTypes.func
 };
 
 RemoveFilter.defaultProps = {
