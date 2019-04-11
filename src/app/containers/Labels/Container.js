@@ -1,6 +1,15 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { c } from 'ttag';
-import { Title, SubTitle, LearnMore, useApiResult, Paragraph, useLabels, useApiWithoutResult } from 'react-components';
+import {
+    Title,
+    Loader,
+    SubTitle,
+    LearnMore,
+    Paragraph,
+    useLabels,
+    useEventManager,
+    useApiWithoutResult
+} from 'react-components';
 import { arrayMove } from 'react-sortable-hoc';
 import { orderLabels } from 'proton-shared/lib/api/labels';
 
@@ -9,18 +18,28 @@ import ActionsLabelToolbar from '../../components/Labels/ActionsLabelToolbar';
 
 function LabelsContainer() {
     const [list, loading] = useLabels();
+    const { call } = useEventManager();
     const orderRequest = useApiWithoutResult(orderLabels);
 
-    const sort = async (labels) => {
-        await orderRequest.request({
-            LabelIDs: labels.map(({ ID }) => ID)
-        });
-    };
+    const [labels, setLabels] = useState(list || []);
 
-    const onSortEnd = ({ oldIndex, newIndex }) => {
-        const list = arrayMove(Labels, oldIndex, newIndex);
-        sort(list);
-        setLabels(list);
+    useEffect(() => {
+        setLabels(list || []);
+    }, [list]);
+
+    /**
+     * Refresh the list + update API and call event, it can be slow.
+     * We want a responsive UI, if it fails the item will go back to its previous index
+     * @param  {Number} options.oldIndex cf https://github.com/clauderic/react-sortable-hoc#basic-example
+     * @param  {Number} options.newIndex
+     */
+    const onSortEnd = async ({ oldIndex, newIndex }) => {
+        const newList = arrayMove(list, oldIndex, newIndex);
+        setLabels(newList);
+        await orderRequest.request({
+            LabelIDs: newList.map(({ ID }) => ID)
+        });
+        call();
     };
 
     const getScrollContainer = () => document.querySelector('.main-area');
@@ -41,13 +60,13 @@ function LabelsContainer() {
                     <ActionsLabelToolbar />
                 </nav>
 
-                {loading ? <div className="square-color bordered-container center" aria-busy="true" /> : null}
+                {loading ? <Loader /> : null}
 
-                {!loading && list.length ? (
+                {!loading && labels.length ? (
                     <LabelSortableList
                         getContainer={getScrollContainer}
                         pressDelay={200}
-                        items={list}
+                        items={labels}
                         onSortEnd={onSortEnd}
                     />
                 ) : (
