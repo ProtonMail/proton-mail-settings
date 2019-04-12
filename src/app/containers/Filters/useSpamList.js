@@ -1,11 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useApiResult, useApiWithoutResult } from 'react-components';
-import {
-    getIncomingDefaults,
-    updateIncomingDefault,
-    deleteIncomingDefaults,
-    addIncomingDefault
-} from 'proton-shared/lib/api/incomingDefaults';
 import { defer } from 'proton-shared/lib/helpers/function';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
@@ -13,20 +6,9 @@ const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
 
 const useSpamList = () => {
-    const getWhiteList = () => getIncomingDefaults({ Location: WHITELIST_TYPE });
-    const getBlackList = () => getIncomingDefaults({ Location: BLACKLIST_TYPE });
-
-    const { result: white = {}, loading: loadingWhite } = useApiResult(getWhiteList, []);
-    const { result: black = {}, loading: loadingBlack } = useApiResult(getBlackList, []);
-
-    const requestUpdate = useApiWithoutResult(updateIncomingDefault);
-    const requestDelete = useApiWithoutResult(deleteIncomingDefaults);
-    const requestCreate = useApiWithoutResult(addIncomingDefault);
-
     const [searchQuery, setSearchQuery] = useState('');
-    const [whiteList, setWhiteList] = useState(white.IncomingDefaults || []);
-    const [blackList, setBlackList] = useState(black.IncomingDefaults || []);
-
+    const [whiteList, setWhiteList] = useState([]);
+    const [blackList, setBlackList] = useState([]);
     const [whiteListFiltered, filterWhiteList] = useState(whiteList);
     const [blackListFiltered, filterBlackList] = useState(blackList);
 
@@ -49,33 +31,26 @@ const useSpamList = () => {
     const refreshWhiteList = refreshList('whitelist');
     const refreshBlackList = refreshList('blackList');
 
-    useEffect(() => {
-        refreshWhiteList(white.IncomingDefaults || []);
-    }, [white.IncomingDefaults]);
-
-    useEffect(() => {
-        refreshBlackList(black.IncomingDefaults || []);
-    }, [black.IncomingDefaults]);
-
     /**
      * Move an email from a list to another
      * @param  {String} dest       (white|black)list
      * @param  {String} options.ID Email's ID
      * @return {void}
      */
-    const move = async (dest, { ID }) => {
-        const Location = dest === 'whitelist' ? WHITELIST_TYPE : BLACKLIST_TYPE;
-        const { IncomingDefault: data } = await requestUpdate.request(ID, { Location });
-
+    const move = (dest, data) => {
         if (dest === 'whitelist') {
-            refreshBlackList(blackList.filter((item) => item.ID !== ID));
+            refreshBlackList(blackList.filter((item) => item.ID !== data.ID));
             refreshWhiteList(whiteList.concat(data));
         }
 
         if (dest === 'blacklist') {
-            refreshWhiteList(whiteList.filter((item) => item.ID !== ID));
+            refreshWhiteList(whiteList.filter((item) => item.ID !== data.ID));
             refreshBlackList(blackList.concat(data));
         }
+
+        defer(() => {
+            searchQuery && search(searchQuery);
+        }, 1000);
     };
 
     /**
@@ -84,12 +59,18 @@ const useSpamList = () => {
      * @param  {Number} options.Location Email's Location, either Spam or not
      * @return {void}
      */
-    const remove = async ({ ID, Location }) => {
-        await requestDelete.request([ID]);
+    const remove = ({ ID, Location }) => {
         if (Location === WHITELIST_TYPE) {
-            return refreshWhiteList(whiteList.filter((item) => item.ID !== ID));
+            refreshWhiteList(whiteList.filter((item) => item.ID !== ID));
         }
-        refreshBlackList(blackList.filter((item) => item.ID !== ID));
+
+        if (Location === BLACKLIST_TYPE) {
+            refreshBlackList(blackList.filter((item) => item.ID !== ID));
+        }
+
+        defer(() => {
+            searchQuery && search(searchQuery);
+        }, 1000);
     };
 
     /**
@@ -98,10 +79,7 @@ const useSpamList = () => {
      * @param  {String} options.ID Email's ID
      * @return {void}
      */
-    const create = async (dest, { value: Email }) => {
-        const Location = dest === 'whitelist' ? WHITELIST_TYPE : BLACKLIST_TYPE;
-        const { IncomingDefault: data } = await requestCreate.request({ Location, Email });
-
+    const create = (dest, data) => {
         if (dest === 'whitelist') {
             setWhiteList(whiteList.concat(data));
         }
@@ -121,7 +99,7 @@ const useSpamList = () => {
      * @param  {String} input search value
      * @return {void}
      */
-    const search = (input) => {
+    const search = (input = '') => {
         const defaultFilter = (i) => i;
         const filter = input ? ({ Email }) => Email.toLowerCase().includes(input.toLowerCase()) : defaultFilter;
         setSearchQuery(input);
@@ -133,7 +111,8 @@ const useSpamList = () => {
     return {
         whiteList: whiteListFiltered,
         blackList: blackListFiltered,
-        loading: loadingBlack || loadingWhite,
+        refreshWhiteList,
+        refreshBlackList,
         remove,
         create,
         search,
