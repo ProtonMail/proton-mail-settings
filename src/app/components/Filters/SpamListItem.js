@@ -1,17 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { SubTitle, Bordered, Loader, useApiResult, useApiWithoutResult } from 'react-components';
+import { SubTitle, Bordered, Loader } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
-
-// import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
-// import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
-
-// const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
-// const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
-
-// const getWhiteList = () => getIncomingDefaults({ Location: WHITELIST_TYPE });
-const getBlackList = () => getIncomingDefaults({ Location: BLACKLIST_TYPE });
 
 import AddEmailFilterListButton from './AddEmailFilterListButton';
 import MoveEmailFilteredList from './MoveEmailFilteredList';
@@ -49,6 +40,8 @@ function SpamListItem({ list, type, dest, onAction, className, loading }) {
                             </li>
                         );
                     })}
+
+                    {!list.length && <p>{c('blacklist/whitelist').t('No email found')}</p>}
                 </ul>
             )}
         </Bordered>

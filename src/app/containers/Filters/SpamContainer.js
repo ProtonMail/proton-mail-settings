@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { c } from 'ttag';
 import { SubTitle, LearnMore, useApiResult, Search } from 'react-components';
 import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
@@ -6,6 +6,7 @@ import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
 import useSpamList from './useSpamList';
 import SpamListItem from '../../components/Filters/SpamListItem';
+import SearchEmailIntoList from '../../components/Filters/SearchEmailIntoList';
 
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
@@ -15,18 +16,31 @@ const getBlackList = () => getIncomingDefaults({ Location: BLACKLIST_TYPE });
 
 function SpamFiltersContainer() {
     const { blackList, whiteList, refreshWhiteList, refreshBlackList, move, remove, search, create } = useSpamList();
+
     const { result: white = {}, loading: loadingWhite } = useApiResult(getWhiteList, []);
     const { result: black = {}, loading: loadingBlack } = useApiResult(getBlackList, []);
 
+    const [loader, setLoader] = useState({});
+
     useEffect(() => {
         refreshWhiteList(white.IncomingDefaults || []);
+        setLoader({ ...loader, white: loadingWhite });
     }, [white.IncomingDefaults]);
 
     useEffect(() => {
         refreshBlackList(black.IncomingDefaults || []);
+        setLoader({ ...loader, black: loadingBlack });
     }, [black.IncomingDefaults]);
 
-    const handleSeachChange = search;
+    const handleSearchBefore = (input) => {
+        setLoader({ white: true, black: true });
+        search(input);
+    };
+    const handleSearchAfter = (input, data) => {
+        search(input, data);
+        setLoader({ white: false, black: false });
+    };
+
     const handleAction = (action) => (type, data) => {
         action === 'create' && create(type, data);
         action === 'remove' && remove(data);
@@ -44,10 +58,10 @@ function SpamFiltersContainer() {
                 <LearnMore url="https://protonmail.com" />
             </p>
 
-            <Search
+            <SearchEmailIntoList
                 className="w100"
-                onChange={handleSeachChange}
-                placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}
+                onBeforeRequest={handleSearchBefore}
+                onAfterRequest={handleSearchAfter}
             />
 
             <div className="flex-autogrid p1">
@@ -55,7 +69,7 @@ function SpamFiltersContainer() {
                     list={whiteList}
                     type="whitelist"
                     dest="blacklist"
-                    loading={loadingWhite}
+                    loading={loader.white}
                     onAction={handleAction}
                 />
                 <SpamListItem
@@ -63,7 +77,7 @@ function SpamFiltersContainer() {
                     type="blacklist"
                     dest="whitelist"
                     className="ml1"
-                    loading={loadingBlack}
+                    loading={loader.black}
                     onAction={handleAction}
                 />
             </div>
