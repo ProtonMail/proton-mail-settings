@@ -1,60 +1,36 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { c } from 'ttag';
-import {
-    Title,
-    SubTitle,
-    Bordered,
-    Button,
-    Icon,
-    LearnMore,
-    PrimaryButton,
-    useApiResult,
-    useApiWithoutResult,
-    Search,
-    useNotifications
-} from 'react-components';
+import { SubTitle, LearnMore, useApiResult, Search } from 'react-components';
 import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
+import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
 import useSpamList from './useSpamList';
 import SpamListItem from '../../components/Filters/SpamListItem';
-import AddEmailToListModal from './AddEmailToListModal';
+
+const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
+const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
+
+const getWhiteList = () => getIncomingDefaults({ Location: WHITELIST_TYPE });
+const getBlackList = () => getIncomingDefaults({ Location: BLACKLIST_TYPE });
 
 function SpamFiltersContainer() {
-    const { blackList, whiteList, loading, move, remove, search, create } = useSpamList();
-    const { createNotification } = useNotifications();
+    const { blackList, whiteList, refreshWhiteList, refreshBlackList, move, remove, search, create } = useSpamList();
+    const { result: white = {}, loading: loadingWhite } = useApiResult(getWhiteList, []);
+    const { result: black = {}, loading: loadingBlack } = useApiResult(getBlackList, []);
 
-    const [modalConfig, setModalVisibility] = useState({
-        show: false,
-        type: 'whitelist'
-    });
+    useEffect(() => {
+        refreshWhiteList(white.IncomingDefaults || []);
+    }, [white.IncomingDefaults]);
 
-    const handleSeachChange = (value = '') => {
-        search(value);
-    };
-    const handleClickMoveTo = (type, item) => async () => {
-        await move(type, item);
-        createNotification({ text: c('Success notification').t`Email moved` });
-    };
-    const handleClickRemove = (item) => async () => {
-        await remove(item);
-        createNotification({ text: c('Success notification').t`Email removed` });
-    };
+    useEffect(() => {
+        refreshBlackList(black.IncomingDefaults || []);
+    }, [black.IncomingDefaults]);
 
-    const handleClickAdd = (type) => () => {
-        setModalVisibility({
-            show: true,
-            type
-        });
-    };
-
-    const handleSubmitModal = async (type, data) => {
-        await create(type, data);
-        createNotification({ text: c('Success notification').t`Email added` });
-        setModalVisibility({ show: false, type });
-    };
-
-    const handleCloseModal = () => {
-        setModalVisibility({ show: false, type: 'whitelist' });
+    const handleSeachChange = search;
+    const handleAction = (action) => (type, data) => {
+        action === 'create' && create(type, data);
+        action === 'remove' && remove(data);
+        action === 'move' && move(type, data);
     };
 
     return (
@@ -74,29 +50,23 @@ function SpamFiltersContainer() {
                 placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}
             />
 
-            {loading ? <div className="square-color bordered-container center" aria-busy="true" /> : null}
-
-            {!loading ? (
-                <div className="flex-autogrid p1">
-                    <SpamListItem
-                        list={whiteList}
-                        type="whitelist"
-                        dest="blacklist"
-                        onClickAdd={handleClickAdd}
-                        onClickMoveTo={handleClickMoveTo}
-                        onClickRemove={handleClickRemove}
-                    />
-                    <SpamListItem
-                        list={blackList}
-                        type="blacklist"
-                        dest="whitelist"
-                        onClickAdd={handleClickAdd}
-                        onClickMoveTo={handleClickMoveTo}
-                        onClickRemove={handleClickRemove}
-                    />
-                </div>
-            ) : null}
-            <AddEmailToListModal {...modalConfig} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
+            <div className="flex-autogrid p1">
+                <SpamListItem
+                    list={whiteList}
+                    type="whitelist"
+                    dest="blacklist"
+                    loading={loadingWhite}
+                    onAction={handleAction}
+                />
+                <SpamListItem
+                    list={blackList}
+                    type="blacklist"
+                    dest="whitelist"
+                    className="ml1"
+                    loading={loadingBlack}
+                    onAction={handleAction}
+                />
+            </div>
         </>
     );
 }

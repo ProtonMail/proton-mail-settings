@@ -20,11 +20,11 @@ function AddFilterModal({ filter, type, ...props }) {
             delete filter.Simple;
         }
         simple && (filter.Simple = simple);
-        console.log({
-            filter: filter,
-            type,
-            prout: filterFactory({}, 'simple')
-        });
+        // console.log({
+        //     filter: filter,
+        //     type,
+        //     prout: filterFactory({}, 'simple')
+        // });
     }
 
     const handleSubmit = console.log;
