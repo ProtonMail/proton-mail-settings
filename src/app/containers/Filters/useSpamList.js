@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react';
-import { defer } from 'proton-shared/lib/helpers/function';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
 
+const getFilterSearch = (input = '') => {
+    const defaultFilter = (i) => i;
+    if (!input) {
+        return defaultFilter;
+    }
+    return ({ Email }) => Email.toLowerCase().includes(input.toLowerCase());
+};
+
 const useSpamList = () => {
-    const [searchQuery, setSearchQuery] = useState('');
     const [whiteList, setWhiteList] = useState([]);
     const [blackList, setBlackList] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
     const [whiteListFiltered, filterWhiteList] = useState(whiteList);
     const [blackListFiltered, filterBlackList] = useState(blackList);
 
@@ -19,17 +26,35 @@ const useSpamList = () => {
      * @param  {String} type  Type of list
      * @return {Function}       (data:<Array>, updateRawList:<Boolean:true>)
      */
-    const refreshList = (type) => (data, updateRawList = true) => {
+    const refreshList = (type) => (data, { updateRawList = true, refreshSearch = true } = {}) => {
+        const filter = getFilterSearch(searchQuery);
+
         if (type === 'blackList') {
             updateRawList && setBlackList(data);
-            return filterBlackList(data);
+            const list = !refreshSearch ? data : data.filter(filter);
+            return filterBlackList(list);
         }
 
         updateRawList && setWhiteList(data);
-        return filterWhiteList(data);
+        const list = !refreshSearch ? data : data.filter(filter);
+        return filterWhiteList(list);
     };
     const refreshWhiteList = refreshList('whitelist');
     const refreshBlackList = refreshList('blackList');
+
+    /**
+     * Search through the list for matches.
+     * Only update the filtered list as we don't want to lose the satte
+     * @param  {String} input search value
+     * @return {void}
+     */
+    const search = (input = '') => {
+        const filter = getFilterSearch(input);
+        const config = { updateRawList: false, refreshSearch: false };
+        setSearchQuery(input);
+        refreshWhiteList(whiteList.filter(filter), config);
+        refreshBlackList(blackList.filter(filter), config);
+    };
 
     /**
      * Move an email from a list to another
@@ -47,10 +72,6 @@ const useSpamList = () => {
             refreshWhiteList(whiteList.filter((item) => item.ID !== data.ID));
             refreshBlackList(blackList.concat(data));
         }
-
-        defer(() => {
-            searchQuery && search(searchQuery);
-        }, 1000);
     };
 
     /**
@@ -65,12 +86,9 @@ const useSpamList = () => {
         }
 
         if (Location === BLACKLIST_TYPE) {
+            const newBlackList = blackList.filter((item) => item.ID !== ID);
             refreshBlackList(blackList.filter((item) => item.ID !== ID));
         }
-
-        defer(() => {
-            searchQuery && search(searchQuery);
-        }, 1000);
     };
 
     /**
@@ -81,31 +99,12 @@ const useSpamList = () => {
      */
     const create = (dest, data) => {
         if (dest === 'whitelist') {
-            setWhiteList(whiteList.concat(data));
+            refreshWhiteList(whiteList.concat(data));
         }
 
         if (dest === 'blacklist') {
-            setBlackList(blackList.concat(data));
+            refreshBlackList(blackList.concat(data));
         }
-
-        defer(() => {
-            searchQuery && search(searchQuery);
-        }, 1000);
-    };
-
-    /**
-     * Search through the list for matches.
-     * Only update the filtered list as we don't want to lose the satte
-     * @param  {String} input search value
-     * @return {void}
-     */
-    const search = (input = '') => {
-        const defaultFilter = (i) => i;
-        const filter = input ? ({ Email }) => Email.toLowerCase().includes(input.toLowerCase()) : defaultFilter;
-        setSearchQuery(input);
-
-        refreshWhiteList(whiteList.filter(filter), false);
-        refreshBlackList(blackList.filter(filter), false);
     };
 
     return {
