@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { SubTitle, Bordered, Loader } from 'react-components';
+import { SubTitle, Bordered, Loader, Alert } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import AddEmailFilterListButton from './AddEmailFilterListButton';
@@ -11,7 +11,11 @@ import RemoveEmailFilteredList from './RemoveEmailFilteredList';
 function SpamListItem({ list, type, dest, onAction, className, loading }) {
     const I18N = {
         whitelist: c('Title').t('Whitelist'),
-        blacklist: c('Title').t('BlackList')
+        blacklist: c('Title').t('BlackList'),
+        empty(mode) {
+            const type = this[mode];
+            return c('Info').t(`No emails in the ${type}, click Add to add addresses to the ${type}`);
+        }
     };
 
     return (
@@ -40,10 +44,9 @@ function SpamListItem({ list, type, dest, onAction, className, loading }) {
                             </li>
                         );
                     })}
-
-                    {!list.length && <p>{c('blacklist/whitelist').t('No email found')}</p>}
                 </ul>
             )}
+            {!list.length && !loading && <Alert className="m1">{I18N.empty(type)}</Alert>}
         </Bordered>
     );
 }
