@@ -5,7 +5,7 @@ import { Modal, HeaderModal, FooterModal, ContentModal, Button } from 'react-com
 
 import AddEmailToList from '../../components/Filters/AddEmailToList';
 
-function AddEmailToListModal({ type, onSubmit, ...props }) {
+function AddEmailToListModal({ type, onSubmit, show, ...props }) {
     const I18N = {
         blacklist: c('Title').t('Add to Blacklist'),
         whitelist: c('Title').t('Add to Whitelist')
@@ -16,7 +16,7 @@ function AddEmailToListModal({ type, onSubmit, ...props }) {
     const handleChange = setEmail;
 
     return (
-        <Modal {...props}>
+        <Modal show={show} {...props}>
             <HeaderModal onClose={props.onClose}>{I18N[type]}</HeaderModal>
             <ContentModal onSubmit={handleSubmit} {...props}>
                 <AddEmailToList onChange={handleChange} />
