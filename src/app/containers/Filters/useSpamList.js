@@ -46,14 +46,30 @@ const useSpamList = () => {
      * Search through the list for matches.
      * Only update the filtered list as we don't want to lose the satte
      * @param  {String} input search value
+     * @param  {Array}  data data coming from the API
      * @return {void}
      */
-    const search = (input = '') => {
+    const search = (input = '', data) => {
         const filter = getFilterSearch(input);
         const config = { updateRawList: false, refreshSearch: false };
         setSearchQuery(input);
-        refreshWhiteList(whiteList.filter(filter), config);
-        refreshBlackList(blackList.filter(filter), config);
+
+        if (!data) {
+            refreshWhiteList(whiteList.filter(filter), config);
+            return refreshBlackList(blackList.filter(filter), config);
+        }
+
+        const { white, black } = data.reduce(
+            (acc, item) => {
+                const key = item.Location === WHITELIST_TYPE ? 'white' : 'black';
+                acc[key].push(item);
+                return acc;
+            },
+            { white: [], black: [] }
+        );
+
+        refreshWhiteList(white.filter(filter), config);
+        refreshBlackList(black.filter(filter), config);
     };
 
     /**
