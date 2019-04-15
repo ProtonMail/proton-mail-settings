@@ -4,7 +4,8 @@ import {
     DesktopNotificationSection,
     MessagesSection,
     ShortcutsSection,
-    ObserverSections
+    ObserverSections,
+    ContactsSection
 } from 'react-components';
 
 const GeneralContainer = () => {
@@ -13,6 +14,7 @@ const GeneralContainer = () => {
             <LanguageSection id="language" />
             <DesktopNotificationSection id="desktop-notifications" />
             <MessagesSection id="messages" />
+            <ContactsSection />
             <ShortcutsSection id="shortcuts" />
         </ObserverSections>
     );
