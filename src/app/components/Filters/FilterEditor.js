@@ -72,26 +72,21 @@ function FilterEditor({ filter }) {
         syncModel(value, config, newScoped);
     };
 
+    // {condition.Type.value === 'attachments' ? (
+    //     <div className="flex onmobile-flex-column mb1 w100">
+    //         <Select options={toOptions(TYPES)} className="mr1" defaultValue={condition.Type.value} />
+
+    //         <RadioContainsAttachements
+    //             comparator={condition.Comparator.value}
+    //             onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
+    //         />
+    //     </div>
+    // ) : null}
     return model.Simple.Conditions.map((condition, index) => {
         return (
             <div className="flex flex-nowrap onmobile-flex-column mb1 w100" key={`condition-${index}`}>
-                {condition.Type.value === 'attachments' ? (
-                    <div className="flex onmobile-flex-column mb1 w100">
-                        <span className="mr1">If</span>
-
-                        <Select options={toOptions(TYPES)} className="mr1" defaultValue={condition.Type.value} />
-
-                        <RadioContainsAttachements
-                            comparator={condition.Comparator.value}
-                            onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
-                        />
-                    </div>
-                ) : null}
-
                 {condition.Type.value !== 'attachments' ? (
                     <div className="flex mb1 w100">
-                        <span className="mr1">If</span>
-
                         <Select options={toOptions(TYPES)} className="mr1" defaultValue={condition.Type.value} />
 
                         <FilterConditionValues
