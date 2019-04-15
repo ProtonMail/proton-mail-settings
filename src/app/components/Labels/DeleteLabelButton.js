@@ -18,10 +18,10 @@ function DeleteLabelButton({ label, onRemove }) {
     const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(deleteLabel);
-    const { isOpen: isOpenConfirmModal, open: openConfirmModal, close: closeConfirmModal } = useModal();
+    const { isOpen, open, close } = useModal();
 
-    const handleClick = openConfirmModal;
-    const handleCloseConfirmModal = closeConfirmModal;
+    const handleClick = open;
+    const handleCloseConfirmModal = close;
 
     const handleConfirmConfirmModal = async () => {
         await request(label.ID);
@@ -30,7 +30,7 @@ function DeleteLabelButton({ label, onRemove }) {
             text: c('Filter notification').t`${label.Name} removed`
         });
         onRemove(label);
-        closeConfirmModal();
+        close();
     };
 
     const I18N = {
@@ -53,7 +53,7 @@ function DeleteLabelButton({ label, onRemove }) {
             <Button onClick={handleClick}>{c('Action').t('Delete')}</Button>
             <ConfirmModal
                 loading={loading}
-                show={isOpenConfirmModal}
+                show={isOpen}
                 onClose={handleCloseConfirmModal}
                 onConfirm={handleConfirmConfirmModal}
                 title={I18N[label.Exclusive].title}

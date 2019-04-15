@@ -4,7 +4,7 @@ import {
     Title,
     Loader,
     SubTitle,
-    LearnMore,
+    Alert,
     Paragraph,
     useLabels,
     useEventManager,
@@ -17,14 +17,14 @@ import LabelSortableList from '../../components/Labels/LabelSortableList';
 import ActionsLabelToolbar from '../../components/Labels/ActionsLabelToolbar';
 
 function LabelsContainer() {
-    const [list, loading] = useLabels();
+    const [list = [], loading] = useLabels();
     const { call } = useEventManager();
     const orderRequest = useApiWithoutResult(orderLabels);
 
-    const [labels, setLabels] = useState(list || []);
+    const [labels, setLabels] = useState(list);
 
     useEffect(() => {
-        setLabels(list || []);
+        setLabels(list);
     }, [list]);
 
     /**
@@ -49,13 +49,11 @@ function LabelsContainer() {
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
             <div className="p1 center w80">
                 <SubTitle>{c('LabelSettings').t('Folders and labels')}</SubTitle>
-                <p className="block-info-standard mt1 mb1">
+                <Alert type="standard" className="mt1 mb1" learnMore="https://protonmail.com">
                     {c('LabelSettings').t(
                         'Multiple Labels can be applied to a single message, but a message can only be in a single Folder.'
                     )}
-                    <br />
-                    <LearnMore url="https://protonmail.com" />
-                </p>
+                </Alert>
                 <nav className="mb1f flex">
                     <ActionsLabelToolbar />
                 </nav>

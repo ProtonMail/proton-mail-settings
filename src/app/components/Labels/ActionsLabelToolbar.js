@@ -32,7 +32,7 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
         const { Label } = await request(label);
         call();
         createNotification({
-            text: c('label/folder notification').t`${label.Name} created`
+            text: c('label/folder notification').t`${Label.Name} created`
         });
         onAdd(Label);
         closeModal();
@@ -62,13 +62,15 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
 
             <Select options={options} className="mlauto" />
 
-            <EditLabelModal
-                show={isOpenModal}
-                loading={loading}
-                type={type}
-                onClose={handleCloseModal}
-                onSubmit={handleSubmitModal}
-            />
+            {isOpenModal && (
+                <EditLabelModal
+                    show={isOpenModal}
+                    loading={loading}
+                    type={type}
+                    onClose={handleCloseModal}
+                    onSubmit={handleSubmitModal}
+                />
+            )}
         </>
     );
 }

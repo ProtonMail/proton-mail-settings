@@ -4,7 +4,7 @@ import { c } from 'ttag';
 import { Icon, Input } from 'react-components';
 import { LABEL_COLORS } from 'proton-shared/lib/constants';
 
-function LabelColors({ selected, onClick, className }) {
+function LabelColors({ selected, onChange, className }) {
     const getClass = (className, more) => {
         return [className, more].filter(Boolean).join(' ');
     };
@@ -13,16 +13,16 @@ function LabelColors({ selected, onClick, className }) {
             {LABEL_COLORS.map((color, i) => {
                 return (
                     <li
-                        onClick={onClick(color)}
                         key={'mykey' + i}
                         className={getClass('LabelColors-item', selected === color && 'selected')}
                         style={{ color }}
                     >
                         <Input
                             type="radio"
+                            onChange={onChange(color)}
                             value={color}
                             name="paletteColor"
-                            aria-labelledby="Color {color}"
+                            aria-labelledby={`Color ${color}`}
                             className="LabelColors-input-color"
                         />
                         <div className="LabelColors-item-mask flex">
@@ -38,7 +38,7 @@ function LabelColors({ selected, onClick, className }) {
 LabelColors.propTypes = {
     selected: PropTypes.string,
     className: PropTypes.string,
-    onClick: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired
 };
 
 LabelColors.defaultProps = {

@@ -43,7 +43,7 @@
     transition: border .1s ease-out;
 }
 
-.LabelColors-input-color {
+.LabelColors-input-color[type="radio"] {
     position: absolute;
     z-index: 1;
     top: 0;

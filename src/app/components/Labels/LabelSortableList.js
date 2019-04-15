@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { SortableContainer } from 'react-sortable-hoc';
-import { Icon } from 'react-components';
+import { Icon, Table } from 'react-components';
+import { noop } from 'proton-shared/lib/helpers/function';
 
 import LabelSortableItem from './LabelSortableItem';
 
-export default SortableContainer(({ items, onEditLabel, onRemoveLabel, onToggleChange }) => {
+function LabelSortableList({ items, onEditLabel, onRemoveLabel, onToggleChange }) {
     return (
-        <table className="pm-simple-table noborder border-collapse mt1">
+        <Table className="noborder border-collapse mt1">
             <caption className="sr-only">{c('Settings/labels').t('Labels/Folders')}</caption>
             <thead>
                 <tr>
@@ -37,6 +39,21 @@ export default SortableContainer(({ items, onEditLabel, onRemoveLabel, onToggleC
                     />
                 ))}
             </tbody>
-        </table>
+        </Table>
     );
-});
+}
+
+LabelSortableList.propTypes = {
+    items: PropTypes.array.isRequired,
+    onEditLabel: PropTypes.func,
+    onRemoveLabel: PropTypes.func,
+    onToggleChange: PropTypes.func
+};
+
+LabelSortableList.defaultProps = {
+    onEditLabel: noop,
+    onRemoveLabel: noop,
+    onToggleChange: noop
+};
+
+export default SortableContainer(LabelSortableList);
