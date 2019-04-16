@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Modal, HeaderModal, FooterModal } from 'react-components';
-import { Input, Label, Button, SubTitle, Icon, Select } from 'react-components';
+import {
+    Label,
+    Input,
+    Modal,
+    HeaderModal,
+    ContentModal,
+    FooterModal,
+    ResetButton,
+    PrimaryButton
+} from 'react-components';
+
 import filterFactory, { getI18n as getI18nFilter } from 'proton-shared/lib/filters/factory';
 import { computeFromTree } from 'proton-shared/lib/filters/sieve';
 import FilterEditor from '../../components/Filters/FilterEditor';
+import FilterEditorSieve from '../../components/Filters/FilterEditorSieve';
 
-function AddFilterModal({ filter, type, ...props }) {
+function AddFilterModal({ filter, type, mode, onClose, show, onSubmit }) {
     const [model, setModel] = useState(
         filter || {
             Name: ''
@@ -20,69 +30,24 @@ function AddFilterModal({ filter, type, ...props }) {
             delete filter.Simple;
         }
         simple && (filter.Simple = simple);
-        // console.log({
-        //     filter: filter,
-        //     type,
-        //     prout: filterFactory({}, 'simple')
-        // });
+        console.log({
+            filter: filter,
+            type,
+            mode,
+            prout: filterFactory({}, 'simple')
+        });
     }
 
     const handleSubmit = console.log;
     const handleChange = console.log;
+    const handleChangeSieve = console.log;
 
-    // const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
-    // const toOptions = (list = []) => list.map(({ label: text, value }) => ({ text, value }));
-
-    // const handleKeyUpValue = ({ scope, condition, index }) => ({ key, target }) => {
-    //     if (key !== 'Enter') {
-    //         return;
-    //     }
-
-    //     const newScoped = condition[scope].concat(target.value);
-    //     const newFilter = {
-    //         ...filter,
-    //         Simple: {
-    //             ...filter.Simple,
-    //             Conditions: filter.Simple.Conditions.map((item, i) => {
-    //                 if (i === index) {
-    //                     return {
-    //                         ...condition,
-    //                         [scope]: newScoped
-    //                     }
-    //                 }
-    //                 return item;
-    //             })
-    //         }
-    //     }
-    //     setModel(newFilter);
-    //     target.value = '';
-    // }
-
-    // const handleClickRemove = (value, { scope, condition, index }) => () => {
-    //     const newScoped = condition[scope].filter((val) => val !== value);
-    //     const newFilter = {
-    //         ...filter,
-    //         Simple: {
-    //             ...filter.Simple,
-    //             Conditions: filter.Simple.Conditions.map((item, i) => {
-    //                 if (i === index) {
-    //                     return {
-    //                         ...condition,
-    //                         [scope]: newScoped
-    //                     }
-    //                 }
-    //                 return item;
-    //             })
-    //         }
-    //     }
-    //     setModel(newFilter);
-    // }
-
+    console.log('[FILTER]', filter);
     return (
-        <Modal {...props}>
-            <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
+        <Modal onClose={onClose} onSubmit={onSubmit} show={show}>
+            <HeaderModal onClose={onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
-            <form onSubmit={handleSubmit} className="w90 center flex-item-fluid">
+            <ContentModal onReset={onClose} onSubmit={handleSubmit}>
                 <div className="flex flex-nowrap onmobile-flex-column mb1">
                     <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
                     <Input
@@ -94,12 +59,14 @@ function AddFilterModal({ filter, type, ...props }) {
                         required={true}
                     />
                 </div>
+                {model.Name && type !== 'sieve' ? <FilterEditor filter={model} /> : null}
+                {type === 'sieve' ? <FilterEditorSieve onChange={handleChangeSieve} filter={model} /> : null}
 
-                {filter ? (
-                    <pre style={{ maxHeight: '150px', overflow: 'auto' }}>{JSON.stringify(filter.Simple, null, 2)}</pre>
-                ) : null}
-                {model.Name ? <FilterEditor filter={model} /> : null}
-            </form>
+                <FooterModal>
+                    <ResetButton>{c('New Label form').t`Cancel`}</ResetButton>
+                    <PrimaryButton type="submit">{c('New Label form').t`Save`}</PrimaryButton>
+                </FooterModal>
+            </ContentModal>
         </Modal>
     );
 }

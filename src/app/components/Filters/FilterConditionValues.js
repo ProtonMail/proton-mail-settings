@@ -45,4 +45,18 @@ function FilterConditionValues({ condition, options, onClickValue, onChangeCondi
     );
 }
 
+FilterConditionValues.propTypes = {
+    condition: PropTypes.object.isRequired,
+    options: PropTypes.array.isRequired,
+    onClickValue: PropTypes.func,
+    onChangeCondition: PropTypes.func,
+    onKeyUpValue: PropTypes.func
+};
+
+FilterConditionValues.defaultProps = {
+    onClickValue: noop,
+    onChangeCondition: noop,
+    onKeyUpValue: noop
+};
+
 export default FilterConditionValues;

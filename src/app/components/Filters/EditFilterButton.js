@@ -9,15 +9,15 @@ import AddFilterModal from '../../containers/Filters/AddFilterModal';
 function EditFilterButton({ filter, mode, className, onEditFilter, textContent }) {
     const { createNotification } = useNotifications();
     // const { request, loading } = useApiWithoutResult(deleteFilter);
-    const { isOpen: isOpenModal, open: openModal, close: closeModal } = useModal();
+    const { isOpen, open, close } = useModal();
 
-    const handelClick = openModal;
-    const handleCloseModal = closeModal;
+    const handelClick = open;
+    const handleCloseModal = close;
 
     const handleSubmitModal = async () => {
-        closeConfirmModal();
+        close();
         createNotification({
-            text: c('Filter notification').t('Filter removed')
+            text: c('Filter notification').t(`Filter ${filter.Name} updated`)
         });
         onEditFilter(filter);
     };
@@ -27,19 +27,22 @@ function EditFilterButton({ filter, mode, className, onEditFilter, textContent }
             <Button className={className} onClick={handelClick}>
                 {textContent}
             </Button>
-            <AddFilterModal
-                show={isOpenModal}
-                filter={filter}
-                type={mode}
-                onClose={handleCloseModal}
-                onSubmit={handleSubmitModal}
-            />
+            {isOpen && (
+                <AddFilterModal
+                    show={isOpen}
+                    filter={filter}
+                    type={mode}
+                    onClose={handleCloseModal}
+                    onSubmit={handleSubmitModal}
+                />
+            )}
         </>
     );
 }
 
 EditFilterButton.propTypes = {
     filter: PropTypes.object.isRequired,
+    mode: PropTypes.string,
     className: PropTypes.string,
     onEditFilter: PropTypes.func
 };
