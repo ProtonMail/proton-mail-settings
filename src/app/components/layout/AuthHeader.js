@@ -1,7 +1,9 @@
 import React from 'react';
 import { c } from 'ttag';
+import { useModal, BugModal } from 'react-components';
 
 const AuthHeader = () => {
+    const { isOpen, open, close } = useModal();
     return (
         <header className="header flex flex-nowrap reset4print">
             <a href="/" className="logo-container nodecoration flex-item-centered-vert">
@@ -69,10 +71,7 @@ const AuthHeader = () => {
                         </a>
                     </li>
                     <li className="mr1">
-                        <a
-                            href="https://github.com/ProtonMail/design-system/"
-                            className="topnav-link inline-flex flex-nowrap nodecoration rounded"
-                        >
+                        <button onClick={open} className="topnav-link inline-flex flex-nowrap nodecoration rounded">
                             <svg
                                 viewBox="0 0 16 16"
                                 className="icon-16p topnav-icon mr0-5 flex-item-centered-vert fill-white"
@@ -83,7 +82,8 @@ const AuthHeader = () => {
                                 <use xlinkHref="#shape-support1" />
                             </svg>
                             Support
-                        </a>
+                        </button>
+                        <BugModal show={isOpen} onClose={close} />
                     </li>
                 </ul>
             </div>
