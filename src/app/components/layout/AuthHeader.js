@@ -1,6 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import { useModal, BugModal } from 'react-components';
+import { useModal, AuthenticatedBugModal } from 'react-components';
 
 const AuthHeader = () => {
     const { isOpen, open, close } = useModal();
@@ -83,7 +83,7 @@ const AuthHeader = () => {
                             </svg>
                             Support
                         </button>
-                        <BugModal show={isOpen} onClose={close} />
+                        <AuthenticatedBugModal show={isOpen} onClose={close} />
                     </li>
                 </ul>
             </div>
