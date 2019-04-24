@@ -14,7 +14,7 @@ const GeneralContainer = () => {
             <LanguageSection id="language" />
             <DesktopNotificationSection id="desktop-notifications" />
             <MessagesSection id="messages" />
-            <ContactsSection />
+            <ContactsSection id="contacts" />
             <ShortcutsSection id="shortcuts" />
         </ObserverSections>
     );
