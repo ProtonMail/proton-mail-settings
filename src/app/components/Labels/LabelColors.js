@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { c } from 'ttag';
 import { Icon, Input } from 'react-components';
 import { LABEL_COLORS } from 'proton-shared/lib/constants';
 

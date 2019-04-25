@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { debounce, noop } from 'proton-shared/lib/helpers/function';
-import {
-    Title,
-    SubTitle,
-    LearnMore,
-    Toggle,
-    useApiResult,
-    Paragraph,
-    useLabels,
-    useApiWithoutResult,
-    useEventManager,
-    useNotifications
-} from 'react-components';
+import { debounce } from 'proton-shared/lib/helpers/function';
+import { Toggle, useApiWithoutResult, useEventManager, useNotifications } from 'react-components';
 import { updateLabel } from 'proton-shared/lib/api/labels';
 
-const ToggleNotify = ({ onChange, label }) => {
+const ToggleNotify = ({ label }) => {
     const [toggled, setToggle] = useState(label.Notify === 1);
     const { call } = useEventManager();
     const { createNotification } = useNotifications();
@@ -40,12 +29,7 @@ const ToggleNotify = ({ onChange, label }) => {
 };
 
 ToggleNotify.propTypes = {
-    label: PropTypes.object.isRequired,
-    onChange: PropTypes.func
-};
-
-ToggleNotify.defaultProps = {
-    onChange: noop
+    label: PropTypes.object.isRequired
 };
 
 export default ToggleNotify;

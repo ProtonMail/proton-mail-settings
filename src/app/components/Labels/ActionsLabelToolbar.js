@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import {
     PrimaryButton,
-    Select,
     Icon,
     useModal,
     useApiWithoutResult,
@@ -15,7 +14,7 @@ import { noop } from 'proton-shared/lib/helpers/function';
 
 import EditLabelModal from '../../containers/Labels/modals/Edit';
 
-function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
+function ActionsLabelToolbar({ onAdd }) {
     const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(createLabel);
@@ -63,7 +62,6 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
 }
 
 ActionsLabelToolbar.propTypes = {
-    className: PropTypes.string,
     onAdd: PropTypes.func,
     onSort: PropTypes.func
 };

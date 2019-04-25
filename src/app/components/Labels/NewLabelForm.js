@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Input, Label, Row } from 'react-components';
 
 import LabelColors from './LabelColors';
 
-function NewLabelForm({ onSubmit, type, label, onChangeColor, onChangeName }) {
+function NewLabelForm({ label, onChangeColor, onChangeName }) {
     return (
         <div className="w90 center flex-item-fluid">
             <Row>
@@ -27,7 +27,6 @@ function NewLabelForm({ onSubmit, type, label, onChangeColor, onChangeName }) {
 }
 
 NewLabelForm.propTypes = {
-    type: PropTypes.string,
     label: PropTypes.object,
     onChangeName: PropTypes.func.isRequired,
     onChangeColor: PropTypes.func.isRequired

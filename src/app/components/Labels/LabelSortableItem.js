@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { c } from 'ttag';
 import { SortableElement } from 'react-sortable-hoc';
-import { debounce, noop } from 'proton-shared/lib/helpers/function';
-import { Icon, Button } from 'react-components';
+import { noop } from 'proton-shared/lib/helpers/function';
+import { Icon } from 'react-components';
 
 import ToggleNotify from './ToggleNotify';
 import EditLabelButton from './EditLabelButton';
 import DeleteLabelButton from './DeleteLabelButton';
 
 function LabelItem({ label, onEditLabel, onRemoveLabel }) {
-    const { ID, Name, Color, Exclusive, Notify } = label;
+    const { Name, Color, Exclusive } = label;
 
     return (
         <tr>
