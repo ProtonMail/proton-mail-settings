@@ -14,12 +14,12 @@ function NewLabelForm({ onSubmit, type, label, onChangeColor, onChangeName }) {
                     id="accountName"
                     value={label.Name}
                     onChange={onChangeName}
-                    placeholder={c('New Label form').t('Name')}
+                    placeholder={c('New Label form').t`Name`}
                     required
                 />
             </Row>
             <Row>
-                <Label htmlFor="accountType">{c('New Label form').t('Color')} </Label>
+                <Label htmlFor="accountType">{c('New Label form').t`Color`} </Label>
                 <LabelColors selected={label.Color} onChange={onChangeColor} />
             </Row>
         </div>

@@ -42,11 +42,11 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
         <>
             <PrimaryButton onClick={handleClickAdd('folder')}>
                 <Icon name="folder" style={{ fill: 'currentColor' }} className="mr0-5" />
-                {c('Action').t('Add Folder')}
+                {c('Action').t`Add Folder`}
             </PrimaryButton>
             <PrimaryButton onClick={handleClickAdd('label')} className="ml1">
                 <Icon name="label" style={{ fill: 'currentColor' }} className="mr0-5" />
-                {c('Action').t('Add Label')}
+                {c('Action').t`Add Label`}
             </PrimaryButton>
 
             {isOpenModal && (

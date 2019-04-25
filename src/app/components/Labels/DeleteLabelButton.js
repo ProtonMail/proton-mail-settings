@@ -35,22 +35,20 @@ function DeleteLabelButton({ label, onRemove }) {
 
     const I18N = {
         [LABEL_TYPES.LABEL]: {
-            title: c('Title').t('Delete label'),
-            content: c('Info').t(
-                'Are you sure you want to delete this label? Removing a label will not remove the messages with that label.'
-            )
+            title: c('Title').t`Delete label`,
+            content: c('Info')
+                .t`Are you sure you want to delete this label? Removing a label will not remove the messages with that label.`
         },
         [LABEL_TYPES.FOLDER]: {
-            title: c('Title').t('Delete folder'),
-            content: c('Info').t(
-                'Are you sure you want to delete this folder? Messages in the folders aren’t deleted if the folder is deleted, they can still be found in all mail. If you want to delete all messages in a folder, move them to trash.'
-            )
+            title: c('Title').t`Delete folder`,
+            content: c('Info')
+                .t`Are you sure you want to delete this folder? Messages in the folders aren’t deleted if the folder is deleted, they can still be found in all mail. If you want to delete all messages in a folder, move them to trash.`
         }
     };
 
     return (
         <>
-            <SmallButton onClick={handleClick}>{c('Action').t('Delete')}</SmallButton>
+            <SmallButton onClick={handleClick}>{c('Action').t`Delete`}</SmallButton>
             <ConfirmModal
                 loading={loading}
                 show={isOpen}

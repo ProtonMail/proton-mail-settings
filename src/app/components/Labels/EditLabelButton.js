@@ -29,7 +29,7 @@ function EditLabelButton({ label, onChange, className }) {
     return (
         <>
             <SmallButton onClick={handleClickAdd} className={className}>
-                {c('Action').t('Edit')}
+                {c('Action').t`Edit`}
             </SmallButton>
             <EditLabelModal
                 show={isOpenModal}
