@@ -38,17 +38,6 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
         closeModal();
     };
 
-    const options = [
-        {
-            value: '+Date',
-            text: 'Sort by: Creation'
-        },
-        {
-            value: 'A-Z',
-            text: 'Sort by: A-Z'
-        }
-    ];
-
     return (
         <>
             <PrimaryButton onClick={handleClickAdd('folder')}>
@@ -59,8 +48,6 @@ function ActionsLabelToolbar({ label, onAdd, onSort, className }) {
                 <Icon name="label" style={{ fill: 'currentColor' }} className="mr0-5" />
                 {c('Action').t('Add Label')}
             </PrimaryButton>
-
-            <Select options={options} className="mlauto" />
 
             {isOpenModal && (
                 <EditLabelModal

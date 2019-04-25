@@ -47,7 +47,7 @@ function LabelsContainer() {
     return (
         <>
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
-            <div className="p1 center w80">
+            <div className="p1">
                 <SubTitle>{c('LabelSettings').t('Folders and labels')}</SubTitle>
                 <Alert type="standard" className="mt1 mb1" learnMore="https://protonmail.com">
                     {c('LabelSettings').t(

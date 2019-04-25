@@ -4,7 +4,7 @@ import { c } from 'ttag';
 import {
     ConfirmModal,
     Alert,
-    Button,
+    SmallButton,
     useModal,
     useApiWithoutResult,
     useEventManager,
@@ -50,7 +50,7 @@ function DeleteLabelButton({ label, onRemove }) {
 
     return (
         <>
-            <Button onClick={handleClick}>{c('Action').t('Delete')}</Button>
+            <SmallButton onClick={handleClick}>{c('Action').t('Delete')}</SmallButton>
             <ConfirmModal
                 loading={loading}
                 show={isOpen}

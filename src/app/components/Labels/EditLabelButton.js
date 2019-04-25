@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Button, useModal, useEventManager, useApiWithoutResult, useNotifications } from 'react-components';
+import { SmallButton, useModal, useEventManager, useApiWithoutResult, useNotifications } from 'react-components';
 import { updateLabel } from 'proton-shared/lib/api/labels';
 import { noop } from 'proton-shared/lib/helpers/function';
 
@@ -28,9 +28,9 @@ function EditLabelButton({ label, onChange, className }) {
 
     return (
         <>
-            <Button onClick={handleClickAdd} className={className}>
+            <SmallButton onClick={handleClickAdd} className={className}>
                 {c('Action').t('Edit')}
-            </Button>
+            </SmallButton>
             <EditLabelModal
                 show={isOpenModal}
                 label={label}

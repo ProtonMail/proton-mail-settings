@@ -13,7 +13,7 @@ function LabelItem({ label, onEditLabel, onRemoveLabel }) {
     const { ID, Name, Color, Exclusive, Notify } = label;
 
     return (
-        <tr style={{ backgroundColor: 'white', cursor: 'move' }}>
+        <tr>
             <td>
                 <Icon name="text-justify" />
             </td>
