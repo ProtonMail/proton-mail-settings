@@ -11,6 +11,7 @@
         "start": "proton-pack dev-server $npm_package_config_publicPathFlag",
         "lint": "eslint src --ext .js --quiet --cache",
         "i18n:validate": "proton-i18n validate lint-functions",
+        "i18n:validate:context": "proton-i18n validate",
         "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
