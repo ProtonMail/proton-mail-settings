@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AppsContainer = () => {
-    return 'AppsSection';
+    return <h1>AppsSection</h1>;
 };
 
 export default AppsContainer;

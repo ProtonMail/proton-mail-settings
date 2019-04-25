@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FiltersContainer = () => {
-    return 'FiltersSection';
+    return <h1>FiltersSection</h1>;
 };
 
 export default FiltersContainer;
