@@ -10,6 +10,7 @@
         "build": "cross-env NODE_ENV=production proton-pack compile $npm_package_config_publicPathFlag",
         "start": "proton-pack dev-server $npm_package_config_publicPathFlag",
         "lint": "eslint src --ext .js --quiet --cache",
+        "i18n:validate": "proton-i18n validate lint-functions",
         "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
@@ -30,7 +31,8 @@
         "cross-env": "^5.2.0",
         "husky": "^1.3.1",
         "lint-staged": "^8.1.5",
-        "prettier": "^1.16.4"
+        "prettier": "^1.16.4",
+        "proton-i18n": "github:ProtonMail/proton-i18n#semver:^1.0.0"
     },
     "dependencies": {
         "@babel/polyfill": "^7.2.5",

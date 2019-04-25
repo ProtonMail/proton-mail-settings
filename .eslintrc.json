@@ -30,6 +30,7 @@
     "rules": {
         "react/display-name": "off",
         "react/prop-types": "warn",
-        "react-hooks/rules-of-hooks": "error"
+        "react-hooks/rules-of-hooks": "error",
+        "react/jsx-uses-react": "error"
     }
 }
