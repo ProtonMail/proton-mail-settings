@@ -23,6 +23,10 @@ const AuthLayout = ({ children, history }) => {
         };
     }, []);
 
+    /*
+        Why flex-reverse fort he sidebar + main ?
+        For keyboard navigation -> focus anchors first, then content.
+     */
     return (
         <>
             <AuthHeader />
