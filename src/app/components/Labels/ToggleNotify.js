@@ -6,6 +6,7 @@ import {
     Title,
     SubTitle,
     LearnMore,
+    Toggle,
     useApiResult,
     Paragraph,
     useLabels,
@@ -15,12 +16,11 @@ import {
 } from 'react-components';
 import { updateLabel } from 'proton-shared/lib/api/labels';
 
-import ToggleBoolean from '../ui/ToggleBoolean';
-
 const ToggleNotify = ({ onChange, label }) => {
+    const [toggled, setToggle] = useState(label.Notify === 1);
     const { call } = useEventManager();
     const { createNotification } = useNotifications();
-    const { request } = useApiWithoutResult(updateLabel);
+    const { request, loading } = useApiWithoutResult(updateLabel);
 
     const handleChange = async () => {
         const newLabel = {
@@ -28,13 +28,14 @@ const ToggleNotify = ({ onChange, label }) => {
             Notify: +!label.Notify
         };
         await request(label.ID, newLabel);
+        setToggle(newLabel.Notify === 1);
         call();
         createNotification({
             text: c('label/folder notification').t`${label.Name} updated`
         });
     };
     return (
-        <ToggleBoolean id={`item-${label.ID}`} checked={label.Notify === 1} onChange={debounce(handleChange, 300)} />
+        <Toggle id={`item-${label.ID}`} checked={toggled} onChange={debounce(handleChange, 300)} loading={loading} />
     );
 };
 
