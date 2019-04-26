@@ -233,20 +233,20 @@ export default [
         route: '/settings/apps',
         sections: [
             {
-                text: c('Title').t`ProtonMail apps`,
-                id: 'protonmail'
+                text: c('Title').t`ProtonMail Bridge`,
+                id: 'protonmail-bridge'
             },
             {
-                text: c('Title').t`ProtonMail bridge`,
-                id: 'bridge'
+                text: c('Title').t`ProtonMail Apps`,
+                id: 'protonmail-apps'
             },
             {
-                text: c('Title').t`ProtonVPN apps`,
-                id: 'protonvpn'
+                text: c('Title').t`ProtonMail Beta`,
+                id: 'protonmail-beta'
             },
             {
-                text: c('Title').t`Beta sign up`,
-                id: 'beta'
+                text: c('Title').t`ProtonVPN Apps`,
+                id: 'protonvpn-apps'
             }
         ]
     }
