@@ -26,6 +26,8 @@ dist
 .eslintcache
 .idea
 
-src/app/config.js
 env.json
 .env
+src/config.js
+src/app/config.js
+env.json
