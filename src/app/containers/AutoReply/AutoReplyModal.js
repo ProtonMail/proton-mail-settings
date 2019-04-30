@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
-import { Modal, ContentModal, Row, Label, Field, Select, Alert } from 'react-components';
+import {
+    Modal,
+    ContentModal,
+    Row,
+    Label,
+    Field,
+    Select,
+    Alert,
+    RichTextEditor,
+    Button,
+    PrimaryButton,
+    DateInput
+} from 'react-components';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
@@ -45,9 +57,17 @@ const durationOptions = [
 
 const AutoReplyModal = ({ show, onClose }) => {
     const [duration, setDuration] = useState(durations.daily);
+    const [message, setMessage] = useState('');
+    const [startDate, setStartDate] = useState(new Date());
+
+    const handleChangeStartDate = (e) => setStartDate(e.target.value);
 
     const handleChangeDuration = (e) => {
         setDuration(e.target.value);
+    };
+
+    const handleChangeMessage = (message) => {
+        setMessage(message);
     };
 
     return (
@@ -60,6 +80,36 @@ const AutoReplyModal = ({ show, onClose }) => {
                     </Field>
                 </Row>
                 <Alert>{alerts[duration]}</Alert>
+
+                <Row>
+                    <Label>{c('Label').t`Start date`}</Label>
+                    <Field>
+                        <DateInput defaultDate={startDate} onSelect={setStartDate} format="DD MM YYYY" />
+                    </Field>
+                </Row>
+
+                <Row>
+                    <Label>{c('Label').t`Start date`}</Label>
+                    <Field>
+                        <Select
+                            options={[
+                                { text: '11:00', value: '11:00' },
+                                {
+                                    text: '12:00',
+                                    value: '12:00'
+                                }
+                            ]}
+                            onChange={handleChangeStartDate}
+                        />
+                    </Field>
+                </Row>
+
+                <RichTextEditor value={message} onChange={handleChangeMessage} />
+
+                <Row className="mt1 flex-spacebetween">
+                    <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
+                    <PrimaryButton>{c('Action').t`Create`}</PrimaryButton>
+                </Row>
             </ContentModal>
         </Modal>
     );
