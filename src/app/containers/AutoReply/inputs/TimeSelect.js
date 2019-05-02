@@ -14,17 +14,19 @@ const timeInputOptions = range(0, 23).reduce((options, hour) => {
     ];
 }, []);
 
-const TimeInput = ({ onChange, ...rest }) => {
+const TimeInput = ({ onChange, value, ...rest }) => {
     const handleChange = (e) => onChange(e.target.value);
 
-    return <Select id="startTime" options={timeInputOptions} onChange={handleChange} {...rest} />;
+    return <Select {...rest} options={timeInputOptions} value={value} onChange={handleChange} />;
 };
 
 TimeInput.propTypes = {
+    value: PropTypes.string,
     onChange: PropTypes.func
 };
 
 TimeInput.defaultValues = {
+    value: '00:00',
     onChange: noop
 };
 

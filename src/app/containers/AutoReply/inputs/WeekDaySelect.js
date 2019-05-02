@@ -14,19 +14,19 @@ const weekdaysOptions = [
     { text: c('Option').t`Sunday`, value: 'sunday' }
 ];
 
-const WeekDayInput = ({ onChange, ...rest }) => {
-    const handleChange = (e) => {
-        onChange(e.target.value);
-    };
+const WeekDayInput = ({ onChange, value, ...rest }) => {
+    const handleChange = (e) => onChange(e.target.value);
 
-    return <Select id="startWeekday" options={weekdaysOptions} onChange={handleChange} {...rest} />;
+    return <Select {...rest} options={weekdaysOptions} onChange={handleChange} value={value} />;
 };
 
 WeekDayInput.propTypes = {
+    value: PropTypes.string,
     onChange: PropTypes.func
 };
 
 WeekDayInput.defaultValues = {
+    value: '',
     onChange: noop
 };
 

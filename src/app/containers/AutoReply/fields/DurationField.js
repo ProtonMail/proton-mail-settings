@@ -1,8 +1,7 @@
 import React from 'react';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import { noop } from 'react-components/node_modules/proton-shared/lib/helpers/function';
-import { Select } from 'react-components';
+import { Select, Label, Row, Field } from 'react-components';
 
 const durationOptions = [
     {
@@ -27,18 +26,22 @@ const durationOptions = [
     }
 ];
 
-const DurationInput = ({ onChange, ...rest }) => {
+const DurationField = ({ value, onChange }) => {
     const handleChange = (e) => onChange(e.target.value);
 
-    return <Select onChange={handleChange} options={durationOptions} {...rest} />;
+    return (
+        <Row className="flex-spacebetween">
+            <Label htmlFor="duration">{c('Label').t`Duration`}</Label>
+            <Field>
+                <Select id="duration" value={value} onChange={handleChange} options={durationOptions} />
+            </Field>
+        </Row>
+    );
 };
 
-DurationInput.propTypes = {
-    onChange: PropTypes.func
+DurationField.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired
 };
 
-DurationInput.defaultProps = {
-    onChange: noop
-};
-
-export default DurationInput;
+export default DurationField;
