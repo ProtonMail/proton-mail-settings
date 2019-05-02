@@ -39,10 +39,7 @@ const daysOfMonth = [
 ];
 
 const MonthDayInput = ({ onChange, ...rest }) => {
-    const handleChange = (e) => {
-        onChange(e.target.value);
-    };
-
+    const handleChange = (e) => onChange(e.target.value);
     return <Select id="startDayOfMonth" options={daysOfMonth} onChange={handleChange} {...rest} />;
 };
 

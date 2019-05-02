@@ -11,8 +11,7 @@ import {
     RichTextEditor,
     Button,
     PrimaryButton,
-    DateInput,
-    Checkbox
+    DateInput
 } from 'react-components';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
@@ -21,6 +20,7 @@ import MonthDayInput from './inputs/MonthDayInput';
 import WeekDayCheckboxGroup from './inputs/WeekDaysCheckboxGroup';
 import WeekDayInput from './inputs/WeekDayInput';
 import TimeZoneInput from './inputs/TimeZoneInput';
+import DurationInput from './inputs/DurationInput';
 
 const durations = {
     fixed: 'fixed',
@@ -39,29 +39,6 @@ const alerts = {
     [durations.permanent]: c('AutoReply').t`Auto-reply is active until you turn it off.`
 };
 
-const durationOptions = [
-    {
-        text: c('Option').t`Fixed duration`,
-        value: 'fixed'
-    },
-    {
-        text: c('Option').t`Repeat daily`,
-        value: 'daily'
-    },
-    {
-        text: c('Option').t`Repeat weekly`,
-        value: 'weekly'
-    },
-    {
-        text: c('Option').t`Repeat monthly`,
-        value: 'monthly'
-    },
-    {
-        text: c('Option').t`Permanent`,
-        value: 'permanent'
-    }
-];
-
 const AutoReplyModal = ({ show, onClose }) => {
     const [duration, setDuration] = useState(durations.fixed);
     const [startDate, setStartDate] = useState(new Date());
@@ -78,14 +55,7 @@ const AutoReplyModal = ({ show, onClose }) => {
     const handleChangeStartTime = (value) => console.log(value);
     const handleChangeEndTime = (value) => console.log(value);
     const handleChangeTimezone = (value) => console.log(value);
-
-    const handleChangeDuration = (e) => {
-        setDuration(e.target.value);
-    };
-
-    const handleChangeMessage = (message) => {
-        setMessage(message);
-    };
+    const handleChangeMessage = (value) => setMessage(value);
 
     return (
         <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={onClose}>
@@ -93,12 +63,7 @@ const AutoReplyModal = ({ show, onClose }) => {
                 <Row className="flex-spacebetween">
                     <Label htmlFor="duration">{c('Label').t`Duration`}</Label>
                     <Field>
-                        <Select
-                            id="duration"
-                            value={duration}
-                            onChange={handleChangeDuration}
-                            options={durationOptions}
-                        />
+                        <DurationInput id="duration" value={duration} onChange={setDuration} />
                     </Field>
                 </Row>
 
