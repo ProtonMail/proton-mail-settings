@@ -32,7 +32,7 @@ function AddCondtionValue({ onAdd, className }) {
                 placeholder={c('Info').t`Text or pattern`}
                 required
             />
-            <Button onClick={handleClick} className="ml1">{c('Action').t`Add`}</Button>
+            <Button disabled={!state} onClick={handleClick} className="ml1">{c('Action').t`Add`}</Button>
         </Row>
     );
 }

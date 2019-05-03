@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton } from 'react-components';
-import filterFactory, { getI18n as getI18nFilter } from 'proton-shared/lib/filters/factory';
+import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
+import filterFactory, { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
 import { computeFromTree } from 'proton-shared/lib/filters/sieve';
 
 import FilterConditionValues from './FilterConditionValues';
@@ -37,15 +37,25 @@ function FilterEditor({ filter }) {
         setModel(newFilter);
     }
 
+    const handleAddNewCondition = () => {
+        setModel({
+            ...model,
+            Simple: {
+                ...model.Simple,
+                Conditions: model.Simple.Conditions.concat(newCondition())
+            }
+        });
+    };
+
     const handleRemoveCondition = (index) => () => {
+        const Conditions = model.Simple.Conditions.filter((item, i) => i !== index);
         const newFilter = {
             ...model,
             Simple: {
                 ...model.Simple,
-                Conditions: model.Simple.Conditions.filter((item, i) => i !== index)
+                Conditions: Conditions.length ? Conditions : [newCondition()]
             }
         };
-        console.log('NewFiler', newFilter);
         setModel(newFilter);
     };
 
@@ -54,10 +64,9 @@ function FilterEditor({ filter }) {
         syncModel(value, config, newComparator);
     };
 
-    const handleChangeCondition = (config) => (e) => {
-        console.log(e);
-        // const newComparator = COMPARATORS.find((item) => item.value === value);
-        // syncModel(value, config, newComparator);
+    const handleChangeCondition = (config) => ({ target }) => {
+        const newComparator = COMPARATORS.find((item) => item.value === target.value);
+        syncModel(target.value, config, newComparator);
     };
 
     const handleDeleteValue = (config) => (value) => {
@@ -80,46 +89,85 @@ function FilterEditor({ filter }) {
         syncModel(value, config, newScoped);
     };
 
-    return model.Simple.Conditions.map((condition, index) => {
-        return (
-            <Row key={`condition-${index}`}>
-                {condition.Type.value === 'attachments' ? (
-                    <>
-                        <Select options={toOptions(TYPES)} className="mr1" defaultValue={condition.Type.value} />
+    const handleInputName = ({ target }) => {
+        console.log(target.value);
+        setModel({
+            ...model,
+            Name: target.value
+        });
+    };
 
-                        <RadioContainsAttachements
-                            comparator={condition.Comparator.value}
-                            onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
-                        />
-                    </>
-                ) : null}
-
-                {condition.Type.value !== 'attachments' ? (
-                    <>
-                        <Label>
-                            {c('Label').t`Conditions`}
-                            <SmallButton onClick={handleRemoveCondition(index)}>
-                                <Icon name="trash" />
-                            </SmallButton>
-                        </Label>
-
-                        <div className="w100">
-                            <Select options={toOptions(TYPES)} className="mb1" defaultValue={condition.Type.value} />
-
-                            <FilterConditionValues
-                                options={toOptions(COMPARATORS)}
-                                condition={condition}
-                                onChangeCondition={handleChangeCondition({ scope: 'Comparator', condition, index })}
-                                onDelete={handleDeleteValue({ scope: 'Values', condition, index })}
-                                onAdd={handleAddValue({ scope: 'Values', condition, index })}
-                                onEdit={handleEditValue({ scope: 'Values', condition, index })}
-                            />
-                        </div>
-                    </>
-                ) : null}
+    return (
+        <>
+            <Row>
+                <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
+                <Input
+                    id="accountName"
+                    type="text"
+                    value={model.Name}
+                    onInput={handleInputName}
+                    placeholder={c('New Label form').t('Name')}
+                    required
+                />
             </Row>
-        );
-    });
+
+            {model.Simple.Conditions.map((condition, index) => {
+                return (
+                    <Row key={`condition-${index}`}>
+                        {condition.Type.value === 'attachments' ? (
+                            <>
+                                <Select
+                                    options={toOptions(TYPES)}
+                                    className="mr1"
+                                    defaultValue={condition.Type.value}
+                                />
+
+                                <RadioContainsAttachements
+                                    comparator={condition.Comparator.value}
+                                    onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
+                                />
+                            </>
+                        ) : null}
+
+                        {condition.Type.value !== 'attachments' ? (
+                            <>
+                                <Label>
+                                    {c('Label').t`Conditions`}
+                                    <SmallButton onClick={handleRemoveCondition(index)}>
+                                        <Icon name="trash" />
+                                    </SmallButton>
+                                </Label>
+
+                                <div className="w100">
+                                    <Select
+                                        options={toOptions(TYPES)}
+                                        className="mb1"
+                                        defaultValue={condition.Type.value}
+                                    />
+
+                                    <FilterConditionValues
+                                        options={toOptions(COMPARATORS)}
+                                        condition={condition}
+                                        onChangeCondition={handleChangeCondition({
+                                            scope: 'Comparator',
+                                            condition,
+                                            index
+                                        })}
+                                        onDelete={handleDeleteValue({ scope: 'Values', condition, index })}
+                                        onAdd={handleAddValue({ scope: 'Values', condition, index })}
+                                        onEdit={handleEditValue({ scope: 'Values', condition, index })}
+                                    />
+                                </div>
+                            </>
+                        ) : null}
+                    </Row>
+                );
+            })}
+
+            <PrimaryButton className="ml50" onClick={handleAddNewCondition}>{c('Action')
+                .t`Add a new condition`}</PrimaryButton>
+        </>
+    );
 }
 
 export default FilterEditor;
