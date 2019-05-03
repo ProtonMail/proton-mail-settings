@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Search, useApiWithoutResult } from 'react-components';
+import { SearchInput, useApiWithoutResult } from 'react-components';
 import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 import { noop, debounce } from 'proton-shared/lib/helpers/function';
 
@@ -15,7 +15,7 @@ function SearchEmailIntoList({ className, onBeforeRequest, onAfterRequest }) {
     };
 
     return (
-        <Search
+        <SearchInput
             className="w100"
             onChange={debounce(handleSeachChange, 300)}
             placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}

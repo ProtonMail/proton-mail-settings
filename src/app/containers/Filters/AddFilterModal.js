@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Modal, HeaderModal, FooterModal } from 'react-components';
-import { Input, Label, Button, SubTitle, Icon, Select } from 'react-components';
+import { Input, Label, Button, SubTitle, Icon, Select, Row } from 'react-components';
 import filterFactory, { getI18n as getI18nFilter } from 'proton-shared/lib/filters/factory';
 import { computeFromTree } from 'proton-shared/lib/filters/sieve';
 import FilterEditor from '../../components/Filters/FilterEditor';
@@ -82,8 +82,15 @@ function AddFilterModal({ filter, type, ...props }) {
         <Modal {...props}>
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
-            <form onSubmit={handleSubmit} className="w90 center flex-item-fluid">
-                <div className="flex flex-nowrap onmobile-flex-column mb1">
+            <form
+                onSubmit={handleSubmit}
+                className="w90 center flex-item-fluid"
+                style={{
+                    minHeight: '60vh',
+                    overflowY: 'auto'
+                }}
+            >
+                <Row>
                     <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
                     <Input
                         id="accountName"
@@ -93,7 +100,7 @@ function AddFilterModal({ filter, type, ...props }) {
                         placeholder={c('New Label form').t('Name')}
                         required={true}
                     />
-                </div>
+                </Row>
 
                 {filter ? (
                     <pre style={{ maxHeight: '150px', overflow: 'auto' }}>{JSON.stringify(filter.Simple, null, 2)}</pre>

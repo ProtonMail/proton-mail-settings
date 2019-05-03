@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Button, Icon, useApiWithoutResult, useNotifications } from 'react-components';
+import { SmallButton, Icon, useApiWithoutResult, useNotifications } from 'react-components';
 import { deleteIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 import { noop } from 'proton-shared/lib/helpers/function';
 
@@ -25,9 +25,9 @@ function RemoveEmailFilteredList({ type, email, className, onClick }) {
 
     return (
         <>
-            <Button className={className} onClick={handleClick}>
+            <SmallButton className={className} onClick={handleClick}>
                 <Icon name="close" />
-            </Button>
+            </SmallButton>
         </>
     );
 }
