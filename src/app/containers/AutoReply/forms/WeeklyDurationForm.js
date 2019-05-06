@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-components';
 import { c } from 'ttag';
@@ -8,21 +8,18 @@ import TimeZoneField from '../fields/TimeZoneField';
 import StartDayOfWeekField from '../fields/StartDayOfWeekField';
 import EndDayOfWeekField from '../fields/EndDayOfWeekField';
 
-export const initialModel = {
-    startWeekday: 'monday',
-    startTime: '00:00',
-    endWeekday: 'wednesday',
-    endTime: '01:00',
-    timeZone: 'europe/vilnius'
-};
+const HOUR = 60 * 60 * 1000;
 
 const WeeklyDurationForm = ({ model, updateModel }) => {
+    const startWeekday = model.startDate / HOUR;
+    const endWeekday = model.endDate / HOUR;
+    const handleChangeWeekday = (key) => (value) => updateModel(key)(value * HOUR);
     return (
         <>
             <Alert>{c('AutoReply').t`Auto-reply is active each week between the selected start and end time.`}</Alert>
-            <StartDayOfWeekField value={model.startWeekday} onChange={updateModel('startWeekday')} />
+            <StartDayOfWeekField value={startWeekday} onChange={handleChangeWeekday('startDate')} />
             <StartTimeField value={model.startTime} onChange={updateModel('startTime')} />
-            <EndDayOfWeekField value={model.endWeekday} onChange={updateModel('endWeekday')} />
+            <EndDayOfWeekField value={endWeekday} onChange={handleChangeWeekday('endDate')} />
             <EndTimeField value={model.endTime} onChange={updateModel('endTime')} />
             <TimeZoneField value={model.timeZone} onChange={updateModel('timeZone')} />
         </>
@@ -30,13 +27,7 @@ const WeeklyDurationForm = ({ model, updateModel }) => {
 };
 
 WeeklyDurationForm.propTypes = {
-    model: PropTypes.shape({
-        startWeekday: PropTypes.string,
-        startTime: PropTypes.string,
-        endWeekday: PropTypes.string,
-        endTime: PropTypes.string,
-        timeZone: PropTypes.string
-    }).isRequired,
+    model: PropTypes.any.isRequired,
     updateModel: PropTypes.func.isRequired
 };
 

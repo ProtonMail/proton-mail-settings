@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert } from 'react-components';
 import { c } from 'ttag';
@@ -8,21 +8,18 @@ import TimeZoneField from '../fields/TimeZoneField';
 import StartDayOfMonthField from '../fields/StartDayOfMonthField';
 import EndDayOfMonthField from '../fields/EndDayOfMonthField';
 
-export const initialModel = {
-    startDayOfMonth: 1,
-    startTime: '00:00',
-    endDayOfMonth: 3,
-    endTime: '01:00',
-    timeZone: 'europe/vilnius'
-};
+const DAY = 24 * 60 * 60 * 1000;
 
 const MonthlyDurationForm = ({ model, updateModel }) => {
+    const startDayOfMonth = model.startDate / DAY;
+    const endDayOfMonth = model.endDate / DAY;
+    const handleChangeDayOfMonth = (key) => (value) => updateModel(key)(value * DAY);
     return (
         <>
             <Alert>{c('AutoReply').t`Auto-reply is active each month between the selected start and end time.`}</Alert>
-            <StartDayOfMonthField value={model.startDayOfMonth} onChange={updateModel('startDayOfMonth')} />
+            <StartDayOfMonthField value={startDayOfMonth} onChange={handleChangeDayOfMonth('startDate')} />
             <StartTimeField value={model.startTime} onChange={updateModel('startTime')} />
-            <EndDayOfMonthField value={model.endDayOfMonth} onChange={updateModel('endDayOfMonth')} />
+            <EndDayOfMonthField value={endDayOfMonth} onChange={handleChangeDayOfMonth('endDate')} />
             <EndTimeField value={model.endTime} onChange={updateModel('endTime')} />
             <TimeZoneField value={model.timeZone} onChange={updateModel('timeZone')} />
         </>
@@ -30,13 +27,7 @@ const MonthlyDurationForm = ({ model, updateModel }) => {
 };
 
 MonthlyDurationForm.propTypes = {
-    model: PropTypes.shape({
-        startDayOfMonth: PropTypes.number,
-        startTime: PropTypes.string,
-        endDayOfMonth: PropTypes.number,
-        endTime: PropTypes.string,
-        timeZone: PropTypes.string
-    }).isRequired,
+    model: PropTypes.any.isRequired,
     updateModel: PropTypes.func.isRequired
 };
 

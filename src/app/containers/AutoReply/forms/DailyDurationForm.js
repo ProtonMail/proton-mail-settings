@@ -7,13 +7,6 @@ import EndTimeField from '../fields/EndTimeField';
 import TimeZoneField from '../fields/TimeZoneField';
 import DaysOfWeekField from '../fields/DaysOfWeekField';
 
-export const initialModel = {
-    daysOfWeek: {},
-    startTime: '00:00',
-    endTime: '01:00',
-    timeZone: 'europe/vilnius'
-};
-
 const DailyDurationForm = ({ model, updateModel }) => {
     return (
         <>
@@ -28,20 +21,7 @@ const DailyDurationForm = ({ model, updateModel }) => {
 };
 
 DailyDurationForm.propTypes = {
-    model: PropTypes.shape({
-        daysOfWeek: PropTypes.shape({
-            monday: PropTypes.bool,
-            tuesday: PropTypes.bool,
-            wednesday: PropTypes.bool,
-            thursday: PropTypes.bool,
-            friday: PropTypes.bool,
-            saturday: PropTypes.bool,
-            sunday: PropTypes.bool
-        }),
-        startTime: PropTypes.string,
-        endTime: PropTypes.string,
-        timeZone: PropTypes.string
-    }).isRequired,
+    model: PropTypes.any.isRequired,
     updateModel: PropTypes.func.isRequired
 };
 

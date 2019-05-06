@@ -8,14 +8,6 @@ import EndDateField from '../fields/EndDateField';
 import EndTimeField from '../fields/EndTimeField';
 import TimeZoneField from '../fields/TimeZoneField';
 
-export const initialModel = {
-    startDate: new Date(),
-    startTime: '00:00',
-    endDate: new Date(),
-    endTime: '01:00',
-    timeZone: 'europe/vilnius'
-};
-
 const FixedDurationForm = ({ model, updateModel }) => {
     return (
         <>
@@ -30,13 +22,7 @@ const FixedDurationForm = ({ model, updateModel }) => {
 };
 
 FixedDurationForm.propTypes = {
-    model: PropTypes.shape({
-        startDate: PropTypes.instanceOf(Date),
-        startTime: PropTypes.string,
-        endDate: PropTypes.instanceOf(Date),
-        endTime: PropTypes.string,
-        timeZone: PropTypes.string
-    }).isRequired,
+    model: PropTypes.any.isRequired,
     updateModel: PropTypes.func.isRequired
 };
 

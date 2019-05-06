@@ -4,29 +4,31 @@ import PropTypes from 'prop-types';
 import { Select } from 'react-components';
 import { noop } from 'react-components/node_modules/proton-shared/lib/helpers/function';
 
-const timeInputOptions = range(0, 23).reduce((options, hour) => {
+const HOUR = 60 * 60 * 1000;
+
+const timeInputOptions = range(0, 24).reduce((options, hour) => {
     const formattedHour = hour < 10 ? `0${hour}` : hour;
-    const hourAndMinutes = `${formattedHour}:00`;
+    const milliseconds = hour * HOUR;
     return [
         ...options,
-        { text: hourAndMinutes, value: hourAndMinutes },
-        { text: hourAndMinutes, value: hourAndMinutes }
+        { text: `${formattedHour}:00`, value: milliseconds },
+        { text: `${formattedHour}:30`, value: milliseconds + HOUR / 2 }
     ];
 }, []);
 
 const TimeInput = ({ onChange, value, ...rest }) => {
-    const handleChange = (e) => onChange(e.target.value);
+    const handleChange = (e) => onChange(parseInt(e.target.value, 10));
 
     return <Select {...rest} options={timeInputOptions} value={value} onChange={handleChange} />;
 };
 
 TimeInput.propTypes = {
-    value: PropTypes.string,
+    value: PropTypes.number,
     onChange: PropTypes.func
 };
 
 TimeInput.defaultValues = {
-    value: '00:00',
+    value: 0,
     onChange: noop
 };
 

@@ -1,15 +1,27 @@
 import * as React from 'react';
 import { c } from 'ttag';
-import { Title, SubTitle, Alert, Row, Label, Info, Field, PrimaryButton, useModal } from 'react-components';
+import {
+    Title,
+    SubTitle,
+    Alert,
+    Row,
+    Label,
+    Info,
+    Field,
+    PrimaryButton,
+    useModal,
+    useMailSettings
+} from 'react-components';
 import AutoReplyToggle from './AutoReplyToggle';
 import AutoReplyModal from './AutoReplyModal';
 
 const Container = () => {
     const { close, isOpen, open } = useModal();
+    const [{ AutoResponder }] = useMailSettings();
 
     return (
         <>
-            <AutoReplyModal onClose={close} show={isOpen} />
+            <AutoReplyModal onClose={close} show={isOpen} onSubmit={console.log} />
             <Title>{c('AutoReply').t`Auto-Reply`}</Title>
             <div className="p1">
                 <SubTitle>{c('AutoReply').t`Auto Reply`}</SubTitle>
@@ -27,7 +39,7 @@ const Container = () => {
                         />
                     </Label>
                     <Field>
-                        <AutoReplyToggle id="autoReplyToggle" />
+                        <AutoReplyToggle id="autoReplyToggle" enabled={AutoResponder.IsEnabled} />
                     </Field>
                 </Row>
 

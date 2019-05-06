@@ -39,37 +39,37 @@ msgctxt "Placeholder"
 msgid "yourdomain.com"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:96
+#: node_modules/react-components/containers/support/BugModal.js:98
 msgctxt "Placeholder"
 msgid "Proton username"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:108
+#: node_modules/react-components/containers/support/BugModal.js:110
 msgctxt "Placeholder"
 msgid "Please make sure to give us a way to contact you"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:132
+#: node_modules/react-components/containers/support/BugModal.js:134
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:161
+#: node_modules/react-components/containers/support/BugModal.js:163
 msgctxt "Placeholder"
 msgid "OS name"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:172
+#: node_modules/react-components/containers/support/BugModal.js:174
 msgctxt "Placeholder"
 msgid "OS version"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:183
+#: node_modules/react-components/containers/support/BugModal.js:185
 msgctxt "Placeholder"
 msgid "Browser name"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:196
 msgctxt "Placeholder"
 msgid "Browser version"
 msgstr ""
@@ -205,7 +205,7 @@ msgstr ""
 #: node_modules/react-components/containers/members/EditMemberModal.js:80
 #: node_modules/react-components/containers/members/MemberModal.js:117
 #: node_modules/react-components/containers/payments/DonateModal.js:56
-#: node_modules/react-components/containers/support/BugModal.js:202
+#: node_modules/react-components/containers/support/BugModal.js:204
 msgctxt "Action"
 msgid "Cancel"
 msgstr ""
@@ -217,7 +217,7 @@ msgid "Confirm"
 msgstr ""
 
 #: node_modules/react-components/components/modal/Input.js:82
-#: node_modules/react-components/containers/support/BugModal.js:203
+#: node_modules/react-components/containers/support/BugModal.js:205
 msgctxt "Action"
 msgid "Submit"
 msgstr ""
@@ -289,20 +289,20 @@ msgctxt "Action"
 msgid "Catch all"
 msgstr ""
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:38
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:40
 #: node_modules/react-components/containers/logs/LogsSection.js:110
-#: node_modules/react-components/containers/products/ProtonMailClients.js:39
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:39
+#: node_modules/react-components/containers/products/ProtonMailApps.js:39
 msgctxt "Action"
 msgid "Download"
 msgstr ""
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:41
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
 msgctxt "Action"
 msgid "View"
 msgstr ""
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:52
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:51
 #: node_modules/react-components/containers/invoices/PayInvoiceModal.js:69
 msgctxt "Action"
 msgid "Pay"
@@ -383,17 +383,18 @@ msgctxt "Action"
 msgid "Add screenshot(s)"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:151
 msgctxt "Action"
 msgid "Hide info"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:151
 msgctxt "Action"
 msgid "Show info"
 msgstr ""
 
 #: node_modules/react-components/containers/addresses/PmMeButton.js:12
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:18
 msgctxt "Action"
 msgid "Activate"
 msgstr ""
@@ -542,7 +543,7 @@ msgctxt "Title"
 msgid "Catch-all"
 msgstr ""
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:80
+#: node_modules/react-components/containers/addresses/AddressesSection.js:94
 #: src/app/pages.js:98
 msgctxt "Title"
 msgid "Addresses"
@@ -582,7 +583,7 @@ msgctxt "Title"
 msgid "Desktop notifications"
 msgstr ""
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:21
+#: node_modules/react-components/containers/messages/MessagesSection.js:17
 #: src/app/pages.js:131
 msgctxt "Title"
 msgid "Messages"
@@ -610,12 +611,13 @@ msgctxt "Title"
 msgid "Appearance"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:73
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:65
 #: src/app/pages.js:154
 msgctxt "Title"
 msgid "Layouts"
 msgstr ""
 
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:35
 #: src/app/pages.js:158
 msgctxt "Title"
 msgid "Toolbars"
@@ -700,22 +702,22 @@ msgstr ""
 
 #: src/app/pages.js:236
 msgctxt "Title"
-msgid "ProtonMail apps"
+msgid "ProtonMail Bridge"
 msgstr ""
 
 #: src/app/pages.js:240
 msgctxt "Title"
-msgid "ProtonMail bridge"
+msgid "ProtonMail Apps"
 msgstr ""
 
 #: src/app/pages.js:244
 msgctxt "Title"
-msgid "ProtonVPN apps"
+msgid "ProtonMail Beta"
 msgstr ""
 
 #: src/app/pages.js:248
 msgctxt "Title"
-msgid "Beta sign up"
+msgid "ProtonVPN Apps"
 msgstr ""
 
 #: node_modules/react-components/components/sidebar/SubSidebar.js:20
@@ -788,17 +790,12 @@ msgctxt "Title"
 msgid "Delete domain"
 msgstr ""
 
-#: node_modules/react-components/containers/products/DownloadsSection.js:10
-msgctxt "Title"
-msgid "Downloads"
-msgstr ""
-
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:37
 msgctxt "Title"
 msgid "Add invoice details"
 msgstr ""
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:77
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:76
 msgctxt "Title"
 msgid "Preview invoice"
 msgstr ""
@@ -930,7 +927,7 @@ msgctxt "Title"
 msgid "Authentication Logs"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:83
+#: node_modules/react-components/containers/support/BugModal.js:85
 msgctxt "Title"
 msgid "Report bug"
 msgstr ""
@@ -1007,10 +1004,9 @@ msgid ""
 msgstr ""
 
 #: node_modules/react-components/containers/appearance/ThemesSection.js:9
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:74
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:66
 #: node_modules/react-components/containers/organization/OrganizationSection.js:44
-#: node_modules/react-components/containers/products/ProtonMailClients.js:24
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:24
+#: node_modules/react-components/containers/products/ProtonMailApps.js:24
 msgctxt "Info"
 msgid "Lorem ipsum"
 msgstr ""
@@ -1255,17 +1251,17 @@ msgctxt "Info"
 msgid "Screenshot(s) attached"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:85
+#: node_modules/react-components/containers/support/BugModal.js:87
 msgctxt "Info"
 msgid "Refreshing the page or ${ link } will automatically resolve most issues."
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:200
+#: node_modules/react-components/containers/support/BugModal.js:202
 msgctxt "Info"
 msgid "Contact us at security@protonmail.com for critical security issues."
 msgstr ""
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:119
+#: node_modules/react-components/containers/addresses/AddressesSection.js:128
 msgctxt "Info"
 msgid "addresses used"
 msgstr ""
@@ -1369,9 +1365,53 @@ msgctxt "Info"
 msgid "Your subscription is managed by Mozilla. Please contact Mozilla support."
 msgstr ""
 
+#: node_modules/react-components/containers/account/NewsSection.js:29
+msgctxt "Info"
+msgid ""
+"To keep up with the latest development at Protonmail, you can subscribe to "
+"our various emails and visit our blog from time to time."
+msgstr ""
+
 #: node_modules/react-components/containers/account/UsernameSection.js:18
 msgctxt "Info"
 msgid "To manage your display name and signature, go to ${ link }."
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:11
+msgctxt "Info"
+msgid "This feature is only available for paid users."
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:16
+msgctxt "Info"
+msgid ""
+"ProtonMail Supports IMAP/SMTP via the ProtonMail Bridge application. "
+"Thunderbird, Microsoft Outlook, and Apple Mail are officially supported on "
+"both Windows and MacOS."
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
+msgctxt "Info"
+msgid ""
+"Go to the download page to get ProtonVPN. You can use you ProtonMail "
+"credentials to the log into the ProtonVPN native clients."
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:14
+msgctxt "Info"
+msgid ""
+"To connect to ProtonVPN with third party clients (e.g. Tunnelblick on MacOS "
+"or OopenVPN on GNU/Linux), you need specific credentials. to get these "
+"credentials, go to the Account settings when logged in at ProtonVPN."
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
+msgctxt "Info"
+msgid ""
+"Participating to beta programs gives you the opportunity to test new "
+"features and improvements beforee they get released to the general public. "
+"It offers a chance to have an active role in shaping the quality of our "
+"services"
 msgstr ""
 
 #: src/app/components/Labels/NewLabelForm.js:12
@@ -1431,7 +1471,7 @@ msgctxt "Link"
 msgid "Manage"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:61
+#: node_modules/react-components/containers/support/BugModal.js:64
 msgctxt "Link"
 msgid "clearing your browser cache"
 msgstr ""
@@ -1449,6 +1489,16 @@ msgstr ""
 #: node_modules/react-components/containers/account/UsernameSection.js:8
 msgctxt "Link"
 msgid "identity settings"
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:12
+msgctxt "Link"
+msgid "Download page"
+msgstr ""
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:17
+msgctxt "Link"
+msgid "ProtonVPN login"
 msgstr ""
 
 #: src/app/containers/Labels/modals/Edit.js:14
@@ -1491,6 +1541,11 @@ msgstr ""
 #: src/app/containers/Labels/Container.js:70
 msgctxt "LabelSettings"
 msgid "No labels/folders available"
+msgstr ""
+
+#: src/app/containers/AutoReply/Container.js:6
+msgctxt "AutoReply"
+msgid "Auto-Reply"
 msgstr ""
 
 #: node_modules/react-components/components/input/EmailInput.js:9
@@ -1556,7 +1611,7 @@ msgid ""
 "effect."
 msgstr ""
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:61
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:60
 msgctxt "Error"
 msgid "Payments are currently not available, please try again later"
 msgstr ""
@@ -1720,14 +1775,29 @@ msgctxt "Label"
 msgid "Submit"
 msgstr ""
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:24
+#: node_modules/react-components/containers/messages/MessagesSection.js:20
 msgctxt "Label"
 msgid "Auto-load remote content"
 msgstr ""
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:33
+#: node_modules/react-components/containers/messages/MessagesSection.js:29
 msgctxt "Label"
 msgid "Auto-load embedded images"
+msgstr ""
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:38
+msgctxt "Label"
+msgid "Sent/Drafts"
+msgstr ""
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:46
+msgctxt "Label"
+msgid "Include moved"
+msgstr ""
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:50
+msgctxt "Label"
+msgid "Request link confirmation"
 msgstr ""
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:12
@@ -1796,7 +1866,7 @@ msgid "Default language"
 msgstr ""
 
 #: node_modules/react-components/containers/notification/EmailSection.js:17
-#: node_modules/react-components/containers/support/BugModal.js:102
+#: node_modules/react-components/containers/support/BugModal.js:104
 msgctxt "Label"
 msgid "Email address"
 msgstr ""
@@ -1826,77 +1896,87 @@ msgctxt "Label"
 msgid "Cash"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:77
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:69
 msgctxt "Label"
 msgid "Default Composer"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:94
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:86
 msgctxt "Label"
 msgid "Default Inbox"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:111
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:103
 msgctxt "Label"
 msgid "Conversations"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:122
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:114
 msgctxt "Label"
 msgid "Composer Mode"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:132
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:124
 msgctxt "Label"
 msgid "Composer Text Direction"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:143
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:37
 msgctxt "Label"
-msgid "Sent/Drafts"
+msgid "Read/unread order"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:90
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:39
+msgctxt "Label"
+msgid "Read -> Unread"
+msgstr ""
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:41
+msgctxt "Label"
+msgid "Unread -> Read"
+msgstr ""
+
+#: node_modules/react-components/containers/support/BugModal.js:92
 msgctxt "Label"
 msgid "Proton username"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:114
+#: node_modules/react-components/containers/support/BugModal.js:116
 msgctxt "Label"
 msgid "Category"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:126
+#: node_modules/react-components/containers/support/BugModal.js:128
 msgctxt "Label"
 msgid "What happened?"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:139
+#: node_modules/react-components/containers/support/BugModal.js:141
 msgctxt "Label"
 msgid "Attach screenshots"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:147
+#: node_modules/react-components/containers/support/BugModal.js:149
 msgctxt "Label"
 msgid "System information"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:155
+#: node_modules/react-components/containers/support/BugModal.js:157
 msgctxt "Label"
 msgid "Operating system"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:166
+#: node_modules/react-components/containers/support/BugModal.js:168
 msgctxt "Label"
 msgid "Operating system version"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:177
+#: node_modules/react-components/containers/support/BugModal.js:179
 msgctxt "Label"
 msgid "Browser"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:188
+#: node_modules/react-components/containers/support/BugModal.js:190
 msgctxt "Label"
 msgid "Browser version"
 msgstr ""
@@ -2055,7 +2135,12 @@ msgctxt "Success"
 msgid "Payment method deleted"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:79
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:29
+msgctxt "Success"
+msgid "Buttons position saved"
+msgstr ""
+
+#: node_modules/react-components/containers/support/BugModal.js:81
 msgctxt "Success"
 msgid "Bug reported"
 msgstr ""
@@ -2088,6 +2173,66 @@ msgstr ""
 #: node_modules/react-components/containers/payments/Cash.js:6
 msgctxt "Info for cash payment method"
 msgid "To pay via Cash, please email us at contact@protonmail.com for instructions."
+msgstr ""
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:40
+msgctxt "Tooltip"
+msgid ""
+"Setting to 'Include moved' means that sent / drafts messages that have been "
+"moved to other folders will continue to appear in the Sent/Drafts folder."
+msgstr ""
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:72
+msgctxt "Tooltip"
+msgid ""
+"This sets the default composer size. Two sizes are available, a smaller "
+"popup composer, and a bigger full screen composer."
+msgstr ""
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:89
+msgctxt "Tooltip"
+msgid ""
+"ProtonMail supports both column and row layouts for the inbox. Using this "
+"setting, it is possible to change between the two layouts."
+msgstr ""
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:105
+msgctxt "Tooltip"
+msgid ""
+"Conversation Grouping automatically groups messages in the same "
+"conversation together."
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:28
+msgctxt "Tooltip"
+msgid "ProtonMail users will use this key by default for sending"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:34
+msgctxt "Tooltip"
+msgid "You have locally decrypted this key"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:40
+msgctxt "Tooltip"
+msgid "This key is encrypted with an old password"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:46
+msgctxt "Tooltip"
+msgid "This key cannot be used for encryption"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:52
+msgctxt "Tooltip"
+msgid "This address has been disabled"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:58
+msgctxt "Tooltip"
+msgid ""
+"Signatures produced by this key are treated as invalid and this key cannot "
+"be used for encryption"
 msgstr ""
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:33
@@ -2130,7 +2275,7 @@ msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:86
+#: node_modules/react-components/containers/support/BugModal.js:88
 msgctxt "Warning"
 msgid ""
 "Bug reports are not end-to-end encrypted, please do not send any sensitive "
@@ -2223,7 +2368,7 @@ msgctxt "Header for addresses table"
 msgid "Domain"
 msgstr ""
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:90
+#: node_modules/react-components/containers/addresses/AddressesSection.js:81
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"
@@ -2234,15 +2379,20 @@ msgctxt "Header for addresses table"
 msgid "Addresses"
 msgstr ""
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:91
+#: node_modules/react-components/containers/addresses/AddressesSection.js:82
 #: node_modules/react-components/containers/domains/DomainsTable.js:19
 msgctxt "Header for addresses table"
 msgid "Actions"
 msgstr ""
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:89
+#: node_modules/react-components/containers/addresses/AddressesSection.js:80
 msgctxt "Header for addresses table"
 msgid "Address"
+msgstr ""
+
+#: node_modules/react-components/containers/addresses/AddressesSection.js:86
+msgctxt "Header for addresses table"
+msgid "Username"
 msgstr ""
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:11
@@ -2305,20 +2455,20 @@ msgid ""
 "use this domain value?"
 msgstr ""
 
-#: node_modules/react-components/containers/products/ProtonMailClients.js:28
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:28
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:28
+#: node_modules/react-components/containers/products/ProtonMailApps.js:28
 msgctxt "Title for downloads section"
 msgid "Name"
 msgstr ""
 
-#: node_modules/react-components/containers/products/ProtonMailClients.js:29
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:29
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:27
+#: node_modules/react-components/containers/products/ProtonMailApps.js:29
 msgctxt "Title for downloads section"
 msgid "Platform"
 msgstr ""
 
-#: node_modules/react-components/containers/products/ProtonMailClients.js:30
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:30
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:29
+#: node_modules/react-components/containers/products/ProtonMailApps.js:30
 msgctxt "Title for downloads section"
 msgid "Action"
 msgstr ""
@@ -2645,16 +2795,6 @@ msgctxt "Option"
 msgid "Plain Text"
 msgstr ""
 
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Include Moved"
-msgstr ""
-
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Hide Moved"
-msgstr ""
-
 #: node_modules/react-components/containers/support/BugModal.js:45
 msgctxt "Option"
 msgid "Select"
@@ -2673,66 +2813,6 @@ msgstr ""
 #: node_modules/react-components/containers/layouts/ViewModeRadios.js:28
 msgctxt "Label to change view mode"
 msgid "Single messages"
-msgstr ""
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:80
-msgctxt "Tooltip"
-msgid ""
-"This sets the default composer size. Two sizes are available, a smaller "
-"popup composer, and a bigger full screen composer."
-msgstr ""
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
-msgctxt "Tooltip"
-msgid ""
-"ProtonMail supports both column and row layouts for the inbox. Using this "
-"setting, it is possible to change between the two layouts."
-msgstr ""
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
-msgctxt "Tooltip"
-msgid ""
-"Conversation Grouping automatically groups messages in the same "
-"conversation together."
-msgstr ""
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
-msgctxt "Tooltip"
-msgid ""
-"Setting to 'Include Moved' means that sent / drafts messages that have been "
-"moved to other folders will continue to appear in the Sent/Drafts folder."
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:28
-msgctxt "Tooltip"
-msgid "ProtonMail users will use this key by default for sending"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:34
-msgctxt "Tooltip"
-msgid "You have locally decrypted this key"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:40
-msgctxt "Tooltip"
-msgid "This key is encrypted with an old password"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:46
-msgctxt "Tooltip"
-msgid "This key cannot be used for encryption"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:52
-msgctxt "Tooltip"
-msgid "This address has been disabled"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:58
-msgctxt "Tooltip"
-msgid ""
-"Signatures produced by this key are treated as invalid and this key cannot "
-"be used for encryption"
 msgstr ""
 
 #: node_modules/react-components/containers/layouts/ComposerModeRadios.js:18
@@ -2797,7 +2877,7 @@ msgstr ""
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:81
 msgctxt "Address action"
-msgid "Generate missing keus"
+msgid "Generate missing keys"
 msgstr ""
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:89

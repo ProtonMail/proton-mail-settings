@@ -1,22 +1,26 @@
 import React from 'react';
-import { Row, Label, Field } from 'react-components';
+import { Row, Label, Field, Select } from 'react-components';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import WeekDayInput from '../inputs/WeekDaySelect';
+import moment from 'moment';
+
+const weekdaysOptions = moment.weekdays().map((text, value) => ({ text, value }));
 
 const StartDayOfWeekField = ({ value, onChange }) => {
+    const handleChange = (e) => onChange(parseInt(e.target.value, 10));
+
     return (
         <Row className="flex-spacebetween">
             <Label htmlFor="startDayOfWeek">{c('Label').t`Start weekday`}</Label>
             <Field>
-                <WeekDayInput id="startDayOfWeek" value={value} onChange={onChange} />
+                <Select id="startDayOfWeek" options={weekdaysOptions} onChange={handleChange} value={value} />
             </Field>
         </Row>
     );
 };
 
 StartDayOfWeekField.propTypes = {
-    value: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired,
     onChange: PropTypes.func.isRequired
 };
 

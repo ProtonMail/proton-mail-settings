@@ -8,7 +8,14 @@ const EndDateField = ({ value, onChange }) => {
         <Row className="flex-spacebetween">
             <Label htmlFor="endDate">{c('Label').t`End date`}</Label>
             <Field>
-                <DateInput id="endDate" className="w100" defaultDate={value} onSelect={onChange} format="DD MM YYYY" />
+                <DateInput
+                    id="endDate"
+                    className="w100"
+                    defaultDate={value}
+                    setDefaultDate
+                    onSelect={onChange}
+                    format="DD MM YYYY"
+                />
             </Field>
         </Row>
     );

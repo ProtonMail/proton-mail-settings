@@ -2,33 +2,28 @@ import React from 'react';
 import { Label, Checkbox, Row, Field } from 'react-components';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-
-const weekdaysOptions = {
-    monday: c('Option').t`Monday`,
-    tuesday: c('Option').t`Tuesday`,
-    wednesday: c('Option').t`Wednesday`,
-    thursday: c('Option').t`Thursday`,
-    friday: c('Option').t`Friday`,
-    saturday: c('Option').t`Saturday`,
-    sunday: c('Option').t`Sunday`
-};
+import moment from 'moment';
 
 const DaysOfWeekField = ({ value, onChange }) => {
-    const handleChange = (weekday) => () => onChange({ ...value, [weekday]: !value[weekday] });
+    const handleChange = (weekday) => () =>
+        onChange(value.includes(weekday) ? value.filter((existing) => weekday !== existing) : [...value, weekday]);
+
+    const firstDayOfWeek = moment.localeData().firstDayOfWeek();
+    const options = moment.weekdays(true).map((label, index) => ({ label, weekday: (index + firstDayOfWeek) % 7 }));
 
     return (
         <Row className="flex-spacebetween">
             <Label>{c('Label').t`Days of the week`}</Label>
             <Field>
                 <div className="flex flex-column">
-                    {Object.keys(weekdaysOptions).map((weekday) => (
-                        <Label htmlFor={`weekday-${weekday}`} key={weekday}>
+                    {options.map(({ label, weekday }) => (
+                        <Label htmlFor={`weekday-${weekday}`} key={label}>
                             <Checkbox
                                 id={`weekday-${weekday}`}
-                                checked={!!value[weekday]}
+                                checked={value.includes(weekday)}
                                 onChange={handleChange(weekday)}
                             />
-                            {weekdaysOptions[weekday]}
+                            {label}
                         </Label>
                     ))}
                 </div>
@@ -39,15 +34,7 @@ const DaysOfWeekField = ({ value, onChange }) => {
 
 DaysOfWeekField.propTypes = {
     onChange: PropTypes.func.isRequired,
-    value: PropTypes.shape({
-        monday: PropTypes.bool,
-        tuesday: PropTypes.bool,
-        wednesday: PropTypes.bool,
-        thursday: PropTypes.bool,
-        friday: PropTypes.bool,
-        saturday: PropTypes.bool,
-        sunday: PropTypes.bool
-    }).isRequired
+    value: PropTypes.any.isRequired
 };
 
 export default DaysOfWeekField;

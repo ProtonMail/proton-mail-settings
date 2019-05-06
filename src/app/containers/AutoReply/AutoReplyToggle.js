@@ -2,13 +2,14 @@ import React from 'react';
 import { Toggle, useToggle } from 'react-components';
 import PropTypes from 'prop-types';
 
-const AutoReplyToggle = ({ id }) => {
-    const { state, toggle } = useToggle(false);
-    return <Toggle id={id} checked={state} onChange={toggle} />;
+const AutoReplyToggle = ({ enabled, ...rest }) => {
+    const { state, toggle } = useToggle(enabled);
+
+    return <Toggle {...rest} checked={state} onChange={toggle} />;
 };
 
 AutoReplyToggle.propTypes = {
-    id: PropTypes.string
+    enabled: PropTypes.bool
 };
 
 export default AutoReplyToggle;

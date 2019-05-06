@@ -6,11 +6,11 @@ import { c } from 'ttag';
 const timeZoneOptions = [
     {
         text: 'Europe/Vilnius: UTC +03:00',
-        value: 'europe/vilnius'
+        value: 'europe/Vilnius'
     },
     {
         text: 'Europe/Zurich: UTC +02:00',
-        value: 'europe/zurich'
+        value: 'Europe/Zurich'
     }
 ];
 
