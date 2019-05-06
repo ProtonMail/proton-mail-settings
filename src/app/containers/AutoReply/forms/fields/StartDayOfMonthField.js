@@ -2,26 +2,24 @@ import React from 'react';
 import { Row, Label, Field, Select } from 'react-components';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import moment from 'moment';
+import { getDaysOfMonthOptions } from '../../utils';
 
-const weekdaysOptions = moment.weekdays().map((text, value) => ({ text, value }));
-
-const EndDayOfWeekField = ({ value, onChange }) => {
+const StartDayOfMonthField = ({ value, onChange }) => {
     const handleChange = (e) => onChange(parseInt(e.target.value, 10));
 
     return (
         <Row className="flex-spacebetween">
-            <Label htmlFor="endDayOfWeek">{c('Label').t`End weekday`}</Label>
+            <Label htmlFor="startDayOfMonth">{c('Label').t`Start day of month`}</Label>
             <Field>
-                <Select id="endDayOfWeek" options={weekdaysOptions} onChange={handleChange} value={value} />
+                <Select id="startDayOfMonth" options={getDaysOfMonthOptions()} value={value} onChange={handleChange} />
             </Field>
         </Row>
     );
 };
 
-EndDayOfWeekField.propTypes = {
+StartDayOfMonthField.propTypes = {
     value: PropTypes.number.isRequired,
     onChange: PropTypes.func.isRequired
 };
 
-export default EndDayOfWeekField;
+export default StartDayOfMonthField;

@@ -1,15 +1,26 @@
 import { useState } from 'react';
-
-const DAY = 24 * 60 * 60;
+import moment from 'moment';
 
 const toModel = (AutoResponder) => {
     const start = AutoResponder.StartTime * 1000;
-    const end = AutoResponder.StartTime * 1000;
+    const end = AutoResponder.EndTime * 1000;
 
-    const startDate = start - (start % DAY);
-    const endDate = end - (end % DAY);
-    const startTime = Math.floor(start - startDate);
-    const endTime = Math.floor(end - endDate);
+    const startDate = moment(start)
+        .startOf('day')
+        .valueOf();
+    const endDate = moment(end)
+        .startOf('day')
+        .valueOf();
+    const startTime =
+        moment(start)
+            .startOf('hour')
+            .add(30 * Math.floor(moment(start).minutes() / 30), 'minutes')
+            .valueOf() - startDate;
+    const endTime =
+        moment(end)
+            .startOf('hour')
+            .add(30 * Math.floor(moment(end).minutes() / 30), 'minutes')
+            .valueOf() - endDate;
 
     return {
         message: AutoResponder.Message,
@@ -33,18 +44,20 @@ const toAutoResponder = (model) => ({
     Zone: model.timeZone,
     Subject: model.subject,
     IsEnabled: model.enabled,
-    StartTime: model.startDate + model.startTime,
-    EndTime: model.endDate + model.endTime
+    StartTime: (model.startDate + model.startTime) / 1000,
+    EndTime: (model.endDate + model.endTime) / 1000
 });
 
 const useAutoReplyForm = (AutoResponder) => {
-    const [model, setModel] = useState(toModel(AutoResponder));
-    const updateModel = (key) => (value) => setModel({ ...model, [key]: value });
+    const [model, setModel] = useState(() => toModel(AutoResponder));
+    const updateModel = (key) => (value) => setModel((prev) => ({ ...prev, [key]: value }));
+    const resetModel = () => setModel(toModel(AutoResponder));
 
     return {
         model,
         toAutoResponder,
-        updateModel
+        updateModel,
+        resetModel
     };
 };
 

@@ -2,21 +2,18 @@ import React from 'react';
 import { Label, Checkbox, Row, Field } from 'react-components';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import moment from 'moment';
+import { getWeekdayOptions } from '../../utils';
 
 const DaysOfWeekField = ({ value, onChange }) => {
     const handleChange = (weekday) => () =>
         onChange(value.includes(weekday) ? value.filter((existing) => weekday !== existing) : [...value, weekday]);
-
-    const firstDayOfWeek = moment.localeData().firstDayOfWeek();
-    const options = moment.weekdays(true).map((label, index) => ({ label, weekday: (index + firstDayOfWeek) % 7 }));
 
     return (
         <Row className="flex-spacebetween">
             <Label>{c('Label').t`Days of the week`}</Label>
             <Field>
                 <div className="flex flex-column">
-                    {options.map(({ label, weekday }) => (
+                    {getWeekdayOptions().map(({ label, value: weekday }) => (
                         <Label htmlFor={`weekday-${weekday}`} key={label}>
                             <Checkbox
                                 id={`weekday-${weekday}`}

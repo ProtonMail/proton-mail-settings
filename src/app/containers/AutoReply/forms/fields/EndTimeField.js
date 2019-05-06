@@ -2,22 +2,22 @@ import React from 'react';
 import { Row, Label, Field } from 'react-components';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import TimeInput from '../inputs/TimeSelect';
+import TimeInput from '../../inputs/TimeSelect';
 
-const StartTimeField = ({ value, onChange }) => {
+const EndTimeField = ({ value, onChange }) => {
     return (
         <Row className="flex-spacebetween">
-            <Label htmlFor="startTime">{c('Label').t`Start time`}</Label>
+            <Label htmlFor="endTime">{c('Label').t`End time`}</Label>
             <Field>
-                <TimeInput id="startTime" value={value} onChange={onChange} />
+                <TimeInput id="endTime" value={value} onChange={onChange} />
             </Field>
         </Row>
     );
 };
 
-StartTimeField.propTypes = {
+EndTimeField.propTypes = {
     value: PropTypes.number.isRequired,
     onChange: PropTypes.func.isRequired
 };
 
-export default StartTimeField;
+export default EndTimeField;

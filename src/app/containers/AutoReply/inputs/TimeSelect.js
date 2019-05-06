@@ -8,11 +8,11 @@ const HOUR = 60 * 60 * 1000;
 
 const timeInputOptions = range(0, 24).reduce((options, hour) => {
     const formattedHour = hour < 10 ? `0${hour}` : hour;
-    const milliseconds = hour * HOUR;
+    const hours = hour * HOUR;
     return [
         ...options,
-        { text: `${formattedHour}:00`, value: milliseconds },
-        { text: `${formattedHour}:30`, value: milliseconds + HOUR / 2 }
+        { text: `${formattedHour}:00`, value: hours },
+        { text: `${formattedHour}:30`, value: hours + HOUR / 2 }
     ];
 }, []);
 

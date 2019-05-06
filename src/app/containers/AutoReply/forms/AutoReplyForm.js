@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DurationField from '../fields/DurationField';
+import DurationField from './fields/DurationField';
 import { Alert, RichTextEditor } from 'react-components';
 import { c } from 'ttag';
-import StartDateField from '../fields/StartDateField';
-import StartTimeField from '../fields/StartTimeField';
-import EndDateField from '../fields/EndDateField';
-import EndTimeField from '../fields/EndTimeField';
-import TimeZoneField from '../fields/TimeZoneField';
-import DaysOfWeekField from '../fields/DaysOfWeekField';
-import StartDayOfMonthField from '../fields/StartDayOfMonthField';
-import EndDayOfMonthField from '../fields/EndDayOfMonthField';
-import StartDayOfWeekField from '../fields/StartDayOfWeekField';
-import EndDayOfWeekField from '../fields/EndDayOfWeekField';
+import StartDateField from './fields/StartDateField';
+import StartTimeField from './fields/StartTimeField';
+import EndDateField from './fields/EndDateField';
+import EndTimeField from './fields/EndTimeField';
+import TimeZoneField from './fields/TimeZoneField';
+import DaysOfWeekField from './fields/DaysOfWeekField';
+import StartDayOfMonthField from './fields/StartDayOfMonthField';
+import EndDayOfMonthField from './fields/EndDayOfMonthField';
+import StartDayOfWeekField from './fields/StartDayOfWeekField';
+import EndDayOfWeekField from './fields/EndDayOfWeekField';
 
 export const duration = {
     FIXED: 0,
@@ -23,7 +23,6 @@ export const duration = {
 };
 
 const DAY = 24 * 60 * 60 * 1000;
-const HOUR = 60 * 60 * 1000;
 
 const AutoReplyForm = ({ model, updateModel }) => {
     if (model.duration === duration.FIXED) {
@@ -77,9 +76,9 @@ const AutoReplyForm = ({ model, updateModel }) => {
     }
 
     if (model.duration === duration.WEEKLY) {
-        const startWeekday = model.startDate / HOUR;
-        const endWeekday = model.endDate / HOUR;
-        const handleChangeWeekday = (key) => (value) => updateModel(key)(value * HOUR);
+        const startWeekday = model.startDate / DAY;
+        const endWeekday = model.endDate / DAY;
+        const handleChangeWeekday = (key) => (value) => updateModel(key)(value * DAY);
 
         return (
             <>
@@ -96,11 +95,28 @@ const AutoReplyForm = ({ model, updateModel }) => {
         );
     }
 
-    return <Alert>{c('AutoReply').t`Auto-reply is active until you turn it off.`}</Alert>;
+    return (
+        <>
+            <DurationField value={model.duration} onChange={updateModel('duration')} />
+            <Alert>{c('AutoReply').t`Auto-reply is active until you turn it off.`}</Alert>
+            <RichTextEditor value={model.message} onChange={updateModel('message')} />
+        </>
+    );
 };
 
 AutoReplyForm.propTypes = {
-    model: PropTypes.any,
+    model: PropTypes.shape({
+        message: PropTypes.string,
+        duration: PropTypes.number,
+        daysOfWeek: PropTypes.arrayOf(PropTypes.number),
+        timeZone: PropTypes.string,
+        subject: PropTypes.string,
+        enabled: PropTypes.bool,
+        startDate: PropTypes.number,
+        endDate: PropTypes.number,
+        startTime: PropTypes.number,
+        endTime: PropTypes.number
+    }),
     updateModel: PropTypes.func
 };
 

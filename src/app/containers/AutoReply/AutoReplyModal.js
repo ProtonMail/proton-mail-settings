@@ -6,11 +6,11 @@ import AutoReplyForm from './forms/AutoReplyForm';
 import useAutoReplyForm from './forms/useAutoReplyForm';
 
 const AutoReplyModal = ({ show, onClose }) => {
-    const [{ AutoResponder }] = useMailSettings(); // TODO: use this as initil model
+    // const [{ AutoResponder }] = useMailSettings(); // TODO: use this as initil model
 
-    const { model: fm, updateModel, toAutoResponder } = useAutoReplyForm({
-        StartTime: 0,
-        EndTime: new Date().getTime() / 1000,
+    const { model, updateModel, toAutoResponder, resetModel } = useAutoReplyForm({
+        StartTime: Math.floor(new Date().getTime() / 1000),
+        EndTime: Math.floor(new Date().getTime() / 1000),
         DaysSelected: [],
         Repeat: 0,
         Subject: 'Auto',
@@ -20,14 +20,19 @@ const AutoReplyModal = ({ show, onClose }) => {
         Zone: 'Europe/Zurich'
     });
 
+    const handleOnClose = () => {
+        resetModel();
+        onClose();
+    };
+
     return (
-        <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={onClose}>
+        <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={handleOnClose}>
             <ContentModal>
-                <AutoReplyForm model={fm} updateModel={updateModel} />
+                <AutoReplyForm model={model} updateModel={updateModel} />
 
                 <FooterModal>
                     <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
-                    <PrimaryButton onClick={() => console.log(toAutoResponder(fm))}>{c('Action')
+                    <PrimaryButton onClick={() => console.log(toAutoResponder(model))}>{c('Action')
                         .t`Create`}</PrimaryButton>
                 </FooterModal>
             </ContentModal>

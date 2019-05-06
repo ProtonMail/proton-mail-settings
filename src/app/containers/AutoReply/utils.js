@@ -1,10 +1,13 @@
-import React from 'react';
-import { Select } from 'react-components';
-import PropTypes from 'prop-types';
+import moment from 'moment';
 import { c } from 'ttag';
-import { noop } from 'react-components/node_modules/proton-shared/lib/helpers/function';
 
-const daysOfMonth = [
+export const getWeekdayOptions = () => {
+    moment.locale('lt');
+    const firstDayOfWeek = moment.localeData().firstDayOfWeek();
+    return moment.weekdays(true).map((label, index) => ({ label, value: (index + firstDayOfWeek) % 7 }));
+};
+
+export const getDaysOfMonthOptions = () => [
     { text: c('Option').t`1st of the month`, value: 1 },
     { text: c('Option').t`2nd of the month`, value: 2 },
     { text: c('Option').t`3rd of the month`, value: 3 },
@@ -37,20 +40,3 @@ const daysOfMonth = [
     { text: c('Option').t`30th of the month`, value: 30 },
     { text: c('Option').t`31st of the month`, value: 31 }
 ];
-
-const MonthDaySelect = ({ onChange, value, ...rest }) => {
-    const handleChange = (e) => onChange(parseInt(e.target.value, 10));
-    return <Select {...rest} options={daysOfMonth} value={value} onChange={handleChange} />;
-};
-
-MonthDaySelect.propTypes = {
-    value: PropTypes.number,
-    onChange: PropTypes.func
-};
-
-MonthDaySelect.defaultValues = {
-    value: 1,
-    onChange: noop
-};
-
-export default MonthDaySelect;
