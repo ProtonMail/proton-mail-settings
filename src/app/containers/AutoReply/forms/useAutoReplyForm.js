@@ -51,7 +51,7 @@ const toAutoResponder = (model) => ({
 const useAutoReplyForm = (AutoResponder) => {
     const [model, setModel] = useState(() => toModel(AutoResponder));
     const updateModel = (key) => (value) => setModel((prev) => ({ ...prev, [key]: value }));
-    const resetModel = () => setModel(toModel(AutoResponder));
+    const resetModel = (newAutoResponder) => setModel(toModel(newAutoResponder || AutoResponder));
 
     return {
         model,

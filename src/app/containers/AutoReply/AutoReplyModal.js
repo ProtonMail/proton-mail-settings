@@ -1,39 +1,57 @@
-import React from 'react';
-import { Modal, ContentModal, FooterModal, Button, PrimaryButton, useMailSettings } from 'react-components';
+import React, { useEffect } from 'react';
+import {
+    Modal,
+    ContentModal,
+    FooterModal,
+    Button,
+    PrimaryButton,
+    useMailSettings,
+    useApiWithoutResult,
+    useEventManager
+} from 'react-components';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import AutoReplyForm from './forms/AutoReplyForm';
 import useAutoReplyForm from './forms/useAutoReplyForm';
 
+const updateAutoresponder = (AutoResponder) => ({
+    url: 'settings/mail/autoresponder',
+    method: 'put',
+    data: { AutoResponder }
+});
+
 const AutoReplyModal = ({ show, onClose }) => {
-    // const [{ AutoResponder }] = useMailSettings(); // TODO: use this as initil model
+    const [{ AutoResponder }] = useMailSettings();
+    const { model, updateModel, toAutoResponder, resetModel } = useAutoReplyForm(AutoResponder);
+    const { request } = useApiWithoutResult(updateAutoresponder);
+    const { call } = useEventManager();
 
-    const { model, updateModel, toAutoResponder, resetModel } = useAutoReplyForm({
-        StartTime: Math.floor(new Date().getTime() / 1000),
-        EndTime: Math.floor(new Date().getTime() / 1000),
-        DaysSelected: [],
-        Repeat: 0,
-        Subject: 'Auto',
-        Message:
-            'I am out of office with limited access to my email. Sent using <a href="https://protonmail.com/">ProtonMail</a> Secure Email.',
-        IsEnabled: false,
-        Zone: 'Europe/Zurich'
-    });
+    useEffect(() => {
+        resetModel(AutoResponder);
+    }, [AutoResponder]);
 
-    const handleOnClose = () => {
+    const close = () => {
         resetModel();
         onClose();
     };
 
+    const handleSubmit = async () => {
+        await request(toAutoResponder(model));
+        call();
+        onClose();
+    };
+
+    // TODO: show different button text based on status - editing or creating
     return (
-        <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={handleOnClose}>
+        <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={close}>
             <ContentModal>
                 <AutoReplyForm model={model} updateModel={updateModel} />
 
                 <FooterModal>
                     <Button onClick={onClose}>{c('Action').t`Cancel`}</Button>
-                    <PrimaryButton onClick={() => console.log(toAutoResponder(model))}>{c('Action')
-                        .t`Create`}</PrimaryButton>
+                    <PrimaryButton onClick={handleSubmit}>
+                        {AutoResponder ? c('Action').t`Update` : c('Action').t`Create`}
+                    </PrimaryButton>
                 </FooterModal>
             </ContentModal>
         </Modal>
