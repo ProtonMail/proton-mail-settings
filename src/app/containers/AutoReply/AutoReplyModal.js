@@ -43,7 +43,7 @@ const AutoReplyModal = ({ show, onClose }) => {
 
     // TODO: show different button text based on status - editing or creating
     return (
-        <Modal title={c('Title').t`Create auto-reply`} show={show} onClose={close}>
+        <Modal title={c('Title').t`Create auto-reply`} type="small" show={show} onClose={close}>
             <ContentModal>
                 <AutoReplyForm model={model} updateModel={updateModel} />
 

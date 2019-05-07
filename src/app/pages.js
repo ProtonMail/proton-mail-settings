@@ -187,7 +187,17 @@ export default [
     {
         text: c('Title').t`Auto-reply`,
         icon: 'auto-reply',
-        route: '/settings/auto-reply'
+        route: '/settings/auto-reply',
+        sections: [
+            {
+                text: c('Title').t`Auto-Reply`,
+                id: 'auto-reply'
+            },
+            {
+                text: c('Title').t`Reply Templates`,
+                id: 'teply-templates'
+            }
+        ]
     },
     {
         text: c('Title').t`Keys`,

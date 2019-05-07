@@ -12,14 +12,12 @@ const InfoLine = ({ label, children, plain }) => (
     </tr>
 );
 
-const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
+const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
     const durationLabel = getDurationOptions().find(({ value }) => value === autoresponder.Repeat).text;
     const status =
         autoresponder.Repeat === AutoReplyDuration.FIXED && moment().isAfter(autoresponder.StartTime)
             ? 'Expired'
-            : autoresponder.IsEnabled
-            ? 'Active'
-            : 'Inactive';
+            : 'Active';
 
     const formatTime = (time) => {
         if (autoresponder.Repeat === AutoReplyDuration.DAILY) {
@@ -45,7 +43,6 @@ const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
         <div className="bordered-container p2">
             <table>
                 <tbody>
-                    <InfoLine label={c('Label').t`Address`}>DUMMY ADDRESS</InfoLine>
                     <InfoLine label={c('Label').t`Status`}>{status}</InfoLine>
                     <InfoLine label={c('Label').t`Duration`}>{durationLabel}</InfoLine>
                     <InfoLine label={c('Label').t`Start`}>{formatTime(autoresponder.StartTime * 1000)}</InfoLine>
@@ -58,7 +55,6 @@ const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
             </table>
             <div className="flex w100">
                 <div className="mlauto">
-                    <Button onClick={onDelete}>Delete</Button>
                     <Button onClick={onEdit} className="ml1">
                         Edit
                     </Button>
@@ -78,8 +74,7 @@ AutoReplyTemplate.propTypes = {
         Zone: PropTypes.string,
         Message: PropTypes.string
     }).isRequired,
-    onEdit: PropTypes.func,
-    onDelete: PropTypes.func
+    onEdit: PropTypes.func.isRequired
 };
 
 export default AutoReplyTemplate;

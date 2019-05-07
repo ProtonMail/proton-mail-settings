@@ -36,6 +36,11 @@ const Container = () => {
         await call();
     };
 
+    const deleteAutoReplyTemplate = async () => {
+        await request({ AutoResponder: {} });
+        await call();
+    };
+
     // TODO: change lorem ipsum to actual text when Ben provides it
     return (
         <>
@@ -65,10 +70,8 @@ const Container = () => {
                     </Field>
                 </Row>
 
-                {AutoResponder ? (
-                    <AutoReplyTemplate autoresponder={AutoResponder} onDelete={console.log} onEdit={open} />
-                ) : (
-                    <PrimaryButton onClick={open}>{c('AutoReply').t`Create New Auto Reply`}</PrimaryButton>
+                {AutoResponder.IsEnabled && (
+                    <AutoReplyTemplate autoresponder={AutoResponder} onDelete={deleteAutoReplyTemplate} onEdit={open} />
                 )}
             </div>
         </>
