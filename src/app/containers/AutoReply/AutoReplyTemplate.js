@@ -3,7 +3,7 @@ import { c } from 'ttag';
 import PropTypes from 'prop-types';
 import { Button } from 'react-components';
 import moment from 'moment';
-import { getDaysOfMonthOptions } from './utils';
+import { getDaysOfMonthOptions, getDurationOptions, AutoReplyDuration, DAY_MILLISECONDS } from './utils';
 
 const InfoLine = ({ label, children, plain }) => (
     <tr className="mb1 w100 aligntop">
@@ -12,46 +12,31 @@ const InfoLine = ({ label, children, plain }) => (
     </tr>
 );
 
-export const duration = {
-    FIXED: 0,
-    DAILY: 1,
-    WEEKLY: 2,
-    MONTHLY: 3,
-    PERMANENT: 4
-};
-
-const durationLabels = {
-    [duration.FIXED]: c('Option').t`Fixed`,
-    [duration.DAILY]: c('Option').t`Repeat daily`,
-    [duration.WEEKLY]: c('Option').t`Repeat weekly`,
-    [duration.MONTHLY]: c('Option').t`Repeat monthly`,
-    [duration.PERMANENT]: c('Option').t`Permanent`
-};
-
-const DAY = 24 * 60 * 60 * 1000;
-
 const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
+    const durationLabel = getDurationOptions().find(({ value }) => value === autoresponder.Repeat).text;
     const status =
-        autoresponder.Repeat === duration.FIXED && moment().isAfter(autoresponder.StartTime)
+        autoresponder.Repeat === AutoReplyDuration.FIXED && moment().isAfter(autoresponder.StartTime)
             ? 'Expired'
             : autoresponder.IsEnabled
             ? 'Active'
             : 'Inactive';
 
     const formatTime = (time) => {
-        if (autoresponder.Repeat === duration.DAILY) {
-            return moment(time).format('HH:mm');
-        } else if (autoresponder.Repeat === duration.FIXED) {
+        if (autoresponder.Repeat === AutoReplyDuration.DAILY) {
+            const weekdays = autoresponder.DaysSelected.map((day) => moment.weekdays(day)).join(', ');
+            const hours = moment.utc(time).format('HH:mm');
+            return `${weekdays} ${hours}`;
+        } else if (autoresponder.Repeat === AutoReplyDuration.FIXED) {
             return moment(time).format('LLL');
-        } else if (autoresponder.Repeat === duration.WEEKLY) {
-            const dayOfWeek = moment.weekdays(Math.floor(time / DAY));
+        } else if (autoresponder.Repeat === AutoReplyDuration.WEEKLY) {
+            const dayOfWeek = moment.weekdays(Math.floor(time / DAY_MILLISECONDS));
             const hours = moment.utc(time).format('HH:mm');
             return `${dayOfWeek} ${hours}`;
-        } else if (autoresponder.Repeat === duration.MONTHLY) {
+        } else if (autoresponder.Repeat === AutoReplyDuration.MONTHLY) {
             const dayOfMonth = getDaysOfMonthOptions().find(({ value }) => value === Math.floor(time / DAY)).text;
             const hours = moment.utc(time).format('HH:mm');
             return `${dayOfMonth} ${hours}`;
-        } else if (autoresponder.Repeat === duration.PERMANENT) {
+        } else if (autoresponder.Repeat === AutoReplyDuration.PERMANENT) {
             return '-';
         }
     };
@@ -62,7 +47,7 @@ const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
                 <tbody>
                     <InfoLine label={c('Label').t`Address`}>DUMMY ADDRESS</InfoLine>
                     <InfoLine label={c('Label').t`Status`}>{status}</InfoLine>
-                    <InfoLine label={c('Label').t`Duration`}>{durationLabels[autoresponder.Repeat]}</InfoLine>
+                    <InfoLine label={c('Label').t`Duration`}>{durationLabel}</InfoLine>
                     <InfoLine label={c('Label').t`Start`}>{formatTime(autoresponder.StartTime * 1000)}</InfoLine>
                     <InfoLine label={c('Label').t`End`}>{formatTime(autoresponder.EndTime * 1000)}</InfoLine>
                     <InfoLine label={c('Label').t`Timezone`}>{autoresponder.Zone}</InfoLine>
@@ -84,14 +69,15 @@ const AutoReplyTemplate = ({ autoresponder, onEdit, onDelete }) => {
 };
 
 AutoReplyTemplate.propTypes = {
-    autoresponder: PropTypes.any.isRequired,
-    // duration: PropTypes.any,
-    // start: PropTypes.any,
-    // end: PropTypes.any,
-    // timezone: PropTypes.any,
-    // message: PropTypes.any,
-    // address: PropTypes.any,
-    // status: PropTypes.any,
+    autoresponder: PropTypes.shape({
+        DaysSelected: PropTypes.arrayOf(PropTypes.number),
+        IsEnabled: PropTypes.bool,
+        Repeat: PropTypes.number,
+        StartTime: PropTypes.number,
+        EndTime: PropTypes.number,
+        Zone: PropTypes.string,
+        Message: PropTypes.string
+    }).isRequired,
     onEdit: PropTypes.func,
     onDelete: PropTypes.func
 };

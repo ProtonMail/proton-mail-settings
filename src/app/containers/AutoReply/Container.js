@@ -17,15 +17,6 @@ import {
 import AutoReplyToggle from './AutoReplyToggle';
 import AutoReplyModal from './AutoReplyModal';
 import AutoReplyTemplate from './AutoReplyTemplate';
-import moment from 'moment';
-
-export const duration = {
-    FIXED: 0,
-    DAILY: 1,
-    WEEKLY: 2,
-    MONTHLY: 3,
-    PERMANENT: 4
-};
 
 const updateAutoresponder = (AutoResponder) => ({
     url: 'settings/mail/autoresponder',

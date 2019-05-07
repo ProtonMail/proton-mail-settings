@@ -1,6 +1,39 @@
 import moment from 'moment';
 import { c } from 'ttag';
 
+export const DAY_MILLISECONDS = 24 * 60 * 60 * 1000;
+
+export const AutoReplyDuration = {
+    FIXED: 0,
+    DAILY: 1,
+    WEEKLY: 2,
+    MONTHLY: 3,
+    PERMANENT: 4
+};
+
+export const getDurationOptions = () => [
+    {
+        text: c('Option').t`Fixed duration`,
+        value: AutoReplyDuration.FIXED
+    },
+    {
+        text: c('Option').t`Repeat daily`,
+        value: AutoReplyDuration.DAILY
+    },
+    {
+        text: c('Option').t`Repeat weekly`,
+        value: AutoReplyDuration.WEEKLY
+    },
+    {
+        text: c('Option').t`Repeat monthly`,
+        value: AutoReplyDuration.MONTHLY
+    },
+    {
+        text: c('Option').t`Permanent`,
+        value: AutoReplyDuration.PERMANENT
+    }
+];
+
 export const getWeekdayOptions = () => {
     // TODO: adjust for timezone I guess
     const firstDayOfWeek = moment.localeData().firstDayOfWeek();

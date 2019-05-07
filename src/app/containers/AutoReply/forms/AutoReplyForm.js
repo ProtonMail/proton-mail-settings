@@ -13,19 +13,10 @@ import StartDayOfMonthField from './fields/StartDayOfMonthField';
 import EndDayOfMonthField from './fields/EndDayOfMonthField';
 import StartDayOfWeekField from './fields/StartDayOfWeekField';
 import EndDayOfWeekField from './fields/EndDayOfWeekField';
-
-export const duration = {
-    FIXED: 0,
-    DAILY: 1,
-    WEEKLY: 2,
-    MONTHLY: 3,
-    PERMANENT: 4
-};
-
-const DAY = 24 * 60 * 60 * 1000;
+import { AutoReplyDuration, DAY_MILLISECONDS } from '../utils';
 
 const AutoReplyForm = ({ model, updateModel }) => {
-    if (model.duration === duration.FIXED) {
+    if (model.duration === AutoReplyDuration.FIXED) {
         return (
             <>
                 <DurationField value={model.duration} onChange={updateModel('duration')} />
@@ -40,7 +31,7 @@ const AutoReplyForm = ({ model, updateModel }) => {
         );
     }
 
-    if (model.duration === duration.DAILY) {
+    if (model.duration === AutoReplyDuration.DAILY) {
         return (
             <>
                 <DurationField value={model.duration} onChange={updateModel('duration')} />
@@ -55,10 +46,10 @@ const AutoReplyForm = ({ model, updateModel }) => {
         );
     }
 
-    if (model.duration === duration.MONTHLY) {
-        const startDayOfMonth = model.startDate / DAY;
-        const endDayOfMonth = model.endDate / DAY;
-        const handleChangeDayOfMonth = (key) => (value) => updateModel(key)(value * DAY);
+    if (model.duration === AutoReplyDuration.MONTHLY) {
+        const startDayOfMonth = model.startDate / DAY_MILLISECONDS;
+        const endDayOfMonth = model.endDate / DAY_MILLISECONDS;
+        const handleChangeDayOfMonth = (key) => (value) => updateModel(key)(value * DAY_MILLISECONDS);
 
         return (
             <>
@@ -75,10 +66,10 @@ const AutoReplyForm = ({ model, updateModel }) => {
         );
     }
 
-    if (model.duration === duration.WEEKLY) {
-        const startWeekday = model.startDate / DAY;
-        const endWeekday = model.endDate / DAY;
-        const handleChangeWeekday = (key) => (value) => updateModel(key)(value * DAY);
+    if (model.duration === AutoReplyDuration.WEEKLY) {
+        const startWeekday = model.startDate / DAY_MILLISECONDS;
+        const endWeekday = model.endDate / DAY_MILLISECONDS;
+        const handleChangeWeekday = (key) => (value) => updateModel(key)(value * DAY_MILLISECONDS);
 
         return (
             <>
