@@ -60,9 +60,7 @@ const AutoReplyModal = ({ show, onClose }) => {
 
 AutoReplyModal.propTypes = {
     show: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-    initialModel: PropTypes.any,
-    onSubmit: PropTypes.func
+    onClose: PropTypes.func.isRequired
 };
 
 export default AutoReplyModal;

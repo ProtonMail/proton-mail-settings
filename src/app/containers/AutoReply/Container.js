@@ -8,7 +8,6 @@ import {
     Label,
     Info,
     Field,
-    PrimaryButton,
     useModal,
     useMailSettings,
     useEventManager,
@@ -36,15 +35,10 @@ const Container = () => {
         await call();
     };
 
-    const deleteAutoReplyTemplate = async () => {
-        await request({ AutoResponder: {} });
-        await call();
-    };
-
     // TODO: change lorem ipsum to actual text when Ben provides it
     return (
         <>
-            <AutoReplyModal onClose={close} show={isOpen} onSubmit={console.log} />
+            <AutoReplyModal onClose={close} show={isOpen} />
             <Title>{c('AutoReply').t`Auto-Reply`}</Title>
             <div className="p1">
                 <SubTitle>{c('AutoReply').t`Auto Reply`}</SubTitle>
@@ -70,9 +64,7 @@ const Container = () => {
                     </Field>
                 </Row>
 
-                {AutoResponder.IsEnabled && (
-                    <AutoReplyTemplate autoresponder={AutoResponder} onDelete={deleteAutoReplyTemplate} onEdit={open} />
-                )}
+                {AutoResponder.IsEnabled && <AutoReplyTemplate autoresponder={AutoResponder} onEdit={open} />}
             </div>
         </>
     );
