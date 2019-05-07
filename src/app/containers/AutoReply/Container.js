@@ -18,6 +18,7 @@ import AutoReplyToggle from './AutoReplyToggle';
 import AutoReplyModal from './AutoReplyModal';
 import AutoReplyTemplate from './AutoReplyTemplate';
 
+// TODO: move it to react-shared
 const updateAutoresponder = (AutoResponder) => ({
     url: 'settings/mail/autoresponder',
     method: 'put',
@@ -35,6 +36,7 @@ const Container = () => {
         await call();
     };
 
+    // TODO: change lorem ipsum to actual text when Ben provides it
     return (
         <>
             <AutoReplyModal onClose={close} show={isOpen} onSubmit={console.log} />
