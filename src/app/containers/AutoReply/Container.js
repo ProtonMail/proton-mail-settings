@@ -11,7 +11,6 @@ import {
     PrimaryButton,
     useModal,
     useMailSettings,
-    useApiResult,
     useEventManager,
     useApiWithoutResult
 } from 'react-components';
@@ -28,14 +27,6 @@ export const duration = {
     PERMANENT: 4
 };
 
-const durationLabels = {
-    [duration.FIXED]: c('Option').t`Fixed`,
-    [duration.DAILY]: c('Option').t`Repeat daily`,
-    [duration.WEEKLY]: c('Option').t`Repeat weekly`,
-    [duration.MONTHLY]: c('Option').t`Repeat monthly`,
-    [duration.PERMANENT]: c('Option').t`Permanent`
-};
-
 const updateAutoresponder = (AutoResponder) => ({
     url: 'settings/mail/autoresponder',
     method: 'put',
@@ -47,14 +38,6 @@ const Container = () => {
     const [{ AutoResponder }] = useMailSettings();
     const { call } = useEventManager();
     const { request } = useApiWithoutResult(updateAutoresponder);
-
-    // TODO: translate or maybe even get from API?
-    const templateStatus =
-        AutoResponder.Repeat === duration.FIXED && moment().isAfter(AutoResponder.StartTime)
-            ? 'Expired'
-            : AutoResponder.IsEnabled
-            ? 'Active'
-            : 'Inactive';
 
     const toggleEnabled = async () => {
         await request({ ...AutoResponder, IsEnabled: !AutoResponder.IsEnabled });
@@ -90,17 +73,7 @@ const Container = () => {
                 </Row>
 
                 {AutoResponder ? (
-                    <AutoReplyTemplate
-                        address="DUMMY ADDRESS"
-                        status={templateStatus}
-                        start={moment(AutoResponder.StartTime).format()}
-                        end={moment(AutoResponder.EndTime).format()}
-                        timezone={AutoResponder.Zone}
-                        message={AutoResponder.Message}
-                        duration={durationLabels[AutoResponder.Repeat]}
-                        onDelete={console.log}
-                        onEdit={open}
-                    />
+                    <AutoReplyTemplate autoresponder={AutoResponder} onDelete={console.log} onEdit={open} />
                 ) : (
                     <PrimaryButton onClick={open}>{c('AutoReply').t`Create New Auto Reply`}</PrimaryButton>
                 )}

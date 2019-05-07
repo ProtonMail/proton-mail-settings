@@ -1,23 +1,28 @@
 import { useState } from 'react';
 import moment from 'moment';
 
+// TODO: adjust time based on timezone
 const toModel = (AutoResponder) => {
     const start = AutoResponder.StartTime * 1000;
     const end = AutoResponder.EndTime * 1000;
 
-    const startDate = moment(start)
+    const startDate = moment
+        .utc(start)
         .startOf('day')
         .valueOf();
-    const endDate = moment(end)
+    const endDate = moment
+        .utc(end)
         .startOf('day')
         .valueOf();
     const startTime =
-        moment(start)
+        moment
+            .utc(start)
             .startOf('hour')
             .add(30 * Math.floor(moment(start).minutes() / 30), 'minutes')
             .valueOf() - startDate;
     const endTime =
-        moment(end)
+        moment
+            .utc(end)
             .startOf('hour')
             .add(30 * Math.floor(moment(end).minutes() / 30), 'minutes')
             .valueOf() - endDate;
