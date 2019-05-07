@@ -83,7 +83,7 @@ const AuthHeader = () => {
                             </svg>
                             Support
                         </button>
-                        <AuthenticatedBugModal show={isOpen} onClose={close} />
+                        {isOpen ? <AuthenticatedBugModal show={isOpen} onClose={close} /> : null}
                     </li>
                 </ul>
             </div>
