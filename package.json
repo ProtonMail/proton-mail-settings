@@ -46,6 +46,7 @@
         "proton-pack": "github:ProtonMail/proton-pack.git#semver:^1.0.0",
         "proton-shared": "github:ProtonMail/proton-shared.git#master",
         "react": "^16.8.1",
+        "react-components": "github:ProtonMail/react-components.git#master",
         "react-dom": "^16.8.1",
         "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
