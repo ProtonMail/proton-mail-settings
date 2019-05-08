@@ -23,24 +23,31 @@ const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
     const timezone = getTimezoneOptions().find(({ value }) => value === autoresponder.Zone).text;
 
     const formatTime = (time) => {
+        const hours = moment.utc(time).format('LT');
+
         if (autoresponder.Repeat === AutoReplyDuration.DAILY) {
-            const weekdays = autoresponder.DaysSelected.map((day) => moment.weekdays(day)).join(', ');
-            const hours = moment.utc(time).format('HH:mm');
-            return `${weekdays} ${hours}`;
+            const firstDayOfWeek = moment.localeData().firstDayOfWeek();
+            const orderedDaysSelected = [
+                ...autoresponder.DaysSelected.filter((day) => day >= firstDayOfWeek).sort((a, b) => a - b),
+                ...autoresponder.DaysSelected.filter((day) => day < firstDayOfWeek).sort((a, b) => a - b)
+            ];
+            const weekdays = orderedDaysSelected.map((day) => moment.weekdaysShort(day)).join(', ');
+            return autoresponder.DaysSelected.length < 7
+                ? c('AutoReply').t`Every ${weekdays} @ ${hours}`
+                : c('AutoReply').t`Every day @ ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.FIXED) {
-            return moment(time).format('LLL');
+            const date = moment(time).format('LL');
+            return `${date} @ ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.WEEKLY) {
             const dayOfWeek = moment.weekdays(Math.floor(time / DAY_MILLISECONDS));
-            const hours = moment.utc(time).format('HH:mm');
-            return `${dayOfWeek} ${hours}`;
+            return c('AutoReply').t`Every ${dayOfWeek} @ ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.MONTHLY) {
             const dayOfMonth = getDaysOfMonthOptions().find(
                 ({ value }) => value === Math.floor(time / DAY_MILLISECONDS)
             ).text;
-            const hours = moment.utc(time).format('HH:mm');
-            return `${dayOfMonth} ${hours}`;
+            return c('AutoReply').t`Every ${dayOfMonth} @ ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.PERMANENT) {
-            return '-';
+            return c('AutoReply').t`n/a`;
         }
     };
 

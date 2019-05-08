@@ -13,14 +13,14 @@ const DaysOfWeekField = ({ value, onChange }) => {
             <Label>{c('Label').t`Days of the week`}</Label>
             <Field>
                 <div className="flex flex-column">
-                    {getWeekdayOptions().map(({ label, value: weekday }) => (
-                        <Label htmlFor={`weekday-${weekday}`} key={label}>
+                    {getWeekdayOptions().map(({ text, value: weekday }) => (
+                        <Label htmlFor={`weekday-${weekday}`} key={text}>
                             <Checkbox
                                 id={`weekday-${weekday}`}
                                 checked={value.includes(weekday)}
                                 onChange={handleChange(weekday)}
                             />
-                            {label}
+                            {text}
                         </Label>
                     ))}
                 </div>

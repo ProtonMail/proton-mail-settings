@@ -35,9 +35,8 @@ export const getDurationOptions = () => [
 ];
 
 export const getWeekdayOptions = () => {
-    // TODO: adjust for timezone I guess
     const firstDayOfWeek = moment.localeData().firstDayOfWeek();
-    return moment.weekdays(true).map((label, index) => ({ label, value: (index + firstDayOfWeek) % 7 }));
+    return moment.weekdays(true).map((text, index) => ({ text, value: (index + firstDayOfWeek) % 7 }));
 };
 
 export const getDaysOfMonthOptions = () => [
