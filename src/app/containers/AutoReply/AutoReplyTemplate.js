@@ -14,10 +14,6 @@ const InfoLine = ({ label, children, plain }) => (
 
 const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
     const durationLabel = getDurationOptions().find(({ value }) => value === autoresponder.Repeat).text;
-    const status =
-        autoresponder.Repeat === AutoReplyDuration.FIXED && moment().isAfter(autoresponder.StartTime)
-            ? 'Expired'
-            : 'Active';
 
     const formatTime = (time) => {
         if (autoresponder.Repeat === AutoReplyDuration.DAILY) {
@@ -42,10 +38,9 @@ const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
     };
 
     return (
-        <div className="bordered-container p2">
+        <div className="bordered-container p2 mw650p">
             <table>
                 <tbody>
-                    <InfoLine label={c('Label').t`Status`}>{status}</InfoLine>
                     <InfoLine label={c('Label').t`Duration`}>{durationLabel}</InfoLine>
                     <InfoLine label={c('Label').t`Start`}>{formatTime(autoresponder.StartTime * 1000)}</InfoLine>
                     <InfoLine label={c('Label').t`End`}>{formatTime(autoresponder.EndTime * 1000)}</InfoLine>
