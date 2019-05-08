@@ -11,7 +11,9 @@ import {
     useModal,
     useMailSettings,
     useEventManager,
-    useApiWithoutResult
+    useApiWithoutResult,
+    RelatedSettingsSection,
+    ObserverSections
 } from 'react-components';
 import AutoReplyToggle from './AutoReplyToggle';
 import AutoReplyModal from './AutoReplyModal';
@@ -35,38 +37,49 @@ const Container = () => {
         await call();
     };
 
-    // TODO: change lorem ipsum to actual text when Ben provides it
     return (
-        <>
-            <AutoReplyModal onClose={close} show={isOpen} />
-            <Title>{c('AutoReply').t`Auto-Reply`}</Title>
-            <div className="p1">
-                <SubTitle>{c('AutoReply').t`Auto Reply`}</SubTitle>
-                <Alert type="standard" className="mt1 mb1" learnMore="https://protonmail.com">
-                    {c('AutoReply') // TODO: needed?
-                        .t`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.`}
-                </Alert>
+        <ObserverSections>
+            <div id="auto-reply">
+                <AutoReplyModal onClose={close} show={isOpen} />
+                <div className="p1">
+                    <SubTitle>{c('AutoReply').t`Auto-reply`}</SubTitle>
+                    <Alert
+                        type="standard"
+                        className="mt1 mb1"
+                        learnMore="https://protonmail.com/support/knowledge-base/autoresponder/"
+                    >
+                        {c('AutoReply')
+                            .t`Automatic replies can respond automatically to incoming messages (such as when you are on vacation and can't respond).`}
+                    </Alert>
 
-                <Row>
-                    <Label htmlFor="autoReplyToggle">
-                        <span className="mr1">{c('Label').t`Auto-Reply`}</span>
-                        <Info
-                            url="PLACEHOLDER" //TODO: add url
-                            title={c('AutoReply').t`Auto reply information placeholder`}
-                        />
-                    </Label>
-                    <Field>
-                        <AutoReplyToggle
-                            id="autoReplyToggle"
-                            onToggle={toggleEnabled}
-                            enabled={AutoResponder.IsEnabled}
-                        />
-                    </Field>
-                </Row>
+                    <Row>
+                        <Label htmlFor="autoReplyToggle" className="flex-item-centered-vert">{c('Label')
+                            .t`Auto-reply`}</Label>
+                        <Field>
+                            <AutoReplyToggle
+                                id="autoReplyToggle"
+                                onToggle={toggleEnabled}
+                                enabled={AutoResponder.IsEnabled}
+                            />
+                        </Field>
+                    </Row>
 
-                {AutoResponder.IsEnabled && <AutoReplyTemplate autoresponder={AutoResponder} onEdit={open} />}
+                    {AutoResponder.IsEnabled && <AutoReplyTemplate autoresponder={AutoResponder} onEdit={open} />}
+                </div>
             </div>
-        </>
+            <RelatedSettingsSection
+                id="related-settings"
+                list={[
+                    {
+                        icon: 'filter',
+                        text: c('Info')
+                            .t`Go to Filter Settings if you want to create and manage auto-replies by email address.`,
+                        link: c('Link').t`Filter Settings`,
+                        to: '/settings/filters'
+                    }
+                ]}
+            />
+        </ObserverSections>
     );
 };
 
