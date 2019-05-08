@@ -31,7 +31,9 @@ const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
             const hours = moment.utc(time).format('HH:mm');
             return `${dayOfWeek} ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.MONTHLY) {
-            const dayOfMonth = getDaysOfMonthOptions().find(({ value }) => value === Math.floor(time / DAY)).text;
+            const dayOfMonth = getDaysOfMonthOptions().find(
+                ({ value }) => value === Math.floor(time / DAY_MILLISECONDS)
+            ).text;
             const hours = moment.utc(time).format('HH:mm');
             return `${dayOfMonth} ${hours}`;
         } else if (autoresponder.Repeat === AutoReplyDuration.PERMANENT) {
