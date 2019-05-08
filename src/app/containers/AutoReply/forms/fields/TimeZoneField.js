@@ -2,17 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Select, Row, Label, Field } from 'react-components';
 import { c } from 'ttag';
-
-const timeZoneOptions = [
-    {
-        text: 'Europe/Vilnius: UTC +03:00',
-        value: 'europe/Vilnius'
-    },
-    {
-        text: 'Europe/Zurich: UTC +02:00',
-        value: 'Europe/Zurich'
-    }
-];
+import { getTimezoneOptions } from '../../utils';
 
 const TimeZoneField = ({ value, onChange }) => {
     const handleChange = (e) => onChange(e.target.value);
@@ -21,7 +11,7 @@ const TimeZoneField = ({ value, onChange }) => {
         <Row className="flex-spacebetween">
             <Label htmlFor="timezone">{c('Label').t`Timezone`}</Label>
             <Field>
-                <Select id="timezone" options={timeZoneOptions} onChange={handleChange} value={value} />
+                <Select id="timezone" options={getTimezoneOptions()} onChange={handleChange} value={value} />
             </Field>
         </Row>
     );

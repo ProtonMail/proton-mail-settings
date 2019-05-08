@@ -3,7 +3,13 @@ import { c } from 'ttag';
 import PropTypes from 'prop-types';
 import { Button } from 'react-components';
 import moment from 'moment';
-import { getDaysOfMonthOptions, getDurationOptions, AutoReplyDuration, DAY_MILLISECONDS } from './utils';
+import {
+    getDaysOfMonthOptions,
+    getDurationOptions,
+    AutoReplyDuration,
+    DAY_MILLISECONDS,
+    getTimezoneOptions
+} from './utils';
 
 const InfoLine = ({ label, children, plain }) => (
     <tr className="mb1 w100 aligntop">
@@ -14,6 +20,7 @@ const InfoLine = ({ label, children, plain }) => (
 
 const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
     const durationLabel = getDurationOptions().find(({ value }) => value === autoresponder.Repeat).text;
+    const timezone = getTimezoneOptions().find(({ value }) => value === autoresponder.Zone).text;
 
     const formatTime = (time) => {
         if (autoresponder.Repeat === AutoReplyDuration.DAILY) {
@@ -44,7 +51,7 @@ const AutoReplyTemplate = ({ autoresponder, onEdit }) => {
                     <InfoLine label={c('Label').t`Duration`}>{durationLabel}</InfoLine>
                     <InfoLine label={c('Label').t`Start`}>{formatTime(autoresponder.StartTime * 1000)}</InfoLine>
                     <InfoLine label={c('Label').t`End`}>{formatTime(autoresponder.EndTime * 1000)}</InfoLine>
-                    <InfoLine label={c('Label').t`Timezone`}>{autoresponder.Zone}</InfoLine>
+                    <InfoLine label={c('Label').t`Timezone`}>{timezone}</InfoLine>
                     <InfoLine plain label={c('Label').t`Message`}>
                         <div dangerouslySetInnerHTML={{ __html: autoresponder.Message }} />
                     </InfoLine>
