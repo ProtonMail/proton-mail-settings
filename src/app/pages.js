@@ -187,7 +187,17 @@ export default [
     {
         text: c('Title').t`Auto-reply`,
         icon: 'auto-reply',
-        route: '/settings/auto-reply'
+        route: '/settings/auto-reply',
+        sections: [
+            {
+                text: c('Title').t`Auto-reply`,
+                id: 'auto-reply'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings'
+            }
+        ]
     },
     {
         text: c('Title').t`Keys`,
