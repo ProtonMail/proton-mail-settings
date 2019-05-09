@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
-import filterFactory, { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
-import { computeFromTree } from 'proton-shared/lib/filters/sieve';
+import { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
 
-import FilterConditionValues from './FilterConditionValues';
-import RadioContainsAttachements from './RadioContainsAttachements';
+import FilterConditionValues from '../FilterConditionValues';
+import RadioContainsAttachements from '../RadioContainsAttachements';
 
-function FilterEditor({ filter }) {
+function FilterEditor({ filter, onChange }) {
     const [model, setModel] = useState(filter);
 
     const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
@@ -35,6 +34,7 @@ function FilterEditor({ filter }) {
         };
         console.log('NewFiler', newFilter);
         setModel(newFilter);
+        onChange(newFilter);
     }
 
     const handleAddNewCondition = () => {
@@ -92,6 +92,10 @@ function FilterEditor({ filter }) {
     const handleInputName = ({ target }) => {
         console.log(target.value);
         setModel({
+            ...model,
+            Name: target.value
+        });
+        onChange({
             ...model,
             Name: target.value
         });

@@ -1,32 +1,34 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Modal, HeaderModal, FooterModal, PrimaryButton } from 'react-components';
+import { Modal, HeaderModal, FooterModal, PrimaryButton, useApiWithoutResult } from 'react-components';
 import { Input, Label, Button, SubTitle, Icon, Select, Row } from 'react-components';
-import filterFactory, { newFilter } from 'proton-shared/lib/filters/factory';
-import { computeFromTree } from 'proton-shared/lib/filters/sieve';
-import FilterEditor from '../../components/Filters/FilterEditor';
+import filterFactory, { newFilter, format as formatFilter } from 'proton-shared/lib/filters/factory';
+import { computeTree } from 'proton-shared/lib/filters/sieve';
+import { updateFilter, addTreeFilter } from 'proton-shared/lib/api/filters';
+
+import ConditionsEditor from '../../components/Filters/editor/Conditions';
+import ActionsEditor from '../../components/Filters/editor/Actions';
 
 function AddFilterModal({ filter, type, ...props }) {
-    const [model, setModel] = useState(filter || newFilter());
+    const filterModel = newFilter(filter);
+    const [model, setModel] = useState({});
 
-    if (filter) {
-        const simple = computeFromTree(filter);
-        if (!simple) {
-            delete filter.Simple;
-        }
-        simple && (filter.Simple = simple);
-        // console.log({
-        //     filter: filter,
-        //     type,
-        //     prout: filterFactory({}, 'simple')
-        // });
-    }
+    const { loading, request } = useApiWithoutResult(addTreeFilter);
+    // const { loading, request } = useApiWithoutResult(updateFilter);
 
-    const handleSubmit = console.log;
+    const handleChange = (newFilter) => {
+        setModel(newFilter);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log('SUBMIT', { filter, model, data: formatFilter(model, 'simple') });
+        // await request();
+    };
 
     return (
-        <Modal {...props}>
+        <Modal {...props} loading={loading}>
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
             <form
@@ -40,10 +42,13 @@ function AddFilterModal({ filter, type, ...props }) {
                 {filter ? (
                     <pre style={{ maxHeight: '150px', overflow: 'auto' }}>{JSON.stringify(filter.Simple, null, 2)}</pre>
                 ) : null}
-                <FilterEditor filter={model} />
+                <ConditionsEditor filter={filterModel} onChange={handleChange} />
+                <ActionsEditor filter={filterModel} onChange={handleChange} />
 
                 <FooterModal>
-                    <PrimaryButton>Save</PrimaryButton>
+                    <PrimaryButton type="submit" disabled={loading}>
+                        Save
+                    </PrimaryButton>
                 </FooterModal>
             </form>
         </Modal>
