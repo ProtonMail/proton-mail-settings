@@ -48,7 +48,13 @@ function FilterEditor({ filter, onChange }) {
 
     const handleRemoveCondition = (index) => () => {
         const Conditions = model.Simple.Conditions.filter((item, i) => i !== index);
-        setModel(Conditions.length ? Conditions : [newCondition()]);
+        setModel({
+            ...model,
+            Simple: {
+                ...model.Simple,
+                Conditions: Conditions.length ? Conditions : [newCondition()]
+            }
+        });
     };
 
     const handleChangeAttachments = (config) => (value) => {

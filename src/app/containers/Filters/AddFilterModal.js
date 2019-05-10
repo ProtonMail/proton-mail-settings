@@ -38,28 +38,28 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         <Modal {...props} loading={loading}>
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
-            <ContentModal
-                onSubmit={noop}
-                loading={loading}
-                style={{
-                    minHeight: '60vh',
-                    overflowY: 'auto'
-                }}
-            >
-                <Row>
-                    <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                    <Input
-                        id="accountName"
-                        type="text"
-                        value={model.Name}
-                        onInput={handleInputName}
-                        placeholder={c('New Label form').t('Name')}
-                        required
-                    />
-                </Row>
+            <ContentModal onSubmit={noop} loading={loading}>
+                <div
+                    style={{
+                        maxHeight: '60vh',
+                        overflowY: 'auto'
+                    }}
+                >
+                    <Row>
+                        <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
+                        <Input
+                            id="accountName"
+                            type="text"
+                            value={model.Name}
+                            onInput={handleInputName}
+                            placeholder={c('New Label form').t('Name')}
+                            required
+                        />
+                    </Row>
 
-                <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
-                <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
+                    <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
+                    <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
+                </div>
 
                 <FooterModal>
                     <PrimaryButton disabled={loading} onClick={handleSubmit}>
