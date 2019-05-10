@@ -46,10 +46,6 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                     overflowY: 'auto'
                 }}
             >
-                {filter ? (
-                    <pre style={{ maxHeight: '150px', overflow: 'auto' }}>{JSON.stringify(filter.Simple, null, 2)}</pre>
-                ) : null}
-
                 <Row>
                     <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
                     <Input

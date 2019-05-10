@@ -1,24 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Button, ConfirmModal, Alert, useApiWithoutResult, useModal, useNotifications } from 'react-components';
+import { Button, useModal, useEventManager, useNotifications, useApiWithoutResult } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
+import { updateFilter } from 'proton-shared/lib/api/filters';
 
 import AddFilterModal from '../../containers/Filters/AddFilterModal';
 
 function EditFilterButton({ filter, mode, className, onEditFilter, textContent }) {
+    const { call } = useEventManager();
     const { createNotification } = useNotifications();
-    // const { request, loading } = useApiWithoutResult(deleteFilter);
-    const { isOpen: isOpenModal, open: openModal, close: closeModal } = useModal();
+    const { loading, request } = useApiWithoutResult(updateFilter);
+    const { isOpen, open, close } = useModal();
 
-    const handelClick = openModal;
-    const handleCloseModal = closeModal;
+    const handelClick = open;
+    const handleCloseModal = close;
 
-    const handleSubmitModal = async () => {
-        closeConfirmModal();
+    const handleSubmitModal = async (filter) => {
+        const { Filter } = await request(filter.ID, filter);
+        call();
         createNotification({
-            text: c('Filter notification').t('Filter removed')
+            text: c('Filter notification').t`Filter ${filter.Name} updated`
         });
+        close();
         onEditFilter(filter);
     };
 
@@ -27,13 +31,15 @@ function EditFilterButton({ filter, mode, className, onEditFilter, textContent }
             <Button className={className} onClick={handelClick}>
                 {textContent}
             </Button>
-            <AddFilterModal
-                show={isOpenModal}
-                filter={filter}
-                type={mode}
-                onClose={handleCloseModal}
-                onSubmit={handleSubmitModal}
-            />
+            {isOpen ? (
+                <AddFilterModal
+                    show={isOpen}
+                    filter={filter}
+                    type={mode}
+                    onClose={handleCloseModal}
+                    onSubmit={handleSubmitModal}
+                />
+            ) : null}
         </>
     );
 }

@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
-import { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
+import { Input, Label, Select, Row } from 'react-components';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
 function FilterEditor({ filter, onChange }) {
-    const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
-    const toOptions = (list = []) => list.map(({ label: text, value }) => ({ text, value }));
+    const { Actions } = filter.Simple;
 
     const MOVE_TO = [
         {
-            text: c('Filter Actions').t`Move to`
+            text: c('Filter Actions').t`Move to ...`
         },
         {
             text: c('Filter Actions').t`Move to archive`,
@@ -27,7 +25,7 @@ function FilterEditor({ filter, onChange }) {
 
     const MARK_AS = [
         {
-            text: c('Filter Actions').t`Mark as`
+            text: c('Filter Actions').t`Mark as ...`
         },
         {
             text: c('Filter Actions').t`Mark as read`,
@@ -54,6 +52,25 @@ function FilterEditor({ filter, onChange }) {
         return ({ target }) => onChange(formatData(target.value));
     };
 
+    const getDefaultValue = (mode) => {
+        if (mode === 'markAs') {
+            if (Actions.Mark.Starred && !Actions.Mark.Read) {
+                return 'starred';
+            }
+
+            if (!Actions.Mark.Starred && Actions.Mark.Read) {
+                return 'read';
+            }
+        }
+
+        if (mode === 'moveTo') {
+            const [key] = Actions.FileInto;
+            if (key) {
+                return key;
+            }
+        }
+    };
+
     return (
         <>
             <Row>
@@ -61,10 +78,20 @@ function FilterEditor({ filter, onChange }) {
                 <Input id="labelsFiler" type="text" placeholder={c('New Label form').t('Add labels')} />
             </Row>
             <Row>
-                <Select options={MOVE_TO} onChange={handleChange('moveTo')} className="mlauto" />
+                <Select
+                    options={MOVE_TO}
+                    onChange={handleChange('moveTo')}
+                    className="mlauto"
+                    defaultValue={getDefaultValue('moveTo')}
+                />
             </Row>
             <Row>
-                <Select options={MARK_AS} onChange={handleChange('markAs')} className="mlauto" />
+                <Select
+                    options={MARK_AS}
+                    onChange={handleChange('markAs')}
+                    className="mlauto"
+                    defaultValue={getDefaultValue('markAs')}
+                />
             </Row>
         </>
     );

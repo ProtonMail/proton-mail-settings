@@ -8,7 +8,7 @@ import {
     useNotifications,
     useApiWithoutResult
 } from 'react-components';
-import { updateFilter, addTreeFilter } from 'proton-shared/lib/api/filters';
+import { addTreeFilter } from 'proton-shared/lib/api/filters';
 
 import AddFilterModal from '../../containers/Filters/AddFilterModal';
 
@@ -45,7 +45,15 @@ function ActionsFilterToolbar() {
             <Button onClick={handleClickAdd('sieve')} className="ml1">
                 {c('Action').t('Add Sieve Filter')}
             </Button>
-            <AddFilterModal show={isOpen} type={type} loading={loading} onClose={handleClose} onSubmit={handleSubmit} />
+            {isOpen ? (
+                <AddFilterModal
+                    show={isOpen}
+                    type={type}
+                    loading={loading}
+                    onClose={handleClose}
+                    onSubmit={handleSubmit}
+                />
+            ) : null}
         </>
     );
 }
