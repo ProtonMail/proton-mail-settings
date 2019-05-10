@@ -9,7 +9,7 @@ function EditConditionValue({ value, onClickDelete, onEdit, className }) {
 
     const handleClick = () => onClickDelete(value);
     const handleInput = ({ target }) => setState(target.value);
-    const handleKeyUp = ({ key, target }) => {
+    const handleKeyUp = ({ key }) => {
         if (key !== 'Enter') {
             return;
         }
@@ -19,7 +19,7 @@ function EditConditionValue({ value, onClickDelete, onEdit, className }) {
     return (
         <Row className={'EditConditionValue-container'.concat(className)} data-info={c('Filter condition').t`Or`}>
             <Input onKeyUp={handleKeyUp} onInput={handleInput} value={state} />
-            <Button className="ml1" onClick={handleClick}>{c('Action').t`Delete`}</Button>
+            <Button className="ml1" onClick={handleClick} type="button">{c('Action').t`Delete`}</Button>
         </Row>
     );
 }

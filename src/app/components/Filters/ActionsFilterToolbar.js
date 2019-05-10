@@ -1,24 +1,42 @@
 import React, { useState } from 'react';
 import { c } from 'ttag';
-import { Button, PrimaryButton, useModal } from 'react-components';
+import {
+    Button,
+    PrimaryButton,
+    useModal,
+    useEventManager,
+    useNotifications,
+    useApiWithoutResult
+} from 'react-components';
+import { updateFilter, addTreeFilter } from 'proton-shared/lib/api/filters';
+
 import AddFilterModal from '../../containers/Filters/AddFilterModal';
 
 function ActionsFilterToolbar() {
-    const { isOpen: isOpenModal, open: openModal, close: closeModal } = useModal();
     const [type, setType] = useState('');
+    const { isOpen, open, close } = useModal();
 
-    const handleCloseModal = () => {
+    const { call } = useEventManager();
+    const { createNotification } = useNotifications();
+    const { loading, request } = useApiWithoutResult(addTreeFilter);
+
+    const handleClose = () => {
         console.log('handleCloseModal');
-        closeModal();
+        close();
     };
-    const handleSubmitModal = () => {
-        console.log('handleSubmitModal');
-        openModal();
+    const handleSubmit = async (filter) => {
+        console.log('handleSubmitModal', filter);
+        const { Filter } = await request(filter);
+        call();
+        createNotification({
+            text: c('Notification').t`${Filter.Name} created`
+        });
+        close();
     };
 
     const handleClickAdd = (type = '') => () => {
         setType(type);
-        openModal();
+        open();
     };
 
     return (
@@ -27,7 +45,7 @@ function ActionsFilterToolbar() {
             <Button onClick={handleClickAdd('sieve')} className="ml1">
                 {c('Action').t('Add Sieve Filter')}
             </Button>
-            <AddFilterModal show={isOpenModal} type={type} onClose={handleCloseModal} onSubmit={handleSubmitModal} />
+            <AddFilterModal show={isOpen} type={type} loading={loading} onClose={handleClose} onSubmit={handleSubmit} />
         </>
     );
 }

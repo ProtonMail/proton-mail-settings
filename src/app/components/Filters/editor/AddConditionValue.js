@@ -12,10 +12,11 @@ function AddCondtionValue({ onAdd, className }) {
         setState('');
     };
 
-    const handleKeyUp = ({ key, target }) => {
-        if (key !== 'Enter') {
+    const handleKeyUp = (e) => {
+        if (e.key !== 'Enter') {
             return;
         }
+        e.preventDefault();
         addEffect();
     };
 
@@ -31,7 +32,7 @@ function AddCondtionValue({ onAdd, className }) {
                 onInput={handleInput}
                 placeholder={c('Info').t`Text or pattern`}
             />
-            <Button disabled={!state} onClick={handleClick} className="ml1">{c('Action').t`Add`}</Button>
+            <Button disabled={!state} onClick={handleClick} className="ml1" type="button">{c('Action').t`Add`}</Button>
         </Row>
     );
 }

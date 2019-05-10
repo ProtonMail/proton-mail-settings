@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
@@ -17,24 +17,23 @@ function FilterEditor({ filter, onChange }) {
         console.log(value, newScoped, {
             config: { scope, condition, index }
         });
-        const newFilter = {
+        const newConditions = model.Simple.Conditions.map((item, i) => {
+            if (i === index) {
+                return {
+                    ...condition,
+                    [scope]: newScoped
+                };
+            }
+            return item;
+        });
+        onChange(newConditions);
+        setModel({
             ...model,
             Simple: {
                 ...model.Simple,
-                Conditions: model.Simple.Conditions.map((item, i) => {
-                    if (i === index) {
-                        return {
-                            ...condition,
-                            [scope]: newScoped
-                        };
-                    }
-                    return item;
-                })
+                Conditions: newConditions
             }
-        };
-        console.log('NewFiler', newFilter);
-        setModel(newFilter);
-        onChange(newFilter);
+        });
     }
 
     const handleAddNewCondition = () => {
@@ -49,14 +48,7 @@ function FilterEditor({ filter, onChange }) {
 
     const handleRemoveCondition = (index) => () => {
         const Conditions = model.Simple.Conditions.filter((item, i) => i !== index);
-        const newFilter = {
-            ...model,
-            Simple: {
-                ...model.Simple,
-                Conditions: Conditions.length ? Conditions : [newCondition()]
-            }
-        };
-        setModel(newFilter);
+        setModel(Conditions.length ? Conditions : [newCondition()]);
     };
 
     const handleChangeAttachments = (config) => (value) => {
@@ -64,6 +56,10 @@ function FilterEditor({ filter, onChange }) {
         syncModel(value, config, newComparator);
     };
 
+    const handleChangeType = (config) => ({ target }) => {
+        const newType = TYPES.find((item) => item.value === target.value);
+        syncModel(target.value, config, newType);
+    };
     const handleChangeCondition = (config) => ({ target }) => {
         const newComparator = COMPARATORS.find((item) => item.value === target.value);
         syncModel(target.value, config, newComparator);
@@ -89,32 +85,8 @@ function FilterEditor({ filter, onChange }) {
         syncModel(value, config, newScoped);
     };
 
-    const handleInputName = ({ target }) => {
-        console.log(target.value);
-        setModel({
-            ...model,
-            Name: target.value
-        });
-        onChange({
-            ...model,
-            Name: target.value
-        });
-    };
-
     return (
         <>
-            <Row>
-                <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                <Input
-                    id="accountName"
-                    type="text"
-                    value={model.Name}
-                    onInput={handleInputName}
-                    placeholder={c('New Label form').t('Name')}
-                    required
-                />
-            </Row>
-
             {model.Simple.Conditions.map((condition, index) => {
                 return (
                     <Row key={`condition-${index}`}>
@@ -147,6 +119,11 @@ function FilterEditor({ filter, onChange }) {
                                         options={toOptions(TYPES)}
                                         className="mb1"
                                         defaultValue={condition.Type.value}
+                                        onChange={handleChangeType({
+                                            scope: 'Type',
+                                            condition,
+                                            index
+                                        })}
                                     />
 
                                     <FilterConditionValues

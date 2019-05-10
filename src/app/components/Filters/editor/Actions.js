@@ -8,8 +8,6 @@ import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
 function FilterEditor({ filter, onChange }) {
-    const [model, setModel] = useState(filter);
-
     const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
     const toOptions = (list = []) => list.map(({ label: text, value }) => ({ text, value }));
 
@@ -41,23 +39,6 @@ function FilterEditor({ filter, onChange }) {
         }
     ];
 
-    function syncModel(newActions = {}) {
-        console.log('Update model', newActions);
-        const newFilter = {
-            ...model,
-            Simple: {
-                ...model.Simple,
-                Actions: {
-                    ...model.Simple.Actions,
-                    ...newActions
-                }
-            }
-        };
-        console.log('NewFiler', newFilter);
-        setModel(newFilter);
-        onChange(newFilter);
-    }
-
     const ACTIONS = {
         markAs: (value) => ({
             Mark: {
@@ -70,7 +51,7 @@ function FilterEditor({ filter, onChange }) {
 
     const handleChange = (mode) => {
         const formatData = ACTIONS[mode];
-        return ({ target }) => syncModel(formatData(target.value));
+        return ({ target }) => onChange(formatData(target.value));
     };
 
     return (
