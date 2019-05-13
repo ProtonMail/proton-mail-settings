@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Radio } from 'react-components';
+import { Radio, Row } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 function RadioContainsAttachements({ comparator, onChange }) {
@@ -16,25 +16,29 @@ function RadioContainsAttachements({ comparator, onChange }) {
 
     return (
         <>
-            <Radio
-                checked={value === 'contains'}
-                onChange={handleChange}
-                name="contains"
-                value="contains"
-                id="contains"
-            >
-                {c('Option Filter').t('With Attachments')}
-            </Radio>
+            <Row>
+                <Radio
+                    checked={value === 'contains'}
+                    onChange={handleChange}
+                    name="contains"
+                    value="contains"
+                    id="contains"
+                >
+                    {c('Option Filter').t('With Attachments')}
+                </Radio>
+            </Row>
 
-            <Radio
-                checked={value === '!contains'}
-                onChange={handleChange}
-                name="contains"
-                value="!contains"
-                id="notcontains"
-            >
-                {c('Option Filter').t('Without Attachments')}
-            </Radio>
+            <Row>
+                <Radio
+                    checked={value === '!contains'}
+                    onChange={handleChange}
+                    name="contains"
+                    value="!contains"
+                    id="notcontains"
+                >
+                    {c('Option Filter').t('Without Attachments')}
+                </Radio>
+            </Row>
         </>
     );
 }

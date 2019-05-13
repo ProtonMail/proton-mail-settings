@@ -14,9 +14,6 @@ function FilterEditor({ filter, onChange }) {
     const toOptions = (list = []) => list.map(({ label: text, value }) => ({ text, value }));
 
     function syncModel(value, { scope, condition, index }, newScoped) {
-        console.log(value, newScoped, {
-            config: { scope, condition, index }
-        });
         const newConditions = model.Simple.Conditions.map((item, i) => {
             if (i === index) {
                 return {
@@ -98,24 +95,31 @@ function FilterEditor({ filter, onChange }) {
                     <Row key={`condition-${index}`}>
                         {condition.Type.value === 'attachments' ? (
                             <>
-                                <Select
-                                    options={toOptions(TYPES)}
-                                    className="mr1"
-                                    defaultValue={condition.Type.value}
-                                />
+                                <Label>
+                                    {c('Label').t`Conditions ${index + 1}`}
+                                    <SmallButton className="ml1" onClick={handleRemoveCondition(index)}>
+                                        <Icon name="trash" />
+                                    </SmallButton>
+                                </Label>
 
-                                <RadioContainsAttachements
-                                    comparator={condition.Comparator.value}
-                                    onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
-                                />
+                                <div className="w100">
+                                    <Row>
+                                        <Select options={toOptions(TYPES)} defaultValue={condition.Type.value} />
+                                    </Row>
+
+                                    <RadioContainsAttachements
+                                        comparator={condition.Comparator.value}
+                                        onChange={handleChangeAttachments({ scope: 'Comparator', condition, index })}
+                                    />
+                                </div>
                             </>
                         ) : null}
 
                         {condition.Type.value !== 'attachments' ? (
                             <>
                                 <Label>
-                                    {c('Label').t`Conditions`}
-                                    <SmallButton onClick={handleRemoveCondition(index)}>
+                                    {c('Label').t`Conditions ${index + 1}`}
+                                    <SmallButton className="ml1" onClick={handleRemoveCondition(index)}>
                                         <Icon name="trash" />
                                     </SmallButton>
                                 </Label>

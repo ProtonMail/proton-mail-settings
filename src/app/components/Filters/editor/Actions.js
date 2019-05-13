@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Input, Label, Select, Row } from 'react-components';
+import { Loader, Input, Label, Select, Row, useLabels } from 'react-components';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
 function FilterEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
+    const [labels = [], loading] = useLabels();
+
+    const folders = labels.reduce((acc, { Name, Exclusive }) => {
+        if (Exclusive !== 1) {
+            return acc;
+        }
+        acc.push({
+            text: c('Filter Actions').t`Move to ${Name}`,
+            value: Name
+        });
+        return acc;
+    }, []);
 
     const MOVE_TO = [
         {
@@ -21,7 +33,7 @@ function FilterEditor({ filter, onChange }) {
             text: c('Filter Actions').t`Move to mailbox`,
             value: 'inbox'
         }
-    ];
+    ].concat(folders);
 
     const MARK_AS = [
         {
@@ -72,28 +84,35 @@ function FilterEditor({ filter, onChange }) {
     };
 
     return (
-        <>
-            <Row>
-                <Label htmlFor="accountName">{c('New Label form').t`Actions`}</Label>
-                <Input id="labelsFiler" type="text" placeholder={c('New Label form').t('Add labels')} />
-            </Row>
-            <Row>
-                <Select
-                    options={MOVE_TO}
-                    onChange={handleChange('moveTo')}
-                    className="mlauto"
-                    defaultValue={getDefaultValue('moveTo')}
-                />
-            </Row>
-            <Row>
-                <Select
-                    options={MARK_AS}
-                    onChange={handleChange('markAs')}
-                    className="mlauto"
-                    defaultValue={getDefaultValue('markAs')}
-                />
-            </Row>
-        </>
+        <Row>
+            <Label htmlFor="actions">{c('New Label form').t`Actions`}</Label>
+            <div className="w100">
+                <Row>
+                    {loading ? (
+                        <Loader />
+                    ) : (
+                        <Input id="actions" type="text" placeholder={c('New Label form').t('Add labels')} />
+                    )}
+                </Row>
+                <Row>
+                    <Select
+                        options={MOVE_TO}
+                        onChange={handleChange('moveTo')}
+                        className="mlauto"
+                        defaultValue={getDefaultValue('moveTo')}
+                    />
+                </Row>
+
+                <Row>
+                    <Select
+                        options={MARK_AS}
+                        onChange={handleChange('markAs')}
+                        className="mlauto"
+                        defaultValue={getDefaultValue('markAs')}
+                    />
+                </Row>
+            </div>
+        </Row>
     );
 }
 

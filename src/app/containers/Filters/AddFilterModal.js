@@ -17,6 +17,7 @@ import { noop } from 'proton-shared/lib/helpers/function';
 
 import ConditionsEditor from '../../components/Filters/editor/Conditions';
 import ActionsEditor from '../../components/Filters/editor/Actions';
+import OperatorEditor from '../../components/Filters/editor/Operator';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter);
@@ -62,6 +63,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                         />
                     </Row>
 
+                    <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
                     <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
                     <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
                 </InnerModal>
