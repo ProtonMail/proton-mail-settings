@@ -27,15 +27,16 @@ function RemoveFilter({ filter, className, onRemoveFilter }) {
             <Button className={className} onClick={handelClick}>
                 {c('Action').t('Delete')}
             </Button>
-            <ConfirmModal
-                loading={loading}
-                show={isOpenConfirmModal}
-                onClose={handleCloseConfirmModal}
-                onConfirm={handleConfirmConfirmModal}
-                title={c('Title').t`Delete Filter`}
-            >
-                <Alert>{c('Info').t`Are you sure you want to delete this filter?`}</Alert>
-            </ConfirmModal>
+            {isOpenConfirmModal ? (
+                <ConfirmModal
+                    loading={loading}
+                    onClose={handleCloseConfirmModal}
+                    onConfirm={handleConfirmConfirmModal}
+                    title={c('Title').t`Delete Filter`}
+                >
+                    <Alert>{c('Info').t`Are you sure you want to delete this filter?`}</Alert>
+                </ConfirmModal>
+            ) : null}
         </>
     );
 }

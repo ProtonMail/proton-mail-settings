@@ -39,13 +39,14 @@ function AddEmailFilterListButton({ type, className, onAdd }) {
             <PrimaryButton className={className} onClick={handelClick}>
                 {c('Action').t('Add')}
             </PrimaryButton>
-            <AddEmailToListModal
-                type={type}
-                show={isOpen}
-                loading={loading}
-                onClose={handleCloseModal}
-                onSubmit={handleSubmitModal}
-            />
+            {isOpen ? (
+                <AddEmailToListModal
+                    type={type}
+                    loading={loading}
+                    onClose={handleCloseModal}
+                    onSubmit={handleSubmitModal}
+                />
+            ) : null}
         </>
     );
 }

@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Modal, HeaderModal, FooterModal, ContentModal, PrimaryButton, Input, Label, Row } from 'react-components';
+import {
+    Modal,
+    HeaderModal,
+    InnerModal,
+    FooterModal,
+    ContentModal,
+    PrimaryButton,
+    Input,
+    Label,
+    Row
+} from 'react-components';
 import { newFilter, format as formatFilter } from 'proton-shared/lib/filters/factory';
 import { noop } from 'proton-shared/lib/helpers/function';
 
@@ -39,12 +49,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
             <ContentModal onSubmit={noop} loading={loading}>
-                <div
-                    style={{
-                        maxHeight: '60vh',
-                        overflowY: 'auto'
-                    }}
-                >
+                <InnerModal>
                     <Row>
                         <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
                         <Input
@@ -59,8 +64,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
 
                     <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
                     <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
-                </div>
-
+                </InnerModal>
                 <FooterModal>
                     <PrimaryButton disabled={loading} onClick={handleSubmit}>
                         {c('Action').t`Save`}
