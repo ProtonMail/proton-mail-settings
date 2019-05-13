@@ -49,7 +49,7 @@ function LabelsContainer() {
             <Title>{c('LabelSettings').t`Manage your labels/folders`}</Title>
             <div className="p1">
                 <SubTitle>{c('LabelSettings').t`Folders and labels`}</SubTitle>
-                <Alert type="standard" className="mt1 mb1" learnMore="https://protonmail.com">
+                <Alert type="info" className="mt1 mb1" learnMore="https://protonmail.com">
                     {c('LabelSettings')
                         .t`Multiple Labels can be applied to a single message, but a message can only be in a single Folder.`}
                 </Alert>

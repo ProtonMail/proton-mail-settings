@@ -49,15 +49,16 @@ function DeleteLabelButton({ label, onRemove }) {
     return (
         <>
             <SmallButton onClick={handleClick}>{c('Action').t`Delete`}</SmallButton>
-            <ConfirmModal
-                loading={loading}
-                show={isOpen}
-                onClose={handleCloseConfirmModal}
-                onConfirm={handleConfirmConfirmModal}
-                title={I18N[label.Exclusive].title}
-            >
-                <Alert>{I18N[label.Exclusive].content}</Alert>
-            </ConfirmModal>
+            {isOpen ? (
+                <ConfirmModal
+                    loading={loading}
+                    onClose={handleCloseConfirmModal}
+                    onConfirm={handleConfirmConfirmModal}
+                    title={I18N[label.Exclusive].title}
+                >
+                    <Alert>{I18N[label.Exclusive].content}</Alert>
+                </ConfirmModal>
+            ) : null}
         </>
     );
 }

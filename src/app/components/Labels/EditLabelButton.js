@@ -31,14 +31,15 @@ function EditLabelButton({ label, onChange, className }) {
             <SmallButton onClick={handleClickAdd} className={className}>
                 {c('Action').t`Edit`}
             </SmallButton>
-            <EditLabelModal
-                show={isOpenModal}
-                label={label}
-                loading={loading}
-                mode="edition"
-                onClose={handleCloseModal}
-                onSubmit={handleSubmitModal}
-            />
+            {isOpenModal && (
+                <EditLabelModal
+                    label={label}
+                    loading={loading}
+                    mode="edition"
+                    onClose={handleCloseModal}
+                    onSubmit={handleSubmitModal}
+                />
+            )}
         </>
     );
 }
