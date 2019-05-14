@@ -29,7 +29,7 @@ export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveF
             </td>
             <td>
                 <EditFilterButton filter={filter} textContent={c('Action').t('Edit')} />
-                <EditFilterButton filter={filter} mode={'sieve'} textContent={c('Action').t('Edit Sieve')} />
+                <EditFilterButton filter={filter} mode="sieve" textContent={c('Action').t('Edit Sieve')} />
                 <RemoveFilter filter={filter} onRemoveFilter={onRemoveFilter} />
             </td>
         </tr>

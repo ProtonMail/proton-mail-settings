@@ -18,6 +18,7 @@ import { noop } from 'proton-shared/lib/helpers/function';
 import ConditionsEditor from '../../components/Filters/editor/Conditions';
 import ActionsEditor from '../../components/Filters/editor/Actions';
 import OperatorEditor from '../../components/Filters/editor/Operator';
+import SieveEditor from '../../components/Filters/editor/Sieve';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter);
@@ -45,28 +46,38 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         });
     };
 
+    const handleChangeSieve = console.log;
+
     return (
         <Modal {...props} loading={loading}>
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
             <ContentModal onSubmit={noop} loading={loading}>
-                <InnerModal>
-                    <Row>
-                        <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                        <Input
-                            id="accountName"
-                            type="text"
-                            value={model.Name}
-                            onInput={handleInputName}
-                            placeholder={c('New Label form').t('Name')}
-                            required
-                        />
-                    </Row>
+                {type === 'sieve' ? (
+                    <InnerModal>
+                        <SieveEditor filter={filterModel} onChange={handleChangeSieve} />
+                    </InnerModal>
+                ) : null}
 
-                    <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
-                    <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
-                    <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
-                </InnerModal>
+                {type !== 'sieve' ? (
+                    <InnerModal>
+                        <Row>
+                            <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
+                            <Input
+                                id="accountName"
+                                type="text"
+                                value={model.Name}
+                                onInput={handleInputName}
+                                placeholder={c('New Label form').t('Name')}
+                                required
+                            />
+                        </Row>
+
+                        <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
+                        <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
+                        <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
+                    </InnerModal>
+                ) : null}
                 <FooterModal>
                     <PrimaryButton disabled={loading} onClick={handleSubmit}>
                         {c('Action').t`Save`}

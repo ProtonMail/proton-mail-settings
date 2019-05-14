@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Select, Input, Row, Button } from 'react-components';
+import { Select } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import EditConditionValue from './editor/EditConditionValue';
@@ -36,5 +36,21 @@ function FilterConditionValues({ condition, options, onDelete, onChangeCondition
         </>
     );
 }
+
+FilterConditionValues.propTypes = {
+    condition: PropTypes.object.isRequired,
+    options: PropTypes.array.isRequired,
+    onDelete: PropTypes.func,
+    onChangeCondition: PropTypes.func,
+    onAdd: PropTypes.func,
+    onEdit: PropTypes.func
+};
+
+FilterConditionValues.defaultProps = {
+    onDelete: noop,
+    onChangeCondition: noop,
+    onAdd: noop,
+    onEdit: noop
+};
 
 export default FilterConditionValues;

@@ -6,7 +6,6 @@ import {
     Bordered,
     Button,
     Icon,
-    LearnMore,
     PrimaryButton,
     Group,
     Paragraph,
@@ -14,7 +13,7 @@ import {
     ConfirmModal,
     useModal,
     Alert,
-    useLoading
+    Loader
 } from 'react-components';
 
 import useFilters from './useFilters';
@@ -47,19 +46,17 @@ function FiltersContainer() {
     return (
         <>
             <SubTitle>{c('FilterSettings').t('Custom Filters')}</SubTitle>
-            <p className="block-info-standard mt1 mb1">
+            <Alert learnMore="https://protonmail.com" type="info">
                 {c('FilterSettings').t(
                     'Add a custom filter to perform actions suche as automatically labeling or archiving messages.'
                 )}
-                <br />
-                <LearnMore url="https://protonmail.com" />
-            </p>
+            </Alert>
 
             <Group>
                 <ActionsFilterToolbar />
             </Group>
 
-            {loading ? <div className="square-color bordered-container center w100" aria-busy="true" /> : null}
+            {loading ? <Loader /> : null}
 
             {!loading && list.length ? (
                 <FilterSortableList
