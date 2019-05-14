@@ -13,6 +13,7 @@ import {
     Row
 } from 'react-components';
 import { newFilter, format as formatFilter } from 'proton-shared/lib/filters/factory';
+import { validate, validateComplex } from 'proton-shared/lib/filters/validator';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import ConditionsEditor from '../../components/Filters/editor/Conditions';
@@ -23,7 +24,8 @@ import SieveEditor from '../../components/Filters/editor/Sieve';
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter);
     const [model, setModel] = useState(filterModel);
-    const [isInvalid, setValitidy] = useState(true);
+    const [isInvalid, setValitidy] = useState(false);
+    const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
 
     const handleChange = (key) => (data) => {
         setModel({
@@ -37,8 +39,30 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formatFilter(model, 'simple'), { isInvalid });
-        // onSubmit(formatFilter(model, 'simple'));
+
+        if (type === 'sieve') {
+            const filter = {
+                ...model,
+                Sieve: sieveCode
+            };
+            const { isValid } = validateComplex(filter);
+
+            if (isInvalid || !isValid) {
+                return alert('NEIN NEIN NEIN');
+            }
+
+            return onSubmit(formatFilter(filter, 'complex'));
+        }
+
+        const filter = formatFilter(model, 'simple');
+        const { isValid, ...errors } = validate(filter);
+
+        if (!isValid) {
+            console.log(errors);
+            return alert('NEIN NEIN NEIN');
+        }
+
+        onSubmit(filter);
     };
 
     const handleInputName = ({ target }) => {
@@ -57,13 +81,18 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         const name = `[${err ? 'INVALID' : 'VALID'}] Sieve code`;
         console.groupCollapsed(name);
         console.log(code);
+        console.log(model);
         console.groupEnd(name);
         setValitidy(err);
         console.log('setValitidy', err, { err });
+
+        if (!err) {
+            setSieveCode(code);
+        }
     };
     const handleChangeBeforeLint = () => {
         setValitidy(true);
-        console.log('setValitidy', false);
+        console.log('setValitidy', true);
     };
 
     return (
@@ -73,7 +102,22 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             <ContentModal onSubmit={noop} loading={loading}>
                 {type === 'sieve' ? (
                     <InnerModal>
-                        <SieveEditor filter={filterModel} onChange={handleChangeSieve} />
+                        <Row>
+                            <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
+                            <Input
+                                id="accountName"
+                                type="text"
+                                value={model.Name}
+                                onInput={handleInputName}
+                                placeholder={c('New Label form').t('Name')}
+                                required
+                            />
+                        </Row>
+                        <SieveEditor
+                            filter={filterModel}
+                            onChange={handleChangeSieve}
+                            onChangeBeforeLint={handleChangeBeforeLint}
+                        />
                     </InnerModal>
                 ) : null}
 
@@ -91,11 +135,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                             />
                         </Row>
 
-                        <OperatorEditor
-                            filter={filterModel}
-                            onChange={handleChange('Operator')}
-                            onChangeBeforeLint={handleChangeBeforeLint}
-                        />
+                        <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
                         <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
                         <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
                     </InnerModal>

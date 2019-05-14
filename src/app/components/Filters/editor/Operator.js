@@ -11,7 +11,6 @@ function OperatorEditor({ filter, onChange }) {
 
     const handleChange = ({ target }) => {
         const operator = OPERATORS.find(({ value }) => target.value === value);
-        console.log(operator);
         onChange(operator);
     };
 

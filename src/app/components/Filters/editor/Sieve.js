@@ -13,21 +13,26 @@ import 'codemirror/addon/lint/lint';
 import 'codemirror/mode/sieve/sieve';
 
 const clean = normalize();
-codemirror.registerHelper('lint', 'sieve', (text) => {
-    if (text.trim() === '') {
-        const [line = ''] = text.split('\n');
-        return [
-            {
-                message: 'A sieve script cannot be empty',
-                severity: 'error',
-                from: codemirror.Pos(0, 0),
-                to: codemirror.Pos(0, line.length)
-            }
-        ];
-    }
-    const lint = codemirror._uglyGlobal;
-    return lint ? lint(clean(text)) : [];
-});
+codemirror.registerHelper(
+    'lint',
+    'sieve',
+    debounce((text, opt, instance) => {
+        if (text.trim() === '') {
+            const [line = ''] = text.split('\n');
+            return [
+                {
+                    message: 'A sieve script cannot be empty',
+                    severity: 'error',
+                    from: codemirror.Pos(0, 0),
+                    to: codemirror.Pos(0, line.length)
+                }
+            ];
+        }
+
+        const lint = codemirror._uglyGlobal;
+        return lint ? lint(clean(text)) : [];
+    }, 500)
+);
 
 function FilterEditorSieve({ filter, onChangeBeforeLint, onChange }) {
     const api = useApi();
@@ -62,13 +67,15 @@ function FilterEditorSieve({ filter, onChangeBeforeLint, onChange }) {
                 lineWrapping: true,
                 readOnly: false,
                 fixedGutter: false,
+                spellcheck: false,
                 lint: {
-                    delay: 800
+                    delay: 800,
+                    waitingFor: 300
                 },
                 gutters: ['CodeMirror-lint-markers'],
                 autoRefresh: true
             }}
-            onChange={debounce(handleChange, 300)}
+            onChange={handleChange}
         />
     );
 }

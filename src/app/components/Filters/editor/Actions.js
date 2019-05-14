@@ -95,12 +95,16 @@ function FilterEditor({ filter, onChange }) {
                     )}
                 </Row>
                 <Row>
-                    <Select
-                        options={MOVE_TO}
-                        onChange={handleChange('moveTo')}
-                        className="mlauto"
-                        defaultValue={getDefaultValue('moveTo')}
-                    />
+                    {loading ? (
+                        <Loader />
+                    ) : (
+                        <Select
+                            options={MOVE_TO}
+                            onChange={handleChange('moveTo')}
+                            className="mlauto"
+                            defaultValue={getDefaultValue('moveTo')}
+                        />
+                    )}
                 </Row>
 
                 <Row>
