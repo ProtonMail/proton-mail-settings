@@ -3,6 +3,7 @@ import { c } from 'ttag';
 import { SortableElement } from 'react-sortable-hoc';
 import { debounce } from 'proton-shared/lib/helpers/function';
 import { Icon, Button, ConfirmModal } from 'react-components';
+import { isComplex } from 'proton-shared/lib/filters/factory';
 
 import ToggleBoolean from '../ui/ToggleBoolean';
 import RemoveFilter from './RemoveFilter';
@@ -28,7 +29,7 @@ export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveF
                 </div>
             </td>
             <td>
-                <EditFilterButton filter={filter} textContent={c('Action').t('Edit')} />
+                {!isComplex(filter) ? <EditFilterButton filter={filter} textContent={c('Action').t('Edit')} /> : null}
                 <EditFilterButton filter={filter} mode="sieve" textContent={c('Action').t('Edit Sieve')} />
                 <RemoveFilter filter={filter} onRemoveFilter={onRemoveFilter} />
             </td>
