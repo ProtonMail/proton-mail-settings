@@ -22,7 +22,7 @@ import OperatorEditor from '../../components/Filters/editor/Operator';
 import SieveEditor from '../../components/Filters/editor/Sieve';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
-    const filterModel = newFilter(filter);
+    const filterModel = newFilter(filter, type);
     const [model, setModel] = useState(filterModel);
     const [isInvalid, setValitidy] = useState(false);
     const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
@@ -40,7 +40,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (type === 'sieve') {
+        if (type === 'complex') {
             const filter = {
                 ...model,
                 Sieve: sieveCode
@@ -72,27 +72,12 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         });
     };
 
+    const handleChangeBeforeLint = () => setValitidy(true);
     const handleChangeSieve = (err, code) => {
-        /*
-            Flow:
-                onChange: !fromLint -> disable save
-                onChange: fromLint -> enable save if !error + updateFilter object
-         */
-        const name = `[${err ? 'INVALID' : 'VALID'}] Sieve code`;
-        console.groupCollapsed(name);
-        console.log(code);
-        console.log(model);
-        console.groupEnd(name);
         setValitidy(err);
-        console.log('setValitidy', err, { err });
-
         if (!err) {
             setSieveCode(code);
         }
-    };
-    const handleChangeBeforeLint = () => {
-        setValitidy(true);
-        console.log('setValitidy', true);
     };
 
     return (
@@ -100,7 +85,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
 
             <ContentModal onSubmit={noop} loading={loading}>
-                {type === 'sieve' ? (
+                {type === 'complex' ? (
                     <InnerModal>
                         <Row>
                             <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
@@ -121,7 +106,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                     </InnerModal>
                 ) : null}
 
-                {type !== 'sieve' ? (
+                {type !== 'complex' ? (
                     <InnerModal>
                         <Row>
                             <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>

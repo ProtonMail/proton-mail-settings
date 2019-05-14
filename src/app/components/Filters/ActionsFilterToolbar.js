@@ -34,7 +34,7 @@ function ActionsFilterToolbar() {
         close();
     };
 
-    const handleClickAdd = (type = '') => () => {
+    const handleClickAdd = (type) => () => {
         setType(type);
         open();
     };
@@ -42,7 +42,7 @@ function ActionsFilterToolbar() {
     return (
         <>
             <PrimaryButton onClick={handleClickAdd()}>{c('Action').t('Add Filter')}</PrimaryButton>
-            <Button onClick={handleClickAdd('sieve')} className="ml1">
+            <Button onClick={handleClickAdd('complex')} className="ml1">
                 {c('Action').t('Add Sieve Filter')}
             </Button>
             {isOpen ? (

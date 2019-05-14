@@ -30,7 +30,7 @@ export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveF
             </td>
             <td>
                 {!isComplex(filter) ? <EditFilterButton filter={filter} textContent={c('Action').t('Edit')} /> : null}
-                <EditFilterButton filter={filter} mode="sieve" textContent={c('Action').t('Edit Sieve')} />
+                <EditFilterButton filter={filter} mode="complex" textContent={c('Action').t('Edit Sieve')} />
                 <RemoveFilter filter={filter} onRemoveFilter={onRemoveFilter} />
             </td>
         </tr>
