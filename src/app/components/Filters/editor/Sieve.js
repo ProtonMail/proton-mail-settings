@@ -17,38 +17,45 @@ import 'codemirror/mode/sieve/sieve';
     else Infinite loop FTW :/
  */
 let done = false;
-function FilterEditorSieve({ filter, onChange }) {
+function FilterEditorSieve({ filter, onChangeBeforeLint, onChange }) {
     const clean = normalize();
 
     if (!done) {
         const { request } = useApiWithoutResult(checkSieveFilter);
 
-        const lint = async (text, Version = FILTER_VERSION) => {
-            const data = await request({ Version, Sieve: text });
+        const lint = async (txt, Version = FILTER_VERSION) => {
+            const data = await request({ Version, Sieve: txt });
             return data.Issues || [];
         };
 
-        codemirror.registerHelper('lint', 'sieve', (text) => {
-            console.log('LINT', text);
-            if (text.trim() === '') {
-                const [line = ''] = text.split('\n');
-                return [
-                    {
-                        message: 'A sieve script cannot be empty',
-                        severity: 'error',
-                        from: codemirror.Pos(0, 0),
-                        to: codemirror.Pos(0, line.length)
-                    }
-                ];
-            }
-            return lint(text);
-        });
-
+        codemirror.registerHelper(
+            'lint',
+            'sieve',
+            debounce((text) => {
+                console.log('---CALL');
+                if (text.trim() === '') {
+                    const [line = ''] = text.split('\n');
+                    return [
+                        {
+                            message: 'A sieve script cannot be empty',
+                            severity: 'error',
+                            from: codemirror.Pos(0, 0),
+                            to: codemirror.Pos(0, line.length)
+                        }
+                    ];
+                }
+                const code = clean(text);
+                return lint(code).then((list = []) => {
+                    onChange(!!list.length, code);
+                    return list;
+                });
+            }, 300)
+        );
         done = true;
     }
 
     const handleChange = (editor, opt, input) => {
-        onChange(clean(input));
+        onChangeBeforeLint(clean(input));
     };
 
     return (
@@ -73,10 +80,12 @@ function FilterEditorSieve({ filter, onChange }) {
 
 FilterEditorSieve.propTypes = {
     filter: PropTypes.object.isRequired,
+    onChangeBeforeLint: PropTypes.func,
     onChange: PropTypes.func
 };
 
 FilterEditorSieve.defaultProps = {
+    onChangeBeforeLint: noop,
     onChange: noop
 };
 

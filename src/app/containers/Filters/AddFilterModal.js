@@ -23,6 +23,7 @@ import SieveEditor from '../../components/Filters/editor/Sieve';
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter);
     const [model, setModel] = useState(filterModel);
+    const [isInvalid, setValitidy] = useState(true);
 
     const handleChange = (key) => (data) => {
         setModel({
@@ -36,7 +37,8 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        onSubmit(formatFilter(model, 'simple'));
+        console.log(formatFilter(model, 'simple'), { isInvalid });
+        // onSubmit(formatFilter(model, 'simple'));
     };
 
     const handleInputName = ({ target }) => {
@@ -46,7 +48,23 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         });
     };
 
-    const handleChangeSieve = console.log;
+    const handleChangeSieve = (err, code) => {
+        /*
+            Flow:
+                onChange: !fromLint -> disable save
+                onChange: fromLint -> enable save if !error + updateFilter object
+         */
+        const name = `[${err ? 'INVALID' : 'VALID'}] Sieve code`;
+        console.groupCollapsed(name);
+        console.log(code);
+        console.groupEnd(name);
+        setValitidy(err);
+        console.log('setValitidy', err, { err });
+    };
+    const handleChangeBeforeLint = () => {
+        setValitidy(true);
+        console.log('setValitidy', false);
+    };
 
     return (
         <Modal {...props} loading={loading}>
@@ -73,7 +91,11 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                             />
                         </Row>
 
-                        <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
+                        <OperatorEditor
+                            filter={filterModel}
+                            onChange={handleChange('Operator')}
+                            onChangeBeforeLint={handleChangeBeforeLint}
+                        />
                         <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
                         <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
                     </InnerModal>
