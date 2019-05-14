@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import codemirror from 'codemirror';
 import PropTypes from 'prop-types';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-import { Icon, useApiWithoutResult } from 'react-components';
+import { Icon, useApi } from 'react-components';
 import { noop, debounce } from 'proton-shared/lib/helpers/function';
 import { normalize } from 'proton-shared/lib/filters/sieve';
 import { FILTER_VERSION } from 'proton-shared/lib/constants';
@@ -12,47 +12,42 @@ import 'codemirror/addon/display/autorefresh';
 import 'codemirror/addon/lint/lint';
 import 'codemirror/mode/sieve/sieve';
 
-/*
-    You need to restrict the loading of the hook to have it done only once,
-    else Infinite loop FTW :/
- */
-let done = false;
+const clean = normalize();
+codemirror.registerHelper('lint', 'sieve', (text) => {
+    if (text.trim() === '') {
+        const [line = ''] = text.split('\n');
+        return [
+            {
+                message: 'A sieve script cannot be empty',
+                severity: 'error',
+                from: codemirror.Pos(0, 0),
+                to: codemirror.Pos(0, line.length)
+            }
+        ];
+    }
+    const lint = codemirror._uglyGlobal;
+    return lint ? lint(clean(text)) : [];
+});
+
 function FilterEditorSieve({ filter, onChangeBeforeLint, onChange }) {
-    const clean = normalize();
+    const api = useApi();
 
-    if (!done) {
-        const { request } = useApiWithoutResult(checkSieveFilter);
-
-        const lint = async (txt, Version = FILTER_VERSION) => {
-            const data = await request({ Version, Sieve: txt });
-            return data.Issues || [];
+    useEffect(() => {
+        /*
+            Cheat to avoid broken context with react lifecycle as we can't
+            unregister the hook and we need to have the right API for the hook
+         */
+        codemirror._uglyGlobal = async (text, Version = FILTER_VERSION) => {
+            const data = await api(checkSieveFilter({ Version, Sieve: text }));
+            const list = data.Issues || [];
+            onChange(!!list.length, text);
+            return list;
         };
 
-        codemirror.registerHelper(
-            'lint',
-            'sieve',
-            debounce((text) => {
-                console.log('---CALL');
-                if (text.trim() === '') {
-                    const [line = ''] = text.split('\n');
-                    return [
-                        {
-                            message: 'A sieve script cannot be empty',
-                            severity: 'error',
-                            from: codemirror.Pos(0, 0),
-                            to: codemirror.Pos(0, line.length)
-                        }
-                    ];
-                }
-                const code = clean(text);
-                return lint(code).then((list = []) => {
-                    onChange(!!list.length, code);
-                    return list;
-                });
-            }, 300)
-        );
-        done = true;
-    }
+        return () => {
+            delete codemirror._uglyGlobal;
+        };
+    }, []);
 
     const handleChange = (editor, opt, input) => {
         onChangeBeforeLint(clean(input));
