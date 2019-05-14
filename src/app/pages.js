@@ -7,8 +7,8 @@ export default [
         route: '/settings/subscription',
         sections: [
             {
-                text: c('Title').t`Plans & prices`,
-                id: 'plans-prices'
+                text: c('Title').t`Plans`,
+                id: 'plans'
             },
             {
                 text: c('Title').t`Subscription`,
