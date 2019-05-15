@@ -29,7 +29,7 @@ function SpamListItem({ list, type, dest, onAction, className, loading }) {
                 <Loader />
             ) : (
                 <ul className="unstyled scroll-if-needed SpamListItem-list m0 mt1">
-                    {list.map((mail, i) => {
+                    {list.map((mail) => {
                         return (
                             <li className="flex mb0-5 pl1" key={mail.ID}>
                                 <span className="ellipsis">{mail.Email}</span>

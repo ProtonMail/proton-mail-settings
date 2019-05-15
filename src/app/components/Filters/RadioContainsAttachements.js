@@ -45,11 +45,11 @@ function RadioContainsAttachements({ comparator, onChange }) {
 
 RadioContainsAttachements.propTypes = {
     comparator: PropTypes.string,
-    onChange: PropTypes.fun
+    onChange: PropTypes.func
 };
 
 RadioContainsAttachements.defaultProps = {
-    onChange: console.log
+    onChange: noop
 };
 
 export default RadioContainsAttachements;

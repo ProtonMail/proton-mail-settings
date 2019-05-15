@@ -5,22 +5,13 @@ import { SortableElement } from 'react-sortable-hoc';
 import { debounce } from 'proton-shared/lib/helpers/function';
 import { isComplex } from 'proton-shared/lib/filters/factory';
 import { toggleEnable } from 'proton-shared/lib/api/filters';
-import {
-    Icon,
-    Button,
-    ConfirmModal,
-    Toggle,
-    useEventManager,
-    useApiWithoutResult,
-    useNotifications
-} from 'react-components';
+import { Icon, Toggle, useEventManager, useApiWithoutResult, useNotifications } from 'react-components';
 
-import ToggleBoolean from '../ui/ToggleBoolean';
 import RemoveFilter from './RemoveFilter';
 import EditFilterButton from './EditFilterButton';
 
 function FilterItemRow({ filter }) {
-    const { ID, Name, Status, Simple } = filter;
+    const { ID, Name, Status } = filter;
     const [toggled, setToggle] = useState(Status === 1);
 
     const { call } = useEventManager();

@@ -1,22 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import {
-    Loader,
-    Input,
-    Label,
-    Select,
-    Row,
-    useLabels,
-    Autocomplete,
-    useAutocomplete,
-    AutocompleteSelection
-} from 'react-components';
+import { Loader, Label, Select, Row, useLabels } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 import { factory } from 'proton-shared/lib/models/labelsModel';
 
-import FilterConditionValues from '../FilterConditionValues';
-import RadioContainsAttachements from '../RadioContainsAttachements';
 import LabelActions from './LabelActions';
 
 function ActionsEditor({ filter, onChange }) {

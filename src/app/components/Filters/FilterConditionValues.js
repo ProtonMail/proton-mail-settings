@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { c } from 'ttag';
 import { Select } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 

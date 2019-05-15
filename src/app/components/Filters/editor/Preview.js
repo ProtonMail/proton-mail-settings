@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import { Alert, Row, Label } from 'react-components';
+import { Alert, Row, Label, useLabels } from 'react-components';
+import { factory } from 'proton-shared/lib/models/labelsModel';
 
 import './Preview.css';
 
@@ -36,6 +37,8 @@ const fomartActions = (actions) => {
 };
 
 function PreviewFilter({ filter }) {
+    const [list = []] = useLabels();
+    const labelModel = factory(list);
     console.log(filter.Simple);
 
     const operatorMap = {

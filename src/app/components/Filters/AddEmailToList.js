@@ -1,4 +1,4 @@
-import React, { createRef, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Input, Label } from 'react-components';

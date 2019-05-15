@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import codemirror from 'codemirror';
 import PropTypes from 'prop-types';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-import { Icon, useApi } from 'react-components';
+import { useApi } from 'react-components';
 import { noop, debounce } from 'proton-shared/lib/helpers/function';
 import { normalize } from 'proton-shared/lib/filters/sieve';
 import { FILTER_VERSION } from 'proton-shared/lib/constants';
@@ -16,7 +16,7 @@ const clean = normalize();
 codemirror.registerHelper(
     'lint',
     'sieve',
-    debounce((text, opt, instance) => {
+    debounce((text) => {
         if (text.trim() === '') {
             const [line = ''] = text.split('\n');
             return [

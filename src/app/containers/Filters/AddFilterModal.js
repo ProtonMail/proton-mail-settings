@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import {
-    Modal,
-    HeaderModal,
-    InnerModal,
-    FooterModal,
-    ContentModal,
-    PrimaryButton,
-    Button,
-    Input,
-    Label,
-    Row
-} from 'react-components';
+import { Modal, HeaderModal, InnerModal, FooterModal, ContentModal, PrimaryButton, Button } from 'react-components';
 import { newFilter, format as formatFilter } from 'proton-shared/lib/filters/factory';
 import { validate, validateComplex } from 'proton-shared/lib/filters/validator';
 import { noop } from 'proton-shared/lib/helpers/function';

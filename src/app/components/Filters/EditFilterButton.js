@@ -10,7 +10,7 @@ import AddFilterModal from '../../containers/Filters/AddFilterModal';
 function EditFilterButton({ filter, mode, className, onEditFilter, textContent }) {
     const { call } = useEventManager();
     const { createNotification } = useNotifications();
-    const { loading, request } = useApiWithoutResult(updateFilter);
+    const { request } = useApiWithoutResult(updateFilter);
     const { isOpen, open, close } = useModal();
 
     const handelClick = open;
@@ -20,10 +20,10 @@ function EditFilterButton({ filter, mode, className, onEditFilter, textContent }
         const { Filter } = await request(filter.ID, filter);
         call();
         createNotification({
-            text: c('Filter notification').t`Filter ${filter.Name} updated`
+            text: c('Filter notification').t`Filter ${Filter.Name} updated`
         });
         close();
-        onEditFilter(filter);
+        onEditFilter(Filter);
     };
 
     return (

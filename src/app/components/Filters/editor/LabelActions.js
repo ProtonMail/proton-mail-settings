@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Icon, SmallButton, Autocomplete, useAutocomplete } from 'react-components';

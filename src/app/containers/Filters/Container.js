@@ -1,27 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import { c } from 'ttag';
-import {
-    Title,
-    SubTitle,
-    Bordered,
-    Button,
-    Icon,
-    PrimaryButton,
-    Group,
-    Paragraph,
-    useNotifications,
-    ConfirmModal,
-    useModal,
-    Alert,
-    Loader,
-    useFilters,
-    useEventManager
-} from 'react-components';
-import { toggleEnable, deleteFilter } from 'proton-shared/lib/api/filters';
+import { SubTitle, Group, Paragraph, Alert, Loader, useFilters } from 'react-components';
 
 import FilterSortableList from '../../components/Filters/SortableList';
 import ActionsFilterToolbar from '../../components/Filters/ActionsFilterToolbar';
-import AddFilterModal from './AddFilterModal';
 
 function FiltersContainer() {
     const [list, loading] = useFilters();

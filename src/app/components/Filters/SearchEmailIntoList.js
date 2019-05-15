@@ -6,7 +6,7 @@ import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 import { noop, debounce } from 'proton-shared/lib/helpers/function';
 
 function SearchEmailIntoList({ className, onBeforeRequest, onAfterRequest }) {
-    const { request, loading } = useApiWithoutResult(getIncomingDefaults);
+    const { request } = useApiWithoutResult(getIncomingDefaults);
 
     const handleSeachChange = async (Keyword) => {
         onBeforeRequest(Keyword);
@@ -16,7 +16,7 @@ function SearchEmailIntoList({ className, onBeforeRequest, onAfterRequest }) {
 
     return (
         <SearchInput
-            className="w100"
+            className={'w100 '.concat(className)}
             onChange={debounce(handleSeachChange, 300)}
             placeholder={c('FilterSettings').t('Search Whitelist and Blacklist')}
         />
@@ -30,6 +30,7 @@ SearchEmailIntoList.propTypes = {
 };
 
 SearchEmailIntoList.defaultProps = {
+    className: '',
     onBeforeRequest: noop,
     onAfterRequest: noop
 };

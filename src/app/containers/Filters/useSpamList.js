@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
@@ -102,7 +102,6 @@ const useSpamList = () => {
         }
 
         if (Location === BLACKLIST_TYPE) {
-            const newBlackList = blackList.filter((item) => item.ID !== ID);
             refreshBlackList(blackList.filter((item) => item.ID !== ID));
         }
     };

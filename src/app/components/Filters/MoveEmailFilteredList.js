@@ -6,14 +6,12 @@ import { updateIncomingDefault } from 'proton-shared/lib/api/incomingDefaults';
 import { noop } from 'proton-shared/lib/helpers/function';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
-import AddEmailToListModal from '../../containers/Filters/AddEmailToListModal';
-
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;
 
 function MoveEmailFilteredList({ type, dest, email, className, onClick }) {
     const { createNotification } = useNotifications();
-    const { request, loading } = useApiWithoutResult(updateIncomingDefault);
+    const { request } = useApiWithoutResult(updateIncomingDefault);
     const iconName = type === 'whitelist' ? `arrow-right` : `arrow-left`;
 
     const I18N = {

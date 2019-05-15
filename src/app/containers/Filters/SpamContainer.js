@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { c } from 'ttag';
-import { SubTitle, LearnMore, useApiResult, Search } from 'react-components';
+import { SubTitle, LearnMore, useApiResult } from 'react-components';
 import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 

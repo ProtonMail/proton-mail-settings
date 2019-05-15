@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
+import { Label, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
 import { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
 import { noop } from 'proton-shared/lib/helpers/function';
 
@@ -11,7 +11,7 @@ import RadioContainsAttachements from '../RadioContainsAttachements';
 function ConditionsEditor({ filter, onChange }) {
     const [model, setModel] = useState(filter);
 
-    const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
+    const { COMPARATORS, TYPES } = getI18nFilter();
     const toOptions = (list = []) => list.map(({ label: text, value }) => ({ text, value }));
 
     function syncModel(value, { scope, condition, index }, newScoped) {
