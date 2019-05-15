@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Loader, Input, Label, Select, Row, useLabels, Autocomplete, useAutocomplete } from 'react-components';
+import {
+    Loader,
+    Input,
+    Label,
+    Select,
+    Row,
+    useLabels,
+    Autocomplete,
+    useAutocomplete,
+    AutocompleteSelection
+} from 'react-components';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
+import LabelActions from './LabelActions';
 
 function FilterEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
     const [list = [], loading] = useLabels();
 
-    const { folders, labels } = list.reduce(
+    const { folders, labels, mapLabels } = list.reduce(
         (acc, label) => {
             const { Name, Exclusive } = label;
             if (Exclusive !== 1) {
-                acc.labels.push(Name);
+                acc.mapLabels[Name] = label;
+                acc.labels.push(label);
                 return acc;
             }
             acc.folders.push({
@@ -23,14 +35,8 @@ function FilterEditor({ filter, onChange }) {
             });
             return acc;
         },
-        { folders: [], labels: [] }
+        { folders: [], labels: [], mapLabels: Object.create(null) }
     );
-
-    const { changeInputValue, selectedItems, inputValue, submit, select, deselect } = useAutocomplete({
-        multiple: true
-    });
-
-    // console.log(selectedItems);
 
     const MOVE_TO = [
         {
@@ -94,17 +100,26 @@ function FilterEditor({ filter, onChange }) {
         }
     };
 
+    const getSelectedLabels = () => {
+        const { Labels = [], FileInto } = Actions;
+        const filter = (name) => mapLabels[name];
+        const list = FileInto.filter(filter);
+        return [...new Set(Labels.concat(list))].map(filter);
+    };
+
+    const handleOnChangeLabel = console.log;
+
     return (
         <Row>
             <Label htmlFor="actions">{c('New Label form').t`Actions`}</Label>
             <div className="w100">
-                <Row>
+                <div>
                     {loading ? (
                         <Loader />
                     ) : (
-                        <Autocomplete minChars={1} list={labels} onInputValueChange={changeInputValue} />
+                        <LabelActions onChange={handleOnChangeLabel} labels={labels} selection={getSelectedLabels()} />
                     )}
-                </Row>
+                </div>
                 <Row>
                     {loading ? (
                         <Loader />
