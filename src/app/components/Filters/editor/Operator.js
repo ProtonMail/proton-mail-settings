@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Label, Select, Row } from 'react-components';
 import { getI18n as getI18nFilter } from 'proton-shared/lib/filters/factory';
+import { noop } from 'proton-shared/lib/helpers/function';
 
 function OperatorEditor({ filter, onChange }) {
     const { Operator } = filter.Simple;
@@ -27,5 +28,14 @@ function OperatorEditor({ filter, onChange }) {
         </Row>
     );
 }
+
+OperatorEditor.propTypes = {
+    filter: PropTypes.object.isRequired,
+    onChange: PropTypes.func
+};
+
+OperatorEditor.defaultProps = {
+    onChange: noop
+};
 
 export default OperatorEditor;

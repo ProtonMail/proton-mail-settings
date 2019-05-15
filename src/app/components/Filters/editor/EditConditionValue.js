@@ -27,8 +27,8 @@ function EditConditionValue({ value, onClickDelete, onEdit, className }) {
 EditConditionValue.propTypes = {
     className: PropTypes.string,
     value: PropTypes.string.isRequired,
-    onEdit: PropTypes.fun,
-    onClickDelete: PropTypes.fun
+    onEdit: PropTypes.func,
+    onClickDelete: PropTypes.func
 };
 
 EditConditionValue.defaultProps = {

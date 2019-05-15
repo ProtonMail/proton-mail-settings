@@ -12,6 +12,7 @@ import {
     useAutocomplete,
     AutocompleteSelection
 } from 'react-components';
+import { noop } from 'proton-shared/lib/helpers/function';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
@@ -105,11 +106,6 @@ function ActionsEditor({ filter, onChange }) {
         const { Labels = [], FileInto } = Actions;
         const filter = (name) => mapLabels[name];
         const list = FileInto.filter(filter);
-        console.log({
-            FileInto,
-            mapLabels,
-            Labels
-        });
         return [...new Set(Labels.concat(list))].map(filter);
     };
 
@@ -153,5 +149,14 @@ function ActionsEditor({ filter, onChange }) {
         </Row>
     );
 }
+
+ActionsEditor.propTypes = {
+    filter: PropTypes.object.isRequired,
+    onChange: PropTypes.func
+};
+
+ActionsEditor.defaultProps = {
+    onChange: noop
+};
 
 export default ActionsEditor;

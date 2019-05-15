@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Icon, SmallButton, Autocomplete, useAutocomplete } from 'react-components';
+import { noop } from 'proton-shared/lib/helpers/function';
 
 function LabelActions({ selection, labels, onChange }) {
     const itemMapper = (label) => ({
@@ -47,5 +48,17 @@ function LabelActions({ selection, labels, onChange }) {
         </>
     );
 }
+
+LabelActions.propTypes = {
+    selection: PropTypes.array,
+    labels: PropTypes.array,
+    onChange: PropTypes.func
+};
+
+LabelActions.defaultProps = {
+    selection: [],
+    labels: [],
+    onChange: noop
+};
 
 export default LabelActions;

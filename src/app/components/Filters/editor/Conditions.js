@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Input, Label, Button, Radio, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
 import { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
+import { noop } from 'proton-shared/lib/helpers/function';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
-function FilterEditor({ filter, onChange }) {
+function ConditionsEditor({ filter, onChange }) {
     const [model, setModel] = useState(filter);
 
     const { OPERATORS, COMPARATORS, TYPES } = getI18nFilter();
@@ -161,4 +162,13 @@ function FilterEditor({ filter, onChange }) {
     );
 }
 
-export default FilterEditor;
+ConditionsEditor.propTypes = {
+    filter: PropTypes.object.isRequired,
+    onChange: PropTypes.func
+};
+
+ConditionsEditor.defaultProps = {
+    onChange: noop
+};
+
+export default ConditionsEditor;

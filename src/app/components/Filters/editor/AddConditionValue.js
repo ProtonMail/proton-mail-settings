@@ -39,7 +39,7 @@ function AddCondtionValue({ onAdd, className }) {
 
 AddCondtionValue.propTypes = {
     className: PropTypes.string,
-    onAdd: PropTypes.fun
+    onAdd: PropTypes.func
 };
 
 AddCondtionValue.defaultProps = {
