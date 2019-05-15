@@ -17,7 +17,7 @@ import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 import LabelActions from './LabelActions';
 
-function FilterEditor({ filter, onChange }) {
+function ActionsEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
     const [list = [], loading] = useLabels();
 
@@ -73,7 +73,8 @@ function FilterEditor({ filter, onChange }) {
                 Read: value === 'read'
             }
         }),
-        moveTo: (value) => ({ FileInto: [value] })
+        moveTo: (value) => ({ FileInto: [value] }),
+        labels: (Labels) => ({ Labels })
     };
 
     const handleChange = (mode) => {
@@ -104,10 +105,17 @@ function FilterEditor({ filter, onChange }) {
         const { Labels = [], FileInto } = Actions;
         const filter = (name) => mapLabels[name];
         const list = FileInto.filter(filter);
+        console.log({
+            FileInto,
+            mapLabels,
+            Labels
+        });
         return [...new Set(Labels.concat(list))].map(filter);
     };
 
-    const handleOnChangeLabel = console.log;
+    const handleOnChangeLabel = (labels) => {
+        onChange(ACTIONS.labels(labels));
+    };
 
     return (
         <Row>
@@ -146,4 +154,4 @@ function FilterEditor({ filter, onChange }) {
     );
 }
 
-export default FilterEditor;
+export default ActionsEditor;

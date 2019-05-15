@@ -30,7 +30,10 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const [isInvalid, setValitidy] = useState(false);
     const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
 
+    console.log('Open filter', filter);
+
     const handleChange = (key) => (data) => {
+        console.log('[handleChange]', key, data, model);
         setModel({
             ...model,
             Simple: {
@@ -60,6 +63,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         const filter = formatFilter(model, 'simple');
         const { isValid, ...errors } = validate(filter);
 
+        console.log('FILTER', filter);
         if (!isValid) {
             console.log(errors);
             return alert('NEIN NEIN NEIN');
@@ -69,6 +73,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     };
 
     const handleInputName = ({ target }) => {
+        console.log('[handleInputName]', target.value);
         setModel({
             ...model,
             Name: target.value

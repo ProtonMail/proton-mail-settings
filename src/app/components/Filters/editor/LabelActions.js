@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Icon, SmallButton, Autocomplete, useAutocomplete, AutocompleteSelection } from 'react-components';
+import { Icon, SmallButton, Autocomplete, useAutocomplete } from 'react-components';
 
 function LabelActions({ selection, labels, onChange }) {
     const itemMapper = (label) => ({
@@ -11,11 +11,15 @@ function LabelActions({ selection, labels, onChange }) {
 
     const { changeInputValue, selectedItems, inputValue, select, deselect } = useAutocomplete({
         multiple: true,
-        initialSelectedItems: selection
+        initialSelectedItems: selection,
+        onChange(selection) {
+            onChange(selection.map(({ Name }) => Name));
+        }
     });
 
     return (
         <>
+            <input />
             <Autocomplete
                 placeholder={c('Placeholder').t`Add a label ...`}
                 className="w100"
