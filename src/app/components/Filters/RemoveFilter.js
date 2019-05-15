@@ -1,11 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Button, ConfirmModal, Alert, useApiWithoutResult, useModal, useNotifications } from 'react-components';
+import {
+    Button,
+    ConfirmModal,
+    Alert,
+    useApiWithoutResult,
+    useModal,
+    useNotifications,
+    useEventManager
+} from 'react-components';
 import { deleteFilter } from 'proton-shared/lib/api/filters';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 function RemoveFilter({ filter, className, onRemoveFilter }) {
+    const { call } = useEventManager();
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(deleteFilter);
     const { isOpen: isOpenConfirmModal, open: openConfirmModal, close: closeConfirmModal } = useModal();
@@ -15,6 +24,7 @@ function RemoveFilter({ filter, className, onRemoveFilter }) {
 
     const handleConfirmConfirmModal = async () => {
         await request(filter.ID);
+        call();
         closeConfirmModal();
         createNotification({
             text: c('Filter notification').t('Filter removed')

@@ -13,34 +13,22 @@ import {
     ConfirmModal,
     useModal,
     Alert,
-    Loader
+    Loader,
+    useFilters,
+    useEventManager
 } from 'react-components';
+import { toggleEnable, deleteFilter } from 'proton-shared/lib/api/filters';
 
-import useFilters from './useFilters';
 import FilterSortableList from '../../components/Filters/SortableList';
 import ActionsFilterToolbar from '../../components/Filters/ActionsFilterToolbar';
 import AddFilterModal from './AddFilterModal';
 
 function FiltersContainer() {
-    const { createNotification } = useNotifications();
-    const { list, loading, toggleStatus, removeFilter } = useFilters();
+    const [list, loading] = useFilters();
 
     const getScrollContainer = () => document.querySelector('.main-area');
     const onSortEnd = ({ oldIndex, newIndex }) => {
         console.log('Sort end', { oldIndex, newIndex });
-    };
-
-    const handleClickEdit = (filter, type) => () => {
-        console.log('handleClickEdit', filter, type);
-    };
-
-    const handleRemoveFilter = removeFilter;
-
-    const handleChangeStatus = (filter) => async (value) => {
-        await toggleStatus(filter, value);
-        createNotification({
-            text: c('Success notification').t`Status updated`
-        });
     };
 
     return (
@@ -63,9 +51,6 @@ function FiltersContainer() {
                     getContainer={getScrollContainer}
                     pressDelay={200}
                     items={list}
-                    onClickEdit={handleClickEdit}
-                    onRemoveFilter={handleRemoveFilter}
-                    onChangeStatus={handleChangeStatus}
                     onSortEnd={onSortEnd}
                 />
             ) : (

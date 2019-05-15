@@ -13,6 +13,7 @@ import {
     AutocompleteSelection
 } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
+import { factory } from 'proton-shared/lib/models/labelsModel';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
@@ -21,23 +22,13 @@ import LabelActions from './LabelActions';
 function ActionsEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
     const [list = [], loading] = useLabels();
+    const labelModel = factory(list);
 
-    const { folders, labels, mapLabels } = list.reduce(
-        (acc, label) => {
-            const { Name, Exclusive } = label;
-            if (Exclusive !== 1) {
-                acc.mapLabels[Name] = label;
-                acc.labels.push(label);
-                return acc;
-            }
-            acc.folders.push({
-                text: c('Filter Actions').t`Move to ${Name}`,
-                value: Name
-            });
-            return acc;
-        },
-        { folders: [], labels: [], mapLabels: Object.create(null) }
-    );
+    const labels = labelModel.getLabels();
+    const folders = labelModel.getFolders().map(({ Name }) => ({
+        text: c('Filter Actions').t`Move to ${Name}`,
+        value: Name
+    }));
 
     const MOVE_TO = [
         {
@@ -103,8 +94,9 @@ function ActionsEditor({ filter, onChange }) {
     };
 
     const getSelectedLabels = () => {
+        const MAP = labelModel.getLabelsMap();
         const { Labels = [], FileInto } = Actions;
-        const filter = (name) => mapLabels[name];
+        const filter = (name) => MAP[name];
         const list = FileInto.filter(filter);
         return [...new Set(Labels.concat(list))].map(filter);
     };
