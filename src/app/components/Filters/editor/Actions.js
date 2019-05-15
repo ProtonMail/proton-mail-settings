@@ -1,25 +1,36 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Loader, Input, Label, Select, Row, useLabels } from 'react-components';
+import { Loader, Input, Label, Select, Row, useLabels, Autocomplete, useAutocomplete } from 'react-components';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
 function FilterEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
-    const [labels = [], loading] = useLabels();
+    const [list = [], loading] = useLabels();
 
-    const folders = labels.reduce((acc, { Name, Exclusive }) => {
-        if (Exclusive !== 1) {
+    const { folders, labels } = list.reduce(
+        (acc, label) => {
+            const { Name, Exclusive } = label;
+            if (Exclusive !== 1) {
+                acc.labels.push(Name);
+                return acc;
+            }
+            acc.folders.push({
+                text: c('Filter Actions').t`Move to ${Name}`,
+                value: Name
+            });
             return acc;
-        }
-        acc.push({
-            text: c('Filter Actions').t`Move to ${Name}`,
-            value: Name
-        });
-        return acc;
-    }, []);
+        },
+        { folders: [], labels: [] }
+    );
+
+    const { changeInputValue, selectedItems, inputValue, submit, select, deselect } = useAutocomplete({
+        multiple: true
+    });
+
+    // console.log(selectedItems);
 
     const MOVE_TO = [
         {
@@ -91,7 +102,7 @@ function FilterEditor({ filter, onChange }) {
                     {loading ? (
                         <Loader />
                     ) : (
-                        <Input id="actions" type="text" placeholder={c('New Label form').t('Add labels')} />
+                        <Autocomplete minChars={1} list={labels} onInputValueChange={changeInputValue} />
                     )}
                 </Row>
                 <Row>

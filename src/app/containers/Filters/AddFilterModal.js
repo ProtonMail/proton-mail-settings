@@ -8,6 +8,7 @@ import {
     FooterModal,
     ContentModal,
     PrimaryButton,
+    Button,
     Input,
     Label,
     Row
@@ -20,10 +21,12 @@ import ConditionsEditor from '../../components/Filters/editor/Conditions';
 import ActionsEditor from '../../components/Filters/editor/Actions';
 import OperatorEditor from '../../components/Filters/editor/Operator';
 import SieveEditor from '../../components/Filters/editor/Sieve';
+import PreviewFilter from '../../components/Filters/editor/Preview';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter, type);
     const [model, setModel] = useState(filterModel);
+    const [isPreview, setPreview] = useState(false);
     const [isInvalid, setValitidy] = useState(false);
     const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
 
@@ -79,13 +82,16 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             setSieveCode(code);
         }
     };
+    const handleClickPreview = () => setPreview(!isPreview);
 
     return (
         <Modal {...props} loading={loading}>
-            <HeaderModal onClose={props.onClose}>{c('Add Filter Modal').t`Custom Filter`}</HeaderModal>
+            <HeaderModal onClose={props.onClose}>
+                {!isPreview ? c('Add Filter Modal').t`Custom Filter` : c('Add Filter Modal').t`Custom Filter (Preview)`}
+            </HeaderModal>
 
             <ContentModal onSubmit={noop} loading={loading}>
-                {type === 'complex' ? (
+                {type === 'complex' && !isPreview ? (
                     <InnerModal>
                         <Row>
                             <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
@@ -106,7 +112,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                     </InnerModal>
                 ) : null}
 
-                {type !== 'complex' ? (
+                {type !== 'complex' && !isPreview ? (
                     <InnerModal>
                         <Row>
                             <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
@@ -125,11 +131,34 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                         <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
                     </InnerModal>
                 ) : null}
-                <FooterModal>
-                    <PrimaryButton disabled={loading} onClick={handleSubmit}>
-                        {c('Action').t`Save`}
-                    </PrimaryButton>
-                </FooterModal>
+
+                {isPreview ? (
+                    <InnerModal>
+                        <PreviewFilter filter={model} />
+                    </InnerModal>
+                ) : null}
+
+                {isPreview ? (
+                    <FooterModal>
+                        <Button type="button" onClick={handleClickPreview}>{c('Action').t`Back`}</Button>
+                        <PrimaryButton disabled={loading} onClick={handleSubmit}>
+                            {c('Action').t`Save`}
+                        </PrimaryButton>
+                    </FooterModal>
+                ) : null}
+
+                {!isPreview ? (
+                    <FooterModal>
+                        <Button onClick={props.onClose}>{c('Action').t`Close`}</Button>
+                        {type !== 'complex' ? (
+                            <Button type="button" className="mlauto mr1" onClick={handleClickPreview}>{c('Action')
+                                .t`Preview`}</Button>
+                        ) : null}
+                        <PrimaryButton disabled={loading} onClick={handleSubmit}>
+                            {c('Action').t`Save`}
+                        </PrimaryButton>
+                    </FooterModal>
+                ) : null}
             </ContentModal>
         </Modal>
     );

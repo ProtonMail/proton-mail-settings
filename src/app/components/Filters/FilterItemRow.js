@@ -10,7 +10,9 @@ import RemoveFilter from './RemoveFilter';
 import EditFilterButton from './EditFilterButton';
 
 export default SortableElement(({ filter, onChangeStatus, onClickEdit, onRemoveFilter }) => {
-    const { ID, Name, Status } = filter;
+    const { ID, Name, Status, Simple } = filter;
+
+    console.log('@todo load simple during the get list to prevent too many parsing of the tree');
 
     return (
         <tr style={{ backgroundColor: 'white', cursor: 'move' }}>
