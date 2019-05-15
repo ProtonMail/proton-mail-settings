@@ -22,6 +22,7 @@ import ActionsEditor from '../../components/Filters/editor/Actions';
 import OperatorEditor from '../../components/Filters/editor/Operator';
 import SieveEditor from '../../components/Filters/editor/Sieve';
 import PreviewFilter from '../../components/Filters/editor/Preview';
+import NameEditor from '../../components/Filters/editor/Name';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter, type);
@@ -30,10 +31,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const [isInvalid, setValitidy] = useState(false);
     const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
 
-    console.log('Open filter', filter);
-
     const handleChange = (key) => (data) => {
-        console.log('[handleChange]', key, data, model);
         setModel({
             ...model,
             Simple: {
@@ -72,14 +70,8 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         onSubmit(filter);
     };
 
-    const handleInputName = ({ target }) => {
-        console.log('[handleInputName]', target.value);
-        setModel({
-            ...model,
-            Name: target.value
-        });
-    };
-
+    const handleChangeName = (Name) => setModel({ ...model, Name });
+    const handleClickPreview = () => setPreview(!isPreview);
     const handleChangeBeforeLint = () => setValitidy(true);
     const handleChangeSieve = (err, code) => {
         setValitidy(err);
@@ -87,7 +79,6 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             setSieveCode(code);
         }
     };
-    const handleClickPreview = () => setPreview(!isPreview);
 
     return (
         <Modal {...props} loading={loading}>
@@ -98,17 +89,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
             <ContentModal onSubmit={noop} loading={loading}>
                 {type === 'complex' && !isPreview ? (
                     <InnerModal>
-                        <Row>
-                            <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                            <Input
-                                id="accountName"
-                                type="text"
-                                value={model.Name}
-                                onInput={handleInputName}
-                                placeholder={c('New Label form').t('Name')}
-                                required
-                            />
-                        </Row>
+                        <NameEditor filter={filterModel} onChange={handleChangeName} />
                         <SieveEditor
                             filter={filterModel}
                             onChange={handleChangeSieve}
@@ -119,18 +100,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
 
                 {type !== 'complex' && !isPreview ? (
                     <InnerModal>
-                        <Row>
-                            <Label htmlFor="accountName">{c('New Label form').t`Name`}</Label>
-                            <Input
-                                id="accountName"
-                                type="text"
-                                value={model.Name}
-                                onInput={handleInputName}
-                                placeholder={c('New Label form').t('Name')}
-                                required
-                            />
-                        </Row>
-
+                        <NameEditor filter={filterModel} onChange={handleChangeName} />
                         <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
                         <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
                         <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
