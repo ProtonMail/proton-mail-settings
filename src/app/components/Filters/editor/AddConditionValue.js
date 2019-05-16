@@ -12,11 +12,13 @@ function AddCondtionValue({ onAdd, className }) {
         setState('');
     };
 
-    const handleKeyUp = (e) => {
+    // keyDown as it won't trigger the submit event ;)
+    const handleKeyDown = (e) => {
         if (e.key !== 'Enter') {
             return;
         }
         e.preventDefault();
+        e.stopPropagation();
         addEffect();
     };
 
@@ -28,7 +30,7 @@ function AddCondtionValue({ onAdd, className }) {
             <Input
                 id="textOrPattern"
                 value={state}
-                onKeyUp={handleKeyUp}
+                onKeyDown={handleKeyDown}
                 onInput={handleInput}
                 placeholder={c('Info').t`Text or pattern`}
             />

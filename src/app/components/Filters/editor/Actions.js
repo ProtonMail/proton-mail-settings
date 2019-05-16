@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Loader, Label, Select, Row, useFormattedLabels } from 'react-components';
+import { Loader, Label, Select, Row, useFormattedLabels, ErrorZone } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import LabelActions from './LabelActions';
 
-function ActionsEditor({ filter, onChange }) {
+function ActionsEditor({ filter, onChange, errors }) {
     const { Actions } = filter.Simple;
     const [labelModel = [], loading] = useFormattedLabels();
 
@@ -115,7 +115,6 @@ function ActionsEditor({ filter, onChange }) {
                         />
                     )}
                 </Row>
-
                 <Row>
                     <Select
                         options={MARK_AS}
@@ -124,6 +123,10 @@ function ActionsEditor({ filter, onChange }) {
                         defaultValue={getDefaultValue('markAs')}
                     />
                 </Row>
+
+                {errors.isValid === false ? (
+                    <ErrorZone id="ActionsError">{c('Error').t`A filter must have an action`}</ErrorZone>
+                ) : null}
             </div>
         </Row>
     );
@@ -131,10 +134,12 @@ function ActionsEditor({ filter, onChange }) {
 
 ActionsEditor.propTypes = {
     filter: PropTypes.object.isRequired,
+    errors: PropTypes.object,
     onChange: PropTypes.func
 };
 
 ActionsEditor.defaultProps = {
+    errors: {},
     onChange: noop
 };
 

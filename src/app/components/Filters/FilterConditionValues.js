@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Select } from 'react-components';
+import { c } from 'ttag';
+import { Select, ErrorZone } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import EditConditionValue from './editor/EditConditionValue';
 import AddConditionValue from './editor/AddConditionValue';
 
-function FilterConditionValues({ condition, options, onDelete, onChangeCondition, onAdd, onEdit }) {
+function FilterConditionValues({ condition, options, onDelete, onChangeCondition, onAdd, onEdit, error }) {
+    const hasError = (key) => (error.errors || []).includes(key);
     return (
         <>
             <Select
@@ -31,6 +33,9 @@ function FilterConditionValues({ condition, options, onDelete, onChangeCondition
                 })}
 
                 <AddConditionValue onAdd={onAdd} />
+                {hasError('value') ? (
+                    <ErrorZone id="ActionsError">{c('Error').t`You must set a value`}</ErrorZone>
+                ) : null}
             </div>
         </>
     );
@@ -38,6 +43,7 @@ function FilterConditionValues({ condition, options, onDelete, onChangeCondition
 
 FilterConditionValues.propTypes = {
     condition: PropTypes.object.isRequired,
+    error: PropTypes.object,
     options: PropTypes.array.isRequired,
     onDelete: PropTypes.func,
     onChangeCondition: PropTypes.func,
@@ -46,6 +52,7 @@ FilterConditionValues.propTypes = {
 };
 
 FilterConditionValues.defaultProps = {
+    error: {},
     onDelete: noop,
     onChangeCondition: noop,
     onAdd: noop,

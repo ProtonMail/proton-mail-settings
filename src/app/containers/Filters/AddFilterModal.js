@@ -4,7 +4,6 @@ import { c } from 'ttag';
 import { Modal, HeaderModal, InnerModal, FooterModal, ContentModal, PrimaryButton, Button } from 'react-components';
 import { newFilter, format as formatFilter } from 'proton-shared/lib/filters/factory';
 import { validate, validateComplex } from 'proton-shared/lib/filters/validator';
-import { noop } from 'proton-shared/lib/helpers/function';
 
 import ConditionsEditor from '../../components/Filters/editor/Conditions';
 import ActionsEditor from '../../components/Filters/editor/Actions';
@@ -17,6 +16,7 @@ import './AddFilterModal.css';
 
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter, type);
+    const [errors, setErrors] = useState({});
     const [model, setModel] = useState(filterModel);
     const [isPreview, setPreview] = useState(false);
     const [isInvalid, setValitidy] = useState(false);
@@ -34,6 +34,26 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         });
     };
 
+    const validateFilter = (filter) => {
+        if (type === 'complex') {
+            const { isValid, ...errors } = validateComplex(filter);
+            if (isInvalid || !isValid) {
+                setErrors(errors);
+                return false;
+            }
+
+            return true;
+        }
+
+        const { isValid, ...errors } = validate(filter);
+
+        if (!isValid) {
+            setErrors(errors);
+            return false;
+        }
+        return true;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -42,24 +62,13 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                 ...model,
                 Sieve: sieveCode
             };
-            const { isValid } = validateComplex(filter);
-
-            if (isInvalid || !isValid) {
-                return alert('NEIN NEIN NEIN');
-            }
-
-            return onSubmit(formatFilter(filter, 'complex'));
+            const isValid = validateFilter(filter);
+            return isValid && onSubmit(formatFilter(filter, 'complex'));
         }
 
         const filter = formatFilter(model, 'simple');
-        const { isValid, ...errors } = validate(filter);
-
-        if (!isValid) {
-            console.error({ errors, filter });
-            return alert('NEIN NEIN NEIN');
-        }
-
-        onSubmit(filter);
+        const isValid = validateFilter(filter);
+        isValid && onSubmit(filter);
     };
 
     const handleChangeName = (Name) => setModel({ ...model, Name });
@@ -78,7 +87,12 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                 {!isPreview ? c('Add Filter Modal').t`Custom Filter` : c('Add Filter Modal').t`Custom Filter (Preview)`}
             </HeaderModal>
 
-            <ContentModal onSubmit={noop} loading={loading} className={isPreview ? 'AddFilterModal-isPreview' : ''}>
+            <ContentModal
+                onSubmit={handleSubmit}
+                loading={loading}
+                className={isPreview ? 'AddFilterModal-isPreview' : ''}
+                noValidate
+            >
                 {type === 'complex' ? (
                     <InnerModal className="AddFilterModal-editor">
                         <NameEditor error={errors.name} filter={filterModel} onChange={handleChangeName} />
@@ -92,10 +106,18 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
 
                 {type !== 'complex' ? (
                     <InnerModal className="AddFilterModal-editor">
-                        <NameEditor filter={filterModel} onChange={handleChangeName} />
+                        <NameEditor error={errors.name} filter={filterModel} onChange={handleChangeName} />
                         <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
-                        <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
-                        <ActionsEditor filter={filterModel} onChange={handleChange('Actions')} />
+                        <ConditionsEditor
+                            errors={errors.conditions}
+                            filter={filterModel}
+                            onChange={handleChange('Conditions')}
+                        />
+                        <ActionsEditor
+                            errors={errors.actions}
+                            filter={filterModel}
+                            onChange={handleChange('Actions')}
+                        />
                     </InnerModal>
                 ) : null}
 
@@ -108,9 +130,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                 {isPreview ? (
                     <FooterModal>
                         <Button type="button" onClick={handleClickPreview}>{c('Action').t`Back`}</Button>
-                        <PrimaryButton disabled={loading} onClick={handleSubmit}>
-                            {c('Action').t`Save`}
-                        </PrimaryButton>
+                        <PrimaryButton disabled={loading}>{c('Action').t`Save`}</PrimaryButton>
                     </FooterModal>
                 ) : null}
 
@@ -121,7 +141,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                             <Button type="button" className="mlauto mr1" onClick={handleClickPreview}>{c('Action')
                                 .t`Preview`}</Button>
                         ) : null}
-                        <PrimaryButton type="button" disabled={loading} onClick={handleSubmit}>
+                        <PrimaryButton type="submit" disabled={loading}>
                             {c('Action').t`Save`}
                         </PrimaryButton>
                     </FooterModal>

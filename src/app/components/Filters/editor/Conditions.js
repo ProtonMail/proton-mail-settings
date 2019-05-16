@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Label, Icon, Select, Row, SmallButton, PrimaryButton } from 'react-components';
+import { Label, Icon, Select, Row, SmallButton, PrimaryButton, ErrorZone } from 'react-components';
 import { getI18n as getI18nFilter, newCondition } from 'proton-shared/lib/filters/factory';
 import { noop } from 'proton-shared/lib/helpers/function';
 
 import FilterConditionValues from '../FilterConditionValues';
 import RadioContainsAttachements from '../RadioContainsAttachements';
 
-function ConditionsEditor({ filter, onChange }) {
+function ConditionsEditor({ filter, onChange, errors }) {
     const [model, setModel] = useState(filter);
 
     const { COMPARATORS, TYPES } = getI18nFilter();
@@ -89,6 +89,8 @@ function ConditionsEditor({ filter, onChange }) {
         syncModel(value, config, newScoped);
     };
 
+    const hasError = (key, index) => ((errors[index] || {}).errors || []).includes(key);
+
     return (
         <>
             {model.Simple.Conditions.map((condition, index) => {
@@ -137,9 +139,15 @@ function ConditionsEditor({ filter, onChange }) {
                                         })}
                                     />
 
+                                    {hasError('type', index) ? (
+                                        <ErrorZone id="ActionsError">{c('Error')
+                                            .t`You must choose a type of condition`}</ErrorZone>
+                                    ) : null}
+
                                     <FilterConditionValues
                                         options={toOptions(COMPARATORS)}
                                         condition={condition}
+                                        error={errors[index]}
                                         onChangeCondition={handleChangeCondition({
                                             scope: 'Comparator',
                                             condition,
@@ -167,10 +175,12 @@ function ConditionsEditor({ filter, onChange }) {
 
 ConditionsEditor.propTypes = {
     filter: PropTypes.object.isRequired,
+    errors: PropTypes.array,
     onChange: PropTypes.func
 };
 
 ConditionsEditor.defaultProps = {
+    errors: [],
     onChange: noop
 };
 
