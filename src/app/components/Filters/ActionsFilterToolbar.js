@@ -20,12 +20,8 @@ function ActionsFilterToolbar() {
     const { createNotification } = useNotifications();
     const { loading, request } = useApiWithoutResult(addTreeFilter);
 
-    const handleClose = () => {
-        console.log('handleCloseModal');
-        close();
-    };
+    const handleClose = close;
     const handleSubmit = async (filter) => {
-        console.log('handleSubmitModal', filter);
         const { Filter } = await request(filter);
         call();
         createNotification({

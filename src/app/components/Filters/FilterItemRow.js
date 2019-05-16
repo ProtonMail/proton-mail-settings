@@ -18,8 +18,6 @@ function FilterItemRow({ filter }) {
     const { createNotification } = useNotifications();
     const { request, loading } = useApiWithoutResult(toggleEnable);
 
-    console.log('@todo load simple during the get list to prevent too many parsing of the tree');
-
     const handleChangeStatus = async () => {
         await request(ID, !toggled);
         setToggle(!toggled);

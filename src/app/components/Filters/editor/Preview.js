@@ -1,12 +1,12 @@
 import React from 'react';
 import { c } from 'ttag';
 import PropTypes from 'prop-types';
-import { Alert, Row, Label, useLabels } from 'react-components';
-import { factory } from 'proton-shared/lib/models/labelsModel';
+import { Alert, Row, Label, useFormattedLabels } from 'react-components';
 
+import PreviewActionValue from './PreviewActionValue';
 import './Preview.css';
 
-const fomartActions = (actions) => {
+const fomartActions = (actions, labelsModel) => {
     const getMarkLabel = ({ Starred, Read }) => {
         if (Starred) {
             return c('Filter preview').t`starred`;
@@ -15,31 +15,58 @@ const fomartActions = (actions) => {
         if (Read) {
             return c('Filter preview').t`read`;
         }
-        return '...';
     };
 
-    return Object.keys(actions)
-        .map((key) => {
-            if (key === 'Mark') {
-                return {
+    const MAP_FOLDER_ICON = {
+        inbox: 'inbox',
+        archive: 'archive'
+    };
+
+    const getFolderIcon = (folder) => MAP_FOLDER_ICON[folder] || 'folder';
+
+    return Object.keys(actions).reduce((acc, key) => {
+        if (key === 'Mark') {
+            const value = getMarkLabel(actions[key]);
+            value &&
+                acc.push({
                     label: c('Filter preview').t`Mark email as`,
-                    value: getMarkLabel(actions[key])
-                };
-            }
-            if (key === 'FileInto') {
-                return {
+                    icon: value === 'starred' ? 'star' : 'read',
+                    value
+                });
+        }
+
+        if (key === 'FileInto') {
+            const map = labelsModel.getLabelsMap();
+            const { folder, labels } = actions[key].concat(actions.Labels || []).reduce(
+                (acc, name) => {
+                    map[name] && acc.labels.push(map[name]);
+                    !map[name] && (acc.folder = name);
+                    return acc;
+                },
+                { folder: '', labels: [] }
+            );
+
+            folder &&
+                acc.push({
                     label: c('Filter preview').t`Move email to`,
-                    value: actions[key][0]
-                };
-            }
-        })
-        .filter(Boolean);
+                    icon: getFolderIcon(folder),
+                    value: folder
+                });
+
+            labels.length &&
+                acc.push({
+                    label: c('Filter preview').t`Label email as`,
+                    icon: 'label',
+                    value: labels
+                });
+        }
+
+        return acc;
+    }, []);
 };
 
 function PreviewFilter({ filter }) {
-    const [list = []] = useLabels();
-    const labelModel = factory(list);
-    console.log(filter.Simple);
+    const [labelsModel] = useFormattedLabels();
 
     const operatorMap = {
         then: c('Filter Preview').t`then`,
@@ -92,7 +119,7 @@ function PreviewFilter({ filter }) {
             <div className="Preview-row">
                 <b>{c('Filter preview').t`Actions`}:</b>
 
-                {fomartActions(Actions).map(({ label, value }, i) => {
+                {fomartActions(Actions, labelsModel).map(({ label, value, icon }, i) => {
                     const className = 'Preview-condition'.concat(!i ? ' mt1' : '');
                     return (
                         <Row className={className} key={i.toString()}>
@@ -102,7 +129,7 @@ function PreviewFilter({ filter }) {
                                 <Label className="Preview-label">{operatorMap.all}</Label>
                             )}
                             <div>
-                                <b>{label}</b>: <span className="Preview-condition-value">{value}</span>
+                                <b>{label}</b>: <PreviewActionValue value={value} icon={icon} />
                             </div>
                         </Row>
                     );

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Modal, HeaderModal, FooterModal, ContentModal, Button } from 'react-components';
 
-import AddEmailToList from '../../components/Filters/AddEmailToList';
+import AddEmailToList from '../../components/Filters/spamlist/AddEmailToList';
 
 function AddEmailToListModal({ type, ...props }) {
     const I18N = {

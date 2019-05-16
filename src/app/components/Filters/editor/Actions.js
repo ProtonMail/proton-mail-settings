@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Loader, Label, Select, Row, useLabels } from 'react-components';
+import { Loader, Label, Select, Row, useFormattedLabels } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
-import { factory } from 'proton-shared/lib/models/labelsModel';
 
 import LabelActions from './LabelActions';
 
 function ActionsEditor({ filter, onChange }) {
     const { Actions } = filter.Simple;
-    const [list = [], loading] = useLabels();
-    const labelModel = factory(list);
+    const [labelModel = [], loading] = useFormattedLabels();
 
     const labels = labelModel.getLabels();
     const folders = labelModel.getFolders().map(({ Name }) => ({
@@ -74,7 +72,8 @@ function ActionsEditor({ filter, onChange }) {
         }
 
         if (mode === 'moveTo') {
-            const [key] = Actions.FileInto;
+            const MAP = labelModel.getLabelsMap();
+            const key = Actions.FileInto.find((name) => !MAP[name]);
             if (key) {
                 return key;
             }

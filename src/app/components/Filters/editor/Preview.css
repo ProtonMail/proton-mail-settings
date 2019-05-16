@@ -7,7 +7,7 @@
     text-transform: uppercase;
 }
 
-.Preview-condition-value {
+.Preview-condition-value, .Preview-action-value {
     position: relative;
     padding: .2em .5em;
     background: #eee;
@@ -22,3 +22,4 @@
 .Preview-condition-value + .Preview-condition-value {
     margin-left: 2em;
 }
+.Preview-action-value + .Preview-action-value { margin-left: 1rem }

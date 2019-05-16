@@ -5,8 +5,8 @@ import { getIncomingDefaults } from 'proton-shared/lib/api/incomingDefaults';
 import { MAILBOX_IDENTIFIERS } from 'proton-shared/lib/constants';
 
 import useSpamList from './useSpamList';
-import SpamListItem from '../../components/Filters/SpamListItem';
-import SearchEmailIntoList from '../../components/Filters/SearchEmailIntoList';
+import SpamListItem from '../../components/Filters/spamlist/SpamListItem';
+import SearchEmailIntoList from '../../components/Filters/spamlist/SearchEmailIntoList';
 
 const BLACKLIST_TYPE = +MAILBOX_IDENTIFIERS.spam;
 const WHITELIST_TYPE = +MAILBOX_IDENTIFIERS.inbox;

@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { c } from 'ttag';
-import { SubTitle, Group, Paragraph, Alert, Loader, useFilters } from 'react-components';
+import {
+    SubTitle,
+    Group,
+    Paragraph,
+    Alert,
+    Loader,
+    useFilters,
+    useApiWithoutResult,
+    useEventManager
+} from 'react-components';
+import { arrayMove } from 'react-sortable-hoc';
+import { updateFilterOrder } from 'proton-shared/lib/api/filters';
 
 import FilterSortableList from '../../components/Filters/SortableList';
 import ActionsFilterToolbar from '../../components/Filters/ActionsFilterToolbar';
 
 function FiltersContainer() {
-    const [list, loading] = useFilters();
+    const { call } = useEventManager();
+    const [filters, loading] = useFilters();
+    const orderRequest = useApiWithoutResult(updateFilterOrder);
+
+    const [list, setFilters] = useState(filters || []);
+
+    useEffect(() => {
+        setFilters(filters || []);
+    }, [filters]);
 
     const getScrollContainer = () => document.querySelector('.main-area');
-    const onSortEnd = ({ oldIndex, newIndex }) => {
-        console.log('Sort end', { oldIndex, newIndex });
+    const onSortEnd = async ({ oldIndex, newIndex }) => {
+        const newList = arrayMove(list, oldIndex, newIndex);
+        setFilters(newList);
+        await orderRequest.request(newList.map(({ ID }) => ID));
+        call();
     };
 
     return (

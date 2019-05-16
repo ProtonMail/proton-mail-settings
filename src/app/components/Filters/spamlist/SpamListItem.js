@@ -8,6 +8,8 @@ import AddEmailFilterListButton from './AddEmailFilterListButton';
 import MoveEmailFilteredList from './MoveEmailFilteredList';
 import RemoveEmailFilteredList from './RemoveEmailFilteredList';
 
+import './SpamListItem.scss';
+
 function SpamListItem({ list, type, dest, onAction, className, loading }) {
     const I18N = {
         whitelist: c('Title').t('Whitelist'),

@@ -156,8 +156,11 @@ function ConditionsEditor({ filter, onChange }) {
                 );
             })}
 
-            <PrimaryButton className="ml50" onClick={handleAddNewCondition}>{c('Action')
-                .t`Add a new condition`}</PrimaryButton>
+            <Row>
+                <span className="pm-label" />
+                <PrimaryButton type="button" className="ml50" onClick={handleAddNewCondition}>{c('Action')
+                    .t`Add a new condition`}</PrimaryButton>
+            </Row>
         </>
     );
 }

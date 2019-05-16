@@ -13,6 +13,8 @@ import SieveEditor from '../../components/Filters/editor/Sieve';
 import PreviewFilter from '../../components/Filters/editor/Preview';
 import NameEditor from '../../components/Filters/editor/Name';
 
+import './AddFilterModal.css';
+
 function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const filterModel = newFilter(filter, type);
     const [model, setModel] = useState(filterModel);
@@ -21,12 +23,14 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
     const [sieveCode, setSieveCode] = useState(filterModel.Sieve || '');
 
     const handleChange = (key) => (data) => {
-        setModel({
-            ...model,
-            Simple: {
-                ...model.Simple,
-                [key]: Array.isArray(data) ? data : { ...model.Simple[key], ...data }
-            }
+        setModel((previous) => {
+            return {
+                ...previous,
+                Simple: {
+                    ...previous.Simple,
+                    [key]: Array.isArray(data) ? data : { ...previous.Simple[key], ...data }
+                }
+            };
         });
     };
 
@@ -50,9 +54,8 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
         const filter = formatFilter(model, 'simple');
         const { isValid, ...errors } = validate(filter);
 
-        console.log('FILTER', filter);
         if (!isValid) {
-            console.log(errors);
+            console.error({ errors, filter });
             return alert('NEIN NEIN NEIN');
         }
 
@@ -75,10 +78,10 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                 {!isPreview ? c('Add Filter Modal').t`Custom Filter` : c('Add Filter Modal').t`Custom Filter (Preview)`}
             </HeaderModal>
 
-            <ContentModal onSubmit={noop} loading={loading}>
-                {type === 'complex' && !isPreview ? (
-                    <InnerModal>
-                        <NameEditor filter={filterModel} onChange={handleChangeName} />
+            <ContentModal onSubmit={noop} loading={loading} className={isPreview ? 'AddFilterModal-isPreview' : ''}>
+                {type === 'complex' ? (
+                    <InnerModal className="AddFilterModal-editor">
+                        <NameEditor error={errors.name} filter={filterModel} onChange={handleChangeName} />
                         <SieveEditor
                             filter={filterModel}
                             onChange={handleChangeSieve}
@@ -87,8 +90,8 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                     </InnerModal>
                 ) : null}
 
-                {type !== 'complex' && !isPreview ? (
-                    <InnerModal>
+                {type !== 'complex' ? (
+                    <InnerModal className="AddFilterModal-editor">
                         <NameEditor filter={filterModel} onChange={handleChangeName} />
                         <OperatorEditor filter={filterModel} onChange={handleChange('Operator')} />
                         <ConditionsEditor filter={filterModel} onChange={handleChange('Conditions')} />
@@ -118,7 +121,7 @@ function AddFilterModal({ filter, type, onSubmit, loading, ...props }) {
                             <Button type="button" className="mlauto mr1" onClick={handleClickPreview}>{c('Action')
                                 .t`Preview`}</Button>
                         ) : null}
-                        <PrimaryButton disabled={loading} onClick={handleSubmit}>
+                        <PrimaryButton type="button" disabled={loading} onClick={handleSubmit}>
                             {c('Action').t`Save`}
                         </PrimaryButton>
                     </FooterModal>

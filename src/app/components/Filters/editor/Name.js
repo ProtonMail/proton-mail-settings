@@ -4,8 +4,9 @@ import { c } from 'ttag';
 import { Label, Input, Row } from 'react-components';
 import { noop } from 'proton-shared/lib/helpers/function';
 
-function NameEditor({ filter, onChange }) {
+function NameEditor({ filter, onChange, error }) {
     const handleChange = ({ target }) => onChange(target.value);
+    console.log(error);
 
     return (
         <Row>
@@ -13,6 +14,7 @@ function NameEditor({ filter, onChange }) {
             <Input
                 id="filterName"
                 type="text"
+                error={error}
                 defaultValue={filter.Name}
                 onChange={handleChange}
                 placeholder={c('Placeholder').t('Name')}
