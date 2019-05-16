@@ -1,12 +1,22 @@
 import React from 'react';
-import { PaymentMethodsSection, InvoicesSection } from 'react-components';
+import {
+    ObserverSections,
+    PaymentMethodsSection,
+    InvoicesSection,
+    PlansSection,
+    BillingSection,
+    SubscriptionSection
+} from 'react-components';
 
 const SubscriptionContainer = () => {
     return (
-        <>
-            <PaymentMethodsSection />
-            <InvoicesSection />
-        </>
+        <ObserverSections>
+            <PlansSection id="plans" />
+            <SubscriptionSection id="subscription" />
+            <BillingSection id="billing" />
+            <PaymentMethodsSection id="payment-methods" />
+            <InvoicesSection id="invoices" />
+        </ObserverSections>
     );
 };
 
