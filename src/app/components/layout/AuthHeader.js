@@ -1,9 +1,9 @@
 import React from 'react';
 import { c } from 'ttag';
-import { useModal, AuthenticatedBugModal } from 'react-components';
+import { useModals, AuthenticatedBugModal } from 'react-components';
 
 const AuthHeader = () => {
-    const { isOpen, open, close } = useModal();
+    const { createModal } = useModals();
     return (
         <header className="header flex flex-nowrap reset4print">
             <a href="/" className="logo-container nodecoration flex-item-centered-vert">
@@ -71,7 +71,10 @@ const AuthHeader = () => {
                         </a>
                     </li>
                     <li className="mr1">
-                        <button onClick={open} className="topnav-link inline-flex flex-nowrap nodecoration rounded">
+                        <button
+                            onClick={() => <AuthenticatedBugModal />}
+                            className="topnav-link inline-flex flex-nowrap nodecoration rounded"
+                        >
                             <svg
                                 viewBox="0 0 16 16"
                                 className="icon-16p topnav-icon mr0-5 flex-item-centered-vert fill-white"
@@ -83,7 +86,6 @@ const AuthHeader = () => {
                             </svg>
                             Support
                         </button>
-                        {isOpen && <AuthenticatedBugModal onClose={close} />}
                     </li>
                 </ul>
             </div>
