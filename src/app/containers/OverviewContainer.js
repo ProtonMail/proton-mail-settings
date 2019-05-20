@@ -1,5 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+    Loader,
+    IndexSection,
+    SummarySection,
+    PromoteSection,
+    useSubscription,
+    useUser,
+    useUserSettings
+} from 'react-components';
 
 import pages from '../pages';
 
@@ -24,19 +32,26 @@ const buildSections = ({ route, sections = [] }) => {
 };
 
 const OverviewContainer = () => {
+    const [subscription, loading] = useSubscription();
+    const [userSettings] = useUserSettings();
+    const [user] = useUser();
+
+    if (loading) {
+        return <Loader />;
+    }
+
     return (
-        <div className="settings-grid-container">
-            {pages.map(({ text, route, sections = [] }) => {
-                return (
-                    <div key={route} className={`setting-grid ${sections.length > 4 ? 'setting-grid--tall' : ''}`}>
-                        <h2 className="h6 mb0-5">
-                            <strong>{text}</strong>
-                        </h2>
-                        {buildSections({ text, route, sections })}
-                    </div>
-                );
-            })}
-        </div>
+        <>
+            <div className="flex-autogrid">
+                <div className="flex-autogrid-item">
+                    <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
+                </div>
+                <div className="flex-autogrid-item">
+                    <PromoteSection subscription={subscription} user={user} />
+                </div>
+            </div>
+            <IndexSection pages={pages} subscription={subscription} user={user} />
+        </>
     );
 };
 

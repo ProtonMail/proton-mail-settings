@@ -3,7 +3,7 @@ import { c } from 'ttag';
 export default [
     {
         text: c('Title').t`Subscription`,
-        icon: 'alias',
+        icon: 'dashboard',
         route: '/settings/subscription',
         sections: [
             {
@@ -81,7 +81,7 @@ export default [
     },
     {
         text: c('Title').t`Custom domain`,
-        icon: 'domain',
+        icon: 'domains',
         route: '/settings/domains',
         sections: [
             {
@@ -101,7 +101,7 @@ export default [
     },
     {
         text: c('Title').t`Identity`,
-        icon: 'alias',
+        icon: 'identity',
         route: '/settings/identity',
         sections: [
             {
@@ -116,7 +116,7 @@ export default [
     },
     {
         text: c('Title').t`General`,
-        icon: 'alias',
+        icon: 'general',
         route: '/settings/general',
         sections: [
             {
@@ -239,7 +239,7 @@ export default [
     },
     {
         text: c('Title').t`Apps`,
-        icon: 'alias',
+        icon: 'apps',
         route: '/settings/apps',
         sections: [
             {
