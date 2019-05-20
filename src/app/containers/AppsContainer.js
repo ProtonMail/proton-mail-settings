@@ -1,21 +1,21 @@
 import React from 'react';
 import {
     ProtonMailBridgeSection,
-    ProtonMailBetaSection,
-    ProtonMailAppsSection,
     ProtonVPNAppsSection,
-    ObserverSections
+    ProtonMailBetaSection,
+    ProtonMailAppsSection
 } from 'react-components';
 
-const AppsContainer = () => {
-    return (
-        <ObserverSections>
-            <ProtonMailBridgeSection id="protonmail-bridge" />
-            <ProtonMailAppsSection id="protonmail-apps" />
-            <ProtonMailBetaSection id="protonmail-beta" />
-            <ProtonVPNAppsSection id="protonvpn-apps" />
-        </ObserverSections>
-    );
+import Page from '../components/Page';
+import { getAppsPage } from '../pages/apps';
+
+const COMPONENTS = {
+    'protonmail-bridge': ProtonMailBridgeSection,
+    'protonmail-apps': ProtonVPNAppsSection,
+    'protonmail-beta': ProtonMailBetaSection,
+    'protonvpn-apps': ProtonMailAppsSection
 };
+
+const AppsContainer = () => <Page page={getAppsPage()} components={COMPONENTS} />;
 
 export default AppsContainer;
