@@ -63,6 +63,7 @@ export default [
         text: c('Title').t`Organization`,
         icon: 'organization',
         route: '/settings/organization',
+        paidFeature: true,
         sections: [
             {
                 text: c('Title').t`Name`,
@@ -83,6 +84,7 @@ export default [
         text: c('Title').t`Custom domain`,
         icon: 'domains',
         route: '/settings/domains',
+        paidFeature: true,
         sections: [
             {
                 text: c('Title').t`Custom domain`,
@@ -188,6 +190,7 @@ export default [
         text: c('Title').t`Auto-reply`,
         icon: 'auto-reply',
         route: '/settings/auto-reply',
+        paidFeature: true,
         sections: [
             {
                 text: c('Title').t`Auto-reply`,
