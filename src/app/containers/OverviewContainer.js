@@ -3,17 +3,15 @@ import { Link } from 'react-router-dom';
 
 import pages from '../pages';
 
-const buildSections = ({ text, route, sections = [] }) => {
+// eslint-disable-next-line react/prop-types
+const buildSections = ({ route, sections = [] }) => {
     return (
         <ul className="unstyled mt0-5">
             {sections
-                .reduce(
-                    (acc, { text, id }) => {
-                        acc.push({ text, id, route: `${route}#${id}` });
-                        return acc;
-                    },
-                    [{ text, route }]
-                )
+                .reduce((acc, { text, id }) => {
+                    acc.push({ text, id, route: `${route}#${id}` });
+                    return acc;
+                }, [])
                 .map(({ text, id, route }) => {
                     return (
                         <li key={id}>
