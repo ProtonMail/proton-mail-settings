@@ -3,7 +3,7 @@ import { c } from 'ttag';
 export default [
     {
         text: c('Title').t`Subscription`,
-        icon: 'upgrade-to-paid',
+        icon: 'dashboard',
         route: '/settings/subscription',
         sections: [
             {
