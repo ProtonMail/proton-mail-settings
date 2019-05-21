@@ -8,7 +8,18 @@ export const getAddressesPage = () => {
     return {
         text: c('Title').t`Addresses`,
         route: '/settings/addresses',
-        icon: 'email-address'
+        icon: 'email-address',
+        sections: [
+            {
+                text: c('Title').t`Addresses`,
+                id: 'addresses'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
+            }
+        ]
     };
 };
 

@@ -21,6 +21,11 @@ export const getDomainsPage = () => {
             {
                 text: c('Title').t`Catch-all`,
                 id: 'catch-all'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
             }
         ]
     };

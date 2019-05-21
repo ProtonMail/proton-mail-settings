@@ -12,7 +12,18 @@ export const getAutoReply = () => {
         text: c('Title').t`Auto-reply`,
         route: '/settings/auto-reply',
         icon: 'auto-reply',
-        permissions: [PAID_MAIL]
+        permissions: [PAID_MAIL],
+        sections: [
+            {
+                text: c('Title').t`Auto-reply`,
+                id: 'auto-reply'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
+            }
+        ]
     };
 };
 
