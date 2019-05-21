@@ -1,33 +1,50 @@
-import React from 'react';
+import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import { ObserverSections, SubSidebar, usePermissions } from 'react-components';
+import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 
 import Main from './Main';
-import { hasPermission } from '../pages/helpers';
+import Title from './Title';
 
-const Page = ({ page, components }) => {
+const UpgradeNow = () => {
+    return <>Upgrade now !</>;
+};
+
+const Page = ({ config, children }) => {
     const userPermissions = usePermissions();
-    const { sections, permissions: pagePermissions } = page;
+    const { sections = [], permissions: pagePermissions, text } = config;
+
+    if (!hasPermission(userPermissions, pagePermissions)) {
+        return (
+            <Main>
+                <Title>{text}</Title>
+                <UpgradeNow />
+            </Main>
+        );
+    }
+
     return (
         <>
             {sections.length ? <SubSidebar list={sections} /> : null}
             <Main>
+                <Title>{text}</Title>
                 <ObserverSections>
-                    {sections.map(({ permissions: sectionPermissions, id }) => {
-                        if (hasPermission(userPermissions, pagePermissions, sectionPermissions)) {
-                            const Component = components[id];
-                            return <Component id={id} />;
-                        }
-                        return 'Upgrade now !'; // TODO
+                    {Children.map(children, (child, index) => {
+                        const { id, permissions: sectionPermissions = [] } = sections[index];
+                        return React.cloneElement(child, {
+                            id,
+                            permission: hasPermission(userPermissions, sectionPermissions)
+                        });
                     })}
                 </ObserverSections>
             </Main>
         </>
     );
 };
+
 Page.propTypes = {
-    page: PropTypes.object,
-    components: PropTypes.object
+    config: PropTypes.object,
+    children: PropTypes.node
 };
 
 export default Page;

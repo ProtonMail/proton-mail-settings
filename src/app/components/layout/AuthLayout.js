@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Route } from 'react-router';
 import { Sidebar } from 'react-components';
 
-import { getPages } from '../../pages/index';
 import AuthHeader from './AuthHeader';
+import { getPages } from '../../pages';
 
 const AuthLayout = ({ children }) => {
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
@@ -22,8 +22,7 @@ const AuthLayout = ({ children }) => {
 };
 
 AuthLayout.propTypes = {
-    children: PropTypes.node.isRequired,
-    history: PropTypes.object.isRequired
+    children: PropTypes.node.isRequired
 };
 
 export default AuthLayout;

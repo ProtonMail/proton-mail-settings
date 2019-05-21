@@ -1,6 +1,15 @@
 import React from 'react';
 import { c } from 'ttag';
-import { AddressesSection, ObserverSections, RelatedSettingsSection } from 'react-components';
+import { AddressesSection, RelatedSettingsSection } from 'react-components';
+
+import Page from '../components/Page';
+
+export const getAddressesPage = () => {
+    return {
+        text: c('Title').t`Addresses`,
+        route: '/settings/addresses'
+    };
+};
 
 const AddressesContainer = () => {
     const relatedSettingsList = [
@@ -19,11 +28,12 @@ const AddressesContainer = () => {
             to: '/settings/members'
         }
     ];
+
     return (
-        <ObserverSections>
-            <AddressesSection id="addresses" />
+        <Page config={getAddressesPage()}>
+            <AddressesSection />
             <RelatedSettingsSection id="related-settings" list={relatedSettingsList} />
-        </ObserverSections>
+        </Page>
     );
 };
 

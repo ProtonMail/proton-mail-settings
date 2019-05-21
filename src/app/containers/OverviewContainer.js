@@ -8,8 +8,7 @@ import {
     useUser,
     useUserSettings
 } from 'react-components';
-
-import pages from '../pages';
+import { getPages } from '../pages';
 
 const OverviewContainer = () => {
     const [subscription, loading] = useSubscription();
@@ -30,7 +29,7 @@ const OverviewContainer = () => {
                     <PromoteSection subscription={subscription} user={user} />
                 </div>
             </div>
-            <IndexSection pages={pages} subscription={subscription} user={user} />
+            <IndexSection pages={getPages()} subscription={subscription} user={user} />
         </>
     );
 };
