@@ -4,6 +4,7 @@ import { useModals, AuthenticatedBugModal } from 'react-components';
 
 const AuthHeader = () => {
     const { createModal } = useModals();
+    const handleClick = () => createModal(<AuthenticatedBugModal />);
     return (
         <header className="header flex flex-nowrap reset4print">
             <a href="/" className="logo-container nodecoration flex-item-centered-vert">
@@ -72,7 +73,7 @@ const AuthHeader = () => {
                     </li>
                     <li className="mr1">
                         <button
-                            onClick={() => <AuthenticatedBugModal />}
+                            onClick={handleClick}
                             className="topnav-link inline-flex flex-nowrap nodecoration rounded"
                         >
                             <svg
