@@ -1,13 +1,37 @@
 import React from 'react';
-import { ObserverSections, AutoReplySection, RelatedSettingsSection } from 'react-components';
+import { AutoReplySection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
+import { PERMISSIONS } from 'proton-shared/lib/constants';
+
+import Page from '../components/Page';
+
+const { PAID_MAIL } = PERMISSIONS;
+
+export const getAutoReply = () => {
+    return {
+        text: c('Title').t`Auto-reply`,
+        route: '/settings/auto-reply',
+        icon: 'auto-reply',
+        permissions: [PAID_MAIL],
+        sections: [
+            {
+                text: c('Title').t`Auto-reply`,
+                id: 'auto-reply'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
+            }
+        ]
+    };
+};
 
 const AutoReplyContainer = () => {
     return (
-        <ObserverSections>
+        <Page config={getAutoReply()}>
             <AutoReplySection id="auto-reply" />
             <RelatedSettingsSection
-                id="related-settings"
                 list={[
                     {
                         icon: 'filter',
@@ -18,7 +42,7 @@ const AutoReplyContainer = () => {
                     }
                 ]}
             />
-        </ObserverSections>
+        </Page>
     );
 };
 

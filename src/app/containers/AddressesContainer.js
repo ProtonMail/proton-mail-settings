@@ -1,29 +1,51 @@
 import React from 'react';
 import { c } from 'ttag';
-import { AddressesSection, ObserverSections, RelatedSettingsSection } from 'react-components';
+import { AddressesSection, RelatedSettingsSection } from 'react-components';
+
+import Page from '../components/Page';
+
+export const getAddressesPage = () => {
+    return {
+        text: c('Title').t`Addresses`,
+        route: '/settings/addresses',
+        icon: 'email-address',
+        sections: [
+            {
+                text: c('Title').t`Addresses`,
+                id: 'addresses'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
+            }
+        ]
+    };
+};
 
 const AddressesContainer = () => {
-    const relatedSettingsList = [
-        {
-            icon: 'domain',
-            text: c('Info')
-                .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
-            link: c('Link').t`Domain settings`,
-            to: '/settings/domains'
-        },
-        {
-            icon: 'contacts-group-people',
-            text: c('Info')
-                .t`Go to User Settings if you want to create and manage the list of users in your organization.`,
-            link: c('Link').t`Users settings`,
-            to: '/settings/members'
-        }
-    ];
     return (
-        <ObserverSections>
-            <AddressesSection id="addresses" />
-            <RelatedSettingsSection id="related-settings" list={relatedSettingsList} />
-        </ObserverSections>
+        <Page config={getAddressesPage()}>
+            <AddressesSection />
+            <RelatedSettingsSection
+                list={[
+                    {
+                        icon: 'domains',
+                        text: c('Info')
+                            .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
+                        link: c('Link').t`Domain settings`,
+                        to: '/settings/domains'
+                    },
+                    {
+                        icon: 'contacts-group-people',
+                        text: c('Info')
+                            .t`Go to User Settings if you want to create and manage the list of users in your organization.`,
+                        link: c('Link').t`Users settings`,
+                        to: '/settings/members'
+                    }
+                ]}
+            />
+        </Page>
     );
 };
 

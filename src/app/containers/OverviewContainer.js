@@ -9,7 +9,8 @@ import {
     useUserSettings
 } from 'react-components';
 
-import pages from '../pages';
+import { getPages } from '../pages';
+import Main from '../components/Main';
 
 const OverviewContainer = () => {
     const [subscription, loading] = useSubscription();
@@ -21,7 +22,7 @@ const OverviewContainer = () => {
     }
 
     return (
-        <>
+        <Main>
             <div className="flex-autogrid">
                 <div className="flex-autogrid-item">
                     <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
@@ -30,8 +31,8 @@ const OverviewContainer = () => {
                     <PromoteSection subscription={subscription} user={user} />
                 </div>
             </div>
-            <IndexSection pages={pages} subscription={subscription} user={user} />
-        </>
+            <IndexSection pages={getPages()} subscription={subscription} user={user} />
+        </Main>
     );
 };
 
