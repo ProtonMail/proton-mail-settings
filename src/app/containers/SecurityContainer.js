@@ -8,6 +8,7 @@ export const getSecurityPage = () => {
     return {
         text: c('Title').t`Security`,
         route: '/settings/security',
+        icon: 'security',
         sections: [
             {
                 text: c('Title').t`Session management`,

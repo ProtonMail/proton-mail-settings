@@ -8,6 +8,7 @@ export const getAccountPage = () => {
     return {
         text: c('Title').t`Account`,
         route: '/settings/account',
+        icon: 'account',
         sections: [
             {
                 text: c('Title').t`Username`,

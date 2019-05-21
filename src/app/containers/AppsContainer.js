@@ -16,6 +16,7 @@ export const getAppsPage = () => {
     return {
         text: c('Title').t`Apps`,
         route: '/settings/apps',
+        icon: 'apps',
         sections: [
             {
                 text: c('Title').t`ProtonMail Bridge`,

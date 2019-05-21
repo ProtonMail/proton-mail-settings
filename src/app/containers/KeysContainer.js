@@ -7,6 +7,7 @@ export const getKeysPage = () => {
     return {
         text: c('Title').t`Keys`,
         route: '/settings/keys',
+        icon: 'keys',
         sections: [
             {
                 text: c('Title').t`Email encryption keys`,

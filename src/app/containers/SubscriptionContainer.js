@@ -17,6 +17,7 @@ export const getSubscriptionPage = () => {
     return {
         text: c('Title').t`Subscription`,
         route: '/settings/subscription',
+        icon: 'dashboard',
         permissions: [UPGRADER],
         sections: [
             {

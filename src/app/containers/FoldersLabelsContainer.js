@@ -6,7 +6,8 @@ import Page from '../components/Page';
 export const getLabelsPage = () => {
     return {
         text: c('Title').t`Folders/labels`,
-        route: '/settings/labels'
+        route: '/settings/labels',
+        icon: 'folder-label'
     };
 };
 

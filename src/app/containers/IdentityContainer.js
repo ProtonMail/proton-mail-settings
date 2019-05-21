@@ -11,6 +11,7 @@ export const getIdentityPage = () => {
     return {
         text: c('Title').t`Identity`,
         route: '/settings/identity',
+        icon: 'identity',
         sections: [
             {
                 text: c('Title').t`Display name & signature`,

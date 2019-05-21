@@ -7,14 +7,15 @@ import Page from '../components/Page';
 export const getAddressesPage = () => {
     return {
         text: c('Title').t`Addresses`,
-        route: '/settings/addresses'
+        route: '/settings/addresses',
+        icon: 'email-address'
     };
 };
 
 const AddressesContainer = () => {
     const relatedSettingsList = [
         {
-            icon: 'domain',
+            icon: 'domains',
             text: c('Info')
                 .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
             link: c('Link').t`Domain settings`,

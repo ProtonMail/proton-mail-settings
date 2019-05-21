@@ -10,6 +10,7 @@ const { ADMIN, PAID_MAIL } = PERMISSIONS;
 export const getDomainsPage = () => {
     return {
         text: c('Title').t`Custom domain`,
+        icon: 'domains',
         route: '/settings/domains',
         permissions: [ADMIN, PAID_MAIL],
         sections: [
@@ -28,8 +29,9 @@ export const getDomainsPage = () => {
 const DomainsContainer = () => {
     const relatedSettingsList = [
         {
-            icon: 'alias',
-            text: c('Info').t`TODO`,
+            icon: 'dashboard',
+            text: c('Info')
+                .t`Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization`,
             link: c('Link').t`Upgrade`,
             to: '/settings/subscription'
         },
@@ -43,8 +45,8 @@ const DomainsContainer = () => {
     ];
     return (
         <Page config={getDomainsPage()}>
-            <DomainsSection id="domains" />
-            <CatchAllSection id="catch-all" />
+            <DomainsSection />
+            <CatchAllSection />
             <RelatedSettingsSection id="related-settings" list={relatedSettingsList} />
         </Page>
     );

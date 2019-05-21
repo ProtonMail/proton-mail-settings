@@ -11,6 +11,7 @@ export const getOrganizationPage = () => {
     return {
         text: c('Title').t`Organization`,
         route: '/settings/organization',
+        icon: 'organization',
         permissions: [ADMIN],
         sections: [
             {

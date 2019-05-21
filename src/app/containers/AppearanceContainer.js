@@ -8,6 +8,7 @@ export const getAppearancePage = () => {
     return {
         text: c('Title').t`Appearance`,
         route: '/settings/appearance',
+        icon: 'apparence',
         sections: [
             {
                 text: c('Title').t`Layouts`,

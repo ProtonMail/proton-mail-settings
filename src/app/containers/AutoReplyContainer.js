@@ -11,6 +11,7 @@ export const getAutoReply = () => {
     return {
         text: c('Title').t`Auto-reply`,
         route: '/settings/auto-reply',
+        icon: 'auto-reply',
         permissions: [PAID_MAIL]
     };
 };

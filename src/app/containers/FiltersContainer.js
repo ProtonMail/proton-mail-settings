@@ -7,6 +7,7 @@ export const getFiltersPage = () => {
     return {
         text: c('Title').t`Filters`,
         route: '/settings/filters',
+        icon: 'filter',
         sections: [
             {
                 text: c('Title').t`Custom filters`,

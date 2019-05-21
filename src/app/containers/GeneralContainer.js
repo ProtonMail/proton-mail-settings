@@ -15,6 +15,7 @@ export const getGeneralPage = () => {
     return {
         text: c('Title').t`General`,
         route: '/settings/general',
+        icon: 'general',
         sections: [
             {
                 text: c('Title').t`Language`,
