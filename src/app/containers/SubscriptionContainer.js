@@ -11,7 +11,7 @@ import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import Page from '../components/Page';
 
-const { UPGRADER } = PERMISSIONS;
+const { UPGRADER, PAID } = PERMISSIONS;
 
 export const getSubscriptionPage = () => {
     return {
@@ -26,11 +26,13 @@ export const getSubscriptionPage = () => {
             },
             {
                 text: c('Title').t`Subscription`,
-                id: 'subscription'
+                id: 'subscription',
+                permissions: [PAID]
             },
             {
                 text: c('Title').t`Billing details`,
-                id: 'billing'
+                id: 'billing',
+                permissions: [PAID]
             },
             {
                 text: c('Title').t`Payment methods`,

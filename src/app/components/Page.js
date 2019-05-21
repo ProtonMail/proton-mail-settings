@@ -30,7 +30,7 @@ const Page = ({ config, children }) => {
                 <Title>{text}</Title>
                 <ObserverSections>
                     {Children.map(children, (child, index) => {
-                        const { id, permissions: sectionPermissions = [] } = sections[index];
+                        const { id = 'related-settings', permissions: sectionPermissions = [] } = sections[index] || {};
                         return React.cloneElement(child, {
                             id,
                             permission: hasPermission(userPermissions, sectionPermissions)

@@ -21,7 +21,6 @@ const AutoReplyContainer = () => {
         <Page config={getAutoReply()}>
             <AutoReplySection id="auto-reply" />
             <RelatedSettingsSection
-                id="related-settings"
                 list={[
                     {
                         icon: 'filter',
