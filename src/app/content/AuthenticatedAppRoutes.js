@@ -45,6 +45,7 @@ const Routes = () => {
                                 <Route path="/settings/apps" component={AppsContainer} />
                                 <Route path="/settings/general" component={GeneralContainer} />
                                 <Route path="/settings/filters" component={FiltersContainer} />
+                                <Route path="/settings/labels" component={LabelsContainer} />
                                 <Route path="/settings/auto-reply" component={AutoReplyContainer} />
                                 <Route component={NotFoundContainer} />
                             </Switch>
