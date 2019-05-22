@@ -12,7 +12,13 @@ export const getMembersPage = () => {
         text: c('Title').t`Users`,
         route: '/settings/members',
         icon: 'contacts-group-people',
-        permissions: [ADMIN, MULTI_USERS]
+        permissions: [ADMIN, MULTI_USERS],
+        sections: [
+            {
+                text: c('Title').t`Users`,
+                id: 'members'
+            }
+        ]
     };
 };
 
