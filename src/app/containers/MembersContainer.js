@@ -1,5 +1,5 @@
 import React from 'react';
-import { MembersSection } from 'react-components';
+import { MembersSection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
@@ -17,6 +17,11 @@ export const getMembersPage = () => {
             {
                 text: c('Title').t`Users`,
                 id: 'members'
+            },
+            {
+                text: c('Title').t`Related settings`,
+                id: 'related-settings',
+                hide: true
             }
         ]
     };
@@ -26,6 +31,17 @@ const MembersContainer = () => {
     return (
         <Page config={getMembersPage()}>
             <MembersSection />
+            <RelatedSettingsSection
+                list={[
+                    {
+                        icon: 'email-address',
+                        text: c('Info')
+                            .t`Go to the address settings if you want to create and manage addresses for your users.`,
+                        link: c('Link').t`Address settings`,
+                        to: '/settings/addresses'
+                    }
+                ]}
+            />
         </Page>
     );
 };
