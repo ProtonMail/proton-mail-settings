@@ -9,13 +9,13 @@ const { ADMIN, PAID_MAIL } = PERMISSIONS;
 
 export const getDomainsPage = () => {
     return {
-        text: c('Title').t`Custom domain`,
+        text: c('Title').t`Custom domains`,
         icon: 'domains',
         route: '/settings/domains',
         permissions: [ADMIN, PAID_MAIL],
         sections: [
             {
-                text: c('Title').t`Custom domain`,
+                text: c('Title').t`Custom domains`,
                 id: 'domains'
             },
             {
