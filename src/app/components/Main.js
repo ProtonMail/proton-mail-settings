@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Main = ({ children }) => {
-    return <main className="main-area-content p2 flex-item-fluid">{children}</main>;
+    return <main className="main-area-content bg-white relative flex-item-fluid">{children}</main>;
 };
 
 Main.propTypes = {

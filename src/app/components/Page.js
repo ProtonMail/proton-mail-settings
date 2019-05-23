@@ -28,15 +28,17 @@ const Page = ({ config, children }) => {
             {sections.length ? <SubSidebar list={sections} /> : null}
             <Main>
                 <Title>{text}</Title>
-                <ObserverSections>
-                    {Children.map(children, (child, index) => {
-                        const { id, permissions: sectionPermissions = [] } = sections[index] || {};
-                        return React.cloneElement(child, {
-                            id,
-                            permission: hasPermission(userPermissions, sectionPermissions)
-                        });
-                    })}
-                </ObserverSections>
+                <div className="container-section-sticky">
+                    <ObserverSections>
+                        {Children.map(children, (child, index) => {
+                            const { id, permissions: sectionPermissions = [] } = sections[index] || {};
+                            return React.cloneElement(child, {
+                                id,
+                                permission: hasPermission(userPermissions, sectionPermissions)
+                            });
+                        })}
+                    </ObserverSections>
+                </div>
             </Main>
         </>
     );
