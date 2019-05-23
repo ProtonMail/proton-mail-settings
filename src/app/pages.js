@@ -12,6 +12,7 @@ import { getLabelsPage } from './containers/FoldersLabelsContainer';
 import { getKeysPage } from './containers/KeysContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
+import { getAutoReply } from './containers/AutoReplyContainer';
 
 export const getPages = () => [
     getSubscriptionPage(),
@@ -25,6 +26,7 @@ export const getPages = () => [
     getAppearancePage(),
     getFiltersPage(),
     getLabelsPage(),
+    getAutoReply(),
     getKeysPage(),
     getSecurityPage(),
     getAppsPage()
