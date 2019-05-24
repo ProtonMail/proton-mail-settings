@@ -1,7 +1,24 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-export $(grep -v '^#' .env | xargs);
+
+
+if [ -f "env/.env" ]; then
+    export $(grep 'ROOT_DIR' env/.env | xargs);
+    echo ""
+    echo "⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠ [DEPRECATION NOTICE] ⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠"
+    echo " Plz copy your file env/.env to the protonmail-settings/.env"
+    echo "For a proton dev you, if i18n is not yet setup plz read"
+    echo "read https://github.com/ProtonMail/proton-i18n#how-to-setup-"
+    echo "⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠ [/DEPRECATION NOTICE] ⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠"
+    echo ""
+    echo ""
+fi;
+
+if [ -f ".env" ]; then
+    export $(grep 'ROOT_DIR' .env | xargs);
+fi;
+
 
 function openProject {
     cd "$ROOT_DIR/$1";
