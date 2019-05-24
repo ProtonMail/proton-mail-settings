@@ -1,6 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import { DomainsSection, RelatedSettingsSection, CatchAllSection } from 'react-components';
+import { DomainsSection, RelatedSettingsSection, CatchAllSection, useOrganization } from 'react-components';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import Page from '../components/Page';
@@ -31,29 +31,51 @@ export const getDomainsPage = () => {
     };
 };
 
+const getList = ({ MaxMembers = 0 }) => {
+    if (MaxMembers > 1) {
+        return [
+            {
+                icon: 'contacts-group-people',
+                text: c('Info')
+                    .t`Go to the Users Settings if you want to create and manage users in your organization.`,
+                link: c('Link').t`Users settings`,
+                to: '/settings/members'
+            },
+            {
+                icon: 'email-address',
+                text: c('Info')
+                    .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
+                link: c('Link').t`Addresses settings`,
+                to: '/settings/addresses'
+            }
+        ];
+    }
+
+    return [
+        {
+            icon: 'contacts-group-people',
+            text: c('Info')
+                .t`Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization.`,
+            link: c('Link').t`Upgrade`,
+            to: '/settings/subscription'
+        },
+        {
+            icon: 'email-address',
+            text: c('Info')
+                .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
+            link: c('Link').t`Addresses settings`,
+            to: '/settings/addresses'
+        }
+    ];
+};
+
 const DomainsContainer = () => {
+    const [organization] = useOrganization();
     return (
         <Page config={getDomainsPage()}>
             <DomainsSection />
             <CatchAllSection />
-            <RelatedSettingsSection
-                list={[
-                    {
-                        icon: 'dashboard',
-                        text: c('Info')
-                            .t`Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization`,
-                        link: c('Link').t`Upgrade`,
-                        to: '/settings/subscription'
-                    },
-                    {
-                        icon: 'email-address',
-                        text: c('Info')
-                            .t`Go to the Addresses settings if you want to create and manage addresses to your custom domain. `,
-                        link: c('Link').t`Addresses settings`,
-                        to: '/settings/addresses'
-                    }
-                ]}
-            />
+            <RelatedSettingsSection list={getList(organization)} />
         </Page>
     );
 };
