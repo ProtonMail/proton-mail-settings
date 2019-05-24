@@ -54,3 +54,11 @@ One key/env:
 - `PROXY_APP`: dirname where is the fe-proxy
 
 > Default === dirname with the default git clone dir.
+
+
+## Sync translations
+
+You can sync them via `$ npm run i18n:upgrade`, it will:
+- Extract translations
+- Push them to crowndin
+- Create a commit with them on the repo
