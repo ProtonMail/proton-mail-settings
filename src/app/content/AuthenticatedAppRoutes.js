@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader/root';
-import { ErrorBoundary } from 'react-components';
+import { ErrorBoundary, useLocale } from 'react-components';
 
 import AuthLayout from '../components/layout/AuthLayout.js';
 import OverviewContainer from '../containers/OverviewContainer';
@@ -24,6 +24,8 @@ import AutoReplyContainer from '../containers/AutoReplyContainer';
 const NotFoundContainer = () => <h1>Not found</h1>;
 
 const Routes = () => {
+    // Use locale inside the app
+    useLocale();
     return (
         <Router>
             <AuthLayout>
