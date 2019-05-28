@@ -1,5 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
+import { AddressKeysSection, UserKeysSection } from 'react-components';
 
 import Page from '../components/Page';
 
@@ -21,6 +22,13 @@ export const getKeysPage = () => {
     };
 };
 
-const KeysContainer = () => <Page config={getKeysPage()}>KeysSection</Page>;
+const KeysContainer = () => {
+    return (
+        <Page config={getKeysPage()}>
+            <AddressKeysSection />
+            <UserKeysSection />
+        </Page>
+    );
+};
 
 export default KeysContainer;
