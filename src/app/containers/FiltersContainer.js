@@ -25,7 +25,7 @@ export const getFiltersPage = () => {
 const FiltersContainer = () => {
     return (
         <Page config={getFiltersPage()}>
-            <FilterContainer />
+            <FiltersSection />
             <SpamContainer />
         </Page>
     );
