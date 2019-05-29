@@ -2,7 +2,7 @@ import React from 'react';
 import { c } from 'ttag';
 
 import Page from '../components/Page';
-import { FilterContainer, SpamContainer } from 'react-components';
+import { FiltersSection, SpamFiltersSection } from 'react-components';
 
 export const getFiltersPage = () => {
     return {
