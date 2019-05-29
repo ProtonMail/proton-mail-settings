@@ -21,7 +21,7 @@ export const getLabelsPage = () => {
 const FoldersLabelsContainer = () => {
     return (
         <Page config={getLabelsPage()}>
-            <LabelsContainer />
+            <LabelsSection />
         </Page>
     );
 };
