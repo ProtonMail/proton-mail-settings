@@ -15,8 +15,7 @@
         "i18n:upgrade": "proton-i18n extract && proton-i18n crowdin -u && proton-i18n commit update",
         "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
-        "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
-        "postinstall": "git update-index --assume-unchanged package-lock.json"
+        "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags"
     },
     "repository": {
         "type": "git",
