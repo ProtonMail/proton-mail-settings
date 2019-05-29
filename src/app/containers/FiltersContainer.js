@@ -2,6 +2,7 @@ import React from 'react';
 import { c } from 'ttag';
 
 import Page from '../components/Page';
+import { FiltersSection, SpamFiltersSection } from 'react-components';
 
 export const getFiltersPage = () => {
     return {
@@ -22,7 +23,12 @@ export const getFiltersPage = () => {
 };
 
 const FiltersContainer = () => {
-    return <Page config={getFiltersPage()} />;
+    return (
+        <Page config={getFiltersPage()}>
+            <FiltersSection />
+            <SpamFiltersSection />
+        </Page>
+    );
 };
 
 export default FiltersContainer;

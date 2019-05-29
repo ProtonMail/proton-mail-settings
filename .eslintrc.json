@@ -2,7 +2,8 @@
     "parser": "babel-eslint",
     "plugins": [
         "react",
-        "react-hooks"
+        "react-hooks",
+        "import"
     ],
     "parserOptions": {
         "ecmaVersion": 2018,
@@ -31,6 +32,9 @@
         "react/display-name": "off",
         "react/prop-types": "warn",
         "react-hooks/rules-of-hooks": "error",
-        "react/jsx-uses-react": "error"
+        "react/jsx-uses-react": "error",
+        "no-sequences": "warn",
+        "no-param-reassign": "warn",
+        "import/no-unresolved": [2, {"commonjs": true, "amd": true}]
     }
 }
