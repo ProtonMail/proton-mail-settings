@@ -1,6 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import { LabelsContainer } from 'react-components';
+import { LabelsSection } from 'react-components';
 
 import Page from '../components/Page';
 
