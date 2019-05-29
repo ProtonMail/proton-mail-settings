@@ -26,7 +26,7 @@ const FiltersContainer = () => {
     return (
         <Page config={getFiltersPage()}>
             <FiltersSection />
-            <SpamContainer />
+            <SpamFiltersSection />
         </Page>
     );
 };
