@@ -8,6 +8,7 @@
     },
     "scripts": {
         "build": "cross-env NODE_ENV=production proton-pack compile $npm_package_config_publicPathFlag",
+        "build:standalone": "cross-env NODE_ENV=production proton-pack compile",
         "start": "proton-pack dev-server $npm_package_config_publicPathFlag",
         "lint": "eslint src --ext .js --quiet --cache",
         "i18n:validate": "proton-i18n validate lint-functions",
