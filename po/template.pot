@@ -1483,7 +1483,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:50
 msgctxt "Info"
 msgid ""
-"By using ProtonVPN to browser the web, your Internet connection is "
+"By using ProtonVPN to browse the web, your Internet connection is "
 "encrypted to ensure that your navigation is secure. ProtonVPN has servers "
 "located in 30+ countries around the world."
 msgstr ""
