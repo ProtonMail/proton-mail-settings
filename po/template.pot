@@ -1917,7 +1917,7 @@ msgstr ""
 msgctxt "Info"
 msgid ""
 "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS "
-"or OpenVPN on GNU/Linux), you need specific credentials. to get these "
+"or OpenVPN on GNU/Linux), you need specific credentials. To get these "
 "credentials, go to the Account settings when logged in at ProtonVPN."
 msgstr ""
 
