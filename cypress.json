@@ -1,0 +1,7 @@
+{
+    "env": {
+        "server": "http://localhost:8040"
+    },
+    "baseUrl": "http://localhost:8040/settings/",
+    "defaultCommandTimeout": 10000
+}

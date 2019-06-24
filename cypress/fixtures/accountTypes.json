@@ -1,0 +1,15 @@
+{
+    "passwordMode" : {
+        "regular" : "regular",
+        "twoFactorAuthentication": "2FA",
+        "twoPasswordMode": "2PasswordMode",
+        "twoFactorTwoPasswordMode": "2FA2PasswordMode"
+    },
+
+    "type": {
+        "free" : "free",
+        "plus": "plus",
+        "professional" : "professional",
+        "visionary" : "visionary"
+    }
+}
