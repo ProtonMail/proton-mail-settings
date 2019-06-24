@@ -15,7 +15,9 @@
         "i18n:upgrade": "proton-i18n extract && proton-i18n crowdin -u && proton-i18n commit update",
         "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
-        "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags"
+        "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
+        "e2e": "cypress verify && cypress run",
+        "e2e-dev": "cypress verify && cypress open"
     },
     "repository": {
         "type": "git",
@@ -38,6 +40,8 @@
     "dependencies": {
         "@babel/polyfill": "^7.2.5",
         "abortcontroller-polyfill": "^1.2.1",
+        "cypress": "^3.3.1",
+        "cypress-otp": "^1.0.2",
         "dayjs": "^1.7.8",
         "design-system": "github:ProtonMail/design-system.git#master",
         "file-saver": "^2.0.0",
