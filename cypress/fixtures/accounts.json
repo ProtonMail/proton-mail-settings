@@ -1,14 +1,14 @@
 {
    "user1" : {
-        "username": "ProtonBot0x01",
-        "password": "protons",
+        "username": "",
+        "password": "",
         "comment": "Basic free account."
     },
     "user2": {
-        "username": "verifybot11",
-        "password": "protons",
-        "OTP": "JKXQYJK2WLTQ2CYDRYEUIPWFVE6XFDAS",
-        "secondPassword": "protons2",
+        "username": "",
+        "password": "",
+        "OTP": "",
+        "secondPassword": "",
         "comment": "Free account with 2 password mode and OTP"
     }
 }
