@@ -5,7 +5,7 @@
     "main": "index.js",
     "config": {
         "publicPathFlag": "--publicPath=/settings/",
-        "testAccountsData": "../fixtures/accountTypes.js"
+        "testAccountsData": "../fixtures/accounts.json"
     },
     "scripts": {
         "build": "cross-env NODE_ENV=production proton-pack compile $npm_package_config_publicPathFlag",
