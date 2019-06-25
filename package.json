@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "config": {
-        "publicPathFlag": "--publicPath=/settings/"
+        "publicPathFlag": "--publicPath=/settings/",
+        "testAccountsData": "../fixtures/accountTypes.js"
     },
     "scripts": {
         "build": "cross-env NODE_ENV=production proton-pack compile $npm_package_config_publicPathFlag",
@@ -16,8 +17,8 @@
         "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
-        "e2e": "cypress verify && cypress run",
-        "e2e-dev": "cypress verify && cypress open"
+        "e2e": "cypress verify && cypress run --env testAccountsData=$npm_package_config_testAccountsData",
+        "e2e-dev": "cypress verify && cypress open --env testAccountsData=$npm_package_config_testAccountsData"
     },
     "repository": {
         "type": "git",
