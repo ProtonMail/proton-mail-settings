@@ -6,8 +6,7 @@
 
 import { login } from './commands/login.js';
 import { PLANS, PASSWORD_MODE } from '../fixtures/accountTypes.js';
-//let users = require('../fixtures/accounts.json');
-var path = require('path');
+const users = require('../fixtures/accounts.json');
 
 /**
  * [Will perform login using one of the predefined test accounts.]
@@ -15,12 +14,6 @@ var path = require('path');
  * @param  {[String]} [mode="regular"] [The password mode. Can be: regular, 2FA, 2PasswordMode or 2FA2PasswordMode.]
  */
 Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MODE.regular) => {
-    console.log(Cypress.env('testAccountsData'));
-    console.log(__dirname);
-    console.log('RESET');
-    console.log(path.join(process.cwd(), Cypress.env('testAccountsData')));
-    console.log(path.join(__dirname, Cypress.env('testAccountsData')));
-    const users = require(Cypress.env('testAccountsData'));
     if (plan === PLANS.free && passwordMode === PASSWORD_MODE.twoFactorTwoPasswordMode) {
         return login(users.user2.username, users.user2.password, users.user2.OTP, users.user2.secondPassword);
     }
