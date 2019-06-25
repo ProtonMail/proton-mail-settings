@@ -62,3 +62,11 @@ You can sync them via `$ npm run i18n:upgrade`, it will:
 - Extract translations
 - Push them to crowndin
 - Create a commit with them on the repo
+
+## How to test
+1. [Set up tests](https://github.com/ProtonMail/protonmail-settings/wiki/Working-with-end-to-end-tests)
+2. Start the app
+3. Run `npm run e2e` for the CLI or `npm run e2e-dev` for the cypress test runner.
+4. 🎉🎉🎉
+
+
