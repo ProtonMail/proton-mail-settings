@@ -10,8 +10,8 @@ const users = require('../fixtures/accounts.json');
 
 /**
  * [Will perform login using one of the predefined test accounts.]
- * @param  {[String]} [type="free"] [The type of the account. Ex: free, visionary, etc.]
- * @param  {[String]} [mode="regular"] [The password mode. Can be: regular, 2FA, 2PasswordMode or 2FA2PasswordMode.]
+ * @param  {[String]} [plan="free"] [The type of the account. Ex: free, visionary, etc.]
+ * @param  {[String]} [passwordMode="regular"] [The password mode. Can be: regular, 2FA, 2PasswordMode or 2FA2PasswordMode.]
  */
 Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MODE.regular) => {
     if (plan === PLANS.free && passwordMode === PASSWORD_MODE.twoFactorTwoPasswordMode) {
