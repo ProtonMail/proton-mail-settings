@@ -77,10 +77,10 @@ You can sync them via `$ npm run i18n:upgrade`, it will:
 
 ## How to deploy
 
-`$ npm run deploy -- --branch=<deploy-X> --api=<target>`
-`$ npm run deploy:standalone -- --branch=<deploy-X> --api=<target>`
+- `$ npm run deploy -- --branch=<deploy-X> --api=<target>`
+_Deploy the app as /settings_
 
-- `deploy`: _Deploy the app as /settings_
-- `deploy`: _Deploy the app as deploy + /login_
+- `$ npm run deploy:standalone -- --branch=<deploy-X> --api=<target>`
+_Deploy the app as deploy + /login_
 
 Based on [proton-bundler](https://github.com/ProtonMail/proton-bundler)
