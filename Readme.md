@@ -5,7 +5,17 @@ You will need:
 - node (mini latest LTS)
 - npm (latest too, it's better)
 
-## How to dev
+## How to dev 1
+
+1. Clone this repository
+2. Run `$ npm i`
+3. `$ npm start`
+
+It will give you the URL where it's available.
+
+> You can login via `/login` 
+
+## How to dev 2
 
 1. Clone the WebClient
 2. Clone this repository
@@ -62,6 +72,18 @@ You can sync them via `$ npm run i18n:upgrade`, it will:
 - Extract translations
 - Push them to crowndin
 - Create a commit with them on the repo
+
+
+
+## How to deploy
+
+`$ npm run deploy -- --branch=<deploy-X> --api=<target>`
+`$ npm run deploy:standalone -- --branch=<deploy-X> --api=<target>`
+
+- `deploy`: _Deploy the app as /settings_
+- `deploy`: _Deploy the app as deploy + /login_
+
+Based on [proton-bundler](https://github.com/ProtonMail/proton-bundler)
 
 ## How to test
 1. [Set up tests](https://github.com/ProtonMail/protonmail-settings/wiki/Working-with-end-to-end-tests)
