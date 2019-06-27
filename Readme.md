@@ -74,32 +74,20 @@ You can sync them via `$ npm run i18n:upgrade`, it will:
 - Create a commit with them on the repo
 
 
+
 ## How to deploy
 
-- `$ npm run deploy -- --branch=<deploy-X> --api=<target>`
-_Deploy the app as /settings_
+`$ npm run deploy -- --branch=<deploy-X> --api=<target>`
+`$ npm run deploy:standalone -- --branch=<deploy-X> --api=<target>`
 
-- `$ npm run deploy:standalone -- --branch=<deploy-X> --api=<target>`
-_Deploy the app as deploy + /login_
+- `deploy`: _Deploy the app as /settings_
+- `deploy`: _Deploy the app as deploy + /login_
 
 Based on [proton-bundler](https://github.com/ProtonMail/proton-bundler)
 
-## Sync translations [Crowdin to our App]
-
-To get latest translations available on crowdin, you can run `$ npm run i18n:getlatest`.
-It will:
-- Get list of translations available (default same as proton-i18n crowdin --list --type --limit=95)
-- Upgrade our translations with ones from crowdin
-- Store a cache of translations available in the app
-- Export translations as JSON
-- Commit everything
-
-> :warning: If you want to get only a **custom** list of translations, configure it inside `po/i18n.txt` and run `$ npm run i18n:getlatest -- --custom`
 
 ## How to test
 1. [Set up tests](https://github.com/ProtonMail/protonmail-settings/wiki/Working-with-end-to-end-tests)
 2. Start the app
 3. Run `npm run e2e` for the CLI or `npm run e2e-dev` for the cypress test runner.
 4. 🎉🎉🎉
-
-
