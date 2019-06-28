@@ -30,7 +30,7 @@ Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MO
 
 /**
  * [Login command]
- * @param  {Object} loginCredentials [The login credentials fot the user.]
+ * @param  {Object} loginCredentials [The login credentials for the user.]
  * @param  {String} loginCredentials.username [The username.]
  * @param  {String} loginCredentials.password [The password.]
  * @param  {String} loginCredentials.OTP [The secret for the OTP(one time password) token.]
