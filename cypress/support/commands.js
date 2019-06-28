@@ -16,15 +16,15 @@ const users = require('../fixtures/accounts.json');
 Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MODE.regular) => {
     if (plan === PLANS.free && passwordMode === PASSWORD_MODE.twoFactorTwoPasswordMode) {
         return login({
-            username: users.user2.username,
-            password: users.user2.password,
-            OTP: users.user2.OTP,
-            secondPassword: users.user2.secondPassword
+            username: users.Free_twoFactor_twoPasswordMode.username,
+            password: users.Free_twoFactor_twoPasswordMode.password,
+            OTP: users.Free_twoFactor_twoPasswordMode.OTP,
+            secondPassword: users.Free_twoFactor_twoPasswordMode.secondPassword
         });
     }
     return login({
-        username: users.user1.username,
-        password: users.user1.password
+        username: users.Free.username,
+        password: users.Free.password
     });
 });
 
