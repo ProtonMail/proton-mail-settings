@@ -1,4 +1,4 @@
 {
-    "baseUrl": "http://localhost:8040/settings/",
+    "baseUrl": "http://localhost:8080/settings/",
     "defaultCommandTimeout": 10000
 }
