@@ -4,7 +4,7 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
-import { login } from './commands/login.js';
+import { login } from './commands/login';
 import { PLANS, PASSWORD_MODE } from '../fixtures/accountTypes.js';
 const users = require('../fixtures/accounts.json');
 
@@ -16,15 +16,15 @@ const users = require('../fixtures/accounts.json');
 Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MODE.regular) => {
     if (plan === PLANS.free && passwordMode === PASSWORD_MODE.twoFactorTwoPasswordMode) {
         return login({
-            username: users.free_twoFactor_twoPasswordMode.username,
-            password: users.free_twoFactor_twoPasswordMode.password,
-            OTP: users.free_twoFactor_twoPasswordMode.OTP,
-            secondPassword: users.free_twoFactor_twoPasswordMode.secondPassword
+            username: users.FREE_TWOFACTOR_TWOPASSWORD_MODE.username,
+            password: users.FREE_TWOFACTOR_TWOPASSWORD_MODE.password,
+            OTP: users.FREE_TWOFACTOR_TWOPASSWORD_MODE.OTP,
+            secondPassword: users.FREE_TWOFACTOR_TWOPASSWORD_MODE.secondPassword
         });
     }
     return login({
-        username: users.free.username,
-        password: users.free.password
+        username: users.FREE.username,
+        password: users.FREE.password
     });
 });
 
