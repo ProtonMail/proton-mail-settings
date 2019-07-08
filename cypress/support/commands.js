@@ -3,6 +3,7 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+import '@testing-library/cypress/add-commands';
 
 import { login } from './commands/login';
 import { PLANS, PASSWORD_MODE } from '../fixtures/accountTypes.js';
@@ -36,6 +37,6 @@ Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MO
  * @param  {String} loginCredentials.OTP [The secret for the OTP(one time password) token.]
  * @param  {String} loginCredentials.secondPassword [The mailbox password.]
  */
-Cypress.Commands.add('login', (loginCredentials) => {
+Cypress.Commands.add('login', (loginCredentials = { username, password, OTP, secondPassword }) => {
     return login(loginCredentials);
 });

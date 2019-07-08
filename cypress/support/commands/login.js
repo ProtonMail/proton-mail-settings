@@ -1,22 +1,19 @@
 export const login = ({ username, password, OTP, secondPassword }) => {
     cy.visit('/');
-    cy.url().should('include', '/login');
-    cy.get('#username').type(username);
-    cy.get('#password').type(password);
-    cy.get('#login_btn').click();
+    cy.get('[data-cy-login="username"]').type(username);
+    cy.get('[data-cy-login="password"]').type(password);
+    cy.get('[data-cy-login="submit"]').click();
 
     if (OTP) {
         cy.task('generateOTP', OTP).then((token) => {
-            cy.get('.TwoFA-input').type(token);
-            cy.get('#login_btn_2fa').click();
+            cy.get('[data-cy-login="TOTP"]').type(token);
+            cy.get('[data-cy-login="submit TOTP"]').click();
         });
     }
 
     if (secondPassword) {
-        cy.get('input[name=mailbox-password]').type(secondPassword);
-        cy.get('#unlock_btn').click();
+        cy.get('[data-cy-login="mailbox password"]').type(secondPassword);
+        cy.get('[data-cy-login="submit mailbox password"]').click();
     }
-
-    cy.get('.atomLoader-text').contains('Decrypting');
-    return cy.url().should('include', '/inbox');
+    return cy.queryByText(username).should('exist');
 };
