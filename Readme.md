@@ -84,6 +84,12 @@ _Deploy the app as deploy + /login_
 
 Based on [proton-bundler](https://github.com/ProtonMail/proton-bundler)
 
+## How to test
+1. [Set up tests](https://github.com/ProtonMail/protonmail-settings/wiki/Working-with-end-to-end-tests)
+2. Start the app
+3. Run `npm run e2e` for the CLI or `npm run e2e-dev` for the cypress test runner.
+4. 🎉🎉🎉
+
 ## Sync translations [Crowdin to our App]
 
 To get latest translations available on crowdin, you can run `$ npm run i18n:getlatest`.
