@@ -19,7 +19,7 @@
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
         "deploy": "proton-bundler",
-        "deploy:standalone": "proton-bundler --appMode standalone"
+        "deploy:standalone": "proton-bundler --appMode standalone",
         "e2e": "cypress verify && cypress run",
         "e2e-dev": "cypress verify && cypress open"
     },
@@ -44,6 +44,7 @@
     },
     "dependencies": {
         "@babel/polyfill": "^7.2.5",
+        "@testing-library/cypress": "^4.0.4",
         "abortcontroller-polyfill": "^1.2.1",
         "cypress": "^3.3.1",
         "cypress-otp": "^1.0.2",
