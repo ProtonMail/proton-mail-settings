@@ -19,7 +19,9 @@
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
         "deploy": "proton-bundler",
-        "deploy:standalone": "proton-bundler --appMode standalone"
+        "deploy:standalone": "proton-bundler --appMode standalone",
+        "e2e": "cypress run",
+        "e2e-dev": "cypress open"
     },
     "repository": {
         "type": "git",
@@ -56,7 +58,10 @@
         "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
         "ttag": "^1.7.5",
-        "yetch": "^1.1.0"
+        "yetch": "^1.1.0",
+        "@testing-library/cypress": "^4.0.4",
+        "cypress-otp": "^1.0.2",
+        "cypress": "^3.3.1"
     },
     "lint-staged": {
         "*.js": [
