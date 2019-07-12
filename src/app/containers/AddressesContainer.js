@@ -23,7 +23,7 @@ export const getAddressesPage = () => {
     };
 };
 
-const getList = ({ MaxMembers = 0, MaxAddresses = 0 }) => {
+const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     if (MaxMembers > 1) {
         return [
             {

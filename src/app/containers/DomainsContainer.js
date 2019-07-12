@@ -31,7 +31,7 @@ export const getDomainsPage = () => {
     };
 };
 
-const getList = ({ MaxMembers = 0 }) => {
+const getList = ({ MaxMembers = 0 } = {}) => {
     if (MaxMembers > 1) {
         return [
             {

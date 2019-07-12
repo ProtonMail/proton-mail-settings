@@ -1,5 +1,5 @@
 import React from 'react';
-import { OrganizationSection, RelatedSettingsSection } from 'react-components';
+import { OrganizationSection, OrganizationPasswordSection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
@@ -35,6 +35,7 @@ const OrganizationContainer = () => {
     return (
         <Page config={getOrganizationPage()}>
             <OrganizationSection />
+            <OrganizationPasswordSection />
             <RelatedSettingsSection
                 list={[
                     {
