@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import { Route } from 'react-router';
 import { Sidebar } from 'react-components';
 
-import AuthHeader from './AuthHeader';
+import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
 
-const AuthLayout = ({ children }) => {
+const PrivateLayout = ({ children }) => {
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
     return (
         <>
-            <AuthHeader />
+            <PrivateHeader />
             <div className="flex flex-nowrap">
                 <Route path="/:path" render={() => <Sidebar list={list} />} />
                 <div className="main flex-item-fluid main-area">
@@ -21,8 +21,8 @@ const AuthLayout = ({ children }) => {
     );
 };
 
-AuthLayout.propTypes = {
+PrivateLayout.propTypes = {
     children: PropTypes.node.isRequired
 };
 
-export default AuthLayout;
+export default PrivateLayout;

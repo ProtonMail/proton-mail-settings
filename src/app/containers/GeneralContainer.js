@@ -9,6 +9,7 @@ import {
     SearchSection
 } from 'react-components';
 
+import locales from '../locales';
 import Page from '../components/Page';
 
 export const getGeneralPage = () => {
@@ -48,7 +49,7 @@ export const getGeneralPage = () => {
 const GeneralContainer = () => {
     return (
         <Page config={getGeneralPage()}>
-            <LanguageSection />
+            <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
             <ContactsSection />
