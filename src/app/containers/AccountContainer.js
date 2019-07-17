@@ -1,5 +1,12 @@
 import React from 'react';
-import { UsernameSection, PasswordsSection, NewsSection, DeleteSection, EmailSection } from 'react-components';
+import {
+    UsernameSection,
+    PasswordsSection,
+    NewsSection,
+    DeleteSection,
+    EmailSection,
+    TwoFactorSection
+} from 'react-components';
 import { c } from 'ttag';
 
 import Page from '../components/Page';
@@ -43,6 +50,7 @@ const AccountContainer = () => {
         <Page config={getAccountPage()}>
             <UsernameSection />
             <PasswordsSection />
+            <TwoFactorSection />
             <EmailSection />
             <NewsSection />
             <DeleteSection />
