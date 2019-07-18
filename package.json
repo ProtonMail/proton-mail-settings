@@ -44,8 +44,11 @@
     },
     "dependencies": {
         "@babel/polyfill": "^7.2.5",
+        "@hot-loader/react-dom": "^16.8.6",
+        "@testing-library/cypress": "^4.0.4",
         "abortcontroller-polyfill": "^1.2.1",
-        "dayjs": "^1.7.8",
+        "cypress": "^3.3.1",
+        "cypress-otp": "^1.0.2",
         "design-system": "github:ProtonMail/design-system.git#master",
         "file-saver": "^2.0.0",
         "keycode": "^2.2.0",
@@ -58,10 +61,7 @@
         "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
         "ttag": "^1.7.5",
-        "yetch": "^1.1.0",
-        "@testing-library/cypress": "^4.0.4",
-        "cypress-otp": "^1.0.2",
-        "cypress": "^3.3.1"
+        "yetch": "^1.1.0"
     },
     "lint-staged": {
         "*.js": [
