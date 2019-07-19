@@ -10,18 +10,58 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2019-05-10 10:14\n"
+"PO-Revision-Date: 2019-06-11 07:53\n"
 
-#: src/app/components/layout/AuthHeader.js:30
-#: src/app/components/layout/AuthHeader.js:34
+#: node_modules/react-components/containers/payments/subscription/helpers.js:12
+msgid "1 address"
+msgid_plural "${ value } addresses"
+msgstr[0] "1 adresse"
+msgstr[1] "${ value } adresses"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:15
+msgid "1 GB storage"
+msgid_plural "${ value } GB storage"
+msgstr[0] "1 Go de stockage"
+msgstr[1] "${ value } Go de stockage"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:18
+msgid "1 custom domain"
+msgid_plural "${ value } custom domains"
+msgstr[0] "1 domaine personnalisé"
+msgstr[1] "${ value } domaines personnalisés"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:21
+msgid "1 user"
+msgid_plural "${ value } users"
+msgstr[0] "1 utilisateur"
+msgstr[1] "${ value } utilisateurs"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:24
+msgid "1 VPN connection"
+msgid_plural "${ value } VPN connections"
+msgstr[0] "1 connexion VPN"
+msgstr[1] "${ value } connexions VPN"
+
+#: src/app/components/layout/AuthHeader.js:31
+#: src/app/components/layout/AuthHeader.js:35
 msgctxt "Placeholder"
 msgid "Search"
 msgstr "Rechercher"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:55
+#: node_modules/react-components/containers/organization/OrganizationSection.js:46
 msgctxt "Placeholder"
 msgid "Choose a name"
 msgstr "Choisissez un nom"
+
+#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+msgctxt "Placeholder"
+msgid "Other"
+msgstr "Autre"
+
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:14
+msgctxt "Placeholder"
+msgid "Coupon"
+msgstr "Code promo"
 
 #: node_modules/react-components/containers/payments/Card.js:28
 msgctxt "Placeholder"
@@ -43,90 +83,90 @@ msgctxt "Placeholder"
 msgid "ZIP/Postal code"
 msgstr "Code postal"
 
-#: node_modules/react-components/containers/domains/DomainSection.js:30
+#: node_modules/react-components/containers/domains/DomainSection.js:31
 msgctxt "Placeholder"
 msgid "yourdomain.com"
 msgstr "votredomaine.com"
 
-#: node_modules/react-components/containers/support/BugModal.js:96
+#: node_modules/react-components/containers/support/BugModal.js:101
 msgctxt "Placeholder"
 msgid "Proton username"
 msgstr "Nom d'utilisateur Proton"
 
-#: node_modules/react-components/containers/support/BugModal.js:108
+#: node_modules/react-components/containers/support/BugModal.js:113
 msgctxt "Placeholder"
 msgid "Please make sure to give us a way to contact you"
-msgstr "Merci de veiller à nous donner un moyen de vous contacter"
+msgstr "Veuillez nous donner un moyen de vous contacter"
 
-#: node_modules/react-components/containers/support/BugModal.js:132
+#: node_modules/react-components/containers/support/BugModal.js:137
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
 msgstr "Veuillez décrire le problème et inclure tous les messages d'erreur"
 
-#: node_modules/react-components/containers/support/BugModal.js:161
+#: node_modules/react-components/containers/support/BugModal.js:166
 msgctxt "Placeholder"
 msgid "OS name"
 msgstr "Nom de l'OS"
 
-#: node_modules/react-components/containers/support/BugModal.js:172
+#: node_modules/react-components/containers/support/BugModal.js:177
 msgctxt "Placeholder"
 msgid "OS version"
 msgstr "Version de l’OS"
 
-#: node_modules/react-components/containers/support/BugModal.js:183
+#: node_modules/react-components/containers/support/BugModal.js:188
 msgctxt "Placeholder"
 msgid "Browser name"
-msgstr "Nom du navigateur web"
+msgstr "Nom du navigateur"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:199
 msgctxt "Placeholder"
 msgid "Browser version"
-msgstr "Version du navigateur web"
+msgstr "Version du navigateur"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:67
+#: node_modules/react-components/containers/addresses/AddressModal.js:70
 msgctxt "Placeholder"
 msgid "Choose address"
-msgstr "Choisir l’adresse"
+msgstr "Choisissez une adresse"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:83
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:46
+#: node_modules/react-components/containers/addresses/AddressModal.js:86
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:60
 msgctxt "Placeholder"
 msgid "Choose display name"
-msgstr "Définir un nom d’affichage"
+msgstr "Choisissez un nom d'affichage"
 
-#: node_modules/react-components/containers/members/MembersSection.js:60
+#: node_modules/react-components/containers/members/MembersSection.js:61
 msgctxt "Placeholder"
 msgid "Search for User and Addresses"
 msgstr "Rechercher un utilisateur et ses adresses"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:134
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:137
 #: node_modules/react-components/containers/login/LoginForm.js:48
-#: node_modules/react-components/containers/members/MemberModal.js:79
+#: node_modules/react-components/containers/members/MemberModal.js:91
 msgctxt "Placeholder"
 msgid "Password"
 msgstr "Mot de passe"
 
-#: node_modules/react-components/containers/members/MemberModal.js:86
+#: node_modules/react-components/containers/members/MemberModal.js:98
 msgctxt "Placeholder"
-msgid "Confirm Password"
+msgid "Confirm password"
 msgstr "Confirmer le mot de passe"
 
-#: node_modules/react-components/containers/members/MemberModal.js:94
+#: node_modules/react-components/containers/members/MemberModal.js:106
 msgctxt "Placeholder"
 msgid "Address"
 msgstr "Adresse"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:106
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:109
 msgctxt "Placeholder"
 msgid "Feedback"
 msgstr "Commentaires"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:120
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:123
 msgctxt "Placeholder"
 msgid "Email address"
 msgstr "Adresse email"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:149
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:152
 msgctxt "Placeholder"
 msgid "Two-factor passcode"
 msgstr "Code d'accès à deux facteurs"
@@ -166,90 +206,151 @@ msgctxt "Action"
 msgid "Add Label"
 msgstr "Ajouter un label"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:70
-#: node_modules/react-components/containers/addresses/IdentitySection.js:77
+#: node_modules/react-components/containers/addresses/IdentitySection.js:86
+#: node_modules/react-components/containers/addresses/IdentitySection.js:96
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:63
 #: node_modules/react-components/containers/domains/DomainActions.js:32
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:51
-#: node_modules/react-components/containers/organization/OrganizationSection.js:49
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
+#: node_modules/react-components/containers/notification/RecoveryEmail.js:16
+#: node_modules/react-components/containers/organization/OrganizationSection.js:60
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:52
 #: src/app/components/Labels/EditLabelButton.js:32
 msgctxt "Action"
 msgid "Edit"
 msgstr "Modifier"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:156
-#: node_modules/react-components/containers/domains/DomainActions.js:42
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:71
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:89
+#: node_modules/react-components/containers/domains/DomainActions.js:40
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:60
 #: src/app/components/Labels/DeleteLabelButton.js:51
 msgctxt "Action"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: node_modules/react-components/components/dropdown/DropdownActions.js:31
-msgctxt "Action"
-msgid "More"
-msgstr "Plus"
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:14
-#: node_modules/react-components/containers/domains/CatchAllModal.js:14
-#: node_modules/react-components/containers/domains/DomainModal.js:114
-#: node_modules/react-components/containers/general/ShortcutsModal.js:212
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:55
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:67
-#: node_modules/react-components/containers/payments/EditCardModal.js:42
-msgctxt "Action"
-msgid "Close"
-msgstr "Fermer"
-
-#: node_modules/react-components/components/modal/Header.js:11
-msgctxt "Action"
-msgid "Close modal"
-msgstr "Fermer"
-
-#: node_modules/react-components/components/modal/Confirm.js:39
-#: node_modules/react-components/components/modal/Input.js:81
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
-#: node_modules/react-components/containers/addresses/AddressModal.js:95
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
-#: node_modules/react-components/containers/members/EditMemberModal.js:80
-#: node_modules/react-components/containers/members/MemberModal.js:117
-#: node_modules/react-components/containers/payments/DonateModal.js:56
-#: node_modules/react-components/containers/support/BugModal.js:202
+#: node_modules/react-components/components/modal/Confirm.js:36
+#: node_modules/react-components/components/modal/FormModal.js:18
+#: node_modules/react-components/components/modal/Input.js:80
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:88
+#: node_modules/react-components/containers/addresses/AddressModal.js:50
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:45
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:30
+#: node_modules/react-components/containers/members/EditMemberModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:59
+#: node_modules/react-components/containers/payments/CreditsModal.js:48
+#: node_modules/react-components/containers/payments/DonateModal.js:34
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:201
+#: node_modules/react-components/containers/support/BugModal.js:86
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
 msgctxt "Action"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: node_modules/react-components/components/modal/Confirm.js:40
-#: node_modules/react-components/components/modal/Confirm.js:41
-msgctxt "Action"
-msgid "Confirm"
-msgstr "Confirmer"
-
-#: node_modules/react-components/components/modal/Input.js:82
-#: node_modules/react-components/containers/support/BugModal.js:203
+#: node_modules/react-components/components/modal/FormModal.js:19
+#: node_modules/react-components/components/modal/Input.js:81
+#: node_modules/react-components/containers/support/BugModal.js:85
 msgctxt "Action"
 msgid "Submit"
 msgstr "Envoyer"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:31
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
+#: node_modules/react-components/containers/domains/CatchAllModal.js:13
+#: node_modules/react-components/containers/domains/DomainModal.js:97
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:28
+#: node_modules/react-components/containers/payments/EditCardModal.js:36
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
+msgctxt "Action"
+msgid "Close"
+msgstr "Fermer"
+
+#: node_modules/react-components/components/modal/Header.js:9
+msgctxt "Action"
+msgid "Close modal"
+msgstr "Fermer"
+
+#: node_modules/react-components/components/modal/Confirm.js:37
+#: node_modules/react-components/components/modal/Confirm.js:38
+msgctxt "Action"
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: node_modules/react-components/containers/payments/Bitcoin.js:29
 msgctxt "Action"
 msgid "Try again"
 msgstr "Réessayer"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:96
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:60
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:56
-#: node_modules/react-components/containers/members/EditMemberModal.js:81
-#: node_modules/react-components/containers/members/MemberModal.js:118
-#: node_modules/react-components/containers/payments/EditCardModal.js:43
+#: node_modules/react-components/containers/addresses/AddressModal.js:49
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:46
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/members/EditMemberModal.js:56
+#: node_modules/react-components/containers/members/MemberModal.js:60
+#: node_modules/react-components/containers/payments/EditCardModal.js:37
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:16
 msgctxt "Action"
 msgid "Save"
 msgstr "Enregistrer"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:58
+#: node_modules/react-components/containers/payments/DonateModal.js:36
 msgctxt "Action"
 msgid "Donate"
 msgstr "Faire un don"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:142
+msgctxt "Action"
+msgid "Hide plans"
+msgstr "Masquer les offres"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:142
+msgctxt "Action"
+msgid "Show plans"
+msgstr "Afficher les offres"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:381
+#: node_modules/react-components/containers/payments/PlansSection.js:389
+#: node_modules/react-components/containers/payments/PlansSection.js:397
+msgctxt "Action"
+msgid "Edit VPN"
+msgstr "Modifier le VPN"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:381
+#: node_modules/react-components/containers/payments/PlansSection.js:389
+#: node_modules/react-components/containers/payments/PlansSection.js:397
+msgctxt "Action"
+msgid "Add VPN"
+msgstr "Ajouter un VPN"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:406
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:181
+msgctxt "Action"
+msgid "Hide additional features"
+msgstr "Masquer les fonctionnalités supplémentaires"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:407
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:181
+msgctxt "Action"
+msgid "Compare all features"
+msgstr "Comparer toutes les fonctionnalités"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:411
+#: node_modules/react-components/containers/payments/PlansSection.js:418
+#: node_modules/react-components/containers/payments/PlansSection.js:424
+#: node_modules/react-components/containers/payments/PlansSection.js:430
+msgctxt "Action"
+msgid "Select"
+msgstr "Sélectionner"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:62
+#: node_modules/react-components/containers/payments/BillingSection.js:243
+msgctxt "Action"
+msgid "Use gift code"
+msgstr "Utiliser le code cadeau"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:63
+#: node_modules/react-components/containers/payments/BillingSection.js:251
+msgctxt "Action"
+msgid "Add credits"
+msgstr "Ajouter des crédits"
 
 #: node_modules/react-components/containers/payments/PayPal.js:59
 msgctxt "Action"
@@ -258,32 +359,87 @@ msgstr "Cliquez ici pour réessayer"
 
 #: node_modules/react-components/containers/payments/PayPal.js:68
 msgctxt "Action"
-msgid "Pay with PayPal"
+msgid "Check out with PayPal"
 msgstr "Payer avec PayPal"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:116
+#: node_modules/react-components/containers/overview/PromoteSection.js:57
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:17
+#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:17
+msgctxt "Action"
+msgid "Apply"
+msgstr "Appliquer"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:207
+msgctxt "Action"
+msgid "Previous"
+msgstr "Précédent"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:98
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:227
 msgctxt "Action"
 msgid "Next"
 msgstr "Suivant"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:116
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:115
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:239
 msgctxt "Action"
-msgid "Finish"
-msgstr "Terminer"
+msgid "Remove coupon"
+msgstr "Supprimer le code promo"
 
-#: node_modules/react-components/containers/addresses/AddAddressButton.js:12
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:140
+msgctxt "Action"
+msgid "Add coupon"
+msgstr "Ajouter un code promo"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:16
+msgctxt "Action"
+msgid "Switch now"
+msgstr "Basculer maintenant"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:74
+msgctxt "Action"
+msgid "Add gift code"
+msgstr "Ajouter un code cadeau"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:110
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:185
+msgctxt "Action"
+msgid "Manage"
+msgstr "Gérer"
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
+#: node_modules/react-components/containers/overview/PromoteSection.js:50
+#: node_modules/react-components/containers/overview/PromoteSection.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:110
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:185
+msgctxt "Action"
+msgid "Upgrade"
+msgstr "Changer d'offre"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:223
+msgctxt "Action"
+msgid "Pay yearly"
+msgstr "Payer annuellement"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:50
+msgctxt "Action"
+msgid "Top up"
+msgstr "Recharger"
+
+#: node_modules/react-components/containers/addresses/AddAddressButton.js:13
 #: node_modules/react-components/containers/domains/AddressesSection.js:32
 msgctxt "Action"
 msgid "Add address"
 msgstr "Ajouter une adresse"
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:33
-#: node_modules/react-components/containers/members/AddMemberButton.js:74
+#: node_modules/react-components/containers/members/AddMemberButton.js:78
 msgctxt "Action"
 msgid "Add user"
 msgstr "Ajouter un utilisateur"
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:33
+#: node_modules/react-components/containers/domains/DomainsSection.js:34
 msgctxt "Action"
 msgid "Add domain"
 msgstr "Ajouter un domaine"
@@ -293,94 +449,105 @@ msgctxt "Action"
 msgid "Refresh status"
 msgstr "Actualiser le statut"
 
-#: node_modules/react-components/containers/domains/DomainActions.js:37
+#: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
-msgid "Catch all"
-msgstr "Catch all"
+msgid "Set catch-all"
+msgstr "Configurer catch-all"
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
-#: node_modules/react-components/containers/logs/LogsSection.js:110
-#: node_modules/react-components/containers/products/ProtonMailClients.js:39
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:39
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:25
+msgctxt "Action"
+msgid "View"
+msgstr "Afficher"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:38
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:34
+#: node_modules/react-components/containers/logs/LogsSection.js:127
 msgctxt "Action"
 msgid "Download"
 msgstr "Télécharger"
 
 #: node_modules/react-components/containers/invoices/InvoiceActions.js:41
-msgctxt "Action"
-msgid "View"
-msgstr "Afficher"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:52
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:69
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:29
 msgctxt "Action"
 msgid "Pay"
 msgstr "Payer"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:73
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:74
 msgctxt "Action"
 msgid "User"
 msgstr "Utilisateur"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:79
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:80
 msgctxt "Action"
 msgid "Organization"
 msgstr "Organisation"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:81
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:82
 msgctxt "Action"
 msgid "Customize"
 msgstr "Personnaliser"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:47
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:37
 msgctxt "Action"
 msgid "Yes"
 msgstr "Oui"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:48
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:38
 msgctxt "Action"
 msgid "No"
 msgstr "Non"
 
-#: node_modules/react-components/containers/general/ShortcutsSection.js:26
+#: node_modules/react-components/containers/general/ShortcutsSection.js:30
 msgctxt "Action"
 msgid "View keyboard shortcuts"
 msgstr "Voir les raccourcis clavier"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:41
-msgctxt "Action"
-msgid "Enable desktop notification"
-msgstr "Activer les notifications de bureau"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:51
 msgctxt "Action"
 msgid "Send test notification"
 msgstr "Envoyer une notification test"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:38
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:53
+msgctxt "Action"
+msgid "Enable desktop notification"
+msgstr "Activer les notifications de bureau"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:42
 msgctxt "Action"
 msgid "Add payment method"
-msgstr "Ajouter une méthode de paiement"
+msgstr "Ajouter un mode de paiement"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:64
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
 msgctxt "Action"
 msgid "Mark as default"
 msgstr "Définir par défaut"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:70
+#: node_modules/react-components/containers/sessions/SessionsSection.js:82
 msgctxt "Action"
 msgid "Revoke all other sessions"
 msgstr "Révoquer toutes les autres sessions"
 
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:14
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
 msgctxt "Action"
 msgid "Wipe"
 msgstr "Effacer"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:106
+#: node_modules/react-components/containers/logs/LogsSection.js:123
 msgctxt "Action"
 msgid "Refresh"
 msgstr "Actualiser"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:71
+msgctxt "Action"
+msgid "Read"
+msgstr "Lu"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:54
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:68
+msgctxt "Action"
+msgid "Unread"
+msgstr "Non lu"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:44
 msgctxt "Action"
@@ -390,14 +557,14 @@ msgstr "Effacer"
 #: node_modules/react-components/containers/support/AttachScreenshot.js:50
 msgctxt "Action"
 msgid "Add screenshot(s)"
-msgstr "Ajouter une ou des captures d'écran"
+msgstr "Ajouter une ou des capture(s) d'écran"
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:154
 msgctxt "Action"
 msgid "Hide info"
 msgstr "Masquer les informations"
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:154
 msgctxt "Action"
 msgid "Show info"
 msgstr "Afficher les informations"
@@ -422,10 +589,25 @@ msgctxt "Action"
 msgid "Reactivate keys"
 msgstr "Réactiver les clés"
 
-#: node_modules/react-components/containers/account/DeleteSection.js:41
+#: node_modules/react-components/containers/account/DeleteSection.js:42
 msgctxt "Action"
 msgid "Delete your account"
 msgstr "Supprimer votre compte"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:29
+msgctxt "Action"
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:43
+msgctxt "Action"
+msgid "Need help?"
+msgstr "Besoin d'aide ?"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:29
+msgctxt "Action"
+msgid "Insert CSS code here"
+msgstr "Insérer le code CSS ici"
 
 #: src/app/components/Labels/EditLabelButton.js:23
 msgctxt "Filter notification"
@@ -447,337 +629,426 @@ msgctxt "Title"
 msgid "Delete folder"
 msgstr "Supprimer le dossier"
 
-#: src/app/pages.js:5
-#: src/app/pages.js:14
+#: src/app/containers/FoldersLabelsContainer.js:8
 msgctxt "Title"
-msgid "Subscription"
-msgstr "Abonnement"
+msgid "Folders/labels"
+msgstr "Dossiers/labels"
 
-#: src/app/pages.js:10
+#: src/app/containers/SecurityContainer.js:9
 msgctxt "Title"
-msgid "Plans & prices"
-msgstr "Offres et tarifs"
+msgid "Security"
+msgstr "Sécurité"
 
-#: src/app/pages.js:18
+#: src/app/containers/SecurityContainer.js:14
 msgctxt "Title"
-msgid "Billing details"
-msgstr "Détails de facturation"
+msgid "Session management"
+msgstr "Gestionnaire de session"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:27
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:35
-#: src/app/pages.js:22
+#: node_modules/react-components/containers/logs/LogsSection.js:105
+#: src/app/containers/SecurityContainer.js:18
 msgctxt "Title"
-msgid "Payment methods"
-msgstr "Modes de paiement"
+msgid "Authentication logs"
+msgstr "Historique de connexion"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:53
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:61
-#: src/app/pages.js:26
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:44
+#: src/app/containers/SecurityContainer.js:22
 msgctxt "Title"
-msgid "Invoices"
-msgstr "Factures"
+msgid "Address verification"
+msgstr "Vérification d’adresse"
 
-#: src/app/pages.js:32
+#: src/app/containers/SecurityContainer.js:26
+msgctxt "Title"
+msgid "External PGP settings"
+msgstr "Paramètres du PGP externe"
+
+#: node_modules/react-components/containers/addresses/AddressesSection.js:35
+#: src/app/containers/AddressesContainer.js:9
+#: src/app/containers/AddressesContainer.js:14
+msgctxt "Title"
+msgid "Addresses"
+msgstr "Adresses"
+
+#: node_modules/react-components/components/container/RelatedSettingsSection.js:13
+#: src/app/containers/AddressesContainer.js:18
+#: src/app/containers/AutoReplyContainer.js:22
+#: src/app/containers/DomainsContainer.js:26
+#: src/app/containers/MembersContainer.js:22
+#: src/app/containers/OrganizationContainer.js:26
+msgctxt "Title"
+msgid "Related settings"
+msgstr "Paramètres associés"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:28
+#: src/app/containers/DomainsContainer.js:12
+#: src/app/containers/DomainsContainer.js:18
+msgctxt "Title"
+msgid "Custom domains"
+msgstr "Domaines personnalisés"
+
+#: src/app/containers/DomainsContainer.js:22
+msgctxt "Title"
+msgid "Catch-all"
+msgstr "Catch-all"
+
+#: src/app/containers/AppsContainer.js:17
+msgctxt "Title"
+msgid "Apps"
+msgstr "Applications"
+
+#: src/app/containers/AppsContainer.js:22
+msgctxt "Title"
+msgid "ProtonMail Bridge"
+msgstr "ProtonMail Bridge"
+
+#: src/app/containers/AppsContainer.js:27
+msgctxt "Title"
+msgid "ProtonMail Apps"
+msgstr "Applications ProtonMail"
+
+#: src/app/containers/AppsContainer.js:31
+msgctxt "Title"
+msgid "ProtonMail Beta"
+msgstr "ProtonMail Bêta"
+
+#: src/app/containers/AppsContainer.js:35
+msgctxt "Title"
+msgid "ProtonVPN Apps"
+msgstr "Applications ProtonVPN"
+
+#: src/app/containers/AccountContainer.js:9
 msgctxt "Title"
 msgid "Account"
 msgstr "Compte"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:12
-#: src/app/pages.js:37
+#: src/app/containers/AccountContainer.js:14
 msgctxt "Title"
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: src/app/pages.js:41
+#: src/app/containers/AccountContainer.js:18
 msgctxt "Title"
 msgid "Passwords"
 msgstr "Mots de passe"
 
-#: src/app/pages.js:45
+#: src/app/containers/AccountContainer.js:22
 msgctxt "Title"
 msgid "Two factor authentication"
 msgstr "Authentification en deux étapes"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:13
-#: src/app/pages.js:49
+#: src/app/containers/AccountContainer.js:26
 msgctxt "Title"
 msgid "Recovery & notification"
 msgstr "Récupération & notification"
 
 #: node_modules/react-components/containers/account/NewsSection.js:17
 #: node_modules/react-components/containers/account/NewsSection.js:25
-#: src/app/pages.js:53
+#: src/app/containers/AccountContainer.js:30
 msgctxt "Title"
 msgid "Email subscriptions"
-msgstr "Abonnements par email"
+msgstr "Lettres d'information"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:85
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:86
 #: node_modules/react-components/containers/account/DeleteSection.js:30
-#: src/app/pages.js:57
+#: src/app/containers/AccountContainer.js:34
 msgctxt "Title"
 msgid "Delete account"
 msgstr "Supprimer le compte"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:43
-#: src/app/pages.js:63
+#: src/app/containers/AppearanceContainer.js:9
 msgctxt "Title"
-msgid "Organization"
-msgstr "Organisation"
+msgid "Appearance"
+msgstr "Apparence"
 
-#: src/app/pages.js:68
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:86
+#: src/app/containers/AppearanceContainer.js:14
 msgctxt "Title"
-msgid "Name"
-msgstr "Nom"
+msgid "Layouts"
+msgstr "Mises en page"
 
-#: src/app/pages.js:72
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:39
+#: src/app/containers/AppearanceContainer.js:18
 msgctxt "Title"
-msgid "Password & key"
-msgstr "Mot de passe & clé"
+msgid "Toolbars"
+msgstr "Barres d'outils"
 
-#: node_modules/react-components/containers/members/MembersSection.js:51
-#: src/app/pages.js:78
+#: node_modules/react-components/containers/themes/ThemesSection.js:54
+#: src/app/containers/AppearanceContainer.js:22
 msgctxt "Title"
-msgid "Users"
-msgstr "Utilisateurs"
+msgid "Themes"
+msgstr "Thèmes"
 
-#: src/app/pages.js:83
-#: src/app/pages.js:88
-msgctxt "Title"
-msgid "Custom domain"
-msgstr "Domaine personnalisé"
-
-#: src/app/pages.js:92
-msgctxt "Title"
-msgid "Catch-all"
-msgstr "Catch-all"
-
-#: node_modules/react-components/containers/addresses/AddressesSection.js:80
-#: src/app/pages.js:98
-msgctxt "Title"
-msgid "Addresses"
-msgstr "Adresses"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:21
-#: src/app/pages.js:103
-msgctxt "Title"
-msgid "Identity"
-msgstr "Identité"
-
-#: src/app/pages.js:108
-msgctxt "Title"
-msgid "Display name & signature"
-msgstr "Nom affiché et signature"
-
-#: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/pages.js:112
-msgctxt "Title"
-msgid "Short domain (@pm.me)"
-msgstr "Domaine court (@pm.me)"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:13
-#: src/app/pages.js:118
+#: node_modules/react-components/containers/general/ShortcutsModal.js:12
+#: src/app/containers/GeneralContainer.js:16
 msgctxt "Title"
 msgid "General"
 msgstr "Général"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:49
-#: src/app/pages.js:123
+#: src/app/containers/GeneralContainer.js:21
 msgctxt "Title"
 msgid "Language"
 msgstr "Langue"
 
-#: src/app/pages.js:127
+#: src/app/containers/GeneralContainer.js:25
 msgctxt "Title"
 msgid "Desktop notifications"
 msgstr "Notifications de bureau"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:21
-#: src/app/pages.js:131
+#: node_modules/react-components/containers/messages/MessagesSection.js:17
+#: src/app/containers/GeneralContainer.js:29
 msgctxt "Title"
 msgid "Messages"
 msgstr "Messages"
 
 #: node_modules/react-components/containers/general/ContactsSection.js:32
-#: src/app/pages.js:135
+#: node_modules/react-components/containers/general/ShortcutsModal.js:177
+#: src/app/containers/GeneralContainer.js:33
 msgctxt "Title"
 msgid "Contacts"
 msgstr "Contacts"
 
-#: src/app/pages.js:139
+#: node_modules/react-components/containers/search/SearchSection.js:8
+#: src/app/containers/GeneralContainer.js:37
 msgctxt "Title"
 msgid "Search"
 msgstr "Rechercher"
 
-#: node_modules/react-components/containers/general/ShortcutsSection.js:21
-#: src/app/pages.js:143
+#: node_modules/react-components/containers/general/ShortcutsSection.js:24
+#: src/app/containers/GeneralContainer.js:41
 msgctxt "Title"
 msgid "Shortcuts"
 msgstr "Raccourcis"
 
-#: src/app/pages.js:149
-msgctxt "Title"
-msgid "Appearance"
-msgstr "Apparence"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:73
-#: src/app/pages.js:154
-msgctxt "Title"
-msgid "Layouts"
-msgstr "Mises en page"
-
-#: src/app/pages.js:158
-msgctxt "Title"
-msgid "Toolbars"
-msgstr "Barres d'outils"
-
-#: node_modules/react-components/containers/appearance/ThemesSection.js:8
-#: src/app/pages.js:162
-msgctxt "Title"
-msgid "Themes"
-msgstr "Thèmes"
-
-#: src/app/pages.js:168
+#: src/app/containers/FiltersContainer.js:8
 msgctxt "Title"
 msgid "Filters"
 msgstr "Filtres"
 
-#: src/app/pages.js:173
+#: src/app/containers/FiltersContainer.js:13
 msgctxt "Title"
 msgid "Custom filters"
 msgstr "Filtres personnalisés"
 
-#: src/app/pages.js:177
+#: src/app/containers/FiltersContainer.js:17
 msgctxt "Title"
 msgid "Spam filters"
 msgstr "Filtres spam"
 
-#: src/app/pages.js:183
-msgctxt "Title"
-msgid "Folders/Labels"
-msgstr "Dossiers / Labels"
-
-#: src/app/pages.js:188
-msgctxt "Title"
-msgid "Auto-reply"
-msgstr "Répondeur automatique"
-
-#: src/app/pages.js:193
+#: src/app/containers/KeysContainer.js:8
 msgctxt "Title"
 msgid "Keys"
 msgstr "Clés"
 
-#: src/app/pages.js:198
+#: node_modules/react-components/containers/keys/AddressKeysHeader.js:7
+#: src/app/containers/KeysContainer.js:13
 msgctxt "Title"
 msgid "Email encryption keys"
 msgstr "Clés de chiffrement d’email"
 
-#: src/app/pages.js:202
+#: node_modules/react-components/containers/keys/ContactKeysHeader.js:6
+#: src/app/containers/KeysContainer.js:17
 msgctxt "Title"
 msgid "Contact encryption keys"
 msgstr "Clés de chiffrement de contact"
 
-#: src/app/pages.js:208
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:55
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:67
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:76
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:96
+#: src/app/containers/SubscriptionContainer.js:18
+#: src/app/containers/SubscriptionContainer.js:28
 msgctxt "Title"
-msgid "Security"
-msgstr "Sécurité"
+msgid "Subscription"
+msgstr "Abonnement"
 
-#: src/app/pages.js:213
+#: node_modules/react-components/containers/payments/PlansSection.js:91
+#: node_modules/react-components/containers/payments/PlansSection.js:100
+#: node_modules/react-components/containers/payments/PlansSection.js:137
+#: src/app/containers/SubscriptionContainer.js:24
 msgctxt "Title"
-msgid "Session management"
-msgstr "Gestion de session"
+msgid "Plans"
+msgstr "Offres"
 
-#: src/app/pages.js:217
+#: node_modules/react-components/containers/payments/BillingSection.js:60
+#: node_modules/react-components/containers/payments/BillingSection.js:71
+#: node_modules/react-components/containers/payments/BillingSection.js:80
+#: node_modules/react-components/containers/payments/BillingSection.js:91
+#: src/app/containers/SubscriptionContainer.js:33
 msgctxt "Title"
-msgid "Authentication logs"
-msgstr "Historique de connexion"
+msgid "Billing details"
+msgstr "Détails de facturation"
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:33
-#: src/app/pages.js:221
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:27
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:39
+#: src/app/containers/SubscriptionContainer.js:38
 msgctxt "Title"
-msgid "Address verification"
-msgstr "Vérification d’adresse"
+msgid "Payment methods"
+msgstr "Modes de paiement"
 
-#: src/app/pages.js:225
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:53
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:65
+#: src/app/containers/SubscriptionContainer.js:42
 msgctxt "Title"
-msgid "External PGP settings"
-msgstr "Paramètres du PGP externe"
+msgid "Invoices"
+msgstr "Factures"
 
-#: src/app/pages.js:231
+#: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
-msgid "Apps"
-msgstr "Applications"
+msgid "Identity"
+msgstr "Identité"
 
-#: src/app/pages.js:236
+#: node_modules/react-components/containers/addresses/IdentitySection.js:45
+#: src/app/containers/IdentityContainer.js:17
 msgctxt "Title"
-msgid "ProtonMail apps"
-msgstr "Applications ProtonMail"
+msgid "Display name & signature"
+msgstr "Nom d'affichage et signature"
 
-#: src/app/pages.js:240
+#: node_modules/react-components/containers/addresses/PmMeSection.js:9
+#: src/app/containers/IdentityContainer.js:21
 msgctxt "Title"
-msgid "ProtonMail bridge"
-msgstr "ProtonMail bridge"
+msgid "Short domain (@pm.me)"
+msgstr "Domaine court (@pm.me)"
 
-#: src/app/pages.js:244
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:17
+#: src/app/containers/AutoReplyContainer.js:12
+#: src/app/containers/AutoReplyContainer.js:18
 msgctxt "Title"
-msgid "ProtonVPN apps"
-msgstr "Applications ProtonVPN"
+msgid "Auto-reply"
+msgstr "Répondeur automatique"
 
-#: src/app/pages.js:248
+#: node_modules/react-components/containers/members/MembersSection.js:51
+#: src/app/containers/MembersContainer.js:12
+#: src/app/containers/MembersContainer.js:18
 msgctxt "Title"
-msgid "Beta sign up"
-msgstr "Inscription Bêta"
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:54
+#: src/app/containers/OrganizationContainer.js:12
+msgctxt "Title"
+msgid "Organization"
+msgstr "Organisation"
+
+#: src/app/containers/OrganizationContainer.js:18
+msgctxt "Title"
+msgid "Name"
+msgstr "Nom"
+
+#: src/app/containers/OrganizationContainer.js:22
+msgctxt "Title"
+msgid "Password & key"
+msgstr "Mot de passe & clé"
 
 #: node_modules/react-components/components/sidebar/SubSidebar.js:20
 msgctxt "Title"
 msgid "Jump to"
 msgstr "Aller à"
 
-#: node_modules/react-components/components/container/RelatedSettingsSection.js:13
+#: node_modules/react-components/components/dropdown/DropdownActions.js:34
 msgctxt "Title"
-msgid "Related settings"
-msgstr "Paramètres associés"
+msgid "Open actions dropdown"
+msgstr "Menu déroulant des actions"
 
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:30
+#: node_modules/react-components/components/pagination/Pagination.js:52
+msgctxt "Title"
+msgid "Open pagination"
+msgstr "Ouvrir la pagination"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:25
 msgctxt "Title"
 msgid "Preview"
 msgstr "Aperçu"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:53
+#: node_modules/react-components/containers/organization/OrganizationSection.js:44
 msgctxt "Title"
 msgid "Change organization name"
 msgstr "Changer le nom de l'organisation"
 
-#: node_modules/react-components/containers/payments/EditCardModal.js:22
+#: node_modules/react-components/containers/payments/EditCardModal.js:14
 msgctxt "Title"
 msgid "Edit credit card"
 msgstr "Modifier la carte de crédit"
 
-#: node_modules/react-components/containers/payments/EditCardModal.js:22
+#: node_modules/react-components/containers/payments/EditCardModal.js:14
 msgctxt "Title"
 msgid "Add credit card"
 msgstr "Ajouter une carte de crédit"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:37
+#: node_modules/react-components/containers/payments/DonateModal.js:35
 msgctxt "Title"
-msgid "Donate"
+msgid "Make a donation"
 msgstr "Faire un don"
 
-#: node_modules/react-components/containers/password/AskPasswordModal.js:27
+#: node_modules/react-components/containers/payments/PlansSection.js:60
+msgctxt "Title"
+msgid "Confirm downgrade"
+msgstr "Confirmer votre changement d'offre"
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
+msgctxt "Title"
+msgid "ProtonMail total"
+msgstr "Total ProtonMail"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:107
+msgctxt "Title"
+msgid "Order summary"
+msgstr "Résumé de la commande"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:126
+msgctxt "Title"
+msgid "Thank you!"
+msgstr "Merci !"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+msgctxt "Title"
+msgid "VPN protection"
+msgstr "Protection VPN"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:152
+msgctxt "Title"
+msgid "Customization"
+msgstr "Personnalisation"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:21
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:165
+msgctxt "Title"
+msgid "Payment details"
+msgstr "Informations de paiement"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
+msgctxt "Title"
+msgid "Subscription details"
+msgstr "Détails de l'abonnement"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:51
+msgctxt "Title"
+msgid "Add credits"
+msgstr "Ajouter des crédits"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:47
+msgctxt "Title"
+msgid "Gift code"
+msgstr "Code cadeau"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:33
+#: node_modules/react-components/containers/password/AskPasswordModal.js:25
 msgctxt "Title"
 msgid "Sign in again to continue"
-msgstr "Connectez-vous à nouveau pour continuer"
+msgstr "Connectez-vous à nouveau"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:108
+#: node_modules/react-components/containers/domains/DomainModal.js:99
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "Modifier le domaine"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:108
+#: node_modules/react-components/containers/domains/DomainModal.js:99
 msgctxt "Title"
 msgid "Add domain"
 msgstr "Ajouter un domaine"
 
-#: node_modules/react-components/containers/domains/CatchAllModal.js:10
+#: node_modules/react-components/containers/domains/CatchAllModal.js:14
 msgctxt "Title"
 msgid "Catch all address"
 msgstr "Adresse catch all"
@@ -787,27 +1058,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "Catch all "
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:27
-msgctxt "Title"
-msgid "Manage custom domains"
-msgstr "Gérer les domaines personnalisés"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:58
+#: node_modules/react-components/containers/domains/DomainActions.js:43
 msgctxt "Title"
 msgid "Delete domain"
 msgstr "Supprimer le domaine"
 
-#: node_modules/react-components/containers/products/DownloadsSection.js:10
-msgctxt "Title"
-msgid "Downloads"
-msgstr "Téléchargements"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:37
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
 msgctxt "Title"
 msgid "Add invoice details"
 msgstr "Ajouter des informations de facturation"
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:77
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:30
 msgctxt "Title"
 msgid "Preview invoice"
 msgstr "Aperçu de la facture"
@@ -828,17 +1089,18 @@ msgid "Status"
 msgstr "État"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:100
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
 msgid "Date"
 msgstr "Date"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:101
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
 msgid "Action"
 msgstr "Action"
 
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:35
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:30
 msgctxt "Title"
 msgid "Pay invoice"
 msgstr "Payer la facture"
@@ -848,131 +1110,141 @@ msgctxt "Title"
 msgid "External PGP settings (optional)"
 msgstr "Paramètres du PGP externe (facultatif)"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:49
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:39
 msgctxt "Title"
-msgid "Automatic sign outgoing messages?"
-msgstr "Signer automatiquement les messages sortants ?"
+msgid "Automatically sign outgoing messages?"
+msgstr "Signer automatiquement les messages sortants ?"
 
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/general/ShortcutsSection.js:23
+#: node_modules/react-components/containers/general/ShortcutsSection.js:26
 msgctxt "Title"
 msgid "Keyboard shortcuts"
 msgstr "Raccourcis clavier"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:16
+#: node_modules/react-components/containers/general/ShortcutsModal.js:15
 msgctxt "Title"
 msgid "Application"
 msgstr "Application"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:36
+#: node_modules/react-components/containers/general/ShortcutsModal.js:35
 msgctxt "Title"
 msgid "Composer"
 msgstr "Composeur"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:67
+#: node_modules/react-components/containers/general/ShortcutsModal.js:66
 msgctxt "Title"
 msgid "Mail"
 msgstr "Email"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:70
+#: node_modules/react-components/containers/general/ShortcutsModal.js:69
 msgctxt "Title"
 msgid "Jumping"
 msgstr "Aller dans"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:96
+#: node_modules/react-components/containers/general/ShortcutsModal.js:95
 msgctxt "Title"
 msgid "Navigation"
 msgstr "Navigation"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:127
+#: node_modules/react-components/containers/general/ShortcutsModal.js:126
 msgctxt "Title"
 msgid "Threadlist"
 msgstr "Fil de discussion"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:162
+#: node_modules/react-components/containers/general/ShortcutsModal.js:161
 msgctxt "Title"
 msgid "Actions"
 msgstr "Actions"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:178
+#: node_modules/react-components/containers/general/ShortcutsModal.js:180
 msgctxt "Title"
-msgid "Contact"
-msgstr "Contact"
+msgid "Contact list"
+msgstr "Liste des contacts"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:181
+#: node_modules/react-components/containers/general/ShortcutsModal.js:195
 msgctxt "Title"
-msgid "Contact List"
-msgstr "Liste de contacts"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:196
-msgctxt "Title"
-msgid "Contact Details"
+msgid "Contact details"
 msgstr "Détails du contact"
+
+#: node_modules/react-components/containers/notification/EmailModal.js:53
+msgctxt "Title"
+msgid "Update reset/notification email"
+msgstr "Mettre à jour l'email de récupération/notification"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
 msgctxt "Title"
 msgid "Desktop notification"
 msgstr "Notification de bureau"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:55
-msgctxt "Title"
-msgid "Update reset/notification email"
-msgstr "Mettre à jour l'email de récupération/notification"
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:65
+#: node_modules/react-components/containers/sessions/SessionsSection.js:77
 msgctxt "Title"
 msgid "Sessions"
 msgstr "Sessions"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
-msgid "Service"
-msgstr "Service"
+msgid "App"
+msgstr "Application"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/logs/LogsSection.js:78
 msgctxt "Title"
-msgid "Time"
-msgstr "Date"
+msgid "Clear"
+msgstr "Effacer"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:88
-msgctxt "Title"
-msgid "Authentication Logs"
-msgstr "Logs d'authentification"
-
-#: node_modules/react-components/containers/support/BugModal.js:83
+#: node_modules/react-components/containers/support/BugModal.js:87
 msgctxt "Title"
 msgid "Report bug"
 msgstr "Signaler un bug"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:51
+#: node_modules/react-components/containers/addresses/AddressModal.js:48
 msgctxt "Title"
 msgid "Create address"
 msgstr "Créer une adresse"
 
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:35
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:44
 msgctxt "Title"
 msgid "Edit address"
 msgstr "Modifier l'adresse"
 
-#: node_modules/react-components/containers/keys/AddressKeysHeader.js:7
-msgctxt "Title"
-msgid "Email Encryption Keys"
-msgstr "Clés de chiffrement d’email"
-
-#: node_modules/react-components/containers/keys/ContactKeysHeader.js:6
-msgctxt "Title"
-msgid "Contact Encryption Keys"
-msgstr "Clés de chiffrement de contact"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:47
+#: node_modules/react-components/containers/members/EditMemberModal.js:57
 msgctxt "Title"
 msgid "Edit user"
 msgstr "Modifier l'utilisateur"
 
-#: node_modules/react-components/containers/members/MemberModal.js:49
+#: node_modules/react-components/containers/members/MemberModal.js:54
 msgctxt "Title"
 msgid "Add user"
 msgstr "Ajouter un utilisateur"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:25
+msgctxt "Title"
+msgid "Create auto-reply"
+msgstr "Créer une réponse automatique"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:39
+msgctxt "Title"
+msgid "Need help?"
+msgstr "Besoin d'aide ?"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:46
+msgctxt "Title"
+msgid "TODO"
+msgstr "À FAIRE"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:53
+msgctxt "Title"
+msgid "Thanks for your support"
+msgstr "Merci pour votre soutien"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:60
+msgctxt "Title"
+msgid "Get 20% discount"
+msgstr "Obtenez 20% de réduction"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:18
+msgctxt "Title"
+msgid "Custom Theme"
+msgstr "Thème personnalisé"
 
 #: src/app/components/Labels/DeleteLabelButton.js:39
 msgctxt "Info"
@@ -982,60 +1254,219 @@ msgstr "Êtes-vous sûr de vouloir supprimer ce label ? Supprimer un label n'ent
 #: src/app/components/Labels/DeleteLabelButton.js:44
 msgctxt "Info"
 msgid "Are you sure you want to delete this folder? Messages in the folders aren’t deleted if the folder is deleted, they can still be found in all mail. If you want to delete all messages in a folder, move them to trash."
-msgstr "Êtes-vous sûr de vouloir supprimer ce dossier ? Les messages présents dans un dossier ne sont pas supprimés si le dossier est supprimé, ils sont toujours disponibles dans « Tous les messages ». Si vous souhaitez supprimer l'ensemble des messages d’un dossier, déplacez-les dans la corbeille."
+msgstr "Êtes-vous sûr de vouloir supprimer ce dossier ? Les messages présents dans le dossier ne seront pas supprimés, ils sont toujours disponibles dans « Tous les messages ». Si vous souhaitez supprimer l'ensemble des messages d’un dossier, déplacez-les dans la corbeille."
 
-#: src/app/containers/AddressesContainer.js:9
+#: src/app/containers/AddressesContainer.js:31
+#: src/app/containers/AddressesContainer.js:50
 msgctxt "Info"
 msgid "Go to the Domain settings if you want to create  and manage custom domains for your users."
 msgstr "Allez dans les paramètres de domaine si vous souhaitez créer et gérer des domaines personnalisés pour vos utilisateurs."
 
-#: src/app/containers/AddressesContainer.js:16
+#: src/app/containers/AddressesContainer.js:38
 msgctxt "Info"
 msgid "Go to User Settings if you want to create and manage the list of users in your organization."
-msgstr "Allez dans « Paramètres des utilisateurs » si vous souhaitez gérer la liste des utilisateurs de votre organisation."
+msgstr "Allez dans les paramètres des utilisateurs si vous souhaitez gérer la liste des utilisateurs de votre organisation."
 
-#: src/app/containers/DomainsContainer.js:9
+#: src/app/containers/AddressesContainer.js:57
+#: src/app/containers/AddressesContainer.js:74
 msgctxt "Info"
-msgid "TODO"
-msgstr "À FAIRE"
+msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
+msgstr "Passez à une offre multi-utilisateur si vous souhaitez créer et gérer les utilisateurs de votre organisation."
 
-#: src/app/containers/DomainsContainer.js:15
+#: src/app/containers/AddressesContainer.js:68
 msgctxt "Info"
-msgid "Go to the Addresses settings if you want to create and manage addresses to your custom domain. "
-msgstr "Allez dans les paramètres des adresses si vous souhaitez créer et gérer des adresses pour votre domaine personnalisé. "
+msgid "Upgrade to a paid plan if you want to create and manage custom domains."
+msgstr "Passez à une offre payante si vous souhaitez créer et gérer des domaines personnalisés."
 
-#: node_modules/react-components/containers/appearance/ThemesSection.js:9
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:74
-#: node_modules/react-components/containers/organization/OrganizationSection.js:44
-#: node_modules/react-components/containers/products/ProtonMailClients.js:24
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:24
+#: src/app/containers/DomainsContainer.js:39
+msgctxt "Info"
+msgid "Go to the Users Settings if you want to create and manage users in your organization."
+msgstr "Allez dans les paramètres des utilisateurs si vous souhaitez créer et gérer les utilisateurs de votre organisation."
+
+#: src/app/containers/DomainsContainer.js:46
+#: src/app/containers/DomainsContainer.js:64
+msgctxt "Info"
+msgid "Go to the addresses settings if you want to create and manage addresses to your custom domain. "
+msgstr "Allez dans les paramètres des adresses si vous souhaitez créer et gérer les adresses de votre domaine personnalisé."
+
+#: src/app/containers/DomainsContainer.js:57
+msgctxt "Info"
+msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
+msgstr "Passez à une offre payante avec le support multi-utilisateur si vous souhaitez créer et gérer des utilisateurs dans votre organisation."
+
+#: src/app/containers/AutoReplyContainer.js:38
+msgctxt "Info"
+msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
+msgstr "Allez dans les paramètres de filtre si vous souhaitez créer et gérer les réponses automatiques par adresse email."
+
+#: src/app/containers/MembersContainer.js:38
+msgctxt "Info"
+msgid "Go to the address settings if you want to create and manage addresses for your users."
+msgstr "Allez dans les paramètres d'adresse si vous souhaitez créer et gérer des adresses pour vos utilisateurs."
+
+#: src/app/containers/OrganizationContainer.js:42
+msgctxt "Info"
+msgid "Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address."
+msgstr "Allez dans les paramètres des domaines si vous souhaitez créer et gérer les domaines personnalisés, y compris choisir une adresse email catch-all."
+
+#: src/app/containers/OrganizationContainer.js:49
+msgctxt "Info"
+msgid "Go to the users settings if you want to create and manage the users of your organization."
+msgstr "Allez dans les paramètres des utilisateurs si vous souhaitez créer et gérer les utilisateurs de votre organisation."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:87
+#: node_modules/react-components/containers/organization/OrganizationSection.js:55
 msgctxt "Info"
 msgid "Lorem ipsum"
 msgstr "Lorem ipsum"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:19
+#: node_modules/react-components/containers/payments/Bitcoin.js:17
 msgctxt "Info"
 msgid "Amount below minimum. (${ amount })"
 msgstr "Montant inférieur au minimum requis. (${ amount })"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:43
+#: node_modules/react-components/containers/payments/Bitcoin.js:41
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "Les transactions en Bitcoin peuvent prendre un certain temps pour être validées (jusqu'à 24 heures). Une fois celles-ci confirmées, nous ajouterons les crédits sur votre compte. Après confirmation de la transaction, vous pouvez payer votre facture avec les crédits."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:46
+#: node_modules/react-components/containers/payments/Bitcoin.js:44
 msgctxt "Info"
-msgid "After making your Bitcoin payment, please follow the instructions below to upgrade"
-msgstr "Après avoir effectué votre paiement Bitcoin, veuillez suivre les instructions ci-dessous afin d'effectuer votre changement d'offre"
+msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
+msgstr "Après avoir effectué votre paiement Bitcoin, veuillez suivre les instructions ci-après pour procéder au changement d'offre."
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:54
+#: node_modules/react-components/containers/payments/DonateModal.js:39
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:168
+msgctxt "Info"
+msgid "Your payment details are protected with TLS encryption and Swiss privacy laws."
+msgstr "Vos informations de paiement sont protégées par le chiffrement TLS et les lois suisses sur la protection de la vie privée."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:61
+msgctxt "Info"
+msgid "This will downgrade your account to a free account. ProtonMail is free software that is supported by donations and paid accounts. Please consider making a donation so we can continue to offer the service for free."
+msgstr "Vous allez passer à un compte gratuit. ProtonMail est une application gratuite financée par les dons et les offres payantes. Vous pouvez envisager de faire un don afin que nous puissions continuer à offrir ce service gratuitement."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:63
+msgctxt "Info"
+msgid "Note: Additional addresses, custom domains, and users must be removed/disabled before performing this action."
+msgstr "Note: Les adresses supplémentaires, les domaines personnalisés et les utilisateurs doivent être supprimé(e)s/désactivé(e)s avant d'effectuer cette action."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:130
+msgctxt "Info"
+msgid "billed as ${ billedPrice }"
+msgstr "facturé ${ billedPrice }"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:139
+msgctxt "Info"
+msgid "Get 20% bundle discount when you purchase ProtonMail and ProtonVPN together."
+msgstr "Obtenez 20 % de réduction en souscrivant à la fois à ProtonMail et à ProtonVPN."
+
+#: node_modules/react-components/containers/payments/BillingSection.js:61
+msgctxt "Info"
+msgid "There are no billing details available for your current subscription."
+msgstr "Il n'y a aucun détail de facturation disponible pour votre abonnement actuel."
 
 #: node_modules/react-components/containers/payments/PayPal.js:66
 msgctxt "Info"
 msgid "You will need to login to your PayPal account to complete this transaction. We will open a new tab with PayPal for you. If you use any pop-up blockers, please disable them to continue."
 msgstr "Vous aurez besoin de vous connecter à votre compte PayPal pour effectuer cette opération. Nous allons ouvrir pour vous un nouvel onglet avec PayPal. Si vous utilisez des bloqueurs de fenêtres pop-up, veuillez les désactiver pour continuer."
 
-#: node_modules/react-components/containers/domains/DomainAddresses.js:20
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:129
+msgctxt "Info"
+msgid "Thank you for your subscription"
+msgstr "Merci pour votre abonnement"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:130
+msgctxt "Info"
+msgid "Your new features are now available"
+msgstr "Vos nouvelles fonctionnalités sont désormais disponibles"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:185
+msgctxt "Info"
+msgid "By clicking Next, you agree to abide by ProtonMail's terms and conditions."
+msgstr "En cliquant sur Suivant, vous acceptez de respecter les Conditions générales d'utilisation de ProtonMail."
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:17
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:18
+msgctxt "Info"
+msgid "no subuscription"
+msgstr "aucun abonnement"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:15
+msgctxt "Info"
+msgid "Save 20% with annual"
+msgstr "Économisez 20 % avec la facturation annuelle"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:20
+msgctxt "Info"
+msgid "A 20% discount for annual billing has been automatically applied."
+msgstr "Une réduction de 20% a été automatiquement appliquée grâce à la facturation annuelle."
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:23
+msgctxt "Info"
+msgid "A 33% discount two year billing has been automatically applied."
+msgstr "Une réduction de 33% a été automatiquement appliquée grâce à la facturation de 2 ans."
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:11
+msgctxt "Info"
+msgid "monthly billing"
+msgstr "facturation mensuelle"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:12
+msgctxt "Info"
+msgid "annual billing"
+msgstr "facturation annuelle"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:13
+msgctxt "Info"
+msgid "two year billing"
+msgstr "facturation de deux ans"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:56
+msgctxt "Info"
+msgid "No subscription yet"
+msgstr "Aucun abonnement pour l'instant"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:106
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:181
+msgctxt "Info"
+msgid "Combine paid ProtonMail and ProtonVPN and get a 20% discount on both"
+msgstr "Combinez les offres payantes ProtonMail et ProtonVPN et obtenez une réduction de 20% sur les deux"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:210
+msgctxt "Info"
+msgid "Switch to annual billing for a 20% discount"
+msgstr "Passez à la facturation annuelle pour une remise de 20%"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:214
+msgctxt "Info"
+msgid "20% rebate applied to your subscription"
+msgstr "Remise de 20% appliquée à votre abonnement"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:218
+msgctxt "Info"
+msgid "33% rebate applied to your subscription"
+msgstr "Remise de 33% appliquée à votre abonnement"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:50
+msgctxt "Info"
+msgid "By using ProtonVPN to browser the web, your Internet connection is encrypted to ensure that your navigation is secure. ProtonVPN has servers located in 30+ countries around the world."
+msgstr "En utilisant ProtonVPN, votre connexion Internet est chiffrée pour vous assurer une navigation sécurisée. ProtonVPN possède des serveurs situés dans plus de 30 pays."
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:55
+msgctxt "Info"
+msgid "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent."
+msgstr "Rechargez votre compte avec des crédits que vous pouvez utiliser pour vous abonner à une nouvelle offre ou renouveler votre offre actuelle. Vous obtenez un crédit pour chaque ${ i18nCurrency } dépensé."
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:52
+msgctxt "Info"
+msgid "If you purchased or were given a gift code, add it here."
+msgstr "Si vous avez acheté ou reçu un code cadeau, ajoutez-le ici."
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:19
 #: node_modules/react-components/containers/domains/DomainStatus.js:48
-#: node_modules/react-components/containers/members/MemberAddresses.js:20
+#: node_modules/react-components/containers/members/MemberAddresses.js:19
 msgctxt "Info"
 msgid "${ n } address"
 msgid_plural "${ n } addresses"
@@ -1045,7 +1476,7 @@ msgstr[1] "${ n } adresses"
 #: node_modules/react-components/containers/domains/DMARCSection.js:9
 msgctxt "Info"
 msgid "If you have set both SPF and DKIM, DMARC allows you to specify how other email services should deliver email for your domain if both SPF and DKIM checks have failed. This can make it harder for spammers pretending to be you but may also cause delivery issues if not done properly. Feel free to ignore and skip DMARC unless you really want strict policies such as \"p=quarantine\" or \"p=reject\"."
-msgstr "Si vous avez défini SPF et DKIM, DMARC vous permet de spécifier comment les autres services de messagerie doivent livrer les emails sur votre domaine lorsque les vérifications SPF et DKIM ont échoué. Cela permet de se protéger contre les spammeurs qui se font passer pour vous mais peut aussi affecter la réception d'email en cas de mauvaise configuration. N'hésitez pas à ignorer DMARC à moins que vous ne vouliez vraiment imposer des politiques strictes telles que \"p=quarantine\" or \"p=reject\"."
+msgstr "Si vous avez défini SPF et DKIM, DMARC vous permet de spécifier comment les autres services de messagerie doivent livrer les emails sur votre domaine lorsque les vérifications SPF et DKIM ont échoué. Cela permet de se protéger contre les spammeurs qui usurpent votre identité mais peut aussi affecter la réception des emails en cas de mauvaise configuration. N'hésitez pas à ignorer DMARC à moins que vous ne vouliez vraiment imposer des politiques strictes telles que \"p=quarantine\" or \"p=reject\"."
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:26
 msgctxt "Info"
@@ -1060,7 +1491,7 @@ msgstr "<strong>address@yourdomain.com</strong> est l'adresse sur laquelle vous 
 #: node_modules/react-components/containers/domains/SPFSection.js:9
 msgctxt "Info"
 msgid "SPF is used to specify who is allowed to send email for the domain so we strongly recommend including ProtonMail in your SPF record. Please add the following TXT record into your DNS. This can typically be done in the control panel of your domain name registrar."
-msgstr "SPF est utilisé pour spécifier qui est autorisé à envoyer des emails depuis ce domaine et ce fait nous vous recommandons vivement d'inclure ProtonMail dans votre enregistrement SPF. Pour cela, ajouter l'enregistrement TXT suivant dans votre configuration DNS. Cette modification peut généralement être effectuée depuis le panneau de contrôle de votre domaine sur le site de votre registraire."
+msgstr "SPF est utilisé pour spécifier qui est autorisé à envoyer des emails depuis ce domaine et de ce fait nous vous recommandons vivement d'inclure ProtonMail dans votre enregistrement SPF. Pour cela, ajouter l'enregistrement TXT suivant dans votre configuration DNS. Cette modification peut généralement être effectuée depuis le panneau de contrôle de votre domaine sur le site de votre registraire."
 
 #: node_modules/react-components/containers/domains/SPFSection.js:26
 msgctxt "Info"
@@ -1084,20 +1515,20 @@ msgstr "Si ce domaine reçoit des emails de façon régulière, créez toutes le
 
 #: node_modules/react-components/containers/domains/CatchAllSection.js:9
 msgctxt "Info"
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere libero nec nunc feugiat, id efficitur augue vestibulum. Mauris nec commodo turpis."
-msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere libero nec nunc feugiat, id efficitur augue vestibulum. Mauris nec commodo turpis."
+msgid "To select the catch-all email address of a domain, open the action dropdown menu and click on Set catch-all"
+msgstr "Pour sélectionner l'adresse email catch-all d'un domaine, ouvrez le menu déroulant et cliquez sur Configurer catch-all"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:37
 msgctxt "Info"
-msgid "No domains yet"
-msgstr "Aucun domaine pour l'instant"
+msgid "No domains yet."
+msgstr "Aucun domaine pour l'instant."
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:40
 msgctxt "Info"
 msgid "domains used"
 msgstr "domaines utilisés"
 
-#: node_modules/react-components/containers/domains/DomainActions.js:60
+#: node_modules/react-components/containers/domains/DomainActions.js:44
 msgctxt "Info"
 msgid "Are you sure you want to delete this domain?"
 msgstr "Êtes-vous sûr de vouloir supprimer ce domaine ?"
@@ -1109,25 +1540,27 @@ msgstr "ProtonMail prend en charge les signatures DKIM pour les domaines personn
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:27
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to <code>off</code> to disable DKIM"
-msgstr "Gardez cet enregistrement dans vos DNS tant que vous souhaiter utiliser DKIM. Vous pouvez modifier sa valeur à <code>off</code> pour désactiver DKIM"
+msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to <code>off</code> to disable DKIM."
+msgstr "Conservez cet enregistrement dans votre DNS tant que vous souhaitez utiliser DKIM. Vous pouvez changer sa valeur à <code>off</code> pour désactiver DKIM."
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:63
+#: node_modules/react-components/containers/addresses/IdentitySection.js:72
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:66
+#: node_modules/react-components/containers/overview/PromoteSection.js:47
 msgctxt "Info"
-msgid "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
-msgstr "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+msgid "TODO"
+msgstr "À FAIRE"
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:16
 msgctxt "Info"
 msgid "Only change these settings if you are using PGP with non-ProtonMail recipients."
-msgstr "Ne modifier ces paramètres uniquement si vous utilisez PGP avec des destinataires qui ne sont pas sur ProtonMail."
+msgstr "Modifiez ces paramètres uniquement si vous utilisez PGP avec des destinataires qui ne sont pas sur ProtonMail."
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:35
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:46
 msgctxt "Info"
 msgid "Address verification is an advanced security feature. Only turn this on if you know what it does."
 msgstr "La vérification d'adresse est une fonctionnalité de sécurité avancée. Activez-la uniquement si vous savez de quoi il s'agit."
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:52
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:43
 msgctxt "Info"
 msgid "PGP clients are more likely to automatically detect your PGP keys if outgoing messages are signed."
 msgstr "Les clients PGP sont plus enclins à détecter automatiquement vos clés PGP si les messages sortants sont signés."
@@ -1147,16 +1580,20 @@ msgctxt "Info"
 msgid "You have a new email"
 msgstr "Vous avez un nouveau message"
 
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:38
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:49
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:43
 msgctxt "Info"
-msgid "Desktop Notifications are currently"
+msgid "Desktop notifications are currently"
 msgstr "Les notifications de bureau sont actuellement"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:18
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:29
 msgctxt "Info"
 msgid "Expired"
 msgstr "Expiré"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:30
+msgctxt "Info"
+msgid "default"
+msgstr "défaut"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:11
 msgctxt "Info"
@@ -1165,15 +1602,15 @@ msgstr "Vous n'avez aucun mode de paiement enregistré."
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
-msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
-msgstr "À moins que vous ne vous déconnectiez explicitement ou que vous changiez votre mot de passe, les sessions peuvent durer jusqu'à 6 mois. Les sessions expirent après 2 semaines d’inactivité."
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:72
-msgctxt "Info"
 msgid "Do you want to revoke all other sessions than the current one?"
 msgstr "Souhaitez-vous révoquer toutes les autres sessions à l'exception de celle qui est en cours ?"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:89
+#: node_modules/react-components/containers/sessions/SessionsSection.js:78
+msgctxt "Info"
+msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
+msgstr "À moins que vous ne vous déconnectiez explicitement ou que vous changiez votre mot de passe, les sessions peuvent durer jusqu'à 6 mois. Les sessions expirent après 2 semaines d’inactivité."
+
+#: node_modules/react-components/containers/logs/LogsSection.js:106
 msgctxt "Info"
 msgid "Logs includes authentication attempts for all Proton services that use your Proton credentials."
 msgstr "Les journaux incluent les tentatives de connexion pour tous les services de Proton qui utilisent vos identifiants Proton."
@@ -1181,39 +1618,39 @@ msgstr "Les journaux incluent les tentatives de connexion pour tous les services
 #: node_modules/react-components/containers/logs/LogsTable.js:29
 msgctxt "Info"
 msgid "You can enable authentication logging to see when your account is accessed, and from which IP. We will record the IP address that accesses the account and the time, as well as failed attempts."
-msgstr "Vous pouvez activer la journalisation de l'authentification pour visualiser quand votre compte est utilisé et à partir de quelle adresse IP. Nous enregistrerons l'adresse IP qui accède au compte, la date et l'heure, ainsi que les tentatives infructueuses."
+msgstr "Vous pouvez activer l’historique de connexion pour visualiser quand votre compte est utilisé et à partir de quelle adresse IP. Nous enregistrerons l'adresse IP qui accède au compte, la date et l'heure, ainsi que les tentatives infructueuses."
 
 #: node_modules/react-components/containers/logs/LogsTable.js:35
 msgctxt "Info"
-msgid "No logs yet"
-msgstr "Aucun journal"
+msgid "No logs yet."
+msgstr "Aucun journal pour l'instant."
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:43
 msgctxt "Info"
 msgid "Screenshot(s) attached"
 msgstr "Capture(s) d’écran jointe(s)"
 
-#: node_modules/react-components/containers/support/BugModal.js:85
+#: node_modules/react-components/containers/support/BugModal.js:90
 msgctxt "Info"
 msgid "Refreshing the page or ${ link } will automatically resolve most issues."
 msgstr "Rafraîchir la page ou ${ link } résoudra automatiquement la plupart des problèmes."
 
-#: node_modules/react-components/containers/support/BugModal.js:200
+#: node_modules/react-components/containers/support/BugModal.js:205
 msgctxt "Info"
 msgid "Contact us at security@protonmail.com for critical security issues."
-msgstr "Contactez-nous sur security@protonmail.com en cas de problème critique de sécurité."
+msgstr "Contactez-nous à security@protonmail.com pour les problèmes critiques de sécurité."
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:119
+#: node_modules/react-components/containers/addresses/AddressesSection.js:39
 msgctxt "Info"
 msgid "addresses used"
 msgstr "adresses utilisées"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:54
+#: node_modules/react-components/containers/addresses/AddressModal.js:56
 msgctxt "Info"
 msgid "ProtonMail addresses can never be deleted (only disabled). ProtonMail addresses will always count towards your address limit whether enabled or not."
-msgstr "Les adresses ProtonMail ne peuvent jamais être supprimées (seulement désactivées). Cela signifie que ces adresses seront toujours prises en compte dans le quota de vos adresses, que celles-ci soient actives ou pas."
+msgstr "Les adresses ProtonMail ne peuvent jamais être supprimées (seulement désactivées). Cela signifie que ces adresses seront toujours prises en compte dans le quota de vos adresses, qu'elles soient actives ou pas."
 
-#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:36
+#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:35
 msgctxt "Info"
 msgid "A paid plan is required to turn off the ProtonMail signature. Paid plan revenue allows us to continue supporting free accounts."
 msgstr "S'abonner à une offre payante est nécessaire pour désactiver la signature ProtonMail. Les offres payantes nous permettent de continuer à fournir des comptes gratuits."
@@ -1221,22 +1658,22 @@ msgstr "S'abonner à une offre payante est nécessaire pour désactiver la signa
 #: node_modules/react-components/containers/addresses/PmMePanel.js:22
 msgctxt "Info"
 msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Paid users can add other @pm.me addresses."
-msgstr "ProtonMail propose désormais les adresses email @pm.me (abréviation pour ProtonMail me ou Private Message me). Les utilisateurs ayant souscrit à une offre payante peuvent ajouter d'autres adresses @pm.me"
+msgstr "ProtonMail propose désormais les adresses email @pm.me (abréviation pour ProtonMail me ou Private Message me). Les utilisateurs abonnés à une offre payante peuvent ajouter d'autres adresses @pm.me"
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:32
+#: node_modules/react-components/containers/addresses/PmMePanel.js:31
 msgctxt "Info"
 msgid "You can now also receive and send messages from your @pm.me address (short for ProtonMail me or Private Message me)."
 msgstr "Vous pouvez désormais également recevoir des messages sur votre adresse @pm.me (abréviation de ProtonMail me ou de Private Message me)."
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:34
+#: node_modules/react-components/containers/addresses/PmMePanel.js:33
 msgctxt "Info"
-msgid "@pm.me is activated on your account."
-msgstr "@pm.me est activé sur votre compte."
+msgid "The short domain @pm.me is active on your account."
+msgstr "Le domaine court @pm.me est activé sur votre compte."
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:41
+#: node_modules/react-components/containers/addresses/PmMePanel.js:39
 msgctxt "Info"
-msgid "You can now also receive messages at your @pm.me address (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
-msgstr "Vous pouvez désormais également recevoir des messages sur votre adresse @pm.me (abréviation de ProtonMail me ou de Private Message me). Passez à une offre payante pour aussi envoyer des emails depuis votre adresse @pm.me"
+msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
+msgstr "ProtonMail propose désormais les adresses email @pm.me (abréviation pour ProtonMail me ou Private Message me). Passez à un compte payant pour envoyer des emails à partir de votre adresse @pm.me"
 
 #: node_modules/react-components/containers/keys/AddressKeysHeader.js:13
 #: node_modules/react-components/containers/keys/ContactKeysHeader.js:12
@@ -1244,42 +1681,47 @@ msgctxt "Info"
 msgid "Download your PGP Keys for use with other PGP compatible services. Only incoming messages in inline OpenPGP format are currently supported."
 msgstr "Téléchargez vos clés PGP pour les utiliser avec d'autres services compatibles PGP. Seuls les messages entrants au format inline OpenPGP sont actuellement pris en charge."
 
-#: node_modules/react-components/containers/members/MembersSection.js:102
+#: node_modules/react-components/containers/members/MembersSection.js:104
+msgctxt "Info"
+msgid "members used"
+msgstr "membres utilisés"
+
+#: node_modules/react-components/containers/members/MembersSection.js:107
 msgctxt "Info"
 msgid "You can add and manage addresses for the user in your"
 msgstr "Vous pouvez ajouter et gérer les adresses pour cet utilisateur dans vos"
 
-#: node_modules/react-components/containers/members/MemberActions.js:112
+#: node_modules/react-components/containers/members/MemberActions.js:72
 msgctxt "Info"
 msgid "Are you sure you want to permanently delete this user? The inbox and all addresses associated with this user will be deleted."
 msgstr "Êtes-vous sûr de vouloir supprimer définitivement cet utilisateur ? La boîte de réception ainsi que toutes les adresses associées à cet utilisateur seront supprimées."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:88
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:93
 msgctxt "Info"
 msgid "Warning: This also deletes all connected services"
 msgstr "Attention : ceci supprime également tous les services connectés"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:90
-msgctxt "Info"
-msgid "Example: ProtonMail, ProtonVPN"
-msgstr "Exemple : ProtonMail, ProtonVPN"
-
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:94
+msgctxt "Info"
+msgid "Example: ProtonContact ProtonVPN, ProtonWallet, ProtonDrive, ProtonCalendar"
+msgstr "Exemple: ProtonContact, ProtonVPN, ProtonWallet, ProtonDrive, ProtonCalendar"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
 msgctxt "Info"
 msgid "Warning: deletion is permanent"
 msgstr "Attention : la suppression est définitive"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:98
 msgctxt "Info"
 msgid "If you wish to delete this account in order to combine it with another one, do NOT delete it."
 msgstr "Si vous souhaitez supprimer ce compte pour le fusionner avec un autre, ne le supprimez PAS."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:123
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:126
 msgctxt "Info"
 msgid "Please provide an email address in case we need to contact you."
 msgstr "Veuillez fournir une adresse email pour les cas où nous aurions besoin de vous contacter."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:137
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
 msgctxt "Info"
 msgid "Enter your login password to confirm your identity."
 msgstr "Entrez votre mot de passe afin de confirmer votre identité."
@@ -1289,10 +1731,90 @@ msgctxt "Info"
 msgid "Your subscription is managed by Mozilla. Please contact Mozilla support."
 msgstr "Votre abonnement est géré par Mozilla. Veuillez contacter le support Mozilla."
 
-#: node_modules/react-components/containers/account/UsernameSection.js:18
+#: node_modules/react-components/containers/account/NewsSection.js:26
+msgctxt "Info"
+msgid "To keep up with the latest development at Protonmail, you can subscribe to our various emails and visit our blog from time to time."
+msgstr "Pour rester informé des derniers développements de ProtonMail, vous pouvez vous abonner à nos lettres d'information et consulter notre blog de temps en temps."
+
+#: node_modules/react-components/containers/account/UsernameSection.js:19
 msgctxt "Info"
 msgid "To manage your display name and signature, go to ${ link }."
-msgstr "Pour gérer votre nom d'affichage et votre signature, allez à ${ link }."
+msgstr "Pour gérer votre nom d'affichage et votre signature, allez dans les ${ link }."
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:19
+msgctxt "Info"
+msgid "Automatic replies can respond automatically to incoming messages (such as when you are on vacation and can't respond)."
+msgstr "Les réponses automatiques permettent de répondre automatiquement aux messages que vous recevez (par exemple, lorsque vous êtes en vacances et n'êtes pas en mesure de répondre)."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:23
+msgctxt "Info"
+msgid "Auto-reply is active from the start time to the end time."
+msgstr "La réponse automatique est active entre l'horaire de début et celui de fin."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:38
+msgctxt "Info"
+msgid "Auto-reply is always active on the days of the week you select, between the selected hours."
+msgstr "La réponse automatique est active les jours de la semaine que vous choisissez, entre les heures sélectionnées."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:57
+msgctxt "Info"
+msgid "Auto-reply is active each month between the selected start and end time."
+msgstr "La réponse automatique s'active chaque mois entre l'heure de début et de fin."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:76
+msgctxt "Info"
+msgid "Auto-reply is active each week between the selected start and end time."
+msgstr "La réponse automatique s'active chaque semaine entre l'heure de début et de fin."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:90
+msgctxt "Info"
+msgid "Auto-reply is active until you turn it off."
+msgstr "La réponse automatique reste active jusqu'à ce que vous l’arrêtiez."
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:40
+msgctxt "Info"
+msgid "Reach out to your system admnistrator for further assistance and support"
+msgstr "Contactez votre administrateur système pour un complément d'assistance et de support"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:54
+msgctxt "Info"
+msgid "Help us improve our service by applying to our Beta programs."
+msgstr "Aidez-nous à améliorer notre service en vous inscrivant à nos programmes Bêta."
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:61
+msgctxt "Info"
+msgid "Pay for both ProtonMail and ProtonVPN and get 20% off your entire subscription."
+msgstr "Payez pour ProtonMail et ProtonVPN et obtenez une réduction de 20% sur votre abonnement."
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:11
+msgctxt "Info"
+msgid "ProtonMail supports IMAP/SMTP via the ProtonMail Bridge application. Thunderbird, Microsoft Outlook, and Apple Mail are officially supported on both Windows and MacOS."
+msgstr "ProtonMail prend en charge les protocoles IMAP et SMTP via l’application ProtonMail Bridge. Thunderbird, Microsoft Outlook et Apple Mail sont officiellement pris en charge sur Windows et MacOS."
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
+msgctxt "Info"
+msgid "Go to the download page to get ProtonVPN. You can use you ProtonMail credentials to the log into the ProtonVPN native clients."
+msgstr "Allez sur la page de téléchargement pour obtenir ProtonVPN. Vous pouvez utiliser vos identifiants ProtonMail pour vous connecter aux clients natifs ProtonVPN."
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:15
+msgctxt "Info"
+msgid "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS or OpenVPN on GNU/Linux), you need specific credentials. to get these credentials, go to the Account settings when logged in at ProtonVPN."
+msgstr "Pour vous connecter à ProtonVPN avec des clients tiers (par exemple Tunnelblick sur MacOS ou OpenVPN sur GNU/Linux), vous avez besoin d'identifiants spécifiques. Pour obtenir ces identifiants, allez dans les paramètres du compte lorsque vous êtes connecté à ProtonVPN."
+
+#: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
+msgctxt "Info"
+msgid "Participating in beta programs gives you the opportunity to test new features and improvements before they get released to the general public. It offers a chance to have an active role in shaping the quality of our services."
+msgstr "Participer aux programmes Bêta vous donne l'opportunité de tester de nouvelles fonctionnalités et améliorations avant qu'elles deviennent publiques. C'est la possibilité d'avoir un rôle actif dans l'amélioration de la qualité de nos services."
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:55
+msgctxt "Info"
+msgid "ProtonMail offers 3 default themes to select from. You can also import a custom theme using our CSS editor."
+msgstr "ProtonMail propose 3 thèmes par défaut. Vous pouvez aussi importer un thème personnalisé en utilisant notre éditeur CSS."
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:57
+msgctxt "Info"
+msgid "Selecting another theme will override your current theme and any customization will be lost."
+msgstr "Sélectionner un autre thème remplacera votre thème actuel et toute personnalisation sera perdue."
 
 #: src/app/components/Labels/NewLabelForm.js:12
 #: src/app/components/Labels/NewLabelForm.js:17
@@ -1305,118 +1827,130 @@ msgctxt "New Label form"
 msgid "Color"
 msgstr "Couleur"
 
-#: src/app/containers/Labels/modals/Edit.js:59
-msgctxt "New Label form"
-msgid "Cancel"
-msgstr "Annuler"
-
-#: src/app/containers/Labels/modals/Edit.js:60
-msgctxt "New Label form"
-msgid "Save"
-msgstr "Sauvegarder"
-
-#: src/app/containers/AddressesContainer.js:11
+#: src/app/containers/AddressesContainer.js:33
+#: src/app/containers/AddressesContainer.js:52
 msgctxt "Link"
 msgid "Domain settings"
 msgstr "Paramètres du domaine"
 
-#: src/app/containers/AddressesContainer.js:18
+#: src/app/containers/AddressesContainer.js:40
+#: src/app/containers/DomainsContainer.js:41
+#: src/app/containers/OrganizationContainer.js:51
 msgctxt "Link"
 msgid "Users settings"
 msgstr "Paramètres des utilisateurs"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:64
-#: node_modules/react-components/containers/organization/OrganizationSection.js:70
-#: node_modules/react-components/containers/organization/OrganizationSection.js:76
-#: node_modules/react-components/containers/organization/OrganizationSection.js:82
-#: node_modules/react-components/containers/organization/OrganizationSection.js:88
-#: src/app/containers/DomainsContainer.js:10
+#: node_modules/react-components/containers/organization/OrganizationSection.js:66
+#: node_modules/react-components/containers/organization/OrganizationSection.js:72
+#: node_modules/react-components/containers/organization/OrganizationSection.js:78
+#: node_modules/react-components/containers/organization/OrganizationSection.js:84
+#: node_modules/react-components/containers/organization/OrganizationSection.js:90
+#: src/app/containers/AddressesContainer.js:59
+#: src/app/containers/AddressesContainer.js:69
+#: src/app/containers/AddressesContainer.js:76
+#: src/app/containers/DomainsContainer.js:59
 msgctxt "Link"
 msgid "Upgrade"
 msgstr "Changer d'offre"
 
-#: src/app/containers/DomainsContainer.js:17
+#: src/app/containers/DomainsContainer.js:48
+#: src/app/containers/DomainsContainer.js:66
 msgctxt "Link"
 msgid "Addresses settings"
 msgstr "Paramètres des adresses"
+
+#: src/app/containers/AutoReplyContainer.js:40
+msgctxt "Link"
+msgid "Filter Settings"
+msgstr "Paramètres de filtre"
+
+#: node_modules/react-components/containers/members/MembersSection.js:108
+#: src/app/containers/MembersContainer.js:40
+msgctxt "Link"
+msgid "Address settings"
+msgstr "Paramètres d'adresse"
+
+#: src/app/containers/OrganizationContainer.js:44
+msgctxt "Link"
+msgid "Domains settings"
+msgstr "Paramètres des domaines"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
 msgctxt "Link"
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: node_modules/react-components/containers/domains/DomainAddresses.js:26
-#: node_modules/react-components/containers/members/MemberAddresses.js:26
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:13
+msgctxt "Link"
+msgid "Add auto-reply"
+msgstr "Ajouter une réponse automatique"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:14
+msgctxt "Link"
+msgid "Add custom domain"
+msgstr "Ajouter un domaine personnalisé"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:15
+msgctxt "Link"
+msgid "Add filters"
+msgstr "Ajouter des filtres"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:16
+msgctxt "Link"
+msgid "Manage encrypted contacts"
+msgstr "Gérer les contacts chiffrés"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:19
+msgctxt "Link"
+msgid "Add new users"
+msgstr "Ajouter de nouveaux utilisateurs"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:20
+msgctxt "Link"
+msgid "Use ProtonVPN"
+msgstr "Utiliser ProtonVPN"
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:23
+#: node_modules/react-components/containers/members/MemberAddresses.js:23
+#: node_modules/react-components/containers/overview/SummarySection.js:20
+#: node_modules/react-components/containers/overview/SummarySection.js:34
+#: node_modules/react-components/containers/overview/SummarySection.js:43
 msgctxt "Link"
 msgid "Manage"
 msgstr "Gérer"
 
-#: node_modules/react-components/containers/support/BugModal.js:61
+#: node_modules/react-components/containers/support/BugModal.js:60
 msgctxt "Link"
 msgid "clearing your browser cache"
 msgstr "vider le cache de votre navigateur"
-
-#: node_modules/react-components/containers/addresses/PmMePanel.js:35
-msgctxt "Link"
-msgid "Add another address"
-msgstr "Ajouter une autre adresse"
-
-#: node_modules/react-components/containers/members/MembersSection.js:103
-msgctxt "Link"
-msgid "Address Settings"
-msgstr "Paramètres d'adresse"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:8
 msgctxt "Link"
 msgid "identity settings"
 msgstr "paramètres d'identité"
 
-#: src/app/containers/Labels/modals/Edit.js:14
-msgctxt "Label/folder modal"
-msgid "Edit label: ${ Name }"
-msgstr "Modifier le label : ${ Name }"
+#: node_modules/react-components/containers/overview/SummarySection.js:74
+#: node_modules/react-components/containers/overview/SummarySection.js:83
+msgctxt "Link"
+msgid "Edit"
+msgstr "Modifier"
 
-#: src/app/containers/Labels/modals/Edit.js:16
-msgctxt "Label/folder modal"
-msgid "Edit folder: ${ Name }"
-msgstr "Modifier le dossier : ${ Name }"
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:12
+msgctxt "Link"
+msgid "Download page"
+msgstr "Page de téléchargement"
 
-#: src/app/containers/Labels/modals/Edit.js:20
-msgctxt "Label/folder modal"
-msgid "Create a new label: ${ Name }"
-msgstr "Créer un nouveau label : ${ Name }"
-
-#: src/app/containers/Labels/modals/Edit.js:22
-msgctxt "Label/folder modal"
-msgid "Create a new folder: ${ Name }"
-msgstr "Créer un nouveau dossier : ${ Name }"
-
-#: src/app/containers/Labels/Container.js:49
-msgctxt "LabelSettings"
-msgid "Manage your labels/folders"
-msgstr "Gérer votre labels/dossiers"
-
-#: src/app/containers/Labels/Container.js:51
-msgctxt "LabelSettings"
-msgid "Folders and labels"
-msgstr "Dossiers et labels"
-
-#: src/app/containers/Labels/Container.js:53
-msgctxt "LabelSettings"
-msgid "Multiple Labels can be applied to a single message, but a message can only be in a single Folder."
-msgstr "Différents labels peuvent être appliqués à un seul message, toutefois un message ne peut être placé que dans un seul dossier."
-
-#: src/app/containers/Labels/Container.js:70
-msgctxt "LabelSettings"
-msgid "No labels/folders available"
-msgstr "Aucun label/dossier disponible"
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:18
+msgctxt "Link"
+msgid "ProtonVPN login"
+msgstr "Se connecter à ProtonVPN"
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
 msgid "Email address invalid"
 msgstr "Adresse email invalide"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:30
+#: node_modules/react-components/containers/payments/Bitcoin.js:28
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "Erreur de connexion à l’API de Bitcoin."
@@ -1436,6 +1970,17 @@ msgctxt "Error"
 msgid "Error connecting to PayPal."
 msgstr "Erreur de connexion à PayPal."
 
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:56
+msgctxt "Error"
+msgid "Your coupon is invalid or cannot be applied to your plan"
+msgstr "Votre code promo est invalide ou ne peut pas être appliqué à votre offre"
+
+#: node_modules/react-components/containers/payments/GiftCodeInput.js:8
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:62
+msgctxt "Error"
+msgid "Invalid gift code"
+msgstr "Code cadeau invalide"
+
 #: node_modules/react-components/containers/payments/cardValidator.js:15
 msgctxt "Error"
 msgid "Name on card required"
@@ -1454,59 +1999,59 @@ msgstr "Numéro de carte invalide"
 #: node_modules/react-components/containers/payments/cardValidator.js:31
 msgctxt "Error"
 msgid "Invalid CVC code"
-msgstr "Code de sécurité incorrect"
+msgstr "Code de sécurité invalide"
 
 #: node_modules/react-components/containers/payments/cardValidator.js:36
 msgctxt "Error"
 msgid "Invalid postal code"
-msgstr "Code postal incorrect"
+msgstr "Code postal invalide"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DomainModal.js:56
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "La vérification a échoué, veuillez réessayer dans une heure."
 
-#: node_modules/react-components/containers/domains/DomainModal.js:72
+#: node_modules/react-components/containers/domains/DomainModal.js:61
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "Code de vérification erroné. Veuillez vous assurer que vous avez copié le code de vérification correctement et réessayez. Les modifications peuvent prendre jusqu'à 24 heures avant d'être appliquées."
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:61
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:49
 msgctxt "Error"
 msgid "Payments are currently not available, please try again later"
 msgstr "Les paiements sont actuellement indisponibles, veuillez réessayer ultérieurement"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:67
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:68
 msgctxt "Error"
 msgid "Your account or organization currently has an overdue invoice. Please pay all unpaid invoices."
 msgstr "Votre compte ou organisation a actuellement une facture en retard. Veuillez régler les factures impayées."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:21
+#: node_modules/react-components/containers/members/AddMemberButton.js:25
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
-msgstr "Le support multiutilisateur nécessite une offre Professional ou Visionary."
+msgstr "Le support multi-utilisateur nécessite une offre Professional ou Visionary."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:26
+#: node_modules/react-components/containers/members/AddMemberButton.js:30
 msgctxt "Error"
 msgid "Please enable multi-user support before adding users to your organization."
-msgstr "Veuillez activer le support multiutilisateur avant d'ajouter des utilisateurs à votre organisation."
+msgstr "Veuillez activer le support multi-utilisateur avant d'ajouter des utilisateurs à votre organisation."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:33
+#: node_modules/react-components/containers/members/AddMemberButton.js:37
 msgctxt "Error"
 msgid "Please configure a custom domain before adding users to your organization."
 msgstr "Veuillez configurer un domaine personnalisé avant d’ajouter des utilisateurs à votre organisation."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:39
+#: node_modules/react-components/containers/members/AddMemberButton.js:43
 msgctxt "Error"
 msgid "You have used all users in your plan. Please upgrade your plan to add a new user."
 msgstr "Vous avez atteint le quota d’utilisateurs autorisé avec votre offre. Veuillez ajustez votre offre pour ajouter un nouvel utilisateur."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:45
+#: node_modules/react-components/containers/members/AddMemberButton.js:49
 msgctxt "Error"
 msgid "You have used all addresses in your plan. Please upgrade your plan to add a new address."
-msgstr "Vous avez utilisé tous les adresses disponibles avec votre offre. Veuillez ajustez votre offre pour ajouter une nouvelle adresse."
+msgstr "Vous avez utilisé tous les adresses disponibles avec votre offre. Veuillez ajuster votre offre pour ajouter une nouvelle adresse."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:52
+#: node_modules/react-components/containers/members/AddMemberButton.js:56
 msgctxt "Error"
 msgid "All storage space has been allocated. Please reduce storage allocated to other users."
 msgstr "L'intégralité de l'espace de stockage a été allouée. Veuillez réduire le stockage alloué aux autres utilisateurs."
@@ -1514,7 +2059,7 @@ msgstr "L'intégralité de l'espace de stockage a été allouée. Veuillez rédu
 #: node_modules/react-components/containers/members/useMemberModal.js:27
 msgctxt "Error"
 msgid "Invalid name"
-msgstr "Nom incorrect"
+msgstr "Nom invalide"
 
 #: node_modules/react-components/containers/members/useMemberModal.js:31
 msgctxt "Error"
@@ -1530,6 +2075,11 @@ msgstr "Adresse invalide"
 msgctxt "Error"
 msgid "Address already associated to a user"
 msgstr "L'adresse est déjà associée à un utilisateur"
+
+#: node_modules/react-components/containers/login/LoginContainer.js:14
+msgctxt "Error"
+msgid "Incorrect decryption password"
+msgstr "Mot de passe de déchiffrement incorrect"
 
 #: node_modules/react-components/components/toggle/Toggle.js:9
 msgctxt "Toggle button"
@@ -1551,91 +2101,216 @@ msgctxt "Label"
 msgid "Copy"
 msgstr "Copier"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:46
-#: node_modules/react-components/containers/organization/OrganizationSection.js:54
+#: node_modules/react-components/containers/organization/OrganizationSection.js:45
+#: node_modules/react-components/containers/organization/OrganizationSection.js:57
 msgctxt "Label"
 msgid "Organization name"
 msgstr "Nom de l'organisation"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:62
+#: node_modules/react-components/containers/organization/OrganizationSection.js:64
 msgctxt "Label"
 msgid "Number of users"
 msgstr "Nombre d'utilisateurs"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:68
+#: node_modules/react-components/containers/organization/OrganizationSection.js:70
 msgctxt "Label"
 msgid "Organization storage"
 msgstr "Stockage de l'organisation"
 
-#: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:110
-#: node_modules/react-components/containers/organization/OrganizationSection.js:74
+#: node_modules/react-components/containers/members/EditMemberModal.js:81
+#: node_modules/react-components/containers/members/MemberModal.js:122
+#: node_modules/react-components/containers/organization/OrganizationSection.js:76
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:161
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:192
 msgctxt "Label"
 msgid "VPN connections"
 msgstr "Connexions VPN"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:80
+#: node_modules/react-components/containers/organization/OrganizationSection.js:82
 msgctxt "Label"
 msgid "Addresses"
 msgstr "Adresses"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:86
+#: node_modules/react-components/containers/organization/OrganizationSection.js:88
 msgctxt "Label"
 msgid "Domains"
-msgstr "Noms de domaine"
+msgstr "Domaines"
 
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:40
-#: node_modules/react-components/containers/payments/DonateModal.js:39
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:36
+#: node_modules/react-components/containers/payments/CreditsModal.js:58
+#: node_modules/react-components/containers/payments/DonateModal.js:41
 msgctxt "Label"
 msgid "Amount"
 msgstr "Montant"
 
+#: node_modules/react-components/containers/payments/BillingSection.js:112
+msgctxt "Label"
+msgid "Extra users"
+msgstr "Utilisateurs supplémentaires"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:128
+msgctxt "Label"
+msgid "Extra email addresses"
+msgstr "Adresses email supplémentaires"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:144
+msgctxt "Label"
+msgid "Extra storage"
+msgstr "Espace supplémentaire de stockage"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:160
+msgctxt "Label"
+msgid "Extra domains"
+msgstr "Domaines supplémentaires"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:188
+msgctxt "Label"
+msgid "Extra VPN connections"
+msgstr "Connexions VPN supplémentaires"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:204
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:101
+msgctxt "Label"
+msgid "Sub-total"
+msgstr "Sous-total"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:214
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:111
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:230
+msgctxt "Label"
+msgid "Coupon"
+msgstr "Code promo"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:226
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
+msgctxt "Label"
+msgid "Total"
+msgstr "Total"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:44
+#: node_modules/react-components/containers/payments/BillingSection.js:237
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:171
+msgctxt "Label"
+msgid "Amount due"
+msgstr "Montant à payer"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:247
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:32
+msgctxt "Label"
+msgid "Credits"
+msgstr "Crédits"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:255
+msgctxt "Label"
+msgid "Billing cycle end date"
+msgstr "Date de fin du cycle de facturation"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:43
+msgctxt "Label"
+msgid "Proration"
+msgstr "Prorata"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:55
+msgctxt "Label"
+msgid "Gift"
+msgstr "Cadeau"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
+msgctxt "Label"
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
+msgctxt "Label"
+msgid "Email addresses"
+msgstr "Adresses email"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:137
+msgctxt "Label"
+msgid "Storage capacity"
+msgstr "Capacité de stockage"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:150
+msgctxt "Label"
+msgid "Custom domains"
+msgstr "Domaines personnalisés"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:205
+msgctxt "Label"
+msgid "Billing cycle"
+msgstr "Cycle de facturation"
+
 #: node_modules/react-components/containers/payments/Payment.js:40
 msgctxt "Label"
-msgid "Select payment method"
-msgstr "Sélectionner un mode de paiement"
+msgid "Payment method"
+msgstr "Mode de paiement"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:54
+msgctxt "Label"
+msgid "Enter gift code"
+msgstr "Entrer un code cadeau"
 
 #: node_modules/react-components/containers/payments/BitcoinDetails.js:10
 msgctxt "Label"
 msgid "Amount BTC"
 msgstr "Montant en BTC"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:14
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
 msgctxt "Label"
 msgid "BTC address"
 msgstr "Adresse BTC"
 
-#: node_modules/react-components/containers/login/LoginForm.js:40
-#: node_modules/react-components/containers/members/MemberModal.js:73
-#: node_modules/react-components/containers/password/AskPasswordModal.js:30
-msgctxt "Label"
-msgid "Password"
-msgstr "Mot de passe"
-
-#: node_modules/react-components/containers/password/AskPasswordModal.js:43
-msgctxt "Label"
-msgid "Two factor code"
-msgstr "Code à deux facteurs"
-
-#: node_modules/react-components/containers/password/AskPasswordModal.js:50
+#: node_modules/react-components/containers/login/UnlockModal.js:34
+#: node_modules/react-components/containers/password/AskPasswordModal.js:26
 msgctxt "Label"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: node_modules/react-components/containers/password/AskPasswordModal.js:51
+#: node_modules/react-components/containers/login/UnlockModal.js:35
+#: node_modules/react-components/containers/password/AskPasswordModal.js:27
 msgctxt "Label"
 msgid "Submit"
 msgstr "Envoyer"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:24
+#: node_modules/react-components/containers/login/LoginForm.js:40
+#: node_modules/react-components/containers/login/UnlockModal.js:41
+#: node_modules/react-components/containers/members/MemberModal.js:85
+#: node_modules/react-components/containers/password/AskPasswordModal.js:32
+msgctxt "Label"
+msgid "Password"
+msgstr "Mot de passe"
+
+#: node_modules/react-components/containers/password/AskPasswordModal.js:45
+msgctxt "Label"
+msgid "Two factor code"
+msgstr "Code à deux facteurs"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:20
 msgctxt "Label"
 msgid "Auto-load remote content"
 msgstr "Charger automatiquement le contenu distant"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:33
+#: node_modules/react-components/containers/messages/MessagesSection.js:29
 msgctxt "Label"
 msgid "Auto-load embedded images"
 msgstr "Charger automatiquement les images incorporées"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:38
+msgctxt "Label"
+msgid "Sent/Drafts"
+msgstr "Envoyés/Brouillons"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:46
+msgctxt "Label"
+msgid "Include moved"
+msgstr "Inclure les messages déplacés"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:50
+msgctxt "Label"
+msgid "Request link confirmation"
+msgstr "Demander la confirmation d'ouverture des liens"
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:12
 msgctxt "Label"
@@ -1658,15 +2333,10 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "Entrez votre nom de domaine"
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:42
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
 msgctxt "Label"
 msgid "Customize invoices"
 msgstr "Personnaliser les factures"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:48
-msgctxt "Label"
-msgid "Amount due"
-msgstr "Montant à payer"
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:20
 msgctxt "Label"
@@ -1681,9 +2351,9 @@ msgstr "Attacher automatiquement la clé publique"
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:50
 msgctxt "Label"
 msgid "Default PGP Scheme"
-msgstr "Schéma PGP par défaut"
+msgstr "Protocole PGP par défaut"
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:40
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:51
 msgctxt "Label"
 msgid "Prompt to trust keys"
 msgstr "Inviter à faire confiance aux clés"
@@ -1699,7 +2369,7 @@ msgid "Default language"
 msgstr "Langue par défaut"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:17
-#: node_modules/react-components/containers/support/BugModal.js:102
+#: node_modules/react-components/containers/support/BugModal.js:107
 msgctxt "Label"
 msgid "Email address"
 msgstr "Adresse email"
@@ -1707,187 +2377,295 @@ msgstr "Adresse email"
 #: node_modules/react-components/containers/notification/EmailSection.js:21
 msgctxt "Label"
 msgid "Allow password reset"
-msgstr "Permettre la réinitialisation du mot de passe"
+msgstr "Autoriser la réinitialisation du mot de passe"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:28
 msgctxt "Label"
 msgid "Daily email notifications"
 msgstr "Notifications quotidiennes par email"
 
+#: node_modules/react-components/containers/notification/EmailModal.js:58
+msgctxt "Label"
+msgid "Email"
+msgstr "Email"
+
 #: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
 msgctxt "Label"
 msgid "Desktop notification"
 msgstr "Notification de bureau"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:56
-msgctxt "Label"
-msgid "Email"
-msgstr "Email"
-
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:53
 msgctxt "Label"
-msgid "Cash"
-msgstr "Espèces"
+msgid "Pay with cash"
+msgstr "Payer en espèces"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:77
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:90
 msgctxt "Label"
 msgid "Default Composer"
-msgstr "Composeur par défaut"
+msgstr "Taille du composeur"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:94
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:106
 msgctxt "Label"
 msgid "Default Inbox"
 msgstr "Boîte de réception par défaut"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:111
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:122
 msgctxt "Label"
 msgid "Conversations"
 msgstr "Conversations"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:122
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:138
 msgctxt "Label"
-msgid "Composer Mode"
-msgstr ""
+msgid "Use sticky labels"
+msgstr "Utiliser les labels automatiques"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:132
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:155
 msgctxt "Label"
-msgid "Composer Text Direction"
+msgid "Composer mode"
+msgstr "Mode du composeur"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:166
+msgctxt "Label"
+msgid "Composer text direction"
 msgstr "Orientation du texte dans le composeur"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:143
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:41
 msgctxt "Label"
-msgid "Sent/Drafts"
-msgstr "Envoyés/Brouillons"
+msgid "Read/unread order"
+msgstr "Ordre lu/non lu"
 
-#: node_modules/react-components/containers/support/BugModal.js:90
+#: node_modules/react-components/containers/support/BugModal.js:95
 msgctxt "Label"
 msgid "Proton username"
 msgstr "Nom d'utilisateur Proton"
 
-#: node_modules/react-components/containers/support/BugModal.js:114
+#: node_modules/react-components/containers/support/BugModal.js:119
 msgctxt "Label"
 msgid "Category"
 msgstr "Catégorie"
 
-#: node_modules/react-components/containers/support/BugModal.js:126
+#: node_modules/react-components/containers/support/BugModal.js:131
 msgctxt "Label"
 msgid "What happened?"
 msgstr "Que s'est-il passé ?"
 
-#: node_modules/react-components/containers/support/BugModal.js:139
+#: node_modules/react-components/containers/support/BugModal.js:144
 msgctxt "Label"
 msgid "Attach screenshots"
 msgstr "Joindre des captures d'écran"
 
-#: node_modules/react-components/containers/support/BugModal.js:147
+#: node_modules/react-components/containers/support/BugModal.js:152
 msgctxt "Label"
 msgid "System information"
 msgstr "Informations système"
 
-#: node_modules/react-components/containers/support/BugModal.js:155
+#: node_modules/react-components/containers/support/BugModal.js:160
 msgctxt "Label"
 msgid "Operating system"
 msgstr "Système d'exploitation"
 
-#: node_modules/react-components/containers/support/BugModal.js:166
+#: node_modules/react-components/containers/support/BugModal.js:171
 msgctxt "Label"
 msgid "Operating system version"
 msgstr "Version du système d'exploitation"
 
-#: node_modules/react-components/containers/support/BugModal.js:177
+#: node_modules/react-components/containers/support/BugModal.js:182
 msgctxt "Label"
 msgid "Browser"
-msgstr "Navigateur"
+msgstr "Navigateur web"
 
-#: node_modules/react-components/containers/support/BugModal.js:188
+#: node_modules/react-components/containers/support/BugModal.js:193
 msgctxt "Label"
 msgid "Browser version"
 msgstr "Version du navigateur"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:58
+#: node_modules/react-components/containers/addresses/IdentitySection.js:74
 msgctxt "Label"
 msgid "Select an address"
 msgstr "Sélectionnez une adresse"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:79
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:42
-#: node_modules/react-components/containers/addresses/IdentitySection.js:65
+#: node_modules/react-components/containers/addresses/AddressModal.js:82
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:56
+#: node_modules/react-components/containers/addresses/IdentitySection.js:81
 msgctxt "Label"
 msgid "Display name"
 msgstr "Nom d'affichage"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:89
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:53
-#: node_modules/react-components/containers/addresses/IdentitySection.js:74
+#: node_modules/react-components/containers/addresses/AddressModal.js:92
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:67
+#: node_modules/react-components/containers/addresses/IdentitySection.js:90
 msgctxt "Label"
 msgid "Signature"
 msgstr "Signature"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:81
+#: node_modules/react-components/containers/addresses/IdentitySection.js:100
 msgctxt "Label"
 msgid "ProtonMail signature"
 msgstr "Signature ProtonMail"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:58
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:39
+#: node_modules/react-components/containers/addresses/AddressModal.js:60
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:37
 msgctxt "Label"
 msgid "User"
 msgstr "Utilisateur"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:62
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:38
-#: node_modules/react-components/containers/members/MemberModal.js:92
+#: node_modules/react-components/containers/addresses/AddressModal.js:64
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:52
+#: node_modules/react-components/containers/members/MemberModal.js:104
 msgctxt "Label"
 msgid "Address"
 msgstr "Adresse"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:14
-#: node_modules/react-components/containers/members/EditMemberModal.js:50
-#: node_modules/react-components/containers/members/MemberModal.js:52
+#: node_modules/react-components/containers/members/EditMemberModal.js:62
+#: node_modules/react-components/containers/members/MemberModal.js:64
 msgctxt "Label"
 msgid "Name"
 msgstr "Nom"
 
-#: node_modules/react-components/containers/members/EditMemberModal.js:62
-#: node_modules/react-components/containers/members/MemberModal.js:103
+#: node_modules/react-components/containers/members/EditMemberModal.js:74
+#: node_modules/react-components/containers/members/MemberModal.js:115
 msgctxt "Label"
 msgid "Account storage"
-msgstr "Espace de stockage du compte"
+msgstr "Stockage du compte"
 
-#: node_modules/react-components/containers/members/MemberModal.js:69
+#: node_modules/react-components/containers/members/MemberModal.js:81
 msgctxt "Label"
 msgid "Key strength"
 msgstr "Force de la clé"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:99
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:102
 msgctxt "Label"
 msgid "Feedback"
-msgstr "Vos commentaires"
+msgstr "Commentaires"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:113
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:116
 msgctxt "Label"
 msgid "Email address (optional)"
 msgstr "Adresse email (facultatif)"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:127
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:130
 msgctxt "Label"
 msgid "Login password"
 msgstr "Mot de passe de connexion"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:142
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:145
 msgctxt "Label"
 msgid "Two-factor passcode"
 msgstr "Code d'accès en deux étapes"
 
-#: node_modules/react-components/containers/account/NewsSection.js:27
+#: node_modules/react-components/containers/account/NewsSection.js:29
 msgctxt "Label"
 msgid "Email subscriptions"
-msgstr "Abonnements par email"
+msgstr "Lettres d'information"
 
 #: node_modules/react-components/containers/account/DeleteSection.js:39
 msgctxt "Label"
 msgid "Irreversible action"
 msgstr "Action irréversible"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:24
+msgctxt "Label"
+msgid "Auto-reply"
+msgstr "Réponse automatique"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:52
+msgctxt "Label"
+msgid "Duration"
+msgstr "Durée"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:53
+msgctxt "Label"
+msgid "Start"
+msgstr "Début"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:54
+msgctxt "Label"
+msgid "End"
+msgstr "Fin"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:55
+msgctxt "Label"
+msgid "Timezone"
+msgstr "Fuseau horaire"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:56
+msgctxt "Label"
+msgid "Message"
+msgstr "Message"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDateField.js:12
+msgctxt "Label"
+msgid "End date"
+msgstr "Date de fin"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:13
+msgctxt "Label"
+msgid "Days of the week"
+msgstr "Jours de la semaine"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDateField.js:12
+msgctxt "Label"
+msgid "Start date"
+msgstr "Date de début"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDayOfMonthField.js:12
+msgctxt "Label"
+msgid "Start day of month"
+msgstr "Jour de début"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartTimeField.js:9
+msgctxt "Label"
+msgid "Start time"
+msgstr "Heure de début"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndTimeField.js:9
+msgctxt "Label"
+msgid "End time"
+msgstr "Heure de fin"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDayOfWeekField.js:12
+msgctxt "Label"
+msgid "Start weekday"
+msgstr "Jour de début"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDayOfWeekField.js:12
+msgctxt "Label"
+msgid "End weekday"
+msgstr "Jour de fin"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDayOfMonthField.js:12
+msgctxt "Label"
+msgid "End day of month"
+msgstr "Jour de fin"
+
+#: node_modules/react-components/containers/login/LoginForm.js:24
+#: node_modules/react-components/containers/overview/SummarySection.js:64
+msgctxt "Label"
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:69
+msgctxt "Label"
+msgid "Recovery email"
+msgstr "Email de récupération"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:78
+msgctxt "Label"
+msgid "Two factor authentication"
+msgstr "Authentification en deux étapes"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:89
+msgctxt "Label"
+msgid "Role"
+msgstr "Rôle"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:24
+msgctxt "Label"
+msgid "CSS code"
+msgstr "Code CSS"
 
 #: node_modules/react-components/containers/login/TOTPForm.js:29
 msgctxt "Label"
@@ -1899,23 +2677,183 @@ msgctxt "Label"
 msgid "Mailbox password"
 msgstr "Mot de passe de messagerie"
 
-#: node_modules/react-components/containers/login/LoginForm.js:24
-msgctxt "Label"
-msgid "Username"
-msgstr "Nom d'utilisateur"
+#: node_modules/react-components/containers/payments/CycleDiscountBadge.js:15
+msgctxt "Tooltip"
+msgid "Discount applied for annual billing cycle"
+msgstr "Remise appliquée pour un cycle de facturation annuel"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:49
-#: node_modules/react-components/containers/payments/EditCardModal.js:34
+#: node_modules/react-components/containers/payments/CycleDiscountBadge.js:16
+msgctxt "Tooltip"
+msgid "Discount applied for two-year billing cycle"
+msgstr "Remise appliquée pour un cycle de facturation de deux ans"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:158
+msgctxt "Tooltip"
+msgid "Save 20% when billed annually"
+msgstr "Économisez 20 % avec la facturation annuelle"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:204
+msgctxt "Tooltip"
+msgid "ProtonMail cannot be used for bulk sending or spamming"
+msgstr "ProtonMail ne peut pas être utilisé pour du mailing de masse ou du spamming"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:233
+msgctxt "Tooltip"
+msgid "Use your own domain name"
+msgstr "Utilisez votre propre nom de domaine"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:245
+msgctxt "Tooltip"
+msgid "Use ProtonMail with a desktop email client"
+msgstr "Utilisez ProtonMail avec un client de messagerie"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:377
+msgctxt "Tooltip"
+msgid "ProtonVPN keeps your Internet traffic private"
+msgstr "ProtonVPN rend votre trafic Internet privé"
+
+#: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:50
+msgctxt "Tooltip"
+msgid "For each additional user, 5GB of storage and 5 email addresses are added to your subscription."
+msgstr "Pour chaque utilisateur supplémentaire, 5 Go de stockage et 5 adresses email sont ajoutés à votre abonnement."
+
+#: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:75
+msgctxt "Tooltip"
+msgid "Allows you to host emails for your own domain(s) at ProtonMail, e.g. thomas.anderson@example.com"
+msgstr "Vous permet d'utiliser ProtonMail avec vos propres noms de domaine, par exemple: thomas.anderson@example.com"
+
+#: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:72
+msgctxt "Tooltip"
+msgid "Add additional addresses to your account."
+msgstr "Ajoutez des adresses supplémentaires à votre compte."
+
+#: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:94
+msgctxt "Tooltip"
+msgid "Use your own domain name."
+msgstr "Utilisez votre propre nom de domaine."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:78
+msgctxt "Tooltip"
+msgid "Download and stream faster with a faster VPN connection."
+msgstr "Téléchargez et diffusez plus rapidement avec une connexion VPN rapide."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:87
+msgctxt "Tooltip"
+msgid "More connections allows more devices to use ProtonVPN at the same time."
+msgstr "Plus de connexions permettent à plus d'appareils d'utiliser ProtonVPN en même temps."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:152
+msgctxt "Tooltip"
+msgid "Easily route your traffic through the Tor anonymity network."
+msgstr "Dirigez facilement votre trafic via le réseau anonyme Tor."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:167
+msgctxt "Tooltip"
+msgid "Additional protection by routing your traffic through multiple locations before leaving the ProtonVPN network."
+msgstr "Protection supplémentaire en dirigeant votre trafic à travers plusieurs localisations avant de quitter le réseau ProtonVPN."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:198
+msgctxt "Tooltip"
+msgid "Order additional connections to provide ProtonVPN to other users with your organization"
+msgstr "Commandez des connexions supplémentaires pour fournir ProtonVPN à d'autres utilisateurs de votre organisation"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:40
+msgctxt "Tooltip"
+msgid "Setting to 'Include moved' means that sent / drafts messages that have been moved to other folders will continue to appear in the Sent/Drafts folder."
+msgstr "Le paramètre « Inclure les messages déplacés » signifie que les messages envoyés / brouillons qui ont été déplacés dans d'autres dossiers continueront à apparaître dans le dossier Envoyés/Brouillons."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:93
+msgctxt "Tooltip"
+msgid "This sets the default composer size. Two sizes are available, a smaller popup composer, and a bigger full screen composer."
+msgstr "Ce paramètre définit la taille par défaut de votre composeur. Deux tailles sont disponibles, un petit pop-up ou un composeur plus grand en plein écran."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:109
+msgctxt "Tooltip"
+msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
+msgstr "ProtonMail prend en charge le format en lignes et en colonnes pour la boîte de réception. En utilisant ce paramètre, il est possible de basculer d'une mise en page à l'autre."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:124
+msgctxt "Tooltip"
+msgid "Conversation grouping automatically groups messages in the same conversation together."
+msgstr "Le regroupement de conversation regroupe automatiquement les messages dans une même conversation."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:140
+msgctxt "Tooltip"
+msgid "When a label is added to a message in a conversation, all future messages you send or receive will have that same label automatically applied."
+msgstr "Lorsqu'un label est ajouté à un message dans une conversation, tous les futurs messages que vous enverrez ou recevrez se verront également appliqués le même label."
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:28
+msgctxt "Tooltip"
+msgid "ProtonMail users will use this key by default for sending"
+msgstr "Les utilisateurs ProtonMail utiliseront cette clé par défaut pour l’envoi"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:34
+msgctxt "Tooltip"
+msgid "You have locally decrypted this key"
+msgstr "Vous avez déchiffré localement cette clé"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:40
+msgctxt "Tooltip"
+msgid "This key is encrypted with an old password"
+msgstr "Cette clé est chiffrée avec un ancien mot de passe"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:46
+msgctxt "Tooltip"
+msgid "This key cannot be used for encryption"
+msgstr "Cette clé ne peut pas être utilisée pour le chiffrement"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:52
+msgctxt "Tooltip"
+msgid "This address has been disabled"
+msgstr "Cette adresse a été désactivée"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:58
+msgctxt "Tooltip"
+msgid "Signatures produced by this key are treated as invalid and this key cannot be used for encryption"
+msgstr "Les signatures produites par cette clé sont considérées comme non valides et cette clé ne peut pas être utilisée pour le chiffrement"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:12
+msgctxt "Billing cycle option"
+msgid "Monthly"
+msgstr "Mensuel"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:13
+msgctxt "Billing cycle option"
+msgid "Annually"
+msgstr "Annuel"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:18
+msgctxt "Billing cycle option"
+msgid "Two-year"
+msgstr "Deux ans"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:47
+#: node_modules/react-components/containers/payments/EditCardModal.js:26
 msgctxt "Success"
 msgid "Payment method updated"
 msgstr "Mode de paiement mis à jour"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:31
+#: node_modules/react-components/containers/payments/DonateModal.js:23
 msgctxt "Success"
 msgid "Your support is essential to keeping ProtonMail running. Thank you for supporting internet privacy!"
 msgstr "Votre soutien est essentiel au maintien de ProtonMail. Merci de nous aider dans notre combat pour la protection de la vie privée sur Internet !"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:93
+#: node_modules/react-components/containers/payments/PlansSection.js:55
+msgctxt "Success"
+msgid "You have successfully unsubscribed"
+msgstr "Vous vous êtes désabonné avec succès"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:40
+msgctxt "Success"
+msgid "Credits added"
+msgstr "Crédits ajoutés"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:34
+msgctxt "Success"
+msgid "Gift code applied"
+msgstr "Code cadeau appliqué"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:82
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "Domaine vérifié"
@@ -1925,16 +2863,18 @@ msgctxt "Success"
 msgid "Catch-all address updated"
 msgstr "Adresse catch-all mise à jour"
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:33
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:29
 msgctxt "Success"
 msgid "Invoice customized"
 msgstr "Facture personnalisée"
 
-#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:29
+#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:28
 #: node_modules/react-components/containers/general/ContactsSection.js:28
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:39
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:35
 msgctxt "Success"
 msgid "Preference saved"
-msgstr "Préférences enregistrées"
+msgstr "Préférence enregistrée"
 
 #: node_modules/react-components/containers/general/ShortcutsToggle.js:17
 msgctxt "Success"
@@ -1944,29 +2884,44 @@ msgstr "Préférences de raccourcis mises à jour"
 #: node_modules/react-components/containers/general/LanguageSection.js:45
 msgctxt "Success"
 msgid "Locale updated"
-msgstr "Langage mis à jour"
+msgstr "Langue mise à jour"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:42
+#: node_modules/react-components/containers/notification/EmailModal.js:41
 msgctxt "Success"
 msgid "Email updated"
 msgstr "Email mis à jour"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:38
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:36
 msgctxt "Success"
 msgid "Payment method deleted"
 msgstr "Mode de paiement supprimé"
 
-#: node_modules/react-components/containers/support/BugModal.js:79
+#: node_modules/react-components/containers/sessions/SessionsSection.js:60
+msgctxt "Success"
+msgid "Session revoked"
+msgstr "Session révoquée"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:60
+msgctxt "Success"
+msgid "Sessions revoked"
+msgstr "Sessions révoquées"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:33
+msgctxt "Success"
+msgid "Buttons position saved"
+msgstr "Position des boutons enregistrée"
+
+#: node_modules/react-components/containers/support/BugModal.js:77
 msgctxt "Success"
 msgid "Bug reported"
 msgstr "Bug signalé"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:47
+#: node_modules/react-components/containers/addresses/AddressModal.js:43
 msgctxt "Success"
 msgid "Address added"
 msgstr "Adresse ajoutée"
 
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:32
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:34
 msgctxt "Success"
 msgid "Address updated"
 msgstr "Adresse mise à jour"
@@ -1976,20 +2931,542 @@ msgctxt "Success"
 msgid "User updated"
 msgstr "Utilisateur mis à jour"
 
-#: node_modules/react-components/containers/members/MemberModal.js:45
+#: node_modules/react-components/containers/members/MemberModal.js:46
 msgctxt "Success"
 msgid "User created"
 msgstr "Utilisateur créé"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:80
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:77
 msgctxt "Success"
 msgid "Account deleted"
 msgstr "Compte supprimé"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:20
+msgctxt "Success"
+msgid "Auto-reply updated"
+msgstr "Réponse automatique mise à jour"
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:45
+msgctxt "Success"
+msgid "Custom theme saved"
+msgstr "Thème personnalisé enregistré"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:159
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:63
+msgctxt "Header"
+msgid "Pricing"
+msgstr "Tarifs"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:180
+msgctxt "Header"
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:187
+msgctxt "Header"
+msgid "Email addresses"
+msgstr "Adresses email"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:194
+msgctxt "Header"
+msgid "Storage capacity (GB)"
+msgstr "Capacité de stockage (Go)"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:202
+msgctxt "Header"
+msgid "Messages per day"
+msgstr "Messages par jour"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:214
+msgctxt "Header"
+msgid "Folders"
+msgstr "Dossiers"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:223
+msgctxt "Header"
+msgid "Labels"
+msgstr "Labels"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:232
+msgctxt "Header"
+msgid "Custom domains"
+msgstr "Domaines personnalisés"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:244
+msgctxt "Header"
+msgid "IMAP / SMTP support"
+msgstr "Support IMAP / SMTP"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:262
+msgctxt "Header"
+msgid "Additional features"
+msgstr "Fonctionnalités supplémentaires"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:274
+msgctxt "Header"
+msgid "Encrypted contact details"
+msgstr "Coordonnées de contact chiffrées"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:291
+msgctxt "Header"
+msgid "Short address (@pm.me)"
+msgstr "Adresse courte (@pm.me)"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:308
+msgctxt "Header"
+msgid "Auto-reply"
+msgstr "Répondeur automatique"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:325
+msgctxt "Header"
+msgid "Catch-all email"
+msgstr "Collecteur d'email (catch-all)"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:342
+msgctxt "Header"
+msgid "Multi-user support"
+msgstr "Support multi-utilisateur"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:359
+msgctxt "Header"
+msgid "Priority customer support"
+msgstr "Support client prioritaire"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:77
+msgctxt "Header"
+msgid "Speed"
+msgstr "Vitesse"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:85
+msgctxt "Header"
+msgid "Simultaneous connections"
+msgstr "Connexions simultanées"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:96
+msgctxt "Header"
+msgid "Advanced encryption"
+msgstr "Chiffrement avancé"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:107
+msgctxt "Header"
+msgid "No logs policy"
+msgstr "Nous n'enregistrons pas votre historique"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:118
+msgctxt "Header"
+msgid "No data limits"
+msgstr "Aucune limite de données"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:129
+msgctxt "Header"
+msgid "P2P support"
+msgstr "Support P2P"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:139
+msgctxt "Header"
+msgid "Secure streaming"
+msgstr "Streaming sécurisé"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:149
+msgctxt "Header"
+msgid "Tor over VPN"
+msgstr "Tor via VPN"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:164
+msgctxt "Header"
+msgid "Secure core"
+msgstr "Secure core"
+
+#: node_modules/react-components/containers/logs/LogsTable.js:40
+msgctxt "Header"
+msgid "Event"
+msgstr "Événement"
+
+#: node_modules/react-components/containers/logs/LogsTable.js:40
+msgctxt "Header"
+msgid "Time"
+msgstr "Date"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:190
+#: node_modules/react-components/containers/payments/PlansSection.js:197
+msgctxt "X / user"
+msgid "user"
+msgstr "utilisateur"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:209
+#: node_modules/react-components/containers/payments/PlansSection.js:210
+#: node_modules/react-components/containers/payments/PlansSection.js:217
+#: node_modules/react-components/containers/payments/PlansSection.js:218
+#: node_modules/react-components/containers/payments/PlansSection.js:226
+#: node_modules/react-components/containers/payments/PlansSection.js:227
+msgctxt "Plan option"
+msgid "Unlimited"
+msgstr "Illimité"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:263
+msgctxt "Plan option"
+msgid "Only basic email features"
+msgstr "Les fonctionnalités de base d'une messagerie"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:264
+msgctxt "Plan option"
+msgid "Folders, Labels, Filters, Encrypted contacts, Auto-responder and more"
+msgstr "Dossiers, labels, filtres, contacts chiffrés, répondeur automatique et plus"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:266
+msgctxt "Plan option"
+msgid "All Plus features, and catch-all email, multi-user support and more"
+msgstr "Toutes les fonctionnalités de Plus, collecteur d'email (catch-all), support multi-utilisateur et plus encore"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:268
+msgctxt "Plan option"
+msgid "All Professional features, limited to 6 users, includes ProtonVPN"
+msgstr "Toutes les fonctionnalités de Professional, limitées à 6 utilisateurs, ProtonVPN inclus"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:400
+msgctxt "Plan option"
+msgid "Included"
+msgstr "Inclus"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:435
+msgctxt "Info concerning plan features"
+msgid "denotes customizable features"
+msgstr "indique les fonctionnalités personnalisables"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:29
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:27
+msgctxt "Billing cycle"
+msgid "Monthly"
+msgstr "Mensuel"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:30
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:28
+msgctxt "Billing cycle"
+msgid "Yearly"
+msgstr "Annuel"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:31
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:29
+msgctxt "Billing cycle"
+msgid "2-year"
+msgstr "2 ans"
 
 #: node_modules/react-components/containers/payments/Cash.js:6
 msgctxt "Info for cash payment method"
 msgid "To pay via Cash, please email us at contact@protonmail.com for instructions."
 msgstr "Pour payer en espèces, contactez-nous via contact@protonmail.com pour recevoir nos instructions."
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:32
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:224
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:76
+msgctxt "Price"
+msgid "Free"
+msgstr "Gratuit"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:215
+msgctxt "Warning"
+msgid "You subscription has changed"
+msgstr "Votre abonnement a été modifié"
+
+#: node_modules/react-components/containers/domains/AddressCatchAll.js:29
+msgctxt "Warning"
+msgid "This feature is only available for ProtonMail Professional plans or higher"
+msgstr "Cette fonctionnalité n’est disponible que pour les offres ProtonMail Professional ou supérieures"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:79
+msgctxt "Warning"
+msgid "By disabling the logs, you will also clear your entire logs history. Are you sure you want to disable the logs?"
+msgstr "En désactivant l'historique de connexion, vous effacerez aussi l'intégralité de vos journaux de connexion. Êtes-vous sûr de vouloir supprimer l'historique ?"
+
+#: node_modules/react-components/containers/support/BugModal.js:91
+msgctxt "Warning"
+msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
+msgstr "Les rapports de bugs ne sont pas chiffrés de bout en bout, merci de ne pas envoyer d'informations sensibles."
+
+#: node_modules/react-components/containers/addresses/AddressActions.js:42
+msgctxt "Warning"
+msgid "By deleting this address, you will no longer be able to send or receive emails using this address. Are you sure you want to delete this address?"
+msgstr "En supprimant cette adresse, vous ne pourrez plus envoyer ou recevoir des emails à l'aide de celle-ci. Êtes-vous sûr de vouloir supprimer cette adresse ?"
+
+#: node_modules/react-components/containers/addresses/AddressActions.js:66
+msgctxt "Warning"
+msgid "By disabling this address, you will no longer be able to send or receive emails using this address. Are you sure you want to disable this address?"
+msgstr "En désactivant cette adresse, vous ne pourrez plus envoyer ou recevoir des emails à l'aide de celle-ci. Êtes-vous sûr de vouloir désactiver cette adresse ?"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:22
+msgctxt "Warning"
+msgid "Custom themes from third parties can potentially betray your privacy. Only use themes from trusted sources."
+msgstr "Les thèmes personnalisés provenant de tiers peuvent potentiellement trahir votre vie privée. Utilisez uniquement des thèmes provenant de sources fiables."
+
+#: node_modules/react-components/containers/payments/subscription/PlanPrice.js:10
+msgctxt "Suffix"
+msgid "/ month"
+msgstr "/ mois"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:65
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:70
+msgctxt "Suffix"
+msgid "/mo"
+msgstr "/mois"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:31
+#: node_modules/react-components/containers/overview/SummarySection.js:40
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:102
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:177
+msgctxt "Plan"
+msgid "Free"
+msgstr "Free"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:10
+msgctxt "Option"
+msgid "included"
+msgstr "inclus"
+
+#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
+msgctxt "Option"
+msgid "Left to Right"
+msgstr "De gauche à droite"
+
+#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:12
+msgctxt "Option"
+msgid "Right to Left"
+msgstr "De droite à gauche"
+
+#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:11
+msgctxt "Option"
+msgid "Normal"
+msgstr "Normal"
+
+#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:12
+msgctxt "Option"
+msgid "Plain text"
+msgstr "Texte brut"
+
+#: node_modules/react-components/containers/support/BugModal.js:41
+msgctxt "Option"
+msgid "Select"
+msgstr "Sélectionner"
+
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:20
+msgctxt "Option"
+msgid "All users"
+msgstr "Tous les utilisateurs"
+
+#: node_modules/react-components/containers/autoReply/utils.js:16
+msgctxt "Option"
+msgid "Fixed duration"
+msgstr "Durée fixe"
+
+#: node_modules/react-components/containers/autoReply/utils.js:20
+msgctxt "Option"
+msgid "Repeat daily"
+msgstr "Répéter tous les jours"
+
+#: node_modules/react-components/containers/autoReply/utils.js:24
+msgctxt "Option"
+msgid "Repeat weekly"
+msgstr "Répéter chaque semaine"
+
+#: node_modules/react-components/containers/autoReply/utils.js:28
+msgctxt "Option"
+msgid "Repeat monthly"
+msgstr "Répéter chaque mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:32
+msgctxt "Option"
+msgid "Permanent"
+msgstr "Permanent"
+
+#: node_modules/react-components/containers/autoReply/utils.js:55
+msgctxt "Option"
+msgid "1st of the month"
+msgstr "1er du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:56
+msgctxt "Option"
+msgid "2nd of the month"
+msgstr "2 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:57
+msgctxt "Option"
+msgid "3rd of the month"
+msgstr "3 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:58
+msgctxt "Option"
+msgid "4th of the month"
+msgstr "4 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:59
+msgctxt "Option"
+msgid "5th of the month"
+msgstr "5 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:60
+msgctxt "Option"
+msgid "6th of the month"
+msgstr "6 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:61
+msgctxt "Option"
+msgid "7th of the month"
+msgstr "7 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:62
+msgctxt "Option"
+msgid "8th of the month"
+msgstr "8 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:63
+msgctxt "Option"
+msgid "9th of the month"
+msgstr "9 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:64
+msgctxt "Option"
+msgid "10th of the month"
+msgstr "10 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:65
+msgctxt "Option"
+msgid "11th of the month"
+msgstr "11 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:66
+msgctxt "Option"
+msgid "12th of the month"
+msgstr "12 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:67
+msgctxt "Option"
+msgid "13th of the month"
+msgstr "13 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:68
+msgctxt "Option"
+msgid "14th of the month"
+msgstr "14 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:69
+msgctxt "Option"
+msgid "15th of the month"
+msgstr "15 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:70
+msgctxt "Option"
+msgid "16th of the month"
+msgstr "16 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:71
+msgctxt "Option"
+msgid "17th of the month"
+msgstr "17 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:72
+msgctxt "Option"
+msgid "18th of the month"
+msgstr "18 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:73
+msgctxt "Option"
+msgid "19th of the month"
+msgstr "19 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:74
+msgctxt "Option"
+msgid "20th of the month"
+msgstr "20 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:75
+msgctxt "Option"
+msgid "21st of the month"
+msgstr "21 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:76
+msgctxt "Option"
+msgid "22nd of the month"
+msgstr "22 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:77
+msgctxt "Option"
+msgid "23rd of the month"
+msgstr "23 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:78
+msgctxt "Option"
+msgid "24th of the month"
+msgstr "24 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:79
+msgctxt "Option"
+msgid "25th of the month"
+msgstr "25 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:80
+msgctxt "Option"
+msgid "26th of the month"
+msgstr "26 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:81
+msgctxt "Option"
+msgid "27th of the month"
+msgstr "27 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:82
+msgctxt "Option"
+msgid "28th of the month"
+msgstr "28 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:83
+msgctxt "Option"
+msgid "29th of the month"
+msgstr "29 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:84
+msgctxt "Option"
+msgid "30th of the month"
+msgstr "30 du mois"
+
+#: node_modules/react-components/containers/autoReply/utils.js:85
+msgctxt "Option"
+msgid "31st of the month"
+msgstr "31 du mois"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:80
+msgctxt "VPN speed"
+msgid "High"
+msgstr "Élevée"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:81
+msgctxt "VPN speed"
+msgid "Highest"
+msgstr "Très élevée"
+
+#: node_modules/react-components/containers/payments/CouponDiscountBadge.js:12
+msgctxt "Discount with coupon code"
+msgid "20% discount applied to your subscription"
+msgstr "Remise de 20% appliquée à votre abonnement"
+
+#: node_modules/react-components/containers/payments/CouponDiscountBadge.js:20
+msgctxt "Discount with coupon code"
+msgid "50% discount applied to your subscription"
+msgstr "Remise de 50% appliquée à votre abonnement"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:22
+msgctxt "Monetary unit"
+msgid "Euro"
+msgstr "Euro"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:23
+msgctxt "Monetary unit"
+msgid "Swiss franc"
+msgstr "Franc suisse"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:24
+msgctxt "Monetary unit"
+msgid "Dollar"
+msgstr "Dollar"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:33
 msgctxt "Title header for addresses domain table"
@@ -2011,30 +3488,20 @@ msgctxt "Title header for addresses domain table"
 msgid "Catch all"
 msgstr "Catch all"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:41
+#: node_modules/react-components/containers/domains/DomainModal.js:30
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "Domaine"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:47
+#: node_modules/react-components/containers/domains/DomainModal.js:36
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "Vérifier"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:53
+#: node_modules/react-components/containers/domains/DomainModal.js:42
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "Adresses"
-
-#: node_modules/react-components/containers/domains/AddressCatchAll.js:29
-msgctxt "Warning"
-msgid "This feature is only available for ProtonMail Professional plans or higher"
-msgstr "Cette fonctionnalité n’est disponible que pour les offres ProtonMail Professional ou supérieures"
-
-#: node_modules/react-components/containers/support/BugModal.js:86
-msgctxt "Warning"
-msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
-msgstr "Les rapports de bugs ne sont pas chiffrés de bout en bout, merci de ne pas envoyer d'informations sensibles."
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:29
 msgctxt "Info for domain modal"
@@ -2044,7 +3511,7 @@ msgstr "Veuillez ajouter des adresses pour envoyer et recevoir des emails avec c
 #: node_modules/react-components/containers/domains/VerifySection.js:10
 msgctxt "Info for domain modal"
 msgid "For security reasons, we need to verify that you are the owner of your domain. Please add the following code into your DNS record."
-msgstr "Pour des raisons de sécurité, nous devons vérifier que vous êtes bien le propriétaire de ce domaine. Veuillez ajouter le code suivant dans votre enregistrement DNS."
+msgstr "Pour des raisons de sécurité, nous devons vérifier que vous êtes bien le propriétaire de ce domaine. Veuillez ajouter le code suivant à votre enregistrement DNS."
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:38
 msgctxt "Header for domain modal"
@@ -2096,7 +3563,7 @@ msgstr "Vérifié"
 #: node_modules/react-components/containers/domains/VerifySection.js:14
 msgctxt "Warning for domain modal"
 msgid "Do not remove it even after successful verification."
-msgstr "Ne pas le supprimer même après validation de la vérification."
+msgstr "Ne pas le supprimer même après réussite de la vérification."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:16
 msgctxt "Warning for domain modal"
@@ -2106,7 +3573,7 @@ msgstr "Cela peut généralement être fait depuis le panneau de contrôle de vo
 #: node_modules/react-components/containers/domains/VerifySection.js:32
 msgctxt "Warning for domain modal"
 msgid "It can take up to a day for DNS changes to update."
-msgstr "Les changements de DNS peuvent prendre jusqu'à une journée avant d'être mis à jour."
+msgstr "Les changements DNS peuvent prendre jusqu'à une journée avant d'être mis à jour."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:19
 msgctxt "Label for domain modal"
@@ -2118,7 +3585,7 @@ msgctxt "Header for addresses table"
 msgid "Domain"
 msgstr "Domaine"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:90
+#: node_modules/react-components/containers/addresses/AddressesTable.js:21
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"
@@ -2129,16 +3596,21 @@ msgctxt "Header for addresses table"
 msgid "Addresses"
 msgstr "Adresses"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:91
+#: node_modules/react-components/containers/addresses/AddressesTable.js:22
 #: node_modules/react-components/containers/domains/DomainsTable.js:19
 msgctxt "Header for addresses table"
 msgid "Actions"
 msgstr "Actions"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:89
+#: node_modules/react-components/containers/addresses/AddressesTable.js:20
 msgctxt "Header for addresses table"
 msgid "Address"
 msgstr "Adresse"
+
+#: node_modules/react-components/containers/addresses/AddressesTable.js:26
+msgctxt "Header for addresses table"
+msgid "Username"
+msgstr "Nom d'utilisateur"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:11
 msgctxt "Badge for domain"
@@ -2155,12 +3627,12 @@ msgctxt "Badge for domain"
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:29
+#: node_modules/react-components/containers/domains/DomainsSection.js:30
 msgctxt "Message"
-msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
-msgstr "Ajoutez un filtre personnalisé afin d'exécuter des actions telles que l'application automatique de labels ou l’archivage des messages."
+msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
+msgstr "Ajoutez un nom de domaine pour recevoir des emails sur vos adresses personnalisées et ajouter plus d'utilisateurs à votre organisation (Comptes Visionary et Professional uniquement)."
 
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:16
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:17
 msgctxt "Message"
 msgid "Are you sure you want to clear all your logs?"
 msgstr "Êtes-vous sûr de vouloir effacer tous les journaux ?"
@@ -2170,18 +3642,18 @@ msgctxt "Success message"
 msgid "Domain deleted"
 msgstr "Domaine supprimé"
 
-#: node_modules/react-components/containers/members/MemberActions.js:31
+#: node_modules/react-components/containers/members/MemberActions.js:29
 msgctxt "Success message"
 msgid "User deleted"
 msgstr "Utilisateur supprimé"
 
-#: node_modules/react-components/containers/members/MemberActions.js:41
-#: node_modules/react-components/containers/members/MemberActions.js:47
+#: node_modules/react-components/containers/members/MemberActions.js:39
+#: node_modules/react-components/containers/members/MemberActions.js:45
 msgctxt "Success message"
 msgid "Role updated"
 msgstr "Rôle mis à jour"
 
-#: node_modules/react-components/containers/members/MemberActions.js:53
+#: node_modules/react-components/containers/members/MemberActions.js:51
 msgctxt "Success message"
 msgid "Status updated"
 msgstr "Statut mis à jour"
@@ -2191,38 +3663,20 @@ msgctxt "Label for adding a new custom domain"
 msgid "Add a domain that you own to your ProtonMail account."
 msgstr "Ajoutez un domaine que vous possédez à votre compte ProtonMail."
 
-#: node_modules/react-components/containers/domains/DomainSection.js:38
+#: node_modules/react-components/containers/domains/DomainSection.js:39
 msgctxt "Domain modal"
 msgid "'www' subdomains are typically not used for email. Are you sure you want to use this domain value?"
 msgstr "Les sous-domaines « www » ne sont généralement pas utilisés pour les emails. Êtes-vous sûr de vouloir utiliser cette valeur de domaine ?"
 
-#: node_modules/react-components/containers/products/ProtonMailClients.js:28
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:28
-msgctxt "Title for downloads section"
-msgid "Name"
-msgstr "Nom"
-
-#: node_modules/react-components/containers/products/ProtonMailClients.js:29
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:29
-msgctxt "Title for downloads section"
-msgid "Platform"
-msgstr "Plateforme"
-
-#: node_modules/react-components/containers/products/ProtonMailClients.js:30
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:30
-msgctxt "Title for downloads section"
-msgid "Action"
-msgstr "Action"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:43
 msgctxt "Info message for custom invoice modal"
 msgid "Add your name (or company name) and address to your invoices."
-msgstr "Ajoutez votre nom (ou le nom de votre entreprise) ainsi que votre adresse aux factures."
+msgstr "Ajoutez votre nom (ou le nom de votre entreprise) ainsi que votre adresse à vos factures."
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:49
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:53
 msgctxt "Placeholder for custom invoice text"
 msgid "Add your name (or company name) and address to your invoices"
-msgstr "Ajoutez votre nom (ou le nom de votre entreprise) ainsi que votre adresse aux factures"
+msgstr "Ajoutez votre nom (ou le nom de votre entreprise) ainsi que votre adresse à vos factures"
 
 #: node_modules/react-components/containers/invoices/InvoiceActions.js:13
 msgctxt "Title for PDF file"
@@ -2277,7 +3731,7 @@ msgstr "Don"
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:23
 msgctxt "Tooltip sign external messages"
 msgid "Automatically sign all your outgoing messages so users can verify the authenticity of your messages. This is done in combination with the Default PGP Scheme that is selected down below."
-msgstr "Signer automatiquement tous vos messages sortants permet aux utilisateurs de vérifier l'authenticité de vos messages. Cela se fait en combinaison avec le schéma PGP par défaut qui est sélectionné ci-dessous."
+msgstr "Signer automatiquement tous vos messages sortants permet aux utilisateurs de vérifier l'authenticité de vos messages. Cela se fait en combinaison avec le protocole PGP qui est sélectionné ci-dessous."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:36
 msgctxt "Tooltip automatically attach public key"
@@ -2287,75 +3741,80 @@ msgstr "Ceci ajoute automatiquement votre clé publique à chaque message que vo
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:53
 msgctxt "Tooltip default pgp scheme"
 msgid "Select the default PGP scheme to be used when signing or encrypting to an user. Note that PGP/Inline forces plain text messages. Click for more info."
-msgstr "Sélectionnez le schéma PGP par défaut à utiliser lors de la signature ou du chiffrement à un autre utilisateur. Notez que PGP/Inline force le format des messages en texte brut. Cliquez ici pour plus d’informations."
+msgstr "Sélectionnez le protocole PGP par défaut à utiliser lors de la signature ou du chiffrement à un autre utilisateur. Notez que PGP/Inline force le format des messages en texte brut. Cliquez ici pour plus d’informations."
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:43
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:54
 msgctxt "Tooltip prompt to trust keys"
 msgid "When receiving an internal message from a sender that has no trusted keys in your contacts, show a banner asking if you want to enable trusted keys."
-msgstr "Lorsque vous recevez un message interne d'un expéditeur qui n'a pas de clés de confiance dans vos contacts, afficher une bannière vous demandant si vous souhaitez activer les clés de confiance."
+msgstr "Lorsque vous recevez un message interne d'un expéditeur qui n'a pas de clés de confiance dans vos contacts, affiche une bannière vous demandant si vous souhaitez activer les clés de confiance."
 
-#: node_modules/react-components/containers/addresses/AddressStatus.js:20
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:39
-msgctxt "Badge"
-msgid "Disabled"
-msgstr "Désactivé"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:49
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:45
 msgctxt "Badge"
 msgid "Enabled"
 msgstr "Activé"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:27
+#: node_modules/react-components/containers/addresses/AddressStatus.js:20
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:47
 msgctxt "Badge"
-msgid "ProtonMail for web"
-msgstr "ProtonMail via le web"
+msgid "Disabled"
+msgstr "Désactivé"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:28
+msgctxt "Badge"
+msgid "ProtonMail for web"
+msgstr "ProtonMail via web"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:29
+msgctxt "Badge"
+msgid "ProtonMail settings for web"
+msgstr "Paramètres ProtonMail via web"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:30
 msgctxt "Badge"
 msgid "ProtonMail for iOS"
 msgstr "ProtonMail pour iOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:29
+#: node_modules/react-components/containers/sessions/SessionsSection.js:31
 msgctxt "Badge"
 msgid "ProtonMail for Android"
 msgstr "ProtonMail pour Android"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:30
+#: node_modules/react-components/containers/sessions/SessionsSection.js:32
 msgctxt "Badge"
-msgid "ProtonMail Import-Export"
-msgstr "ProtonMail Import-Export"
+msgid "ProtonMail import-export"
+msgstr "ProtonMail import-export"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:31
+#: node_modules/react-components/containers/sessions/SessionsSection.js:33
 msgctxt "Badge"
 msgid "ProtonMail Bridge"
 msgstr "ProtonMail Bridge"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:32
+#: node_modules/react-components/containers/sessions/SessionsSection.js:34
 msgctxt "Badge"
 msgid "ProtonVPN for web"
-msgstr "ProtonVPN via le web"
+msgstr "ProtonVPN via web"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:33
+#: node_modules/react-components/containers/sessions/SessionsSection.js:35
 msgctxt "Badge"
 msgid "ProtonVPN for Windows"
 msgstr "ProtonVPN pour Windows"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:34
+#: node_modules/react-components/containers/sessions/SessionsSection.js:36
 msgctxt "Badge"
 msgid "ProtonVPN for macOS"
 msgstr "ProtonVPN pour macOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:35
+#: node_modules/react-components/containers/sessions/SessionsSection.js:37
 msgctxt "Badge"
 msgid "ProtonVPN for iOS"
 msgstr "ProtonVPN pour iOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:36
+#: node_modules/react-components/containers/sessions/SessionsSection.js:38
 msgctxt "Badge"
 msgid "ProtonVPN for Android"
 msgstr "ProtonVPN pour Android"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:37
+#: node_modules/react-components/containers/sessions/SessionsSection.js:39
 msgctxt "Badge"
 msgid "Admin"
 msgstr "Admin"
@@ -2380,17 +3839,17 @@ msgctxt "Badge"
 msgid "Missing keys"
 msgstr "Clés manquantes"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:36
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:40
 msgctxt "Info for payment methods"
 msgid "Lorem ipsum"
 msgstr "Lorem ipsum"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:84
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:63
 msgctxt "Confirmation title"
 msgid "Delete payment method"
 msgstr "Supprimer le mode de paiement"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:86
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:64
 msgctxt "Confirmation message to delete payment method"
 msgid "Are you sure you want to delete this payment method?"
 msgstr "Êtes-vous sûr de vouloir supprimer ce mode de paiement ?"
@@ -2405,10 +3864,20 @@ msgctxt "Label on payment method"
 msgid "Default"
 msgstr "Défaut"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:24
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:22
 msgctxt "Payment method option"
-msgid "Add new credit card"
-msgstr "Ajouter une nouvelle carte de crédit"
+msgid "Pay with credit card"
+msgstr "Payer par carte de crédit"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:41
+msgctxt "Payment method option"
+msgid "Pay with PayPal"
+msgstr "Payer avec PayPal"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:48
+msgctxt "Payment method option"
+msgid "Pay with Bitcoin"
+msgstr "Payer avec Bitcoin"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:38
 msgctxt "Title for payment methods table"
@@ -2440,37 +3909,37 @@ msgctxt "Action for user session"
 msgid "Revoke"
 msgstr "Révoquer"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:27
+#: node_modules/react-components/containers/logs/LogsSection.js:29
 msgctxt "Log event"
 msgid "Login password failure"
 msgstr "Échec de connexion"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:28
+#: node_modules/react-components/containers/logs/LogsSection.js:30
 msgctxt "Log event"
 msgid "Login success"
 msgstr "Connexion réussie"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:29
+#: node_modules/react-components/containers/logs/LogsSection.js:31
 msgctxt "Log event"
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:30
+#: node_modules/react-components/containers/logs/LogsSection.js:32
 msgctxt "Log event"
 msgid "2FA login failure"
-msgstr "Échec de connexion 2FA"
+msgstr "Échec de connexion (authentification en deux étapes)"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:97
+#: node_modules/react-components/containers/logs/LogsSection.js:114
 msgctxt "Log preference"
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:98
+#: node_modules/react-components/containers/logs/LogsSection.js:115
 msgctxt "Log preference"
 msgid "Basic"
 msgstr "Simple"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:104
+#: node_modules/react-components/containers/logs/LogsSection.js:121
 msgctxt "Log preference"
 msgid "Advanced"
 msgstr "Avancé"
@@ -2496,122 +3965,22 @@ msgctxt "Logs status"
 msgid "Login failure (2FA)"
 msgstr "Échec de connexion (authentification en deux étapes)"
 
-#: node_modules/react-components/containers/logs/LogsTable.js:40
-msgctxt "Header"
-msgid "Event"
-msgstr "Événement"
-
-#: node_modules/react-components/containers/logs/LogsTable.js:40
-msgctxt "Header"
-msgid "Time"
-msgstr "Date"
-
-#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:8
-msgctxt "Option"
-msgid "Left to Right"
-msgstr "De gauche à droite"
-
-#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:9
-msgctxt "Option"
-msgid "Right to Left"
-msgstr "De droite à gauche"
-
-#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:8
-msgctxt "Option"
-msgid "Normal"
-msgstr "Normal"
-
-#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:9
-msgctxt "Option"
-msgid "Plain Text"
-msgstr "Texte brut"
-
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Include Moved"
-msgstr "Inclure les messages déplacés"
-
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Hide Moved"
-msgstr "Cacher les message déplacés"
-
-#: node_modules/react-components/containers/support/BugModal.js:45
-msgctxt "Option"
-msgid "Select"
-msgstr "Sélectionner"
-
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:21
-msgctxt "Option"
-msgid "All users"
-msgstr "Tous les utilisateurs"
-
 #: node_modules/react-components/containers/layouts/ViewModeRadios.js:18
 msgctxt "Label to change view mode"
 msgid "Conversation group"
 msgstr "Regroupement de conversation"
 
-#: node_modules/react-components/containers/layouts/ViewModeRadios.js:28
+#: node_modules/react-components/containers/layouts/ViewModeRadios.js:30
 msgctxt "Label to change view mode"
 msgid "Single messages"
 msgstr "Messages séparés"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:80
-msgctxt "Tooltip"
-msgid "This sets the default composer size. Two sizes are available, a smaller popup composer, and a bigger full screen composer."
-msgstr "Définit la taille par défaut de votre composeur. Deux tailles sont disponibles, un petit pop-up, et un composeur plus grand en plein écran."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
-msgctxt "Tooltip"
-msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
-msgstr "ProtonMail prend en charge le format en lignes et en colonnes pour la boîte de réception. En utilisant ce paramètre, il est possible de basculer d'une mise en page à l'autre."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
-msgctxt "Tooltip"
-msgid "Conversation Grouping automatically groups messages in the same conversation together."
-msgstr "Le regroupement de conversation rassemble automatiquement les messages dans une même conversation."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
-msgctxt "Tooltip"
-msgid "Setting to 'Include Moved' means that sent / drafts messages that have been moved to other folders will continue to appear in the Sent/Drafts folder."
-msgstr "Le paramètre « Inclure les messages déplacés » signifie que vos messages envoyés / brouillons déplacés dans d'autres dossiers continueront d'apparaître dans les dossiers Envoyés / Brouillons."
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:28
-msgctxt "Tooltip"
-msgid "ProtonMail users will use this key by default for sending"
-msgstr "Les utilisateurs ProtonMail utiliseront cette clé par défaut pour l’envoi"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:34
-msgctxt "Tooltip"
-msgid "You have locally decrypted this key"
-msgstr "Vous avez déchiffré localement cette clé"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:40
-msgctxt "Tooltip"
-msgid "This key is encrypted with an old password"
-msgstr "Cette clé est chiffrée avec un ancien mot de passe"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:46
-msgctxt "Tooltip"
-msgid "This key cannot be used for encryption"
-msgstr "Cette clé ne peut pas être utilisée pour le chiffrement"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:52
-msgctxt "Tooltip"
-msgid "This address has been disabled"
-msgstr "Cette adresse a été désactivée"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:58
-msgctxt "Tooltip"
-msgid "Signatures produced by this key are treated as invalid and this key cannot be used for encryption"
-msgstr "Les signatures produites par cette clé sont considérées comme non valides et cette clé ne peut pas être utilisée pour le chiffrement"
 
 #: node_modules/react-components/containers/layouts/ComposerModeRadios.js:18
 msgctxt "Label to change composer mode"
 msgid "Popup"
 msgstr "Pop-up"
 
-#: node_modules/react-components/containers/layouts/ComposerModeRadios.js:28
+#: node_modules/react-components/containers/layouts/ComposerModeRadios.js:30
 msgctxt "Label to change composer mode"
 msgid "Maximized"
 msgstr "Maximisé"
@@ -2621,7 +3990,7 @@ msgctxt "Label to change view layout"
 msgid "Column"
 msgstr "Colonne"
 
-#: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:28
+#: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:30
 msgctxt "Label to change view layout"
 msgid "Row"
 msgstr "Ligne"
@@ -2631,47 +4000,47 @@ msgctxt "Error notification in the bug report modal when the user upload file"
 msgid "No image selected"
 msgstr "Aucune image sélectionnée"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:34
+#: node_modules/react-components/containers/addresses/AddressActions.js:53
 msgctxt "Success notification"
 msgid "Address deleted"
 msgstr "Adresse supprimée"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:40
+#: node_modules/react-components/containers/addresses/AddressActions.js:59
 msgctxt "Success notification"
 msgid "Address enabled"
 msgstr "Adresse activée"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:46
+#: node_modules/react-components/containers/addresses/AddressActions.js:77
 msgctxt "Success notification"
 msgid "Address disabled"
 msgstr "Adresse désactivée"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:52
+#: node_modules/react-components/containers/addresses/AddressActions.js:83
 msgctxt "Success notification"
 msgid "Keys generated"
 msgstr "Clés générées"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:57
+#: node_modules/react-components/containers/addresses/AddressActions.js:88
 msgctxt "Address action"
 msgid "Edit"
 msgstr "Modifier"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:65
+#: node_modules/react-components/containers/addresses/AddressActions.js:92
 msgctxt "Address action"
 msgid "Enable"
 msgstr "Activer"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:73
+#: node_modules/react-components/containers/addresses/AddressActions.js:96
 msgctxt "Address action"
 msgid "Disable"
 msgstr "Désactiver"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:81
+#: node_modules/react-components/containers/addresses/AddressActions.js:100
 msgctxt "Address action"
-msgid "Generate missing keus"
+msgid "Generate missing keys"
 msgstr "Générer les clés manquantes"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:89
+#: node_modules/react-components/containers/addresses/AddressActions.js:104
 msgctxt "Address action"
 msgid "Delete"
 msgstr "Supprimer"
@@ -2793,62 +4162,62 @@ msgctxt "Info for members section"
 msgid "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 msgstr "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 
-#: node_modules/react-components/containers/members/MembersSection.js:68
+#: node_modules/react-components/containers/members/MembersSection.js:70
 msgctxt "Title header for members table"
 msgid "Name"
 msgstr "Nom"
 
-#: node_modules/react-components/containers/members/MembersSection.js:70
+#: node_modules/react-components/containers/members/MembersSection.js:72
 msgctxt "Title header for members table"
 msgid "Role"
 msgstr "Rôle"
 
-#: node_modules/react-components/containers/members/MembersSection.js:74
+#: node_modules/react-components/containers/members/MembersSection.js:76
 msgctxt "Title header for members table"
 msgid "Private"
 msgstr "Privé"
 
-#: node_modules/react-components/containers/members/MembersSection.js:77
+#: node_modules/react-components/containers/members/MembersSection.js:79
 msgctxt "Title header for members table"
 msgid "Addresses"
 msgstr "Adresses"
 
-#: node_modules/react-components/containers/members/MembersSection.js:78
+#: node_modules/react-components/containers/members/MembersSection.js:80
 msgctxt "Title header for members table"
 msgid "Features"
 msgstr "Fonctionnalités"
 
-#: node_modules/react-components/containers/members/MembersSection.js:79
+#: node_modules/react-components/containers/members/MembersSection.js:81
 msgctxt "Title header for members table"
 msgid "Actions"
 msgstr "Actions"
 
-#: node_modules/react-components/containers/members/MemberModal.js:63
+#: node_modules/react-components/containers/members/MemberModal.js:75
 msgctxt "Label for new member"
 msgid "Private"
 msgstr "Privé"
 
-#: node_modules/react-components/containers/members/MemberActions.js:60
+#: node_modules/react-components/containers/members/MemberActions.js:81
 msgctxt "Member action"
 msgid "Edit"
 msgstr "Modifier"
 
-#: node_modules/react-components/containers/members/MemberActions.js:68
+#: node_modules/react-components/containers/members/MemberActions.js:85
 msgctxt "Member action"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: node_modules/react-components/containers/members/MemberActions.js:76
+#: node_modules/react-components/containers/members/MemberActions.js:89
 msgctxt "Member action"
 msgid "Make admin"
 msgstr "Rendre Admin"
 
-#: node_modules/react-components/containers/members/MemberActions.js:84
+#: node_modules/react-components/containers/members/MemberActions.js:93
 msgctxt "Member action"
 msgid "Revoke admin"
 msgstr "Révoquer Admin"
 
-#: node_modules/react-components/containers/members/MemberActions.js:93
+#: node_modules/react-components/containers/members/MemberActions.js:97
 msgctxt "Member action"
 msgid "Login"
 msgstr "Connexion"
@@ -2878,10 +4247,105 @@ msgctxt "Label for news"
 msgid "Proton Beta (10-12 per year)"
 msgstr "Proton Bêta (environ 10 à 12 fois par an)"
 
-#: node_modules/react-components/containers/login/LoginContainer.js:50
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:30
+msgctxt "Duration"
+msgid "Every ${ weekdays } @ ${ hours }"
+msgstr "Tous les ${ weekdays } à ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:31
+msgctxt "Duration"
+msgid "Every day @ ${ hours }"
+msgstr "Tous les jours à ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:37
+msgctxt "Duration"
+msgid "Every ${ dayOfWeek } @ ${ hours }"
+msgstr "Tous les ${ dayOfWeek } à ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:42
+msgctxt "Duration"
+msgid "Every ${ dayOfMonth } @ ${ hours }"
+msgstr "Tous les ${ dayOfMonth } à ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:44
+msgctxt "Duration"
+msgid "n/a"
+msgstr "n/a"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:57
+msgctxt "Role"
+msgid "Member"
+msgstr "Membre"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:58
+msgctxt "Role"
+msgid "Administrator"
+msgstr "Administrateur"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Active"
+msgstr "Actif"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Not set"
+msgstr "Non configuré"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Status"
+msgid "Enabled"
+msgstr "Activé"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Status"
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: node_modules/react-components/containers/overview/LinkItem.js:12
+msgctxt "Tag"
+msgid "Premium feature"
+msgstr "Fonctionnalité premium"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:27
+msgctxt "Title for downloads section"
+msgid "Platform"
+msgstr "Plateforme"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:28
+msgctxt "Title for downloads section"
+msgid "Name"
+msgstr "Nom"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:29
+msgctxt "Title for downloads section"
+msgid "Action"
+msgstr "Action"
+
+#: node_modules/react-components/containers/login/LoginContainer.js:53
 msgctxt "Login"
 msgid "User login"
 msgstr "Connexion"
+
+#: node_modules/proton-shared/lib/constants.js:198
+msgctxt "Theme"
+msgid "Dark (Default)"
+msgstr "Sombre (par défaut)"
+
+#: node_modules/proton-shared/lib/constants.js:202
+msgctxt "Theme"
+msgid "Light"
+msgstr "Clair"
+
+#: node_modules/proton-shared/lib/constants.js:206
+msgctxt "Theme"
+msgid "Blue"
+msgstr "Bleu"
+
+#: node_modules/proton-shared/lib/constants.js:210
+msgctxt "Theme"
+msgid "Custom theme"
+msgstr "Thème personnalisé"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"

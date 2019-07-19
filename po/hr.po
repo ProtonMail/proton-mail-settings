@@ -10,18 +10,63 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Croatian\n"
 "Language: hr_HR\n"
-"PO-Revision-Date: 2019-05-10 10:23\n"
+"PO-Revision-Date: 2019-06-11 08:02\n"
 
-#: src/app/components/layout/AuthHeader.js:30
-#: src/app/components/layout/AuthHeader.js:34
+#: node_modules/react-components/containers/payments/subscription/helpers.js:12
+msgid "1 address"
+msgid_plural "${ value } addresses"
+msgstr[0] "1 adresa"
+msgstr[1] "${ value } adrese"
+msgstr[2] "${ value } adresa"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:15
+msgid "1 GB storage"
+msgid_plural "${ value } GB storage"
+msgstr[0] "1 GB prostora za pohranu"
+msgstr[1] "${ value } GB prostora za pohranu"
+msgstr[2] "${ value } GB prostora za pohranu"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:18
+msgid "1 custom domain"
+msgid_plural "${ value } custom domains"
+msgstr[0] "1 prilagođena domena"
+msgstr[1] "${ value } prilagođene domene"
+msgstr[2] "${ value } prilagođene domene"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:21
+msgid "1 user"
+msgid_plural "${ value } users"
+msgstr[0] "1 korisnik"
+msgstr[1] "${ value } korisnika"
+msgstr[2] "${ value } korisnika"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:24
+msgid "1 VPN connection"
+msgid_plural "${ value } VPN connections"
+msgstr[0] "1 VPN veza"
+msgstr[1] "${ value } VPN veze"
+msgstr[2] "${ value } VPN veze"
+
+#: src/app/components/layout/AuthHeader.js:31
+#: src/app/components/layout/AuthHeader.js:35
 msgctxt "Placeholder"
 msgid "Search"
 msgstr "Pretraga"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:55
+#: node_modules/react-components/containers/organization/OrganizationSection.js:46
 msgctxt "Placeholder"
 msgid "Choose a name"
 msgstr "Odaberite naziv"
+
+#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+msgctxt "Placeholder"
+msgid "Other"
+msgstr "Ostalo"
+
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:14
+msgctxt "Placeholder"
+msgid "Coupon"
+msgstr "Kupon"
 
 #: node_modules/react-components/containers/payments/Card.js:28
 msgctxt "Placeholder"
@@ -43,90 +88,90 @@ msgctxt "Placeholder"
 msgid "ZIP/Postal code"
 msgstr "Poštanski broj"
 
-#: node_modules/react-components/containers/domains/DomainSection.js:30
+#: node_modules/react-components/containers/domains/DomainSection.js:31
 msgctxt "Placeholder"
 msgid "yourdomain.com"
 msgstr "vasadomena.hr"
 
-#: node_modules/react-components/containers/support/BugModal.js:96
+#: node_modules/react-components/containers/support/BugModal.js:101
 msgctxt "Placeholder"
 msgid "Proton username"
 msgstr "Proton korisničko ime"
 
-#: node_modules/react-components/containers/support/BugModal.js:108
+#: node_modules/react-components/containers/support/BugModal.js:113
 msgctxt "Placeholder"
 msgid "Please make sure to give us a way to contact you"
 msgstr "Molimo vas da nam pružite način da vas kontaktiramo"
 
-#: node_modules/react-components/containers/support/BugModal.js:132
+#: node_modules/react-components/containers/support/BugModal.js:137
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
 msgstr "Molimo opišite problem i pridružite sve poruke o pogreškama"
 
-#: node_modules/react-components/containers/support/BugModal.js:161
+#: node_modules/react-components/containers/support/BugModal.js:166
 msgctxt "Placeholder"
 msgid "OS name"
 msgstr "Naziv OS-a"
 
-#: node_modules/react-components/containers/support/BugModal.js:172
+#: node_modules/react-components/containers/support/BugModal.js:177
 msgctxt "Placeholder"
 msgid "OS version"
 msgstr "Verzija OS-a"
 
-#: node_modules/react-components/containers/support/BugModal.js:183
+#: node_modules/react-components/containers/support/BugModal.js:188
 msgctxt "Placeholder"
 msgid "Browser name"
 msgstr "Naziv preglednika"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:199
 msgctxt "Placeholder"
 msgid "Browser version"
 msgstr "Verzija preglednika"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:67
+#: node_modules/react-components/containers/addresses/AddressModal.js:70
 msgctxt "Placeholder"
 msgid "Choose address"
 msgstr "Odaberite adresu"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:83
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:46
+#: node_modules/react-components/containers/addresses/AddressModal.js:86
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:60
 msgctxt "Placeholder"
 msgid "Choose display name"
 msgstr "Odaberite zaslonsko ime"
 
-#: node_modules/react-components/containers/members/MembersSection.js:60
+#: node_modules/react-components/containers/members/MembersSection.js:61
 msgctxt "Placeholder"
 msgid "Search for User and Addresses"
 msgstr "Pretraga korisnika i adresa"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:134
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:137
 #: node_modules/react-components/containers/login/LoginForm.js:48
-#: node_modules/react-components/containers/members/MemberModal.js:79
+#: node_modules/react-components/containers/members/MemberModal.js:91
 msgctxt "Placeholder"
 msgid "Password"
 msgstr "Lozinka"
 
-#: node_modules/react-components/containers/members/MemberModal.js:86
+#: node_modules/react-components/containers/members/MemberModal.js:98
 msgctxt "Placeholder"
-msgid "Confirm Password"
+msgid "Confirm password"
 msgstr "Potvrdi lozinku"
 
-#: node_modules/react-components/containers/members/MemberModal.js:94
+#: node_modules/react-components/containers/members/MemberModal.js:106
 msgctxt "Placeholder"
 msgid "Address"
 msgstr "Adresa"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:106
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:109
 msgctxt "Placeholder"
 msgid "Feedback"
 msgstr "Povratne informacije"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:120
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:123
 msgctxt "Placeholder"
 msgid "Email address"
 msgstr "Adresa e-pošte"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:149
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:152
 msgctxt "Placeholder"
 msgid "Two-factor passcode"
 msgstr "Šifra za provjeru autentičnosti u dva koraka"
@@ -166,90 +211,151 @@ msgctxt "Action"
 msgid "Add Label"
 msgstr "Dodaj oznaku"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:70
-#: node_modules/react-components/containers/addresses/IdentitySection.js:77
+#: node_modules/react-components/containers/addresses/IdentitySection.js:86
+#: node_modules/react-components/containers/addresses/IdentitySection.js:96
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:63
 #: node_modules/react-components/containers/domains/DomainActions.js:32
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:51
-#: node_modules/react-components/containers/organization/OrganizationSection.js:49
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
+#: node_modules/react-components/containers/notification/RecoveryEmail.js:16
+#: node_modules/react-components/containers/organization/OrganizationSection.js:60
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:52
 #: src/app/components/Labels/EditLabelButton.js:32
 msgctxt "Action"
 msgid "Edit"
 msgstr "Uredi"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:156
-#: node_modules/react-components/containers/domains/DomainActions.js:42
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:71
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:89
+#: node_modules/react-components/containers/domains/DomainActions.js:40
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:60
 #: src/app/components/Labels/DeleteLabelButton.js:51
 msgctxt "Action"
 msgid "Delete"
 msgstr "Izbriši"
 
-#: node_modules/react-components/components/dropdown/DropdownActions.js:31
-msgctxt "Action"
-msgid "More"
-msgstr "Više"
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:14
-#: node_modules/react-components/containers/domains/CatchAllModal.js:14
-#: node_modules/react-components/containers/domains/DomainModal.js:114
-#: node_modules/react-components/containers/general/ShortcutsModal.js:212
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:55
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:67
-#: node_modules/react-components/containers/payments/EditCardModal.js:42
-msgctxt "Action"
-msgid "Close"
-msgstr "Zatvori"
-
-#: node_modules/react-components/components/modal/Header.js:11
-msgctxt "Action"
-msgid "Close modal"
-msgstr "Zatvori skočni prozor"
-
-#: node_modules/react-components/components/modal/Confirm.js:39
-#: node_modules/react-components/components/modal/Input.js:81
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
-#: node_modules/react-components/containers/addresses/AddressModal.js:95
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
-#: node_modules/react-components/containers/members/EditMemberModal.js:80
-#: node_modules/react-components/containers/members/MemberModal.js:117
-#: node_modules/react-components/containers/payments/DonateModal.js:56
-#: node_modules/react-components/containers/support/BugModal.js:202
+#: node_modules/react-components/components/modal/Confirm.js:36
+#: node_modules/react-components/components/modal/FormModal.js:18
+#: node_modules/react-components/components/modal/Input.js:80
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:88
+#: node_modules/react-components/containers/addresses/AddressModal.js:50
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:45
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:30
+#: node_modules/react-components/containers/members/EditMemberModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:59
+#: node_modules/react-components/containers/payments/CreditsModal.js:48
+#: node_modules/react-components/containers/payments/DonateModal.js:34
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:201
+#: node_modules/react-components/containers/support/BugModal.js:86
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
 msgctxt "Action"
 msgid "Cancel"
 msgstr "Poništi"
 
-#: node_modules/react-components/components/modal/Confirm.js:40
-#: node_modules/react-components/components/modal/Confirm.js:41
-msgctxt "Action"
-msgid "Confirm"
-msgstr "Potvrdi"
-
-#: node_modules/react-components/components/modal/Input.js:82
-#: node_modules/react-components/containers/support/BugModal.js:203
+#: node_modules/react-components/components/modal/FormModal.js:19
+#: node_modules/react-components/components/modal/Input.js:81
+#: node_modules/react-components/containers/support/BugModal.js:85
 msgctxt "Action"
 msgid "Submit"
 msgstr "Pošalji"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:31
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
+#: node_modules/react-components/containers/domains/CatchAllModal.js:13
+#: node_modules/react-components/containers/domains/DomainModal.js:97
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:28
+#: node_modules/react-components/containers/payments/EditCardModal.js:36
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
+msgctxt "Action"
+msgid "Close"
+msgstr "Zatvori"
+
+#: node_modules/react-components/components/modal/Header.js:9
+msgctxt "Action"
+msgid "Close modal"
+msgstr "Zatvori skočni prozor"
+
+#: node_modules/react-components/components/modal/Confirm.js:37
+#: node_modules/react-components/components/modal/Confirm.js:38
+msgctxt "Action"
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: node_modules/react-components/containers/payments/Bitcoin.js:29
 msgctxt "Action"
 msgid "Try again"
 msgstr "Pokušaj ponovno"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:96
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:60
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:56
-#: node_modules/react-components/containers/members/EditMemberModal.js:81
-#: node_modules/react-components/containers/members/MemberModal.js:118
-#: node_modules/react-components/containers/payments/EditCardModal.js:43
+#: node_modules/react-components/containers/addresses/AddressModal.js:49
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:46
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/members/EditMemberModal.js:56
+#: node_modules/react-components/containers/members/MemberModal.js:60
+#: node_modules/react-components/containers/payments/EditCardModal.js:37
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:16
 msgctxt "Action"
 msgid "Save"
 msgstr "Spremi"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:58
+#: node_modules/react-components/containers/payments/DonateModal.js:36
 msgctxt "Action"
 msgid "Donate"
 msgstr "Donirajte"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:142
+msgctxt "Action"
+msgid "Hide plans"
+msgstr "Sakrij planove"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:142
+msgctxt "Action"
+msgid "Show plans"
+msgstr "Prikaži planove"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:381
+#: node_modules/react-components/containers/payments/PlansSection.js:389
+#: node_modules/react-components/containers/payments/PlansSection.js:397
+msgctxt "Action"
+msgid "Edit VPN"
+msgstr "Uredi VPN"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:381
+#: node_modules/react-components/containers/payments/PlansSection.js:389
+#: node_modules/react-components/containers/payments/PlansSection.js:397
+msgctxt "Action"
+msgid "Add VPN"
+msgstr "Dodaj VPN"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:406
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:181
+msgctxt "Action"
+msgid "Hide additional features"
+msgstr "Sakrij dodatne značajke"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:407
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:181
+msgctxt "Action"
+msgid "Compare all features"
+msgstr "Usporedi sve značajke"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:411
+#: node_modules/react-components/containers/payments/PlansSection.js:418
+#: node_modules/react-components/containers/payments/PlansSection.js:424
+#: node_modules/react-components/containers/payments/PlansSection.js:430
+msgctxt "Action"
+msgid "Select"
+msgstr "Odaberi"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:62
+#: node_modules/react-components/containers/payments/BillingSection.js:243
+msgctxt "Action"
+msgid "Use gift code"
+msgstr "Koristite darovni kôd"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:63
+#: node_modules/react-components/containers/payments/BillingSection.js:251
+msgctxt "Action"
+msgid "Add credits"
+msgstr "Dodaj kredit"
 
 #: node_modules/react-components/containers/payments/PayPal.js:59
 msgctxt "Action"
@@ -258,32 +364,87 @@ msgstr "Kliknite ovdje za ponovni pokušaj"
 
 #: node_modules/react-components/containers/payments/PayPal.js:68
 msgctxt "Action"
-msgid "Pay with PayPal"
-msgstr "Plati PayPal-om"
+msgid "Check out with PayPal"
+msgstr "Naplati s PayPalom"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:116
+#: node_modules/react-components/containers/overview/PromoteSection.js:57
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:17
+#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:17
+msgctxt "Action"
+msgid "Apply"
+msgstr "Primijeni"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:207
+msgctxt "Action"
+msgid "Previous"
+msgstr "Prethodno"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:98
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:227
 msgctxt "Action"
 msgid "Next"
 msgstr "Sljedeće"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:116
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:115
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:239
 msgctxt "Action"
-msgid "Finish"
-msgstr "Završi"
+msgid "Remove coupon"
+msgstr "Ukloni kupon"
 
-#: node_modules/react-components/containers/addresses/AddAddressButton.js:12
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:140
+msgctxt "Action"
+msgid "Add coupon"
+msgstr "Dodaj kupon"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:16
+msgctxt "Action"
+msgid "Switch now"
+msgstr "Prebaci sada"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:74
+msgctxt "Action"
+msgid "Add gift code"
+msgstr "Dodaj darovni kôd"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:110
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:185
+msgctxt "Action"
+msgid "Manage"
+msgstr "Upravljanje"
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
+#: node_modules/react-components/containers/overview/PromoteSection.js:50
+#: node_modules/react-components/containers/overview/PromoteSection.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:110
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:185
+msgctxt "Action"
+msgid "Upgrade"
+msgstr "Nadogradnja"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:223
+msgctxt "Action"
+msgid "Pay yearly"
+msgstr "Plaćajte godišnje"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:50
+msgctxt "Action"
+msgid "Top up"
+msgstr "Nadopuni"
+
+#: node_modules/react-components/containers/addresses/AddAddressButton.js:13
 #: node_modules/react-components/containers/domains/AddressesSection.js:32
 msgctxt "Action"
 msgid "Add address"
 msgstr "Dodaj adresu"
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:33
-#: node_modules/react-components/containers/members/AddMemberButton.js:74
+#: node_modules/react-components/containers/members/AddMemberButton.js:78
 msgctxt "Action"
 msgid "Add user"
 msgstr "Dodaj korisnika"
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:33
+#: node_modules/react-components/containers/domains/DomainsSection.js:34
 msgctxt "Action"
 msgid "Add domain"
 msgstr "Dodaj domenu"
@@ -293,94 +454,105 @@ msgctxt "Action"
 msgid "Refresh status"
 msgstr "Osvježi status"
 
-#: node_modules/react-components/containers/domains/DomainActions.js:37
+#: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
-msgid "Catch all"
-msgstr "Dohvati-sve"
+msgid "Set catch-all"
+msgstr "Postavi Dohvati-sve"
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
-#: node_modules/react-components/containers/logs/LogsSection.js:110
-#: node_modules/react-components/containers/products/ProtonMailClients.js:39
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:39
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:25
+msgctxt "Action"
+msgid "View"
+msgstr "Pregled"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:38
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:34
+#: node_modules/react-components/containers/logs/LogsSection.js:127
 msgctxt "Action"
 msgid "Download"
 msgstr "Preuzmi"
 
 #: node_modules/react-components/containers/invoices/InvoiceActions.js:41
-msgctxt "Action"
-msgid "View"
-msgstr "Pregled"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:52
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:69
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:29
 msgctxt "Action"
 msgid "Pay"
 msgstr "Plati"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:73
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:74
 msgctxt "Action"
 msgid "User"
 msgstr "Korisnik"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:79
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:80
 msgctxt "Action"
 msgid "Organization"
 msgstr "Organizacija"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:81
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:82
 msgctxt "Action"
 msgid "Customize"
 msgstr "Prilagodi"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:47
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:37
 msgctxt "Action"
 msgid "Yes"
 msgstr "Da"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:48
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:38
 msgctxt "Action"
 msgid "No"
 msgstr "Ne"
 
-#: node_modules/react-components/containers/general/ShortcutsSection.js:26
+#: node_modules/react-components/containers/general/ShortcutsSection.js:30
 msgctxt "Action"
 msgid "View keyboard shortcuts"
 msgstr "Pregledajte tipkovne prečace"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:41
-msgctxt "Action"
-msgid "Enable desktop notification"
-msgstr "Omogući obavijesti radne površine"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:51
 msgctxt "Action"
 msgid "Send test notification"
 msgstr "Pošaljite probnu obavijest"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:38
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:53
+msgctxt "Action"
+msgid "Enable desktop notification"
+msgstr "Omogući obavijesti radne površine"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:42
 msgctxt "Action"
 msgid "Add payment method"
 msgstr "Dodaj način plaćanja"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:64
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
 msgctxt "Action"
 msgid "Mark as default"
 msgstr "Postavi kao zadano"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:70
+#: node_modules/react-components/containers/sessions/SessionsSection.js:82
 msgctxt "Action"
 msgid "Revoke all other sessions"
 msgstr "Opozovi sve ostale sesije"
 
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:14
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
 msgctxt "Action"
 msgid "Wipe"
 msgstr "Očisti"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:106
+#: node_modules/react-components/containers/logs/LogsSection.js:123
 msgctxt "Action"
 msgid "Refresh"
 msgstr "Osvježi"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:71
+msgctxt "Action"
+msgid "Read"
+msgstr "Pročitano"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:54
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:68
+msgctxt "Action"
+msgid "Unread"
+msgstr "Nepročitano"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:44
 msgctxt "Action"
@@ -392,12 +564,12 @@ msgctxt "Action"
 msgid "Add screenshot(s)"
 msgstr "Dodaj snimku(e) zaslona"
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:154
 msgctxt "Action"
 msgid "Hide info"
 msgstr "Sakrij informacije"
 
-#: node_modules/react-components/containers/support/BugModal.js:149
+#: node_modules/react-components/containers/support/BugModal.js:154
 msgctxt "Action"
 msgid "Show info"
 msgstr "Prikaži informacije"
@@ -422,10 +594,25 @@ msgctxt "Action"
 msgid "Reactivate keys"
 msgstr "Ponovna aktivacija ključeva"
 
-#: node_modules/react-components/containers/account/DeleteSection.js:41
+#: node_modules/react-components/containers/account/DeleteSection.js:42
 msgctxt "Action"
 msgid "Delete your account"
 msgstr "Izbrišite svoj račun"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:29
+msgctxt "Action"
+msgid "Update"
+msgstr "Ažuriranje"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:43
+msgctxt "Action"
+msgid "Need help?"
+msgstr "Trebate pomoć?"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:29
+msgctxt "Action"
+msgid "Insert CSS code here"
+msgstr "Umetnite CSS kôd ovdje"
 
 #: src/app/components/Labels/EditLabelButton.js:23
 msgctxt "Filter notification"
@@ -447,337 +634,426 @@ msgctxt "Title"
 msgid "Delete folder"
 msgstr "Izbriši mapu"
 
-#: src/app/pages.js:5
-#: src/app/pages.js:14
+#: src/app/containers/FoldersLabelsContainer.js:8
 msgctxt "Title"
-msgid "Subscription"
-msgstr "Pretplata"
+msgid "Folders/labels"
+msgstr "Mape/Oznake"
 
-#: src/app/pages.js:10
+#: src/app/containers/SecurityContainer.js:9
 msgctxt "Title"
-msgid "Plans & prices"
-msgstr "Planovi i cijene"
+msgid "Security"
+msgstr "Sigurnost"
 
-#: src/app/pages.js:18
+#: src/app/containers/SecurityContainer.js:14
 msgctxt "Title"
-msgid "Billing details"
-msgstr "Detalji plaćanja"
+msgid "Session management"
+msgstr "Upravljanje sesijama"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:27
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:35
-#: src/app/pages.js:22
+#: node_modules/react-components/containers/logs/LogsSection.js:105
+#: src/app/containers/SecurityContainer.js:18
 msgctxt "Title"
-msgid "Payment methods"
-msgstr "Načini plaćanja"
+msgid "Authentication logs"
+msgstr "Autentifikacijski zapisi"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:53
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:61
-#: src/app/pages.js:26
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:44
+#: src/app/containers/SecurityContainer.js:22
 msgctxt "Title"
-msgid "Invoices"
-msgstr "Fakture"
+msgid "Address verification"
+msgstr "Provjera valjanosti adrese"
 
-#: src/app/pages.js:32
+#: src/app/containers/SecurityContainer.js:26
+msgctxt "Title"
+msgid "External PGP settings"
+msgstr "Postavke vanjskog PGP-a"
+
+#: node_modules/react-components/containers/addresses/AddressesSection.js:35
+#: src/app/containers/AddressesContainer.js:9
+#: src/app/containers/AddressesContainer.js:14
+msgctxt "Title"
+msgid "Addresses"
+msgstr "Adrese"
+
+#: node_modules/react-components/components/container/RelatedSettingsSection.js:13
+#: src/app/containers/AddressesContainer.js:18
+#: src/app/containers/AutoReplyContainer.js:22
+#: src/app/containers/DomainsContainer.js:26
+#: src/app/containers/MembersContainer.js:22
+#: src/app/containers/OrganizationContainer.js:26
+msgctxt "Title"
+msgid "Related settings"
+msgstr "Povezane postavke"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:28
+#: src/app/containers/DomainsContainer.js:12
+#: src/app/containers/DomainsContainer.js:18
+msgctxt "Title"
+msgid "Custom domains"
+msgstr "Prilagođene domene"
+
+#: src/app/containers/DomainsContainer.js:22
+msgctxt "Title"
+msgid "Catch-all"
+msgstr "Dohvati-sve"
+
+#: src/app/containers/AppsContainer.js:17
+msgctxt "Title"
+msgid "Apps"
+msgstr "Aplikacije"
+
+#: src/app/containers/AppsContainer.js:22
+msgctxt "Title"
+msgid "ProtonMail Bridge"
+msgstr "ProtonMail Bridge"
+
+#: src/app/containers/AppsContainer.js:27
+msgctxt "Title"
+msgid "ProtonMail Apps"
+msgstr "ProtonMail aplikacije"
+
+#: src/app/containers/AppsContainer.js:31
+msgctxt "Title"
+msgid "ProtonMail Beta"
+msgstr "ProtonMail Beta"
+
+#: src/app/containers/AppsContainer.js:35
+msgctxt "Title"
+msgid "ProtonVPN Apps"
+msgstr "ProtonVPN aplikacije"
+
+#: src/app/containers/AccountContainer.js:9
 msgctxt "Title"
 msgid "Account"
 msgstr "Korisnički račun"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:12
-#: src/app/pages.js:37
+#: src/app/containers/AccountContainer.js:14
 msgctxt "Title"
 msgid "Username"
 msgstr "Korisničko ime"
 
-#: src/app/pages.js:41
+#: src/app/containers/AccountContainer.js:18
 msgctxt "Title"
 msgid "Passwords"
 msgstr "Lozinke"
 
-#: src/app/pages.js:45
+#: src/app/containers/AccountContainer.js:22
 msgctxt "Title"
 msgid "Two factor authentication"
 msgstr "Provjera autentičnosti u dva koraka"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:13
-#: src/app/pages.js:49
+#: src/app/containers/AccountContainer.js:26
 msgctxt "Title"
 msgid "Recovery & notification"
 msgstr "Oporavak i obavijesti"
 
 #: node_modules/react-components/containers/account/NewsSection.js:17
 #: node_modules/react-components/containers/account/NewsSection.js:25
-#: src/app/pages.js:53
+#: src/app/containers/AccountContainer.js:30
 msgctxt "Title"
 msgid "Email subscriptions"
 msgstr "Pretplate e-pošte"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:85
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:86
 #: node_modules/react-components/containers/account/DeleteSection.js:30
-#: src/app/pages.js:57
+#: src/app/containers/AccountContainer.js:34
 msgctxt "Title"
 msgid "Delete account"
 msgstr "Brisanje računa"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:43
-#: src/app/pages.js:63
+#: src/app/containers/AppearanceContainer.js:9
 msgctxt "Title"
-msgid "Organization"
-msgstr "Organizacija"
+msgid "Appearance"
+msgstr "Izgled"
 
-#: src/app/pages.js:68
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:86
+#: src/app/containers/AppearanceContainer.js:14
 msgctxt "Title"
-msgid "Name"
-msgstr "Naziv"
+msgid "Layouts"
+msgstr "Rasporedi izgleda"
 
-#: src/app/pages.js:72
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:39
+#: src/app/containers/AppearanceContainer.js:18
 msgctxt "Title"
-msgid "Password & key"
-msgstr "Lozinka i ključ"
+msgid "Toolbars"
+msgstr "Alatne trake"
 
-#: node_modules/react-components/containers/members/MembersSection.js:51
-#: src/app/pages.js:78
+#: node_modules/react-components/containers/themes/ThemesSection.js:54
+#: src/app/containers/AppearanceContainer.js:22
 msgctxt "Title"
-msgid "Users"
-msgstr "Korisnici"
+msgid "Themes"
+msgstr "Teme"
 
-#: src/app/pages.js:83
-#: src/app/pages.js:88
-msgctxt "Title"
-msgid "Custom domain"
-msgstr "Prilagođena domena"
-
-#: src/app/pages.js:92
-msgctxt "Title"
-msgid "Catch-all"
-msgstr "Dohvati-sve"
-
-#: node_modules/react-components/containers/addresses/AddressesSection.js:80
-#: src/app/pages.js:98
-msgctxt "Title"
-msgid "Addresses"
-msgstr "Adrese"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:21
-#: src/app/pages.js:103
-msgctxt "Title"
-msgid "Identity"
-msgstr "Identitet"
-
-#: src/app/pages.js:108
-msgctxt "Title"
-msgid "Display name & signature"
-msgstr "Zaslonsko ime i potpis"
-
-#: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/pages.js:112
-msgctxt "Title"
-msgid "Short domain (@pm.me)"
-msgstr "Kratka domena (@pm.me)"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:13
-#: src/app/pages.js:118
+#: node_modules/react-components/containers/general/ShortcutsModal.js:12
+#: src/app/containers/GeneralContainer.js:16
 msgctxt "Title"
 msgid "General"
 msgstr "Općenito"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:49
-#: src/app/pages.js:123
+#: src/app/containers/GeneralContainer.js:21
 msgctxt "Title"
 msgid "Language"
 msgstr "Jezik"
 
-#: src/app/pages.js:127
+#: src/app/containers/GeneralContainer.js:25
 msgctxt "Title"
 msgid "Desktop notifications"
 msgstr "Obavijesti radne površine"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:21
-#: src/app/pages.js:131
+#: node_modules/react-components/containers/messages/MessagesSection.js:17
+#: src/app/containers/GeneralContainer.js:29
 msgctxt "Title"
 msgid "Messages"
 msgstr "Poruke"
 
 #: node_modules/react-components/containers/general/ContactsSection.js:32
-#: src/app/pages.js:135
+#: node_modules/react-components/containers/general/ShortcutsModal.js:177
+#: src/app/containers/GeneralContainer.js:33
 msgctxt "Title"
 msgid "Contacts"
 msgstr "Kontakti"
 
-#: src/app/pages.js:139
+#: node_modules/react-components/containers/search/SearchSection.js:8
+#: src/app/containers/GeneralContainer.js:37
 msgctxt "Title"
 msgid "Search"
 msgstr "Pretraga"
 
-#: node_modules/react-components/containers/general/ShortcutsSection.js:21
-#: src/app/pages.js:143
+#: node_modules/react-components/containers/general/ShortcutsSection.js:24
+#: src/app/containers/GeneralContainer.js:41
 msgctxt "Title"
 msgid "Shortcuts"
 msgstr "Prečaci"
 
-#: src/app/pages.js:149
-msgctxt "Title"
-msgid "Appearance"
-msgstr "Izgled"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:73
-#: src/app/pages.js:154
-msgctxt "Title"
-msgid "Layouts"
-msgstr "Rasporedi izgleda"
-
-#: src/app/pages.js:158
-msgctxt "Title"
-msgid "Toolbars"
-msgstr "Alatne trake"
-
-#: node_modules/react-components/containers/appearance/ThemesSection.js:8
-#: src/app/pages.js:162
-msgctxt "Title"
-msgid "Themes"
-msgstr "Teme"
-
-#: src/app/pages.js:168
+#: src/app/containers/FiltersContainer.js:8
 msgctxt "Title"
 msgid "Filters"
 msgstr "Filtri"
 
-#: src/app/pages.js:173
+#: src/app/containers/FiltersContainer.js:13
 msgctxt "Title"
 msgid "Custom filters"
 msgstr "Prilagođeni filtri"
 
-#: src/app/pages.js:177
+#: src/app/containers/FiltersContainer.js:17
 msgctxt "Title"
 msgid "Spam filters"
 msgstr "Filteri neželjene pošte"
 
-#: src/app/pages.js:183
-msgctxt "Title"
-msgid "Folders/Labels"
-msgstr "Mape/Oznake"
-
-#: src/app/pages.js:188
-msgctxt "Title"
-msgid "Auto-reply"
-msgstr "Automatski odgovori"
-
-#: src/app/pages.js:193
+#: src/app/containers/KeysContainer.js:8
 msgctxt "Title"
 msgid "Keys"
 msgstr "Ključevi"
 
-#: src/app/pages.js:198
+#: node_modules/react-components/containers/keys/AddressKeysHeader.js:7
+#: src/app/containers/KeysContainer.js:13
 msgctxt "Title"
 msgid "Email encryption keys"
 msgstr "Šifrirani ključevi e-pošte"
 
-#: src/app/pages.js:202
+#: node_modules/react-components/containers/keys/ContactKeysHeader.js:6
+#: src/app/containers/KeysContainer.js:17
 msgctxt "Title"
 msgid "Contact encryption keys"
 msgstr "Šifrirani ključevi kontataka"
 
-#: src/app/pages.js:208
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:55
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:67
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:76
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:96
+#: src/app/containers/SubscriptionContainer.js:18
+#: src/app/containers/SubscriptionContainer.js:28
 msgctxt "Title"
-msgid "Security"
-msgstr "Sigurnost"
+msgid "Subscription"
+msgstr "Pretplata"
 
-#: src/app/pages.js:213
+#: node_modules/react-components/containers/payments/PlansSection.js:91
+#: node_modules/react-components/containers/payments/PlansSection.js:100
+#: node_modules/react-components/containers/payments/PlansSection.js:137
+#: src/app/containers/SubscriptionContainer.js:24
 msgctxt "Title"
-msgid "Session management"
-msgstr "Upravljanje sesijama"
+msgid "Plans"
+msgstr "Planovi"
 
-#: src/app/pages.js:217
+#: node_modules/react-components/containers/payments/BillingSection.js:60
+#: node_modules/react-components/containers/payments/BillingSection.js:71
+#: node_modules/react-components/containers/payments/BillingSection.js:80
+#: node_modules/react-components/containers/payments/BillingSection.js:91
+#: src/app/containers/SubscriptionContainer.js:33
 msgctxt "Title"
-msgid "Authentication logs"
-msgstr "Autentifikacijski zapisi"
+msgid "Billing details"
+msgstr "Detalji plaćanja"
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:33
-#: src/app/pages.js:221
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:27
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:39
+#: src/app/containers/SubscriptionContainer.js:38
 msgctxt "Title"
-msgid "Address verification"
-msgstr "Provjera valjanosti adrese"
+msgid "Payment methods"
+msgstr "Načini plaćanja"
 
-#: src/app/pages.js:225
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:53
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:65
+#: src/app/containers/SubscriptionContainer.js:42
 msgctxt "Title"
-msgid "External PGP settings"
-msgstr "Postavke vanjskog PGP-a"
+msgid "Invoices"
+msgstr "Fakture"
 
-#: src/app/pages.js:231
+#: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
-msgid "Apps"
-msgstr "Aplikacije"
+msgid "Identity"
+msgstr "Identitet"
 
-#: src/app/pages.js:236
+#: node_modules/react-components/containers/addresses/IdentitySection.js:45
+#: src/app/containers/IdentityContainer.js:17
 msgctxt "Title"
-msgid "ProtonMail apps"
-msgstr "ProtonMail aplikacije"
+msgid "Display name & signature"
+msgstr "Zaslonsko ime i potpis"
 
-#: src/app/pages.js:240
+#: node_modules/react-components/containers/addresses/PmMeSection.js:9
+#: src/app/containers/IdentityContainer.js:21
 msgctxt "Title"
-msgid "ProtonMail bridge"
-msgstr "ProtonMail Bridge"
+msgid "Short domain (@pm.me)"
+msgstr "Kratka domena (@pm.me)"
 
-#: src/app/pages.js:244
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:17
+#: src/app/containers/AutoReplyContainer.js:12
+#: src/app/containers/AutoReplyContainer.js:18
 msgctxt "Title"
-msgid "ProtonVPN apps"
-msgstr "ProtonVPN aplikacije"
+msgid "Auto-reply"
+msgstr "Automatski odgovori"
 
-#: src/app/pages.js:248
+#: node_modules/react-components/containers/members/MembersSection.js:51
+#: src/app/containers/MembersContainer.js:12
+#: src/app/containers/MembersContainer.js:18
 msgctxt "Title"
-msgid "Beta sign up"
-msgstr "Prijava u Betu"
+msgid "Users"
+msgstr "Korisnici"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:54
+#: src/app/containers/OrganizationContainer.js:12
+msgctxt "Title"
+msgid "Organization"
+msgstr "Organizacija"
+
+#: src/app/containers/OrganizationContainer.js:18
+msgctxt "Title"
+msgid "Name"
+msgstr "Naziv"
+
+#: src/app/containers/OrganizationContainer.js:22
+msgctxt "Title"
+msgid "Password & key"
+msgstr "Lozinka i ključ"
 
 #: node_modules/react-components/components/sidebar/SubSidebar.js:20
 msgctxt "Title"
 msgid "Jump to"
 msgstr "Skoči na"
 
-#: node_modules/react-components/components/container/RelatedSettingsSection.js:13
+#: node_modules/react-components/components/dropdown/DropdownActions.js:34
 msgctxt "Title"
-msgid "Related settings"
-msgstr "Povezane postavke"
+msgid "Open actions dropdown"
+msgstr "Otvorite padajući izbornik radnji"
 
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:30
+#: node_modules/react-components/components/pagination/Pagination.js:52
+msgctxt "Title"
+msgid "Open pagination"
+msgstr "Otvori paginaciju"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:25
 msgctxt "Title"
 msgid "Preview"
 msgstr "Pregled"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:53
+#: node_modules/react-components/containers/organization/OrganizationSection.js:44
 msgctxt "Title"
 msgid "Change organization name"
 msgstr "Promijeni naziv organizacije"
 
-#: node_modules/react-components/containers/payments/EditCardModal.js:22
+#: node_modules/react-components/containers/payments/EditCardModal.js:14
 msgctxt "Title"
 msgid "Edit credit card"
 msgstr "Uredi kreditnu karticu"
 
-#: node_modules/react-components/containers/payments/EditCardModal.js:22
+#: node_modules/react-components/containers/payments/EditCardModal.js:14
 msgctxt "Title"
 msgid "Add credit card"
 msgstr "Dodaj kreditnu karticu"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:37
+#: node_modules/react-components/containers/payments/DonateModal.js:35
 msgctxt "Title"
-msgid "Donate"
+msgid "Make a donation"
 msgstr "Donirajte"
 
-#: node_modules/react-components/containers/password/AskPasswordModal.js:27
+#: node_modules/react-components/containers/payments/PlansSection.js:60
+msgctxt "Title"
+msgid "Confirm downgrade"
+msgstr "Potvrdi snižavanje statusa"
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
+msgctxt "Title"
+msgid "ProtonMail total"
+msgstr "ProtonMail total"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:107
+msgctxt "Title"
+msgid "Order summary"
+msgstr "Sažatak naloga"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:126
+msgctxt "Title"
+msgid "Thank you!"
+msgstr "Hvala vam!"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+msgctxt "Title"
+msgid "VPN protection"
+msgstr "VPN zaštita"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:152
+msgctxt "Title"
+msgid "Customization"
+msgstr "Prilagodba"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:21
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:165
+msgctxt "Title"
+msgid "Payment details"
+msgstr "Detalji o plaćanju"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
+msgctxt "Title"
+msgid "Subscription details"
+msgstr "Detalji o pretplati"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:51
+msgctxt "Title"
+msgid "Add credits"
+msgstr "Dodaj kredit"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:47
+msgctxt "Title"
+msgid "Gift code"
+msgstr "Darovni kôd"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:33
+#: node_modules/react-components/containers/password/AskPasswordModal.js:25
 msgctxt "Title"
 msgid "Sign in again to continue"
 msgstr "Ponovno se prijavite da biste nastavili"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:108
+#: node_modules/react-components/containers/domains/DomainModal.js:99
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "Uredi domenu"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:108
+#: node_modules/react-components/containers/domains/DomainModal.js:99
 msgctxt "Title"
 msgid "Add domain"
 msgstr "Dodaj domenu"
 
-#: node_modules/react-components/containers/domains/CatchAllModal.js:10
+#: node_modules/react-components/containers/domains/CatchAllModal.js:14
 msgctxt "Title"
 msgid "Catch all address"
 msgstr "Dohvati-sve adrese e-pošte"
@@ -787,27 +1063,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "Dohvati-sve "
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:27
-msgctxt "Title"
-msgid "Manage custom domains"
-msgstr "Upravljanje prilagođenim domenama"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:58
+#: node_modules/react-components/containers/domains/DomainActions.js:43
 msgctxt "Title"
 msgid "Delete domain"
 msgstr "Brisanje domene"
 
-#: node_modules/react-components/containers/products/DownloadsSection.js:10
-msgctxt "Title"
-msgid "Downloads"
-msgstr "Preuzimanja"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:37
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
 msgctxt "Title"
 msgid "Add invoice details"
 msgstr "Dodajte detalje o fakturi"
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:77
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:30
 msgctxt "Title"
 msgid "Preview invoice"
 msgstr "Pregled fakture"
@@ -828,17 +1094,18 @@ msgid "Status"
 msgstr "Status"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:100
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
 msgid "Date"
 msgstr "Datum"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:101
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
 msgid "Action"
 msgstr "Akcija"
 
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:35
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:30
 msgctxt "Title"
 msgid "Pay invoice"
 msgstr "Plati račun"
@@ -848,131 +1115,141 @@ msgctxt "Title"
 msgid "External PGP settings (optional)"
 msgstr "Vanjske PGP postavke (nije obavezno)"
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:49
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:39
 msgctxt "Title"
-msgid "Automatic sign outgoing messages?"
+msgid "Automatically sign outgoing messages?"
 msgstr "Automatsko potpisivanje odlaznih poruka?"
 
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/general/ShortcutsSection.js:23
+#: node_modules/react-components/containers/general/ShortcutsSection.js:26
 msgctxt "Title"
 msgid "Keyboard shortcuts"
 msgstr "Tipkovni prečaci"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:16
+#: node_modules/react-components/containers/general/ShortcutsModal.js:15
 msgctxt "Title"
 msgid "Application"
 msgstr "Aplikacija"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:36
+#: node_modules/react-components/containers/general/ShortcutsModal.js:35
 msgctxt "Title"
 msgid "Composer"
 msgstr "Prozor za novu poruku"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:67
+#: node_modules/react-components/containers/general/ShortcutsModal.js:66
 msgctxt "Title"
 msgid "Mail"
 msgstr "Pošta"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:70
+#: node_modules/react-components/containers/general/ShortcutsModal.js:69
 msgctxt "Title"
 msgid "Jumping"
 msgstr "Tipke za navigaciju"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:96
+#: node_modules/react-components/containers/general/ShortcutsModal.js:95
 msgctxt "Title"
 msgid "Navigation"
 msgstr "Navigacija"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:127
+#: node_modules/react-components/containers/general/ShortcutsModal.js:126
 msgctxt "Title"
 msgid "Threadlist"
 msgstr "Upravljanje listama"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:162
+#: node_modules/react-components/containers/general/ShortcutsModal.js:161
 msgctxt "Title"
 msgid "Actions"
 msgstr "Radnje"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:178
+#: node_modules/react-components/containers/general/ShortcutsModal.js:180
 msgctxt "Title"
-msgid "Contact"
-msgstr "Kontakt"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:181
-msgctxt "Title"
-msgid "Contact List"
+msgid "Contact list"
 msgstr "Popis kontakata"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:196
+#: node_modules/react-components/containers/general/ShortcutsModal.js:195
 msgctxt "Title"
-msgid "Contact Details"
+msgid "Contact details"
 msgstr "Detalji o kontaktu"
+
+#: node_modules/react-components/containers/notification/EmailModal.js:53
+msgctxt "Title"
+msgid "Update reset/notification email"
+msgstr "Ažuriranje adrese e-pošte za ponovno postavljanje/obavijesti"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
 msgctxt "Title"
 msgid "Desktop notification"
 msgstr "Obavijest radne površine"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:55
-msgctxt "Title"
-msgid "Update reset/notification email"
-msgstr "Ažuriranje adrese e-pošte za ponovno postavljanje/obavijesti"
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:65
+#: node_modules/react-components/containers/sessions/SessionsSection.js:77
 msgctxt "Title"
 msgid "Sessions"
 msgstr "Sesije"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/sessions/SessionsSection.js:94
 msgctxt "Title"
-msgid "Service"
-msgstr "Usluga"
+msgid "App"
+msgstr "Aplikacija"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+#: node_modules/react-components/containers/logs/LogsSection.js:78
 msgctxt "Title"
-msgid "Time"
-msgstr "Vrijeme"
+msgid "Clear"
+msgstr "Očisti"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:88
-msgctxt "Title"
-msgid "Authentication Logs"
-msgstr "Autentifikacijski zapisi"
-
-#: node_modules/react-components/containers/support/BugModal.js:83
+#: node_modules/react-components/containers/support/BugModal.js:87
 msgctxt "Title"
 msgid "Report bug"
 msgstr "Prijavi problem"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:51
+#: node_modules/react-components/containers/addresses/AddressModal.js:48
 msgctxt "Title"
 msgid "Create address"
 msgstr "Stvori adresu"
 
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:35
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:44
 msgctxt "Title"
 msgid "Edit address"
 msgstr "Uredi adresu"
 
-#: node_modules/react-components/containers/keys/AddressKeysHeader.js:7
-msgctxt "Title"
-msgid "Email Encryption Keys"
-msgstr "Šifrirani ključevi e-pošte"
-
-#: node_modules/react-components/containers/keys/ContactKeysHeader.js:6
-msgctxt "Title"
-msgid "Contact Encryption Keys"
-msgstr "Šifrirani ključevi kontataka"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:47
+#: node_modules/react-components/containers/members/EditMemberModal.js:57
 msgctxt "Title"
 msgid "Edit user"
 msgstr "Uređivanje korisnika"
 
-#: node_modules/react-components/containers/members/MemberModal.js:49
+#: node_modules/react-components/containers/members/MemberModal.js:54
 msgctxt "Title"
 msgid "Add user"
 msgstr "Dodaj korisnika"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:25
+msgctxt "Title"
+msgid "Create auto-reply"
+msgstr "Stvorite automatski odgovor"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:39
+msgctxt "Title"
+msgid "Need help?"
+msgstr "Trebate pomoć?"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:46
+msgctxt "Title"
+msgid "TODO"
+msgstr "Za obaviti"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:53
+msgctxt "Title"
+msgid "Thanks for your support"
+msgstr "Hvala na podršci"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:60
+msgctxt "Title"
+msgid "Get 20% discount"
+msgstr "Dobijte 20% popusta"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:18
+msgctxt "Title"
+msgid "Custom Theme"
+msgstr "Prilagođena tema"
 
 #: src/app/components/Labels/DeleteLabelButton.js:39
 msgctxt "Info"
@@ -984,58 +1261,217 @@ msgctxt "Info"
 msgid "Are you sure you want to delete this folder? Messages in the folders aren’t deleted if the folder is deleted, they can still be found in all mail. If you want to delete all messages in a folder, move them to trash."
 msgstr "Jeste li sigurni da želite izbrisati ovu mapu? Poruke u mapama neće biti izbrisano ako se mapa izbriše, već ih idalje možete pronaći u pošti. Ako želite izbrisati sve poruke u mapi, premjestite ih u otpad."
 
-#: src/app/containers/AddressesContainer.js:9
+#: src/app/containers/AddressesContainer.js:31
+#: src/app/containers/AddressesContainer.js:50
 msgctxt "Info"
 msgid "Go to the Domain settings if you want to create  and manage custom domains for your users."
 msgstr "Idite na Postavke domene ako želite stvoriti ili upravljati prilagođenim domenama za vaše korisnike."
 
-#: src/app/containers/AddressesContainer.js:16
+#: src/app/containers/AddressesContainer.js:38
 msgctxt "Info"
 msgid "Go to User Settings if you want to create and manage the list of users in your organization."
 msgstr "Idite na Postavke korisnika ako želite stvoriti ili upravljati listom korisnika u vašoj organizaciji."
 
-#: src/app/containers/DomainsContainer.js:9
+#: src/app/containers/AddressesContainer.js:57
+#: src/app/containers/AddressesContainer.js:74
 msgctxt "Info"
-msgid "TODO"
-msgstr "Napraviti"
+msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
+msgstr "Nadogradite na višekorisnički plan ako želite stvoriti i upravljati korisnicima vaše organizacije."
 
-#: src/app/containers/DomainsContainer.js:15
+#: src/app/containers/AddressesContainer.js:68
 msgctxt "Info"
-msgid "Go to the Addresses settings if you want to create and manage addresses to your custom domain. "
+msgid "Upgrade to a paid plan if you want to create and manage custom domains."
+msgstr "Nadogradite na plaćeni plan ako želite dodavati i upravljati prilagođenim domenama."
+
+#: src/app/containers/DomainsContainer.js:39
+msgctxt "Info"
+msgid "Go to the Users Settings if you want to create and manage users in your organization."
+msgstr "Idite na Postavke korisnika ako želite stvoriti ili upravljati korisnicima u vašoj organizaciji."
+
+#: src/app/containers/DomainsContainer.js:46
+#: src/app/containers/DomainsContainer.js:64
+msgctxt "Info"
+msgid "Go to the addresses settings if you want to create and manage addresses to your custom domain. "
 msgstr "Idite na Postavke adresa ako želite stvoriti ili upravljati adresama vaše prilagođene domene. "
 
-#: node_modules/react-components/containers/appearance/ThemesSection.js:9
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:74
-#: node_modules/react-components/containers/organization/OrganizationSection.js:44
-#: node_modules/react-components/containers/products/ProtonMailClients.js:24
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:24
+#: src/app/containers/DomainsContainer.js:57
+msgctxt "Info"
+msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
+msgstr "Nadogradite na plaćeni, višekorisnički plan ako želite stvoriti i upravljati korisnicima vaše organizacije."
+
+#: src/app/containers/AutoReplyContainer.js:38
+msgctxt "Info"
+msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
+msgstr "Idite na Postavke filtra ako želite stvoriti i upravljati automatskim odgovorima putem adrese e-pošte."
+
+#: src/app/containers/MembersContainer.js:38
+msgctxt "Info"
+msgid "Go to the address settings if you want to create and manage addresses for your users."
+msgstr "Idite na Postavke adresa ako želite stvoriti ili upravljati adresama vaših korisnika."
+
+#: src/app/containers/OrganizationContainer.js:42
+msgctxt "Info"
+msgid "Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address."
+msgstr "Idite na Postavke domena ako želite stvoriti prilagođene domene i upravljati njima, uključujući i odabir dohvati-sve adrese e-pošte."
+
+#: src/app/containers/OrganizationContainer.js:49
+msgctxt "Info"
+msgid "Go to the users settings if you want to create and manage the users of your organization."
+msgstr "Idite na Postavke korisnika ako želite stvoriti ili upravljati korisnicima u vašoj organizaciji."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:87
+#: node_modules/react-components/containers/organization/OrganizationSection.js:55
 msgctxt "Info"
 msgid "Lorem ipsum"
 msgstr "Lorem ipsum"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:19
+#: node_modules/react-components/containers/payments/Bitcoin.js:17
 msgctxt "Info"
 msgid "Amount below minimum. (${ amount })"
 msgstr "Iznos ispod minimuma. (${ amount })"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:43
+#: node_modules/react-components/containers/payments/Bitcoin.js:41
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "Potvrda Bitcoin transakcije može potrajati neko vrijeme (do 24 sata). Kada potvrdimo, dodijelit ćemo vam kredit na vaš račun. Nakon potvrde transakcije, možete platiti fakturu s kreditom."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:46
+#: node_modules/react-components/containers/payments/Bitcoin.js:44
 msgctxt "Info"
-msgid "After making your Bitcoin payment, please follow the instructions below to upgrade"
-msgstr "Nakon što ste izvršili Bitcoin uplatu, molimo slijedite ove upute ispod za nadogradnju"
+msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
+msgstr "Nakon što ste izvršili Bitcoin uplatu, molimo slijedite ove upute ispod za nadogradnju."
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:54
+#: node_modules/react-components/containers/payments/DonateModal.js:39
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:168
+msgctxt "Info"
+msgid "Your payment details are protected with TLS encryption and Swiss privacy laws."
+msgstr "Vaši podaci o plaćanju zaštićeni su TLS enkripcijom i švicarskim zakonima o privatnosti."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:61
+msgctxt "Info"
+msgid "This will downgrade your account to a free account. ProtonMail is free software that is supported by donations and paid accounts. Please consider making a donation so we can continue to offer the service for free."
+msgstr "Ovo će sniziti status vašeg računa na besplatni račun. ProtonMail je besplatan softver koji je podržan donacijama i plaćenim računima. Razmislite o donaciji kako bismo mogli nastaviti nuditi uslugu besplatno."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:63
+msgctxt "Info"
+msgid "Note: Additional addresses, custom domains, and users must be removed/disabled before performing this action."
+msgstr "Napomena: Prije izvođenja ove radnje potrebno je ukloniti/onemogućiti dodatne adrese, prilagođene domene i korisnike."
+
+#: node_modules/react-components/containers/payments/PlansSection.js:130
+msgctxt "Info"
+msgid "billed as ${ billedPrice }"
+msgstr "naplaćeno ${ billedPrice }"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:139
+msgctxt "Info"
+msgid "Get 20% bundle discount when you purchase ProtonMail and ProtonVPN together."
+msgstr "Dobijte 20% grupnog popusta prilikom kupnje ProtonMail i ProtonVPN zajedno."
+
+#: node_modules/react-components/containers/payments/BillingSection.js:61
+msgctxt "Info"
+msgid "There are no billing details available for your current subscription."
+msgstr "Nema dostupnih pojedinosti o naplati za vašu trenutačnu pretplatu."
 
 #: node_modules/react-components/containers/payments/PayPal.js:66
 msgctxt "Info"
 msgid "You will need to login to your PayPal account to complete this transaction. We will open a new tab with PayPal for you. If you use any pop-up blockers, please disable them to continue."
 msgstr "Morat ćete se prijaviti na svoj PayPal račun kako biste dovršili ovu transakciju. Otvoriti ćemo novu karticu s uslugom PayPal. Ako koristite blokatore skočnih prozora, onemogućite ih da biste nastavili."
 
-#: node_modules/react-components/containers/domains/DomainAddresses.js:20
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:129
+msgctxt "Info"
+msgid "Thank you for your subscription"
+msgstr "Hvala vam za Vašu pretplatu"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:130
+msgctxt "Info"
+msgid "Your new features are now available"
+msgstr "Vaše nove mogućnosti su sada dostupne"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:185
+msgctxt "Info"
+msgid "By clicking Next, you agree to abide by ProtonMail's terms and conditions."
+msgstr "Klikom na Sljedeće prihvaćate uvjete i odredbe ProtonMaila."
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:17
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:18
+msgctxt "Info"
+msgid "no subuscription"
+msgstr "nema pretplate"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:15
+msgctxt "Info"
+msgid "Save 20% with annual"
+msgstr "Uštedite 20% s godišnjom pretplatom"
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:20
+msgctxt "Info"
+msgid "A 20% discount for annual billing has been automatically applied."
+msgstr "Popust od 20% za godišnju naplatu automatski je primjenjen."
+
+#: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:23
+msgctxt "Info"
+msgid "A 33% discount two year billing has been automatically applied."
+msgstr "Popust od 33% za dvogodišnju naplatu automatski je primjenjen."
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:11
+msgctxt "Info"
+msgid "monthly billing"
+msgstr "mjesečna naplata"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:12
+msgctxt "Info"
+msgid "annual billing"
+msgstr "godišnja naplata"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:13
+msgctxt "Info"
+msgid "two year billing"
+msgstr "naplata svako dvije godine"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:56
+msgctxt "Info"
+msgid "No subscription yet"
+msgstr "Bez pretplate"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:106
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:181
+msgctxt "Info"
+msgid "Combine paid ProtonMail and ProtonVPN and get a 20% discount on both"
+msgstr "Kombinirajte plaćeni ProtonMail i ProtonVPN i ostvarite 20% popusta na oba"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:210
+msgctxt "Info"
+msgid "Switch to annual billing for a 20% discount"
+msgstr "Prebacite se na godišnju naplate za 20% popusta"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:214
+msgctxt "Info"
+msgid "20% rebate applied to your subscription"
+msgstr "20% popusta na vašu pretplatu"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:218
+msgctxt "Info"
+msgid "33% rebate applied to your subscription"
+msgstr "33% popusta na vašu pretplatu"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:50
+msgctxt "Info"
+msgid "By using ProtonVPN to browser the web, your Internet connection is encrypted to ensure that your navigation is secure. ProtonVPN has servers located in 30+ countries around the world."
+msgstr "Upotrebom ProtonVPN-a u web pregledniku, vaša internetska veza je šifrirana kako bi se osiguralo da je vaš promet siguran. ProtonVPN ima poslužitelje smještene u 30+ zemalja širom svijeta."
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:55
+msgctxt "Info"
+msgid "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent."
+msgstr "Dopunite svoj račun sa kreditima koje možete upotrijebiti za pretplatu na novi plan ili za obnovu trenutnog plana. Dobivate jedan kredit za svaku potrošenu ${ i18nCurrency }."
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:52
+msgctxt "Info"
+msgid "If you purchased or were given a gift code, add it here."
+msgstr "Ako ste kupili ili dobili darovni kôd, dodajte ga ovdje."
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:19
 #: node_modules/react-components/containers/domains/DomainStatus.js:48
-#: node_modules/react-components/containers/members/MemberAddresses.js:20
+#: node_modules/react-components/containers/members/MemberAddresses.js:19
 msgctxt "Info"
 msgid "${ n } address"
 msgid_plural "${ n } addresses"
@@ -1085,20 +1521,20 @@ msgstr "Ako ova domena trenutno aktivno prima e-poštu, izradite sve korištene 
 
 #: node_modules/react-components/containers/domains/CatchAllSection.js:9
 msgctxt "Info"
-msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere libero nec nunc feugiat, id efficitur augue vestibulum. Mauris nec commodo turpis."
-msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere libero nec nunc feugiat, id efficitur augue vestibulum. Mauris nec commodo turpis."
+msgid "To select the catch-all email address of a domain, open the action dropdown menu and click on Set catch-all"
+msgstr "Za odabir dohvati-sve adresu e-pošte vaše domene, otvorite padajući izbornik radnji i odaberite Postavi dohvati-sve"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:37
 msgctxt "Info"
-msgid "No domains yet"
-msgstr "Nema domena još"
+msgid "No domains yet."
+msgstr "Nema domena još."
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:40
 msgctxt "Info"
 msgid "domains used"
 msgstr "iskorištene domene"
 
-#: node_modules/react-components/containers/domains/DomainActions.js:60
+#: node_modules/react-components/containers/domains/DomainActions.js:44
 msgctxt "Info"
 msgid "Are you sure you want to delete this domain?"
 msgstr "Jeste li sigurni da želite ukloniti ovu domenu?"
@@ -1110,25 +1546,27 @@ msgstr "ProtonMail podržava DKIM potpisivanje za prilagođene domene! Da biste 
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:27
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to <code>off</code> to disable DKIM"
-msgstr "Zadržite ovaj zapis u svom DNS-u dokle god želite koristiti DKIM. Možete promijeniti njegovu vrijednost na <code> isključeno</code> kako biste onemogućili DKIM"
+msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to <code>off</code> to disable DKIM."
+msgstr "Zadržite ovaj zapis u svom DNS-u dokle god želite koristiti DKIM. Možete promijeniti njegovu vrijednost na <code> isključeno</code> kako biste onemogućili DKIM."
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:63
+#: node_modules/react-components/containers/addresses/IdentitySection.js:72
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:66
+#: node_modules/react-components/containers/overview/PromoteSection.js:47
 msgctxt "Info"
-msgid "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
-msgstr "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+msgid "TODO"
+msgstr "Napraviti"
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:16
 msgctxt "Info"
 msgid "Only change these settings if you are using PGP with non-ProtonMail recipients."
 msgstr "Promijenite ove postavke samo ako koristite PGP s primateljima koji ne koriste ProtonMail."
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:35
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:46
 msgctxt "Info"
 msgid "Address verification is an advanced security feature. Only turn this on if you know what it does."
 msgstr "Potvrda adresa je napredna sigurnosna značajka. Uključite ovo samo ako znate što radi."
 
-#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:52
+#: node_modules/react-components/containers/security/AttachPublicKeyToggle.js:43
 msgctxt "Info"
 msgid "PGP clients are more likely to automatically detect your PGP keys if outgoing messages are signed."
 msgstr "PGP klijenti će s većom vjerojatnošću automatski otkriti vaše PGP ključeve ako su izlazne poruke potpisane."
@@ -1148,16 +1586,20 @@ msgctxt "Info"
 msgid "You have a new email"
 msgstr "Imaš novu poruku"
 
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:38
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:49
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:43
 msgctxt "Info"
-msgid "Desktop Notifications are currently"
+msgid "Desktop notifications are currently"
 msgstr "Obavijesti radne površine su trenutno"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:18
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:29
 msgctxt "Info"
 msgid "Expired"
 msgstr "Isteklo"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:30
+msgctxt "Info"
+msgid "default"
+msgstr "zadano"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:11
 msgctxt "Info"
@@ -1166,15 +1608,15 @@ msgstr "Nemate spremljenih načina plaćanja."
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
-msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
-msgstr "Osim ako se izričito ne odjavite ili promijenite lozinku, sesije mogu trajati do 6 mjeseci. Sesije ističu nakon 2 tjedna neaktivnosti."
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:72
-msgctxt "Info"
 msgid "Do you want to revoke all other sessions than the current one?"
 msgstr "Želite li opozvati sve ostale sesije osim trenutne?"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:89
+#: node_modules/react-components/containers/sessions/SessionsSection.js:78
+msgctxt "Info"
+msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
+msgstr "Osim ako se izričito ne odjavite ili promijenite lozinku, sesije mogu trajati do 6 mjeseci. Sesije ističu nakon 2 tjedna neaktivnosti."
+
+#: node_modules/react-components/containers/logs/LogsSection.js:106
 msgctxt "Info"
 msgid "Logs includes authentication attempts for all Proton services that use your Proton credentials."
 msgstr "Zapisi uključuju pokušaje provjere autentičnosti za sve Proton usluge koje koriste vaše Proton vjerodajnice."
@@ -1186,35 +1628,35 @@ msgstr "Možete omogućiti zapisivanje provjera autentičnosti da biste vidjeli 
 
 #: node_modules/react-components/containers/logs/LogsTable.js:35
 msgctxt "Info"
-msgid "No logs yet"
-msgstr "Nema zapisa"
+msgid "No logs yet."
+msgstr "Nema zapisa."
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:43
 msgctxt "Info"
 msgid "Screenshot(s) attached"
 msgstr "Snimka(e) zaslona su pridodane"
 
-#: node_modules/react-components/containers/support/BugModal.js:85
+#: node_modules/react-components/containers/support/BugModal.js:90
 msgctxt "Info"
 msgid "Refreshing the page or ${ link } will automatically resolve most issues."
 msgstr "Osvježavanje stranice ili ${ link } će automatski riješiti većinu problema."
 
-#: node_modules/react-components/containers/support/BugModal.js:200
+#: node_modules/react-components/containers/support/BugModal.js:205
 msgctxt "Info"
 msgid "Contact us at security@protonmail.com for critical security issues."
 msgstr "Kontaktirajte nas na security@protonmail.com za kritične sigurnosne probleme."
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:119
+#: node_modules/react-components/containers/addresses/AddressesSection.js:39
 msgctxt "Info"
 msgid "addresses used"
 msgstr "iskorištenih adresa"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:54
+#: node_modules/react-components/containers/addresses/AddressModal.js:56
 msgctxt "Info"
 msgid "ProtonMail addresses can never be deleted (only disabled). ProtonMail addresses will always count towards your address limit whether enabled or not."
 msgstr "ProtonMail adrese se nikada ne mogu izbrisati (onemogućiti). ProtonMail adrese će se uvijek računati prema ograničenju adrese bez obzira na to jesu li omogućene ili ne."
 
-#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:36
+#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:35
 msgctxt "Info"
 msgid "A paid plan is required to turn off the ProtonMail signature. Paid plan revenue allows us to continue supporting free accounts."
 msgstr "Plaćeni plan je potreban za isključivanje ProtonMail potpisa. Prihodi od plaćenih planova omogućavaju nam nastavak podržavanja besplatnih računa."
@@ -1224,20 +1666,20 @@ msgctxt "Info"
 msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Paid users can add other @pm.me addresses."
 msgstr "ProtonMail sada podržava adrese e-pošte @pm.me (skraćeno od ProtonMail me ili Private Message me). Plaćeni korisnici mogu dodavati druge @pm.me adrese."
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:32
+#: node_modules/react-components/containers/addresses/PmMePanel.js:31
 msgctxt "Info"
 msgid "You can now also receive and send messages from your @pm.me address (short for ProtonMail me or Private Message me)."
 msgstr "Sada možete primati i slati poruke s vaše @pm.me adrese e-pošte (skraćeno od ProtonMail me ili Private Message me)."
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:34
+#: node_modules/react-components/containers/addresses/PmMePanel.js:33
 msgctxt "Info"
-msgid "@pm.me is activated on your account."
-msgstr "@pm.me je aktiviran na vašem računu."
+msgid "The short domain @pm.me is active on your account."
+msgstr "Kratka domena @pm.me aktivna je na vašem računu."
 
-#: node_modules/react-components/containers/addresses/PmMePanel.js:41
+#: node_modules/react-components/containers/addresses/PmMePanel.js:39
 msgctxt "Info"
-msgid "You can now also receive messages at your @pm.me address (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
-msgstr "Sada možete primati poruke i na vašoj adresi @pm.me (skraćeno od ProtonMail me ili Private Message me). Nadogradite na plaćeni račun i pošaljite e-poštu s adrese @pm.me."
+msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
+msgstr "ProtonMail sada podržava @pm.me adrese e-pošte (skraćeno od ProtonMail me ili Private Message me). Nadogradite na plaćeni račun i pošaljite e-poštu s adrese @pm.me."
 
 #: node_modules/react-components/containers/keys/AddressKeysHeader.js:13
 #: node_modules/react-components/containers/keys/ContactKeysHeader.js:12
@@ -1245,42 +1687,47 @@ msgctxt "Info"
 msgid "Download your PGP Keys for use with other PGP compatible services. Only incoming messages in inline OpenPGP format are currently supported."
 msgstr "Preuzmite svoje PGP ključeve za korištenje s drugim PGP kompatibilnim uslugama. Trenutačno su podržane samo dolazne poruke u inline OpenPGP formatu."
 
-#: node_modules/react-components/containers/members/MembersSection.js:102
+#: node_modules/react-components/containers/members/MembersSection.js:104
+msgctxt "Info"
+msgid "members used"
+msgstr "korisnika iskorišteno"
+
+#: node_modules/react-components/containers/members/MembersSection.js:107
 msgctxt "Info"
 msgid "You can add and manage addresses for the user in your"
 msgstr "Možete dodati i upravljati adresama korisnika u vašim"
 
-#: node_modules/react-components/containers/members/MemberActions.js:112
+#: node_modules/react-components/containers/members/MemberActions.js:72
 msgctxt "Info"
 msgid "Are you sure you want to permanently delete this user? The inbox and all addresses associated with this user will be deleted."
 msgstr "Jeste li sigurni da želite trajno izbrisati ovog korisnika? Pristigla pošta i sve adrese povezane s ovim korisnikom biti će izbrisane."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:88
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:93
 msgctxt "Info"
 msgid "Warning: This also deletes all connected services"
 msgstr "Upozorenje: Ovo također uklanja i sve povezane uređaje"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:90
-msgctxt "Info"
-msgid "Example: ProtonMail, ProtonVPN"
-msgstr "Primjer: ProtonMail, ProtonVPN"
-
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:94
+msgctxt "Info"
+msgid "Example: ProtonContact ProtonVPN, ProtonWallet, ProtonDrive, ProtonCalendar"
+msgstr "Primjer: ProtonContact, ProtonVPN, ProtonWallet, ProtonDrive, ProtonCalendar"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
 msgctxt "Info"
 msgid "Warning: deletion is permanent"
 msgstr "Upozorenje: Brisanje je trajno"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:98
 msgctxt "Info"
 msgid "If you wish to delete this account in order to combine it with another one, do NOT delete it."
 msgstr "Ako želite izbrisati ovaj račun s ciljem da ga kombinirate s drugim, NE brišite ga."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:123
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:126
 msgctxt "Info"
 msgid "Please provide an email address in case we need to contact you."
 msgstr "Navedite adresu e-pošte u slučaju da vas moramo kontaktirati."
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:137
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
 msgctxt "Info"
 msgid "Enter your login password to confirm your identity."
 msgstr "Unesite vašu lozinku za potvrdu identiteta."
@@ -1290,10 +1737,90 @@ msgctxt "Info"
 msgid "Your subscription is managed by Mozilla. Please contact Mozilla support."
 msgstr "Vašom pretplatom upravlja Mozilla. Molimo kontaktirajte Mozilla podršku."
 
-#: node_modules/react-components/containers/account/UsernameSection.js:18
+#: node_modules/react-components/containers/account/NewsSection.js:26
+msgctxt "Info"
+msgid "To keep up with the latest development at Protonmail, you can subscribe to our various emails and visit our blog from time to time."
+msgstr "Da biste bili u tijeku s najnovijim razvojima u Protonmailu, možete se pretplatiti na naše različite e-poruke i povremeno posjetiti naš blog."
+
+#: node_modules/react-components/containers/account/UsernameSection.js:19
 msgctxt "Info"
 msgid "To manage your display name and signature, go to ${ link }."
 msgstr "Za upravljanje vašim zaslonskim imenom i potpisom idite na ${ link }."
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:19
+msgctxt "Info"
+msgid "Automatic replies can respond automatically to incoming messages (such as when you are on vacation and can't respond)."
+msgstr "Automatski odgovori mogu automatski odgovoriti na dolazne poruke (primjerice kada ste na odmoru i ne možete odgovoriti)."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:23
+msgctxt "Info"
+msgid "Auto-reply is active from the start time to the end time."
+msgstr "Automatski odgovor je aktivan između odabranog vremena početka i završetka."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:38
+msgctxt "Info"
+msgid "Auto-reply is always active on the days of the week you select, between the selected hours."
+msgstr "Automatski odgovor uvijek je aktivan u odabranim danima u tjednu i to između odabranih sati."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:57
+msgctxt "Info"
+msgid "Auto-reply is active each month between the selected start and end time."
+msgstr "Automatski odgovor je aktivan svaki mjesec između odabranog vremena početka i završetka."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:76
+msgctxt "Info"
+msgid "Auto-reply is active each week between the selected start and end time."
+msgstr "Automatski odgovor je aktivan svaki tjedan između odabranog vremena početka i završetka."
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:90
+msgctxt "Info"
+msgid "Auto-reply is active until you turn it off."
+msgstr "Automatski odgovor je aktivan dokle ga vi ne isključite."
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:40
+msgctxt "Info"
+msgid "Reach out to your system admnistrator for further assistance and support"
+msgstr "Obratite se administratoru sustava za dodatnu pomoć i podršku"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:54
+msgctxt "Info"
+msgid "Help us improve our service by applying to our Beta programs."
+msgstr "Pomozite nam poboljšati našu uslugu prijavom na naše Beta programe."
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:61
+msgctxt "Info"
+msgid "Pay for both ProtonMail and ProtonVPN and get 20% off your entire subscription."
+msgstr "Platite za ProtonMail i ProtonVPN i ostvarite 20% popusta na cijelu pretplatu."
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:11
+msgctxt "Info"
+msgid "ProtonMail supports IMAP/SMTP via the ProtonMail Bridge application. Thunderbird, Microsoft Outlook, and Apple Mail are officially supported on both Windows and MacOS."
+msgstr "ProtonMail podržava IMAP/SMTP putem ProtonMail Bridge aplikacije. Thunderbird, Microsoft Outlook i Apple Mail službeno su podržani na Windows i MacOS."
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
+msgctxt "Info"
+msgid "Go to the download page to get ProtonVPN. You can use you ProtonMail credentials to the log into the ProtonVPN native clients."
+msgstr "Idite na stranicu za preuzimanje da biste preuzeli ProtonVPN. Podatke za prijavu od ProtonMaila možete koristiti i za prijavu u ProtonVPN-ove nativne klijente."
+
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:15
+msgctxt "Info"
+msgid "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS or OpenVPN on GNU/Linux), you need specific credentials. to get these credentials, go to the Account settings when logged in at ProtonVPN."
+msgstr "Da biste povezali ProtonVPN s klijentima treće strane (npr. Tunnelblick na MacOS ili OpenVPN na GNU/Linuxu), potrebne su vam posebne vjerodajnice. Da biste dobili ove vjerodajnice, idite na Postavke računa kada ste prijavljeni na ProtonVPN."
+
+#: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
+msgctxt "Info"
+msgid "Participating in beta programs gives you the opportunity to test new features and improvements before they get released to the general public. It offers a chance to have an active role in shaping the quality of our services."
+msgstr "Sudjelovanje u Beta programima omogućuje vam testiranje novih značajki i poboljšanja prije nego što ih se objavi u javnosti. Ovo vam pruža priliku za aktivnu ulogu u oblikovanju kvalitete naših usluga."
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:55
+msgctxt "Info"
+msgid "ProtonMail offers 3 default themes to select from. You can also import a custom theme using our CSS editor."
+msgstr "ProtonMail nudi 3 zadane teme za odabir. Također možete uvesti prilagođenu temu pomoću našeg CSS uređivača."
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:57
+msgctxt "Info"
+msgid "Selecting another theme will override your current theme and any customization will be lost."
+msgstr "Odabir druge teme poništit će trenutačnu temu i izgubit će se svaka prilagodba teme."
 
 #: src/app/components/Labels/NewLabelForm.js:12
 #: src/app/components/Labels/NewLabelForm.js:17
@@ -1306,118 +1833,130 @@ msgctxt "New Label form"
 msgid "Color"
 msgstr "Boja"
 
-#: src/app/containers/Labels/modals/Edit.js:59
-msgctxt "New Label form"
-msgid "Cancel"
-msgstr "Poništi"
-
-#: src/app/containers/Labels/modals/Edit.js:60
-msgctxt "New Label form"
-msgid "Save"
-msgstr "Spremi"
-
-#: src/app/containers/AddressesContainer.js:11
+#: src/app/containers/AddressesContainer.js:33
+#: src/app/containers/AddressesContainer.js:52
 msgctxt "Link"
 msgid "Domain settings"
 msgstr "Postavke domene"
 
-#: src/app/containers/AddressesContainer.js:18
+#: src/app/containers/AddressesContainer.js:40
+#: src/app/containers/DomainsContainer.js:41
+#: src/app/containers/OrganizationContainer.js:51
 msgctxt "Link"
 msgid "Users settings"
 msgstr "Korisničke postavke"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:64
-#: node_modules/react-components/containers/organization/OrganizationSection.js:70
-#: node_modules/react-components/containers/organization/OrganizationSection.js:76
-#: node_modules/react-components/containers/organization/OrganizationSection.js:82
-#: node_modules/react-components/containers/organization/OrganizationSection.js:88
-#: src/app/containers/DomainsContainer.js:10
+#: node_modules/react-components/containers/organization/OrganizationSection.js:66
+#: node_modules/react-components/containers/organization/OrganizationSection.js:72
+#: node_modules/react-components/containers/organization/OrganizationSection.js:78
+#: node_modules/react-components/containers/organization/OrganizationSection.js:84
+#: node_modules/react-components/containers/organization/OrganizationSection.js:90
+#: src/app/containers/AddressesContainer.js:59
+#: src/app/containers/AddressesContainer.js:69
+#: src/app/containers/AddressesContainer.js:76
+#: src/app/containers/DomainsContainer.js:59
 msgctxt "Link"
 msgid "Upgrade"
 msgstr "Nadogradnja"
 
-#: src/app/containers/DomainsContainer.js:17
+#: src/app/containers/DomainsContainer.js:48
+#: src/app/containers/DomainsContainer.js:66
 msgctxt "Link"
 msgid "Addresses settings"
 msgstr "Postavke adresa"
+
+#: src/app/containers/AutoReplyContainer.js:40
+msgctxt "Link"
+msgid "Filter Settings"
+msgstr "Postavke filtara"
+
+#: node_modules/react-components/containers/members/MembersSection.js:108
+#: src/app/containers/MembersContainer.js:40
+msgctxt "Link"
+msgid "Address settings"
+msgstr "Postavke adrese"
+
+#: src/app/containers/OrganizationContainer.js:44
+msgctxt "Link"
+msgid "Domains settings"
+msgstr "Postavke domena"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
 msgctxt "Link"
 msgid "Learn more"
 msgstr "Saznajte više"
 
-#: node_modules/react-components/containers/domains/DomainAddresses.js:26
-#: node_modules/react-components/containers/members/MemberAddresses.js:26
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:13
+msgctxt "Link"
+msgid "Add auto-reply"
+msgstr "Dodaj automatski odgovor"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:14
+msgctxt "Link"
+msgid "Add custom domain"
+msgstr "Dodaj prilagođenu domenu"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:15
+msgctxt "Link"
+msgid "Add filters"
+msgstr "Dodaj filtre"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:16
+msgctxt "Link"
+msgid "Manage encrypted contacts"
+msgstr "Upravljajte šifriranim kontaktima"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:19
+msgctxt "Link"
+msgid "Add new users"
+msgstr "Dodaj nove korisnike"
+
+#: node_modules/react-components/containers/payments/subscription/FeaturesList.js:20
+msgctxt "Link"
+msgid "Use ProtonVPN"
+msgstr "Koristi ProtonVPN"
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:23
+#: node_modules/react-components/containers/members/MemberAddresses.js:23
+#: node_modules/react-components/containers/overview/SummarySection.js:20
+#: node_modules/react-components/containers/overview/SummarySection.js:34
+#: node_modules/react-components/containers/overview/SummarySection.js:43
 msgctxt "Link"
 msgid "Manage"
 msgstr "Upravljanje"
 
-#: node_modules/react-components/containers/support/BugModal.js:61
+#: node_modules/react-components/containers/support/BugModal.js:60
 msgctxt "Link"
 msgid "clearing your browser cache"
 msgstr "čišćenje predmemorije preglednika"
-
-#: node_modules/react-components/containers/addresses/PmMePanel.js:35
-msgctxt "Link"
-msgid "Add another address"
-msgstr "Dodaj drugu adresu"
-
-#: node_modules/react-components/containers/members/MembersSection.js:103
-msgctxt "Link"
-msgid "Address Settings"
-msgstr "Postavke adrese"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:8
 msgctxt "Link"
 msgid "identity settings"
 msgstr "postavke identiteta"
 
-#: src/app/containers/Labels/modals/Edit.js:14
-msgctxt "Label/folder modal"
-msgid "Edit label: ${ Name }"
-msgstr "Uredi oznaku: ${ Name }"
+#: node_modules/react-components/containers/overview/SummarySection.js:74
+#: node_modules/react-components/containers/overview/SummarySection.js:83
+msgctxt "Link"
+msgid "Edit"
+msgstr "Uredi"
 
-#: src/app/containers/Labels/modals/Edit.js:16
-msgctxt "Label/folder modal"
-msgid "Edit folder: ${ Name }"
-msgstr "Uredi mapu: ${ Name }"
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:12
+msgctxt "Link"
+msgid "Download page"
+msgstr "Stranica za preuzimanje"
 
-#: src/app/containers/Labels/modals/Edit.js:20
-msgctxt "Label/folder modal"
-msgid "Create a new label: ${ Name }"
-msgstr "Stvori novu oznaku: ${ Name }"
-
-#: src/app/containers/Labels/modals/Edit.js:22
-msgctxt "Label/folder modal"
-msgid "Create a new folder: ${ Name }"
-msgstr "Stvori novu mapu: ${ Name }"
-
-#: src/app/containers/Labels/Container.js:49
-msgctxt "LabelSettings"
-msgid "Manage your labels/folders"
-msgstr "Upravljajte svojim oznakama/mapama"
-
-#: src/app/containers/Labels/Container.js:51
-msgctxt "LabelSettings"
-msgid "Folders and labels"
-msgstr "Mape i oznake"
-
-#: src/app/containers/Labels/Container.js:53
-msgctxt "LabelSettings"
-msgid "Multiple Labels can be applied to a single message, but a message can only be in a single Folder."
-msgstr "Više oznaka se može primijeniti na jednu poruku, ali poruka može biti samo u jednoj mapi."
-
-#: src/app/containers/Labels/Container.js:70
-msgctxt "LabelSettings"
-msgid "No labels/folders available"
-msgstr "Nema dostupnih oznaka/mapa"
+#: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:18
+msgctxt "Link"
+msgid "ProtonVPN login"
+msgstr "ProtonVPN prijava"
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
 msgid "Email address invalid"
 msgstr "Adresa e-pošte nije valjana"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:30
+#: node_modules/react-components/containers/payments/Bitcoin.js:28
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "Greška prilikom spajanja na Bitcoin API."
@@ -1436,6 +1975,17 @@ msgstr "Iznos veći od maksimuma."
 msgctxt "Error"
 msgid "Error connecting to PayPal."
 msgstr "Greška pri povezivanju na PayPal."
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:56
+msgctxt "Error"
+msgid "Your coupon is invalid or cannot be applied to your plan"
+msgstr "Vaš kupon je nevažeći ili se ne može primijeniti na vaš plan"
+
+#: node_modules/react-components/containers/payments/GiftCodeInput.js:8
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:62
+msgctxt "Error"
+msgid "Invalid gift code"
+msgstr "Nevažeći darovni kod"
 
 #: node_modules/react-components/containers/payments/cardValidator.js:15
 msgctxt "Error"
@@ -1462,52 +2012,52 @@ msgctxt "Error"
 msgid "Invalid postal code"
 msgstr "Netočan poštanski broj"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DomainModal.js:56
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "Provjera nije uspjela, pokušajte ponovo za sat vremena."
 
-#: node_modules/react-components/containers/domains/DomainModal.js:72
+#: node_modules/react-components/containers/domains/DomainModal.js:61
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "Pogrešan kontrolni kôd. Provjerite jeste li ispravno kopirali kontrolni kôd i pokušajte ponovo. Može potrajati do 24 sata kako bi promjene stupile na snagu."
 
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:61
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:49
 msgctxt "Error"
 msgid "Payments are currently not available, please try again later"
 msgstr "Plaćanje trenutno nije dostupno, pokušajte ponovo kasnije"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:67
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:68
 msgctxt "Error"
 msgid "Your account or organization currently has an overdue invoice. Please pay all unpaid invoices."
 msgstr "Vaš račun ili organizacija trenutačno ima neplaćenu fakturu. Molimo platite sve neplaćene fakture."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:21
+#: node_modules/react-components/containers/members/AddMemberButton.js:25
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
 msgstr "Višekorisnička podrška zahtijeva Professional ili Visionary plan."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:26
+#: node_modules/react-components/containers/members/AddMemberButton.js:30
 msgctxt "Error"
 msgid "Please enable multi-user support before adding users to your organization."
 msgstr "Molimo vas da omogućite višekorisničku podršku prije dodavanja korisnika u vašu organizaciju."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:33
+#: node_modules/react-components/containers/members/AddMemberButton.js:37
 msgctxt "Error"
 msgid "Please configure a custom domain before adding users to your organization."
 msgstr "Konfigurirajte prilagođenu domenu prije dodavanja korisnika u vašu organizaciju."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:39
+#: node_modules/react-components/containers/members/AddMemberButton.js:43
 msgctxt "Error"
 msgid "You have used all users in your plan. Please upgrade your plan to add a new user."
 msgstr "Iskoristili ste sve slobodne korisnike u Vašem planu. Molimo Vas da nadogradite Vaš plan da biste dodali novog korisnika."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:45
+#: node_modules/react-components/containers/members/AddMemberButton.js:49
 msgctxt "Error"
 msgid "You have used all addresses in your plan. Please upgrade your plan to add a new address."
 msgstr "Iskoristili ste sve adrese u Vašem planu. Molimo Vas da nadogradite Vaš plan da biste dodali novu adresu."
 
-#: node_modules/react-components/containers/members/AddMemberButton.js:52
+#: node_modules/react-components/containers/members/AddMemberButton.js:56
 msgctxt "Error"
 msgid "All storage space has been allocated. Please reduce storage allocated to other users."
 msgstr "Sav prostor za pohranu je dodijeljen. Molimo smanjite prostor za pohranu dodijeljen ostalim korisnicima."
@@ -1532,6 +2082,11 @@ msgctxt "Error"
 msgid "Address already associated to a user"
 msgstr "Adresa je već pridružena korisniku"
 
+#: node_modules/react-components/containers/login/LoginContainer.js:14
+msgctxt "Error"
+msgid "Incorrect decryption password"
+msgstr "Neispravna lozinka za dešifriranje"
+
 #: node_modules/react-components/components/toggle/Toggle.js:9
 msgctxt "Toggle button"
 msgid "On"
@@ -1552,91 +2107,216 @@ msgctxt "Label"
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:46
-#: node_modules/react-components/containers/organization/OrganizationSection.js:54
+#: node_modules/react-components/containers/organization/OrganizationSection.js:45
+#: node_modules/react-components/containers/organization/OrganizationSection.js:57
 msgctxt "Label"
 msgid "Organization name"
 msgstr "Ime organizacije"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:62
+#: node_modules/react-components/containers/organization/OrganizationSection.js:64
 msgctxt "Label"
 msgid "Number of users"
 msgstr "Broj korisnika"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:68
+#: node_modules/react-components/containers/organization/OrganizationSection.js:70
 msgctxt "Label"
 msgid "Organization storage"
 msgstr "Prostor za pohranu organizacije"
 
-#: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:110
-#: node_modules/react-components/containers/organization/OrganizationSection.js:74
+#: node_modules/react-components/containers/members/EditMemberModal.js:81
+#: node_modules/react-components/containers/members/MemberModal.js:122
+#: node_modules/react-components/containers/organization/OrganizationSection.js:76
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:161
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:192
 msgctxt "Label"
 msgid "VPN connections"
 msgstr "VPN veze"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:80
+#: node_modules/react-components/containers/organization/OrganizationSection.js:82
 msgctxt "Label"
 msgid "Addresses"
 msgstr "Adrese"
 
-#: node_modules/react-components/containers/organization/OrganizationSection.js:86
+#: node_modules/react-components/containers/organization/OrganizationSection.js:88
 msgctxt "Label"
 msgid "Domains"
 msgstr "Domene"
 
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:40
-#: node_modules/react-components/containers/payments/DonateModal.js:39
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:36
+#: node_modules/react-components/containers/payments/CreditsModal.js:58
+#: node_modules/react-components/containers/payments/DonateModal.js:41
 msgctxt "Label"
 msgid "Amount"
 msgstr "Iznos"
 
+#: node_modules/react-components/containers/payments/BillingSection.js:112
+msgctxt "Label"
+msgid "Extra users"
+msgstr "Dodatni korisnici"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:128
+msgctxt "Label"
+msgid "Extra email addresses"
+msgstr "Dodatne adrese e-pošte"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:144
+msgctxt "Label"
+msgid "Extra storage"
+msgstr "Dodatni prostor za pohranu"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:160
+msgctxt "Label"
+msgid "Extra domains"
+msgstr "Dodatne domene"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:188
+msgctxt "Label"
+msgid "Extra VPN connections"
+msgstr "Dodatne VPN veze"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:204
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:101
+msgctxt "Label"
+msgid "Sub-total"
+msgstr "Međuzbroj"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:214
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:111
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:230
+msgctxt "Label"
+msgid "Coupon"
+msgstr "Kupon"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:226
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
+msgctxt "Label"
+msgid "Total"
+msgstr "Ukupno"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:44
+#: node_modules/react-components/containers/payments/BillingSection.js:237
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:171
+msgctxt "Label"
+msgid "Amount due"
+msgstr "Dospjeli iznos"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:247
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:32
+msgctxt "Label"
+msgid "Credits"
+msgstr "Zasluge"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:255
+msgctxt "Label"
+msgid "Billing cycle end date"
+msgstr "Krajnji datum ciklusa naplate"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:43
+msgctxt "Label"
+msgid "Proration"
+msgstr "Proration"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:55
+msgctxt "Label"
+msgid "Gift"
+msgstr "Poklon"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
+msgctxt "Label"
+msgid "Users"
+msgstr "Korisnici"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
+msgctxt "Label"
+msgid "Email addresses"
+msgstr "Adrese e-pošte"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:137
+msgctxt "Label"
+msgid "Storage capacity"
+msgstr "Prostor za pohranu"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:150
+msgctxt "Label"
+msgid "Custom domains"
+msgstr "Prilagođene domene"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:205
+msgctxt "Label"
+msgid "Billing cycle"
+msgstr "Ciklus naplate"
+
 #: node_modules/react-components/containers/payments/Payment.js:40
 msgctxt "Label"
-msgid "Select payment method"
-msgstr "Odaberite način plaćanja"
+msgid "Payment method"
+msgstr "Način plaćanja"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:54
+msgctxt "Label"
+msgid "Enter gift code"
+msgstr "Unesite darovni kôd"
 
 #: node_modules/react-components/containers/payments/BitcoinDetails.js:10
 msgctxt "Label"
 msgid "Amount BTC"
 msgstr "Iznos BTC"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:14
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
 msgctxt "Label"
 msgid "BTC address"
 msgstr "BTC adresa"
 
-#: node_modules/react-components/containers/login/LoginForm.js:40
-#: node_modules/react-components/containers/members/MemberModal.js:73
-#: node_modules/react-components/containers/password/AskPasswordModal.js:30
-msgctxt "Label"
-msgid "Password"
-msgstr "Lozinka"
-
-#: node_modules/react-components/containers/password/AskPasswordModal.js:43
-msgctxt "Label"
-msgid "Two factor code"
-msgstr "Šifra za provjeru autentičnosti u dva koraka"
-
-#: node_modules/react-components/containers/password/AskPasswordModal.js:50
+#: node_modules/react-components/containers/login/UnlockModal.js:34
+#: node_modules/react-components/containers/password/AskPasswordModal.js:26
 msgctxt "Label"
 msgid "Cancel"
 msgstr "Poništi"
 
-#: node_modules/react-components/containers/password/AskPasswordModal.js:51
+#: node_modules/react-components/containers/login/UnlockModal.js:35
+#: node_modules/react-components/containers/password/AskPasswordModal.js:27
 msgctxt "Label"
 msgid "Submit"
 msgstr "Pošalji"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:24
+#: node_modules/react-components/containers/login/LoginForm.js:40
+#: node_modules/react-components/containers/login/UnlockModal.js:41
+#: node_modules/react-components/containers/members/MemberModal.js:85
+#: node_modules/react-components/containers/password/AskPasswordModal.js:32
+msgctxt "Label"
+msgid "Password"
+msgstr "Lozinka"
+
+#: node_modules/react-components/containers/password/AskPasswordModal.js:45
+msgctxt "Label"
+msgid "Two factor code"
+msgstr "Šifra za provjeru autentičnosti u dva koraka"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:20
 msgctxt "Label"
 msgid "Auto-load remote content"
 msgstr "Automatski prikaži udaljeni sadržaj"
 
-#: node_modules/react-components/containers/messages/MessagesSection.js:33
+#: node_modules/react-components/containers/messages/MessagesSection.js:29
 msgctxt "Label"
 msgid "Auto-load embedded images"
 msgstr "Automatsko prikazivanje ugrađenih slika"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:38
+msgctxt "Label"
+msgid "Sent/Drafts"
+msgstr "Poslano/Skice"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:46
+msgctxt "Label"
+msgid "Include moved"
+msgstr "Uključi i premješteno"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:50
+msgctxt "Label"
+msgid "Request link confirmation"
+msgstr "Zatražite potvrdu poveznice"
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:12
 msgctxt "Label"
@@ -1659,15 +2339,10 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "Unesite vašu domenu"
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:42
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
 msgctxt "Label"
 msgid "Customize invoices"
 msgstr "Prilagodite fakture"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:48
-msgctxt "Label"
-msgid "Amount due"
-msgstr "Dospjeli iznos"
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:20
 msgctxt "Label"
@@ -1684,7 +2359,7 @@ msgctxt "Label"
 msgid "Default PGP Scheme"
 msgstr "Zadana PGP shema"
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:40
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:51
 msgctxt "Label"
 msgid "Prompt to trust keys"
 msgstr "Prozor za potvrdu valjanosti ključa"
@@ -1700,7 +2375,7 @@ msgid "Default language"
 msgstr "Zadani jezik"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:17
-#: node_modules/react-components/containers/support/BugModal.js:102
+#: node_modules/react-components/containers/support/BugModal.js:107
 msgctxt "Label"
 msgid "Email address"
 msgstr "Adresa e-pošte"
@@ -1715,172 +2390,177 @@ msgctxt "Label"
 msgid "Daily email notifications"
 msgstr "Dnevne obavijesti e-pošte"
 
+#: node_modules/react-components/containers/notification/EmailModal.js:58
+msgctxt "Label"
+msgid "Email"
+msgstr "E-pošta"
+
 #: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
 msgctxt "Label"
 msgid "Desktop notification"
 msgstr "Obavijest radne površine"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:56
-msgctxt "Label"
-msgid "Email"
-msgstr "E-pošta"
-
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:53
 msgctxt "Label"
-msgid "Cash"
-msgstr "Gotovina"
+msgid "Pay with cash"
+msgstr "Plaćanje gotovinom"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:77
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:90
 msgctxt "Label"
 msgid "Default Composer"
 msgstr "Zadani prozor za novu poruku"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:94
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:106
 msgctxt "Label"
 msgid "Default Inbox"
 msgstr "Zadana pristigla pošta"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:111
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:122
 msgctxt "Label"
 msgid "Conversations"
 msgstr "Razgovori"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:122
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:138
 msgctxt "Label"
-msgid "Composer Mode"
+msgid "Use sticky labels"
+msgstr "Koristi ljepljive oznake"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:155
+msgctxt "Label"
+msgid "Composer mode"
 msgstr "Način rada prozora za novu poruku"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:132
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:166
 msgctxt "Label"
-msgid "Composer Text Direction"
+msgid "Composer text direction"
 msgstr "Smjer teksta u prozoru za novu poruku"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:143
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:41
 msgctxt "Label"
-msgid "Sent/Drafts"
-msgstr "Poslano/Skice"
+msgid "Read/unread order"
+msgstr "Redoslijed pročitano/nepročitano"
 
-#: node_modules/react-components/containers/support/BugModal.js:90
+#: node_modules/react-components/containers/support/BugModal.js:95
 msgctxt "Label"
 msgid "Proton username"
 msgstr "Proton korisničko ime"
 
-#: node_modules/react-components/containers/support/BugModal.js:114
+#: node_modules/react-components/containers/support/BugModal.js:119
 msgctxt "Label"
 msgid "Category"
 msgstr "Kategorija"
 
-#: node_modules/react-components/containers/support/BugModal.js:126
+#: node_modules/react-components/containers/support/BugModal.js:131
 msgctxt "Label"
 msgid "What happened?"
 msgstr "Što se dogodilo?"
 
-#: node_modules/react-components/containers/support/BugModal.js:139
+#: node_modules/react-components/containers/support/BugModal.js:144
 msgctxt "Label"
 msgid "Attach screenshots"
 msgstr "Dodajte snimke zaslona"
 
-#: node_modules/react-components/containers/support/BugModal.js:147
+#: node_modules/react-components/containers/support/BugModal.js:152
 msgctxt "Label"
 msgid "System information"
 msgstr "Informacije o sustavu"
 
-#: node_modules/react-components/containers/support/BugModal.js:155
+#: node_modules/react-components/containers/support/BugModal.js:160
 msgctxt "Label"
 msgid "Operating system"
 msgstr "Operativni sustav"
 
-#: node_modules/react-components/containers/support/BugModal.js:166
+#: node_modules/react-components/containers/support/BugModal.js:171
 msgctxt "Label"
 msgid "Operating system version"
 msgstr "Verzija operativnog sustava"
 
-#: node_modules/react-components/containers/support/BugModal.js:177
+#: node_modules/react-components/containers/support/BugModal.js:182
 msgctxt "Label"
 msgid "Browser"
 msgstr "Preglednik"
 
-#: node_modules/react-components/containers/support/BugModal.js:188
+#: node_modules/react-components/containers/support/BugModal.js:193
 msgctxt "Label"
 msgid "Browser version"
 msgstr "Verzija preglednika"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:58
+#: node_modules/react-components/containers/addresses/IdentitySection.js:74
 msgctxt "Label"
 msgid "Select an address"
 msgstr "Odaberite adresu"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:79
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:42
-#: node_modules/react-components/containers/addresses/IdentitySection.js:65
+#: node_modules/react-components/containers/addresses/AddressModal.js:82
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:56
+#: node_modules/react-components/containers/addresses/IdentitySection.js:81
 msgctxt "Label"
 msgid "Display name"
 msgstr "Zaslonsko ime"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:89
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:53
-#: node_modules/react-components/containers/addresses/IdentitySection.js:74
+#: node_modules/react-components/containers/addresses/AddressModal.js:92
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:67
+#: node_modules/react-components/containers/addresses/IdentitySection.js:90
 msgctxt "Label"
 msgid "Signature"
 msgstr "Potpis"
 
-#: node_modules/react-components/containers/addresses/IdentitySection.js:81
+#: node_modules/react-components/containers/addresses/IdentitySection.js:100
 msgctxt "Label"
 msgid "ProtonMail signature"
 msgstr "ProtonMail potpis"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:58
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:39
+#: node_modules/react-components/containers/addresses/AddressModal.js:60
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:37
 msgctxt "Label"
 msgid "User"
 msgstr "Korisnik"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:62
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:38
-#: node_modules/react-components/containers/members/MemberModal.js:92
+#: node_modules/react-components/containers/addresses/AddressModal.js:64
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:52
+#: node_modules/react-components/containers/members/MemberModal.js:104
 msgctxt "Label"
 msgid "Address"
 msgstr "Adresa"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:14
-#: node_modules/react-components/containers/members/EditMemberModal.js:50
-#: node_modules/react-components/containers/members/MemberModal.js:52
+#: node_modules/react-components/containers/members/EditMemberModal.js:62
+#: node_modules/react-components/containers/members/MemberModal.js:64
 msgctxt "Label"
 msgid "Name"
 msgstr "Naziv"
 
-#: node_modules/react-components/containers/members/EditMemberModal.js:62
-#: node_modules/react-components/containers/members/MemberModal.js:103
+#: node_modules/react-components/containers/members/EditMemberModal.js:74
+#: node_modules/react-components/containers/members/MemberModal.js:115
 msgctxt "Label"
 msgid "Account storage"
 msgstr "Prostor za pohranu računa"
 
-#: node_modules/react-components/containers/members/MemberModal.js:69
+#: node_modules/react-components/containers/members/MemberModal.js:81
 msgctxt "Label"
 msgid "Key strength"
 msgstr "Jačina ključa"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:99
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:102
 msgctxt "Label"
 msgid "Feedback"
 msgstr "Povratne informacije"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:113
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:116
 msgctxt "Label"
 msgid "Email address (optional)"
 msgstr "Adresa e-pošte (neobavezno)"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:127
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:130
 msgctxt "Label"
 msgid "Login password"
 msgstr "Lozinka za prijavu"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:142
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:145
 msgctxt "Label"
 msgid "Two-factor passcode"
 msgstr "Šifra za provjeru autentičnosti u dva koraka"
 
-#: node_modules/react-components/containers/account/NewsSection.js:27
+#: node_modules/react-components/containers/account/NewsSection.js:29
 msgctxt "Label"
 msgid "Email subscriptions"
 msgstr "Pretplate e-pošte"
@@ -1889,6 +2569,109 @@ msgstr "Pretplate e-pošte"
 msgctxt "Label"
 msgid "Irreversible action"
 msgstr "Nepovratna akcija"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:24
+msgctxt "Label"
+msgid "Auto-reply"
+msgstr "Automatski odgovori"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:52
+msgctxt "Label"
+msgid "Duration"
+msgstr "Trajanje"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:53
+msgctxt "Label"
+msgid "Start"
+msgstr "Početak"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:54
+msgctxt "Label"
+msgid "End"
+msgstr "Kraj"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:55
+msgctxt "Label"
+msgid "Timezone"
+msgstr "Vremenska zona"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:56
+msgctxt "Label"
+msgid "Message"
+msgstr "Poruka"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDateField.js:12
+msgctxt "Label"
+msgid "End date"
+msgstr "Krajnji datum"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:13
+msgctxt "Label"
+msgid "Days of the week"
+msgstr "Dani u tjednu"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDateField.js:12
+msgctxt "Label"
+msgid "Start date"
+msgstr "Početni datum"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDayOfMonthField.js:12
+msgctxt "Label"
+msgid "Start day of month"
+msgstr "Prvi dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartTimeField.js:9
+msgctxt "Label"
+msgid "Start time"
+msgstr "Vrijeme početka"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndTimeField.js:9
+msgctxt "Label"
+msgid "End time"
+msgstr "Vrijeme završetka"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDayOfWeekField.js:12
+msgctxt "Label"
+msgid "Start weekday"
+msgstr "Početak vikenda"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDayOfWeekField.js:12
+msgctxt "Label"
+msgid "End weekday"
+msgstr "Kraj vikenda"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDayOfMonthField.js:12
+msgctxt "Label"
+msgid "End day of month"
+msgstr "Zadnji dan u mjesecu"
+
+#: node_modules/react-components/containers/login/LoginForm.js:24
+#: node_modules/react-components/containers/overview/SummarySection.js:64
+msgctxt "Label"
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:69
+msgctxt "Label"
+msgid "Recovery email"
+msgstr "Adresa e-pošte za oporavak"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:78
+msgctxt "Label"
+msgid "Two factor authentication"
+msgstr "Provjera autentičnosti u dva koraka"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:89
+msgctxt "Label"
+msgid "Role"
+msgstr "Uloga"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:24
+msgctxt "Label"
+msgid "CSS code"
+msgstr "CSS kôd"
 
 #: node_modules/react-components/containers/login/TOTPForm.js:29
 msgctxt "Label"
@@ -1900,23 +2683,183 @@ msgctxt "Label"
 msgid "Mailbox password"
 msgstr "Lozinka sandučića e-pošte"
 
-#: node_modules/react-components/containers/login/LoginForm.js:24
-msgctxt "Label"
-msgid "Username"
-msgstr "Korisničko ime"
+#: node_modules/react-components/containers/payments/CycleDiscountBadge.js:15
+msgctxt "Tooltip"
+msgid "Discount applied for annual billing cycle"
+msgstr "Popust se primjenjuje za godišnji ciklus naplate"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:49
-#: node_modules/react-components/containers/payments/EditCardModal.js:34
+#: node_modules/react-components/containers/payments/CycleDiscountBadge.js:16
+msgctxt "Tooltip"
+msgid "Discount applied for two-year billing cycle"
+msgstr "Popust se primjenjuje za dvogodišnji ciklus naplate"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:158
+msgctxt "Tooltip"
+msgid "Save 20% when billed annually"
+msgstr "Uštedite 20% prilikom godišnje naplate"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:204
+msgctxt "Tooltip"
+msgid "ProtonMail cannot be used for bulk sending or spamming"
+msgstr "ProtonMail nije namjenjen za slanje velikih, skupnih emailova ili spamanje"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:233
+msgctxt "Tooltip"
+msgid "Use your own domain name"
+msgstr "Koristite vlastitu domenu"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:245
+msgctxt "Tooltip"
+msgid "Use ProtonMail with a desktop email client"
+msgstr "Koristite ProtonMail s desktop klijentom e-pošte"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:377
+msgctxt "Tooltip"
+msgid "ProtonVPN keeps your Internet traffic private"
+msgstr "ProtonVPN čuva vaš internetski promet privatnim"
+
+#: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:50
+msgctxt "Tooltip"
+msgid "For each additional user, 5GB of storage and 5 email addresses are added to your subscription."
+msgstr "Za svakog dodatnog korisnika, 5GB prostora za pohranu i 5 adresa e-pošte se dodaje vašoj pretplati."
+
+#: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:75
+msgctxt "Tooltip"
+msgid "Allows you to host emails for your own domain(s) at ProtonMail, e.g. thomas.anderson@example.com"
+msgstr "Omogućuje vam da pružate usluge e-pošte za vaše domene na ProtonMailu, npr. ivan.horvat@primjer.hr"
+
+#: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:72
+msgctxt "Tooltip"
+msgid "Add additional addresses to your account."
+msgstr "Dodajte dodatne adrese e-pošte vašem računu."
+
+#: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:94
+msgctxt "Tooltip"
+msgid "Use your own domain name."
+msgstr "Koristite vlastitu domenu."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:78
+msgctxt "Tooltip"
+msgid "Download and stream faster with a faster VPN connection."
+msgstr "Preuzimajte i brže streamajte pomoću brze VPN veze."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:87
+msgctxt "Tooltip"
+msgid "More connections allows more devices to use ProtonVPN at the same time."
+msgstr "Više veza omogućava da više uređaja koristi ProtonVPN istovremeno."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:152
+msgctxt "Tooltip"
+msgid "Easily route your traffic through the Tor anonymity network."
+msgstr "Jednostavno usmjerite promet kroz anonimnu mrežu Tor."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:167
+msgctxt "Tooltip"
+msgid "Additional protection by routing your traffic through multiple locations before leaving the ProtonVPN network."
+msgstr "Dodatna zaštita usmjeravanjem prometa kroz više lokacija prije napuštanja ProtonVPN mreže."
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:198
+msgctxt "Tooltip"
+msgid "Order additional connections to provide ProtonVPN to other users with your organization"
+msgstr "Naručite dodatne veze za pružanje ProtonVPN-a drugim korisnicima u vašoj organizaciji"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:40
+msgctxt "Tooltip"
+msgid "Setting to 'Include moved' means that sent / drafts messages that have been moved to other folders will continue to appear in the Sent/Drafts folder."
+msgstr "Postavka 'Uključi i premješteno' znači da će se poslane poruke i skice koje su premještene u druge mape i dalje prikazivati u mapi Poslano / Skice."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:93
+msgctxt "Tooltip"
+msgid "This sets the default composer size. Two sizes are available, a smaller popup composer, and a bigger full screen composer."
+msgstr "Ovo postavlja zadanu veličinu prozora za novu poruku. Dvije veličine su dostupne. Manji skočni prozor i veći prozor preko cijelog zaslona."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:109
+msgctxt "Tooltip"
+msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
+msgstr "ProtonMail podržava izgled po stupacima i po redovima za pristiglu poštu. Pomoću ove postavke moguće je promijeniti između dva izgleda."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:124
+msgctxt "Tooltip"
+msgid "Conversation grouping automatically groups messages in the same conversation together."
+msgstr "Grupiranje razgovora automatski grupira poruke zajedno u isti razgovor."
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:140
+msgctxt "Tooltip"
+msgid "When a label is added to a message in a conversation, all future messages you send or receive will have that same label automatically applied."
+msgstr "Kada se oznaka doda poruci u razgovoru, sve buduće poruke koje pošaljete ili primite, automatski će imati istu oznaku."
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:28
+msgctxt "Tooltip"
+msgid "ProtonMail users will use this key by default for sending"
+msgstr "ProtonMail korisnici će koristiti ovaj ključ kao zadani, za slanje"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:34
+msgctxt "Tooltip"
+msgid "You have locally decrypted this key"
+msgstr "Lokalno ste dešifrirali ovaj ključ"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:40
+msgctxt "Tooltip"
+msgid "This key is encrypted with an old password"
+msgstr "Ovaj ključ je šifriran s starom lozinkom"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:46
+msgctxt "Tooltip"
+msgid "This key cannot be used for encryption"
+msgstr "Ovaj ključ se ne može koristiti za šifriranje"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:52
+msgctxt "Tooltip"
+msgid "This address has been disabled"
+msgstr "Ova adresa e-pošte je onemogućena"
+
+#: node_modules/react-components/containers/keys/KeysStatus.js:58
+msgctxt "Tooltip"
+msgid "Signatures produced by this key are treated as invalid and this key cannot be used for encryption"
+msgstr "Potpisi proizvedeni ovim ključem tretiraju se kao nevažeći i ovaj ključ se ne može koristiti za šifriranje"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:12
+msgctxt "Billing cycle option"
+msgid "Monthly"
+msgstr "Mjesečno"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:13
+msgctxt "Billing cycle option"
+msgid "Annually"
+msgstr "Godišnje"
+
+#: node_modules/react-components/containers/payments/CycleSelector.js:18
+msgctxt "Billing cycle option"
+msgid "Two-year"
+msgstr "2 godine"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:47
+#: node_modules/react-components/containers/payments/EditCardModal.js:26
 msgctxt "Success"
 msgid "Payment method updated"
 msgstr "Način plaćanja je ažuriran"
 
-#: node_modules/react-components/containers/payments/DonateModal.js:31
+#: node_modules/react-components/containers/payments/DonateModal.js:23
 msgctxt "Success"
 msgid "Your support is essential to keeping ProtonMail running. Thank you for supporting internet privacy!"
 msgstr "Vaša podrška je neophodna za održavanje ProtonMaila. Hvala na podržavanju internetske privatnosti!"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:93
+#: node_modules/react-components/containers/payments/PlansSection.js:55
+msgctxt "Success"
+msgid "You have successfully unsubscribed"
+msgstr "Uspješno ste poništili pretplatu"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:40
+msgctxt "Success"
+msgid "Credits added"
+msgstr "Nadodan je kredit"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:34
+msgctxt "Success"
+msgid "Gift code applied"
+msgstr "Kôd darovnog kupona je primjenjen"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:82
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "Domena je potvrđena"
@@ -1926,13 +2869,15 @@ msgctxt "Success"
 msgid "Catch-all address updated"
 msgstr "Dohvati-sve adresa je ažurirana"
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:33
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:29
 msgctxt "Success"
 msgid "Invoice customized"
 msgstr "Prilagođena je faktura"
 
-#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:29
+#: node_modules/react-components/containers/addresses/PMSignatureToggle.js:28
 #: node_modules/react-components/containers/general/ContactsSection.js:28
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:39
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:35
 msgctxt "Success"
 msgid "Preference saved"
 msgstr "Postavke su spremljene"
@@ -1947,27 +2892,42 @@ msgctxt "Success"
 msgid "Locale updated"
 msgstr "Lokalna su ažurirana"
 
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:42
+#: node_modules/react-components/containers/notification/EmailModal.js:41
 msgctxt "Success"
 msgid "Email updated"
 msgstr "Ažurirana je adresa"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:38
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:36
 msgctxt "Success"
 msgid "Payment method deleted"
 msgstr "Način plaćanja je izbrisan"
 
-#: node_modules/react-components/containers/support/BugModal.js:79
+#: node_modules/react-components/containers/sessions/SessionsSection.js:60
+msgctxt "Success"
+msgid "Session revoked"
+msgstr "Sesija je opozvana"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:60
+msgctxt "Success"
+msgid "Sessions revoked"
+msgstr "Sesije su opozvane"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:33
+msgctxt "Success"
+msgid "Buttons position saved"
+msgstr "Pozicija dugmadi je spremljena"
+
+#: node_modules/react-components/containers/support/BugModal.js:77
 msgctxt "Success"
 msgid "Bug reported"
 msgstr "Greška je prijavljena"
 
-#: node_modules/react-components/containers/addresses/AddressModal.js:47
+#: node_modules/react-components/containers/addresses/AddressModal.js:43
 msgctxt "Success"
 msgid "Address added"
 msgstr "Adresa je dodana"
 
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:32
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:34
 msgctxt "Success"
 msgid "Address updated"
 msgstr "Adresa je ažurirana"
@@ -1977,20 +2937,542 @@ msgctxt "Success"
 msgid "User updated"
 msgstr "Korisnik je ažuriran"
 
-#: node_modules/react-components/containers/members/MemberModal.js:45
+#: node_modules/react-components/containers/members/MemberModal.js:46
 msgctxt "Success"
 msgid "User created"
 msgstr "Korisnik je stvoren"
 
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:80
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:77
 msgctxt "Success"
 msgid "Account deleted"
 msgstr "Račun je izbrisan"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:20
+msgctxt "Success"
+msgid "Auto-reply updated"
+msgstr "Automatski odgovori ažurirani"
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:45
+msgctxt "Success"
+msgid "Custom theme saved"
+msgstr "Prilagođena tema je primijenjena"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:159
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:63
+msgctxt "Header"
+msgid "Pricing"
+msgstr "Cijene"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:180
+msgctxt "Header"
+msgid "Users"
+msgstr "Korisnici"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:187
+msgctxt "Header"
+msgid "Email addresses"
+msgstr "Adrese e-pošte"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:194
+msgctxt "Header"
+msgid "Storage capacity (GB)"
+msgstr "Prostor za pohranu (GB)"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:202
+msgctxt "Header"
+msgid "Messages per day"
+msgstr "Poruka dnevno"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:214
+msgctxt "Header"
+msgid "Folders"
+msgstr "Mape"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:223
+msgctxt "Header"
+msgid "Labels"
+msgstr "Oznake"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:232
+msgctxt "Header"
+msgid "Custom domains"
+msgstr "Prilagođene domene"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:244
+msgctxt "Header"
+msgid "IMAP / SMTP support"
+msgstr "IMAP / SMTP podrška"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:262
+msgctxt "Header"
+msgid "Additional features"
+msgstr "Dodatne značajke"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:274
+msgctxt "Header"
+msgid "Encrypted contact details"
+msgstr "Šifrirani podaci o kontaktu"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:291
+msgctxt "Header"
+msgid "Short address (@pm.me)"
+msgstr "Kratka adresa (@pm.me)"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:308
+msgctxt "Header"
+msgid "Auto-reply"
+msgstr "Automatski odgovori"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:325
+msgctxt "Header"
+msgid "Catch-all email"
+msgstr "Dohvati svu e-poštu domene"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:342
+msgctxt "Header"
+msgid "Multi-user support"
+msgstr "Višekorisnička podrška"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:359
+msgctxt "Header"
+msgid "Priority customer support"
+msgstr "Prioritetna korisnička podrška"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:77
+msgctxt "Header"
+msgid "Speed"
+msgstr "Brzina"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:85
+msgctxt "Header"
+msgid "Simultaneous connections"
+msgstr "Istovremene veze"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:96
+msgctxt "Header"
+msgid "Advanced encryption"
+msgstr "Napredno šifriranje"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:107
+msgctxt "Header"
+msgid "No logs policy"
+msgstr "Politika o nespremanju zapisa"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:118
+msgctxt "Header"
+msgid "No data limits"
+msgstr "Nema ograničenja podataka"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:129
+msgctxt "Header"
+msgid "P2P support"
+msgstr "P2P podrška"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:139
+msgctxt "Header"
+msgid "Secure streaming"
+msgstr "Siguran streaming"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:149
+msgctxt "Header"
+msgid "Tor over VPN"
+msgstr "Tor preko VPN-a"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:164
+msgctxt "Header"
+msgid "Secure core"
+msgstr "Secure core"
+
+#: node_modules/react-components/containers/logs/LogsTable.js:40
+msgctxt "Header"
+msgid "Event"
+msgstr "Događaj"
+
+#: node_modules/react-components/containers/logs/LogsTable.js:40
+msgctxt "Header"
+msgid "Time"
+msgstr "Vrijeme"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:190
+#: node_modules/react-components/containers/payments/PlansSection.js:197
+msgctxt "X / user"
+msgid "user"
+msgstr "korisnik"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:209
+#: node_modules/react-components/containers/payments/PlansSection.js:210
+#: node_modules/react-components/containers/payments/PlansSection.js:217
+#: node_modules/react-components/containers/payments/PlansSection.js:218
+#: node_modules/react-components/containers/payments/PlansSection.js:226
+#: node_modules/react-components/containers/payments/PlansSection.js:227
+msgctxt "Plan option"
+msgid "Unlimited"
+msgstr "Neograničeno"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:263
+msgctxt "Plan option"
+msgid "Only basic email features"
+msgstr "Samo osnovne značajke e-pošte"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:264
+msgctxt "Plan option"
+msgid "Folders, Labels, Filters, Encrypted contacts, Auto-responder and more"
+msgstr "Mape, Oznake, Filtri, Šifrirani kontakti, Automatski odgovori i više"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:266
+msgctxt "Plan option"
+msgid "All Plus features, and catch-all email, multi-user support and more"
+msgstr "Sve Plus značajke, sa dohvati-svu e-poštu, višekorisničkom podrškom i više"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:268
+msgctxt "Plan option"
+msgid "All Professional features, limited to 6 users, includes ProtonVPN"
+msgstr "Sve Professional značajke, ograničene na 6 korisnika, uključuju ProtonVPN"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:400
+msgctxt "Plan option"
+msgid "Included"
+msgstr "Uključeno"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:435
+msgctxt "Info concerning plan features"
+msgid "denotes customizable features"
+msgstr "označava prilagodljive značajke"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:29
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:27
+msgctxt "Billing cycle"
+msgid "Monthly"
+msgstr "Mjesečno"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:30
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:28
+msgctxt "Billing cycle"
+msgid "Yearly"
+msgstr "Godišnje"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:31
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:29
+msgctxt "Billing cycle"
+msgid "2-year"
+msgstr "2 godine"
 
 #: node_modules/react-components/containers/payments/Cash.js:6
 msgctxt "Info for cash payment method"
 msgid "To pay via Cash, please email us at contact@protonmail.com for instructions."
 msgstr "Za plaćanje gotovinom, pošaljite nam e-poštu na contact@protonmail.com za uputstva."
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:32
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:224
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:64
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:76
+msgctxt "Price"
+msgid "Free"
+msgstr "Besplatno"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:215
+msgctxt "Warning"
+msgid "You subscription has changed"
+msgstr "Vaša pretplata je promijenjena"
+
+#: node_modules/react-components/containers/domains/AddressCatchAll.js:29
+msgctxt "Warning"
+msgid "This feature is only available for ProtonMail Professional plans or higher"
+msgstr "Ova je značajka dostupna samo za ProtonMail Professional planove ili više"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:79
+msgctxt "Warning"
+msgid "By disabling the logs, you will also clear your entire logs history. Are you sure you want to disable the logs?"
+msgstr "Onemogućavanjem zapisa također ćete izbrisati cijelu povijest zapisa. Jeste li sigurni da želite onemogućiti zapise?"
+
+#: node_modules/react-components/containers/support/BugModal.js:91
+msgctxt "Warning"
+msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
+msgstr "Izvještaji o pogreškama nisu end-to-end šifrirani. Molimo da ne šaljete nikakve osjetljive podatke."
+
+#: node_modules/react-components/containers/addresses/AddressActions.js:42
+msgctxt "Warning"
+msgid "By deleting this address, you will no longer be able to send or receive emails using this address. Are you sure you want to delete this address?"
+msgstr "Brisanjem ove adrese e-pošte više nećete moći slati ili primati e-poštu putem te adrese. Jeste li sigurni da želite izbrisati ovu adresu e-pošte?"
+
+#: node_modules/react-components/containers/addresses/AddressActions.js:66
+msgctxt "Warning"
+msgid "By disabling this address, you will no longer be able to send or receive emails using this address. Are you sure you want to disable this address?"
+msgstr "Onemogućavanjem ove adrese e-pošte više nećete moći slati ili primati e-poštu putem te adrese. Jeste li sigurni da želite onemogućiti ovu adresu e-pošte?"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:22
+msgctxt "Warning"
+msgid "Custom themes from third parties can potentially betray your privacy. Only use themes from trusted sources."
+msgstr "Prilagođene teme od trećih strana potencijalno mogu ugroziti vašu privatnost. Koristite samo teme iz pouzdanih izvora."
+
+#: node_modules/react-components/containers/payments/subscription/PlanPrice.js:10
+msgctxt "Suffix"
+msgid "/ month"
+msgstr "/ mjesečno"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:65
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:70
+msgctxt "Suffix"
+msgid "/mo"
+msgstr "/mj"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:31
+#: node_modules/react-components/containers/overview/SummarySection.js:40
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:102
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:177
+msgctxt "Plan"
+msgid "Free"
+msgstr "Besplatno"
+
+#: node_modules/react-components/containers/payments/subscription/helpers.js:10
+msgctxt "Option"
+msgid "included"
+msgstr "uključeno"
+
+#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
+msgctxt "Option"
+msgid "Left to Right"
+msgstr "S lijeva na desno"
+
+#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:12
+msgctxt "Option"
+msgid "Right to Left"
+msgstr "S desna na lijevo"
+
+#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:11
+msgctxt "Option"
+msgid "Normal"
+msgstr "Normalno"
+
+#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:12
+msgctxt "Option"
+msgid "Plain text"
+msgstr "Običan tekst"
+
+#: node_modules/react-components/containers/support/BugModal.js:41
+msgctxt "Option"
+msgid "Select"
+msgstr "Odaberi"
+
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:20
+msgctxt "Option"
+msgid "All users"
+msgstr "Svi korisnici"
+
+#: node_modules/react-components/containers/autoReply/utils.js:16
+msgctxt "Option"
+msgid "Fixed duration"
+msgstr "Fiksno trajanje"
+
+#: node_modules/react-components/containers/autoReply/utils.js:20
+msgctxt "Option"
+msgid "Repeat daily"
+msgstr "Ponovi svaki dan"
+
+#: node_modules/react-components/containers/autoReply/utils.js:24
+msgctxt "Option"
+msgid "Repeat weekly"
+msgstr "Ponovi svaki tjedan"
+
+#: node_modules/react-components/containers/autoReply/utils.js:28
+msgctxt "Option"
+msgid "Repeat monthly"
+msgstr "Ponovi svaki mjesec"
+
+#: node_modules/react-components/containers/autoReply/utils.js:32
+msgctxt "Option"
+msgid "Permanent"
+msgstr "Trajno"
+
+#: node_modules/react-components/containers/autoReply/utils.js:55
+msgctxt "Option"
+msgid "1st of the month"
+msgstr "1 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:56
+msgctxt "Option"
+msgid "2nd of the month"
+msgstr "2 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:57
+msgctxt "Option"
+msgid "3rd of the month"
+msgstr "3 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:58
+msgctxt "Option"
+msgid "4th of the month"
+msgstr "4 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:59
+msgctxt "Option"
+msgid "5th of the month"
+msgstr "5 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:60
+msgctxt "Option"
+msgid "6th of the month"
+msgstr "6 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:61
+msgctxt "Option"
+msgid "7th of the month"
+msgstr "7 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:62
+msgctxt "Option"
+msgid "8th of the month"
+msgstr "8 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:63
+msgctxt "Option"
+msgid "9th of the month"
+msgstr "9 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:64
+msgctxt "Option"
+msgid "10th of the month"
+msgstr "10 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:65
+msgctxt "Option"
+msgid "11th of the month"
+msgstr "11 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:66
+msgctxt "Option"
+msgid "12th of the month"
+msgstr "12 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:67
+msgctxt "Option"
+msgid "13th of the month"
+msgstr "13 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:68
+msgctxt "Option"
+msgid "14th of the month"
+msgstr "14 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:69
+msgctxt "Option"
+msgid "15th of the month"
+msgstr "15 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:70
+msgctxt "Option"
+msgid "16th of the month"
+msgstr "16 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:71
+msgctxt "Option"
+msgid "17th of the month"
+msgstr "17 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:72
+msgctxt "Option"
+msgid "18th of the month"
+msgstr "18 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:73
+msgctxt "Option"
+msgid "19th of the month"
+msgstr "19 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:74
+msgctxt "Option"
+msgid "20th of the month"
+msgstr "20 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:75
+msgctxt "Option"
+msgid "21st of the month"
+msgstr "21 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:76
+msgctxt "Option"
+msgid "22nd of the month"
+msgstr "22 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:77
+msgctxt "Option"
+msgid "23rd of the month"
+msgstr "23 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:78
+msgctxt "Option"
+msgid "24th of the month"
+msgstr "24 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:79
+msgctxt "Option"
+msgid "25th of the month"
+msgstr "25 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:80
+msgctxt "Option"
+msgid "26th of the month"
+msgstr "26 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:81
+msgctxt "Option"
+msgid "27th of the month"
+msgstr "27 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:82
+msgctxt "Option"
+msgid "28th of the month"
+msgstr "28 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:83
+msgctxt "Option"
+msgid "29th of the month"
+msgstr "29 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:84
+msgctxt "Option"
+msgid "30th of the month"
+msgstr "30 dan u mjesecu"
+
+#: node_modules/react-components/containers/autoReply/utils.js:85
+msgctxt "Option"
+msgid "31st of the month"
+msgstr "31 dan u mjesecu"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:80
+msgctxt "VPN speed"
+msgid "High"
+msgstr "Visoko"
+
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:81
+msgctxt "VPN speed"
+msgid "Highest"
+msgstr "Najviša"
+
+#: node_modules/react-components/containers/payments/CouponDiscountBadge.js:12
+msgctxt "Discount with coupon code"
+msgid "20% discount applied to your subscription"
+msgstr "20% popusta primjenjeno na vašu pretplatu"
+
+#: node_modules/react-components/containers/payments/CouponDiscountBadge.js:20
+msgctxt "Discount with coupon code"
+msgid "50% discount applied to your subscription"
+msgstr "50% popusta primjenjeno na vašu pretplatu"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:22
+msgctxt "Monetary unit"
+msgid "Euro"
+msgstr "Euro"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:23
+msgctxt "Monetary unit"
+msgid "Swiss franc"
+msgstr "Švicarski franak"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:24
+msgctxt "Monetary unit"
+msgid "Dollar"
+msgstr "Dolar"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:33
 msgctxt "Title header for addresses domain table"
@@ -2012,30 +3494,20 @@ msgctxt "Title header for addresses domain table"
 msgid "Catch all"
 msgstr "Dohvati-sve"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:41
+#: node_modules/react-components/containers/domains/DomainModal.js:30
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "Domena"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:47
+#: node_modules/react-components/containers/domains/DomainModal.js:36
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "Potvrdi"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:53
+#: node_modules/react-components/containers/domains/DomainModal.js:42
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "Adrese"
-
-#: node_modules/react-components/containers/domains/AddressCatchAll.js:29
-msgctxt "Warning"
-msgid "This feature is only available for ProtonMail Professional plans or higher"
-msgstr "Ova je značajka dostupna samo za ProtonMail Professional planove ili više"
-
-#: node_modules/react-components/containers/support/BugModal.js:86
-msgctxt "Warning"
-msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
-msgstr "Izvještaji o pogreškama nisu end-to-end šifrirani. Molimo da ne šaljete nikakve osjetljive podatke."
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:29
 msgctxt "Info for domain modal"
@@ -2119,7 +3591,7 @@ msgctxt "Header for addresses table"
 msgid "Domain"
 msgstr "Domena"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:90
+#: node_modules/react-components/containers/addresses/AddressesTable.js:21
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"
@@ -2130,16 +3602,21 @@ msgctxt "Header for addresses table"
 msgid "Addresses"
 msgstr "Adrese"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:91
+#: node_modules/react-components/containers/addresses/AddressesTable.js:22
 #: node_modules/react-components/containers/domains/DomainsTable.js:19
 msgctxt "Header for addresses table"
 msgid "Actions"
 msgstr "Radnje"
 
-#: node_modules/react-components/containers/addresses/AddressesSection.js:89
+#: node_modules/react-components/containers/addresses/AddressesTable.js:20
 msgctxt "Header for addresses table"
 msgid "Address"
 msgstr "Adresa"
+
+#: node_modules/react-components/containers/addresses/AddressesTable.js:26
+msgctxt "Header for addresses table"
+msgid "Username"
+msgstr "Korisničko ime"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:11
 msgctxt "Badge for domain"
@@ -2156,12 +3633,12 @@ msgctxt "Badge for domain"
 msgid "Disabled"
 msgstr "Onemogućeno"
 
-#: node_modules/react-components/containers/domains/DomainsSection.js:29
+#: node_modules/react-components/containers/domains/DomainsSection.js:30
 msgctxt "Message"
-msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
-msgstr "Dodajte prilagođeni filtar za izvođenje akcija poput automatskog označavanja ili arhiviranja poruka."
+msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
+msgstr "Dodajte domenu za primanje poruka e-pošte na prilagođene adrese e-pošte i dodajte više korisnika svojoj organizaciji (samo Visionary i Professional računi)."
 
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:16
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:17
 msgctxt "Message"
 msgid "Are you sure you want to clear all your logs?"
 msgstr "Jeste li sigurni da želite izbrisati sve zapise?"
@@ -2171,18 +3648,18 @@ msgctxt "Success message"
 msgid "Domain deleted"
 msgstr "Domena je izbrisana"
 
-#: node_modules/react-components/containers/members/MemberActions.js:31
+#: node_modules/react-components/containers/members/MemberActions.js:29
 msgctxt "Success message"
 msgid "User deleted"
 msgstr "Korisnik je izbrisan"
 
-#: node_modules/react-components/containers/members/MemberActions.js:41
-#: node_modules/react-components/containers/members/MemberActions.js:47
+#: node_modules/react-components/containers/members/MemberActions.js:39
+#: node_modules/react-components/containers/members/MemberActions.js:45
 msgctxt "Success message"
 msgid "Role updated"
 msgstr "Ažurirana uloga"
 
-#: node_modules/react-components/containers/members/MemberActions.js:53
+#: node_modules/react-components/containers/members/MemberActions.js:51
 msgctxt "Success message"
 msgid "Status updated"
 msgstr "Status je ažuriran"
@@ -2192,35 +3669,17 @@ msgctxt "Label for adding a new custom domain"
 msgid "Add a domain that you own to your ProtonMail account."
 msgstr "Dodajte domenu koju posjedujete na vaš ProtonMail račun."
 
-#: node_modules/react-components/containers/domains/DomainSection.js:38
+#: node_modules/react-components/containers/domains/DomainSection.js:39
 msgctxt "Domain modal"
 msgid "'www' subdomains are typically not used for email. Are you sure you want to use this domain value?"
 msgstr "Poddomene 'www' obično se ne koriste za e-poštu. Jeste li sigurni da želite koristiti ovu domenu?"
 
-#: node_modules/react-components/containers/products/ProtonMailClients.js:28
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:28
-msgctxt "Title for downloads section"
-msgid "Name"
-msgstr "Naziv"
-
-#: node_modules/react-components/containers/products/ProtonMailClients.js:29
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:29
-msgctxt "Title for downloads section"
-msgid "Platform"
-msgstr "Platforma"
-
-#: node_modules/react-components/containers/products/ProtonMailClients.js:30
-#: node_modules/react-components/containers/products/ProtonVPNClients.js:30
-msgctxt "Title for downloads section"
-msgid "Action"
-msgstr "Akcija"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:43
 msgctxt "Info message for custom invoice modal"
 msgid "Add your name (or company name) and address to your invoices."
 msgstr "Dodajte svoje ime (ili naziv tvrtke) i adresu na svoje fakture."
 
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:49
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:53
 msgctxt "Placeholder for custom invoice text"
 msgid "Add your name (or company name) and address to your invoices"
 msgstr "Dodajte svoje ime (ili naziv tvrtke) i adresu na svoje fakture"
@@ -2290,73 +3749,78 @@ msgctxt "Tooltip default pgp scheme"
 msgid "Select the default PGP scheme to be used when signing or encrypting to an user. Note that PGP/Inline forces plain text messages. Click for more info."
 msgstr "Odaberite zadanu PGP shemu koja će se koristiti prilikom potpisivanja ili šifriranja korisniku. Imajte na umu da PGP/Inline prisilno šalje obične tekstualne poruke. Pritisnite za više informacija."
 
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:43
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:54
 msgctxt "Tooltip prompt to trust keys"
 msgid "When receiving an internal message from a sender that has no trusted keys in your contacts, show a banner asking if you want to enable trusted keys."
 msgstr "Kada primite internu poruku od pošiljatelja koji nema pouzdane ključeve u vašim kontaktima, pokaži banner koji pita želite li omogućiti pouzdane ključeve."
 
-#: node_modules/react-components/containers/addresses/AddressStatus.js:20
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:39
-msgctxt "Badge"
-msgid "Disabled"
-msgstr "Onemogućeno"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:49
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:45
 msgctxt "Badge"
 msgid "Enabled"
 msgstr "Omogućeno"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:27
+#: node_modules/react-components/containers/addresses/AddressStatus.js:20
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:47
+msgctxt "Badge"
+msgid "Disabled"
+msgstr "Onemogućeno"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:28
 msgctxt "Badge"
 msgid "ProtonMail for web"
 msgstr "ProtonMail za web"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:28
+#: node_modules/react-components/containers/sessions/SessionsSection.js:29
+msgctxt "Badge"
+msgid "ProtonMail settings for web"
+msgstr "ProtonMail postavke za web"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:30
 msgctxt "Badge"
 msgid "ProtonMail for iOS"
 msgstr "ProtonMail za iOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:29
+#: node_modules/react-components/containers/sessions/SessionsSection.js:31
 msgctxt "Badge"
 msgid "ProtonMail for Android"
 msgstr "ProtonMail za Android"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:30
+#: node_modules/react-components/containers/sessions/SessionsSection.js:32
 msgctxt "Badge"
-msgid "ProtonMail Import-Export"
-msgstr "ProtonMail Uvoz-Izvoz"
+msgid "ProtonMail import-export"
+msgstr "ProtonMail uvoz-izvoz"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:31
+#: node_modules/react-components/containers/sessions/SessionsSection.js:33
 msgctxt "Badge"
 msgid "ProtonMail Bridge"
 msgstr "ProtonMail Bridge"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:32
+#: node_modules/react-components/containers/sessions/SessionsSection.js:34
 msgctxt "Badge"
 msgid "ProtonVPN for web"
 msgstr "ProtonVPN za web"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:33
+#: node_modules/react-components/containers/sessions/SessionsSection.js:35
 msgctxt "Badge"
 msgid "ProtonVPN for Windows"
 msgstr "ProtonVPN za Windows"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:34
+#: node_modules/react-components/containers/sessions/SessionsSection.js:36
 msgctxt "Badge"
 msgid "ProtonVPN for macOS"
 msgstr "ProtonVPN za macOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:35
+#: node_modules/react-components/containers/sessions/SessionsSection.js:37
 msgctxt "Badge"
 msgid "ProtonVPN for iOS"
 msgstr "ProtonVPN za iOS"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:36
+#: node_modules/react-components/containers/sessions/SessionsSection.js:38
 msgctxt "Badge"
 msgid "ProtonVPN for Android"
 msgstr "ProtonVPN za Android"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:37
+#: node_modules/react-components/containers/sessions/SessionsSection.js:39
 msgctxt "Badge"
 msgid "Admin"
 msgstr "Admin"
@@ -2381,17 +3845,17 @@ msgctxt "Badge"
 msgid "Missing keys"
 msgstr "Nedostaju ključevi"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:36
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:40
 msgctxt "Info for payment methods"
 msgid "Lorem ipsum"
 msgstr "Lorem ipsum"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:84
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:63
 msgctxt "Confirmation title"
 msgid "Delete payment method"
 msgstr "Brisanje načina plaćanja"
 
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:86
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:64
 msgctxt "Confirmation message to delete payment method"
 msgid "Are you sure you want to delete this payment method?"
 msgstr "Jeste li sigurni da želite ukloniti ovaj način plaćanja?"
@@ -2406,10 +3870,20 @@ msgctxt "Label on payment method"
 msgid "Default"
 msgstr "Zadano"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:24
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:22
 msgctxt "Payment method option"
-msgid "Add new credit card"
-msgstr "Dodaj novu kreditnu karticu"
+msgid "Pay with credit card"
+msgstr "Plati kreditnom karticom"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:41
+msgctxt "Payment method option"
+msgid "Pay with PayPal"
+msgstr "Plati PayPal-om"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethodsSelect.js:48
+msgctxt "Payment method option"
+msgid "Pay with Bitcoin"
+msgstr "Plati s Bitcoinom"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:38
 msgctxt "Title for payment methods table"
@@ -2441,37 +3915,37 @@ msgctxt "Action for user session"
 msgid "Revoke"
 msgstr "Opozovi"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:27
+#: node_modules/react-components/containers/logs/LogsSection.js:29
 msgctxt "Log event"
 msgid "Login password failure"
 msgstr "Neuspjela prijava lozinkom"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:28
+#: node_modules/react-components/containers/logs/LogsSection.js:30
 msgctxt "Log event"
 msgid "Login success"
 msgstr "Uspješna prijava"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:29
+#: node_modules/react-components/containers/logs/LogsSection.js:31
 msgctxt "Log event"
 msgid "Logout"
 msgstr "Odjava"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:30
+#: node_modules/react-components/containers/logs/LogsSection.js:32
 msgctxt "Log event"
 msgid "2FA login failure"
 msgstr "Neuspjela prijava 2FA"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:97
+#: node_modules/react-components/containers/logs/LogsSection.js:114
 msgctxt "Log preference"
 msgid "Disabled"
 msgstr "Onemogućeno"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:98
+#: node_modules/react-components/containers/logs/LogsSection.js:115
 msgctxt "Log preference"
 msgid "Basic"
 msgstr "Osnovno"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:104
+#: node_modules/react-components/containers/logs/LogsSection.js:121
 msgctxt "Log preference"
 msgid "Advanced"
 msgstr "Napredno"
@@ -2497,122 +3971,22 @@ msgctxt "Logs status"
 msgid "Login failure (2FA)"
 msgstr "Neuspjela prijava (2FA)"
 
-#: node_modules/react-components/containers/logs/LogsTable.js:40
-msgctxt "Header"
-msgid "Event"
-msgstr "Događaj"
-
-#: node_modules/react-components/containers/logs/LogsTable.js:40
-msgctxt "Header"
-msgid "Time"
-msgstr "Vrijeme"
-
-#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:8
-msgctxt "Option"
-msgid "Left to Right"
-msgstr "S lijeva na desno"
-
-#: node_modules/react-components/containers/layouts/TextDirectionSelect.js:9
-msgctxt "Option"
-msgid "Right to Left"
-msgstr "S desna na lijevo"
-
-#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:8
-msgctxt "Option"
-msgid "Normal"
-msgstr "Normalno"
-
-#: node_modules/react-components/containers/layouts/DraftTypeSelect.js:9
-msgctxt "Option"
-msgid "Plain Text"
-msgstr "Običan tekst"
-
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Include Moved"
-msgstr "Uključi i premješteno"
-
-#: node_modules/react-components/containers/layouts/ShowMovedSelect.js:7
-msgctxt "Option"
-msgid "Hide Moved"
-msgstr "Sakrij premješteno"
-
-#: node_modules/react-components/containers/support/BugModal.js:45
-msgctxt "Option"
-msgid "Select"
-msgstr "Odaberi"
-
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:21
-msgctxt "Option"
-msgid "All users"
-msgstr "Svi korisnici"
-
 #: node_modules/react-components/containers/layouts/ViewModeRadios.js:18
 msgctxt "Label to change view mode"
 msgid "Conversation group"
 msgstr "Grupa razgovora"
 
-#: node_modules/react-components/containers/layouts/ViewModeRadios.js:28
+#: node_modules/react-components/containers/layouts/ViewModeRadios.js:30
 msgctxt "Label to change view mode"
 msgid "Single messages"
 msgstr "Pojedinačne poruke"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:80
-msgctxt "Tooltip"
-msgid "This sets the default composer size. Two sizes are available, a smaller popup composer, and a bigger full screen composer."
-msgstr "Ovo postavlja zadanu veličinu prozora za novu poruku. Dvije veličine su dostupne. Manji skočni prozor i veći prozor preko cijelog zaslona."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
-msgctxt "Tooltip"
-msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
-msgstr "ProtonMail podržava izgled po stupacima i po redovima za pristiglu poštu. Pomoću ove postavke moguće je promijeniti između dva izgleda."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
-msgctxt "Tooltip"
-msgid "Conversation Grouping automatically groups messages in the same conversation together."
-msgstr "Grupiranje razgovora automatski grupira poruke zajedno u isti razgovor."
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
-msgctxt "Tooltip"
-msgid "Setting to 'Include Moved' means that sent / drafts messages that have been moved to other folders will continue to appear in the Sent/Drafts folder."
-msgstr "Postavka 'Uključi i premješteno' znači da će se poslane poruke i skice koje su premještene u druge mape i dalje prikazivati u mapi Poslano / Skice."
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:28
-msgctxt "Tooltip"
-msgid "ProtonMail users will use this key by default for sending"
-msgstr "ProtonMail korisnici će koristiti ovaj ključ kao zadani, za slanje"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:34
-msgctxt "Tooltip"
-msgid "You have locally decrypted this key"
-msgstr "Lokalno ste dešifrirali ovaj ključ"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:40
-msgctxt "Tooltip"
-msgid "This key is encrypted with an old password"
-msgstr "Ovaj ključ je šifriran s starom lozinkom"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:46
-msgctxt "Tooltip"
-msgid "This key cannot be used for encryption"
-msgstr "Ovaj ključ se ne može koristiti za šifriranje"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:52
-msgctxt "Tooltip"
-msgid "This address has been disabled"
-msgstr "Ova adresa e-pošte je onemogućena"
-
-#: node_modules/react-components/containers/keys/KeysStatus.js:58
-msgctxt "Tooltip"
-msgid "Signatures produced by this key are treated as invalid and this key cannot be used for encryption"
-msgstr "Potpisi proizvedeni ovim ključem tretiraju se kao nevažeći i ovaj ključ se ne može koristiti za šifriranje"
 
 #: node_modules/react-components/containers/layouts/ComposerModeRadios.js:18
 msgctxt "Label to change composer mode"
 msgid "Popup"
 msgstr "Skočni prozor"
 
-#: node_modules/react-components/containers/layouts/ComposerModeRadios.js:28
+#: node_modules/react-components/containers/layouts/ComposerModeRadios.js:30
 msgctxt "Label to change composer mode"
 msgid "Maximized"
 msgstr "Maksimizirano"
@@ -2622,7 +3996,7 @@ msgctxt "Label to change view layout"
 msgid "Column"
 msgstr "Stupac"
 
-#: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:28
+#: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:30
 msgctxt "Label to change view layout"
 msgid "Row"
 msgstr "Redak"
@@ -2632,47 +4006,47 @@ msgctxt "Error notification in the bug report modal when the user upload file"
 msgid "No image selected"
 msgstr "Nije odabrana nijedna slika"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:34
+#: node_modules/react-components/containers/addresses/AddressActions.js:53
 msgctxt "Success notification"
 msgid "Address deleted"
 msgstr "Adresa je uklonjena"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:40
+#: node_modules/react-components/containers/addresses/AddressActions.js:59
 msgctxt "Success notification"
 msgid "Address enabled"
 msgstr "Adresa je omogućena"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:46
+#: node_modules/react-components/containers/addresses/AddressActions.js:77
 msgctxt "Success notification"
 msgid "Address disabled"
 msgstr "Adresa je onemogućena"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:52
+#: node_modules/react-components/containers/addresses/AddressActions.js:83
 msgctxt "Success notification"
 msgid "Keys generated"
 msgstr "Ključevi su generirani"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:57
+#: node_modules/react-components/containers/addresses/AddressActions.js:88
 msgctxt "Address action"
 msgid "Edit"
 msgstr "Uredi"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:65
+#: node_modules/react-components/containers/addresses/AddressActions.js:92
 msgctxt "Address action"
 msgid "Enable"
 msgstr "Omogući"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:73
+#: node_modules/react-components/containers/addresses/AddressActions.js:96
 msgctxt "Address action"
 msgid "Disable"
 msgstr "Onemogući"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:81
+#: node_modules/react-components/containers/addresses/AddressActions.js:100
 msgctxt "Address action"
-msgid "Generate missing keus"
+msgid "Generate missing keys"
 msgstr "Generirajte ključe koji nedostaju"
 
-#: node_modules/react-components/containers/addresses/AddressActions.js:89
+#: node_modules/react-components/containers/addresses/AddressActions.js:104
 msgctxt "Address action"
 msgid "Delete"
 msgstr "Obriši"
@@ -2794,62 +4168,62 @@ msgctxt "Info for members section"
 msgid "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 msgstr "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 
-#: node_modules/react-components/containers/members/MembersSection.js:68
+#: node_modules/react-components/containers/members/MembersSection.js:70
 msgctxt "Title header for members table"
 msgid "Name"
 msgstr "Naziv"
 
-#: node_modules/react-components/containers/members/MembersSection.js:70
+#: node_modules/react-components/containers/members/MembersSection.js:72
 msgctxt "Title header for members table"
 msgid "Role"
 msgstr "Uloga"
 
-#: node_modules/react-components/containers/members/MembersSection.js:74
+#: node_modules/react-components/containers/members/MembersSection.js:76
 msgctxt "Title header for members table"
 msgid "Private"
 msgstr "Privatno"
 
-#: node_modules/react-components/containers/members/MembersSection.js:77
+#: node_modules/react-components/containers/members/MembersSection.js:79
 msgctxt "Title header for members table"
 msgid "Addresses"
 msgstr "Adrese"
 
-#: node_modules/react-components/containers/members/MembersSection.js:78
+#: node_modules/react-components/containers/members/MembersSection.js:80
 msgctxt "Title header for members table"
 msgid "Features"
 msgstr "Značajke"
 
-#: node_modules/react-components/containers/members/MembersSection.js:79
+#: node_modules/react-components/containers/members/MembersSection.js:81
 msgctxt "Title header for members table"
 msgid "Actions"
 msgstr "Radnje"
 
-#: node_modules/react-components/containers/members/MemberModal.js:63
+#: node_modules/react-components/containers/members/MemberModal.js:75
 msgctxt "Label for new member"
 msgid "Private"
 msgstr "Privatno"
 
-#: node_modules/react-components/containers/members/MemberActions.js:60
+#: node_modules/react-components/containers/members/MemberActions.js:81
 msgctxt "Member action"
 msgid "Edit"
 msgstr "Uredi"
 
-#: node_modules/react-components/containers/members/MemberActions.js:68
+#: node_modules/react-components/containers/members/MemberActions.js:85
 msgctxt "Member action"
 msgid "Delete"
 msgstr "Obriši"
 
-#: node_modules/react-components/containers/members/MemberActions.js:76
+#: node_modules/react-components/containers/members/MemberActions.js:89
 msgctxt "Member action"
 msgid "Make admin"
 msgstr "Postavite za administratora"
 
-#: node_modules/react-components/containers/members/MemberActions.js:84
+#: node_modules/react-components/containers/members/MemberActions.js:93
 msgctxt "Member action"
 msgid "Revoke admin"
 msgstr "Vraćanje administratora"
 
-#: node_modules/react-components/containers/members/MemberActions.js:93
+#: node_modules/react-components/containers/members/MemberActions.js:97
 msgctxt "Member action"
 msgid "Login"
 msgstr "Prijava"
@@ -2879,10 +4253,105 @@ msgctxt "Label for news"
 msgid "Proton Beta (10-12 per year)"
 msgstr "Proton Beta (10-12 puta godišnje)"
 
-#: node_modules/react-components/containers/login/LoginContainer.js:50
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:30
+msgctxt "Duration"
+msgid "Every ${ weekdays } @ ${ hours }"
+msgstr "Svaki ${ weekdays } u ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:31
+msgctxt "Duration"
+msgid "Every day @ ${ hours }"
+msgstr "Svaki dan u ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:37
+msgctxt "Duration"
+msgid "Every ${ dayOfWeek } @ ${ hours }"
+msgstr "Svaki ${ dayOfWeek } u ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:42
+msgctxt "Duration"
+msgid "Every ${ dayOfMonth } @ ${ hours }"
+msgstr "Svaki ${ dayOfMonth } u ${ hours }"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:44
+msgctxt "Duration"
+msgid "n/a"
+msgstr "nedostupno"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:57
+msgctxt "Role"
+msgid "Member"
+msgstr "Član"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:58
+msgctxt "Role"
+msgid "Administrator"
+msgstr "Administrator"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Active"
+msgstr "Aktivno"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Not set"
+msgstr "Nije postavljeno"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Status"
+msgid "Enabled"
+msgstr "Omogućeno"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Status"
+msgid "Disabled"
+msgstr "Onemogućeno"
+
+#: node_modules/react-components/containers/overview/LinkItem.js:12
+msgctxt "Tag"
+msgid "Premium feature"
+msgstr "Premium značajke"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:27
+msgctxt "Title for downloads section"
+msgid "Platform"
+msgstr "Platforma"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:28
+msgctxt "Title for downloads section"
+msgid "Name"
+msgstr "Naziv"
+
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:29
+msgctxt "Title for downloads section"
+msgid "Action"
+msgstr "Akcija"
+
+#: node_modules/react-components/containers/login/LoginContainer.js:53
 msgctxt "Login"
 msgid "User login"
 msgstr "Prijava korisnika"
+
+#: node_modules/proton-shared/lib/constants.js:198
+msgctxt "Theme"
+msgid "Dark (Default)"
+msgstr "Tamna (Zadano)"
+
+#: node_modules/proton-shared/lib/constants.js:202
+msgctxt "Theme"
+msgid "Light"
+msgstr "Svijetla"
+
+#: node_modules/proton-shared/lib/constants.js:206
+msgctxt "Theme"
+msgid "Blue"
+msgstr "Plava"
+
+#: node_modules/proton-shared/lib/constants.js:210
+msgctxt "Theme"
+msgid "Custom theme"
+msgstr "Prilagođena tema"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"

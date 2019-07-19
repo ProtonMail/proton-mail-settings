@@ -6,5 +6,6 @@ export default {
     it_IT: () => import('../../po/it.po'),
     pl_PL: () => import('../../po/pl.po'),
     pt_BR: () => import('../../po/pt.po'),
-    ro_RO: () => import('../../po/ro.po')
+    ro_RO: () => import('../../po/ro.po'),
+    ru_RU: () => import('../../po/ru.po')
 };
