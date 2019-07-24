@@ -26,17 +26,7 @@ const PrivateHeader = () => {
                     </text>
                 </svg>
             </a>
-            <div className="searchbox-container relative flex-item-centered-vert">
-                <label htmlFor="global_search">
-                    <span className="sr-only">{c('Placeholder').t`Search`}</span>
-                    <input
-                        type="search"
-                        id="global_search"
-                        placeholder={c('Placeholder').t`Search`}
-                        className="pm-field w100 searchbox-field "
-                    />
-                </label>
-            </div>
+            <div className="searchbox-container"></div>
             <div className="topnav-container flex-item-centered-vert flex-item-fluid">
                 <ul className="topnav-list unstyled mt0 mb0 ml1 flex flex-nowrap">
                     <li className="mr1">
