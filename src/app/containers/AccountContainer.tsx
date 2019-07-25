@@ -9,9 +9,9 @@ import {
 } from 'react-components';
 import { c } from 'ttag';
 
-import Page from '../components/Page';
+import Page, { PageConfig } from '../components/Page';
 
-export const getAccountPage = () => {
+export const getAccountPage = (): PageConfig => {
     return {
         text: c('Title').t`Account`,
         route: '/settings/account',

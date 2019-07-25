@@ -1,16 +1,40 @@
-import React, { Children, useState } from 'react';
-import PropTypes from 'prop-types';
-import { Alert, ObserverSections, SubSidebar, SettingsTitle, usePermissions } from 'react-components';
+import React, { Children, isValidElement, useState } from 'react';
+import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Alert, Link } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
-import { c } from 'ttag';
-import { Link } from 'react-router-dom';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
+import { c } from 'ttag';
 
 import Main from './Main';
 
 const { ADMIN, MEMBER } = PERMISSIONS;
 
-const Page = ({ config, children }) => {
+interface SectionProps {
+    id: string;
+    permission: boolean;
+}
+
+interface SectionConfig {
+    id: string;
+    permissions?: string[];
+    text: React.ReactNode;
+    hide?: boolean;
+}
+
+export interface PageConfig {
+    permissions?: string[]; // TODO: enum, from PERMISSIONS in shared,
+    sections: SectionConfig[];
+    text: React.ReactNode;
+    route?: string;
+    link?: string;
+    icon?: string;
+}
+
+interface Props {
+    config: PageConfig;
+    children?: React.ReactNode;
+}
+
+const Page = ({ config, children }: Props) => {
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions = [], text } = config;
     const [activeSection, setActiveSection] = useState('');
@@ -47,22 +71,20 @@ const Page = ({ config, children }) => {
                 <div className="container-section-sticky">
                     <ObserverSections setActiveSection={setActiveSection}>
                         {Children.map(children, (child, index) => {
-                            const { id, permissions: sectionPermissions = [] } = sections[index] || {};
-                            return React.cloneElement(child, {
-                                id,
-                                permission: hasPermission(userPermissions, sectionPermissions)
-                            });
+                            if (isValidElement<SectionProps>(child)) {
+                                const { id, permissions: sectionPermissions = [] } =
+                                    sections[index] || ({} as SectionConfig);
+                                return React.cloneElement(child, {
+                                    id,
+                                    permission: hasPermission(userPermissions, sectionPermissions)
+                                });
+                            }
                         })}
                     </ObserverSections>
                 </div>
             </Main>
         </>
     );
-};
-
-Page.propTypes = {
-    config: PropTypes.object,
-    children: PropTypes.node
 };
 
 export default Page;
