@@ -42,6 +42,7 @@
         "@typescript-eslint/parser": "^2.3.2",
         "cypress": "^3.3.1",
         "cypress-otp": "^1.0.2",
+        "@types/moment-timezone": "^0.5.12",
         "cross-env": "^5.2.0",
         "husky": "^1.3.1",
         "lint-staged": "^8.1.5",
