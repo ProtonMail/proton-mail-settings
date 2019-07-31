@@ -22,18 +22,16 @@ const OverviewContainer = () => {
     }
 
     return (
-        <Main>
-            <div className="p2">
-                <div className="flex-autogrid onmobile-flex-column">
-                    <div className="flex-item-fluid flex-autogrid-item flex">
-                        <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
-                    </div>
-                    <div className="flex-item-fluid flex-autogrid-item flex">
-                        <PromoteSection subscription={subscription} user={user} />
-                    </div>
+        <Main className="p2">
+            <div className="flex-autogrid onmobile-flex-column">
+                <div className="flex-item-fluid flex-autogrid-item flex">
+                    <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
                 </div>
-                <IndexSection pages={getPages()} subscription={subscription} user={user} />
+                <div className="flex-item-fluid flex-autogrid-item flex">
+                    <PromoteSection subscription={subscription} user={user} />
+                </div>
             </div>
+            <IndexSection pages={getPages()} subscription={subscription} user={user} />
         </Main>
     );
 };

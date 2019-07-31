@@ -1,14 +1,12 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
-import { ObserverSections, SubSidebar, usePermissions } from 'react-components';
+import { Alert, ObserverSections, SubSidebar, usePermissions } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
+import { c } from 'ttag';
+import { Link } from 'react-router-dom';
 
 import Main from './Main';
 import Title from './Title';
-
-const UpgradeNow = () => {
-    return <>Upgrade now !</>;
-};
 
 const Page = ({ config, children }) => {
     const userPermissions = usePermissions();
@@ -18,7 +16,11 @@ const Page = ({ config, children }) => {
         return (
             <Main>
                 <Title>{text}</Title>
-                <UpgradeNow />
+                <div className="container-section-sticky">
+                    <Alert>
+                        <Link to="/settings/subscription">{c('Link').t`Upgrade now`}</Link>
+                    </Alert>
+                </div>
             </Main>
         );
     }
