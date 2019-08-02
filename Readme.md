@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ProtonMail/protonmail-settings.svg?style=svg)](https://circleci.com/gh/ProtonMail/protonmail-settings)
+
 # ProtonMail-settings
 
 You will need:
