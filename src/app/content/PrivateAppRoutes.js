@@ -32,7 +32,7 @@ const Routes = () => {
                         <Route path="/settings/organization" component={OrganizationContainer} />
                         <Route path="/settings/members" component={MembersContainer} />
                         <Route path="/settings/subscription" component={SubscriptionContainer} />
-                        <Route path="/settings/addresses/:memberId?" component={AddressesContainer} />
+                        <Route path="/settings/addresses/:memberID?" component={AddressesContainer} />
                         <Route path="/settings/domains" component={DomainsContainer} />
                         <Route path="/settings/identity" component={IdentityContainer} />
                         <Route path="/settings/security" component={SecurityContainer} />
