@@ -31,10 +31,6 @@ export const getGeneralPage = () => {
                 id: 'messages'
             },
             {
-                text: c('Title').t`Contacts`,
-                id: 'contacts'
-            },
-            {
                 text: c('Title').t`Search`,
                 id: 'search'
             },
@@ -52,7 +48,6 @@ const GeneralContainer = () => {
             <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
-            <ContactsSection />
             <SearchSection />
             <ShortcutsSection />
         </Page>
