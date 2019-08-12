@@ -15,19 +15,19 @@ export const getVPNPage = () => {
         icon: 'protonvpn',
         sections: [
             {
-                text: c('Title').t`ProtonVPN Clients`,
+                text: c('Title').t`ProtonVPN clients`,
                 id: 'protonvpn-clients'
             },
             {
-                text: c('Title').t`ProtonVPN Credentials`,
+                text: c('Title').t`ProtonVPN credentials`,
                 id: 'protonvpn-credentials'
             },
             {
-                text: c('Title').t`OpenVPN / IKEv2 Username`,
+                text: c('Title').t`OpenVPN / IKEv2 username`,
                 id: 'openvpn-ikev2-username'
             },
             {
-                text: c('Title').t`ProtonVPN Resources`,
+                text: c('Title').t`ProtonVPN resources`,
                 id: 'protonvpn-resources'
             }
         ]
