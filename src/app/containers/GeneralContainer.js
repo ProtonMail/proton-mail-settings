@@ -5,7 +5,6 @@ import {
     DesktopNotificationSection,
     MessagesSection,
     ShortcutsSection,
-    ContactsSection,
     SearchSection
 } from 'react-components';
 

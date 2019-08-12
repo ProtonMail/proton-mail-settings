@@ -13,6 +13,7 @@ import { getKeysPage } from './containers/KeysContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
+import { getVPNPage } from './containers/VPNContainer';
 
 export const getPages = () => [
     getSubscriptionPage(),
@@ -29,5 +30,6 @@ export const getPages = () => [
     getAutoReply(),
     getKeysPage(),
     getSecurityPage(),
+    getVPNPage(),
     getAppsPage()
 ];
