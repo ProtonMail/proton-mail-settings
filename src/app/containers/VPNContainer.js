@@ -8,7 +8,6 @@ import {
 } from 'react-components';
 import Page from '../components/Page';
 
-// TODO: permissions?
 export const getVPNPage = () => {
     return {
         text: c('Title').t`ProtonVPN`,
