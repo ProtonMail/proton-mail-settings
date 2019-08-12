@@ -18,6 +18,7 @@ import GeneralContainer from '../containers/GeneralContainer';
 import FiltersContainer from '../containers/FiltersContainer';
 import FoldersLabelsContainer from '../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../containers/AutoReplyContainer';
+import VPNContainer from '../containers/VPNContainer';
 
 const NotFoundContainer = () => <h1>Not found</h1>;
 
@@ -43,6 +44,7 @@ const Routes = () => {
                         <Route path="/settings/filters" component={FiltersContainer} />
                         <Route path="/settings/labels" component={FoldersLabelsContainer} />
                         <Route path="/settings/auto-reply" component={AutoReplyContainer} />
+                        <Route path="/settings/vpn" component={VPNContainer} />
                         <Route component={NotFoundContainer} />
                     </Switch>
                 </ErrorBoundary>
