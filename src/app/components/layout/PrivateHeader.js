@@ -1,6 +1,6 @@
 import React from 'react';
 import { APPS } from 'proton-shared/lib/constants';
-import { MainLogo, UserDropdown } from 'react-components';
+import { MainLogo, UserDropdown, SupportDropdown } from 'react-components';
 import { c } from 'ttag';
 
 const PrivateHeader = () => {
@@ -41,6 +41,9 @@ const PrivateHeader = () => {
                             </svg>
                             {c('Title').t`Settings`}
                         </a>
+                    </li>
+                    <li className="mr1">
+                        <SupportDropdown />
                     </li>
                     <li className="mlauto mtauto mbauto relative flex-item-noshrink">
                         <UserDropdown />
