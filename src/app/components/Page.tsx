@@ -1,5 +1,7 @@
-import React, { Children, isValidElement, useState } from 'react';
-import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Alert, Link } from 'react-components';
+import * as React from 'react';
+import { Children, isValidElement, useState } from 'react';
+import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Alert } from 'react-components';
+import { Link } from 'react-router-dom';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 import { c } from 'ttag';
