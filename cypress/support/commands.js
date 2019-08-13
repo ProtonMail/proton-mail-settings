@@ -6,6 +6,7 @@
 import '@testing-library/cypress/add-commands';
 
 import { login } from './commands/login';
+import { logout } from './commands/logout';
 import { PLANS, PASSWORD_MODE } from '../fixtures/accountTypes.js';
 const users = require('../fixtures/accounts.json');
 
@@ -40,3 +41,6 @@ Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MO
 Cypress.Commands.add('login', (loginCredentials = { username, password, OTP, secondPassword }) => {
     return login(loginCredentials);
 });
+
+// Logout command.
+Cypress.Commands.add('logout', logout);
