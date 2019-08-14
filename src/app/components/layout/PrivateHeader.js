@@ -1,6 +1,7 @@
 import React from 'react';
 import { APPS } from 'proton-shared/lib/constants';
 import { MainLogo, UserDropdown, SupportDropdown } from 'react-components';
+import { Link } from 'react-router-dom';
 import { c } from 'ttag';
 
 const PrivateHeader = () => {
@@ -25,8 +26,8 @@ const PrivateHeader = () => {
                         </a>
                     </li>
                     <li className="mr1">
-                        <a
-                            href="/settings/"
+                        <Link
+                            to="/settings"
                             className="topnav-link inline-flex flex-nowrap nodecoration rounded"
                             aria-current="true"
                         >
@@ -40,7 +41,7 @@ const PrivateHeader = () => {
                                 <use xlinkHref="#shape-settings-master" />
                             </svg>
                             {c('Title').t`Settings`}
-                        </a>
+                        </Link>
                     </li>
                     <li className="mr1">
                         <SupportDropdown />
