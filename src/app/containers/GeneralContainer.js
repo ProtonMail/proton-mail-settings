@@ -1,12 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import {
-    LanguageSection,
-    DesktopNotificationSection,
-    MessagesSection,
-    ShortcutsSection,
-    SearchSection
-} from 'react-components';
+import { LanguageSection, DesktopNotificationSection, MessagesSection, ShortcutsSection } from 'react-components';
 
 import locales from '../locales';
 import Page from '../components/Page';
@@ -30,10 +24,6 @@ export const getGeneralPage = () => {
                 id: 'messages'
             },
             {
-                text: c('Title').t`Search`,
-                id: 'search'
-            },
-            {
                 text: c('Title').t`Shortcuts`,
                 id: 'shortcuts'
             }
@@ -47,7 +37,6 @@ const GeneralContainer = () => {
             <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
-            <SearchSection />
             <ShortcutsSection />
         </Page>
     );
