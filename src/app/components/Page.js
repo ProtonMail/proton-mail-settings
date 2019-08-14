@@ -4,13 +4,27 @@ import { Alert, ObserverSections, SubSidebar, usePermissions } from 'react-compo
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { c } from 'ttag';
 import { Link } from 'react-router-dom';
+import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import Main from './Main';
 import Title from './Title';
 
+const { ADMIN, MEMBER } = PERMISSIONS;
+
 const Page = ({ config, children }) => {
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions, text } = config;
+
+    if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
+        return (
+            <Main>
+                <Title>{text}</Title>
+                <div className="container-section-sticky">
+                    <Alert type="warning">{c('Warning').t`Require admin permission to access to this page.`}</Alert>
+                </div>
+            </Main>
+        );
+    }
 
     if (!hasPermission(userPermissions, pagePermissions)) {
         return (
