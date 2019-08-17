@@ -6,11 +6,7 @@ const Title = ({ children, mainRef }) => {
     const [topClass, setClass] = useState('');
 
     const onScroll = () => {
-        if (mainRef.current.scrollTop === 0) {
-            setClass('sticky-title--onTop');
-        } else {
-            setClass('');
-        }
+        setClass(mainRef.current.scrollTop ? '' : 'sticky-title--onTop');
     };
 
     useEffect(() => {
