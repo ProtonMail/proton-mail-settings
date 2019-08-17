@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React, { Children, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Alert, ObserverSections, SubSidebar, usePermissions } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
@@ -12,13 +12,14 @@ import Title from './Title';
 const { ADMIN, MEMBER } = PERMISSIONS;
 
 const Page = ({ config, children }) => {
+    const mainRef = useRef();
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions, text } = config;
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
-            <Main>
-                <Title>{text}</Title>
+            <Main mainRef={mainRef}>
+                <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <Alert type="warning">{c('Warning').t`Require admin permission to access to this page.`}</Alert>
                 </div>
@@ -28,8 +29,8 @@ const Page = ({ config, children }) => {
 
     if (!hasPermission(userPermissions, pagePermissions)) {
         return (
-            <Main>
-                <Title>{text}</Title>
+            <Main mainRef={mainRef}>
+                <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <Alert>
                         <Link to="/settings/subscription">{c('Link').t`Upgrade now`}</Link>
@@ -42,8 +43,8 @@ const Page = ({ config, children }) => {
     return (
         <>
             {sections.length ? <SubSidebar list={sections} /> : null}
-            <Main>
-                <Title>{text}</Title>
+            <Main mainRef={mainRef}>
+                <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <ObserverSections>
                         {Children.map(children, (child, index) => {
