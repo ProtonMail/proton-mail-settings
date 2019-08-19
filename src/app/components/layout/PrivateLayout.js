@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Route } from 'react-router';
-import { Sidebar, AppsSidebar, MainAreaContext } from 'react-components';
+import { c } from 'ttag';
+import { Route, Link } from 'react-router-dom';
+import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus } from 'react-components';
 import { APPS } from 'proton-shared/lib/constants';
 
 import PrivateHeader from './PrivateHeader';
@@ -12,7 +13,16 @@ const PrivateLayout = ({ children }) => {
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
     return (
         <div className="flex flex-nowrap no-scroll">
-            <AppsSidebar currentApp={APPS.PROTONMAIL_SETTINGS} />
+            <AppsSidebar
+                currentApp={APPS.PROTONMAIL_SETTINGS}
+                items={[
+                    <StorageSpaceStatus key="storage">
+                        <Link to="/settings/subscription" className="pm-button pm-button--primary">
+                            {c('Action').t`Upgrade`}
+                        </Link>
+                    </StorageSpaceStatus>
+                ]}
+            />
             <div className="content flex-item-fluid reset4print">
                 <PrivateHeader />
                 <div className="flex flex-nowrap">
