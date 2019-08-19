@@ -18,7 +18,7 @@ const Page = ({ config, children }) => {
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
-            <Main mainRef={mainRef}>
+            <Main ref={mainRef}>
                 <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <Alert type="warning">{c('Warning').t`Require admin permission to access to this page.`}</Alert>
@@ -29,7 +29,7 @@ const Page = ({ config, children }) => {
 
     if (!hasPermission(userPermissions, pagePermissions)) {
         return (
-            <Main mainRef={mainRef}>
+            <Main ref={mainRef}>
                 <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <Alert>
@@ -43,7 +43,7 @@ const Page = ({ config, children }) => {
     return (
         <>
             {sections.length ? <SubSidebar list={sections} /> : null}
-            <Main mainRef={mainRef}>
+            <Main ref={mainRef}>
                 <Title mainRef={mainRef}>{text}</Title>
                 <div className="container-section-sticky">
                     <ObserverSections>

@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 
 const Main = React.forwardRef(({ className = '', children }, ref) => {
     return (
-        <main ref={mainRef} className={`main-area-content bg-white relative flex-item-fluid ${className}`}>
+        <main ref={ref} className={`main-area-content bg-white relative flex-item-fluid ${className}`}>
             {children}
         </main>
     );
-};
+});
 
 Main.propTypes = {
     children: PropTypes.node.isRequired,
-    className: PropTypes.string,
-    mainRef: PropTypes.object
+    className: PropTypes.string
 };
 
 export default Main;
