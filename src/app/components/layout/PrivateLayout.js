@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Route } from 'react-router';
-import { Sidebar, AppsSidebar } from 'react-components';
+import { Sidebar, AppsSidebar, MainAreaContext } from 'react-components';
 import { APPS } from 'proton-shared/lib/constants';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
-import { MainAreaContext } from '../../hooks/useMainArea';
 
 const PrivateLayout = ({ children }) => {
     const mainAreaRef = useRef();
