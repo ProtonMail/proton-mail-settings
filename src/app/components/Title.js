@@ -2,19 +2,22 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { classnames } from 'react-components';
 
-const Title = ({ children, mainRef }) => {
+import { useMainArea } from '../hooks/useMainArea';
+
+const Title = ({ children }) => {
+    const mainAreaRef = useMainArea();
     const [topClass, setClass] = useState('');
 
     const onScroll = () => {
-        setClass(mainRef.current.scrollTop ? '' : 'sticky-title--onTop');
+        setClass(mainAreaRef.current.scrollTop ? '' : 'sticky-title--onTop');
     };
 
     useEffect(() => {
-        mainRef.current.addEventListener('scroll', onScroll);
+        document.querySelector('.main-area').addEventListener('scroll', onScroll);
         return () => {
-            mainRef.current.removeEventListener('scroll', onScroll);
+            mainAreaRef.current.removeEventListener('scroll', onScroll);
         };
-    }, []);
+    }, [mainAreaRef.current]);
 
     return <h1 className={classnames(['sticky-title', topClass])}>{children}</h1>;
 };

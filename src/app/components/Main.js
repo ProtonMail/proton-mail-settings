@@ -1,12 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Main = React.forwardRef(({ className = '', children }, ref) => {
-    return (
-        <main ref={ref} className={`main-area-content bg-white relative flex-item-fluid ${className}`}>
-            {children}
-        </main>
-    );
+const Main = React.forwardRef(({ className = '', children }) => {
+    return <main className={`main-area-content bg-white relative flex-item-fluid ${className}`}>{children}</main>;
 });
 
 Main.propTypes = {
