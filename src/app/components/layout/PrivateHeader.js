@@ -1,5 +1,4 @@
 import React from 'react';
-import { APPS } from 'proton-shared/lib/constants';
 import { MainLogo, UserDropdown, SupportDropdown } from 'react-components';
 import { Link } from 'react-router-dom';
 import { c } from 'ttag';
@@ -7,7 +6,7 @@ import { c } from 'ttag';
 const PrivateHeader = () => {
     return (
         <header className="header flex flex-nowrap reset4print">
-            <MainLogo currentApp={APPS.PROTONMAIL_SETTINGS} url="/inbox" />
+            <MainLogo url="/inbox" />
             <div className="searchbox-container"></div>
             <div className="topnav-container flex-item-centered-vert flex-item-fluid">
                 <ul className="topnav-list unstyled mt0 mb0 ml1 flex flex-nowrap">

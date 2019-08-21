@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Link } from 'react-router-dom';
 import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus } from 'react-components';
-import { APPS } from 'proton-shared/lib/constants';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
@@ -14,7 +13,6 @@ const PrivateLayout = ({ children }) => {
     return (
         <div className="flex flex-nowrap no-scroll">
             <AppsSidebar
-                currentApp={APPS.PROTONMAIL_SETTINGS}
                 items={[
                     <StorageSpaceStatus key="storage">
                         <Link to="/settings/subscription" className="pm-button pm-button--primary">
