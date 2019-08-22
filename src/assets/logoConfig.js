@@ -1,5 +1,5 @@
 module.exports = {
-    logo: 'src/assets/protonmail.png',
+    logo: 'src/assets/protonmail.svg',
     favicons: {
         appName: 'ProtonMail Settings',
         appDescription:
