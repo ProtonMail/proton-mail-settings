@@ -20,6 +20,7 @@
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
         "deploy": "proton-bundler",
         "deploy:standalone": "proton-bundler --appMode standalone",
+        "deploy:prod": "proton-bundler --remote --branch=deploy-prod",
         "e2e": "cypress run",
         "e2e-dev": "cypress open"
     },

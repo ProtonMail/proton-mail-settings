@@ -86,6 +86,13 @@ _Deploy the app as deploy + /login_
 
 Based on [proton-bundler](https://github.com/ProtonMail/proton-bundler)
 
+### Deploy to prod
+
+`$ npm run deploy:prod` 
+
+> Build from master post git clone into /tmp. `--no-remote` build from local.
+
+
 ## How to test
 1. [Set up tests](https://github.com/ProtonMail/protonmail-settings/wiki/Working-with-end-to-end-tests)
 2. Start the app
