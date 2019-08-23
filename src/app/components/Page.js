@@ -12,7 +12,7 @@ const { ADMIN, MEMBER } = PERMISSIONS;
 
 const Page = ({ config, children }) => {
     const userPermissions = usePermissions();
-    const { sections = [], permissions: pagePermissions, text } = config;
+    const { sections = [], permissions: pagePermissions = [], text } = config;
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
