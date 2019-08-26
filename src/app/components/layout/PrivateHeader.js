@@ -14,14 +14,14 @@ const PrivateHeader = () => {
                         <a href="/inbox" className="topnav-link inline-flex flex-nowrap nodecoration rounded">
                             <svg
                                 viewBox="0 0 16 16"
-                                className="icon-16p topnav-icon mr0-5 flex-item-centered-vert fill-white"
+                                className="icon-16p flex-item-noshrink topnav-icon mr0-5 flex-item-centered-vert fill-white"
                                 role="img"
                                 focusable="false"
                                 aria-hidden="true"
                             >
                                 <use xlinkHref="#shape-email" />
                             </svg>
-                            {c('Title').t`Mailbox`}
+                            <span className="navigation-title topnav-linkText">{c('Title').t`Mailbox`}</span>
                         </a>
                     </li>
                     <li className="mr1">
@@ -32,14 +32,14 @@ const PrivateHeader = () => {
                         >
                             <svg
                                 viewBox="0 0 16 16"
-                                className="icon-16p topnav-icon mr0-5 flex-item-centered-vert fill-white"
+                                className="icon-16p flex-item-noshrink topnav-icon mr0-5 flex-item-centered-vert fill-white"
                                 role="img"
                                 focusable="false"
                                 aria-hidden="true"
                             >
                                 <use xlinkHref="#shape-settings-master" />
                             </svg>
-                            {c('Title').t`Settings`}
+                            <span className="navigation-title topnav-linkText">{c('Title').t`Settings`}</span>
                         </Link>
                     </li>
                     <li className="mr1">
