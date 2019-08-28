@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Loader, LoginContainer, ModalsChildren } from 'react-components';
+import { GenericError, Loader, LoginForm, ModalsChildren } from 'react-components';
 import { loadOpenPGP } from 'proton-shared/lib/openpgp';
 import { loadLocale, getBrowserLocale } from 'proton-shared/lib/i18n';
 
@@ -21,7 +21,7 @@ const PublicApp = ({ onLogin }) => {
     }, []);
 
     if (error) {
-        return 'OpenPGP failed to load. Handle better.';
+        return <GenericError />;
     }
 
     if (loading) {
@@ -38,7 +38,7 @@ const PublicApp = ({ onLogin }) => {
             <PublicLayout>
                 <Router>
                     <Switch>
-                        <Route render={() => <LoginContainer onLogin={onLogin} />} />
+                        <Route render={() => <LoginForm onLogin={onLogin} />} />
                     </Switch>
                 </Router>
             </PublicLayout>
