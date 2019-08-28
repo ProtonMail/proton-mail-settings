@@ -6,7 +6,7 @@ import { c } from 'ttag';
 const PrivateHeader = () => {
     return (
         <header className="header flex flex-nowrap reset4print">
-            <MainLogo url="/inbox" />
+            <MainLogo url="/inbox" external={true} />
             <div className="searchbox-container"></div>
             <div className="topnav-container flex-item-centered-vert flex-item-fluid">
                 <ul className="topnav-list unstyled mt0 mb0 ml1 flex flex-nowrap">
