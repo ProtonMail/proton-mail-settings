@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { GenericError, Loader, LoginForm, ModalsChildren } from 'react-components';
 import { loadOpenPGP } from 'proton-shared/lib/openpgp';
 import { loadLocale, getBrowserLocale } from 'proton-shared/lib/i18n';
@@ -36,11 +36,9 @@ const PublicApp = ({ onLogin }) => {
         <>
             <ModalsChildren />
             <PublicLayout>
-                <Router>
-                    <Switch>
-                        <Route render={() => <LoginForm onLogin={onLogin} />} />
-                    </Switch>
-                </Router>
+                <Switch>
+                    <Route render={() => <LoginForm onLogin={onLogin} />} />
+                </Switch>
             </PublicLayout>
         </>
     );
