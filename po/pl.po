@@ -5,12 +5,12 @@ msgstr ""
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: pl\n"
-"X-Crowdin-File: ProtonMail Settings Application.pot\n"
+"X-Crowdin-File: DON'T TRANSLATE THIS YET - ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
 "Last-Translator: PMtranslator\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2019-06-11 07:58\n"
+"PO-Revision-Date: 2019-07-19 09:28\n"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:12
 msgid "1 address"
@@ -1746,7 +1746,7 @@ msgstr "Twoja subskrypcja jest zarządzana przez Mozillę. Skontaktuj się z pom
 #: node_modules/react-components/containers/account/NewsSection.js:26
 msgctxt "Info"
 msgid "To keep up with the latest development at Protonmail, you can subscribe to our various emails and visit our blog from time to time."
-msgstr "Aby na bieżąco śledzić rozwój ProtonMaila, możesz zapisać się do naszych list mailingowych, a także okazjonalnie odwiedzać nasz blog."
+msgstr "Aby na bieżąco śledzić rozwój ProtonMaila, możesz zapisać się do naszych list mailingowych, a także okazjonalnie odwiedzać naszego bloga."
 
 #: node_modules/react-components/containers/account/UsernameSection.js:19
 msgctxt "Info"
@@ -2041,7 +2041,7 @@ msgstr "Twoje konto lub organizacja ma obecnie zaległe faktury. Ureguluj wszyst
 #: node_modules/react-components/containers/members/AddMemberButton.js:25
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
-msgstr "Obsługa wielu użytkowników dostępna jest tylko w planie Profesjonalnym i Wizjoner."
+msgstr "Obsługa wielu użytkowników dostępna jest tylko w planie Professional i Visionary."
 
 #: node_modules/react-components/containers/members/AddMemberButton.js:30
 msgctxt "Error"
@@ -2722,7 +2722,7 @@ msgstr "Korzystaj z ProtonMaila za pomocą desktopowej aplikacji pocztowej"
 #: node_modules/react-components/containers/payments/PlansSection.js:377
 msgctxt "Tooltip"
 msgid "ProtonVPN keeps your Internet traffic private"
-msgstr "ProtonVPN zapewnia prywatność Twojej aktywności w internecie"
+msgstr "ProtonVPN zapewnia prywatność Twojej aktywności w Internecie"
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:50
 msgctxt "Tooltip"
@@ -3133,7 +3133,7 @@ msgstr "Wszystkie opcje planu Plus, adres catch-all, obsługa wielu użytkownik�
 #: node_modules/react-components/containers/payments/PlansSection.js:268
 msgctxt "Plan option"
 msgid "All Professional features, limited to 6 users, includes ProtonVPN"
-msgstr "Wszystkie opcje planu Profesjonalnego, limitowane do 6 użytkowników, ProtonVPN w zestawie"
+msgstr "Wszystkie opcje planu Professional, limitowane do 6 użytkowników, ProtonVPN w zestawie"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:400
 msgctxt "Plan option"
@@ -3184,7 +3184,7 @@ msgstr "Twoja subskrypcja została zmieniona"
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
-msgstr "Ta funkcja jest dostępna tylko w planach ProtonMail Profesjonalny i wyższych"
+msgstr "Ta funkcja jest dostępna tylko w planach ProtonMail Professional i wyższych"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:79
 msgctxt "Warning"
@@ -3228,7 +3228,7 @@ msgstr "/ miesiąc"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:177
 msgctxt "Plan"
 msgid "Free"
-msgstr "Darmowy"
+msgstr "Free"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:10
 msgctxt "Option"
@@ -3642,7 +3642,7 @@ msgstr "Wyłączona"
 #: node_modules/react-components/containers/domains/DomainsSection.js:30
 msgctxt "Message"
 msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
-msgstr "Dodaj domenę, aby móc otrzymywać wiadomości na niestandardowe adresy e-mail i dodawać użytkowników do swojej organizacji (dotyczy planu Profesjonalnego i Wizjoner)."
+msgstr "Dodaj domenę, aby móc otrzymywać wiadomości na niestandardowe adresy e-mail i dodawać użytkowników do swojej organizacji (dotyczy planu Professional i Visionary)."
 
 #: node_modules/react-components/containers/logs/WipeLogsButton.js:17
 msgctxt "Message"
@@ -3794,7 +3794,7 @@ msgstr "ProtonMail na Androida"
 #: node_modules/react-components/containers/sessions/SessionsSection.js:32
 msgctxt "Badge"
 msgid "ProtonMail import-export"
-msgstr "ProtonMail import-export"
+msgstr "ProtonMail Import-Export"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:33
 msgctxt "Badge"

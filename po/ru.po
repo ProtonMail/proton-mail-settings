@@ -5,12 +5,12 @@ msgstr ""
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: ru\n"
-"X-Crowdin-File: ProtonMail Settings Application.pot\n"
+"X-Crowdin-File: DON'T TRANSLATE THIS YET - ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
 "Last-Translator: PMtranslator\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-06-11 07:58\n"
+"PO-Revision-Date: 2019-07-19 09:29\n"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:12
 msgid "1 address"
@@ -39,18 +39,18 @@ msgstr[3] "${ value } своих доменов"
 #: node_modules/react-components/containers/payments/subscription/helpers.js:21
 msgid "1 user"
 msgid_plural "${ value } users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 пользователь"
+msgstr[1] "${ value } пользователя"
 msgstr[2] ""
-msgstr[3] ""
+msgstr[3] "${ value } пользователей"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgid "1 VPN connection"
 msgid_plural "${ value } VPN connections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 VPN подключение"
+msgstr[1] "${ value } VPN подключения"
 msgstr[2] ""
-msgstr[3] ""
+msgstr[3] "${ value } VPN подключений"
 
 #: src/app/components/layout/AuthHeader.js:31
 #: src/app/components/layout/AuthHeader.js:35
@@ -1791,12 +1791,12 @@ msgstr "За дальнейшей помощью и поддержкой обр�
 #: node_modules/react-components/containers/overview/PromoteSection.js:54
 msgctxt "Info"
 msgid "Help us improve our service by applying to our Beta programs."
-msgstr ""
+msgstr "Помогите нам улучшить наш сервис, вступив в наши Beta программы."
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:61
 msgctxt "Info"
 msgid "Pay for both ProtonMail and ProtonVPN and get 20% off your entire subscription."
-msgstr ""
+msgstr "Оплатите и ProtonMail, и ProtonVPN, и получите скидку 20% на итоговую стоимость подписки."
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:11
 msgctxt "Info"
@@ -1900,7 +1900,7 @@ msgstr "Добавить автоответчик"
 #: node_modules/react-components/containers/payments/subscription/FeaturesList.js:14
 msgctxt "Link"
 msgid "Add custom domain"
-msgstr ""
+msgstr "Добавить свой домен"
 
 #: node_modules/react-components/containers/payments/subscription/FeaturesList.js:15
 msgctxt "Link"
@@ -1920,7 +1920,7 @@ msgstr "Добавить новых пользователей"
 #: node_modules/react-components/containers/payments/subscription/FeaturesList.js:20
 msgctxt "Link"
 msgid "Use ProtonVPN"
-msgstr ""
+msgstr "Использовать ProtonVPN"
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:23
 #: node_modules/react-components/containers/members/MemberAddresses.js:23
@@ -2178,13 +2178,13 @@ msgstr "Доп. домены"
 #: node_modules/react-components/containers/payments/BillingSection.js:188
 msgctxt "Label"
 msgid "Extra VPN connections"
-msgstr ""
+msgstr "Дополнительные VPN соединения"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:204
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:101
 msgctxt "Label"
 msgid "Sub-total"
-msgstr ""
+msgstr "Промежуточный итог"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:214
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:111
@@ -2217,7 +2217,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/BillingSection.js:255
 msgctxt "Label"
 msgid "Billing cycle end date"
-msgstr ""
+msgstr "Дата окончания платёжного цикла"
 
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:43
 msgctxt "Label"
@@ -2232,7 +2232,7 @@ msgstr "Подарок"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
 msgctxt "Label"
 msgid "Users"
-msgstr ""
+msgstr "Пользователи"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
 msgctxt "Label"
@@ -2247,12 +2247,12 @@ msgstr "Объём хранилища"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:150
 msgctxt "Label"
 msgid "Custom domains"
-msgstr ""
+msgstr "Свои домены"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:205
 msgctxt "Label"
 msgid "Billing cycle"
-msgstr ""
+msgstr "Оплачиваемый период"
 
 #: node_modules/react-components/containers/payments/Payment.js:40
 msgctxt "Label"
@@ -2702,7 +2702,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/PlansSection.js:158
 msgctxt "Tooltip"
 msgid "Save 20% when billed annually"
-msgstr ""
+msgstr "Сэкономьте 20% при оплате ежегодно"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:204
 msgctxt "Tooltip"
@@ -2717,7 +2717,7 @@ msgstr "Используйте своё доменное имя"
 #: node_modules/react-components/containers/payments/PlansSection.js:245
 msgctxt "Tooltip"
 msgid "Use ProtonMail with a desktop email client"
-msgstr ""
+msgstr "Использовать ProtonMail с клиентом электронной почты"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:377
 msgctxt "Tooltip"
@@ -2727,7 +2727,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:50
 msgctxt "Tooltip"
 msgid "For each additional user, 5GB of storage and 5 email addresses are added to your subscription."
-msgstr ""
+msgstr "Для каждого дополнительного пользователя в подписку добавляются 5 ГБ хранилища и 5 адресов электронной почты."
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:75
 msgctxt "Tooltip"
@@ -2832,12 +2832,12 @@ msgstr "Ежемесячно"
 #: node_modules/react-components/containers/payments/CycleSelector.js:13
 msgctxt "Billing cycle option"
 msgid "Annually"
-msgstr ""
+msgstr "Ежегодно"
 
 #: node_modules/react-components/containers/payments/CycleSelector.js:18
 msgctxt "Billing cycle option"
 msgid "Two-year"
-msgstr ""
+msgstr "Каждые 2 года"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:47
 #: node_modules/react-components/containers/payments/EditCardModal.js:26
@@ -2858,7 +2858,7 @@ msgstr "Подписка успешно отменена"
 #: node_modules/react-components/containers/payments/CreditsModal.js:40
 msgctxt "Success"
 msgid "Credits added"
-msgstr ""
+msgstr "Средства зачислены"
 
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:34
 msgctxt "Success"
@@ -2911,12 +2911,12 @@ msgstr "Способ оплаты удалён"
 #: node_modules/react-components/containers/sessions/SessionsSection.js:60
 msgctxt "Success"
 msgid "Session revoked"
-msgstr ""
+msgstr "Сессия прервана"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:60
 msgctxt "Success"
 msgid "Sessions revoked"
-msgstr ""
+msgstr "Сессии прерваны"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:33
 msgctxt "Success"
@@ -2972,7 +2972,7 @@ msgstr "Расценки"
 #: node_modules/react-components/containers/payments/PlansSection.js:180
 msgctxt "Header"
 msgid "Users"
-msgstr ""
+msgstr "Пользователи"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:187
 msgctxt "Header"
@@ -3002,7 +3002,7 @@ msgstr "Ярлыки"
 #: node_modules/react-components/containers/payments/PlansSection.js:232
 msgctxt "Header"
 msgid "Custom domains"
-msgstr ""
+msgstr "Свои домены"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:244
 msgctxt "Header"
@@ -3012,7 +3012,7 @@ msgstr "Поддержка IMAP / SMTP"
 #: node_modules/react-components/containers/payments/PlansSection.js:262
 msgctxt "Header"
 msgid "Additional features"
-msgstr ""
+msgstr "Дополнительно"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:274
 msgctxt "Header"
@@ -3052,12 +3052,12 @@ msgstr "Скорость"
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:85
 msgctxt "Header"
 msgid "Simultaneous connections"
-msgstr ""
+msgstr "Одновременные соединения"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:96
 msgctxt "Header"
 msgid "Advanced encryption"
-msgstr ""
+msgstr "Расширенное шифрование"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:107
 msgctxt "Header"
@@ -3118,7 +3118,7 @@ msgstr "Нет ограничений"
 #: node_modules/react-components/containers/payments/PlansSection.js:263
 msgctxt "Plan option"
 msgid "Only basic email features"
-msgstr ""
+msgstr "Только основные функции электронной почты"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:264
 msgctxt "Plan option"
@@ -3155,7 +3155,7 @@ msgstr "Ежемесячно"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:28
 msgctxt "Billing cycle"
 msgid "Yearly"
-msgstr ""
+msgstr "Ежегодно"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:31
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:29
@@ -3179,7 +3179,7 @@ msgstr "Бесплатный"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:215
 msgctxt "Warning"
 msgid "You subscription has changed"
-msgstr ""
+msgstr "Ваша подписка изменилась"
 
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
@@ -3458,12 +3458,12 @@ msgstr "Наивысшая"
 #: node_modules/react-components/containers/payments/CouponDiscountBadge.js:12
 msgctxt "Discount with coupon code"
 msgid "20% discount applied to your subscription"
-msgstr ""
+msgstr "20% скидка применена к вашей подписке"
 
 #: node_modules/react-components/containers/payments/CouponDiscountBadge.js:20
 msgctxt "Discount with coupon code"
 msgid "50% discount applied to your subscription"
-msgstr ""
+msgstr "50% скидка применена к вашей подписке"
 
 #: node_modules/react-components/containers/payments/CreditsModal.js:22
 msgctxt "Monetary unit"
@@ -4317,7 +4317,7 @@ msgstr "Отключено"
 #: node_modules/react-components/containers/overview/LinkItem.js:12
 msgctxt "Tag"
 msgid "Premium feature"
-msgstr ""
+msgstr "Премиум-функция"
 
 #: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:27
 msgctxt "Title for downloads section"
