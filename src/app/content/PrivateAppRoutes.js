@@ -26,7 +26,7 @@ const Routes = () => {
     return (
         <Route
             render={({ location }) => (
-                <ErrorBoundary key={location.key}>
+                <ErrorBoundary key={location.pathname}>
                     <Switch>
                         <Route path="/settings" exact component={OverviewContainer} />
                         <Route path="/settings/account" component={AccountContainer} />
