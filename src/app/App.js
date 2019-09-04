@@ -1,9 +1,7 @@
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
-import { ProtonApp, Loader, useAuthentication, useInstance } from 'react-components';
-import createSecureSessionStorage from 'proton-shared/lib/createSecureSessionStorage';
+import { ProtonApp, LoaderPage, useAuthentication } from 'react-components';
 import sentry from 'proton-shared/lib/helpers/sentry';
-import { MAILBOX_PASSWORD_KEY, UID_KEY } from 'proton-shared/lib/constants';
 
 import * as config from './config';
 import PrivateApp from './content/PrivateApp';
@@ -15,7 +13,7 @@ sentry(config);
 
 const Redirect = () => {
     document.location.replace(document.location.origin);
-    return <Loader />;
+    return <LoaderPage />;
 };
 
 const Setup = () => {
@@ -33,9 +31,8 @@ const Setup = () => {
 };
 
 const App = () => {
-    const storage = useInstance(() => createSecureSessionStorage([MAILBOX_PASSWORD_KEY, UID_KEY]));
     return (
-        <ProtonApp config={config} storage={storage}>
+        <ProtonApp config={config}>
             <Setup />
         </ProtonApp>
     );
