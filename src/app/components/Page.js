@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React, { Children, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Alert, ObserverSections, SubSidebar, SettingsTitle, usePermissions } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
@@ -13,6 +13,7 @@ const { ADMIN, MEMBER } = PERMISSIONS;
 const Page = ({ config, children }) => {
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions = [], text } = config;
+    const [activeSection, setActiveSection] = useState('');
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
@@ -40,11 +41,11 @@ const Page = ({ config, children }) => {
 
     return (
         <>
-            {sections.length ? <SubSidebar list={sections} /> : null}
+            {sections.length ? <SubSidebar activeSection={activeSection} list={sections} /> : null}
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
                 <div className="container-section-sticky">
-                    <ObserverSections>
+                    <ObserverSections setActiveSection={setActiveSection}>
                         {Children.map(children, (child, index) => {
                             const { id, permissions: sectionPermissions = [] } = sections[index] || {};
                             return React.cloneElement(child, {
