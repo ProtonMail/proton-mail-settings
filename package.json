@@ -15,7 +15,7 @@
         "i18n:validate:context": "proton-i18n extract && proton-i18n validate",
         "i18n:upgrade": "proton-i18n extract && proton-i18n crowdin -u && proton-i18n commit update",
         "i18n:getlatest": "proton-i18n upgrade",
-        "pretty": "prettier --write  $(find src/app -type f -name '*.js' -o -name '*.ts' -o -name '*.tsx')",
+        "pretty": "prettier --write  $(find src -type f -name '*.js' -o -name '*.ts' -o -name '*.tsx')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
         "deploy": "proton-bundler",
