@@ -6,6 +6,7 @@
 import '@testing-library/cypress/add-commands';
 
 import { login } from './commands/login';
+import { logout } from './commands/logout';
 import { PLANS, PASSWORD_MODE } from '../fixtures/accountTypes.js';
 const users = require('../fixtures/accounts.json');
 
@@ -30,13 +31,16 @@ Cypress.Commands.add('autoLogin', (plan = PLANS.free, passwordMode = PASSWORD_MO
 });
 
 /**
- * [Login command]
+ * [Login command.]
  * @param  {Object} loginCredentials [The login credentials for the user.]
  * @param  {String} loginCredentials.username [The username.]
  * @param  {String} loginCredentials.password [The password.]
  * @param  {String} loginCredentials.OTP [The secret for the OTP(one time password) token.]
  * @param  {String} loginCredentials.secondPassword [The mailbox password.]
  */
-Cypress.Commands.add('login', (loginCredentials = { username, password, OTP, secondPassword }) => {
-    return login(loginCredentials);
-});
+Cypress.Commands.add('login', login);
+
+/**
+ * [Logout command.]
+ */
+Cypress.Commands.add('logout', logout);
