@@ -43,7 +43,7 @@ const PrivateHeader = () => {
                         </Link>
                     </li>
                     <li className="mr1">
-                        <SupportDropdown />
+                        <SupportDropdown className="topnav-link inline-flex flex-nowrap nodecoration rounded" />
                     </li>
                     <li className="mlauto mtauto mbauto relative flex-item-noshrink">
                         <UserDropdown />
