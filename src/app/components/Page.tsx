@@ -17,13 +17,13 @@ interface SectionProps {
 
 interface SectionConfig {
     id: string;
-    permissions?: string[];
+    permissions?: PERMISSIONS[];
     text: React.ReactNode;
     hide?: boolean;
 }
 
 export interface PageConfig {
-    permissions?: string[]; // TODO: enum, from PERMISSIONS in shared,
+    permissions?: PERMISSIONS[];
     sections: SectionConfig[];
     text: React.ReactNode;
     route?: string;

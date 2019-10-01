@@ -42,6 +42,8 @@
         "@typescript-eslint/parser": "^2.3.2",
         "@types/moment-timezone": "^0.5.12",
         "@types/react-router-dom": "^4.3.4",
+        "@typescript-eslint/eslint-plugin": "^2.3.2",
+        "@typescript-eslint/parser": "^2.3.2",
         "cross-env": "^5.2.0",
         "cypress": "^3.3.1",
         "cypress-otp": "^1.0.2",
