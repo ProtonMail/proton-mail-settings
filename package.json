@@ -10,19 +10,20 @@
         "build": "cross-env NODE_ENV=production proton-pack compile $npm_package_config_publicPathFlag",
         "build:standalone": "cross-env NODE_ENV=production proton-pack compile --appMode=standalone",
         "start": "proton-pack dev-server $npm_package_config_publicPathFlag --appMode=standalone",
-        "lint": "eslint src --ext .js --quiet --cache",
+        "lint": "eslint src --ext .js,.ts,.tsx --quiet --cache",
         "i18n:validate": "proton-i18n validate lint-functions",
         "i18n:validate:context": "proton-i18n extract && proton-i18n validate",
         "i18n:upgrade": "proton-i18n extract && proton-i18n crowdin -u && proton-i18n commit update",
         "i18n:getlatest": "proton-i18n upgrade",
-        "pretty": "prettier --write  $(find src/app -type f -name '*.js')",
+        "pretty": "prettier --write  $(find src/app -type f -name '*.js' -o -name '*.ts' -o -name '*.tsx')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
         "deploy": "proton-bundler",
         "deploy:standalone": "proton-bundler --appMode standalone",
         "deploy:prod": "proton-bundler --remote --branch=deploy-prod",
         "e2e": "cypress run",
-        "e2e-dev": "cypress open"
+        "e2e-dev": "cypress open",
+        "check-types": "tsc"
     },
     "repository": {
         "type": "git",
@@ -37,6 +38,8 @@
     "homepage": "https://github.com/ProtonMail/protonmail-settings#readme",
     "devDependencies": {
         "@testing-library/cypress": "^4.0.4",
+        "@typescript-eslint/eslint-plugin": "^2.3.2",
+        "@typescript-eslint/parser": "^2.3.2",
         "cypress": "^3.3.1",
         "cypress-otp": "^1.0.2",
         "cross-env": "^5.2.0",
@@ -44,13 +47,14 @@
         "lint-staged": "^8.1.5",
         "prettier": "^1.16.4",
         "proton-bundler": "github:ProtonMail/proton-bundler#semver:^1.0.0",
-        "proton-i18n": "github:ProtonMail/proton-i18n#semver:^1.0.0"
+        "proton-i18n": "github:ProtonMail/proton-i18n#semver:^1.0.0",
+        "typescript": "^3.6.3"
     },
     "dependencies": {
         "abortcontroller-polyfill": "^1.2.1",
         "design-system": "github:ProtonMail/design-system.git#master",
         "pmcrypto": "github:ProtonMail/pmcrypto.git#semver:^6.0.0",
-        "proton-pack": "github:ProtonMail/proton-pack#semver:^1.0.0",
+        "proton-pack": "github:ProtonMail/proton-pack#semver:^2.0.0",
         "proton-shared": "github:ProtonMail/proton-shared.git#master",
         "react": "^16.8.1",
         "react-components": "github:ProtonMail/react-components.git#master",
@@ -61,14 +65,15 @@
         "yetch": "^1.1.0"
     },
     "lint-staged": {
-        "*.js": [
+        "(*.ts|*.tsx|*.js)": [
             "prettier --write",
+            "eslint",
             "git add"
         ]
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "npm run check-types && lint-staged"
         }
     }
 }
