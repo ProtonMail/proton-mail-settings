@@ -1,10 +1,6 @@
 {
-    "parser": "babel-eslint",
-    "plugins": [
-        "react",
-        "react-hooks",
-        "import"
-    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react", "react-hooks", "import", "@typescript-eslint"],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module",
@@ -22,15 +18,17 @@
     "settings": {
         "react": {
             "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".ts", ".tsx"]
+            }
         }
     },
     "globals": {
         "PL_IS_STANDALONE": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": ["plugin:@typescript-eslint/recommended", "eslint:recommended", "plugin:react/recommended"],
     "rules": {
         "react/display-name": "off",
         "react/prop-types": "warn",
@@ -38,6 +36,9 @@
         "react/jsx-uses-react": "error",
         "no-sequences": "warn",
         "no-param-reassign": "warn",
-        "import/no-unresolved": [2, {"commonjs": true, "amd": true}]
+        "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/indent": "off"
     }
 }
