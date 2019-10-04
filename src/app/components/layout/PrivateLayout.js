@@ -1,15 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, withRouter } from 'react-router-dom';
 import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
 
-const PrivateLayout = ({ children }) => {
+const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
+
+    useEffect(() => {
+        mainAreaRef.current.scrollTop = 0;
+    }, [location.pathname]);
+
     return (
         <div className="flex flex-nowrap no-scroll">
             <AppsSidebar
@@ -37,7 +42,8 @@ const PrivateLayout = ({ children }) => {
 };
 
 PrivateLayout.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    location: PropTypes.object.isRequired
 };
 
-export default PrivateLayout;
+export default withRouter(PrivateLayout);
