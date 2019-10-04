@@ -41,6 +41,10 @@ const Page = ({ config, children }: Props) => {
     const { sections = [], permissions: pagePermissions = [], text } = config;
     const [activeSection, setActiveSection] = useState('');
 
+    React.useEffect(() => {
+        document.title = `${text} - ProtonMail`;
+    }, [text]);
+
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
             <Main>
