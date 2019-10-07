@@ -7,7 +7,7 @@ const PrivateHeader = () => {
         <header className="header flex flex-nowrap reset4print">
             <MainLogo url="/inbox" external={true} />
             <TopNavbar>
-                <TopNavbarLink to="/inbox" icon="email" text={c('Title').t`Mailbox`} />
+                <TopNavbarLink to="/inbox" external={true} icon="email" text={c('Title').t`Mailbox`} />
                 <TopNavbarLink
                     to="/settings"
                     icon="settings-master"
