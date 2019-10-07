@@ -5,14 +5,14 @@ import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import Page from '../components/Page';
 
-const { ADMIN, MULTI_USERS } = PERMISSIONS;
+const { ADMIN } = PERMISSIONS;
 
 export const getMembersPage = () => {
     return {
         text: c('Title').t`Users`,
         route: '/settings/members',
         icon: 'contacts-group-people',
-        permissions: [ADMIN, MULTI_USERS],
+        permissions: [ADMIN],
         sections: [
             {
                 text: c('Title').t`Users`,

@@ -1,12 +1,7 @@
 import React from 'react';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
-import {
-    ProtonMailBridgeSection,
-    ProtonVPNAppsSection,
-    ProtonMailBetaSection,
-    ProtonMailAppsSection
-} from 'react-components';
+import { ProtonMailBridgeSection, ProtonMailBetaSection, ProtonMailAppsSection } from 'react-components';
 
 import Page from '../components/Page';
 
@@ -24,10 +19,6 @@ export const getAppsPage = () => {
                 permissions: [PAID_MAIL]
             },
             {
-                text: c('Title').t`ProtonMail Apps`,
-                id: 'protonmail-apps'
-            },
-            {
                 text: c('Title').t`ProtonMail Beta`,
                 id: 'protonmail-beta'
             },
@@ -43,7 +34,6 @@ const AppsContainer = () => {
     return (
         <Page config={getAppsPage()}>
             <ProtonMailBridgeSection />
-            <ProtonVPNAppsSection />
             <ProtonMailBetaSection />
             <ProtonMailAppsSection />
         </Page>

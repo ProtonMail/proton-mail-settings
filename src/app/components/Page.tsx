@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Children, isValidElement, useState } from 'react';
-import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Alert } from 'react-components';
-import { Link } from 'react-router-dom';
+import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Paragraph } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 import { c } from 'ttag';
+import upgradeSvg from 'design-system/assets/img/pm-images/upgrade2.svg';
+import passwordSvg from 'design-system/assets/img/pm-images/password.svg';
 
 import Main from './Main';
 
@@ -49,8 +50,13 @@ const Page = ({ config, children }: Props) => {
         return (
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
-                <div className="container-section-sticky">
-                    <Alert type="warning">{c('Warning').t`Require admin permission to access to this page.`}</Alert>
+                <div className="container-section-sticky aligncenter">
+                    <img src={passwordSvg} alt={c('Title').t`Password`} className="mb2" />
+                    <h3 className="bold">{c('Title').t`Sorry, you can't access this page`}</h3>
+                    <Paragraph>
+                        {c('Info')
+                            .t`Users can't make changes to organization settings. If you need admin priviledges, reach out to your system administrator.`}
+                    </Paragraph>
                 </div>
             </Main>
         );
@@ -60,10 +66,13 @@ const Page = ({ config, children }: Props) => {
         return (
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
-                <div className="container-section-sticky">
-                    <Alert>
-                        <Link to="/settings/subscription">{c('Link').t`Upgrade now`}</Link>
-                    </Alert>
+                <div className="container-section-sticky aligncenter">
+                    <img src={upgradeSvg} alt={c('Title').t`Upgrade`} className="mb2" />
+                    <h3 className="bold">{c('Title').t`You don't have an organization yet`}</h3>
+                    <Paragraph>
+                        {c('Info')
+                            .t`Go to Subscription and upgrade to a paid plan to view these settings. Select a plan with multi-user support to manage users.`}
+                    </Paragraph>
                 </div>
             </Main>
         );

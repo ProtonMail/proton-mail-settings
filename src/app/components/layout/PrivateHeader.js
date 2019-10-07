@@ -1,12 +1,14 @@
 import React from 'react';
-import { MainLogo, TopNavbar, TopNavbarLink, SupportDropdown } from 'react-components';
+import { MainLogo, TopNavbar, TopNavbarLink, SupportDropdown, UpgradeButton, useUser } from 'react-components';
 import { c } from 'ttag';
 
 const PrivateHeader = () => {
+    const [user = {}] = useUser();
     return (
         <header className="header flex flex-nowrap reset4print">
             <MainLogo url="/inbox" external={true} />
             <TopNavbar>
+                {user.hasPaidMail ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="email" text={c('Title').t`Mailbox`} />
                 <TopNavbarLink
                     to="/settings"
