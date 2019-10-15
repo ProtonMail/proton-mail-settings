@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const PublicLayout = ({ children }) => {
-    return (
-        <div className="flex flex-nowrap">
-            <main className="main flex-item-fluid main-area">{children}</main>
-        </div>
-    );
+    return <main className="main-full flex flex-column flex-nowrap reset4print">{children}</main>;
 };
 
 PublicLayout.propTypes = {
