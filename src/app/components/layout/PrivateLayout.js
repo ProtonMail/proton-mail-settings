@@ -1,15 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Link, withRouter } from 'react-router-dom';
-import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus } from 'react-components';
+import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus, useToggle } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
 
 const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
-    const [expanded, setExpand] = useState(false);
+    const { state: expanded, toggle: toggleExpand } = useToggle();
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
 
     useEffect(() => {
@@ -28,7 +28,7 @@ const PrivateLayout = ({ children, location }) => {
                 ]}
             />
             <div className="content flex-item-fluid reset4print">
-                <PrivateHeader expanded={expanded} onToggleExpand={() => setExpand(!expanded)} />
+                <PrivateHeader expanded={expanded} onToggleExpand={toggleExpand} />
                 <div className="flex flex-nowrap">
                     <Route path="/:path" render={() => <Sidebar expanded={expanded} list={list} />} />
                     <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
