@@ -1,12 +1,22 @@
 import React from 'react';
-import { MainLogo, TopNavbar, TopNavbarLink, SupportDropdown, UpgradeButton, useUser } from 'react-components';
+import PropTypes from 'prop-types';
+import {
+    MainLogo,
+    TopNavbar,
+    TopNavbarLink,
+    SupportDropdown,
+    UpgradeButton,
+    Hamburger,
+    useUser
+} from 'react-components';
 import { c } from 'ttag';
 
-const PrivateHeader = () => {
+const PrivateHeader = ({ expanded, onToggleExpand }) => {
     const [user = {}] = useUser();
     return (
         <header className="header flex flex-nowrap reset4print">
-            <MainLogo url="/inbox" external={true} />
+            <MainLogo url="/inbox" className="nomobile" external={true} />
+            <Hamburger expanded={expanded} onToggle={onToggleExpand} />
             <TopNavbar>
                 {user.hasPaidMail ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
@@ -20,6 +30,11 @@ const PrivateHeader = () => {
             </TopNavbar>
         </header>
     );
+};
+
+PrivateHeader.propTypes = {
+    expanded: PropTypes.bool,
+    onToggleExpand: PropTypes.func
 };
 
 export default PrivateHeader;

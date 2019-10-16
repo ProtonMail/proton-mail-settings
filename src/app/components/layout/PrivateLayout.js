@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Link, withRouter } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { getPages } from '../../pages';
 
 const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
+    const [expanded, setExpand] = useState(false);
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
 
     useEffect(() => {
@@ -27,9 +28,9 @@ const PrivateLayout = ({ children, location }) => {
                 ]}
             />
             <div className="content flex-item-fluid reset4print">
-                <PrivateHeader />
+                <PrivateHeader expanded={expanded} onToggleExpand={() => setExpand(!expanded)} />
                 <div className="flex flex-nowrap">
-                    <Route path="/:path" render={() => <Sidebar list={list} />} />
+                    <Route path="/:path" render={() => <Sidebar expanded={expanded} list={list} />} />
                     <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
                         <div className="flex flex-reverse">
                             <MainAreaContext.Provider value={mainAreaRef}>{children}</MainAreaContext.Provider>
