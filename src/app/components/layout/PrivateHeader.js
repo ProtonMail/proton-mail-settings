@@ -9,7 +9,7 @@ const PrivateHeader = () => {
             <MainLogo url="/inbox" external={true} />
             <TopNavbar>
                 {user.hasPaidMail ? null : <UpgradeButton />}
-                <TopNavbarLink to="/inbox" external={true} icon="email" text={c('Title').t`Mailbox`} />
+                <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
                 <TopNavbarLink
                     to="/settings"
                     icon="settings-master"
