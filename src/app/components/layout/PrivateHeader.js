@@ -1,14 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-    MainLogo,
-    TopNavbar,
-    TopNavbarLink,
-    SupportDropdown,
-    UpgradeButton,
-    Hamburger,
-    useUser
-} from 'react-components';
+import { MainLogo, TopNavbar, TopNavbarLink, UpgradeButton, Hamburger, useUser } from 'react-components';
 import { c } from 'ttag';
 
 const PrivateHeader = ({ expanded, onToggleExpand }) => {
@@ -26,7 +18,6 @@ const PrivateHeader = ({ expanded, onToggleExpand }) => {
                     text={c('Title').t`Settings`}
                     aria-current="true"
                 />
-                <SupportDropdown />
             </TopNavbar>
         </header>
     );
