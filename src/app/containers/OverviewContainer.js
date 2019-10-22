@@ -17,6 +17,10 @@ const OverviewContainer = () => {
     const [userSettings] = useUserSettings();
     const [user] = useUser();
 
+    React.useEffect(() => {
+        document.title = 'Overview - ProtonMail';
+    }, []);
+
     if (loading) {
         return <Loader />;
     }
