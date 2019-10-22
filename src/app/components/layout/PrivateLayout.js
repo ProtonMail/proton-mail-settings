@@ -9,8 +9,13 @@ import { getPages } from '../../pages';
 
 const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
-    const { state: expanded, toggle: toggleExpand } = useToggle();
+    const { state: expanded, toggle: onToggleExpand } = useToggle();
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
+
+    const mobileLinks = [
+        { to: '/inbox', icon: 'protonmail', external: true, current: true },
+        { to: '/contacts', icon: 'protoncontacts', external: true, current: false }
+    ];
 
     useEffect(() => {
         mainAreaRef.current.scrollTop = 0;
@@ -28,9 +33,20 @@ const PrivateLayout = ({ children, location }) => {
                 ]}
             />
             <div className="content flex-item-fluid reset4print">
-                <PrivateHeader expanded={expanded} onToggleExpand={toggleExpand} />
+                <PrivateHeader title={c('Title').t`Settings`} expanded={expanded} onToggleExpand={onToggleExpand} />
                 <div className="flex flex-nowrap">
-                    <Route path="/:path" render={() => <Sidebar expanded={expanded} list={list} />} />
+                    <Route
+                        path="/:path"
+                        render={() => (
+                            <Sidebar
+                                url="/inbox"
+                                mobileLinks={mobileLinks}
+                                expanded={expanded}
+                                onToggleExpand={onToggleExpand}
+                                list={list}
+                            />
+                        )}
+                    />
                     <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
                         <div className="flex flex-reverse">
                             <MainAreaContext.Provider value={mainAreaRef}>{children}</MainAreaContext.Provider>
