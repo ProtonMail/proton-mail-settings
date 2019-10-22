@@ -9,13 +9,14 @@ import {
     useUser,
     useActiveBreakpoint
 } from 'react-components';
+import { isMobile as isItMobile } from 'proton-shared/lib/helpers/responsive';
 import { c } from 'ttag';
 
 const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
     const [user = {}] = useUser();
     const { hasPaidMail } = user;
     const activeBreakpoint = useActiveBreakpoint();
-    const isMobile = activeBreakpoint === 'mobile';
+    const isMobile = isItMobile(activeBreakpoint);
 
     return (
         <header className="header flex flex-nowrap reset4print">
