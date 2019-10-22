@@ -1,25 +1,48 @@
 import React from 'react';
-import { MainLogo, TopNavbar, TopNavbarLink, SupportDropdown, UpgradeButton, useUser } from 'react-components';
+import PropTypes from 'prop-types';
+import {
+    MainLogo,
+    TopNavbar,
+    TopNavbarLink,
+    UpgradeButton,
+    Hamburger,
+    useUser,
+    useActiveBreakpoint
+} from 'react-components';
+import { isMobile as isItMobile } from 'proton-shared/lib/helpers/responsive';
 import { c } from 'ttag';
 
-const PrivateHeader = () => {
+const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
     const [user = {}] = useUser();
+    const { hasPaidMail } = user;
+    const activeBreakpoint = useActiveBreakpoint();
+    const isMobile = isItMobile(activeBreakpoint);
+
     return (
         <header className="header flex flex-nowrap reset4print">
-            <MainLogo url="/inbox" external={true} />
+            <MainLogo url="/inbox" className="nomobile" external={true} />
+            <Hamburger expanded={expanded} onToggle={onToggleExpand} />
+            {title && isMobile ? <span className="big ellipsis">{title}</span> : null}
             <TopNavbar>
-                {user.hasPaidMail ? null : <UpgradeButton />}
+                {hasPaidMail || isMobile ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
-                <TopNavbarLink
-                    to="/settings"
-                    icon="settings-master"
-                    text={c('Title').t`Settings`}
-                    aria-current="true"
-                />
-                <SupportDropdown />
+                {isMobile ? null : (
+                    <TopNavbarLink
+                        to="/settings"
+                        icon="settings-master"
+                        text={c('Title').t`Settings`}
+                        aria-current="true"
+                    />
+                )}
             </TopNavbar>
         </header>
     );
+};
+
+PrivateHeader.propTypes = {
+    title: PropTypes.string,
+    expanded: PropTypes.bool,
+    onToggleExpand: PropTypes.func
 };
 
 export default PrivateHeader;
