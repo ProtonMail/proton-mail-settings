@@ -20,7 +20,11 @@ const PrivateLayout = ({ children, location }) => {
             <AppsSidebar
                 items={[
                     <StorageSpaceStatus key="storage">
-                        <Link to="/settings/subscription" className="pm-button pm-button--primary pm-button--small">
+                        <Link
+                            to="/settings/subscription"
+                            target="_self"
+                            className="pm-button pm-button--primary pm-button--small"
+                        >
                             {c('Action').t`Upgrade`}
                         </Link>
                     </StorageSpaceStatus>
