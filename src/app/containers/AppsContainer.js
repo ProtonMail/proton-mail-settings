@@ -23,8 +23,8 @@ export const getAppsPage = () => {
                 id: 'protonmail-beta'
             },
             {
-                text: c('Title').t`ProtonVPN Apps`,
-                id: 'protonvpn-apps'
+                text: c('Title').t`ProtonMail apps`,
+                id: 'protonmail-apps'
             }
         ]
     };
