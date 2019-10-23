@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { c } from 'ttag';
 import {
     Loader,
     IndexSection,
@@ -17,8 +18,8 @@ const OverviewContainer = () => {
     const [userSettings] = useUserSettings();
     const [user] = useUser();
 
-    React.useEffect(() => {
-        document.title = 'Overview - ProtonMail';
+    useEffect(() => {
+        document.title = c('Title').t`Overview - ProtonMail`;
     }, []);
 
     if (loading) {
