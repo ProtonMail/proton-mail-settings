@@ -53,7 +53,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 to: '/settings/domains'
             },
             {
-                icon: 'email-address',
+                icon: 'contacts-group-people',
                 text: c('Info')
                     .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
                 link: c('Link').t`Upgrade`,
@@ -70,7 +70,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
             to: '/settings/subscription'
         },
         {
-            icon: 'email-address',
+            icon: 'contacts-group-people',
             text: c('Info')
                 .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
             link: c('Link').t`Upgrade`,

@@ -34,7 +34,7 @@ const MembersContainer = () => {
             <RelatedSettingsSection
                 list={[
                     {
-                        icon: 'email-address',
+                        icon: 'addresses',
                         text: c('Info')
                             .t`Go to the address settings if you want to create and manage addresses for your users.`,
                         link: c('Link').t`Address settings`,

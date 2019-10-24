@@ -42,7 +42,7 @@ const getList = ({ MaxMembers = 0 } = {}) => {
                 to: '/settings/members'
             },
             {
-                icon: 'email-address',
+                icon: 'addresses',
                 text: c('Info')
                     .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
                 link: c('Link').t`Addresses settings`,
@@ -60,7 +60,7 @@ const getList = ({ MaxMembers = 0 } = {}) => {
             to: '/settings/subscription'
         },
         {
-            icon: 'email-address',
+            icon: 'addresses',
             text: c('Info')
                 .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
             link: c('Link').t`Addresses settings`,
