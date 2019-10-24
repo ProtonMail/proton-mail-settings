@@ -14,17 +14,17 @@ import { c } from 'ttag';
 const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
     const [user = {}] = useUser();
     const { hasPaidMail } = user;
-    const { isMobile } = useActiveBreakpoint();
+    const { isNarrow } = useActiveBreakpoint();
 
     return (
         <header className="header flex flex-nowrap reset4print">
             <MainLogo url="/inbox" className="nomobile" external={true} />
             <Hamburger expanded={expanded} onToggle={onToggleExpand} />
-            {title && isMobile ? <span className="big ellipsis">{title}</span> : null}
+            {title && isNarrow ? <span className="big ellipsis">{title}</span> : null}
             <TopNavbar>
-                {hasPaidMail || isMobile ? null : <UpgradeButton />}
+                {hasPaidMail || isNarrow ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
-                {isMobile ? null : (
+                {isNarrow ? null : (
                     <TopNavbarLink
                         to="/settings"
                         icon="settings-master"
