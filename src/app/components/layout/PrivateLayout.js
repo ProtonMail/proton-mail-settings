@@ -9,7 +9,7 @@ import { getPages } from '../../pages';
 
 const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
-    const { state: expanded, toggle: onToggleExpand } = useToggle();
+    const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
 
     const mobileLinks = [
@@ -18,6 +18,7 @@ const PrivateLayout = ({ children, location }) => {
     ];
 
     useEffect(() => {
+        setExpand(false);
         mainAreaRef.current.scrollTop = 0;
     }, [location.pathname]);
 
