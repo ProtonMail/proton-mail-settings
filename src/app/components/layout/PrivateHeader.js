@@ -17,10 +17,10 @@ const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
     const { isNarrow } = useActiveBreakpoint();
 
     return (
-        <header className="header flex flex-nowrap reset4print">
+        <header className="header flex flex-items-center flex-nowrap reset4print">
             <MainLogo url="/inbox" className="nomobile" external={true} />
             <Hamburger expanded={expanded} onToggle={onToggleExpand} />
-            {title && isNarrow ? <span className="big ellipsis">{title}</span> : null}
+            {title && isNarrow ? <span className="h3 mb0 ellipsis lh-standard">{title}</span> : null}
             <TopNavbar>
                 {hasPaidMail || isNarrow ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
