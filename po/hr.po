@@ -5983,7 +5983,7 @@ msgstr "Prilagođeni filtri"
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
-msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
+msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
 msgstr "Dodajte prilagođeni filtar za izvođenje akcija poput automatskog označavanja ili arhiviranja poruka."
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55

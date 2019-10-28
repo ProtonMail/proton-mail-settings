@@ -5973,7 +5973,7 @@ msgstr "Filtros personalizados"
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
-msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
+msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
 msgstr "Adicione um filtro personalizado para executar ações, como marcar e arquivar mensagens automaticamente."
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55

@@ -5989,7 +5989,7 @@ msgstr "Filtry niestandardowe"
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
-msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
+msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
 msgstr "Dodaj filtr niestandardowy do wykonywania czynności takich jak automatyczne etykietowanie lub archiwizacja wiadomości."
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55
