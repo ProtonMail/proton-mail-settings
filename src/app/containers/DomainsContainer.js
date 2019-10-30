@@ -37,15 +37,15 @@ const getList = ({ MaxMembers = 0 } = {}) => {
             {
                 icon: 'contacts-group-people',
                 text: c('Info')
-                    .t`Go to the Users Settings if you want to create and manage users in your organization.`,
-                link: c('Link').t`Users settings`,
+                    .t`Go to the User Settings if you want to create and manage users in your organization.`,
+                link: c('Link').t`User settings`,
                 to: '/settings/members'
             },
             {
                 icon: 'addresses',
                 text: c('Info')
-                    .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
-                link: c('Link').t`Addresses settings`,
+                    .t`Go to the address settings if you want to create and manage addresses to your custom domain. `,
+                link: c('Link').t`Address settings`,
                 to: '/settings/addresses'
             }
         ];
@@ -62,8 +62,8 @@ const getList = ({ MaxMembers = 0 } = {}) => {
         {
             icon: 'addresses',
             text: c('Info')
-                .t`Go to the addresses settings if you want to create and manage addresses to your custom domain. `,
-            link: c('Link').t`Addresses settings`,
+                .t`Go to the address settings if you want to create and manage addresses to your custom domain. `,
+            link: c('Link').t`Address settings`,
             to: '/settings/addresses'
         }
     ];
