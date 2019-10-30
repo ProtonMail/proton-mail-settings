@@ -37,7 +37,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 icon: 'contacts-group-people',
                 text: c('Info')
                     .t`Go to User Settings if you want to create and manage the list of users in your organization.`,
-                link: c('Link').t`Users settings`,
+                link: c('Link').t`User settings`,
                 to: '/settings/members'
             }
         ];
