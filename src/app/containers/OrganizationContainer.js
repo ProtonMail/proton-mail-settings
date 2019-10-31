@@ -41,15 +41,15 @@ const OrganizationContainer = () => {
                     {
                         icon: 'domains',
                         text: c('Info')
-                            .t`Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address.`,
-                        link: c('Link').t`Domains settings`,
+                            .t`Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address.`,
+                        link: c('Link').t`Domain settings`,
                         to: '/settings/domains'
                     },
                     {
                         icon: 'contacts-group-people',
                         text: c('Info')
-                            .t`Go to the users settings if you want to create and manage the users of your organization.`,
-                        link: c('Link').t`Users settings`,
+                            .t`Go to the user settings if you want to create and manage the users of your organization.`,
+                        link: c('Link').t`User settings`,
                         to: '/settings/members'
                     }
                 ]}
