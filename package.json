@@ -54,6 +54,7 @@
     },
     "dependencies": {
         "abortcontroller-polyfill": "^1.2.1",
+        "core-js": "^3.3.6",
         "design-system": "github:ProtonMail/design-system.git#master",
         "pmcrypto": "github:ProtonMail/pmcrypto.git#semver:^6.0.0",
         "proton-pack": "github:ProtonMail/proton-pack#semver:^2.0.0",
