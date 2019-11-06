@@ -12,7 +12,7 @@ import { getLabelsPage } from './containers/FoldersLabelsContainer';
 import { getKeysPage } from './containers/KeysContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
-// import { getAutoReply } from './containers/AutoReplyContainer';
+import { getAutoReply } from './containers/AutoReplyContainer';
 import { getVPNPage } from './containers/VPNContainer';
 
 export const getPages = () => [
@@ -27,7 +27,7 @@ export const getPages = () => [
     getAppearancePage(),
     getFiltersPage(),
     getLabelsPage(),
-    // getAutoReply(),
+    getAutoReply(),
     getKeysPage(),
     getSecurityPage(),
     getVPNPage(),
