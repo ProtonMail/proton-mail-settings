@@ -49,7 +49,7 @@ const PrivateLayout = ({ children, location }) => {
                         )}
                     />
                     <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
-                        <div className="flex flex-reverse">
+                        <div className="flex flex-reverse h100">
                             <MainAreaContext.Provider value={mainAreaRef}>{children}</MainAreaContext.Provider>
                         </div>
                     </div>
