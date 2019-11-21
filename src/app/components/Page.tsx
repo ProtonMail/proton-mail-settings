@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Children, isValidElement, useState } from 'react';
+import { Children, isValidElement, cloneElement, useState, useEffect, useRef } from 'react';
 import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Paragraph } from 'react-components';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 import { c } from 'ttag';
@@ -32,19 +33,38 @@ export interface PageConfig {
     icon?: string;
 }
 
-interface Props {
+interface Props extends RouteComponentProps {
     config: PageConfig;
     children?: React.ReactNode;
 }
 
-const Page = ({ config, children }: Props) => {
+const Page = ({ config, location, children }: Props) => {
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions = [], text } = config;
     const [activeSection, setActiveSection] = useState('');
+    const containerRef = useRef<HTMLDivElement>(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         document.title = `${text} - ProtonMail`;
     }, [text]);
+
+    useEffect(() => {
+        if (!location.hash) {
+            return;
+        }
+
+        // Need a delay to let the navigation ends
+        const handle = setTimeout(() => {
+            if (containerRef.current) {
+                const el = containerRef.current.querySelector(location.hash);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }, 100);
+
+        return () => clearTimeout(handle);
+    }, [location.hash]);
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
         return (
@@ -83,13 +103,13 @@ const Page = ({ config, children }: Props) => {
             {sections.length ? <SubSidebar activeSection={activeSection} list={sections} /> : null}
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
-                <div className="container-section-sticky">
+                <div className="container-section-sticky" ref={containerRef}>
                     <ObserverSections setActiveSection={setActiveSection}>
                         {Children.map(children, (child, index) => {
                             if (isValidElement<SectionProps>(child)) {
                                 const { id, permissions: sectionPermissions = [] } =
                                     sections[index] || ({} as SectionConfig);
-                                return React.cloneElement(child, {
+                                return cloneElement(child, {
                                     id,
                                     permission: hasPermission(userPermissions, sectionPermissions)
                                 });
@@ -102,4 +122,4 @@ const Page = ({ config, children }: Props) => {
     );
 };
 
-export default Page;
+export default withRouter(Page);
