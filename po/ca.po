@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Catalan\n"
 "Language: ca_ES\n"
-"PO-Revision-Date: 2019-10-02 12:22\n"
+"PO-Revision-Date: 2019-11-22 13:29\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -30,7 +30,7 @@ msgstr "GB"
 #: node_modules/proton-shared/lib/constants.js:236
 msgctxt "Theme"
 msgid "Dark (Default)"
-msgstr "Fosc (Defecte)"
+msgstr ""
 
 #: node_modules/proton-shared/lib/constants.js:240
 msgctxt "Theme"
@@ -262,7 +262,7 @@ msgstr "Heu d’escollir un tipus de condició"
 #: node_modules/react-components/containers/filters/editor/Name.js:22
 msgctxt "Error"
 msgid "Username required"
-msgstr "Es requereix nom d'usuari"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:127
 msgctxt "Error"
@@ -292,7 +292,7 @@ msgstr "Els pagaments actualment no estan disponibles, proveu-ho més tard"
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:75
 msgctxt "Error"
 msgid "You have no invoices."
-msgstr ""
+msgstr "No teniu cap factura."
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:85
 msgctxt "Error"
@@ -302,7 +302,7 @@ msgstr "El seu compte o organització actualment té una factura vençuda. Por f
 #: node_modules/react-components/containers/members/MembersSection.js:41
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
-msgstr "El manteniment multi-usuari requereix un pla Professional o un pla Visionary."
+msgstr ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:44
 msgctxt "Error"
@@ -1136,7 +1136,7 @@ msgstr "Què ha passat?"
 #: node_modules/react-components/containers/support/BugModal.js:184
 msgctxt "Label"
 msgid "Attach screenshots"
-msgstr "Afegir captures de pantalla"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:192
 msgctxt "Label"
@@ -1207,7 +1207,7 @@ msgstr "Navegació"
 #: node_modules/react-components/components/pagination/Pagination.js:50
 msgctxt "Title"
 msgid "Open pagination"
-msgstr "Obrir paginació"
+msgstr ""
 
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:6
 msgctxt "Title"
@@ -1420,7 +1420,7 @@ msgstr "Verificació de pagament"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:39
 msgctxt "Title"
 msgid "New tab"
-msgstr "Pestanya nova"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:34
 msgctxt "Title"
@@ -1501,7 +1501,7 @@ msgstr "Gràcies!"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:33
 msgctxt "Title"
 msgid "Upgrade now!"
-msgstr "Actualitza ara!"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:80
 msgctxt "Title"
@@ -1546,7 +1546,7 @@ msgstr "Usuari OpenVPN / IKEv2"
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:22
 msgctxt "Title"
 msgid "Edit OpenVPN / IKEv2 credentials"
-msgstr ""
+msgstr "Editar credencials OpenVPN / IKEv2"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
 #: src/app/containers/VPNContainer.js:18
@@ -1765,7 +1765,7 @@ msgstr "Afegir a la llista blanca"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:8
 msgctxt "Title"
 msgid "ProtonVPN apps"
-msgstr "Aplicacions de ProtonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/login/AbuseModal.js:6
 msgctxt "Title"
@@ -2024,7 +2024,7 @@ msgstr "ProtonMail Bridge"
 #: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail Apps"
-msgstr "Aplicacions de ProtonMail"
+msgstr ""
 
 #: src/app/containers/AppsContainer.js:31
 msgctxt "Title"
@@ -2034,7 +2034,7 @@ msgstr "ProtonMail Beta"
 #: src/app/containers/AppsContainer.js:35
 msgctxt "Title"
 msgid "ProtonVPN Apps"
-msgstr "Aplicacions de ProtonVPN"
+msgstr ""
 
 #: src/app/containers/SecurityContainer.js:9
 msgctxt "Title"
@@ -2069,12 +2069,12 @@ msgstr "Carpetes i etiquetes"
 #: src/app/containers/AccountContainer.js:16
 msgctxt "Title"
 msgid "Account"
-msgstr "Compte"
+msgstr ""
 
 #: src/app/containers/AccountContainer.js:29
 msgctxt "Title"
 msgid "Two factor authentication"
-msgstr "Autenticació de dos factors"
+msgstr ""
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -2351,7 +2351,7 @@ msgstr "Baixar de categoria"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:34
 msgctxt "Action"
 msgid "Verify payment"
-msgstr "Verificar pagament"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:320
 #: node_modules/react-components/containers/payments/PlansTable.js:325
@@ -2394,12 +2394,12 @@ msgstr "Aplicar"
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Hide plans"
-msgstr "Amagar plans"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Show plans"
-msgstr "Mostrar plans"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:16
 msgctxt "Action"
@@ -2459,7 +2459,7 @@ msgstr "Actualitzar ProtonMail"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:59
 msgctxt "Action"
 msgid "Compare all plans"
-msgstr "Compara tots els plans"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:85
 msgctxt "Action"
@@ -2602,7 +2602,7 @@ msgstr "Fet"
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:64
 msgctxt "Action"
 msgid "Key uploaded"
-msgstr "Clau pujada"
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
 msgctxt "Action"
@@ -2782,7 +2782,7 @@ msgstr "Inactiu"
 #: node_modules/react-components/containers/account/DeleteSection.js:37
 msgctxt "Link"
 msgid "mail.protonmail.com"
-msgstr "mail.protonmail.com"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:26
 #: node_modules/react-components/containers/members/MemberAddresses.js:25
@@ -2817,7 +2817,7 @@ msgstr "Clients natius de ProtonVPN"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:18
 msgctxt "Link"
 msgid "ProtonVPN login"
-msgstr "Identificació ProtonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:95
 msgctxt "Link"
@@ -2839,7 +2839,7 @@ msgstr "Configuració d'adreçes"
 #: src/app/components/Page.js:35
 msgctxt "Link"
 msgid "Upgrade now"
-msgstr "Actualitza ara"
+msgstr ""
 
 #: src/app/containers/AutoReplyContainer.js:40
 msgctxt "Link"
@@ -2849,20 +2849,20 @@ msgstr "Configuració del filtre"
 #: src/app/containers/OrganizationContainer.js:45
 msgctxt "Link"
 msgid "Domains settings"
-msgstr "Configuració dels dominis"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:40
 #: src/app/containers/DomainsContainer.js:41
 #: src/app/containers/OrganizationContainer.js:52
 msgctxt "Link"
 msgid "Users settings"
-msgstr "Configuració de usuaris"
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
 msgctxt "Link"
 msgid "Addresses settings"
-msgstr "Configuració d'adreçes"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:59
 #: src/app/containers/AddressesContainer.js:69
@@ -2881,7 +2881,7 @@ msgstr "Configuració del domini"
 #: node_modules/react-components/components/loader/Loader.js:24
 msgctxt "Info"
 msgid "Loading"
-msgstr "Carregant"
+msgstr ""
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:68
 #, javascript-format
@@ -3005,7 +3005,7 @@ msgstr "Autenticació de dos factors desactivada"
 #, javascript-format
 msgctxt "Info"
 msgid "Your ProtonVPN and ProtonMail accounts are linked. To delete them both, please log in at ${ loginLink } and delete your account there."
-msgstr ""
+msgstr "Els vostres comptes ProtonVPN i ProtonMail estan enllaçats. Per suprimir-les, inicieu la sessió a ${ loginLink } i suprimiu-ne el compte."
 
 #: node_modules/react-components/containers/account/DeleteSection.js:67
 msgctxt "Info"
@@ -3015,7 +3015,7 @@ msgstr "Suprimint el compte es suprimeixen els missatges de correu electrònic i
 #: node_modules/react-components/containers/account/DeleteSection.js:69
 msgctxt "Info"
 msgid "Deleting your account will permanently delete all data associated with it and it cannot be recovered. You will no longer be able to use the same username should you decide to create a new account."
-msgstr ""
+msgstr "En suprimir el compte, se suprimeixen de manera permanent totes les dades associades i no es podran recuperar. Deixareu de fer servir el mateix nom d’usuari si decidiu crear un compte nou."
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:20
 msgctxt "Info"
@@ -3189,7 +3189,7 @@ msgstr "Verifiqueu el pagament a la pestanya nova."
 #: node_modules/react-components/containers/payments/PayPal.js:87
 msgctxt "Info"
 msgid "You will need to login to your PayPal account to complete this transaction. We will open a new tab with PayPal for you. If you use any pop-up blockers, please disable them to continue."
-msgstr "Ha d'iniciar sessió al seu compte de PayPal per completar aquesta transacció. Obrirem una nova pestanya amb PayPal per a vostè. Si fa servir bloquejadors de finestres emergents, deshabilítelos per continuar."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:63
 msgctxt "Info"
@@ -3206,17 +3206,17 @@ msgstr "Les dades de pagament estan protegides amb el xifratge TLS i les lleis d
 #: node_modules/react-components/containers/payments/DowngradeModal.js:8
 msgctxt "Info"
 msgid "Your account will be downgraded in a few minutes."
-msgstr ""
+msgstr "El vostre compte serà rebaixat en pocs minuts."
 
 #: node_modules/react-components/containers/payments/DowngradeModal.js:9
 msgctxt "Info"
 msgid "Additional addresses, custom domains, and users must be removed/disabled before performing this action. Any connections to premium servers will be terminated."
-msgstr ""
+msgstr "S'han de suprimir / desactivar adreces addicionals, dominis personalitzats i usuaris abans de realitzar aquesta acció. Es finalitzaran les connexions a servidors premium."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:43
 msgctxt "Info"
 msgid "A new tab will open to confirm the payment, please disable any popup blockers."
-msgstr "S'obrirà una nova pestanya per confirmar el pagament. Inhabiliteu els bloquejadors emergents."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/Bitcoin.js:40
 #, javascript-format
@@ -3265,7 +3265,7 @@ msgstr "Obtingueu un descompte del 20% del paquet en comprar conjuntament Proton
 #, javascript-format
 msgctxt "Info"
 msgid "You are currently subscribed to ${ names }."
-msgstr ""
+msgstr "Actualment esteu subscrit a ${ names }."
 
 #: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:15
 msgctxt "Info"
@@ -3363,42 +3363,42 @@ msgstr "Gràcies"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:16
 msgctxt "Info"
 msgid "5GB of storage"
-msgstr "5GB d'emmagatzematge"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:17
 msgctxt "Info"
 msgid "5 email addresses"
-msgstr "5 adreces de correu electrònic"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:18
 msgctxt "Info"
 msgid "Custom domain support"
-msgstr "Suport de domini personalitzat"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:19
 msgctxt "Info"
 msgid "ProtonMail bridge"
-msgstr "ProtonMail bridge"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:20
 msgctxt "Info"
 msgid "Auto-reply, filters & much more"
-msgstr "Resposta automàtica, filtres i molt més"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:35
 msgctxt "Info"
 msgid "Unlock additional features with"
-msgstr "Desbloquegeu funcions addicionals amb"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:37
 msgctxt "Info"
 msgid "ProtonMail Plus for as low as"
-msgstr "ProtonMail Plus fins a un preu tan baix"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:63
 msgctxt "Info"
 msgid "Upgrade"
-msgstr "Actualitzar"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
@@ -3414,7 +3414,7 @@ msgstr "Tret que tanqueu explícitament la sessió o canvieu la contrasenya, les
 #, javascript-format
 msgctxt "Info"
 msgid "Use the following credentials to log into the ${ downloadLink }."
-msgstr ""
+msgstr "Utilitzeu les credencials següents per iniciar la sessió a ${ downloadLink }."
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:29
 msgctxt "Info"
@@ -3432,7 +3432,7 @@ msgstr "Utilitzeu les credencials següents per connectar-vos a servidors Proton
 #, javascript-format
 msgctxt "Info"
 msgid "Loading ${ appName }"
-msgstr ""
+msgstr "Carregant ${ appName }"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:93
 #: node_modules/react-components/containers/themes/ThemesSection.js:55
@@ -3495,7 +3495,7 @@ msgstr "Canvieu aquestes funcions únicament si esteu emprant PGP amb destinatar
 #: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:17
 msgctxt "Info"
 msgid "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to get multi-user support."
-msgstr "Actualitzi a un pla Professional amb més d'1 usuari o un compte Visionari per obtenir suport multi-usuari."
+msgstr ""
 
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:96
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:87
@@ -3586,7 +3586,7 @@ msgstr "Crear i gestionar subcomptes i assignar-los adreces de correu en el vost
 #: node_modules/react-components/containers/organization/OrganizationSection.js:33
 msgctxt "Info"
 msgid "The name and logo will be visible to your users while logged in at mail.protonmail.com."
-msgstr "El nom i el logo seràn visibles als teus usuaris mentres estàn identificats a mail.protonmail.com."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:67
 msgctxt "Info"
@@ -3713,12 +3713,12 @@ msgstr "ProtonMail suporta IMAP/SMTP mitjançant l’aplicació ProtonMail Bridg
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
 msgctxt "Info"
 msgid "Go to the download page to get ProtonVPN. You can use you ProtonMail credentials to the log into the ProtonVPN native clients."
-msgstr "Aneu a la pàgina de descàrregues per obtenir ProtonVPN. Podeu utilitzar les credencials de ProtonMail al registre als clients natius de ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:15
 msgctxt "Info"
 msgid "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS or OpenVPN on GNU/Linux), you need specific credentials. To get these credentials, go to the Account settings when logged in at ProtonVPN."
-msgstr "Per connectar-vos a ProtonVPN amb clients de tercers (per exemple, Tunnelblick a MacOS o OpenVPN a GNU / Linux), necessiteu credencials específiques. per obtenir aquestes credencials, aneu a la configuració del compte quan inicieu la sessió a ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
 msgctxt "Info"
@@ -3800,7 +3800,7 @@ msgstr "Fet"
 #: node_modules/react-components/containers/addresses/IdentitySection.js:67
 msgctxt "Info"
 msgid "TODO"
-msgstr "PER FER"
+msgstr ""
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
@@ -3860,13 +3860,13 @@ msgstr "Si seleccioneu un altre tema, se sobreescriurà el tema actual i es perd
 msgctxt "Info"
 msgid "member used"
 msgid_plural "members used"
-msgstr[0] "membre usat"
-msgstr[1] "membres usats"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:184
 msgctxt "Info"
 msgid "You can add and manage addresses for the user in your"
-msgstr "Pot afegir o gestionar adreces pel usuari al seu"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberActions.js:91
 msgctxt "Info"
@@ -3881,12 +3881,12 @@ msgstr "Aneu a Configuració del Filtre si voleu crear i gestionar les respostes
 #: src/app/containers/OrganizationContainer.js:43
 msgctxt "Info"
 msgid "Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address."
-msgstr "Aneu a la configuració dels dominis si voleu crear i gestionar dominis personalitzats, inclosa l’elecció d’una adreça de correu electrònic per a tots."
+msgstr ""
 
 #: src/app/containers/OrganizationContainer.js:50
 msgctxt "Info"
 msgid "Go to the users settings if you want to create and manage the users of your organization."
-msgstr "Aneu a la configuració dels usuaris si voleu crear i gestionar els usuaris de la vostra organització."
+msgstr ""
 
 #: src/app/containers/MembersContainer.js:38
 msgctxt "Info"
@@ -3896,13 +3896,13 @@ msgstr "Aneu a la configuració de l'adreça si voleu crear i gestionar adreces 
 #: src/app/containers/DomainsContainer.js:39
 msgctxt "Info"
 msgid "Go to the Users Settings if you want to create and manage users in your organization."
-msgstr "Aneu a la configuració dels usuaris si voleu crear i gestionar usuaris de la vostra organització."
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:46
 #: src/app/containers/DomainsContainer.js:64
 msgctxt "Info"
 msgid "Go to the addresses settings if you want to create and manage addresses to your custom domain. "
-msgstr "Aneu a la configuració de les adreces si voleu crear i gestionar adreces al vostre domini personalitzat. "
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:57
 msgctxt "Info"
@@ -4098,182 +4098,182 @@ msgstr "S'ha creat l'usuari"
 #: node_modules/react-components/containers/autoReply/utils.js:16
 msgctxt "Option"
 msgid "Fixed duration"
-msgstr "Durada fixa"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:20
 msgctxt "Option"
 msgid "Repeat daily"
-msgstr "Repeteix diàriament"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:24
 msgctxt "Option"
 msgid "Repeat weekly"
-msgstr "Repeteix setmanalment"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:28
 msgctxt "Option"
 msgid "Repeat monthly"
-msgstr "Repeteix mensualment"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:32
 msgctxt "Option"
 msgid "Permanent"
-msgstr "Permanent"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:55
 msgctxt "Option"
 msgid "1st of the month"
-msgstr "1r del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:56
 msgctxt "Option"
 msgid "2nd of the month"
-msgstr "2on del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:57
 msgctxt "Option"
 msgid "3rd of the month"
-msgstr "3er del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:58
 msgctxt "Option"
 msgid "4th of the month"
-msgstr "4rt del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:59
 msgctxt "Option"
 msgid "5th of the month"
-msgstr "5è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:60
 msgctxt "Option"
 msgid "6th of the month"
-msgstr "6è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:61
 msgctxt "Option"
 msgid "7th of the month"
-msgstr "7è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:62
 msgctxt "Option"
 msgid "8th of the month"
-msgstr "8è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:63
 msgctxt "Option"
 msgid "9th of the month"
-msgstr "9è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:64
 msgctxt "Option"
 msgid "10th of the month"
-msgstr "10è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:65
 msgctxt "Option"
 msgid "11th of the month"
-msgstr "11è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:66
 msgctxt "Option"
 msgid "12th of the month"
-msgstr "12è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:67
 msgctxt "Option"
 msgid "13th of the month"
-msgstr "13è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:68
 msgctxt "Option"
 msgid "14th of the month"
-msgstr "14è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:69
 msgctxt "Option"
 msgid "15th of the month"
-msgstr "15è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:70
 msgctxt "Option"
 msgid "16th of the month"
-msgstr "16è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:71
 msgctxt "Option"
 msgid "17th of the month"
-msgstr "17è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:72
 msgctxt "Option"
 msgid "18th of the month"
-msgstr "18è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:73
 msgctxt "Option"
 msgid "19th of the month"
-msgstr "19è del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:74
 msgctxt "Option"
 msgid "20th of the month"
-msgstr "20 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:75
 msgctxt "Option"
 msgid "21st of the month"
-msgstr "21 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:76
 msgctxt "Option"
 msgid "22nd of the month"
-msgstr "22 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:77
 msgctxt "Option"
 msgid "23rd of the month"
-msgstr "23 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:78
 msgctxt "Option"
 msgid "24th of the month"
-msgstr "24 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:79
 msgctxt "Option"
 msgid "25th of the month"
-msgstr "25 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:80
 msgctxt "Option"
 msgid "26th of the month"
-msgstr "26 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:81
 msgctxt "Option"
 msgid "27th of the month"
-msgstr "27 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:82
 msgctxt "Option"
 msgid "28th of the month"
-msgstr "28 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:83
 msgctxt "Option"
 msgid "29th of the month"
-msgstr "29 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:84
 msgctxt "Option"
 msgid "30th of the month"
-msgstr "30 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:85
 msgctxt "Option"
 msgid "31st of the month"
-msgstr "31 del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:10
 msgctxt "Option"
@@ -4284,36 +4284,36 @@ msgstr "inclòs"
 msgctxt "Option"
 msgid "1 address"
 msgid_plural "${ value } addresses"
-msgstr[0] "1 Adreça"
-msgstr[1] "${ value } adreçes"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:15
 msgctxt "Option"
 msgid "1 GB storage"
 msgid_plural "${ value } GB storage"
-msgstr[0] "1 GB d'emmagatzemament"
-msgstr[1] "${ value } GB d'emmagatzematge"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:18
 msgctxt "Option"
 msgid "1 custom domain"
 msgid_plural "${ value } custom domains"
-msgstr[0] "1 Domini personalitzat"
-msgstr[1] "${ value } Dominis personalitzats"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:21
 msgctxt "Option"
 msgid "1 user"
 msgid_plural "${ value } users"
-msgstr[0] "1 usuari"
-msgstr[1] "${ value } usuaris"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgctxt "Option"
 msgid "1 VPN connection"
 msgid_plural "${ value } VPN connections"
-msgstr[0] "1 connexió VPN"
-msgstr[1] "${ value } conexions VPN"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
 msgctxt "Option"
@@ -4361,24 +4361,24 @@ msgstr "Tots els/les usuaris/es"
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ weekdays } @ ${ hours }"
-msgstr "Cada ${ weekdays } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:32
 msgctxt "Duration"
 msgid "Every day @ ${ hours }"
-msgstr "Cada día @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:38
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeek } @ ${ hours }"
-msgstr "Cada ${ dayOfWeek } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:43
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonth } @ ${ hours }"
-msgstr "Cada ${ dayOfMonth } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:45
 msgctxt "Duration"
@@ -4540,7 +4540,7 @@ msgstr "Versió del navegador"
 #: node_modules/react-components/containers/members/MembersSection.js:131
 msgctxt "Placeholder"
 msgid "Search for User and Addresses"
-msgstr "Cerca d'usuari i adreces"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberModal.js:173
 msgctxt "Placeholder"
@@ -4580,7 +4580,7 @@ msgstr "Principals novetats en les característiques (3-4 per any)"
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:28
 msgctxt "Label for news"
 msgid "Proton Business (4-5 per year)"
-msgstr "Proton Business (4-5 l'any)"
+msgstr ""
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:29
 msgctxt "Label for news"
@@ -4650,7 +4650,7 @@ msgstr "Els temes personalitzats de tercers poden amenaçar la vostra privacitat
 #: src/app/components/Page.js:23
 msgctxt "Warning"
 msgid "Require admin permission to access to this page."
-msgstr "Requereix permís d'administrador per accedir a aquesta pàgina."
+msgstr ""
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:30
 msgctxt "Desktop notification status"
@@ -4931,12 +4931,12 @@ msgstr "Demaneu connexions addicionals per proporcionar ProtonVPN a altres usuar
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:74
 msgctxt "Tooltip"
 msgid "Add additional addresses to your account."
-msgstr "Afegir adreçes adicionals al teu compte."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:96
 msgctxt "Tooltip"
 msgid "Use your own domain name."
-msgstr "Utilitza el teu propi domini."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:49
 msgctxt "Tooltip"
@@ -5179,7 +5179,7 @@ msgstr "Nucli segur"
 #: node_modules/react-components/containers/heading/SupportDropdownButton.js:16
 msgctxt "Header"
 msgid "Support"
-msgstr "Suport"
+msgstr ""
 
 #: node_modules/react-components/containers/logs/LogsTable.js:42
 msgctxt "Header"
@@ -5387,7 +5387,7 @@ msgstr "Revoca"
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:32
 msgctxt "Notification"
 msgid "OpenVPN / IKEv2 credentials updated"
-msgstr ""
+msgstr "Credencials OpenVPN / IKEv2 actualitzades"
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:44
 #, javascript-format
@@ -5658,7 +5658,7 @@ msgstr "Estat de l'art"
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:95
 msgctxt "alert"
 msgid "We are now generating encryption keys for your address, this may take several minutes and temporarily freeze your browser."
-msgstr "Estem generant claus d'encriptació per a la vostra adreça, això pot trigar uns quants minuts i congelar temporalment el navegador."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:78
 msgctxt "alert"
@@ -5668,7 +5668,7 @@ msgstr "El fet de suprimir les tecles és irreversible. Per poder accedir a qual
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:89
 msgctxt "alert"
 msgid "We are now deleting the key for your address."
-msgstr "Ara suprimim la clau de la vostra adreça."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:21
 msgctxt "Key state badge"
@@ -5920,7 +5920,7 @@ msgstr "Mou a arxiu"
 #: node_modules/react-components/containers/filters/editor/Actions.js:28
 msgctxt "Filter Actions"
 msgid "Move to mailbox"
-msgstr "Mou a la safata d'entrada"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:35
 msgctxt "Filter Actions"
@@ -5976,7 +5976,7 @@ msgstr "Filtres personalitzats"
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
 msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
-msgstr "Afegeixi un filtre personalitzar per a realitzar accions com l'etiquetatge automàtic o arxivar missatges."
+msgstr ""
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55
 msgctxt "FilterSettings"
@@ -6003,12 +6003,12 @@ msgstr "${ Label.Name } actualitzat"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter"
-msgstr "Filtre personalitzat"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter (Preview)"
-msgstr "Filtre personalitzat (previsualització)"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:27
 #, javascript-format
@@ -6372,7 +6372,7 @@ msgstr "Administrador"
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
 msgid "Active"
-msgstr "Actiu"
+msgstr ""
 
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"

@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2019-10-02 12:22\n"
+"PO-Revision-Date: 2019-11-22 13:25\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -30,7 +30,7 @@ msgstr "GB"
 #: node_modules/proton-shared/lib/constants.js:236
 msgctxt "Theme"
 msgid "Dark (Default)"
-msgstr "Oscuro (por defecto)"
+msgstr ""
 
 #: node_modules/proton-shared/lib/constants.js:240
 msgctxt "Theme"
@@ -158,7 +158,7 @@ msgstr "Código postal inválido"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:77
 msgctxt "Error"
 msgid "Invalid gift code"
-msgstr "Código de regalía inválido"
+msgstr "Código de regalo inválido"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:71
 msgctxt "Error"
@@ -262,7 +262,7 @@ msgstr "Debe elegir un tipo de condición"
 #: node_modules/react-components/containers/filters/editor/Name.js:22
 msgctxt "Error"
 msgid "Username required"
-msgstr "Nombre de usuario requerido"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:127
 msgctxt "Error"
@@ -302,7 +302,7 @@ msgstr "Su cuenta u organización actualmente tiene una factura vencida. Por fav
 #: node_modules/react-components/containers/members/MembersSection.js:41
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
-msgstr "El soporte multi-usuario requiere un plan Professional o Visionary."
+msgstr ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:44
 msgctxt "Error"
@@ -500,17 +500,17 @@ msgstr "Mensaje"
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndTimeField.js:9
 msgctxt "Label"
 msgid "End time"
-msgstr "Hora de finalización"
+msgstr "Hora final"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartTimeField.js:9
 msgctxt "Label"
 msgid "Start time"
-msgstr "Hora de inicio"
+msgstr "Hora inicial"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/StartDateField.js:13
 msgctxt "Label"
 msgid "Start date"
-msgstr "Fecha de inicio"
+msgstr "Fecha inicial"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:13
 msgctxt "Label"
@@ -540,7 +540,7 @@ msgstr "Termina el día de la semana"
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/EndDateField.js:13
 msgctxt "Label"
 msgid "End date"
-msgstr "Fecha de finalización"
+msgstr "Fecha final"
 
 #: node_modules/react-components/containers/api/HumanVerificationModal.js:22
 msgctxt "Label"
@@ -803,7 +803,7 @@ msgstr "Monto"
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:55
 msgctxt "Label"
 msgid "Enter gift code"
-msgstr "Ingresar código de regalía"
+msgstr "Ingresar código de regalo"
 
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:46
 msgctxt "Label"
@@ -813,7 +813,7 @@ msgstr "Prorrateo"
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:64
 msgctxt "Label"
 msgid "Gift"
-msgstr "Regalía"
+msgstr "Regalo"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:141
 msgctxt "Label"
@@ -1136,7 +1136,7 @@ msgstr "¿Qué ha ocurrido?"
 #: node_modules/react-components/containers/support/BugModal.js:184
 msgctxt "Label"
 msgid "Attach screenshots"
-msgstr "Adjuntar captura de pantalla"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:192
 msgctxt "Label"
@@ -1207,7 +1207,7 @@ msgstr "Navegación"
 #: node_modules/react-components/components/pagination/Pagination.js:50
 msgctxt "Title"
 msgid "Open pagination"
-msgstr "Abrir paginación"
+msgstr ""
 
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:6
 msgctxt "Title"
@@ -1420,7 +1420,7 @@ msgstr "Verificación de pago"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:39
 msgctxt "Title"
 msgid "New tab"
-msgstr "Nueva pestaña"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:34
 msgctxt "Title"
@@ -1435,7 +1435,7 @@ msgstr "Añadir créditos"
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:48
 msgctxt "Title"
 msgid "Gift code"
-msgstr "Código de regalía"
+msgstr "Código de regalo"
 
 #: node_modules/react-components/containers/payments/Card.js:79
 msgctxt "Title"
@@ -1501,7 +1501,7 @@ msgstr "¡Gracias!"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:33
 msgctxt "Title"
 msgid "Upgrade now!"
-msgstr "¡Mejorar ahora!"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:80
 msgctxt "Title"
@@ -1765,7 +1765,7 @@ msgstr "Añadir a la lista blanca"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:8
 msgctxt "Title"
 msgid "ProtonVPN apps"
-msgstr "Apps de ProtonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/login/AbuseModal.js:6
 msgctxt "Title"
@@ -1931,7 +1931,7 @@ msgstr "Estado"
 #: node_modules/react-components/containers/support/BugModal.js:127
 msgctxt "Title"
 msgid "Report bug"
-msgstr "Reportar error"
+msgstr "Notificar error"
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:43
 msgctxt "Title"
@@ -2024,7 +2024,7 @@ msgstr "ProtonMail Bridge"
 #: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail Apps"
-msgstr "Apps de ProtonMail"
+msgstr ""
 
 #: src/app/containers/AppsContainer.js:31
 msgctxt "Title"
@@ -2034,7 +2034,7 @@ msgstr "ProtonMail Beta"
 #: src/app/containers/AppsContainer.js:35
 msgctxt "Title"
 msgid "ProtonVPN Apps"
-msgstr "Apps de ProtonVPN"
+msgstr ""
 
 #: src/app/containers/SecurityContainer.js:9
 msgctxt "Title"
@@ -2069,12 +2069,12 @@ msgstr "Carpetas y etiquetas"
 #: src/app/containers/AccountContainer.js:16
 msgctxt "Title"
 msgid "Account"
-msgstr "Cuenta"
+msgstr ""
 
 #: src/app/containers/AccountContainer.js:29
 msgctxt "Title"
 msgid "Two factor authentication"
-msgstr "Autenticación de dos factores"
+msgstr ""
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -2336,7 +2336,7 @@ msgstr "Añadir créditos"
 #: node_modules/react-components/containers/payments/BillingSection.js:260
 msgctxt "Action"
 msgid "Use gift code"
-msgstr "Usar código de regalía"
+msgstr "Usar código de regalo"
 
 #: node_modules/react-components/containers/payments/DonateModal.js:41
 msgctxt "Action"
@@ -2351,7 +2351,7 @@ msgstr "Degradar"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:34
 msgctxt "Action"
 msgid "Verify payment"
-msgstr "Verificar pago"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:320
 #: node_modules/react-components/containers/payments/PlansTable.js:325
@@ -2394,12 +2394,12 @@ msgstr "Aplicar"
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Hide plans"
-msgstr "Ocultar planes"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Show plans"
-msgstr "Mostrar planes"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:16
 msgctxt "Action"
@@ -2409,7 +2409,7 @@ msgstr "Cambiar ahora"
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:83
 msgctxt "Action"
 msgid "Add gift code"
-msgstr "Añadir código de regalía"
+msgstr "Añadir código de regalo"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
@@ -2459,7 +2459,7 @@ msgstr "Mejorar ProtonMail"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:59
 msgctxt "Action"
 msgid "Compare all plans"
-msgstr "Comparar todos los planes"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:85
 msgctxt "Action"
@@ -2503,7 +2503,7 @@ msgstr "Tengo una pregunta"
 #: node_modules/react-components/containers/heading/UserDropdown.js:113
 msgctxt "Action"
 msgid "Report bug"
-msgstr "Reportar error"
+msgstr "Notificar error"
 
 #: node_modules/react-components/containers/heading/UserDropdown.js:78
 #: node_modules/react-components/containers/heading/UserDropdown.js:86
@@ -2602,7 +2602,7 @@ msgstr "Hecho"
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:64
 msgctxt "Action"
 msgid "Key uploaded"
-msgstr "Clave subida"
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
 msgctxt "Action"
@@ -2782,7 +2782,7 @@ msgstr "No activado"
 #: node_modules/react-components/containers/account/DeleteSection.js:37
 msgctxt "Link"
 msgid "mail.protonmail.com"
-msgstr "mail.protonmail.com"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:26
 #: node_modules/react-components/containers/members/MemberAddresses.js:25
@@ -2817,7 +2817,7 @@ msgstr "Clientes nativos de ProtonVPN"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:18
 msgctxt "Link"
 msgid "ProtonVPN login"
-msgstr "Iniciar sesión en ProtonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:95
 msgctxt "Link"
@@ -2839,7 +2839,7 @@ msgstr "Ajustes de dirección"
 #: src/app/components/Page.js:35
 msgctxt "Link"
 msgid "Upgrade now"
-msgstr "Mejorar ahora"
+msgstr ""
 
 #: src/app/containers/AutoReplyContainer.js:40
 msgctxt "Link"
@@ -2849,20 +2849,20 @@ msgstr "Ajustes de filtro"
 #: src/app/containers/OrganizationContainer.js:45
 msgctxt "Link"
 msgid "Domains settings"
-msgstr "Ajustes de dominio"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:40
 #: src/app/containers/DomainsContainer.js:41
 #: src/app/containers/OrganizationContainer.js:52
 msgctxt "Link"
 msgid "Users settings"
-msgstr "Ajustes de usuario"
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
 msgctxt "Link"
 msgid "Addresses settings"
-msgstr "Ajustes de direcciones"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:59
 #: src/app/containers/AddressesContainer.js:69
@@ -2881,7 +2881,7 @@ msgstr "Ajustes de dominio"
 #: node_modules/react-components/components/loader/Loader.js:24
 msgctxt "Info"
 msgid "Loading"
-msgstr "Cargando"
+msgstr ""
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:68
 #, javascript-format
@@ -2902,7 +2902,7 @@ msgstr "Las respuestas automáticas pueden responder automáticamente a mensajes
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:23
 msgctxt "Info"
 msgid "Auto-reply is active from the start time to the end time."
-msgstr "La respuesta automática está activa desde la hora de inicio hasta la hora final."
+msgstr "La respuesta automática está activa desde la hora inicial hasta la hora final."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:38
 msgctxt "Info"
@@ -2912,12 +2912,12 @@ msgstr "La respuesta automática siempre está activa en los días de la semana 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:57
 msgctxt "Info"
 msgid "Auto-reply is active each month between the selected start and end time."
-msgstr "La respuesta automática está activa cada mes entre las fechas de inicio y fin seleccionadas."
+msgstr "La respuesta automática está activa cada mes entre las fechas inicial y final seleccionadas."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:76
 msgctxt "Info"
 msgid "Auto-reply is active each week between the selected start and end time."
-msgstr "La respuesta automática está activa cada semana entre las fechas de inicio y fin seleccionadas."
+msgstr "La respuesta automática está activa cada semana entre las fechas inicial y final seleccionadas."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyForm.js:90
 msgctxt "Info"
@@ -3189,7 +3189,7 @@ msgstr "Por favor verifique el pago en la pestaña nueva."
 #: node_modules/react-components/containers/payments/PayPal.js:87
 msgctxt "Info"
 msgid "You will need to login to your PayPal account to complete this transaction. We will open a new tab with PayPal for you. If you use any pop-up blockers, please disable them to continue."
-msgstr "Tendrá que acceder a su cuenta de PayPal para completar la transacción. Se abrirá una pestaña nueva con PayPal. Si utiliza un bloqueador de ventanas, deshabilítelo para continuar."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:63
 msgctxt "Info"
@@ -3216,7 +3216,7 @@ msgstr "Las direcciones adicionales, dominios personalizados y usuarios deben se
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:43
 msgctxt "Info"
 msgid "A new tab will open to confirm the payment, please disable any popup blockers."
-msgstr "Se abrirá una nueva pestaña para confirmar el pago, desactive los bloqueadores de ventanas emergentes."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/Bitcoin.js:40
 #, javascript-format
@@ -3249,7 +3249,7 @@ msgstr "Recargue su cuenta con créditos que puede utilizar para suscribirse a u
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:53
 msgctxt "Info"
 msgid "If you purchased or were given a gift code, add it here."
-msgstr "Si compró o recibió un código de regalía, añádalo aquí."
+msgstr "Si compró o recibió un código de regalo, añádalo aquí."
 
 #: node_modules/react-components/containers/payments/PlansSection.js:57
 msgctxt "Info"
@@ -3343,7 +3343,7 @@ msgstr "Al usar ProtonVPN para navegar en la web, su conexión a internet está 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:225
 msgctxt "Info"
 msgid "By clicking Upgrade, you agree to abide by Proton's terms and conditions."
-msgstr "Al hacer clic en Mejorar, acepta cumplir con los términos y condiciones de Proton."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/Thanks.js:19
 msgctxt "Info"
@@ -3363,42 +3363,42 @@ msgstr "Gracias"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:16
 msgctxt "Info"
 msgid "5GB of storage"
-msgstr "5GB de almacenamiento"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:17
 msgctxt "Info"
 msgid "5 email addresses"
-msgstr "5 direcciones de correo"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:18
 msgctxt "Info"
 msgid "Custom domain support"
-msgstr "Soporte de dominio personalizado"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:19
 msgctxt "Info"
 msgid "ProtonMail bridge"
-msgstr "ProtonMail Bridge"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:20
 msgctxt "Info"
 msgid "Auto-reply, filters & much more"
-msgstr "Autorespuesta, filtros y mucho más"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:35
 msgctxt "Info"
 msgid "Unlock additional features with"
-msgstr "Desbloquee funciones adicionales con"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:37
 msgctxt "Info"
 msgid "ProtonMail Plus for as low as"
-msgstr "ProtonMail Plus tan bajo como"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:63
 msgctxt "Info"
 msgid "Upgrade"
-msgstr "Mejorar"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
@@ -3495,7 +3495,7 @@ msgstr "Solo cambie estos ajustes si está utilizando PGP con remitentes que no 
 #: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:17
 msgctxt "Info"
 msgid "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to get multi-user support."
-msgstr "Actualice a un plan Professional con más de un usuario, o a una cuenta Visionary, para obtener soporte multi usuario."
+msgstr ""
 
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:96
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:87
@@ -3586,7 +3586,7 @@ msgstr "Cree y administre subcuentas y asígneles direcciones de correo en su do
 #: node_modules/react-components/containers/organization/OrganizationSection.js:33
 msgctxt "Info"
 msgid "The name and logo will be visible to your users while logged in at mail.protonmail.com."
-msgstr "El nombre y el logo serán visibles para sus usuarios mientras se conecten a mail.protonmail.com."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:67
 msgctxt "Info"
@@ -3710,12 +3710,12 @@ msgstr "ProtonMail soporta IMAP/SMTP a través de la aplicación ProtonMail Brid
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
 msgctxt "Info"
 msgid "Go to the download page to get ProtonVPN. You can use you ProtonMail credentials to the log into the ProtonVPN native clients."
-msgstr "Vaya a la página de descarga para obtener ProtonVPN. Puede usar sus credenciales de ProtonMail para iniciar sesión en los clientes nativos de ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:15
 msgctxt "Info"
 msgid "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS or OpenVPN on GNU/Linux), you need specific credentials. To get these credentials, go to the Account settings when logged in at ProtonVPN."
-msgstr "Para conectarse a ProtonVPN con clientes de terceros (Tunnelblick en MacOS u OpenVPN en GNU/Linux), necesita credenciales específicas, para obtenerlas, vaya a los ajustes de la cuenta cuando inicie sesión en ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
 msgctxt "Info"
@@ -3797,7 +3797,7 @@ msgstr "Hecho"
 #: node_modules/react-components/containers/addresses/IdentitySection.js:67
 msgctxt "Info"
 msgid "TODO"
-msgstr "POR HACER"
+msgstr ""
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
@@ -3857,13 +3857,13 @@ msgstr "Al seleccionar otro tema, reemplazará su tema actual y perderá cualqui
 msgctxt "Info"
 msgid "member used"
 msgid_plural "members used"
-msgstr[0] "miembro usado"
-msgstr[1] "miembros usados"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:184
 msgctxt "Info"
 msgid "You can add and manage addresses for the user in your"
-msgstr "Puede añadir y administrar direcciones para el usuario en su"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberActions.js:91
 msgctxt "Info"
@@ -3878,12 +3878,12 @@ msgstr "Vaya a ajustes de filtro si desea crear y administrar respuestas automá
 #: src/app/containers/OrganizationContainer.js:43
 msgctxt "Info"
 msgid "Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address."
-msgstr "Vaya a ajustes de dominios si desea crear y administrar dominios personalizados, incluyendo la elección de una dirección catch-all."
+msgstr ""
 
 #: src/app/containers/OrganizationContainer.js:50
 msgctxt "Info"
 msgid "Go to the users settings if you want to create and manage the users of your organization."
-msgstr "Vaya a ajustes de usuario si desea crear y administrar los usuarios de su organización."
+msgstr ""
 
 #: src/app/containers/MembersContainer.js:38
 msgctxt "Info"
@@ -3893,13 +3893,13 @@ msgstr "Vaya a ajustes de dirección si desea crear y administrar direcciones pa
 #: src/app/containers/DomainsContainer.js:39
 msgctxt "Info"
 msgid "Go to the Users Settings if you want to create and manage users in your organization."
-msgstr "Vaya a los ajustes de usuario si desea crear y administrar usuarios en su organización."
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:46
 #: src/app/containers/DomainsContainer.js:64
 msgctxt "Info"
 msgid "Go to the addresses settings if you want to create and manage addresses to your custom domain. "
-msgstr "Vaya a los ajustes de direcciones si desea crear y administrar direcciones en su dominio personalizado. "
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:57
 msgctxt "Info"
@@ -3992,7 +3992,7 @@ msgstr "Créditos añadidos"
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:39
 msgctxt "Success"
 msgid "Gift code applied"
-msgstr "Código de regalía aplicado"
+msgstr "Código de regalo aplicado"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:52
 msgctxt "Success"
@@ -4095,182 +4095,182 @@ msgstr "Usuario creado"
 #: node_modules/react-components/containers/autoReply/utils.js:16
 msgctxt "Option"
 msgid "Fixed duration"
-msgstr "Duración fija"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:20
 msgctxt "Option"
 msgid "Repeat daily"
-msgstr "Repetir diariamente"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:24
 msgctxt "Option"
 msgid "Repeat weekly"
-msgstr "Repetir semanalmente"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:28
 msgctxt "Option"
 msgid "Repeat monthly"
-msgstr "Repetir mensualmente"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:32
 msgctxt "Option"
 msgid "Permanent"
-msgstr "Permanente"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:55
 msgctxt "Option"
 msgid "1st of the month"
-msgstr "1º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:56
 msgctxt "Option"
 msgid "2nd of the month"
-msgstr "2º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:57
 msgctxt "Option"
 msgid "3rd of the month"
-msgstr "3º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:58
 msgctxt "Option"
 msgid "4th of the month"
-msgstr "4º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:59
 msgctxt "Option"
 msgid "5th of the month"
-msgstr "5º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:60
 msgctxt "Option"
 msgid "6th of the month"
-msgstr "6º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:61
 msgctxt "Option"
 msgid "7th of the month"
-msgstr "7º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:62
 msgctxt "Option"
 msgid "8th of the month"
-msgstr "8º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:63
 msgctxt "Option"
 msgid "9th of the month"
-msgstr "9º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:64
 msgctxt "Option"
 msgid "10th of the month"
-msgstr "10º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:65
 msgctxt "Option"
 msgid "11th of the month"
-msgstr "11º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:66
 msgctxt "Option"
 msgid "12th of the month"
-msgstr "12º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:67
 msgctxt "Option"
 msgid "13th of the month"
-msgstr "13º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:68
 msgctxt "Option"
 msgid "14th of the month"
-msgstr "14º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:69
 msgctxt "Option"
 msgid "15th of the month"
-msgstr "15º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:70
 msgctxt "Option"
 msgid "16th of the month"
-msgstr "16º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:71
 msgctxt "Option"
 msgid "17th of the month"
-msgstr "17º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:72
 msgctxt "Option"
 msgid "18th of the month"
-msgstr "18º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:73
 msgctxt "Option"
 msgid "19th of the month"
-msgstr "19º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:74
 msgctxt "Option"
 msgid "20th of the month"
-msgstr "20º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:75
 msgctxt "Option"
 msgid "21st of the month"
-msgstr "21º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:76
 msgctxt "Option"
 msgid "22nd of the month"
-msgstr "22º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:77
 msgctxt "Option"
 msgid "23rd of the month"
-msgstr "23º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:78
 msgctxt "Option"
 msgid "24th of the month"
-msgstr "24º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:79
 msgctxt "Option"
 msgid "25th of the month"
-msgstr "25º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:80
 msgctxt "Option"
 msgid "26th of the month"
-msgstr "26º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:81
 msgctxt "Option"
 msgid "27th of the month"
-msgstr "27º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:82
 msgctxt "Option"
 msgid "28th of the month"
-msgstr "28º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:83
 msgctxt "Option"
 msgid "29th of the month"
-msgstr "29º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:84
 msgctxt "Option"
 msgid "30th of the month"
-msgstr "30º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:85
 msgctxt "Option"
 msgid "31st of the month"
-msgstr "31º del mes"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:10
 msgctxt "Option"
@@ -4281,36 +4281,36 @@ msgstr "incluido"
 msgctxt "Option"
 msgid "1 address"
 msgid_plural "${ value } addresses"
-msgstr[0] "1 dirección"
-msgstr[1] "${ value } direcciones"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:15
 msgctxt "Option"
 msgid "1 GB storage"
 msgid_plural "${ value } GB storage"
-msgstr[0] "1GB de almacenamiento"
-msgstr[1] "${ value }GB de almacenamiento"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:18
 msgctxt "Option"
 msgid "1 custom domain"
 msgid_plural "${ value } custom domains"
-msgstr[0] "1 filtro personalizado"
-msgstr[1] "${ value } dominios personalizados"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:21
 msgctxt "Option"
 msgid "1 user"
 msgid_plural "${ value } users"
-msgstr[0] "1 usuario"
-msgstr[1] "${ value } usuarios"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgctxt "Option"
 msgid "1 VPN connection"
 msgid_plural "${ value } VPN connections"
-msgstr[0] "1 conexión VPN"
-msgstr[1] "${ value } conexiones VPN"
+msgstr[0] ""
+msgstr[1] ""
 
 #: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
 msgctxt "Option"
@@ -4358,24 +4358,24 @@ msgstr "Todos los usuarios"
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ weekdays } @ ${ hours }"
-msgstr "Cada ${ weekdays } a las ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:32
 msgctxt "Duration"
 msgid "Every day @ ${ hours }"
-msgstr "Cada día a las ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:38
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeek } @ ${ hours }"
-msgstr "Cada ${ dayOfWeek } a las ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:43
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonth } @ ${ hours }"
-msgstr "Cada ${ dayOfMonth } a las ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:45
 msgctxt "Duration"
@@ -4537,7 +4537,7 @@ msgstr "Versión del navegador"
 #: node_modules/react-components/containers/members/MembersSection.js:131
 msgctxt "Placeholder"
 msgid "Search for User and Addresses"
-msgstr "Buscar Usuarios y Direcciones"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberModal.js:173
 msgctxt "Placeholder"
@@ -4577,7 +4577,7 @@ msgstr "Características importantes (3-4 por año)"
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:28
 msgctxt "Label for news"
 msgid "Proton Business (4-5 per year)"
-msgstr "Negocios de Proton (4-5 por año)"
+msgstr ""
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:29
 msgctxt "Label for news"
@@ -4647,17 +4647,17 @@ msgstr "Los temas personalizados de terceros podrían afectar su privacidad. Uti
 #: src/app/components/Page.js:23
 msgctxt "Warning"
 msgid "Require admin permission to access to this page."
-msgstr "Necesita permiso de administrador para acceder a esta página."
+msgstr ""
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:30
 msgctxt "Desktop notification status"
 msgid "Enabled"
-msgstr "Habilitada"
+msgstr "Habilitadas"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:32
 msgctxt "Desktop notification status"
 msgid "Disabled"
-msgstr "Deshabilitada"
+msgstr "Deshabilitadas"
 
 #: node_modules/react-components/containers/domains/DomainSection.js:19
 msgctxt "Label for adding a new custom domain"
@@ -4928,12 +4928,12 @@ msgstr "Ordene conexiones adicionales para dar ProtonVPN a otros usuarios en su 
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:74
 msgctxt "Tooltip"
 msgid "Add additional addresses to your account."
-msgstr "Añadir direcciones adicionales a su cuenta."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:96
 msgctxt "Tooltip"
 msgid "Use your own domain name."
-msgstr "Utilice su nombre de dominio propio."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:49
 msgctxt "Tooltip"
@@ -5176,7 +5176,7 @@ msgstr "Secure core"
 #: node_modules/react-components/containers/heading/SupportDropdownButton.js:16
 msgctxt "Header"
 msgid "Support"
-msgstr "Soporte"
+msgstr ""
 
 #: node_modules/react-components/containers/logs/LogsTable.js:42
 msgctxt "Header"
@@ -5655,7 +5655,7 @@ msgstr "Lo último"
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:95
 msgctxt "alert"
 msgid "We are now generating encryption keys for your address, this may take several minutes and temporarily freeze your browser."
-msgstr "Estamos generando claves de cifrado para su dirección, esto puede tomar varios minutos y congelar temporalmente el navegador."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:78
 msgctxt "alert"
@@ -5665,7 +5665,7 @@ msgstr "Eliminar las claves es irreversible. Para poder acceder a los mensajes c
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:89
 msgctxt "alert"
 msgid "We are now deleting the key for your address."
-msgstr "Estamos eliminando la clave para su dirección."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:21
 msgctxt "Key state badge"
@@ -5917,7 +5917,7 @@ msgstr "Mover al Archivo"
 #: node_modules/react-components/containers/filters/editor/Actions.js:28
 msgctxt "Filter Actions"
 msgid "Move to mailbox"
-msgstr "Mover al buzón"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:35
 msgctxt "Filter Actions"
@@ -5973,7 +5973,7 @@ msgstr "Filtros Personalizados"
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
 msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
-msgstr "Añada un filtro personalizado para realizar acciones tales como etiquetar o archivar mensajes automáticamente."
+msgstr ""
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55
 msgctxt "FilterSettings"
@@ -6000,12 +6000,12 @@ msgstr "${ Label.Name } actualizado"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter"
-msgstr "Filtro Personalizado"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter (Preview)"
-msgstr "Filtro personalizado (vista previa)"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:27
 #, javascript-format
@@ -6369,7 +6369,7 @@ msgstr "Administrador"
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
 msgid "Active"
-msgstr "Activo"
+msgstr ""
 
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
@@ -6434,7 +6434,7 @@ msgstr "Direcciones"
 #: node_modules/react-components/containers/members/MembersSection.js:150
 msgctxt "Title header for members table"
 msgid "Features"
-msgstr "Características"
+msgstr "Funciones"
 
 #: node_modules/react-components/containers/members/MembersSection.js:151
 msgctxt "Title header for members table"

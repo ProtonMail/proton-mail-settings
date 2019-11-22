@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Romanian\n"
 "Language: ro_RO\n"
-"PO-Revision-Date: 2019-10-02 12:22\n"
+"PO-Revision-Date: 2019-11-22 13:23\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -30,7 +30,7 @@ msgstr "GB"
 #: node_modules/proton-shared/lib/constants.js:236
 msgctxt "Theme"
 msgid "Dark (Default)"
-msgstr "Întunecată (implicit)"
+msgstr ""
 
 #: node_modules/proton-shared/lib/constants.js:240
 msgctxt "Theme"
@@ -262,7 +262,7 @@ msgstr "Trebuie să alegeți un tip de condiție"
 #: node_modules/react-components/containers/filters/editor/Name.js:22
 msgctxt "Error"
 msgid "Username required"
-msgstr "Nume de utilizator obligatoriu"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:127
 msgctxt "Error"
@@ -302,7 +302,7 @@ msgstr "Contul sau organizația are în prezent o factură restantă. Vă rugăm
 #: node_modules/react-components/containers/members/MembersSection.js:41
 msgctxt "Error"
 msgid "Multi-user support requires either a Professional or Visionary plan."
-msgstr "Suportul multiutilizator necesită planul Profesional sau Vizionar."
+msgstr ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:44
 msgctxt "Error"
@@ -1136,7 +1136,7 @@ msgstr "Ce s-a întâmplat?"
 #: node_modules/react-components/containers/support/BugModal.js:184
 msgctxt "Label"
 msgid "Attach screenshots"
-msgstr "Atașare capturi de ecran"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:192
 msgctxt "Label"
@@ -1207,7 +1207,7 @@ msgstr "Navigare"
 #: node_modules/react-components/components/pagination/Pagination.js:50
 msgctxt "Title"
 msgid "Open pagination"
-msgstr "Deschidere paginare"
+msgstr ""
 
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:6
 msgctxt "Title"
@@ -1420,7 +1420,7 @@ msgstr "Verificare plată"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:39
 msgctxt "Title"
 msgid "New tab"
-msgstr "Filă nouă"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:34
 msgctxt "Title"
@@ -1501,7 +1501,7 @@ msgstr "Vă mulțumim!"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:33
 msgctxt "Title"
 msgid "Upgrade now!"
-msgstr "Îmbunătățiți acum!"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:80
 msgctxt "Title"
@@ -1765,7 +1765,7 @@ msgstr "Adăugare la adrese blocate"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:8
 msgctxt "Title"
 msgid "ProtonVPN apps"
-msgstr "Aplicații ProntonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/login/AbuseModal.js:6
 msgctxt "Title"
@@ -2024,7 +2024,7 @@ msgstr "ProtonMail Bridge"
 #: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail Apps"
-msgstr "Aplicația ProtonMail"
+msgstr ""
 
 #: src/app/containers/AppsContainer.js:31
 msgctxt "Title"
@@ -2034,7 +2034,7 @@ msgstr "ProtonMail Beta"
 #: src/app/containers/AppsContainer.js:35
 msgctxt "Title"
 msgid "ProtonVPN Apps"
-msgstr "Aplicația ProntonVPN"
+msgstr ""
 
 #: src/app/containers/SecurityContainer.js:9
 msgctxt "Title"
@@ -2069,12 +2069,12 @@ msgstr "Foldere și etichete"
 #: src/app/containers/AccountContainer.js:16
 msgctxt "Title"
 msgid "Account"
-msgstr "Cont"
+msgstr ""
 
 #: src/app/containers/AccountContainer.js:29
 msgctxt "Title"
 msgid "Two factor authentication"
-msgstr "Autentificare cu doi factori"
+msgstr ""
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -2351,7 +2351,7 @@ msgstr "Versiune gratuită"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:34
 msgctxt "Action"
 msgid "Verify payment"
-msgstr "Verificare plată"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:320
 #: node_modules/react-components/containers/payments/PlansTable.js:325
@@ -2394,12 +2394,12 @@ msgstr "Aplicare"
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Hide plans"
-msgstr "Ascundere planuri"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansSection.js:138
 msgctxt "Action"
 msgid "Show plans"
-msgstr "Afișare planuri"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CyclePromotion.js:16
 msgctxt "Action"
@@ -2459,7 +2459,7 @@ msgstr "Îmbunătățire ProtonMail"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:59
 msgctxt "Action"
 msgid "Compare all plans"
-msgstr "Comparare planuri"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:85
 msgctxt "Action"
@@ -2602,7 +2602,7 @@ msgstr "Gata"
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:64
 msgctxt "Action"
 msgid "Key uploaded"
-msgstr "Cheie încărcată"
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
 msgctxt "Action"
@@ -2782,7 +2782,7 @@ msgstr "Neactivat"
 #: node_modules/react-components/containers/account/DeleteSection.js:37
 msgctxt "Link"
 msgid "mail.protonmail.com"
-msgstr "mail.protonmail.com"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:26
 #: node_modules/react-components/containers/members/MemberAddresses.js:25
@@ -2817,7 +2817,7 @@ msgstr "Clienți nativi ProtonMail"
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:18
 msgctxt "Link"
 msgid "ProtonVPN login"
-msgstr "Accesare ProtonVPN"
+msgstr ""
 
 #: node_modules/react-components/containers/support/BugModal.js:95
 msgctxt "Link"
@@ -2839,7 +2839,7 @@ msgstr "Setări adresă"
 #: src/app/components/Page.js:35
 msgctxt "Link"
 msgid "Upgrade now"
-msgstr "Îmbunătățire"
+msgstr ""
 
 #: src/app/containers/AutoReplyContainer.js:40
 msgctxt "Link"
@@ -2849,20 +2849,20 @@ msgstr "Setări filtrare"
 #: src/app/containers/OrganizationContainer.js:45
 msgctxt "Link"
 msgid "Domains settings"
-msgstr "Setări domenii"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:40
 #: src/app/containers/DomainsContainer.js:41
 #: src/app/containers/OrganizationContainer.js:52
 msgctxt "Link"
 msgid "Users settings"
-msgstr "Setări utilizator"
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
 msgctxt "Link"
 msgid "Addresses settings"
-msgstr "Setări adrese"
+msgstr ""
 
 #: src/app/containers/AddressesContainer.js:59
 #: src/app/containers/AddressesContainer.js:69
@@ -2881,7 +2881,7 @@ msgstr "Setări domeniu"
 #: node_modules/react-components/components/loader/Loader.js:24
 msgctxt "Info"
 msgid "Loading"
-msgstr "Se încarcă"
+msgstr ""
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:68
 #, javascript-format
@@ -3191,7 +3191,7 @@ msgstr "Verificați plata în noua filă."
 #: node_modules/react-components/containers/payments/PayPal.js:87
 msgctxt "Info"
 msgid "You will need to login to your PayPal account to complete this transaction. We will open a new tab with PayPal for you. If you use any pop-up blockers, please disable them to continue."
-msgstr "Trebuie să vă conectați în contul de PayPal pentru a completa această tranzacție. Se va deschide o filă nouă cu PayPal. Dacă folosiți blocarea ferestrelor contextuale (pop-up), dezactivați blocarea lor înainte de a continua."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:63
 msgctxt "Info"
@@ -3218,7 +3218,7 @@ msgstr "Adresele suplimentare, domeniile personal și utilizatorii trebuie elimi
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:43
 msgctxt "Info"
 msgid "A new tab will open to confirm the payment, please disable any popup blockers."
-msgstr "Se va deschide o nouă filă pentru a confirma plata. Dezactivați programele de blocat ferestre flotante."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/Bitcoin.js:40
 #, javascript-format
@@ -3345,7 +3345,7 @@ msgstr "Folosind ProtonMail pentru a naviga pe internet, conexiunea este criptat
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:225
 msgctxt "Info"
 msgid "By clicking Upgrade, you agree to abide by Proton's terms and conditions."
-msgstr "Apăsând pe „Upgrade”, sunteți de acord cu termenii și condițiile Proton."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/Thanks.js:19
 msgctxt "Info"
@@ -3365,42 +3365,42 @@ msgstr "Vă mulțumim"
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:16
 msgctxt "Info"
 msgid "5GB of storage"
-msgstr "5 GB de stocare"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:17
 msgctxt "Info"
 msgid "5 email addresses"
-msgstr "5 adrese de e-mail"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:18
 msgctxt "Info"
 msgid "Custom domain support"
-msgstr "Suportare domeniu personal"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:19
 msgctxt "Info"
 msgid "ProtonMail bridge"
-msgstr "ProtonMail Bridge"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:20
 msgctxt "Info"
 msgid "Auto-reply, filters & much more"
-msgstr "Autorăspunsuri, filtre și altele"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:35
 msgctxt "Info"
 msgid "Unlock additional features with"
-msgstr "Deblocați funcțiile adiționale cu"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:37
 msgctxt "Info"
 msgid "ProtonMail Plus for as low as"
-msgstr "ProtonMail Plus pentru doar"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/UpgradeModal.js:63
 msgctxt "Info"
 msgid "Upgrade"
-msgstr "Upgrade"
+msgstr ""
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
@@ -3497,7 +3497,7 @@ msgstr "Schimbați aceste setări doar dacă utilizați PGP cu destinatari non-P
 #: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:17
 msgctxt "Info"
 msgid "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to get multi-user support."
-msgstr "Vă rugăm treceți la planul Profesional cu mai mult de un utilizator sau la cel Vizionar, pentru a avea suport pentru multiutilizatori."
+msgstr ""
 
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:96
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:87
@@ -3588,7 +3588,7 @@ msgstr "Creare și gestionare conturi subordonate și atribuirea de adrese de e-
 #: node_modules/react-components/containers/organization/OrganizationSection.js:33
 msgctxt "Info"
 msgid "The name and logo will be visible to your users while logged in at mail.protonmail.com."
-msgstr "Numele și sigla vor fi vizibile utilizatorilor când se conectează la mail.protonmail.com."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:67
 msgctxt "Info"
@@ -3712,12 +3712,12 @@ msgstr "ProtonMail suportă IMAP/SMTP prin aplicația \"ProtonMail Bridge\". Thu
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:9
 msgctxt "Info"
 msgid "Go to the download page to get ProtonVPN. You can use you ProtonMail credentials to the log into the ProtonVPN native clients."
-msgstr "Accesați pagina de descărcări pentru a obține ProtonVPN. Puteți folosi datele de conectare ale ProtonMail pentru a vă conecta și în clientul nativ al ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonVPNAppsSection.js:15
 msgctxt "Info"
 msgid "To connect to ProtonVPN with third-party clients (e.g. Tunnelblick on MacOS or OpenVPN on GNU/Linux), you need specific credentials. To get these credentials, go to the Account settings when logged in at ProtonVPN."
-msgstr "Pentru a vă conecta la ProtonVPN cu alte programe (ex. Tunnelblick pe MacOS sau OpenVPN pe GNU/Linux), aveți nevoie de acreditări speciale. Pentru a le obține, accesați setările contului când sunteți autentificat în ProtonVPN."
+msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
 msgctxt "Info"
@@ -3799,7 +3799,7 @@ msgstr "Terminat"
 #: node_modules/react-components/containers/addresses/IdentitySection.js:67
 msgctxt "Info"
 msgid "TODO"
-msgstr "De făcut"
+msgstr ""
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
@@ -3860,14 +3860,14 @@ msgstr "Selectând o altă temă veți modifica tema curentă și orice personal
 msgctxt "Info"
 msgid "member used"
 msgid_plural "members used"
-msgstr[0] "membru folosit"
-msgstr[1] "membri folosiți"
-msgstr[2] "de membri folosiți"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/members/MembersSection.js:184
 msgctxt "Info"
 msgid "You can add and manage addresses for the user in your"
-msgstr "Puteți adăuga și gestiona adrese pentru utilizator în"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberActions.js:91
 msgctxt "Info"
@@ -3882,12 +3882,12 @@ msgstr "Accesați „Setări filtre” dacă doriți să creați și să gestion
 #: src/app/containers/OrganizationContainer.js:43
 msgctxt "Info"
 msgid "Go to the domains settings if you want to create and manage custom domains, including electing a catch-all email address."
-msgstr "Accesați „Setări domenii” dacă doriți să creați și să gestionați domenii personale, inclusiv alegerea unei adrese de colectare a tuturor mesajelor."
+msgstr ""
 
 #: src/app/containers/OrganizationContainer.js:50
 msgctxt "Info"
 msgid "Go to the users settings if you want to create and manage the users of your organization."
-msgstr "Accesați „Setări utilizatori” dacă doriți să creați și să vă gestionați utilizatorii din organizație."
+msgstr ""
 
 #: src/app/containers/MembersContainer.js:38
 msgctxt "Info"
@@ -3897,13 +3897,13 @@ msgstr "Accesați „Setări adrese” dacă doriți să creați și să gestion
 #: src/app/containers/DomainsContainer.js:39
 msgctxt "Info"
 msgid "Go to the Users Settings if you want to create and manage users in your organization."
-msgstr "Accesați „Setări utilizatori” dacă doriți să creați și să gestionați utilizatorii din organizație."
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:46
 #: src/app/containers/DomainsContainer.js:64
 msgctxt "Info"
 msgid "Go to the addresses settings if you want to create and manage addresses to your custom domain. "
-msgstr "Accesați „Setări adrese” dacă doriți să creați și să gestionați adresele pentru domeniul personal."
+msgstr ""
 
 #: src/app/containers/DomainsContainer.js:57
 msgctxt "Info"
@@ -4099,182 +4099,182 @@ msgstr "Utilizator creat"
 #: node_modules/react-components/containers/autoReply/utils.js:16
 msgctxt "Option"
 msgid "Fixed duration"
-msgstr "Durată fixă"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:20
 msgctxt "Option"
 msgid "Repeat daily"
-msgstr "Repetă zilnic"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:24
 msgctxt "Option"
 msgid "Repeat weekly"
-msgstr "Repetă săptămânal"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:28
 msgctxt "Option"
 msgid "Repeat monthly"
-msgstr "Repetă lunar"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:32
 msgctxt "Option"
 msgid "Permanent"
-msgstr "Permanent"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:55
 msgctxt "Option"
 msgid "1st of the month"
-msgstr "Prima zi a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:56
 msgctxt "Option"
 msgid "2nd of the month"
-msgstr "Ziua 2 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:57
 msgctxt "Option"
 msgid "3rd of the month"
-msgstr "Ziua 3 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:58
 msgctxt "Option"
 msgid "4th of the month"
-msgstr "Ziua 4 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:59
 msgctxt "Option"
 msgid "5th of the month"
-msgstr "Ziua 5 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:60
 msgctxt "Option"
 msgid "6th of the month"
-msgstr "Ziua 6 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:61
 msgctxt "Option"
 msgid "7th of the month"
-msgstr "Ziua 7 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:62
 msgctxt "Option"
 msgid "8th of the month"
-msgstr "Ziua 8 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:63
 msgctxt "Option"
 msgid "9th of the month"
-msgstr "Ziua 9 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:64
 msgctxt "Option"
 msgid "10th of the month"
-msgstr "Ziua 10 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:65
 msgctxt "Option"
 msgid "11th of the month"
-msgstr "Ziua 11 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:66
 msgctxt "Option"
 msgid "12th of the month"
-msgstr "Ziua 12 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:67
 msgctxt "Option"
 msgid "13th of the month"
-msgstr "Ziua 13 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:68
 msgctxt "Option"
 msgid "14th of the month"
-msgstr "Ziua 14 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:69
 msgctxt "Option"
 msgid "15th of the month"
-msgstr "Ziua 15 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:70
 msgctxt "Option"
 msgid "16th of the month"
-msgstr "Ziua 16 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:71
 msgctxt "Option"
 msgid "17th of the month"
-msgstr "Ziua 17 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:72
 msgctxt "Option"
 msgid "18th of the month"
-msgstr "Ziua 18 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:73
 msgctxt "Option"
 msgid "19th of the month"
-msgstr "Ziua 19 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:74
 msgctxt "Option"
 msgid "20th of the month"
-msgstr "Ziua 20 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:75
 msgctxt "Option"
 msgid "21st of the month"
-msgstr "Ziua 21 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:76
 msgctxt "Option"
 msgid "22nd of the month"
-msgstr "Ziua 22 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:77
 msgctxt "Option"
 msgid "23rd of the month"
-msgstr "Ziua 23 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:78
 msgctxt "Option"
 msgid "24th of the month"
-msgstr "Ziua 24 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:79
 msgctxt "Option"
 msgid "25th of the month"
-msgstr "Ziua 25 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:80
 msgctxt "Option"
 msgid "26th of the month"
-msgstr "Ziua 26 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:81
 msgctxt "Option"
 msgid "27th of the month"
-msgstr "Ziua 27 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:82
 msgctxt "Option"
 msgid "28th of the month"
-msgstr "Ziua 28 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:83
 msgctxt "Option"
 msgid "29th of the month"
-msgstr "Ziua 29 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:84
 msgctxt "Option"
 msgid "30th of the month"
-msgstr "Ziua 30 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/utils.js:85
 msgctxt "Option"
 msgid "31st of the month"
-msgstr "Ziua 31 a lunii"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:10
 msgctxt "Option"
@@ -4285,41 +4285,41 @@ msgstr "inclus"
 msgctxt "Option"
 msgid "1 address"
 msgid_plural "${ value } addresses"
-msgstr[0] "O adresă"
-msgstr[1] "${ value } adrese"
-msgstr[2] "${ value } de adrese"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:15
 msgctxt "Option"
 msgid "1 GB storage"
 msgid_plural "${ value } GB storage"
-msgstr[0] "1 GB spațiu"
-msgstr[1] "${ value } GB spațiu"
-msgstr[2] "${ value } GB spațiu"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:18
 msgctxt "Option"
 msgid "1 custom domain"
 msgid_plural "${ value } custom domains"
-msgstr[0] "Un domeniu personal"
-msgstr[1] "${ value } domenii personale"
-msgstr[2] "${ value } de domenii personale"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:21
 msgctxt "Option"
 msgid "1 user"
 msgid_plural "${ value } users"
-msgstr[0] "Un utilizator"
-msgstr[1] "${ value } utilizatori"
-msgstr[2] "${ value } de utilizatori"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgctxt "Option"
 msgid "1 VPN connection"
 msgid_plural "${ value } VPN connections"
-msgstr[0] "O conexiune VPN"
-msgstr[1] "${ value } conexiuni VPN"
-msgstr[2] "${ value } de conexiuni VPN"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
 msgctxt "Option"
@@ -4367,24 +4367,24 @@ msgstr "Toţi utilizatorii"
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ weekdays } @ ${ hours }"
-msgstr "În fiecare ${ weekdays } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:32
 msgctxt "Duration"
 msgid "Every day @ ${ hours }"
-msgstr "Zilnic @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:38
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeek } @ ${ hours }"
-msgstr "În fiecare ${ dayOfWeek } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:43
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonth } @ ${ hours }"
-msgstr "În fiecare ${ dayOfMonth } @ ${ hours }"
+msgstr ""
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:45
 msgctxt "Duration"
@@ -4546,7 +4546,7 @@ msgstr "Versiune navigator"
 #: node_modules/react-components/containers/members/MembersSection.js:131
 msgctxt "Placeholder"
 msgid "Search for User and Addresses"
-msgstr "Căutare utilizatori și adrese"
+msgstr ""
 
 #: node_modules/react-components/containers/members/MemberModal.js:173
 msgctxt "Placeholder"
@@ -4586,7 +4586,7 @@ msgstr "Funcții majore (3-4 pe an)"
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:28
 msgctxt "Label for news"
 msgid "Proton Business (4-5 per year)"
-msgstr "Proton Business (4-5 pe an)"
+msgstr ""
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:29
 msgctxt "Label for news"
@@ -4656,7 +4656,7 @@ msgstr "Temele personalizate de la terțe părți ar v-ar putea afecta confiden�
 #: src/app/components/Page.js:23
 msgctxt "Warning"
 msgid "Require admin permission to access to this page."
-msgstr "Trebuie să aveți drepturi de administrator pentru a accesa această pagină."
+msgstr ""
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:30
 msgctxt "Desktop notification status"
@@ -4937,12 +4937,12 @@ msgstr "Comandați conexiuni adiționale pentru a oferi ProtonVPN și altor util
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:74
 msgctxt "Tooltip"
 msgid "Add additional addresses to your account."
-msgstr "Adăugați-vă adrese suplimentare în cont."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomPlusSection.js:96
 msgctxt "Tooltip"
 msgid "Use your own domain name."
-msgstr "Folosiți domeniul propriu."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:49
 msgctxt "Tooltip"
@@ -5185,7 +5185,7 @@ msgstr "Nucleu securizat"
 #: node_modules/react-components/containers/heading/SupportDropdownButton.js:16
 msgctxt "Header"
 msgid "Support"
-msgstr "Asistență"
+msgstr ""
 
 #: node_modules/react-components/containers/logs/LogsTable.js:42
 msgctxt "Header"
@@ -5664,7 +5664,7 @@ msgstr "De ultimă oră"
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:95
 msgctxt "alert"
 msgid "We are now generating encryption keys for your address, this may take several minutes and temporarily freeze your browser."
-msgstr "Acum se generează cheile de criptare pentru adresa dvs., ar putea dura câteva minute și să oprească temporar navigatorul."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:78
 msgctxt "alert"
@@ -5674,7 +5674,7 @@ msgstr "Ștergerea cheilor este reversibilă. Pentru a accesa orice mesaj cripta
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:89
 msgctxt "alert"
 msgid "We are now deleting the key for your address."
-msgstr "Acum se șterge cheia pentru adresa dvs."
+msgstr ""
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:21
 msgctxt "Key state badge"
@@ -5926,7 +5926,7 @@ msgstr "Mutare în «Arhivă»"
 #: node_modules/react-components/containers/filters/editor/Actions.js:28
 msgctxt "Filter Actions"
 msgid "Move to mailbox"
-msgstr "Mutare în «Primite»"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:35
 msgctxt "Filter Actions"
@@ -5982,7 +5982,7 @@ msgstr "Filtre personalizate"
 #: node_modules/react-components/containers/filters/FiltersSection.js:37
 msgctxt "FilterSettings"
 msgid "Add a custom filter to perform actions suche as automatically labeling or archiving messages."
-msgstr "Adăugați un filtru personal pentru a executa acțiuni cum ar fi etichetarea automată sau arhivarea mesajelor."
+msgstr ""
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:55
 msgctxt "FilterSettings"
@@ -6009,12 +6009,12 @@ msgstr "${ Label.Name } actualizată"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter"
-msgstr "Filtru personalizat"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:150
 msgctxt "Add Filter Modal"
 msgid "Custom Filter (Preview)"
-msgstr "Filtru personalizat (examinare)"
+msgstr ""
 
 #: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:27
 #, javascript-format
@@ -6378,7 +6378,7 @@ msgstr "Administrator"
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
 msgid "Active"
-msgstr "Activ"
+msgstr ""
 
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
