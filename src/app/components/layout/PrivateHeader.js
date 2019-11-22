@@ -26,7 +26,7 @@ const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
             <Hamburger expanded={expanded} onToggle={onToggleExpand} />
             {title && isNarrow ? <span className="h3 mb0 ellipsis lh-standard">{title}</span> : null}
             <TopNavbar>
-                {hasPaidMail || isNarrow ? null : isBlackFriday ? (
+                {hasPaidMail ? null : isBlackFriday ? (
                     <BlackFridayNavbarLink
                         to="/settings/subscription"
                         location={location}
