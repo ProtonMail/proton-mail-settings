@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2019-11-22 14:05\n"
+"PO-Revision-Date: 2019-11-25 03:32\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -50,7 +50,7 @@ msgstr "Tema personalizado"
 #: node_modules/proton-shared/lib/keys/keys.js:98
 msgctxt "Error"
 msgid "'Signature verification failed"
-msgstr "'Falha na verificação da assinatura"
+msgstr ""
 
 #: node_modules/proton-shared/lib/keys/keys.js:118
 msgctxt "Error"
@@ -758,7 +758,7 @@ msgstr "Plano ProtonVPN"
 #: node_modules/react-components/containers/payments/BillingSection.js:205
 msgctxt "Label"
 msgid "Extra VPN connections"
-msgstr "Conexões VPN adicionais"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:221
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:102
@@ -791,7 +791,7 @@ msgstr "Valor devido"
 #: node_modules/react-components/containers/payments/BillingSection.js:272
 msgctxt "Label"
 msgid "Billing cycle end date"
-msgstr "Data de término do ciclo de faturamento"
+msgstr ""
 
 #: node_modules/react-components/containers/invoices/PayInvoiceModal.js:55
 #: node_modules/react-components/containers/payments/CreditsModal.js:79
@@ -3957,7 +3957,7 @@ msgstr "Senha atualizada"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:82
 msgctxt "Success"
 msgid "Account deleted"
-msgstr "Conta excluída"
+msgstr ""
 
 #: node_modules/react-components/containers/notification/EmailModal.js:61
 msgctxt "Success"
@@ -5047,7 +5047,7 @@ msgstr "20% de desconto aplicado à sua assinatura"
 #: node_modules/react-components/containers/payments/CouponDiscountBadge.js:20
 msgctxt "Discount with coupon code"
 msgid "50% discount applied to your subscription"
-msgstr "50% de desconto aplicado à sua assinatura"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:109
 msgctxt "Header"

@@ -10,7 +10,7 @@ msgstr ""
 "Last-Translator: PMtranslator\n"
 "Language-Team: Catalan\n"
 "Language: ca_ES\n"
-"PO-Revision-Date: 2019-11-22 13:29\n"
+"PO-Revision-Date: 2019-11-25 03:23\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -50,7 +50,7 @@ msgstr "Tema personalitzat"
 #: node_modules/proton-shared/lib/keys/keys.js:98
 msgctxt "Error"
 msgid "'Signature verification failed"
-msgstr "'Ha fallat la verificació de signatura"
+msgstr ""
 
 #: node_modules/proton-shared/lib/keys/keys.js:118
 msgctxt "Error"
@@ -758,7 +758,7 @@ msgstr "Pla de ProtonVPN"
 #: node_modules/react-components/containers/payments/BillingSection.js:205
 msgctxt "Label"
 msgid "Extra VPN connections"
-msgstr "Connexions VPN adicionals"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:221
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:102
@@ -791,7 +791,7 @@ msgstr "Import degut"
 #: node_modules/react-components/containers/payments/BillingSection.js:272
 msgctxt "Label"
 msgid "Billing cycle end date"
-msgstr "Final de cicle de facturació"
+msgstr ""
 
 #: node_modules/react-components/containers/invoices/PayInvoiceModal.js:55
 #: node_modules/react-components/containers/payments/CreditsModal.js:79
@@ -3959,7 +3959,7 @@ msgstr "Contrasenya actualitzada"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:82
 msgctxt "Success"
 msgid "Account deleted"
-msgstr "S'ha eliminat el compte"
+msgstr ""
 
 #: node_modules/react-components/containers/notification/EmailModal.js:61
 msgctxt "Success"
@@ -5049,7 +5049,7 @@ msgstr "20% de descompte aplicat a la vostra subscripció"
 #: node_modules/react-components/containers/payments/CouponDiscountBadge.js:20
 msgctxt "Discount with coupon code"
 msgid "50% discount applied to your subscription"
-msgstr "50% de descompte aplicat a la vostra subscripció"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:109
 msgctxt "Header"
