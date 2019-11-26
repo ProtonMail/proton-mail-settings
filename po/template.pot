@@ -666,38 +666,43 @@ msgctxt "Title"
 msgid "Add credits"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:41
-msgctxt "Title"
-msgid "Card verification"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:41
-msgctxt "Title"
-msgid "Payment verification"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:42
-msgctxt "Title"
-msgid "Processing..."
-msgstr ""
-
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
-msgid "Card verification in progress"
+msgid "Unsupported browser"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
-msgid "Payment verification in progress"
+msgid "Card verification"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
+msgctxt "Title"
+msgid "Payment verification"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:46
+msgctxt "Title"
+msgid "Processing..."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:48
+msgctxt "Title"
+msgid "Card verification in progress"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:49
+msgctxt "Title"
+msgid "Payment verification in progress"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:50
 msgctxt "Title"
 msgid "3-D Secure verification failed"
 msgstr ""
 
 #: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:16
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:152
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
 msgctxt "Title"
 msgid "Error"
 msgstr ""
@@ -978,8 +983,6 @@ msgstr ""
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:134
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:207
 #: src/app/components/layout/PrivateLayout.js:31
 msgctxt "Action"
 msgid "Upgrade"
@@ -1007,6 +1010,7 @@ msgstr ""
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
 #: node_modules/react-components/containers/payments/CreditsModal.js:67
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:49
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:258
 msgctxt "Action"
 msgid "Close"
@@ -1019,9 +1023,9 @@ msgstr ""
 #: node_modules/react-components/containers/addresses/AddressModal.js:81
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:75
 #: node_modules/react-components/containers/login/LoginForm.js:216
-#: node_modules/react-components/containers/payments/PayPal.js:122
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:97
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:139
+#: node_modules/react-components/containers/payments/PayPal.js:137
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:101
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:255
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:46
 msgctxt "Action"
@@ -1125,6 +1129,7 @@ msgid "Organization"
 msgstr ""
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:101
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:142
 msgctxt "Action"
 msgid "Customize"
 msgstr ""
@@ -1431,24 +1436,24 @@ msgctxt "Action"
 msgid "Top up"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:98
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:102
 msgctxt "Action"
 msgid "Verify"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/Bitcoin.js:52
-#: node_modules/react-components/containers/payments/PayPal.js:94
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
+#: node_modules/react-components/containers/payments/PayPal.js:105
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
 msgctxt "Action"
 msgid "Try again"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:161
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:171
 msgctxt "Action"
 msgid "Use a different card"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:172
 msgctxt "Action"
 msgid "Use a different payment method"
 msgstr ""
@@ -1480,29 +1485,6 @@ msgctxt "Action"
 msgid "Add gift code"
 msgstr ""
 
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:37
-#: node_modules/react-components/containers/payments/PlansTable.js:347
-#: node_modules/react-components/containers/payments/PlansTable.js:355
-#: node_modules/react-components/containers/payments/PlansTable.js:363
-#: node_modules/react-components/containers/payments/PlansTable.js:371
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:134
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:207
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
-msgctxt "Action"
-msgid "Update"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:243
-msgctxt "Action"
-msgid "Pay yearly"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:259
-msgctxt "Action"
-msgid "Remove coupon"
-msgstr ""
-
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:21
 msgctxt "Action"
 msgid "Switch now"
@@ -1530,6 +1512,12 @@ msgctxt "Action"
 msgid "Get the deal"
 msgstr ""
 
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
+#.  Includes coupon discount and cycle discount
+msgctxt "Action"
+msgid "Remove coupon"
+msgstr ""
+
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:154
 #.  Includes coupon discount and cycle discount
 msgctxt "Action"
@@ -1548,6 +1536,16 @@ msgstr ""
 #: node_modules/react-components/containers/payments/PlansTable.js:330
 msgctxt "Action"
 msgid "Add VPN"
+msgstr ""
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:37
+#: node_modules/react-components/containers/payments/PlansTable.js:347
+#: node_modules/react-components/containers/payments/PlansTable.js:355
+#: node_modules/react-components/containers/payments/PlansTable.js:363
+#: node_modules/react-components/containers/payments/PlansTable.js:371
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
+msgctxt "Action"
+msgid "Update"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/PlansTable.js:347
@@ -1580,13 +1578,13 @@ msgctxt "Action"
 msgid "Remove bonuses"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:134
-#: node_modules/react-components/containers/payments/PayPal.js:163
+#: node_modules/react-components/containers/payments/PayPal.js:149
+#: node_modules/react-components/containers/payments/PayPal.js:178
 msgctxt "Action"
 msgid "Check out with PayPal"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:149
+#: node_modules/react-components/containers/payments/PayPal.js:164
 msgctxt "Action"
 msgid "Add PayPal payment method"
 msgstr ""
@@ -2450,12 +2448,12 @@ msgid ""
 "i18nCurrency } spent."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:108
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:112
 msgctxt "Info"
 msgid "Your bank requires 3-D Secure verification for security purposes."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:115
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:119
 msgctxt "Info"
 msgid ""
 "Verification will open a new tab, please disable any popup blockers. You "
@@ -2463,38 +2461,38 @@ msgid ""
 "immediately."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:117
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:126
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:121
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:130
 msgctxt "Info"
 msgid "Verification will open a new tab, please disable any popup blockers."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:123
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:127
 msgctxt "Info"
 msgid "You will be soon redirected to your bank to verify your payment."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:134
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:138
 msgctxt "Info"
 msgid "Please verify the card in the new tab which was opened."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:135
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:139
 msgctxt "Info"
 msgid "Please verify payment at the new tab which was opened."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:147
 msgctxt "Info"
 msgid "Verification can take a few minutes."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:144
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:148
 msgctxt "Info"
 msgid "Payment can take a few minutes to fully verify."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:150
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:160
 msgctxt "Info"
 msgid ""
 "Please try again, use a different payment method, or call your bank for "
@@ -2552,30 +2550,16 @@ msgctxt "Info"
 msgid "No subscription yet"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:125
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
+msgctxt "Info"
+msgid ""
+"To manage your subscription, customize your current plan or select another "
+"one from the plan's table."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
 msgid "Not activated"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:130
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:203
-msgctxt "Info"
-msgid "Combine paid ProtonMail and ProtonVPN and get a 20% discount on both"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:230
-msgctxt "Info"
-msgid "Switch to annual billing for a 20% discount"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:234
-msgctxt "Info"
-msgid "20% rebate applied to your subscription"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:238
-msgctxt "Info"
-msgid "33% rebate applied to your subscription"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:13
@@ -2697,13 +2681,13 @@ msgctxt "Info"
 msgid "+2 connections for ProtonVPN (allows you to connect more devices to VPN)"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:120
+#: node_modules/react-components/containers/payments/PayPal.js:135
 msgctxt "Info"
 msgid "Please verify the payment in the new tab."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:130
-#: node_modules/react-components/containers/payments/PayPal.js:160
+#: node_modules/react-components/containers/payments/PayPal.js:145
+#: node_modules/react-components/containers/payments/PayPal.js:175
 msgctxt "Info"
 msgid ""
 "We will redirect you to PayPal in a new browser tab to complete this "
@@ -2711,7 +2695,7 @@ msgid ""
 "continue."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:138
+#: node_modules/react-components/containers/payments/PayPal.js:153
 #, javascript-format
 msgctxt "Info"
 msgid ""
@@ -2719,7 +2703,7 @@ msgid ""
 "account. If your PayPal account doesn't have that, please ${ clickHere }."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:145
+#: node_modules/react-components/containers/payments/PayPal.js:160
 msgctxt "Info"
 msgid ""
 "This will enable PayPal to be used to pay for your Proton subscription. We "
@@ -2727,7 +2711,7 @@ msgid ""
 "blockers, please disable them to continue."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:153
+#: node_modules/react-components/containers/payments/PayPal.js:168
 msgctxt "Info"
 msgid ""
 "You must have a credit card or bank account linked with your PayPal account "
@@ -3108,7 +3092,7 @@ msgctxt "Link"
 msgid "Not activated"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:110
+#: node_modules/react-components/containers/payments/PayPal.js:125
 msgctxt "Link"
 msgid "click here"
 msgstr ""
@@ -3336,8 +3320,8 @@ msgstr ""
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:85
 #: node_modules/react-components/containers/members/MemberModal.js:218
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:185
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:214
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
 msgctxt "Label"
 msgid "VPN connections"
 msgstr ""
@@ -3638,36 +3622,24 @@ msgctxt "Label"
 msgid "Gift"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:141
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
 msgctxt "Label"
 msgid "Users"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:151
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
 msgctxt "Label"
 msgid "Email addresses"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:161
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
 msgctxt "Label"
 msgid "Storage capacity"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:174
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
 msgctxt "Label"
 msgid "Custom domains"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/BillingSection.js:308
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:225
-msgctxt "Label"
-msgid "Billing cycle"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:250
-msgctxt "Label"
-msgid "Coupon"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:279
@@ -3681,6 +3653,12 @@ msgstr ""
 #.  Includes coupon discount and cycle discount
 msgctxt "Label"
 msgid "Cycle discount +"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
+#.  Includes coupon discount and cycle discount
+msgctxt "Label"
+msgid "Coupon"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
@@ -3743,6 +3721,11 @@ msgstr ""
 #: node_modules/react-components/containers/payments/BillingSection.js:286
 msgctxt "Label"
 msgid "Discount"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/BillingSection.js:308
+msgctxt "Label"
+msgid "Billing cycle"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/BillingSection.js:318
@@ -3925,14 +3908,11 @@ msgctxt "Label"
 msgid "Captcha"
 msgstr ""
 
-#: node_modules/react-components/components/toggle/Toggle.js:10
-msgctxt "Toggle button"
-msgid "On"
-msgstr ""
-
-#: node_modules/react-components/components/toggle/Toggle.js:11
-msgctxt "Toggle button"
-msgid "Off"
+#: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
+msgctxt "Error"
+msgid ""
+"The browser you are using does not allow the payment to be fully "
+"authorized. Please use a different browser or log in via a computer."
 msgstr ""
 
 #: node_modules/react-components/components/input/EmailInput.js:9
@@ -4072,7 +4052,7 @@ msgctxt "Error"
 msgid "You must choose a type of condition"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:151
+#: node_modules/react-components/containers/filters/editor/Actions.js:152
 msgctxt "Error"
 msgid "A filter must have an action"
 msgstr ""
@@ -4209,12 +4189,12 @@ msgctxt "Error"
 msgid "The minimum payment we accept is ${ _price2 }"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:74
+#: node_modules/react-components/containers/payments/PayPal.js:85
 msgctxt "Error"
 msgid "Amount below minimum."
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:80
+#: node_modules/react-components/containers/payments/PayPal.js:91
 msgctxt "Error"
 msgid "Amount above the maximum."
 msgstr ""
@@ -4292,6 +4272,16 @@ msgstr ""
 #: node_modules/proton-shared/lib/keys/keys.js:122
 msgctxt "Error"
 msgid "Incorrect decryption password"
+msgstr ""
+
+#: node_modules/react-components/components/toggle/Toggle.js:10
+msgctxt "Toggle button"
+msgid "On"
+msgstr ""
+
+#: node_modules/react-components/components/toggle/Toggle.js:11
+msgctxt "Toggle button"
+msgid "Off"
 msgstr ""
 
 #: node_modules/react-components/containers/themes/CustomThemeModal.js:23
@@ -4533,8 +4523,8 @@ msgstr ""
 
 #: node_modules/react-components/containers/overview/SummarySection.js:19
 #: node_modules/react-components/containers/overview/SummarySection.js:28
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:199
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:152
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:167
 msgctxt "Plan"
 msgid "Free"
 msgstr ""
@@ -5614,42 +5604,42 @@ msgctxt "Filter Actions"
 msgid "Move to ..."
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:25
+#: node_modules/react-components/containers/filters/editor/Actions.js:26
 msgctxt "Filter Actions"
 msgid "Move to archive"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:29
+#: node_modules/react-components/containers/filters/editor/Actions.js:30
 msgctxt "Filter Actions"
 msgid "Move to inbox"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:33
+#: node_modules/react-components/containers/filters/editor/Actions.js:34
 msgctxt "Filter Actions"
 msgid "Move to spam"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:37
+#: node_modules/react-components/containers/filters/editor/Actions.js:38
 msgctxt "Filter Actions"
 msgid "Move to trash"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:44
+#: node_modules/react-components/containers/filters/editor/Actions.js:45
 msgctxt "Filter Actions"
 msgid "Mark as ..."
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:47
+#: node_modules/react-components/containers/filters/editor/Actions.js:48
 msgctxt "Filter Actions"
 msgid "Mark as read"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:51
+#: node_modules/react-components/containers/filters/editor/Actions.js:52
 msgctxt "Filter Actions"
 msgid "Mark as starred"
 msgstr ""
 
-#: node_modules/react-components/containers/filters/editor/Actions.js:112
+#: node_modules/react-components/containers/filters/editor/Actions.js:113
 msgctxt "New Label form"
 msgid "Actions"
 msgstr ""
@@ -6294,22 +6284,9 @@ msgctxt "Price"
 msgid "Free"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/BillingSection.js:35
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:29
-msgctxt "Billing cycle"
-msgid "Monthly"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/BillingSection.js:36
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
-msgctxt "Billing cycle"
-msgid "Yearly"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/BillingSection.js:37
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:31
-msgctxt "Billing cycle"
-msgid "2-year"
+msgctxt "x of y"
+msgid "of"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:144
@@ -6364,6 +6341,21 @@ msgctxt "Plan option"
 msgid "Included"
 msgstr ""
 
+#: node_modules/react-components/containers/payments/BillingSection.js:35
+msgctxt "Billing cycle"
+msgid "Monthly"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/BillingSection.js:36
+msgctxt "Billing cycle"
+msgid "Yearly"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/BillingSection.js:37
+msgctxt "Billing cycle"
+msgid "2-year"
+msgstr ""
+
 #: node_modules/react-components/containers/payments/BillingSection.js:144
 #, javascript-format
 msgctxt "Addon unit for subscription"
@@ -6411,7 +6403,7 @@ msgstr ""
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
-msgid "46% discount applied to your subscription"
+msgid "47% discount applied to your subscription"
 msgstr ""
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
