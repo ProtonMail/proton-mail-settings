@@ -34,7 +34,12 @@ const PrivateLayout = ({ children, location }) => {
                 ]}
             />
             <div className="content flex-item-fluid reset4print">
-                <PrivateHeader title={c('Title').t`Settings`} expanded={expanded} onToggleExpand={onToggleExpand} />
+                <PrivateHeader
+                    title={c('Title').t`Settings`}
+                    location={location}
+                    expanded={expanded}
+                    onToggleExpand={onToggleExpand}
+                />
                 <div className="flex flex-nowrap">
                     <Route
                         path="/:path"

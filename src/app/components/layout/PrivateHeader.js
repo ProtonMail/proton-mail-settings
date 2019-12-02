@@ -7,11 +7,13 @@ import {
     UpgradeButton,
     Hamburger,
     useUser,
-    useActiveBreakpoint
+    useActiveBreakpoint,
+    BlackFridayNavbarLink,
+    MailBlackFridayModal
 } from 'react-components';
 import { c } from 'ttag';
 
-const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
+const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
     const [user = {}] = useUser();
     const { hasPaidMail } = user;
     const { isNarrow } = useActiveBreakpoint();
@@ -24,6 +26,13 @@ const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
             <TopNavbar>
                 {hasPaidMail || isNarrow ? null : <UpgradeButton />}
                 <TopNavbarLink to="/inbox" external={true} icon="mailbox" text={c('Title').t`Mailbox`} />
+                {isNarrow ? null : (
+                    <BlackFridayNavbarLink
+                        to="/settings/subscription"
+                        location={location}
+                        getModal={({ plans, onSelect }) => <MailBlackFridayModal plans={plans} onSelect={onSelect} />}
+                    />
+                )}
                 {isNarrow ? null : (
                     <TopNavbarLink
                         to="/settings"
@@ -40,7 +49,8 @@ const PrivateHeader = ({ title, expanded, onToggleExpand }) => {
 PrivateHeader.propTypes = {
     title: PropTypes.string,
     expanded: PropTypes.bool,
-    onToggleExpand: PropTypes.func
+    onToggleExpand: PropTypes.func,
+    location: PropTypes.object.isRequired
 };
 
 export default PrivateHeader;
