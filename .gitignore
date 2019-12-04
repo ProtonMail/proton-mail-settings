@@ -39,3 +39,4 @@ po/i18n.txt
 
 yarn.lock
 appConfig.json
+po/template.pot
