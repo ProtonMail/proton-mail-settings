@@ -69,11 +69,14 @@ const PrivateLayout = ({ location }) => {
         <div className="flex flex-nowrap no-scroll">
             <AppsSidebar
                 items={[
-                    <StorageSpaceStatus key="storage">
-                        <Link to="/settings/subscription" className="pm-button pm-button--primary pm-button--small">
-                            {c('Action').t`Upgrade`}
-                        </Link>
-                    </StorageSpaceStatus>
+                    <StorageSpaceStatus
+                        key="storage"
+                        upgradeButton={
+                            <Link to="/settings/subscription" className="pm-button pm-button--primary pm-button--small">
+                                {c('Action').t`Upgrade`}
+                            </Link>
+                        }
+                    />
                 ]}
             />
             <div className="content flex-item-fluid reset4print">
