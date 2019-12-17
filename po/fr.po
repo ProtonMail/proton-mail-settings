@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: fr\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2019-11-26 11:58\n"
+"PO-Revision-Date: 2019-12-16 21:20\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -279,13 +277,13 @@ msgstr "Clés"
 #: src/app/containers/KeysContainer.js:14
 msgctxt "Title"
 msgid "Email encryption keys"
-msgstr "Clés de chiffrement d’email"
+msgstr "Clés de chiffrement des emails"
 
 #: node_modules/react-components/containers/keys/UserKeysSection.js:18
 #: src/app/containers/KeysContainer.js:18
 msgctxt "Title"
 msgid "Contact encryption keys"
-msgstr "Clés de chiffrement de contact"
+msgstr "Clés de chiffrement des contacts"
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -358,7 +356,7 @@ msgstr "S'abonner à une offre payante"
 #: node_modules/react-components/containers/overview/PromoteSection.js:55
 msgctxt "Title"
 msgid "Thanks for your support"
-msgstr "Merci pour votre soutien"
+msgstr "Merci de votre soutien"
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:63
 msgctxt "Title"
@@ -678,7 +676,7 @@ msgstr "Ajouter des crédits"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Navigateur non pris en charge"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -2387,7 +2385,7 @@ msgstr "Aucun abonnement pour l'instant"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Pour gérer votre abonnement, personnalisez votre offre actuelle ou sélectionnez-en une autre dans le tableau des offres."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -2618,7 +2616,7 @@ msgstr "Veuillez entrer un mot de passe pour chiffrer votre clé privée avant d
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:67
 msgctxt "Info"
 msgid "You can generate a new encryption key if you think your previous key has been compromised."
-msgstr "Vous pouvez générer une nouvelle clé de chiffrement si vous pensez que votre clé précédente a été compromise."
+msgstr "Vous pouvez générer une nouvelle clé de chiffrement lorsque vous pensez que votre clé précédente a été compromise."
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:82
 msgctxt "Info"
@@ -3659,7 +3657,7 @@ msgstr "Captcha"
 #: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
 msgctxt "Error"
 msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr ""
+msgstr "Le navigateur que vous utilisez ne permet pas le traitement des paiements. Veuillez utiliser un autre navigateur ou connectez-vous depuis un ordinateur."
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
@@ -5410,12 +5408,12 @@ msgstr "Créer un nouveau dossier"
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:39
 msgctxt "Desktop notification status"
 msgid "Enabled"
-msgstr "Activé"
+msgstr "Activées"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:41
 msgctxt "Desktop notification status"
 msgid "Disabled"
-msgstr "Désactivé"
+msgstr "Désactivées"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:11
 msgctxt "Badge for domain"
@@ -5933,7 +5931,7 @@ msgstr "Gratuit"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
 msgctxt "x of y"
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:144
 #, javascript-format
@@ -6050,7 +6048,7 @@ msgstr "Réduction de 36% sur votre abonnement"
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "47% de réduction sur votre abonnement"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"
@@ -6233,7 +6231,7 @@ msgstr "Marquer comme obsolète"
 #: node_modules/react-components/containers/keys/KeysActions.js:50
 msgctxt "Keys actions"
 msgid "Disables encryption with this key"
-msgstr "Désactive le chiffrement avec cette clé"
+msgstr "Cela désactive le chiffrement avec cette clé"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:54
 msgctxt "Keys actions"

@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: pl\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2019-11-26 12:01\n"
+"PO-Revision-Date: 2019-12-13 23:22\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -678,7 +676,7 @@ msgstr "Dodaj środki"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Przeglądarka jest nieobsługiwana"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -2297,7 +2295,7 @@ msgstr "Szczegóły Twoich płatności są chronione szyfrowaniem TLS i szwajcar
 #, javascript-format
 msgctxt "Info"
 msgid "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent."
-msgstr "Doładuj swoje konto środkami, których możesz użyć do wykupienia nowego planu lub odnowienia obecnego. Otrzymasz jeden kredyt za każde wydane ${ i18nCurrency }."
+msgstr "Doładuj swoje konto środkami, których możesz użyć do wykupienia nowego planu lub odnowienia obecnego. 1 ${ i18nCurrency } to jeden otrzymany kredyt."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:112
 msgctxt "Info"
@@ -2393,7 +2391,7 @@ msgstr "Brak subskrypcji"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Aby zarządzać subskrypcją, dostosuj swój obecny plan lub wybierz inny z tabeli planów."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -3667,7 +3665,7 @@ msgstr "Captcha"
 #: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
 msgctxt "Error"
 msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr ""
+msgstr "Przeglądarka, której używasz, nie pozwala na pełną autoryzację płatności. Skorzystaj z innej przeglądarki lub zaloguj się za pomocą komputera."
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
@@ -5951,7 +5949,7 @@ msgstr "Za darmo"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
 msgctxt "x of y"
 msgid "of"
-msgstr ""
+msgstr "z"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:144
 #, javascript-format
@@ -5998,7 +5996,7 @@ msgstr "Wszystkie opcje planu Plus, adres catch-all, obsługa wielu użytkownik�
 #: node_modules/react-components/containers/payments/PlansTable.js:201
 msgctxt "Plan option"
 msgid "All Professional features, limited to 6 users, includes ProtonVPN"
-msgstr "Wszystkie opcje planu Professional, limitowane do 6 użytkowników, ProtonVPN w zestawie"
+msgstr "Wszystkie opcje planu Professional, limitowane do 6 użytkowników; ProtonVPN w zestawie"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:333
 msgctxt "Plan option"
@@ -6018,7 +6016,7 @@ msgstr "Rocznie"
 #: node_modules/react-components/containers/payments/BillingSection.js:37
 msgctxt "Billing cycle"
 msgid "2-year"
-msgstr "Dwuletni"
+msgstr "Co dwa lata"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:144
 #, javascript-format
@@ -6078,7 +6076,7 @@ msgstr "Zniżka 36% została wliczona do Twojej subskrypcji"
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "Zniżka 47% została wliczona do Twojej subskrypcji"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"

@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: hr\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: Croatian\n"
 "Language: hr_HR\n"
-"PO-Revision-Date: 2019-11-26 12:02\n"
+"PO-Revision-Date: 2019-12-13 15:23\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -237,7 +235,7 @@ msgstr "Upravljanje sesijama"
 #: src/app/containers/SecurityContainer.js:18
 msgctxt "Title"
 msgid "Authentication logs"
-msgstr "Autentifikacijski zapisi"
+msgstr "Autentikacijski zapisi"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:34
 #: src/app/containers/SecurityContainer.js:22
@@ -317,7 +315,7 @@ msgstr "Prilagođeni filtri"
 #: src/app/containers/FiltersContainer.js:18
 msgctxt "Title"
 msgid "Spam filters"
-msgstr "Filteri neželjene pošte"
+msgstr "Filtri neželjene pošte"
 
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:6
 msgctxt "Title"
@@ -598,7 +596,7 @@ msgstr "Korisničko ime"
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:272
 msgctxt "Title"
 msgid "Set up two-factor authentication"
-msgstr "Postavite provjeru autentičnosti u dva koraka"
+msgstr "Postavite dvofaktorsku autentikaciju"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:123
 #: node_modules/react-components/containers/account/PasswordsSection.js:38
@@ -631,12 +629,12 @@ msgstr "Promijeni lozinku sandučića e-pošte"
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:82
 msgctxt "Title"
 msgid "Disable two-factor authentication"
-msgstr "Onemogući provjeru autentičnosti u dva koraka"
+msgstr "Onemogući dvofaktorsku autentikaciju"
 
 #: node_modules/react-components/containers/account/TwoFactorSection.js:29
 msgctxt "Title"
 msgid "Two-factor authentication"
-msgstr "Provjera autentičnosti u dva koraka"
+msgstr "Dvofaktorska autentikacija"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:97
 #: node_modules/react-components/containers/account/DeleteSection.js:33
@@ -678,7 +676,7 @@ msgstr "Dodaj kredit"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Preglednik nije podržan"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -1831,7 +1829,7 @@ msgstr "Stvaranje i upravljanje pod-računima te dodjeljivanje im adrese e-pošt
 #: node_modules/react-components/containers/organization/OrganizationSection.js:43
 msgctxt "Info"
 msgid "The name and logo will be visible to your users while they are logged in."
-msgstr "Ime i logotip bit će vidljiv vašim korisnicima dok su prijavljeni."
+msgstr "Naziv i logotip bit će vidljiv vašim korisnicima dok su prijavljeni."
 
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:40
 msgctxt "Info"
@@ -1922,7 +1920,7 @@ msgstr[2] "korisnika iskorištena"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:164
 msgctxt "Info"
 msgid "Custom filters work on all new emails, including incoming emails as well as sent emails. To find out how to write Sieve filters."
-msgstr "Prilagođeni filtri rade na svim novim porukama e-pošte, uključujući i dolazne i poslane poruke. Da biste saznali kako napisati Sieve filtere."
+msgstr "Prilagođeni filtri rade na svim novim porukama e-pošte, uključujući i dolazne i poslane poruke. Da biste saznali kako napisati Sieve filtre."
 
 #: node_modules/react-components/containers/filters/FilterItemRow.js:35
 msgctxt "Info"
@@ -1979,7 +1977,7 @@ msgstr "Nije postavljeno"
 #: node_modules/react-components/containers/domains/DKIMSection.js:11
 msgctxt "Info"
 msgid "ProtonMail supports DKIM signing for custom domains! To use DKIM authentication, please add the following TXT record into your DNS for this domain. This can typically be done in the control panel of your domain name registrar."
-msgstr "ProtonMail podržava DKIM potpisivanje za prilagođene domene! Da biste koristili DKIM provjeru autentičnosti, dodajte sljedeći TXT zapis u svoj DNS za ovu domenu. To se obično može obaviti na upravljačkoj ploči registrara domene."
+msgstr "ProtonMail podržava DKIM potpisivanje za prilagođene domene! Da biste koristili DKIM autentikaciju, dodajte sljedeći TXT zapis u svoj DNS za ovu domenu. To se obično može obaviti na upravljačkoj ploči registrara domene."
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:28
 #, javascript-format
@@ -2072,12 +2070,12 @@ msgstr "Potvrda adresa je napredna sigurnosna značajka. Uključite ovo samo ako
 #: node_modules/react-components/containers/logs/LogsSection.js:110
 msgctxt "Info"
 msgid "Logs includes authentication attempts for all Proton services that use your Proton credentials."
-msgstr "Zapisi uključuju pokušaje provjere autentičnosti za sve Proton usluge koje koriste vaše Proton vjerodajnice."
+msgstr "Zapisi uključuju pokušaje autentikacije za sve Proton usluge koje koriste vaše Proton vjerodajnice."
 
 #: node_modules/react-components/containers/logs/LogsTable.js:31
 msgctxt "Info"
 msgid "You can enable authentication logging to see when your account is accessed, and from which IP. We will record the IP address that accesses the account and the time, as well as failed attempts."
-msgstr "Možete omogućiti zapisivanje provjera autentičnosti da biste vidjeli kada se pristupa vašem računu i s koje je IP adrese. Snimit ćemo IP adresu koja je pristupila računu i vrijeme, kao i neuspješne pokušaje."
+msgstr "Možete omogućiti zapisivanje pokušaja autentikacije da biste vidjeli kada se pristupa vašem računu i s koje je IP adrese. Snimit ćemo IP adresu koja je pristupila računu i vrijeme, kao i neuspješne pokušaje."
 
 #: node_modules/react-components/containers/logs/LogsTable.js:37
 msgctxt "Info"
@@ -2119,7 +2117,7 @@ msgstr "prvo proučavajući naš 2FA vodič"
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:97
 msgctxt "Info"
 msgid "This wizard will enable Two Factor Authentication (2FA) on your Proton account. 2FA will make your Proton account more secure so we recommend enabling it."
-msgstr "Ovaj čarobnjak omogućiti će provjeru autentičnosti u dva koraka (2FA) na Proton računu. 2FA će vaš Proton račun učiniti sigurnijim pa vam preporučujemo da opciju omogućite."
+msgstr "Ovaj čarobnjak omogućiti će dvofaktorsku autentikaciju na Proton računu. Preporučamo da omogućite opciju jer će vaš Proton račun biti sigurniji."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:101
 #, javascript-format
@@ -2136,7 +2134,7 @@ msgstr "Unesite ključ ručno"
 #, javascript-format
 msgctxt "Info"
 msgid "Scan this code with your two-factor authentication device to set up your account. ${ switchButton }."
-msgstr "Skenirajte ovaj kôd pomoću uređaja za provjeru autentičnosti u dva koraka, kako biste postavili svoj račun. ${ switchButton }."
+msgstr "Za postavljanje računa, skenirajte ovaj kôd pomoću uređaja za dvofaktorsku autentikaciju. ${ switchButton }."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:141
 msgctxt "Info"
@@ -2147,22 +2145,22 @@ msgstr "Skenirajte QR kôd"
 #, javascript-format
 msgctxt "Info"
 msgid "Manually enter this information into your two-factor authentication device to set up your account. ${ _switchButton }."
-msgstr "Ručno unesite ove podatke u vaš uređaj za provjeru autentičnosti u dva koraka, kako biste postavili vaš račun. ${ _switchButton }."
+msgstr "Za postavljanje računa, ručno unesite ove podatke u vaš uređaj za dvofaktorsku autentikaciju. ${ _switchButton }."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:187
 msgctxt "Info"
 msgid "Two-factor authentication enabled"
-msgstr "Omogućena je provjera autentičnosti u dva koraka"
+msgstr "Omogućena je dvofaktorska autentikacija"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:231
 msgctxt "Info"
 msgid "Important: Please make sure you save the recovery codes. Otherwise you can permanently lose access to your account if you lose your 2FA device."
-msgstr "Važno: Molimo spremite kodove za oporavak. U suprotnom možete trajno izgubiti pristup računu ako izgubite svoj uređaj za provjeru autentičnosti u dva koraka (2FA)."
+msgstr "Važno: Molimo spremite kôdove za oporavak. U suprotnom možete trajno izgubiti pristup računu ako izgubite svoj uređaj za dvofaktorsku autentikaciju."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:235
 msgctxt "Info"
 msgid "If you lose your two-factor-enabled device, these codes can be used instead of the 6-digit 2FA code to log into your account. Each code can only be used once."
-msgstr "Ukoliko izgubite svoj uređaj za provjeru autentičnosti u dva koraka, ovi kodovi se mogu upotrijebiti umjesto 6-znamenkastog 2FA koda da bi se prijavili na vaš račun. Svaki kôd može se upotrijebiti samo jednom."
+msgstr "Ukoliko izgubite svoj uređaj za dvostruku autentikaciju, ovi kôdovi se mogu upotrijebiti umjesto 6-znamenkastog 2FA kôda da bi se prijavili na vaš račun. Svaki kôd može se upotrijebiti samo jednom."
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:154
 msgctxt "Info"
@@ -2198,7 +2196,7 @@ msgstr "Ažurirana je postavka e-pošte"
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:51
 msgctxt "Info"
 msgid "Two-factor authentication disabled"
-msgstr "Onemogućena je provjera autentičnosti u dva koraka"
+msgstr "Onemogućena je dvofaktorska autentikacija"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:102
 msgctxt "Info"
@@ -2390,7 +2388,7 @@ msgstr "Bez pretplate"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Da biste upravljali pretplatom, prilagodite svoj trenutni plan ili odaberite drugi iz popisa planova."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -2585,7 +2583,7 @@ msgstr "Automatski odgovor je aktivan svaki mjesec između odabranog vremena po�
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:86
 msgctxt "Info"
 msgid "No addresses exist"
-msgstr "Ne postoji ni jedna email adresa"
+msgstr "Ne postoji ni jedna adresa e-pošte"
 
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:205
 msgctxt "Info"
@@ -2915,7 +2913,7 @@ msgstr "Adresa e-pošte za oporavak"
 #: node_modules/react-components/containers/overview/SummarySection.js:69
 msgctxt "Label"
 msgid "Two factor authentication"
-msgstr "Provjera autentičnosti u dva koraka"
+msgstr "Dvofaktorska autentikacija"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:80
 msgctxt "Label"
@@ -3225,7 +3223,7 @@ msgstr "Redoslijed pročitano/nepročitano"
 #: node_modules/react-components/containers/password/PasswordTotpInputs.js:26
 msgctxt "Label"
 msgid "Two-factor code"
-msgstr "Šifra za provjeru autentičnosti u dva koraka"
+msgstr "Kôd dvofaktorske autentikacije"
 
 #: node_modules/react-components/containers/account/PasswordsSection.js:86
 #: node_modules/react-components/containers/login/UnlockForm.js:9
@@ -3311,7 +3309,7 @@ msgstr "Nova lozinka"
 #: node_modules/react-components/containers/account/TwoFactorSection.js:32
 msgctxt "Label"
 msgid "Two-factor authentication"
-msgstr "Provjera autentičnosti u dva koraka"
+msgstr "Dvofaktorska autentikacija"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:111
 msgctxt "Label"
@@ -3666,7 +3664,7 @@ msgstr "Captcha"
 #: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
 msgctxt "Error"
 msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr ""
+msgstr "Preglednik koji koristite ne dopušta potpuno odobrenje plaćanja. Molimo koristite drugi preglednik ili se prijavite putem računala."
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
@@ -3729,7 +3727,7 @@ msgstr "Nevažeći naziv"
 #: node_modules/react-components/containers/members/MemberModal.js:95
 msgctxt "Error"
 msgid "Invalid password"
-msgstr "Neispravna lozinka"
+msgstr "Nevažeća lozinka"
 
 #: node_modules/react-components/containers/members/MemberModal.js:99
 msgctxt "Error"
@@ -3795,7 +3793,7 @@ msgstr "Filtar mora imati radnju"
 #: node_modules/react-components/containers/filters/editor/Name.js:22
 msgctxt "Error"
 msgid "Filter name required"
-msgstr "Naziv filtera je obavezan"
+msgstr "Naziv filtra je obavezan"
 
 #: node_modules/react-components/containers/filters/FilterConditionValues.js:62
 msgctxt "Error"
@@ -4002,7 +4000,7 @@ msgstr "Potvrda potpisa je neuspješna"
 #: node_modules/proton-shared/lib/keys/keys.js:122
 msgctxt "Error"
 msgid "Incorrect decryption password"
-msgstr "Neispravna lozinka za dešifriranje"
+msgstr "Nevažeća lozinka za dešifriranje"
 
 #: node_modules/react-components/components/toggle/Toggle.js:10
 msgctxt "Toggle button"
@@ -4439,7 +4437,7 @@ msgstr "Uštedite 20% prilikom godišnje naplate"
 #: node_modules/react-components/containers/payments/PlansTable.js:135
 msgctxt "Tooltip"
 msgid "ProtonMail cannot be used for bulk sending or spamming"
-msgstr "ProtonMail nije namjenjen za slanje velikih, skupnih emailova ili spamanje"
+msgstr "ProtonMail nije namjenjen za slanje velikog broja e-pošte ili spamanje"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:165
 msgctxt "Tooltip"
@@ -4704,7 +4702,7 @@ msgstr "vasadomena.hr"
 #: node_modules/react-components/containers/password/PasswordTotpInputs.js:29
 msgctxt "Placeholder"
 msgid "Two-factor code"
-msgstr "Šifra za provjeru autentičnosti u dva koraka"
+msgstr "Kôd dvofaktorske autentikacije"
 
 #: node_modules/react-components/containers/login/UnlockForm.js:20
 msgctxt "Placeholder"
@@ -5135,7 +5133,7 @@ msgstr "Prilagođeni filtri"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:156
 msgctxt "Add filter modal"
 msgid "Custom filter (preview)"
-msgstr "Prilagođeni filter (Pregled)"
+msgstr "Prilagođeni filtar (Pregled)"
 
 #: node_modules/react-components/containers/filters/FilterItemRow.js:45
 msgctxt "Success notification"
@@ -5186,12 +5184,12 @@ msgstr "Dodajte prilagođeni filtar za izvođenje akcija poput automatskog ozna�
 #: node_modules/react-components/containers/filters/FiltersSection.js:53
 msgctxt "FilterSettings"
 msgid "No filters available"
-msgstr "Nema dostupnih filtera"
+msgstr "Nema dostupnih filtara"
 
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:56
 msgctxt "FilterSettings"
 msgid "Spam Filters"
-msgstr "Filteri neželjene pošte"
+msgstr "Filtri neželjene pošte"
 
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:58
 msgctxt "FilterSettings"
@@ -5574,7 +5572,7 @@ msgstr "Jeste li sigurni da želite izbrisati sve zapise?"
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:34
 msgctxt "Message"
 msgid "Are you sure you want to disable two-factor authentication?"
-msgstr "Jeste li sigurni da želite onemogućiti provjeru autentičnosti u dva koraka?"
+msgstr "Sigurno želite onemogućiti dvofaktorsku autentikaciju?"
 
 #: node_modules/react-components/containers/domains/DomainsTable.js:16
 msgctxt "Header for addresses table"
@@ -5616,12 +5614,12 @@ msgstr "Korisničko ime"
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:85
 msgctxt "Tooltip sign external messages"
 msgid "Automatically sign all your outgoing messages so users can verify the authenticity of your messages. This is done in combination with the Default PGP Scheme that is selected down below."
-msgstr "Automatski potpišite sve svoje odlazne poruke kako bi korisnici mogli provjeriti autentičnost vaših poruka. To se radi u kombinaciji sa zadanom PGP shemom koja je odabrana dolje."
+msgstr "Automatski potpišite sve svoje odlazne poruke kako bi korisnici mogli izvršiti autentikaciju vaših poruka. To se radi u kombinaciji sa zadanom PGP shemom koja je odabrana dolje."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:103
 msgctxt "Tooltip automatically attach public key"
 msgid "This automatically adds your public key to each message you send. Recipients can use this to verify the authenticity of your messages and send encrypted messages to you."
-msgstr "Ovo automatski dodaje vaš javni ključ svakoj poruci koju šaljete. Primatelji mogu koristiti ovo za provjeru autentičnosti vaših poruka i slanje šifriranih poruka."
+msgstr "Ovo automatski dodaje vaš javni ključ svakoj poruci koju šaljete. Primatelji mogu koristiti ovo za autentikaciju vaših poruka i slanje šifriranih poruka."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:121
 msgctxt "Tooltip default pgp scheme"
@@ -5945,7 +5943,7 @@ msgstr "Besplatno"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
 msgctxt "x of y"
 msgid "of"
-msgstr ""
+msgstr "od"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:144
 #, javascript-format
@@ -6067,7 +6065,7 @@ msgstr "36% popusta primjenjeno na vašu pretplatu"
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "47% popusta primjenjeno na vašu pretplatu"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"

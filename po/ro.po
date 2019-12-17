@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: ro\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: Romanian\n"
 "Language: ro_RO\n"
-"PO-Revision-Date: 2019-11-26 11:58\n"
+"PO-Revision-Date: 2019-12-13 15:20\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -678,7 +676,7 @@ msgstr "Adăugare credite"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Navigator nesuportat"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -2390,7 +2388,7 @@ msgstr "Fără abonament"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Pentru a vă gestiona abonamentul, personaliza planul curent sau a selectat altul din lista de planuri."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -3664,7 +3662,7 @@ msgstr "Captcha"
 #: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
 msgctxt "Error"
 msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr ""
+msgstr "Navigatorul folosit nu permite autorizarea completă a plății. Folosiți un alt navigator sau conectați-vă de pe un calculator."
 
 #: node_modules/react-components/components/input/EmailInput.js:9
 msgctxt "Error"
@@ -5943,7 +5941,7 @@ msgstr "Gratuit"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
 msgctxt "x of y"
 msgid "of"
-msgstr ""
+msgstr "din"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:144
 #, javascript-format
@@ -6065,7 +6063,7 @@ msgstr "36% reducere aplicată la abonament"
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "47% reducere aplicată la abonament"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"

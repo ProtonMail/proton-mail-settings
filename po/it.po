@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: it\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
-"PO-Revision-Date: 2019-11-26 12:00\n"
+"PO-Revision-Date: 2019-12-16 16:21\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -678,7 +676,7 @@ msgstr "Aggiungi credito"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Browser non supportato"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -2387,7 +2385,7 @@ msgstr "Ancora nessun abbonamento"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Per gestire il tuo abbonamento, personalizza il tuo piano attuale o selezionane un altro dalla tabella del piano."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"

@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: protonmail\n"
 "X-Crowdin-Language: ru\n"
 "X-Crowdin-File: ProtonMail Settings Application.pot\n"
 "Project-Id-Version: protonmail\n"
-"Last-Translator: PMtranslator\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2019-11-26 12:01\n"
+"PO-Revision-Date: 2019-12-14 13:20\n"
 
 #: src/app/components/layout/PrivateHeader.js:38
 msgctxt "Title"
@@ -678,7 +676,7 @@ msgstr "Пополнение счёта"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
 msgid "Unsupported browser"
-msgstr ""
+msgstr "Неподдерживаемый браузер"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
 msgctxt "Title"
@@ -775,17 +773,17 @@ msgstr "Настройка"
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:28
 msgctxt "Title"
 msgid "1 month deal"
-msgstr ""
+msgstr "Предложение на 1 месяц"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:29
 msgctxt "Title"
 msgid "1 year deal"
-msgstr ""
+msgstr "Предложение на 1 год"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:30
 msgctxt "Title"
 msgid "2 year deal"
-msgstr ""
+msgstr "Предложение на 2 года"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:35
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:36
@@ -793,7 +791,7 @@ msgstr ""
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } (${ notice })"
-msgstr ""
+msgstr "Сумма к оплате ${ amount } (${ notice })"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:42
 #, javascript-format
@@ -2393,7 +2391,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Для того, чтобы управлять подпиской, настройте текущий тарифный план или выберите другой в таблице тарифных планов."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -6078,7 +6076,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "Скидка 47% применена к вашей подписке"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"
