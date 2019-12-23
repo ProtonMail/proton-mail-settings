@@ -8,6 +8,10 @@
     "lang": "cs_CZ"
   },
   {
+    "key": "da",
+    "lang": "da_DK"
+  },
+  {
     "key": "de",
     "lang": "de_DE"
   },
@@ -22,6 +26,18 @@
   {
     "key": "hr",
     "lang": "hr_HR"
+  },
+  {
+    "key": "hu",
+    "lang": "hu_HU"
+  },
+  {
+    "key": "id",
+    "lang": "id_ID"
+  },
+  {
+    "key": "is",
+    "lang": "is_IS"
   },
   {
     "key": "it",
@@ -50,6 +66,10 @@
   {
     "key": "tr",
     "lang": "tr_TR"
+  },
+  {
+    "key": "ua",
+    "lang": "uk_UA"
   },
   {
     "key": "zh-CN",
