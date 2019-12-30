@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2019-12-21 07:22\n"
+"PO-Revision-Date: 2019-12-29 21:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "Skrzynka pocztowa"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "Ustawienia"
@@ -2043,7 +2043,7 @@ msgstr "Zobacz skróty klawiszowe"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Ulepsz"
@@ -6607,7 +6607,7 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Ustawienia ProtonVPN przez przeglądarkę"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
@@ -6617,7 +6617,7 @@ msgstr[1] "${ hours } godziny"
 msgstr[2] "${ hours } godzin"
 msgstr[3] "${ hours } godzin"
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"

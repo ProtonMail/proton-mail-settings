@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-12-21 14:21\n"
+"PO-Revision-Date: 2019-12-30 04:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -180,7 +180,7 @@ msgstr "密码不一致"
 #: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:17
 msgctxt "Error"
 msgid "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to get multi-user support."
-msgstr "请升级到多用户的专业版或尊享版账户以使用多用户功能。"
+msgstr "开通多用户的专业版或尊享版账户方可使用多用户功能。"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:66
 msgctxt "Error"
@@ -304,7 +304,7 @@ msgstr "必须先激活机构密钥。"
 #: node_modules/react-components/containers/members/MembersSection.js:40
 msgctxt "Error"
 msgid "Please upgrade to a Professional plan with more than 1 user, or a Visionary account, to manage multiple users."
-msgstr "请升级到多用户的专业版或尊享版账户以管理多用户。"
+msgstr "开通多用户的专业版或尊享版账户方可管理多个用户。"
 
 #: node_modules/react-components/containers/members/MembersSection.js:44
 msgctxt "Error"
@@ -1239,7 +1239,7 @@ msgstr "需要帮助？"
 #: node_modules/react-components/containers/overview/PromoteSection.js:48
 msgctxt "Title"
 msgid "Upgrade to a paid plan"
-msgstr "升级为付费账户"
+msgstr "开通付费账户"
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:55
 msgctxt "Title"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "邮箱"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "设置"
@@ -2043,7 +2043,7 @@ msgstr "查看键盘快捷键"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "升级"
@@ -2205,7 +2205,7 @@ msgstr "请用其他方式支付，或联系银行寻求帮助。"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:60
 msgctxt "Info"
 msgid "No subscription yet"
-msgstr ""
+msgstr "尚未开通"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
@@ -2578,7 +2578,7 @@ msgstr "目前存储空间已全部分配给管理员账户，请将空间分给
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:206
 msgctxt "Info"
 msgid "Currently all available VPN connections are allocated to the administrator account. Please select the number of connections you want to reserve for additional users."
-msgstr "目前 VPN 接入量已全部分配给管理员帐户。请选择您要为其他用户保留的接入量。"
+msgstr "目前 VPN 接入量已全部分配给管理员，请为其他用户保留一定的接入量。"
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:32
 msgctxt "Info"
@@ -2676,7 +2676,7 @@ msgstr "您的账户已启用短域名 @pm.me。"
 #: node_modules/react-components/containers/addresses/PmMePanel.js:38
 msgctxt "Info"
 msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
-msgstr "ProtonMail 现已支持 @pm.me 地址（ProtonMail me 或 Private Message me 的缩写）接收邮件。升级到付费账户还可从 @pm.me 地址发送邮件。"
+msgstr "ProtonMail 现已支持通过 @pm.me 地址（ProtonMail me 或 Private Message me 的缩写）接收邮件。开通付费账户还可从 @pm.me 地址发送邮件。"
 
 #: node_modules/react-components/containers/addresses/PMSignatureField.js:39
 msgctxt "Info"
@@ -2686,7 +2686,7 @@ msgstr "开通付费账户方可移除 ProtonMail 落款。依靠来自付费账
 #: node_modules/react-components/containers/addresses/IdentitySection.js:67
 msgctxt "Info"
 msgid "Click the Edit button to personalize your email address. Your Display Name appears in the From field when people receive an email from you. Your Signature is appended at the bottom of your messages. Or leave each field empty for more privacy."
-msgstr ""
+msgstr "点击更改按钮可更改地址相关信息。当您发送邮件时，对外名称将填在发件人一栏，落款则会加在邮件末尾。您也可以将它们留空以保护隐私。"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:98
 #: node_modules/react-components/containers/notification/RecoveryEmail.js:11
@@ -2723,7 +2723,7 @@ msgstr "推送通知目前已"
 #: node_modules/react-components/containers/notification/EmailSection.js:63
 msgctxt "Info"
 msgid "The selected method can be used to recover an account in the event you forget your password and to be notified about missed emails."
-msgstr "可用于忘记密码时重置密码或接收新邮件提醒。"
+msgstr "密保邮箱可用于接收邮件提醒，忘记密码时还可用于重置密码。"
 
 #: node_modules/react-components/containers/notification/EmailSection.js:86
 msgctxt "Info"
@@ -2871,12 +2871,12 @@ msgstr "例如：ProtonMail、ProtonContact、ProtonVPN、ProtonDrive、ProtonCa
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:106
 msgctxt "Info"
 msgid "Warning: deletion is permanent"
-msgstr "警告：账户一经删除不可恢复。"
+msgstr "警告：账户一经删除不可恢复"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:107
 msgctxt "Info"
 msgid "If you wish to delete this account in order to combine it with another one, do NOT delete it."
-msgstr "如果您删除帐户是为了与另一帐户合并，请先不要删除。"
+msgstr "如果您删除账户是为了与另一账户合并，请先不要删除。"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:136
 msgctxt "Info"
@@ -2897,7 +2897,7 @@ msgstr "您的 ProtonVPN 和 ProtonMail 账户是绑定在一起的，前往 ${ 
 #: node_modules/react-components/containers/account/DeleteSection.js:69
 msgctxt "Info"
 msgid "Deleting your account will permanently delete your emails, and you will lose your email address."
-msgstr "删除您的帐户将永久删除您的电子邮件，您将丢失您的电子邮件地址。"
+msgstr "删除账户时所有邮件也将一并删除，且您将永远失去您的邮箱地址。"
 
 #: node_modules/react-components/containers/account/DeleteSection.js:71
 msgctxt "Info"
@@ -3086,7 +3086,7 @@ msgstr "正在加载 ${ appName }"
 #: node_modules/react-components/containers/logs/LogsTable.js:31
 msgctxt "Info"
 msgid "You can enable authentication logging to see when your account is accessed, and from which IP. We will record the IP address that accesses the account and the time, as well as failed attempts."
-msgstr "您可以开启登录日志功能查看每次登录的时间和 IP 地址，登录失败也会被记录下来。"
+msgstr "您可以开启登录记录功能查看每次登录的时间和 IP 地址，登录失败也会被记录下来。"
 
 #: node_modules/react-components/containers/logs/LogsTable.js:37
 msgctxt "Info"
@@ -3116,7 +3116,7 @@ msgstr "请联系您的系统管理员寻求帮助。"
 #: node_modules/react-components/containers/overview/PromoteSection.js:49
 msgctxt "Info"
 msgid "Get additional storage capacity and more addresses with ProtonMail Plus."
-msgstr "升级到 ProtonMail 增强版，存储空间更大，地址更多。"
+msgstr "开通 ProtonMail 增强版，存储空间更大，地址更多。"
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:56
 msgctxt "Info"
@@ -3216,7 +3216,7 @@ msgstr "前往域名设置可添加或管理自定域名。"
 #: src/app/containers/DomainsContainer.js:57
 msgctxt "Info"
 msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
-msgstr "升级到支持多用户的账户方可添加并管理您的机构成员。"
+msgstr "开通支持多用户的付费账户方可添加并管理您的机构成员。"
 
 #: src/app/containers/AddressesContainer.js:31
 #: src/app/containers/AddressesContainer.js:50
@@ -3233,12 +3233,12 @@ msgstr "前往用户设置可创建或管理机构用户。"
 #: src/app/containers/AddressesContainer.js:74
 msgctxt "Info"
 msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
-msgstr "升级到支持多用户的账户方可添加并管理您的机构成员。"
+msgstr "开通支持多用户的账户方可添加并管理您的机构成员。"
 
 #: src/app/containers/AddressesContainer.js:68
 msgctxt "Info"
 msgid "Upgrade to a paid plan if you want to create and manage custom domains."
-msgstr "升级到付费账户方可添加并管理自定域名。"
+msgstr "开通付费账户方可添加并管理自定域名。"
 
 #: src/app/containers/AutoReplyContainer.js:38
 msgctxt "Info"
@@ -4191,7 +4191,7 @@ msgstr "条件 ${ n }"
 #: node_modules/react-components/containers/filters/editor/AutoReplyAction.js:27
 msgctxt "Label"
 msgid "Send auto reply"
-msgstr ""
+msgstr "自动回复"
 
 #: node_modules/react-components/containers/filters/editor/Operator.js:20
 msgctxt "Label"
@@ -4654,7 +4654,7 @@ msgstr "Tor+VPN"
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:174
 msgctxt "Header"
 msgid "Secure core"
-msgstr "Secure core"
+msgstr "Secure Core"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:109
 msgctxt "Header"
@@ -6565,14 +6565,14 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "ProtonVPN 设置网页版"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
 msgstr[0] ""
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"

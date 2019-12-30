@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Icelandic\n"
 "Language: is_IS\n"
-"PO-Revision-Date: 2019-12-21 07:22\n"
+"PO-Revision-Date: 2019-12-28 08:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -1365,7 +1365,7 @@ msgid "Mailbox"
 msgstr "Pósthólf"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "Stillingar"
@@ -2056,7 +2056,7 @@ msgstr "Skoða flýtileiðir á lyklaborði"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Uppfæra"
@@ -6779,7 +6779,7 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Stillingar ProtonVPN fyrir vef"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
@@ -6787,7 +6787,7 @@ msgid_plural "${ hours } hours"
 msgstr[0] "${ hours } klukkustund"
 msgstr[1] "${ hours } klukkustundir"
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"

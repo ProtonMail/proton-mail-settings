@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2019-12-21 07:23\n"
+"PO-Revision-Date: 2019-12-30 07:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "Kotak Pesan"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "Pengaturan"
@@ -2043,7 +2043,7 @@ msgstr "Lihat pintasan papan ketik"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Tingkatkan"
@@ -5240,7 +5240,7 @@ msgstr "Kunci enkripsi untuk alamat Anda sedang dibuat. Proses berjalan beberapa
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:78
 msgctxt "alert"
 msgid "Deleting your keys is irreversible. To be able to access any message encrypted with this key, you might want to make a back up of this key for later use. Do you want to export this key?"
-msgstr "Kunci yang dihapus tidak dapat dikembalikan lagi. Agar dapat mengakses pesan terenkripsi dengan kunci ini, Anda perlu mencadangkan kunci untuk dipakai nanti. Ingin mengekspor kunci ini?"
+msgstr "Kunci yang dihapus tidak dapat dikembalikan lagi. Agar dapat mengakses pesan terenkripsi dengan kunci ini, Anda perlu menyadangkan kunci untuk dipakai nanti. Ingin mengekspor kunci ini?"
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:89
 msgctxt "alert"
@@ -6565,14 +6565,14 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Pengaturan ProtonVPN untuk web"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
 msgstr[0] "${ hours } jam"
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"

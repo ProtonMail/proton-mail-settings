@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-12-21 07:21\n"
+"PO-Revision-Date: 2019-12-29 08:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -474,7 +474,7 @@ msgstr "Blau"
 #: node_modules/proton-shared/lib/themes/themes.js:51
 msgctxt "Theme"
 msgid "Dark theme"
-msgstr ""
+msgstr "Dunkles Farbschema"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "Postfach"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "Einstellungen"
@@ -2043,7 +2043,7 @@ msgstr "Tastaturkürzel anzeigen"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Umsteigen"
@@ -6579,20 +6579,20 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "ProtonMail-Einstellungen für das Web"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } Stunde"
+msgstr[1] "${ hours } Stunden"
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } Minute"
+msgstr[1] "${ minutes } Minuten"
 
 #: node_modules/react-components/components/toggle/Toggle.js:10
 msgctxt "Toggle button"
@@ -6607,35 +6607,35 @@ msgstr "Aus"
 #: node_modules/react-components/components/countdown/Countdown.js:27
 msgctxt "Countdown status"
 msgid "Expired"
-msgstr ""
+msgstr "Abgelaufen"
 
 #: node_modules/react-components/components/countdown/Countdown.js:39
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ days } day"
 msgid_plural "${ days } days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ days } Tag"
+msgstr[1] "${ days } Tage"
 
 #: node_modules/react-components/components/countdown/Countdown.js:40
 msgctxt "Countdown unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } Stunde"
+msgstr[1] "${ hours } Stunden"
 
 #: node_modules/react-components/components/countdown/Countdown.js:41
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ minutes } minute"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } Minute"
+msgstr[1] "${ minutes } Minuten"
 
 #: node_modules/react-components/components/countdown/Countdown.js:42
 msgctxt "Countdown unit"
 msgid "${ seconds } second"
 msgid_plural "${ seconds } seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ seconds } Sekunde"
+msgstr[1] "${ seconds } Sekunden"
 

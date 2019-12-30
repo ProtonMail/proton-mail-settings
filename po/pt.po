@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2019-12-21 07:23\n"
+"PO-Revision-Date: 2019-12-28 08:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -605,18 +605,18 @@ msgstr "Oferta de 2 anos"
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
-msgstr "Faturado como ${ amount } por 1 mês ${ NOTICES[notice]}"
+msgstr "Cobrado ${ amount } por 1 mês ${ NOTICES[notice]}"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
-msgstr "Faturado como ${ amount } por 1 ano ${ NOTICES[notice]}"
+msgstr "Cobrado ${ amount } por 1 ano ${ NOTICES[notice]}"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
 msgctxt "Title"
 msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
-msgstr "Faturado como ${ amount } por 2 anos ${ NOTICES[notice]}"
+msgstr "Cobrado ${ amount } por 2 anos ${ NOTICES[notice]}"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
 #, javascript-format
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "Caixa de correio"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:38
+#: src/app/components/layout/PrivateLayout.js:40
 msgctxt "Title"
 msgid "Settings"
 msgstr "Configurações"
@@ -2043,7 +2043,7 @@ msgstr "Visualizar teclas de atalho"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:31
+#: src/app/components/layout/PrivateLayout.js:33
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Atualizar"
@@ -2331,7 +2331,7 @@ msgstr "+2 conexões para o ProtonVPN (permite conectar mais dispositivos na VPN
 #, javascript-format
 msgctxt "Info"
 msgid "billed as ${ billedPrice }"
-msgstr "faturado como ${ billedPrice }"
+msgstr "cobrado ${ billedPrice }"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:56
 msgctxt "Info"
@@ -6581,7 +6581,7 @@ msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Configurações ProtonVPN para web"
 
-#: node_modules/react-components/components/input/TimeInput.js:25
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
@@ -6589,7 +6589,7 @@ msgid_plural "${ hours } hours"
 msgstr[0] "${ hours } hora"
 msgstr[1] "${ hours } horas"
 
-#: node_modules/react-components/components/input/TimeInput.js:26
+#: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"
