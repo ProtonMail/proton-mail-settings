@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Link, withRouter } from 'react-router-dom';
-import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus, useToggle, useUser } from 'react-components';
+import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus, useToggle } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
@@ -11,12 +11,11 @@ const PrivateLayout = ({ children, location }) => {
     const mainAreaRef = useRef();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const list = getPages().map(({ text, route: link, icon }) => ({ text, link, icon }));
-    const [{ isPaid }] = useUser();
 
     const mobileLinks = [
         { to: '/inbox', icon: 'protonmail', external: true, current: true },
         { to: '/contacts', icon: 'protoncontacts', external: true, current: false },
-        isPaid && { to: '/calendar', icon: 'protoncalendar', external: true, current: false }
+        { to: '/calendar', icon: 'protoncalendar', external: true, current: false }
     ].filter(Boolean);
 
     useEffect(() => {
