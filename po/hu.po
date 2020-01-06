@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2019-12-28 08:20\n"
+"PO-Revision-Date: 2020-01-04 07:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -54,12 +54,12 @@ msgstr "Fizetés sikertelen"
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:46
 msgctxt "Error"
 msgid "Payment process consumed"
-msgstr ""
+msgstr "Fizetési folyamat befejezve"
 
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:50
 msgctxt "Error"
 msgid "Payment process not supported"
-msgstr ""
+msgstr "Fizetési folyamat nem támogatott"
 
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:62
 msgctxt "Error"
@@ -1251,7 +1251,7 @@ msgctxt "Title"
 msgid "Get 20% discount"
 msgstr "Szerezzen 20%-os kedvezményt"
 
-#: node_modules/react-components/containers/support/BugModal.js:127
+#: node_modules/react-components/containers/support/BugModal.js:136
 msgctxt "Title"
 msgid "Report bug"
 msgstr "Hibajelentés"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "Postafiók"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:40
+#: src/app/components/layout/PrivateLayout.js:39
 msgctxt "Title"
 msgid "Settings"
 msgstr "Beállítások"
@@ -1705,8 +1705,8 @@ msgstr "Ajándék kuponkód felhasználása"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:311
 msgctxt "Action"
-msgid "Pay annualy and save 20%!"
-msgstr "Fizessen évente és takarítson meg 20%-ot!"
+msgid "Pay annually and save 20%!"
+msgstr "Fizessen egy évet és takarítson meg 20%-ot!"
 
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
 msgctxt "Action"
@@ -1759,7 +1759,7 @@ msgstr "OK"
 #: node_modules/react-components/containers/login/LoginForm.js:267
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
-#: node_modules/react-components/containers/support/BugModal.js:126
+#: node_modules/react-components/containers/support/BugModal.js:135
 msgctxt "Action"
 msgid "Submit"
 msgstr "Elküldés"
@@ -2043,7 +2043,7 @@ msgstr "Gyorsbillentyűk megtekintése"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:33
+#: src/app/components/layout/PrivateLayout.js:32
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Váltás"
@@ -2068,12 +2068,12 @@ msgctxt "Action"
 msgid "Add screenshot(s)"
 msgstr "Képernyőmentés(ek) hozzáadása"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:203
 msgctxt "Action"
 msgid "Hide info"
 msgstr "Információ elrejtése"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:203
 msgctxt "Action"
 msgid "Show info"
 msgstr "Információ mutatása"
@@ -2159,58 +2159,58 @@ msgstr "Ablak bezárása"
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:112
 msgctxt "Info"
 msgid "Your bank requires 3-D Secure verification for security purposes."
-msgstr ""
+msgstr "Biztonsági okokból a bankja megköveteli a 3-D Secure biztonsági ellenőrzést."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:119
 msgctxt "Info"
 msgid "Verification will open a new tab, please disable any popup blockers. You will not be charged. Any amount used to verify the card will be refunded immediately."
-msgstr ""
+msgstr "Az ellenőrzés meg fog nyitni egy új böngészőfület. Kérjük engedélyezze a felugró ablakokat. Nem fog fizetés történni. A kártya ellenőrzéséhez felhasznált összeg azonnal visszatérítésre kerül."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:121
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:130
 msgctxt "Info"
 msgid "Verification will open a new tab, please disable any popup blockers."
-msgstr ""
+msgstr "Az ellenőrzés meg fog nyitni egy új böngészőfület. Kérjük engedélyezze a felugró ablakokat."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:127
 msgctxt "Info"
 msgid "You will be soon redirected to your bank to verify your payment."
-msgstr ""
+msgstr "A kifizetés ellenőrzéséhez átirányítjuk a bankjához."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:138
 msgctxt "Info"
 msgid "Please verify the card in the new tab which was opened."
-msgstr ""
+msgstr "Kérjük ellenőrizze a bankkártyát az újonan megnyílt böngészőfülön."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:139
 msgctxt "Info"
 msgid "Please verify payment at the new tab which was opened."
-msgstr ""
+msgstr "Kérjük ellenőrizze a kifizetést az újonan megnyílt böngészőfülön."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:147
 msgctxt "Info"
 msgid "Verification can take a few minutes."
-msgstr ""
+msgstr "Az ellenőrzés néhány percet is igénybe vehet."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:148
 msgctxt "Info"
 msgid "Payment can take a few minutes to fully verify."
-msgstr ""
+msgstr "A kifizetés ellenőrzése néhány percet is igénybe vehet."
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:160
 msgctxt "Info"
 msgid "Please try again, use a different payment method, or call your bank for assistance."
-msgstr ""
+msgstr "Kérjük, próbálja újra, válasszon más fizetési módot vagy kérjen segítséget a bankjától."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:60
 msgctxt "Info"
 msgid "No subscription yet"
-msgstr ""
+msgstr "Még nincs előfizetés"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "Az előfizetés kezeléséhez, testreszabhatja a mostani csomagját vagy válasszon másikat a csomag táblázatból."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -2220,12 +2220,12 @@ msgstr "Nem aktivált"
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:13
 msgctxt "Info"
 msgid "Black Friday 2019 newcomer discount has been applied!"
-msgstr ""
+msgstr "Fekete Péntek 2019 újonc kedvezmény alkalmazva!"
 
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:20
 msgctxt "Info"
 msgid "Save 20% with annual"
-msgstr ""
+msgstr "20% megtakarítás az évivel"
 
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:25
 msgctxt "Info"
@@ -2240,7 +2240,7 @@ msgstr "Kétéves fizetéshez járó 33% kedvezmény automatikusan jóváírásr
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:50
 msgctxt "Info"
 msgid "By using ProtonVPN to browse the web, your Internet connection is encrypted to ensure that your navigation is secure. ProtonVPN has servers located in 30+ countries around the world."
-msgstr ""
+msgstr "A ProtonVPN használatával az interneten való böngészéshez, az Internet csatlakozása titkosítva van, hogy a böngészés biztonságos legyen. ProtonVPn szerverek 30+ országban találhatók a világ körül."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:17
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:18
@@ -2271,7 +2271,7 @@ msgstr "Köszönjük az előfizetését!"
 #: node_modules/react-components/containers/payments/subscription/Thanks.js:20
 msgctxt "Info"
 msgid "Your new features are now available."
-msgstr ""
+msgstr "Az új lehetőségek már el is érhetőek."
 
 #: node_modules/react-components/containers/payments/subscription/Thanks.js:27
 msgctxt "Info"
@@ -2281,7 +2281,7 @@ msgstr "Köszönjük!"
 #: node_modules/react-components/containers/payments/subscription/Upgrading.js:8
 msgctxt "Info"
 msgid "Your account is being upgraded, this may take up to 30 seconds."
-msgstr ""
+msgstr "A fiókja frissítés alatt, ez akár 30 másodpercig is eltarthat."
 
 #.  Insert it before the last one
 #: node_modules/react-components/containers/payments/CreditsModal.js:71
@@ -2295,27 +2295,27 @@ msgstr "Fizetés adatait TLS titkosítással védjük. Svájci adatvédelmi tör
 #, javascript-format
 msgctxt "Info"
 msgid "Regular price: ${ regularPrice }"
-msgstr ""
+msgstr "Normál ár: ${ regularPrice }"
 
 #: node_modules/react-components/containers/payments/DowngradeModal.js:8
 msgctxt "Info"
 msgid "Your account will be downgraded in a few minutes."
-msgstr ""
+msgstr "A fiókja pár percen belül leminősítésre kerül."
 
 #: node_modules/react-components/containers/payments/DowngradeModal.js:9
 msgctxt "Info"
 msgid "Additional addresses, custom domains, and users must be removed/disabled before performing this action. Any connections to premium servers will be terminated."
-msgstr ""
+msgstr "A művelet végrehajtása előtt a további címeket, egyedi domain neveket és felhasználokat törölni/tiltani kell. Bármilyen kapcsolat a prémium szerverekhez törölve lesz."
 
 #: node_modules/react-components/containers/payments/LossLoyaltyModal.js:13
 msgctxt "Info"
 msgid "As an early Proton user, your account has extra features.."
-msgstr ""
+msgstr "Mivel Ön korai Proton felhasználó, fiókja extra szolgáltatásokat tartalmaz."
 
 #: node_modules/react-components/containers/payments/LossLoyaltyModal.js:15
 msgctxt "Info"
 msgid "By downgrading to a Free plan, you will permanently lose these benefits, even if you upgrade again in the future."
-msgstr ""
+msgstr "Az ingyenes verzióra való váltás során véglegesen elveszti a következő előnyeit, még akkor is, ha később ismét előfizetéses szolgáltatásra vált."
 
 #: node_modules/react-components/containers/payments/LossLoyaltyModal.js:18
 msgctxt "Info"
@@ -2325,7 +2325,7 @@ msgstr "+5 GB bónusz tárhely"
 #: node_modules/react-components/containers/payments/LossLoyaltyModal.js:20
 msgctxt "Info"
 msgid "+2 connections for ProtonVPN (allows you to connect more devices to VPN)"
-msgstr ""
+msgstr "További 2 ProtonVPN kapcsolat (lehetővé teszi több készülék csatlakoztatását a VPN-hez)"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:57
 #, javascript-format
@@ -2336,29 +2336,29 @@ msgstr "számlázva: ${ billedPrice }"
 #: node_modules/react-components/containers/payments/PlansSection.js:56
 msgctxt "Info"
 msgid "You already have a free account"
-msgstr ""
+msgstr "Már van egy ingyenes fiókja"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:126
 msgctxt "Info"
 msgid "Get 20% bundle discount when you purchase ProtonMail and ProtonVPN together."
-msgstr ""
+msgstr "20% kedvezményt kap ha a ProtonMail-t és ProtonVPN-t együtt vásárolja meg."
 
 #: node_modules/react-components/containers/payments/PlansSection.js:129
 #, javascript-format
 msgctxt "Info"
 msgid "You are currently subscribed to ${ names }."
-msgstr ""
+msgstr "Elő van fizetve a ${ names }."
 
 #: node_modules/react-components/containers/payments/PayPal.js:135
 msgctxt "Info"
 msgid "Please verify the payment in the new tab."
-msgstr ""
+msgstr "Kérjük ellenőrizze a kifizetést az új ablakban."
 
 #: node_modules/react-components/containers/payments/PayPal.js:145
 #: node_modules/react-components/containers/payments/PayPal.js:175
 msgctxt "Info"
 msgid "We will redirect you to PayPal in a new browser tab to complete this transaction. If you use any pop-up blockers, please disable them to continue."
-msgstr ""
+msgstr "A tranzakció befejezéséhez átirányításra kerül a PayPalhoz egy új böngészőfülön. A folytatáshoz engedélyezze a felugró ablakokat."
 
 #: node_modules/react-components/containers/payments/PayPal.js:153
 #, javascript-format
@@ -2369,7 +2369,7 @@ msgstr "PayPal számlájához hozzá kell rendelnie egy bankkártyát vagy egy b
 #: node_modules/react-components/containers/payments/PayPal.js:160
 msgctxt "Info"
 msgid "This will enable PayPal to be used to pay for your Proton subscription. We will redirect you to PayPal in a new browser tab. If you use any pop-up blockers, please disable them to continue."
-msgstr ""
+msgstr "Ez lehetővé teszi, hogy a Proton előfizetését PayPallal fizesse. A tranzakció befejezéséhez átirányításra kerül a PayPalhoz egy új böngészőfülön. A folytatáshoz engedélyezze a felugró ablakokat."
 
 #: node_modules/react-components/containers/payments/PayPal.js:168
 msgctxt "Info"
@@ -2379,7 +2379,7 @@ msgstr "Ahhoz, hogy felvehesse fizetési módként, a PayPal számlájához hozz
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:53
 msgctxt "Info"
 msgid "If you purchased or were given a gift code, add it here."
-msgstr ""
+msgstr "Ha van ajándék kódja, itt adja meg."
 
 #: node_modules/react-components/containers/payments/CreditsModal.js:78
 #, javascript-format
@@ -2407,7 +2407,7 @@ msgstr "Választott fizetési mód terhelése előtt mindig az összegyűlt kred
 #, javascript-format
 msgctxt "Info"
 msgid "Amount below minimum. (${ amount })"
-msgstr ""
+msgstr "Az összeg a minimum alatt. (${ amount })"
 
 #: node_modules/react-components/containers/payments/Bitcoin.js:64
 msgctxt "Info"
@@ -2417,12 +2417,12 @@ msgstr "A Bitcoin tranzakciók visszaigazolása időbe telhet (akár 24 órába)
 #: node_modules/react-components/containers/payments/Bitcoin.js:73
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
-msgstr ""
+msgstr "A Bitcoin fizetés után, kövezze a lenti utasításokat a nagyobb csomagra váltáshoz."
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:209
 msgctxt "Info"
 msgid "uploading a backup key"
-msgstr ""
+msgstr "egy tartalék kulcs felöltése"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:219
 msgctxt "Info"
@@ -2433,39 +2433,42 @@ msgstr ""
 #, javascript-format
 msgctxt "Info"
 msgid "You can also reactivate your keys by ${ uploadButton }"
-msgstr ""
+msgstr "Újra tudja aktiválni a kulcsot a ${ uploadButton } is"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:267
 msgctxt "Info"
 msgid "entering your old password"
-msgstr ""
+msgstr "a régi jelszó megadásával"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:284
 msgctxt "Info"
 msgid "If the backup key has been encrypted, you will be prompted to enter the password to decrypt it"
-msgstr ""
+msgstr "Ha a tartalék kulcs titkosítva lett, meg kell adnia a jelszavát a visszafejtéshez"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:288
 #, javascript-format
 msgctxt "Info"
 msgid "You can also reactivate your keys by ${ passwordButton }"
-msgstr ""
+msgstr "Újra tudja aktiválni a kulcsot a ${ passwordButton } is"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:333
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:348
 msgctxt "Info"
 msgid "If a key remains inactive, it means that the decryption password provided does not apply to the key."
-msgstr ""
+msgstr "Ha egy kulcs inaktív maradt, a visszafejtéshez használt jelző nem tartozik a kulcshoz."
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:67
 msgctxt "Info"
 msgid "You can generate a new encryption key if you think your previous key has been compromised."
-msgstr ""
+msgstr "Új titkosítási kulcsot generálhat, ha úgy gondolja, hogy az előző kulcs kompromittálódott."
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:82
 msgctxt "Info"
 msgid "A key with the same encryption algorithm is already active for this address. Generating another key will cause slower account loading and deletion of this key can cause issues. If you are generating a new key because your old key is compromised, please mark that key as compromised. Are you sure you want to continue?"
-msgstr ""
+msgstr "Ehhez a címhez már vagy egy aktív kulcs ugyanilyen titkosítási algoritmussal.\n"
+"Újabb kulcs létrehozása le fogja lassítani a fiók betöltését és a kulcs törlése problémákat okozhat.\n"
+"Amennyiben azért hoz létre új kulcsot, mert a korábbi kompromittált, akkor jelölje meg azt a kulcsot kompromittáltként.\n"
+"Biztos, hogy folytatja?"
 
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:106
 #, javascript-format
@@ -2476,22 +2479,22 @@ msgstr "Új kulcs sikeresen létrehozva. Ujjlenyomat: ${ fp }"
 #: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:28
 msgctxt "Info"
 msgid "Give your public key to your friends, or publish it online, so that everyone can send you end-to-end encrypted email!"
-msgstr ""
+msgstr "Adja meg a publikus kulcsát a barátainak vagy tegye közzé az interneten, hogy mindenki tudjon magának végpontok között titkosított email-t küldeni!"
 
 #: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:46
 msgctxt "Info"
 msgid "IMPORTANT: Downloading your private keys and sending them over or storing them on insecure media can jeopardise the security of your account!"
-msgstr ""
+msgstr "FONTOS: A privát kulcsok letöltése és továbbítása, illetve nem biztonságos adathordozón való tárolása veszélyeztetheti fiókja biztonságát!"
 
 #: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:49
 msgctxt "Info"
 msgid "Please enter a password to encrypt your private key with before exporting."
-msgstr ""
+msgstr "Exportálás előtt, adjon meg egy jelszót a privát kulcs titkosításához."
 
 #: node_modules/react-components/containers/keys/UserKeysSection.js:34
 msgctxt "Info"
 msgid "No contact encryption keys exist"
-msgstr ""
+msgstr "Nem létezik névjegy titkosító kulcs"
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:52
 msgctxt "Info"
@@ -2509,7 +2512,7 @@ msgstr "Kulcs törölve. Ujjlenyomat: ${ fp }"
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:86
 msgctxt "Info"
 msgid "No addresses exist"
-msgstr ""
+msgstr "Nem léteznek címek"
 
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:205
 msgctxt "Info"
@@ -2519,32 +2522,32 @@ msgstr ""
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:14
 msgctxt "Info"
 msgid "Auto-reply is active from the start time to the end time."
-msgstr ""
+msgstr "Az automatikus válasz aktív a kiválasztott kezdeti és befejezési időpont között."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:14
 msgctxt "Info"
 msgid "Auto-reply is active each month between the selected start and end time."
-msgstr ""
+msgstr "Az automatikus válasz minden hónapban aktív a kiválasztott kezdeti és befejezési időpont között."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:14
 msgctxt "Info"
 msgid "Auto-reply is always active on the days of the week you select, between the selected hours."
-msgstr ""
+msgstr "Az automatikus válasz mindig aktív a hét kiválasztott napjain a választott órák között."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:14
 msgctxt "Info"
 msgid "Auto-reply is active each week between the selected start and end time."
-msgstr ""
+msgstr "Az automatikus válasz minden héten aktív a kiválasztott kezdeti és befejezési időpont között."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormPermanent.js:11
 msgctxt "Info"
 msgid "Auto-reply is active until you turn it off."
-msgstr ""
+msgstr "Az automatikus válasz aktív, míg ki nem kapcsolja."
 
 #: node_modules/react-components/containers/autoReply/AutoReplySection.js:45
 msgctxt "Info"
 msgid "Automatic replies can respond automatically to incoming messages (such as when you are on vacation and can't respond)."
-msgstr ""
+msgstr "Automatikus üzenetekkel válaszolhat a beérkező üzenetekre (például amikor nyaralni van és nem tud válaszolni a leveleire)."
 
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:96
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:87
@@ -2646,12 +2649,12 @@ msgstr "Szervezete e-mailjei végpontok közti titkosítása a szervezeti kulccs
 #: node_modules/react-components/containers/addresses/MissingKeysStatus.js:15
 msgctxt "Info"
 msgid "Queued"
-msgstr ""
+msgstr "Sorba állítva"
 
 #: node_modules/react-components/containers/addresses/MissingKeysStatus.js:19
 msgctxt "Info"
 msgid "Done"
-msgstr ""
+msgstr "Kész"
 
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:149
 msgctxt "Info"
@@ -2992,7 +2995,7 @@ msgstr "Nincs elmentve fizetési mód."
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:43
 msgctxt "Info"
 msgid "Expired"
-msgstr ""
+msgstr "Lejárt"
 
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:44
 msgctxt "Info"
@@ -3009,7 +3012,7 @@ msgstr ""
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:71
 msgctxt "Info"
 msgid "Encryption setting updated"
-msgstr ""
+msgstr "Titkosítási beállítás frissítve"
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:50
 msgctxt "Info"
@@ -3136,13 +3139,13 @@ msgctxt "Info"
 msgid "Screenshot(s) attached"
 msgstr "Képernyőkép(ek) csatolva"
 
-#: node_modules/react-components/containers/support/BugModal.js:130
+#: node_modules/react-components/containers/support/BugModal.js:139
 #, javascript-format
 msgctxt "Info"
 msgid "Refreshing the page or ${ link } will automatically resolve most issues."
 msgstr "Az oldal frissítése vagy ${ link } automatikusan megoldja a legtöbb problémát."
 
-#: node_modules/react-components/containers/support/BugModal.js:245
+#: node_modules/react-components/containers/support/BugModal.js:254
 #, javascript-format
 msgctxt "Info"
 msgid "Contact us at ${ criticalEmail } for critical security issues."
@@ -3251,32 +3254,32 @@ msgstr "Automata válaszok létrehozását és kezelését a Szűrők beállít�
 #: node_modules/react-components/containers/payments/CardNumberInput.js:48
 msgctxt "Placeholder"
 msgid "Card number"
-msgstr ""
+msgstr "Kártyaszám"
 
 #: node_modules/react-components/containers/payments/Card.js:22
 msgctxt "Placeholder"
 msgid "Full name"
-msgstr ""
+msgstr "Teljes név"
 
 #: node_modules/react-components/containers/payments/Card.js:79
 msgctxt "Placeholder"
 msgid "ZIP"
-msgstr ""
+msgstr "Irányítószám"
 
 #: node_modules/react-components/containers/payments/Card.js:79
 msgctxt "Placeholder"
 msgid "Postal code"
-msgstr ""
+msgstr "Irányítószám"
 
 #: node_modules/react-components/containers/payments/subscription/CouponForm.js:20
 msgctxt "Placeholder"
 msgid "Coupon"
-msgstr ""
+msgstr "Kupon"
 
 #: node_modules/react-components/containers/payments/PaymentSelector.js:30
 msgctxt "Placeholder"
 msgid "Other"
-msgstr ""
+msgstr "Egyéb"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:362
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:393
@@ -3296,12 +3299,12 @@ msgstr "Jelszó"
 #: node_modules/react-components/containers/organization/OrganizationNameModal.js:24
 msgctxt "Placeholder"
 msgid "Choose a name"
-msgstr ""
+msgstr "Válassz nevet"
 
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:68
 msgctxt "Placeholder"
 msgid "Pick a name"
-msgstr ""
+msgstr "Válassz nevet"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:408
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:139
@@ -3309,7 +3312,7 @@ msgstr ""
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:128
 msgctxt "Placeholder"
 msgid "Confirm"
-msgstr ""
+msgstr "Jóváhagyás"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:118
 #: node_modules/react-components/containers/addresses/EditAddressModal.js:63
@@ -3338,12 +3341,12 @@ msgstr "Kétlépéses kód"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:118
 msgctxt "Placeholder"
 msgid "Feedback"
-msgstr ""
+msgstr "Visszajelzés"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:133
 msgctxt "Placeholder"
 msgid "Email address"
-msgstr ""
+msgstr "E-mail cím"
 
 #: node_modules/react-components/containers/filters/editor/LabelActions.js:24
 msgctxt "Placeholder"
@@ -3373,73 +3376,73 @@ msgstr "Cím"
 #: node_modules/react-components/containers/members/MembersSection.js:131
 msgctxt "Placeholder"
 msgid "Search users"
-msgstr ""
+msgstr "Felhasználók keresése "
 
-#: node_modules/react-components/containers/support/BugModal.js:141
+#: node_modules/react-components/containers/support/BugModal.js:150
 msgctxt "Placeholder"
 msgid "Proton username"
-msgstr ""
+msgstr "Proton felhasználónév"
 
-#: node_modules/react-components/containers/support/BugModal.js:153
+#: node_modules/react-components/containers/support/BugModal.js:162
 msgctxt "Placeholder"
 msgid "A way to contact you"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:177
+#: node_modules/react-components/containers/support/BugModal.js:186
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:206
+#: node_modules/react-components/containers/support/BugModal.js:215
 msgctxt "Placeholder"
 msgid "OS name"
-msgstr ""
+msgstr "Operációs rendszer neve"
 
-#: node_modules/react-components/containers/support/BugModal.js:217
+#: node_modules/react-components/containers/support/BugModal.js:226
 msgctxt "Placeholder"
 msgid "OS version"
-msgstr ""
+msgstr "Operációs rendszer verziója"
 
-#: node_modules/react-components/containers/support/BugModal.js:228
+#: node_modules/react-components/containers/support/BugModal.js:237
 msgctxt "Placeholder"
 msgid "Browser name"
-msgstr ""
+msgstr "Böngésző neve"
 
-#: node_modules/react-components/containers/support/BugModal.js:239
+#: node_modules/react-components/containers/support/BugModal.js:248
 msgctxt "Placeholder"
 msgid "Browser version"
-msgstr ""
+msgstr "Böngésző verziója"
 
 #: node_modules/react-components/containers/login/PasswordForm.js:22
 msgctxt "Placeholder"
 msgid "Username or email"
-msgstr ""
+msgstr "Felhasználónév vagy e-mail cím"
 
 #: node_modules/react-components/containers/login/UnlockForm.js:20
 msgctxt "Placeholder"
 msgid "Mailbox password"
-msgstr ""
+msgstr "Postafiók jelszava"
 
 #: node_modules/react-components/containers/payments/Card.js:57
 msgctxt "Placeholder, make it short"
 msgid "Security code"
-msgstr ""
+msgstr "Biztonsági kód"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:51
 #: node_modules/react-components/containers/payments/EditCardModal.js:41
 msgctxt "Success"
 msgid "Payment method updated"
-msgstr ""
+msgstr "Fizetési mód frissítve"
 
 #: node_modules/react-components/containers/payments/PayPalModal.js:19
 msgctxt "Success"
 msgid "Payment method added"
-msgstr ""
+msgstr "Fizetési mód hozzáadva"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:51
 msgctxt "Success"
 msgid "You have successfully unsubscribed"
-msgstr ""
+msgstr "Sikeresen leiratkoztál"
 
 #: node_modules/react-components/containers/payments/DonateModal.js:33
 msgctxt "Success"
@@ -3449,7 +3452,7 @@ msgstr ""
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:39
 msgctxt "Success"
 msgid "Gift code applied"
-msgstr ""
+msgstr "Ajándék kód elfogadva"
 
 #: node_modules/react-components/containers/payments/CreditsModal.js:58
 msgctxt "Success"
@@ -3465,18 +3468,18 @@ msgstr ""
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:224
 msgctxt "Success"
 msgid "Organization activated"
-msgstr ""
+msgstr "Szervezet aktiválva"
 
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:86
 #: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:50
 msgctxt "Success"
 msgid "Keys updated"
-msgstr ""
+msgstr "Kulcsok frissítve"
 
 #: node_modules/react-components/containers/addresses/EditAddressModal.js:42
 msgctxt "Success"
 msgid "Address updated"
-msgstr ""
+msgstr "Cím frissítve"
 
 #: node_modules/react-components/containers/addresses/PMSignatureField.js:29
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:49
@@ -3487,17 +3490,17 @@ msgstr ""
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:29
 msgctxt "Success"
 msgid "Preference saved"
-msgstr ""
+msgstr "Beállítások elmentve"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:64
 msgctxt "Success"
 msgid "Address added"
-msgstr ""
+msgstr "Cím hozzáadva"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:61
 msgctxt "Success"
 msgid "Email updated"
-msgstr ""
+msgstr "E-mail frissítve"
 
 #: node_modules/react-components/containers/domains/DomainModal.js:107
 msgctxt "Success"
@@ -3512,7 +3515,7 @@ msgstr ""
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:114
 msgctxt "Success"
 msgid "Password updated"
-msgstr ""
+msgstr "Jelszó frissítve"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:77
 msgctxt "Success"
@@ -3559,7 +3562,7 @@ msgctxt "Success"
 msgid "Locale updated"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:111
+#: node_modules/react-components/containers/support/BugModal.js:120
 msgctxt "Success"
 msgid "Bug reported"
 msgstr ""
@@ -3756,12 +3759,12 @@ msgstr ""
 #: node_modules/react-components/containers/payments/BitcoinDetails.js:16
 msgctxt "Label"
 msgid "BTC address"
-msgstr ""
+msgstr "BTC cím"
 
 #: node_modules/react-components/containers/payments/Payment.js:74
 msgctxt "Label"
 msgid "Payment method"
-msgstr ""
+msgstr "Fizetési mód"
 
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:42
 #, javascript-format
@@ -3773,12 +3776,12 @@ msgstr "Írja be a következő ujjlenyomattal rendelkező kulcshoz tartozó jels
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:44
 msgctxt "Label"
 msgid "Enter password"
-msgstr ""
+msgstr "Jelszó megadása"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:309
 msgctxt "Label"
 msgid "Enter your previous password from before your account was reset:"
-msgstr ""
+msgstr "Adja meg a fiók visszaállítása előtti jelszavát:"
 
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
 msgctxt "Label"
@@ -3961,7 +3964,7 @@ msgstr "E-mail"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:125
 #: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
 #: node_modules/react-components/containers/notification/EmailSection.js:66
-#: node_modules/react-components/containers/support/BugModal.js:147
+#: node_modules/react-components/containers/support/BugModal.js:156
 msgctxt "Label"
 msgid "Email address"
 msgstr "E-mail cím"
@@ -3997,7 +4000,7 @@ msgctxt "Label"
 msgid "Here is a basic DMARC record that does nothing except email you reports."
 msgstr "Ez egy alapszintű DMARC rekord, ami nem csinál mást mint e-mail jelentéseket küld Önnek."
 
-#: node_modules/react-components/containers/support/BugModal.js:135
+#: node_modules/react-components/containers/support/BugModal.js:144
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
 msgctxt "Label"
 msgid "Proton username"
@@ -4302,37 +4305,37 @@ msgctxt "Label"
 msgid "Role"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:159
+#: node_modules/react-components/containers/support/BugModal.js:168
 msgctxt "Label"
 msgid "Category"
 msgstr "Kategória"
 
-#: node_modules/react-components/containers/support/BugModal.js:171
+#: node_modules/react-components/containers/support/BugModal.js:180
 msgctxt "Label"
 msgid "What happened?"
 msgstr "Mi történt?"
 
-#: node_modules/react-components/containers/support/BugModal.js:192
+#: node_modules/react-components/containers/support/BugModal.js:201
 msgctxt "Label"
 msgid "System information"
 msgstr "Rendszerinfromáció"
 
-#: node_modules/react-components/containers/support/BugModal.js:200
+#: node_modules/react-components/containers/support/BugModal.js:209
 msgctxt "Label"
 msgid "Operating system"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:211
+#: node_modules/react-components/containers/support/BugModal.js:220
 msgctxt "Label"
 msgid "Operating system version"
 msgstr "Az operációs rendszer verziója"
 
-#: node_modules/react-components/containers/support/BugModal.js:222
+#: node_modules/react-components/containers/support/BugModal.js:231
 msgctxt "Label"
 msgid "Browser"
 msgstr "Böngésző"
 
-#: node_modules/react-components/containers/support/BugModal.js:233
+#: node_modules/react-components/containers/support/BugModal.js:242
 msgctxt "Label"
 msgid "Browser version"
 msgstr "Böngészőverzió"
@@ -4904,7 +4907,7 @@ msgctxt "Link"
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: node_modules/react-components/containers/support/BugModal.js:95
+#: node_modules/react-components/containers/support/BugModal.js:89
 msgctxt "Link"
 msgid "clearing your browser cache"
 msgstr "böngésző gyorsítótárának ürítése"
@@ -5240,7 +5243,7 @@ msgctxt "Warning"
 msgid "By disabling the logs, you will also clear your entire logs history. Are you sure you want to disable the logs?"
 msgstr "A naplózás letiltásával törölheti a teljes naplózási előzményeket. Biztos benne, hogy le akarja tiltani a naplózást?"
 
-#: node_modules/react-components/containers/support/BugModal.js:131
+#: node_modules/react-components/containers/support/BugModal.js:140
 msgctxt "Warning"
 msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
 msgstr "A hibajelentések nem végpontok közt titkosítottak, kérjük ne küldjön semmilyen érzékeny információt."
@@ -6304,101 +6307,101 @@ msgctxt "Error notification in the bug report modal when the user upload file"
 msgid "No image selected"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:35
-#: node_modules/react-components/containers/support/BugModal.js:49
+#: node_modules/react-components/containers/support/BugModal.js:38
+#: node_modules/react-components/containers/support/BugModal.js:52
 msgctxt "Bug category"
 msgid "Login problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:36
+#: node_modules/react-components/containers/support/BugModal.js:39
 msgctxt "Bug category"
 msgid "Sign up problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:37
+#: node_modules/react-components/containers/support/BugModal.js:40
 msgctxt "Bug category"
 msgid "Bridge problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:38
+#: node_modules/react-components/containers/support/BugModal.js:41
 msgctxt "Bug category"
 msgid "Import / export problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:39
+#: node_modules/react-components/containers/support/BugModal.js:42
 msgctxt "Bug category"
 msgid "Custom domains problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:40
-#: node_modules/react-components/containers/support/BugModal.js:51
+#: node_modules/react-components/containers/support/BugModal.js:43
+#: node_modules/react-components/containers/support/BugModal.js:54
 msgctxt "Bug category"
 msgid "Payments problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:41
-#: node_modules/react-components/containers/support/BugModal.js:55
+#: node_modules/react-components/containers/support/BugModal.js:44
+#: node_modules/react-components/containers/support/BugModal.js:58
 msgctxt "Bug category"
 msgid "Connection problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:42
+#: node_modules/react-components/containers/support/BugModal.js:45
 msgctxt "Bug category"
 msgid "Slow speed problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:43
+#: node_modules/react-components/containers/support/BugModal.js:46
 msgctxt "Bug category"
 msgid "VPN problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:44
-#: node_modules/react-components/containers/support/BugModal.js:60
+#: node_modules/react-components/containers/support/BugModal.js:47
+#: node_modules/react-components/containers/support/BugModal.js:63
 msgctxt "Bug category"
 msgid "Feature request"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:45
+#: node_modules/react-components/containers/support/BugModal.js:48
 msgctxt "Bug category"
 msgid "Other"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:50
+#: node_modules/react-components/containers/support/BugModal.js:53
 msgctxt "Bug category"
 msgid "Signup problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:52
+#: node_modules/react-components/containers/support/BugModal.js:55
 msgctxt "Bug category"
 msgid "Installation problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:53
+#: node_modules/react-components/containers/support/BugModal.js:56
 msgctxt "Bug category"
 msgid "Update problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:54
+#: node_modules/react-components/containers/support/BugModal.js:57
 msgctxt "Bug category"
 msgid "Application problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:56
+#: node_modules/react-components/containers/support/BugModal.js:59
 msgctxt "Bug category"
 msgid "Speed problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:57
+#: node_modules/react-components/containers/support/BugModal.js:60
 msgctxt "Bug category"
 msgid "Manual setup problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:58
+#: node_modules/react-components/containers/support/BugModal.js:61
 msgctxt "Bug category"
 msgid "Website access problem"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:59
+#: node_modules/react-components/containers/support/BugModal.js:62
 msgctxt "Bug category"
 msgid "Streaming problem"
 msgstr ""
@@ -6408,7 +6411,7 @@ msgctxt "Action to select a title for the bug report modal"
 msgid "Select"
 msgstr ""
 
-#: node_modules/react-components/containers/support/BugModal.js:184
+#: node_modules/react-components/containers/support/BugModal.js:193
 msgctxt "Label, make it short please"
 msgid "Attach screenshot(s)"
 msgstr ""

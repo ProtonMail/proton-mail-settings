@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2019-12-30 04:20\n"
+"PO-Revision-Date: 2020-01-05 01:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -205,7 +205,7 @@ msgstr "错误"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:60
 msgctxt "Error"
 msgid "Member keys are not set up."
-msgstr ""
+msgstr "会员密钥未设置。"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:46
 #, javascript-format
@@ -454,7 +454,7 @@ msgstr "至少一个条件满足（或）"
 #: node_modules/proton-shared/lib/themes/themes.js:13
 msgctxt "Theme"
 msgid "Default theme"
-msgstr ""
+msgstr "默认主题"
 
 #: node_modules/proton-shared/lib/themes/themes.js:23
 msgctxt "Theme"
@@ -474,7 +474,7 @@ msgstr "蓝色"
 #: node_modules/proton-shared/lib/themes/themes.js:51
 msgctxt "Theme"
 msgid "Dark theme"
-msgstr ""
+msgstr "暗色主题"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
@@ -574,7 +574,7 @@ msgstr "订单概览"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:163
 msgctxt "Title"
 msgid "Upgrading account"
-msgstr ""
+msgstr "正在升级账户"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:177
 msgctxt "Title"
@@ -605,35 +605,35 @@ msgstr "两年优惠"
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
-msgstr ""
+msgstr "实际支付一个月 ${ amount } ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
-msgstr ""
+msgstr "实际支付一年 ${ amount } ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
 msgctxt "Title"
 msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
-msgstr ""
+msgstr "实际支付两年 ${ amount } ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
 #, javascript-format
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 一年后续费价 ${ amount }/年（节省 20%）。"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
 #, javascript-format
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 两年后续费价 ${ amount }/两年（节省 33%）。"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 两年后套装续费价 ${ amount }/两年（节省 47%）。"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
 msgctxt "Title"
@@ -865,7 +865,7 @@ msgstr "推送通知"
 #: node_modules/react-components/containers/notification/EmailModal.js:33
 msgctxt "Title"
 msgid "Confirm address"
-msgstr ""
+msgstr "确认地址"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:70
 msgctxt "Title"
@@ -880,7 +880,7 @@ msgstr "密保与通知"
 #: node_modules/react-components/containers/domains/CatchAllSection.js:8
 msgctxt "Title"
 msgid "Catch all "
-msgstr ""
+msgstr "全部接受 "
 
 #: node_modules/react-components/containers/domains/DomainModal.js:159
 msgctxt "Title"
@@ -895,7 +895,7 @@ msgstr "添加域名"
 #: node_modules/react-components/containers/domains/CatchAllModal.js:13
 msgctxt "Title"
 msgid "Catch all address"
-msgstr ""
+msgstr "全部接受地址"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:43
 msgctxt "Title"
@@ -1125,7 +1125,7 @@ msgstr "自定界面外观"
 #: node_modules/react-components/containers/themes/ThemesSection.js:54
 msgctxt "Title"
 msgid "Change theme"
-msgstr ""
+msgstr "更改主题"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:74
 #: src/app/containers/AppearanceContainer.js:22
@@ -1251,7 +1251,7 @@ msgctxt "Title"
 msgid "Get 20% discount"
 msgstr "享八折优惠"
 
-#: node_modules/react-components/containers/support/BugModal.js:127
+#: node_modules/react-components/containers/support/BugModal.js:136
 msgctxt "Title"
 msgid "Report bug"
 msgstr "反馈问题"
@@ -1352,7 +1352,7 @@ msgid "Mailbox"
 msgstr "邮箱"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:40
+#: src/app/components/layout/PrivateLayout.js:39
 msgctxt "Title"
 msgid "Settings"
 msgstr "设置"
@@ -1365,7 +1365,7 @@ msgstr "名称"
 #: src/app/containers/DomainsContainer.js:22
 msgctxt "Title"
 msgid "Catch-all"
-msgstr ""
+msgstr "全部接受"
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -1455,7 +1455,7 @@ msgstr "ProtonVPN"
 #: src/app/containers/OverviewContainer.js:23
 msgctxt "Title"
 msgid "Overview - ProtonMail"
-msgstr ""
+msgstr "概述 - ProtonMail"
 
 #: node_modules/react-components/components/modal/Confirm.js:11
 #: node_modules/react-components/components/modal/FormModal.js:19
@@ -1705,8 +1705,8 @@ msgstr "使用礼品码"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:311
 msgctxt "Action"
-msgid "Pay annualy and save 20%!"
-msgstr "年费支付享八折优惠！"
+msgid "Pay annually and save 20%!"
+msgstr "年费可享八折优惠！"
 
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
 msgctxt "Action"
@@ -1759,7 +1759,7 @@ msgstr "确定"
 #: node_modules/react-components/containers/login/LoginForm.js:267
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
-#: node_modules/react-components/containers/support/BugModal.js:126
+#: node_modules/react-components/containers/support/BugModal.js:135
 msgctxt "Action"
 msgid "Submit"
 msgstr "提交"
@@ -1882,7 +1882,7 @@ msgstr "添加用户"
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
 msgid "Set catch-all"
-msgstr ""
+msgstr "设置全部接受"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:96
 #: node_modules/react-components/containers/domains/DomainActions.js:40
@@ -2043,7 +2043,7 @@ msgstr "查看键盘快捷键"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:33
+#: src/app/components/layout/PrivateLayout.js:32
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "升级"
@@ -2068,12 +2068,12 @@ msgctxt "Action"
 msgid "Add screenshot(s)"
 msgstr "添加屏幕截图"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:203
 msgctxt "Action"
 msgid "Hide info"
 msgstr "收起"
 
-#: node_modules/react-components/containers/support/BugModal.js:194
+#: node_modules/react-components/containers/support/BugModal.js:203
 msgctxt "Action"
 msgid "Show info"
 msgstr "展开"
@@ -2137,12 +2137,12 @@ msgstr "其他设备全部下线"
 #: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
 msgctxt "Action"
 msgid "Next month"
-msgstr ""
+msgstr "下月"
 
 #: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
 msgctxt "Action"
 msgid "Prev month"
-msgstr ""
+msgstr "上月"
 
 #: node_modules/react-components/components/modal/Confirm.js:10
 #: node_modules/react-components/components/modal/Confirm.js:12
@@ -2210,7 +2210,7 @@ msgstr "尚未开通"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr ""
+msgstr "要管理您的套餐，请自定义您当前的套餐或从计划表中选择另一个套餐。"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -2347,7 +2347,7 @@ msgstr "同时定购 ProtonMail 和 ProtonVPN 可享八折优惠。"
 #, javascript-format
 msgctxt "Info"
 msgid "You are currently subscribed to ${ names }."
-msgstr ""
+msgstr "您的当前套餐 ${ names }"
 
 #: node_modules/react-components/containers/payments/PayPal.js:135
 msgctxt "Info"
@@ -2656,7 +2656,7 @@ msgstr "完成"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:149
 msgctxt "Info"
 msgid "Before you can start sending and receiving emails from your new addresses you need to create encryption keys for them."
-msgstr ""
+msgstr "使用新地址收发邮件前，您需要先为其创建密钥。"
 
 #: node_modules/react-components/containers/addresses/PmMePanel.js:21
 msgctxt "Info"
@@ -2702,7 +2702,7 @@ msgstr "ProtonMail 地址一经创建无法删除（只能停用），且无论�
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:62
 msgctxt "Info"
 msgid "Premium plans let you add multiple email addresses to your account. All the emails associated with them will appear in the same mailbox. If you are the admin of a Professional or Visionary plan, you can manage email addresses for each user in your organization. The email address at the top of the list will automatically be selected as the default email address."
-msgstr ""
+msgstr "高级套餐允许您将多个电子邮件地址添加到您的帐户。所有与此相关的电子邮件都会出现在同一个邮箱中。 如果您是专业套餐或梦想者套餐的管理员，您可以管理您组织中每个用户的电子邮件地址。 列表顶部的电子邮件地址将自动被选为默认的电子邮件地址。"
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
@@ -3037,7 +3037,7 @@ msgstr "文本或匹配规则"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:164
 msgctxt "Info"
 msgid "Custom filters work on all new emails, including incoming emails as well as sent emails. To find out how to write Sieve filters."
-msgstr ""
+msgstr "自定义过滤器适用于所有新的邮件，包括收到的邮件和已发送的邮件。要找到如何写 Sieve 过滤器。"
 
 #: node_modules/react-components/containers/filters/FilterItemRow.js:35
 msgctxt "Info"
@@ -3064,7 +3064,7 @@ msgstr "确定要永久删除此用户吗？该用户的所有邮件和地址都
 msgctxt "Info"
 msgid "user used"
 msgid_plural "users used"
-msgstr[0] ""
+msgstr[0] "用户已使用"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:93
 #: node_modules/react-components/containers/themes/ThemesSection.js:75
@@ -3133,13 +3133,13 @@ msgctxt "Info"
 msgid "Screenshot(s) attached"
 msgstr "已添加截图"
 
-#: node_modules/react-components/containers/support/BugModal.js:130
+#: node_modules/react-components/containers/support/BugModal.js:139
 #, javascript-format
 msgctxt "Info"
 msgid "Refreshing the page or ${ link } will automatically resolve most issues."
 msgstr "大多数问题都能通过刷新页面或${link}来解决。"
 
-#: node_modules/react-components/containers/support/BugModal.js:245
+#: node_modules/react-components/containers/support/BugModal.js:254
 #, javascript-format
 msgctxt "Info"
 msgid "Contact us at ${ criticalEmail } for critical security issues."
@@ -3185,7 +3185,7 @@ msgstr "除非您手动退出账户或修改密码，登录状态最长可维持
 #: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
 msgctxt "Info"
 msgid "Week"
-msgstr ""
+msgstr "周"
 
 #: src/app/containers/OrganizationContainer.js:43
 msgctxt "Info"
@@ -3372,37 +3372,37 @@ msgctxt "Placeholder"
 msgid "Search users"
 msgstr "搜索用户"
 
-#: node_modules/react-components/containers/support/BugModal.js:141
+#: node_modules/react-components/containers/support/BugModal.js:150
 msgctxt "Placeholder"
 msgid "Proton username"
 msgstr "Proton 用户名"
 
-#: node_modules/react-components/containers/support/BugModal.js:153
+#: node_modules/react-components/containers/support/BugModal.js:162
 msgctxt "Placeholder"
 msgid "A way to contact you"
 msgstr "您的联系方式"
 
-#: node_modules/react-components/containers/support/BugModal.js:177
+#: node_modules/react-components/containers/support/BugModal.js:186
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
 msgstr "请说明你的问题，并附上看到的所有错误提示"
 
-#: node_modules/react-components/containers/support/BugModal.js:206
+#: node_modules/react-components/containers/support/BugModal.js:215
 msgctxt "Placeholder"
 msgid "OS name"
 msgstr "操作系统名称"
 
-#: node_modules/react-components/containers/support/BugModal.js:217
+#: node_modules/react-components/containers/support/BugModal.js:226
 msgctxt "Placeholder"
 msgid "OS version"
 msgstr "操作系统版本"
 
-#: node_modules/react-components/containers/support/BugModal.js:228
+#: node_modules/react-components/containers/support/BugModal.js:237
 msgctxt "Placeholder"
 msgid "Browser name"
 msgstr "浏览器名称"
 
-#: node_modules/react-components/containers/support/BugModal.js:239
+#: node_modules/react-components/containers/support/BugModal.js:248
 msgctxt "Placeholder"
 msgid "Browser version"
 msgstr "浏览器版本"
@@ -3556,7 +3556,7 @@ msgctxt "Success"
 msgid "Locale updated"
 msgstr "语言设置已生效"
 
-#: node_modules/react-components/containers/support/BugModal.js:111
+#: node_modules/react-components/containers/support/BugModal.js:120
 msgctxt "Success"
 msgid "Bug reported"
 msgstr "问题已反馈"
@@ -3958,7 +3958,7 @@ msgstr "邮箱"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:125
 #: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
 #: node_modules/react-components/containers/notification/EmailSection.js:66
-#: node_modules/react-components/containers/support/BugModal.js:147
+#: node_modules/react-components/containers/support/BugModal.js:156
 msgctxt "Label"
 msgid "Email address"
 msgstr "邮箱地址"
@@ -3994,7 +3994,7 @@ msgctxt "Label"
 msgid "Here is a basic DMARC record that does nothing except email you reports."
 msgstr "下面是一条简单的 DMARC 记录，表示只将错误报告发送给您，不采取其他操作。"
 
-#: node_modules/react-components/containers/support/BugModal.js:135
+#: node_modules/react-components/containers/support/BugModal.js:144
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
 msgctxt "Label"
 msgid "Proton username"
@@ -4299,37 +4299,37 @@ msgctxt "Label"
 msgid "Role"
 msgstr "身份"
 
-#: node_modules/react-components/containers/support/BugModal.js:159
+#: node_modules/react-components/containers/support/BugModal.js:168
 msgctxt "Label"
 msgid "Category"
 msgstr "类别"
 
-#: node_modules/react-components/containers/support/BugModal.js:171
+#: node_modules/react-components/containers/support/BugModal.js:180
 msgctxt "Label"
 msgid "What happened?"
 msgstr "问题描述"
 
-#: node_modules/react-components/containers/support/BugModal.js:192
+#: node_modules/react-components/containers/support/BugModal.js:201
 msgctxt "Label"
 msgid "System information"
 msgstr "系统信息"
 
-#: node_modules/react-components/containers/support/BugModal.js:200
+#: node_modules/react-components/containers/support/BugModal.js:209
 msgctxt "Label"
 msgid "Operating system"
 msgstr "操作系统"
 
-#: node_modules/react-components/containers/support/BugModal.js:211
+#: node_modules/react-components/containers/support/BugModal.js:220
 msgctxt "Label"
 msgid "Operating system version"
 msgstr "操作系统版本"
 
-#: node_modules/react-components/containers/support/BugModal.js:222
+#: node_modules/react-components/containers/support/BugModal.js:231
 msgctxt "Label"
 msgid "Browser"
 msgstr "浏览器"
 
-#: node_modules/react-components/containers/support/BugModal.js:233
+#: node_modules/react-components/containers/support/BugModal.js:242
 msgctxt "Label"
 msgid "Browser version"
 msgstr "浏览器版本"
@@ -4411,7 +4411,7 @@ msgstr[0] "${ value } GB 存储空间"
 msgctxt "Option"
 msgid "${ value } custom domain"
 msgid_plural "${ value } custom domains"
-msgstr[0] ""
+msgstr[0] "${ value } 个自定域名"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgctxt "Option"
@@ -4896,7 +4896,7 @@ msgctxt "Link"
 msgid "Edit"
 msgstr "修改"
 
-#: node_modules/react-components/containers/support/BugModal.js:95
+#: node_modules/react-components/containers/support/BugModal.js:89
 msgctxt "Link"
 msgid "clearing your browser cache"
 msgstr "清除浏览器缓存"
@@ -5227,7 +5227,7 @@ msgctxt "Warning"
 msgid "By disabling the logs, you will also clear your entire logs history. Are you sure you want to disable the logs?"
 msgstr "关闭记录后，现有记录将被清空。确定要关闭记录吗？"
 
-#: node_modules/react-components/containers/support/BugModal.js:131
+#: node_modules/react-components/containers/support/BugModal.js:140
 msgctxt "Warning"
 msgid "Bug reports are not end-to-end encrypted, please do not send any sensitive information."
 msgstr "反馈内容不会经过端对端加密，请勿发送敏感信息。"
@@ -5307,13 +5307,13 @@ msgstr "每天 ${ formattedHours }"
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeekString } @ ${ formattedHours }"
-msgstr ""
+msgstr "每${ dayOfWeekString } @{ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:60
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonthString } @ ${ formattedHours }"
-msgstr ""
+msgstr "每${ dayOfMonthString } @{ formattedHours }"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:31
 msgctxt "Restore administrator panel"
@@ -5609,7 +5609,7 @@ msgstr "状态"
 #: node_modules/react-components/containers/domains/AddressesTable.js:37
 msgctxt "Title header for addresses domain table"
 msgid "Catch all"
-msgstr ""
+msgstr "全部接受"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:27
 msgctxt "Success message"
@@ -5640,7 +5640,7 @@ msgstr "已下线"
 #: node_modules/react-components/containers/domains/DomainsSection.js:48
 msgctxt "Message"
 msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
-msgstr ""
+msgstr "添加域名到您的自定义的电子邮件地址以接受邮件，并将更多用户添加到您的机构(梦想者和专业帐户可用)。"
 
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:34
 msgctxt "Message"
@@ -6291,101 +6291,101 @@ msgctxt "Error notification in the bug report modal when the user upload file"
 msgid "No image selected"
 msgstr "没有选择图像"
 
-#: node_modules/react-components/containers/support/BugModal.js:35
-#: node_modules/react-components/containers/support/BugModal.js:49
+#: node_modules/react-components/containers/support/BugModal.js:38
+#: node_modules/react-components/containers/support/BugModal.js:52
 msgctxt "Bug category"
 msgid "Login problem"
 msgstr "登录问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:36
+#: node_modules/react-components/containers/support/BugModal.js:39
 msgctxt "Bug category"
 msgid "Sign up problem"
 msgstr "注册问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:37
+#: node_modules/react-components/containers/support/BugModal.js:40
 msgctxt "Bug category"
 msgid "Bridge problem"
 msgstr "Bridge 问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:38
+#: node_modules/react-components/containers/support/BugModal.js:41
 msgctxt "Bug category"
 msgid "Import / export problem"
 msgstr "导入/导出问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:39
+#: node_modules/react-components/containers/support/BugModal.js:42
 msgctxt "Bug category"
 msgid "Custom domains problem"
 msgstr "自定义域名问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:40
-#: node_modules/react-components/containers/support/BugModal.js:51
+#: node_modules/react-components/containers/support/BugModal.js:43
+#: node_modules/react-components/containers/support/BugModal.js:54
 msgctxt "Bug category"
 msgid "Payments problem"
 msgstr "支付问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:41
-#: node_modules/react-components/containers/support/BugModal.js:55
+#: node_modules/react-components/containers/support/BugModal.js:44
+#: node_modules/react-components/containers/support/BugModal.js:58
 msgctxt "Bug category"
 msgid "Connection problem"
 msgstr "连接问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:42
+#: node_modules/react-components/containers/support/BugModal.js:45
 msgctxt "Bug category"
 msgid "Slow speed problem"
 msgstr "速度缓慢"
 
-#: node_modules/react-components/containers/support/BugModal.js:43
+#: node_modules/react-components/containers/support/BugModal.js:46
 msgctxt "Bug category"
 msgid "VPN problem"
 msgstr "VPN 问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:44
-#: node_modules/react-components/containers/support/BugModal.js:60
+#: node_modules/react-components/containers/support/BugModal.js:47
+#: node_modules/react-components/containers/support/BugModal.js:63
 msgctxt "Bug category"
 msgid "Feature request"
 msgstr "功能建议"
 
-#: node_modules/react-components/containers/support/BugModal.js:45
+#: node_modules/react-components/containers/support/BugModal.js:48
 msgctxt "Bug category"
 msgid "Other"
 msgstr "其他"
 
-#: node_modules/react-components/containers/support/BugModal.js:50
+#: node_modules/react-components/containers/support/BugModal.js:53
 msgctxt "Bug category"
 msgid "Signup problem"
 msgstr "注册问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:52
+#: node_modules/react-components/containers/support/BugModal.js:55
 msgctxt "Bug category"
 msgid "Installation problem"
 msgstr "安装问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:53
+#: node_modules/react-components/containers/support/BugModal.js:56
 msgctxt "Bug category"
 msgid "Update problem"
 msgstr "升级问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:54
+#: node_modules/react-components/containers/support/BugModal.js:57
 msgctxt "Bug category"
 msgid "Application problem"
 msgstr "程序问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:56
+#: node_modules/react-components/containers/support/BugModal.js:59
 msgctxt "Bug category"
 msgid "Speed problem"
 msgstr "速度问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:57
+#: node_modules/react-components/containers/support/BugModal.js:60
 msgctxt "Bug category"
 msgid "Manual setup problem"
 msgstr "手动配置问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:58
+#: node_modules/react-components/containers/support/BugModal.js:61
 msgctxt "Bug category"
 msgid "Website access problem"
 msgstr "网站连接问题"
 
-#: node_modules/react-components/containers/support/BugModal.js:59
+#: node_modules/react-components/containers/support/BugModal.js:62
 msgctxt "Bug category"
 msgid "Streaming problem"
 msgstr "视频播放问题"
@@ -6395,7 +6395,7 @@ msgctxt "Action to select a title for the bug report modal"
 msgid "Select"
 msgstr "选择"
 
-#: node_modules/react-components/containers/support/BugModal.js:184
+#: node_modules/react-components/containers/support/BugModal.js:193
 msgctxt "Label, make it short please"
 msgid "Attach screenshot(s)"
 msgstr "添加截图"
@@ -6468,12 +6468,12 @@ msgstr "作废"
 #: node_modules/react-components/containers/invoices/InvoiceState.js:19
 msgctxt "Invoice state display as badge"
 msgid "Billed"
-msgstr ""
+msgstr "账单"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:20
 msgctxt "Invoice state display as badge"
 msgid "Writeoff"
-msgstr ""
+msgstr "注销"
 
 #: node_modules/react-components/containers/invoices/InvoiceActions.js:12
 msgctxt "Title for PDF file"
@@ -6570,13 +6570,13 @@ msgstr "ProtonVPN 设置网页版"
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
+msgstr[0] "${ hours } 小时"
 
 #: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
+msgstr[0] "${ minutes } 分钟"
 
 #: node_modules/react-components/components/toggle/Toggle.js:10
 msgctxt "Toggle button"
@@ -6591,31 +6591,31 @@ msgstr "关"
 #: node_modules/react-components/components/countdown/Countdown.js:27
 msgctxt "Countdown status"
 msgid "Expired"
-msgstr ""
+msgstr "已过期"
 
 #: node_modules/react-components/components/countdown/Countdown.js:39
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ days } day"
 msgid_plural "${ days } days"
-msgstr[0] ""
+msgstr[0] "${ days } 天"
 
 #: node_modules/react-components/components/countdown/Countdown.js:40
 msgctxt "Countdown unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
+msgstr[0] "${ hours } 小时"
 
 #: node_modules/react-components/components/countdown/Countdown.js:41
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ minutes } minute"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
+msgstr[0] "${ minutes } 分钟"
 
 #: node_modules/react-components/components/countdown/Countdown.js:42
 msgctxt "Countdown unit"
 msgid "${ seconds } second"
 msgid_plural "${ seconds } seconds"
-msgstr[0] ""
+msgstr[0] "${ seconds } 秒"
 
