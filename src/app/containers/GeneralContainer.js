@@ -1,6 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { LanguageSection, DesktopNotificationSection, MessagesSection, ShortcutsSection, SearchSection } from 'react-components';
+import {
+    LanguageSection,
+    DesktopNotificationSection,
+    MessagesSection,
+    ShortcutsSection,
+    SearchSection
+} from 'react-components';
 
 import locales from '../locales';
 import Page from '../components/Page';
@@ -35,9 +42,9 @@ export const getGeneralPage = () => {
     };
 };
 
-const GeneralContainer = () => {
+const GeneralContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getGeneralPage()}>
+        <Page config={getGeneralPage()} setActiveSection={setActiveSection}>
             <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
@@ -45,6 +52,10 @@ const GeneralContainer = () => {
             <ShortcutsSection />
         </Page>
     );
+};
+
+GeneralContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default GeneralContainer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import {
     ProtonVPNClientsSection,
@@ -34,15 +35,19 @@ export const getVPNPage = () => {
     };
 };
 
-const VPNContainer = () => {
+const VPNContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getVPNPage()}>
+        <Page config={getVPNPage()} setActiveSection={setActiveSection}>
             <ProtonVPNClientsSection />
             <ProtonVPNCredentialsSection />
             <OpenVPNAccountSection />
             <ProtonVPNResourcesSection />
         </Page>
     );
+};
+
+VPNContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default VPNContainer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
 import Page from '../components/Page';
@@ -22,13 +23,17 @@ export const getFiltersPage = () => {
     };
 };
 
-const FiltersContainer = () => {
+const FiltersContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getFiltersPage()}>
+        <Page config={getFiltersPage()} setActiveSection={setActiveSection}>
             <FiltersSection />
             <SpamFiltersSection />
         </Page>
     );
+};
+
+FiltersContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default FiltersContainer;

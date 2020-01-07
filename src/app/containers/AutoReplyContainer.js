@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { AutoReplySection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -27,9 +28,9 @@ export const getAutoReply = () => {
     };
 };
 
-const AutoReplyContainer = () => {
+const AutoReplyContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getAutoReply()}>
+        <Page config={getAutoReply()} setActiveSection={setActiveSection}>
             <AutoReplySection id="auto-reply" />
             <RelatedSettingsSection
                 list={[
@@ -44,6 +45,10 @@ const AutoReplyContainer = () => {
             />
         </Page>
     );
+};
+
+AutoReplyContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AutoReplyContainer;

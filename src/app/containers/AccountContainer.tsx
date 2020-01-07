@@ -45,9 +45,13 @@ export const getAccountPage = (): PageConfig => {
     };
 };
 
-const AccountContainer = () => {
+interface Props {
+    setActiveSection: () => void;
+}
+
+const AccountContainer = ({ setActiveSection }: Props) => {
     return (
-        <Page config={getAccountPage()}>
+        <Page config={getAccountPage()} setActiveSection={setActiveSection}>
             <UsernameSection />
             <PasswordsSection />
             <TwoFactorSection />

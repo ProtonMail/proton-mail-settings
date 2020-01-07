@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { DomainsSection, RelatedSettingsSection, CatchAllSection, useOrganization } from 'react-components';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -36,8 +37,7 @@ const getList = ({ MaxMembers = 0 } = {}) => {
         return [
             {
                 icon: 'contacts-group-people',
-                text: c('Info')
-                    .t`Go to the User Settings if you want to create and manage users in your organization.`,
+                text: c('Info').t`Go to the User Settings if you want to create and manage users in your organization.`,
                 link: c('Link').t`User settings`,
                 to: '/settings/members'
             },
@@ -69,15 +69,19 @@ const getList = ({ MaxMembers = 0 } = {}) => {
     ];
 };
 
-const DomainsContainer = () => {
+const DomainsContainer = ({ setActiveSection }) => {
     const [organization] = useOrganization();
     return (
-        <Page config={getDomainsPage()}>
+        <Page config={getDomainsPage()} setActiveSection={setActiveSection}>
             <DomainsSection />
             <CatchAllSection />
             <RelatedSettingsSection list={getList(organization)} />
         </Page>
     );
+};
+
+DomainsContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default DomainsContainer;

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Children, isValidElement, cloneElement, useState, useEffect, useRef } from 'react';
-import { ObserverSections, SubSidebar, SettingsTitle, usePermissions, Paragraph } from 'react-components';
+import { Children, isValidElement, cloneElement, useEffect, useRef } from 'react';
+import { ObserverSections, SettingsTitle, usePermissions, Paragraph } from 'react-components';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -36,12 +36,12 @@ export interface PageConfig {
 interface Props extends RouteComponentProps {
     config: PageConfig;
     children?: React.ReactNode;
+    setActiveSection?: () => void;
 }
 
-const Page = ({ config, location, children }: Props) => {
+const Page = ({ config, location, children, setActiveSection }: Props) => {
     const userPermissions = usePermissions();
     const { sections = [], permissions: pagePermissions = [], text } = config;
-    const [activeSection, setActiveSection] = useState('');
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -99,26 +99,23 @@ const Page = ({ config, location, children }: Props) => {
     }
 
     return (
-        <>
-            {sections.length ? <SubSidebar activeSection={activeSection} list={sections} /> : null}
-            <Main>
-                <SettingsTitle>{text}</SettingsTitle>
-                <div className="container-section-sticky" ref={containerRef}>
-                    <ObserverSections setActiveSection={setActiveSection}>
-                        {Children.map(children, (child, index) => {
-                            if (isValidElement<SectionProps>(child)) {
-                                const { id, permissions: sectionPermissions = [] } =
-                                    sections[index] || ({} as SectionConfig);
-                                return cloneElement(child, {
-                                    id,
-                                    permission: hasPermission(userPermissions, sectionPermissions)
-                                });
-                            }
-                        })}
-                    </ObserverSections>
-                </div>
-            </Main>
-        </>
+        <Main>
+            <SettingsTitle>{text}</SettingsTitle>
+            <div className="container-section-sticky" ref={containerRef}>
+                <ObserverSections setActiveSection={setActiveSection}>
+                    {Children.map(children, (child, index) => {
+                        if (isValidElement<SectionProps>(child)) {
+                            const { id, permissions: sectionPermissions = [] } =
+                                sections[index] || ({} as SectionConfig);
+                            return cloneElement(child, {
+                                id,
+                                permission: hasPermission(userPermissions, sectionPermissions)
+                            });
+                        }
+                    })}
+                </ObserverSections>
+            </div>
+        </Main>
     );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { LayoutsSection, ThemesSection, ToolbarsSection } from 'react-components';
 import { c } from 'ttag';
 
@@ -26,14 +27,18 @@ export const getAppearancePage = () => {
     };
 };
 
-const AppearanceContainer = () => {
+const AppearanceContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getAppearancePage()}>
+        <Page config={getAppearancePage()} setActiveSection={setActiveSection}>
             <LayoutsSection />
             <ToolbarsSection />
             <ThemesSection />
         </Page>
     );
+};
+
+AppearanceContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AppearanceContainer;
