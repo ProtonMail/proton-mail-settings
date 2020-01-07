@@ -25,7 +25,8 @@
         "postbundle": "cross-env NODE_ENV_DIST=bundle-only proton-bundler",
         "e2e": "cypress run",
         "e2e-dev": "cypress open",
-        "check-types": "tsc"
+        "check-types": "tsc",
+        "test": "echo 123"
     },
     "repository": {
         "type": "git",
