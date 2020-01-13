@@ -34,14 +34,14 @@ const PrivateLayout = ({ location }) => {
         text,
         link,
         icon,
-        list:
-            location.pathname === link
-                ? sections.map(({ text, id }) => ({
-                      text,
-                      link: `${link}#${id}`,
-                      isActive: () => activeSection === id
-                  }))
-                : []
+        ariaHiddenList: location.pathname !== link,
+        list: sections.map(({ text, id }) => ({
+            linkClassName: 'navigation__sublink',
+            itemClassName: 'navigation__subitem',
+            text,
+            link: `${link}#${id}`,
+            isActive: () => activeSection === id
+        }))
     }));
 
     const mobileLinks = [
