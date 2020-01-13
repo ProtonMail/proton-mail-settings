@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Catalan\n"
 "Language: ca_ES\n"
-"PO-Revision-Date: 2020-01-04 16:20\n"
+"PO-Revision-Date: 2020-01-11 10:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -3278,7 +3278,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Cupó"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+#: node_modules/react-components/containers/payments/PaymentSelector.js:47
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Altres"

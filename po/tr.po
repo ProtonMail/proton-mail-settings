@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-01-04 07:21\n"
+"PO-Revision-Date: 2020-01-11 10:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -454,7 +454,7 @@ msgstr "Tüm koşullar yerine getirilmelidir (YA DA)"
 #: node_modules/proton-shared/lib/themes/themes.js:13
 msgctxt "Theme"
 msgid "Default theme"
-msgstr ""
+msgstr "Varsayılan tema"
 
 #: node_modules/proton-shared/lib/themes/themes.js:23
 msgctxt "Theme"
@@ -474,7 +474,7 @@ msgstr "Mavi"
 #: node_modules/proton-shared/lib/themes/themes.js:51
 msgctxt "Theme"
 msgid "Dark theme"
-msgstr ""
+msgstr "Koyu tema"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
@@ -605,35 +605,35 @@ msgstr "2 yıllık anlaşma"
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
-msgstr ""
+msgstr "1 ay için ${ amount } olarak faturalandırıldı ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
 #, javascript-format
 msgctxt "Title"
 msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
-msgstr ""
+msgstr "1 yıl için ${ amount } olarak faturalandırıldı ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
 msgctxt "Title"
 msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
-msgstr ""
+msgstr "2 yıl için ${ amount } olarak faturalandırıldı ${ NOTICES[notice] }"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
 #, javascript-format
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 1 yıl sonra her yıl, yıllık ${ amount } indirimli fiyatla yenilenir (%20 indirim)."
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
 #, javascript-format
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 2 yıl sonra her 2 yılda bir, 2 yıllık ${ amount } indirimli fiyatla yenilenir (% 33 indirim)."
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
 msgctxt "Title"
 msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
-msgstr ""
+msgstr "${ NOTICES[notice] } 2 yıl sonra her 2 yılda bir, 2 yıllık ve paketle ${ amount } indirimli fiyata yenilenir (%47 indirim)."
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
 msgctxt "Title"
@@ -1706,7 +1706,7 @@ msgstr "Hediye kodunu kullan"
 #: node_modules/react-components/containers/payments/BillingSection.js:311
 msgctxt "Action"
 msgid "Pay annually and save 20%!"
-msgstr ""
+msgstr "Yıllık öde ve %20 tasarruf et!"
 
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
 msgctxt "Action"
@@ -2002,7 +2002,7 @@ msgstr "Sieve'yi düzenle"
 #: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:16
 msgctxt "Action"
 msgid "Add Filter"
-msgstr "Süzgeç ekle"
+msgstr "Filtre ekle"
 
 #: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:18
 msgctxt "Action"
@@ -2341,7 +2341,7 @@ msgstr "Zaten ücretsiz bir hesabınız var"
 #: node_modules/react-components/containers/payments/PlansSection.js:126
 msgctxt "Info"
 msgid "Get 20% bundle discount when you purchase ProtonMail and ProtonVPN together."
-msgstr "ProtonMail ve ProtonVPN'i birlikte satın aldığınızda %20 indirim kazanın."
+msgstr "ProtonMail ve ProtonVPN'i birlikte satın alın, %20 indirim kazanın."
 
 #: node_modules/react-components/containers/payments/PlansSection.js:129
 #, javascript-format
@@ -3130,7 +3130,7 @@ msgstr "Geliştirici programlarımıza kaydolarak hizmetimizi geliştirmemize ve
 #: node_modules/react-components/containers/overview/PromoteSection.js:64
 msgctxt "Info"
 msgid "Pay for both ProtonMail and ProtonVPN and get 20% off your entire subscription."
-msgstr "Hem ProtonMail hem de ProtonVPN için ödeme yapın ve bütün aboneliğinize %20 indirim alın."
+msgstr "Hem ProtonMail hem de ProtonVPN için ödeme yapın ve tüm aboneliklerinizde % 20 indirim kazanın."
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:45
 msgctxt "Info"
@@ -3274,7 +3274,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Kupon"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+#: node_modules/react-components/containers/payments/PaymentSelector.js:47
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Diğer"
@@ -4535,7 +4535,7 @@ msgstr "ProtonMail'i bir masaüstü e-posta uygulaması ile kullanın"
 #: node_modules/react-components/containers/payments/PlansTable.js:328
 msgctxt "Tooltip"
 msgid "ProtonVPN keeps your Internet traffic private"
-msgstr "ProtonVPN Genel Ağ trafiğinizi gizli tutar"
+msgstr "ProtonVPN internet trafiğinizi gizli tutar"
 
 #: node_modules/react-components/containers/payments/CycleDiscountBadge.js:15
 msgctxt "Tooltip"
@@ -4814,7 +4814,7 @@ msgstr "Yalnızca temel e-posta özellikleri"
 #: node_modules/react-components/containers/payments/PlansTable.js:203
 msgctxt "Plan option"
 msgid "Folders, Labels, Filters, Encrypted contacts, Auto-responder and more"
-msgstr "Klasörler, etiketler, süzgeçler, şifrelenmiş kişiler, otomatik yanıtlayıcı ve daha fazlası"
+msgstr "Klasörler, etiketler, filtreler, şifrelenmiş kişiler, otomatik yanıtlayıcı ve daha fazlası"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:205
 msgctxt "Plan option"
@@ -4949,7 +4949,7 @@ msgstr "Adres ayarları"
 #: src/app/containers/AutoReplyContainer.js:40
 msgctxt "Link"
 msgid "Filter Settings"
-msgstr "Süzgeç Ayarları"
+msgstr "Filtre Ayarları"
 
 #: node_modules/react-components/containers/payments/CreditsModal.js:27
 msgctxt "Monetary unit"
@@ -5460,7 +5460,7 @@ msgstr "Durum güncellendi"
 #: node_modules/react-components/containers/filters/FilterItemRow.js:53
 msgctxt "Success notification"
 msgid "Filter removed"
-msgstr "Süzgeç kaldırıldı"
+msgstr "Filtre kaldırıldı"
 
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:43
 msgctxt "Notification"
@@ -5970,7 +5970,7 @@ msgstr "E-postayı ... olarak etiketle"
 #: node_modules/react-components/containers/filters/editor/Preview.js:83
 msgctxt "Filter preview"
 msgid "Custom filter work on all new emails, including incoming emails as well as sent emails."
-msgstr "Özel süzgeç, gelen e-postalar ve gönderilen e-postaları da içermek üzere tüm yeni e-postalarda çalışır."
+msgstr "Özel filtreler, gelen e-postaların yanı sıra gönderilen e-postalar da dahil olmak üzere tüm yeni e-postalarda çalışır."
 
 #: node_modules/react-components/containers/filters/editor/Preview.js:87
 msgctxt "Filter preview"
@@ -6025,7 +6025,7 @@ msgstr "Özel filtre (ön izleme)"
 #: node_modules/react-components/containers/filters/SortableList.js:10
 msgctxt "Settings/filters"
 msgid "Filters"
-msgstr "Süzgeçler"
+msgstr "Filtreler"
 
 #: node_modules/react-components/containers/filters/SortableList.js:15
 msgctxt "Settings/filters - table"
@@ -6045,7 +6045,7 @@ msgstr "Eylem"
 #: node_modules/react-components/containers/filters/FiltersSection.js:38
 msgctxt "FilterSettings"
 msgid "Custom Filters"
-msgstr "Özel Süzgeçler"
+msgstr "Özel Filtreler"
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:40
 msgctxt "FilterSettings"
@@ -6055,7 +6055,7 @@ msgstr "İletileri kendiliğinden etiketleme ya da arşivleme gibi işlemleri ge
 #: node_modules/react-components/containers/filters/FiltersSection.js:53
 msgctxt "FilterSettings"
 msgid "No filters available"
-msgstr "Kullanılabilir süzgeçler yok"
+msgstr "Kullanılabilir filtre yok"
 
 #: node_modules/react-components/containers/filters/spamlist/SearchEmailIntoList.js:12
 msgctxt "FilterSettings"
@@ -6065,7 +6065,7 @@ msgstr "Ak ve Kara Listede Ara"
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:56
 msgctxt "FilterSettings"
 msgid "Spam Filters"
-msgstr "Gereksiz İleti Süzgeçleri"
+msgstr "Gereksiz İleti Filtreleri"
 
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:58
 msgctxt "FilterSettings"
@@ -6584,15 +6584,15 @@ msgstr "Genel ağ için ProtonVPN ayarları"
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } saat"
+msgstr[1] "${ hours } saat"
 
 #: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } dakika"
+msgstr[1] "${ minutes } dakika"
 
 #: node_modules/react-components/components/toggle/Toggle.js:10
 msgctxt "Toggle button"
@@ -6607,35 +6607,35 @@ msgstr "Kapalı"
 #: node_modules/react-components/components/countdown/Countdown.js:27
 msgctxt "Countdown status"
 msgid "Expired"
-msgstr ""
+msgstr "Süresi dolmuş"
 
 #: node_modules/react-components/components/countdown/Countdown.js:39
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ days } day"
 msgid_plural "${ days } days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ days } gün"
+msgstr[1] "${ days } gün"
 
 #: node_modules/react-components/components/countdown/Countdown.js:40
 msgctxt "Countdown unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } saat"
+msgstr[1] "${ hours } saat"
 
 #: node_modules/react-components/components/countdown/Countdown.js:41
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ minutes } minute"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } dakika"
+msgstr[1] "${ minutes } dakika"
 
 #: node_modules/react-components/components/countdown/Countdown.js:42
 msgctxt "Countdown unit"
 msgid "${ seconds } second"
 msgid_plural "${ seconds } seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ seconds } saniye"
+msgstr[1] "${ seconds } saniye"
 

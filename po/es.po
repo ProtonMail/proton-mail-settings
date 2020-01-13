@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-01-04 15:20\n"
+"PO-Revision-Date: 2020-01-11 10:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -1706,7 +1706,7 @@ msgstr "Usar código de regalo"
 #: node_modules/react-components/containers/payments/BillingSection.js:311
 msgctxt "Action"
 msgid "Pay annually and save 20%!"
-msgstr ""
+msgstr "¡Pague anualmente y ahorre un 20%!"
 
 #: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
 msgctxt "Action"
@@ -3275,7 +3275,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Cupón"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+#: node_modules/react-components/containers/payments/PaymentSelector.js:47
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Otro"

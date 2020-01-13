@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-01-05 01:21\n"
+"PO-Revision-Date: 2020-01-12 16:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -454,12 +454,12 @@ msgstr "至少一个条件满足（或）"
 #: node_modules/proton-shared/lib/themes/themes.js:13
 msgctxt "Theme"
 msgid "Default theme"
-msgstr "默认主题"
+msgstr "预设样式"
 
 #: node_modules/proton-shared/lib/themes/themes.js:23
 msgctxt "Theme"
 msgid "Custom theme"
-msgstr "自定外观"
+msgstr "自定样式"
 
 #: node_modules/proton-shared/lib/themes/themes.js:33
 msgctxt "Theme"
@@ -474,7 +474,7 @@ msgstr "蓝色"
 #: node_modules/proton-shared/lib/themes/themes.js:51
 msgctxt "Theme"
 msgid "Dark theme"
-msgstr "暗色主题"
+msgstr "暗色"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
 msgctxt "Title"
@@ -865,7 +865,7 @@ msgstr "推送通知"
 #: node_modules/react-components/containers/notification/EmailModal.js:33
 msgctxt "Title"
 msgid "Confirm address"
-msgstr "确认地址"
+msgstr "确认"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:70
 msgctxt "Title"
@@ -880,7 +880,7 @@ msgstr "密保与通知"
 #: node_modules/react-components/containers/domains/CatchAllSection.js:8
 msgctxt "Title"
 msgid "Catch all "
-msgstr "全部接受 "
+msgstr "揽取邮箱"
 
 #: node_modules/react-components/containers/domains/DomainModal.js:159
 msgctxt "Title"
@@ -895,7 +895,7 @@ msgstr "添加域名"
 #: node_modules/react-components/containers/domains/CatchAllModal.js:13
 msgctxt "Title"
 msgid "Catch all address"
-msgstr "全部接受地址"
+msgstr "揽取地址"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:43
 msgctxt "Title"
@@ -1022,7 +1022,7 @@ msgstr "双重验证"
 #: node_modules/react-components/containers/password/AskAuthModal.js:17
 msgctxt "Title"
 msgid "Sign in again to continue"
-msgstr "再次登录方可继续"
+msgstr "此操作需要重新登录"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
@@ -1120,18 +1120,18 @@ msgstr "用户"
 #: node_modules/react-components/containers/themes/CustomThemeModal.js:19
 msgctxt "Title"
 msgid "Custom Theme"
-msgstr "自定界面外观"
+msgstr "自定样式"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:54
 msgctxt "Title"
 msgid "Change theme"
-msgstr "更改主题"
+msgstr "更改样式"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:74
 #: src/app/containers/AppearanceContainer.js:22
 msgctxt "Title"
 msgid "Themes"
-msgstr "主题"
+msgstr "样式"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:82
 msgctxt "Title"
@@ -1365,7 +1365,7 @@ msgstr "名称"
 #: src/app/containers/DomainsContainer.js:22
 msgctxt "Title"
 msgid "Catch-all"
-msgstr "全部接受"
+msgstr "揽取邮箱"
 
 #: src/app/containers/IdentityContainer.js:12
 msgctxt "Title"
@@ -1455,7 +1455,7 @@ msgstr "ProtonVPN"
 #: src/app/containers/OverviewContainer.js:23
 msgctxt "Title"
 msgid "Overview - ProtonMail"
-msgstr "概述 - ProtonMail"
+msgstr "总览 - ProtonMail"
 
 #: node_modules/react-components/components/modal/Confirm.js:11
 #: node_modules/react-components/components/modal/FormModal.js:19
@@ -2341,7 +2341,7 @@ msgstr "您的账户已经是免费版"
 #: node_modules/react-components/containers/payments/PlansSection.js:126
 msgctxt "Info"
 msgid "Get 20% bundle discount when you purchase ProtonMail and ProtonVPN together."
-msgstr "同时定购 ProtonMail 和 ProtonVPN 可享八折优惠。"
+msgstr "同时订购 ProtonMail 和 ProtonVPN 可享八折优惠。"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:129
 #, javascript-format
@@ -3075,7 +3075,7 @@ msgstr "调整邮箱界面外观。"
 #: node_modules/react-components/containers/themes/ThemesSection.js:76
 msgctxt "Info"
 msgid "Selecting another theme will override your current theme and any customization will be lost."
-msgstr "选择其他外观后当前所有自定义的规则都将丢失。"
+msgstr "选择其他样式后现在使用的所有样式规则都将丢失。"
 
 #: node_modules/react-components/containers/app/LoaderPage.js:15
 #, javascript-format
@@ -3270,7 +3270,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "优惠券"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:30
+#: node_modules/react-components/containers/payments/PaymentSelector.js:47
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "其他"
@@ -3534,7 +3534,7 @@ msgstr "用户已添加"
 #: node_modules/react-components/containers/themes/ThemesSection.js:41
 msgctxt "Success"
 msgid "Custom theme saved"
-msgstr "自定义外观已保存"
+msgstr "自定样式已保存"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:69
 msgctxt "Success"
@@ -4586,7 +4586,7 @@ msgstr "在此设定邮件编辑区的初始大小，可以选择较小的悬浮
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:116
 msgctxt "Tooltip"
 msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
-msgstr "ProtonMail 的收件箱支持按行或按列显示，通过下面的选项可在这两种布局间切换。"
+msgstr "ProtonMail 收件箱支持按行和按列显示，通过该选项可在这两种布局间切换。"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:131
 msgctxt "Tooltip"
@@ -4719,7 +4719,7 @@ msgstr "自动回复"
 #: node_modules/react-components/containers/payments/PlansTable.js:270
 msgctxt "Header"
 msgid "Catch-all email"
-msgstr ""
+msgstr "域名揽取邮箱"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:289
 msgctxt "Header"
@@ -4729,7 +4729,7 @@ msgstr "支持多用户"
 #: node_modules/react-components/containers/payments/PlansTable.js:308
 msgctxt "Header"
 msgid "Priority customer support"
-msgstr "优先客户援助"
+msgstr "优先客户服务"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:136
 msgctxt "Header"
@@ -4810,7 +4810,7 @@ msgstr "文件夹、标签、筛选规则、加密通讯录、自动回复等等
 #: node_modules/react-components/containers/payments/PlansTable.js:205
 msgctxt "Plan option"
 msgid "All Plus features, and catch-all email, multi-user support and more"
-msgstr ""
+msgstr "增强版所有功能，域名揽取邮箱，支持多用户等等"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:207
 msgctxt "Plan option"
@@ -4820,7 +4820,7 @@ msgstr "专业版所有功能，6 个用户，外加 ProtonVPN"
 #: node_modules/react-components/containers/payments/PlansTable.js:345
 msgctxt "Plan option"
 msgid "Included"
-msgstr "已包含"
+msgstr "已包含在内"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:46
 msgctxt "Separator, spacing is important"
@@ -5190,17 +5190,17 @@ msgstr "停用地址后，您将无法再通过其收发邮件。确定要停用
 #: node_modules/react-components/containers/notification/EmailModal.js:37
 msgctxt "Warning"
 msgid "By deleting this address, you will no longer be able to recover your account."
-msgstr "删除此地址后，您将无法再恢复您的账户。"
+msgstr "删除此地址后，您将无法恢复账户。"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:41
 msgctxt "Warning"
 msgid "By deleting this address, you will no longer be able to receive daily email notifications."
-msgstr "删除此地址后，您不会再收到每日邮件通知。"
+msgstr "删除此地址后，您将无法收取每日邮件通知。"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:45
 msgctxt "Warning"
 msgid "By deleting this address, you will no longer be able to recover your account or receive daily email notifications."
-msgstr "删除此地址后，您将无法再恢复您的账户，也收不到每日邮件通知。"
+msgstr "删除此地址后，您将无法恢复账户，也无法收取每日邮件通知。"
 
 #: node_modules/react-components/containers/notification/EmailModal.js:49
 msgctxt "Warning"
@@ -5296,24 +5296,24 @@ msgstr "无"
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ weekdays } @ ${ formattedHours }"
-msgstr "每 ${ weekdays } ${ formattedHours }"
+msgstr "每${ weekdays }${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:50
 msgctxt "Duration"
 msgid "Every day @ ${ formattedHours }"
-msgstr "每天 ${ formattedHours }"
+msgstr "每天${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:55
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeekString } @ ${ formattedHours }"
-msgstr "每${ dayOfWeekString } @{ formattedHours }"
+msgstr "每个${ dayOfWeekString }${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:60
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonthString } @ ${ formattedHours }"
-msgstr "每${ dayOfMonthString } @{ formattedHours }"
+msgstr "${ dayOfMonthString }${ formattedHours }"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:31
 msgctxt "Restore administrator panel"
@@ -5609,7 +5609,7 @@ msgstr "状态"
 #: node_modules/react-components/containers/domains/AddressesTable.js:37
 msgctxt "Title header for addresses domain table"
 msgid "Catch all"
-msgstr "全部接受"
+msgstr "揽取"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:27
 msgctxt "Success message"
@@ -5640,7 +5640,7 @@ msgstr "已下线"
 #: node_modules/react-components/containers/domains/DomainsSection.js:48
 msgctxt "Message"
 msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
-msgstr "添加域名到您的自定义的电子邮件地址以接受邮件，并将更多用户添加到您的机构(梦想者和专业帐户可用)。"
+msgstr "使用您自己的域名收取邮件，或为您的机构新增用户（仅限尊享版或专业版账户）。"
 
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:34
 msgctxt "Message"
@@ -5792,7 +5792,7 @@ msgstr "${ label.Name } 标签已更改"
 #, javascript-format
 msgctxt "label/folder notification"
 msgid "${ Label.Name } created"
-msgstr "${ Label.Name } 标签已创建"
+msgstr "${ Label.Name } 已创建"
 
 #: node_modules/react-components/containers/labels/NewLabelForm.js:10
 #: node_modules/react-components/containers/labels/NewLabelForm.js:16
@@ -5834,7 +5834,7 @@ msgstr "创建文件夹"
 #, javascript-format
 msgctxt "Filter notification"
 msgid "${ Label.Name } updated"
-msgstr "${ Label.Name } 标签已更改"
+msgstr "${ Label.Name } 已更改"
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:59
 #, javascript-format
@@ -6468,7 +6468,7 @@ msgstr "作废"
 #: node_modules/react-components/containers/invoices/InvoiceState.js:19
 msgctxt "Invoice state display as badge"
 msgid "Billed"
-msgstr "账单"
+msgstr "Billed"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:20
 msgctxt "Invoice state display as badge"
