@@ -40,7 +40,8 @@ const PrivateLayout = ({ location }) => {
             itemClassName: 'navigation__subitem',
             text,
             link: `${link}#${id}`,
-            isActive: () => activeSection === id
+            isActive: () => activeSection === id,
+            ariaCurrent: activeSection === id ? 'true' : undefined
         }))
     }));
 
