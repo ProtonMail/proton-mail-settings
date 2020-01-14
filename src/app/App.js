@@ -2,12 +2,11 @@ import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import { ProtonApp, LoaderPage, useAuthentication } from 'react-components';
 import sentry from 'proton-shared/lib/helpers/sentry';
+import './app.scss';
 
 import * as config from './config';
 import PrivateApp from './content/PrivateApp';
 import PublicApp from './content/PublicApp';
-
-import './app.scss';
 
 sentry(config);
 
