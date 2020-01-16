@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { AddressKeysSection, UserKeysSection } from 'react-components';
 
@@ -22,13 +23,17 @@ export const getKeysPage = () => {
     };
 };
 
-const KeysContainer = () => {
+const KeysContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getKeysPage()}>
+        <Page config={getKeysPage()} setActiveSection={setActiveSection}>
             <AddressKeysSection />
             <UserKeysSection />
         </Page>
     );
+};
+
+KeysContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default KeysContainer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { SessionsSection, LogsSection, AddressVerificationSection, ExternalPGPSettingsSection } from 'react-components';
 import { c } from 'ttag';
 
@@ -30,15 +31,19 @@ export const getSecurityPage = () => {
     };
 };
 
-const SecurityContainer = () => {
+const SecurityContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getSecurityPage()}>
+        <Page config={getSecurityPage()} setActiveSection={setActiveSection}>
             <SessionsSection />
             <LogsSection />
             <AddressVerificationSection />
             <ExternalPGPSettingsSection />
         </Page>
     );
+};
+
+SecurityContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default SecurityContainer;

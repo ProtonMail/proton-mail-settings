@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { AddressesSection, RelatedSettingsSection, useOrganization } from 'react-components';
 
@@ -79,14 +80,18 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     ];
 };
 
-const AddressesContainer = () => {
+const AddressesContainer = ({ setActiveSection }) => {
     const [organization] = useOrganization();
     return (
-        <Page config={getAddressesPage()}>
+        <Page config={getAddressesPage()} setActiveSection={setActiveSection}>
             <AddressesSection />
             <RelatedSettingsSection list={getList(organization)} />
         </Page>
     );
+};
+
+AddressesContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AddressesContainer;

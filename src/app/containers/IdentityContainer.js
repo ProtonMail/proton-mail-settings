@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { IdentitySection, PmMeSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -26,13 +27,17 @@ export const getIdentityPage = () => {
     };
 };
 
-const IdentityContainer = () => {
+const IdentityContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getIdentityPage()}>
+        <Page config={getIdentityPage()} setActiveSection={setActiveSection}>
             <IdentitySection />
             <PmMeSection />
         </Page>
     );
+};
+
+IdentityContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default IdentityContainer;

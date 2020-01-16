@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
     PaymentMethodsSection,
     InvoicesSection,
@@ -55,7 +56,7 @@ export const getSubscriptionPage = () => {
     };
 };
 
-const SubscriptionContainer = () => {
+const SubscriptionContainer = ({ setActiveSection }) => {
     const api = useApi();
     const { createModal } = useModals();
     const [plans, loadingPlans] = usePlans();
@@ -97,7 +98,7 @@ const SubscriptionContainer = () => {
     }, [loadingPlans]);
 
     return (
-        <Page config={getSubscriptionPage()}>
+        <Page config={getSubscriptionPage()} setActiveSection={setActiveSection}>
             <PlansSection />
             <SubscriptionSection />
             <BillingSection />
@@ -105,6 +106,10 @@ const SubscriptionContainer = () => {
             <InvoicesSection />
         </Page>
     );
+};
+
+SubscriptionContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default SubscriptionContainer;

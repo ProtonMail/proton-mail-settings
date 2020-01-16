@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 import { ProtonMailBridgeSection, ProtonMailBetaSection, ProtonMailAppsSection } from 'react-components';
@@ -30,14 +31,18 @@ export const getAppsPage = () => {
     };
 };
 
-const AppsContainer = () => {
+const AppsContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getAppsPage()}>
+        <Page config={getAppsPage()} setActiveSection={setActiveSection}>
             <ProtonMailBridgeSection />
             <ProtonMailBetaSection />
             <ProtonMailAppsSection />
         </Page>
     );
+};
+
+AppsContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AppsContainer;

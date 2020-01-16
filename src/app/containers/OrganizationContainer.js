@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { OrganizationSection, OrganizationPasswordSection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -31,9 +32,9 @@ export const getOrganizationPage = () => {
     };
 };
 
-const OrganizationContainer = () => {
+const OrganizationContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getOrganizationPage()}>
+        <Page config={getOrganizationPage()} setActiveSection={setActiveSection}>
             <OrganizationSection />
             <OrganizationPasswordSection />
             <RelatedSettingsSection
@@ -56,6 +57,10 @@ const OrganizationContainer = () => {
             />
         </Page>
     );
+};
+
+OrganizationContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default OrganizationContainer;

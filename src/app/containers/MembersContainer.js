@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { MembersSection, RelatedSettingsSection } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -27,9 +28,9 @@ export const getMembersPage = () => {
     };
 };
 
-const MembersContainer = () => {
+const MembersContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getMembersPage()}>
+        <Page config={getMembersPage()} setActiveSection={setActiveSection}>
             <MembersSection />
             <RelatedSettingsSection
                 list={[
@@ -44,6 +45,10 @@ const MembersContainer = () => {
             />
         </Page>
     );
+};
+
+MembersSection.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default MembersContainer;

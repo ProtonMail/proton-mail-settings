@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { LabelsSection } from 'react-components';
 
@@ -18,12 +19,16 @@ export const getLabelsPage = () => {
     };
 };
 
-const FoldersLabelsContainer = () => {
+const FoldersLabelsContainer = ({ setActiveSection }) => {
     return (
-        <Page config={getLabelsPage()}>
+        <Page config={getLabelsPage()} setActiveSection={setActiveSection}>
             <LabelsSection />
         </Page>
     );
+};
+
+FoldersLabelsContainer.propTypes = {
+    setActiveSection: PropTypes.func.isRequired
 };
 
 export default FoldersLabelsContainer;
