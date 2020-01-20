@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-01-12 16:20\n"
+"PO-Revision-Date: 2020-01-18 16:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -202,10 +202,10 @@ msgctxt "Error"
 msgid "Error"
 msgstr "错误"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:60
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:61
 msgctxt "Error"
 msgid "Member keys are not set up."
-msgstr "会员密钥未设置。"
+msgstr "成员密钥尚未设置。"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:46
 #, javascript-format
@@ -538,8 +538,8 @@ msgid "Add PayPal payment method"
 msgstr "添加 PayPal 支付方式"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
-#: src/app/containers/SubscriptionContainer.js:27
-#: src/app/containers/SubscriptionContainer.js:37
+#: src/app/containers/SubscriptionContainer.js:28
+#: src/app/containers/SubscriptionContainer.js:38
 msgctxt "Title"
 msgid "Subscription"
 msgstr "账户等级"
@@ -663,7 +663,7 @@ msgstr "当前等级"
 #: node_modules/react-components/containers/payments/PlansSection.js:106
 #: node_modules/react-components/containers/payments/PlansSection.js:115
 #: node_modules/react-components/containers/payments/PlansSection.js:123
-#: src/app/containers/SubscriptionContainer.js:33
+#: src/app/containers/SubscriptionContainer.js:34
 msgctxt "Title"
 msgid "Plans"
 msgstr "所有等级"
@@ -687,7 +687,7 @@ msgstr "充值"
 #: node_modules/react-components/containers/payments/BillingSection.js:96
 #: node_modules/react-components/containers/payments/BillingSection.js:105
 #: node_modules/react-components/containers/payments/BillingSection.js:121
-#: src/app/containers/SubscriptionContainer.js:42
+#: src/app/containers/SubscriptionContainer.js:43
 msgctxt "Title"
 msgid "Billing details"
 msgstr "账单明细"
@@ -718,7 +718,7 @@ msgid "Export private key"
 msgstr "导出私钥"
 
 #: node_modules/react-components/containers/keys/UserKeysSection.js:18
-#: src/app/containers/KeysContainer.js:18
+#: src/app/containers/KeysContainer.js:19
 msgctxt "Title"
 msgid "Contact encryption keys"
 msgstr "通讯录加密密钥"
@@ -739,7 +739,7 @@ msgid "Delete key"
 msgstr "删除密钥"
 
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:71
-#: src/app/containers/KeysContainer.js:14
+#: src/app/containers/KeysContainer.js:15
 msgctxt "Title"
 msgid "Email encryption keys"
 msgstr "邮件加密密钥"
@@ -750,8 +750,8 @@ msgid "Create auto-reply"
 msgstr "开启自动回复"
 
 #: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
-#: src/app/containers/AutoReplyContainer.js:12
-#: src/app/containers/AutoReplyContainer.js:18
+#: src/app/containers/AutoReplyContainer.js:13
+#: src/app/containers/AutoReplyContainer.js:19
 msgctxt "Title"
 msgid "Auto-reply"
 msgstr "自动回复"
@@ -792,7 +792,7 @@ msgid "Multi-user support"
 msgstr "多用户功能"
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:42
-#: src/app/containers/OrganizationContainer.js:12
+#: src/app/containers/OrganizationContainer.js:13
 msgctxt "Title"
 msgid "Organization"
 msgstr "机构"
@@ -818,18 +818,18 @@ msgid "Change organization keys"
 msgstr "更改机构密钥"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
-#: src/app/containers/OrganizationContainer.js:22
+#: src/app/containers/OrganizationContainer.js:23
 msgctxt "Title"
 msgid "Password & key"
 msgstr "密码与密钥"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:141
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
 msgctxt "Title"
 msgid "Generate missing keys"
 msgstr "生成缺失的密钥"
 
 #: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/containers/IdentityContainer.js:21
+#: src/app/containers/IdentityContainer.js:22
 msgctxt "Title"
 msgid "Short domain (@pm.me)"
 msgstr "短域名（@pm.me）"
@@ -840,7 +840,7 @@ msgid "Edit address"
 msgstr "调整地址"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:26
-#: src/app/containers/IdentityContainer.js:17
+#: src/app/containers/IdentityContainer.js:18
 msgctxt "Title"
 msgid "Display name & signature"
 msgstr "对外名称与落款"
@@ -851,8 +851,8 @@ msgid "Create address"
 msgstr "创建地址"
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:20
-#: src/app/containers/AddressesContainer.js:9
-#: src/app/containers/AddressesContainer.js:14
+#: src/app/containers/AddressesContainer.js:10
+#: src/app/containers/AddressesContainer.js:15
 msgctxt "Title"
 msgid "Addresses"
 msgstr "地址"
@@ -903,26 +903,26 @@ msgid "Delete domain"
 msgstr "删除域名"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:46
-#: src/app/containers/DomainsContainer.js:12
-#: src/app/containers/DomainsContainer.js:18
+#: src/app/containers/DomainsContainer.js:13
+#: src/app/containers/DomainsContainer.js:19
 msgctxt "Title"
 msgid "Custom domains"
 msgstr "自定域名"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
-#: src/app/containers/VPNContainer.js:18
+#: src/app/containers/VPNContainer.js:19
 msgctxt "Title"
 msgid "ProtonVPN clients"
 msgstr "ProtonVPN 客户端"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
-#: src/app/containers/VPNContainer.js:22
+#: src/app/containers/VPNContainer.js:23
 msgctxt "Title"
 msgid "ProtonVPN credentials"
 msgstr "ProtonVPN 账号"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
-#: src/app/containers/VPNContainer.js:30
+#: src/app/containers/VPNContainer.js:31
 msgctxt "Title"
 msgid "ProtonVPN resources"
 msgstr "ProtonVPN 相关资源"
@@ -933,7 +933,7 @@ msgid "Edit OpenVPN / IKEv2 credentials"
 msgstr "更改 OpenVPN / IKEv2 账号和密码"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
-#: src/app/containers/VPNContainer.js:26
+#: src/app/containers/VPNContainer.js:27
 msgctxt "Title"
 msgid "OpenVPN / IKEv2 username"
 msgstr "OpenVPN / IKEv2 用户名"
@@ -1026,13 +1026,13 @@ msgstr "此操作需要重新登录"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
-#: src/app/containers/SubscriptionContainer.js:47
+#: src/app/containers/SubscriptionContainer.js:48
 msgctxt "Title"
 msgid "Payment methods"
 msgstr "支付方式"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:34
-#: src/app/containers/SecurityContainer.js:22
+#: src/app/containers/SecurityContainer.js:23
 msgctxt "Title"
 msgid "Address verification"
 msgstr "地址验证"
@@ -1095,7 +1095,7 @@ msgid "Human verification"
 msgstr "身份验证"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:17
-#: src/app/containers/GeneralContainer.js:23
+#: src/app/containers/GeneralContainer.js:30
 msgctxt "Title"
 msgid "Messages"
 msgstr "邮件"
@@ -1111,8 +1111,8 @@ msgid "Add user"
 msgstr "添加用户"
 
 #: node_modules/react-components/containers/members/MembersSection.js:118
-#: src/app/containers/MembersContainer.js:12
-#: src/app/containers/MembersContainer.js:18
+#: src/app/containers/MembersContainer.js:13
+#: src/app/containers/MembersContainer.js:19
 msgctxt "Title"
 msgid "Users"
 msgstr "用户"
@@ -1128,7 +1128,7 @@ msgid "Change theme"
 msgstr "更改样式"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:74
-#: src/app/containers/AppearanceContainer.js:22
+#: src/app/containers/AppearanceContainer.js:23
 msgctxt "Title"
 msgid "Themes"
 msgstr "样式"
@@ -1139,19 +1139,19 @@ msgid "Clear"
 msgstr "清除"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:109
-#: src/app/containers/SecurityContainer.js:18
+#: src/app/containers/SecurityContainer.js:19
 msgctxt "Title"
 msgid "Authentication logs"
 msgstr "登录记录"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
-#: src/app/containers/AppearanceContainer.js:18
+#: src/app/containers/AppearanceContainer.js:19
 msgctxt "Title"
 msgid "Toolbars"
 msgstr "工具栏"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:47
-#: src/app/containers/AppearanceContainer.js:14
+#: src/app/containers/AppearanceContainer.js:15
 msgctxt "Title"
 msgid "Layouts"
 msgstr "布局"
@@ -1163,7 +1163,7 @@ msgid "Keyboard shortcuts"
 msgstr "键盘快捷键"
 
 #: node_modules/react-components/containers/general/ShortcutsModal.js:12
-#: src/app/containers/GeneralContainer.js:10
+#: src/app/containers/GeneralContainer.js:17
 msgctxt "Title"
 msgid "General"
 msgstr "常规"
@@ -1188,7 +1188,6 @@ msgctxt "Title"
 msgid "Jumping"
 msgstr "跳转"
 
-#: node_modules/react-components/components/sidebar/SubSidebar.js:10
 #: node_modules/react-components/containers/general/ShortcutsModal.js:95
 msgctxt "Title"
 msgid "Navigation"
@@ -1220,13 +1219,13 @@ msgid "Contact details"
 msgstr "联系人详情"
 
 #: node_modules/react-components/containers/general/ShortcutsSection.js:24
-#: src/app/containers/GeneralContainer.js:31
+#: src/app/containers/GeneralContainer.js:38
 msgctxt "Title"
 msgid "Shortcuts"
 msgstr "快捷键"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:54
-#: src/app/containers/GeneralContainer.js:15
+#: src/app/containers/GeneralContainer.js:22
 msgctxt "Title"
 msgid "Language"
 msgstr "语言"
@@ -1273,7 +1272,7 @@ msgstr "添加账单信息"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:59
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:69
-#: src/app/containers/SubscriptionContainer.js:51
+#: src/app/containers/SubscriptionContainer.js:52
 msgctxt "Title"
 msgid "Invoices"
 msgstr "账单"
@@ -1311,7 +1310,7 @@ msgid "Account disabled"
 msgstr "此账户已被封禁"
 
 #: node_modules/react-components/containers/search/SearchSection.js:24
-#: src/app/containers/GeneralContainer.js:27
+#: src/app/containers/GeneralContainer.js:34
 msgctxt "Title"
 msgid "Search"
 msgstr "搜索"
@@ -1332,11 +1331,11 @@ msgid "Preview"
 msgstr "预览"
 
 #: node_modules/react-components/components/container/RelatedSettingsSection.js:14
-#: src/app/containers/AddressesContainer.js:18
-#: src/app/containers/AutoReplyContainer.js:22
-#: src/app/containers/DomainsContainer.js:26
-#: src/app/containers/MembersContainer.js:22
-#: src/app/containers/OrganizationContainer.js:26
+#: src/app/containers/AddressesContainer.js:19
+#: src/app/containers/AutoReplyContainer.js:23
+#: src/app/containers/DomainsContainer.js:27
+#: src/app/containers/MembersContainer.js:23
+#: src/app/containers/OrganizationContainer.js:27
 msgctxt "Title"
 msgid "Related settings"
 msgstr "相关设置项"
@@ -1352,102 +1351,102 @@ msgid "Mailbox"
 msgstr "邮箱"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:39
+#: src/app/components/layout/PrivateLayout.js:72
 msgctxt "Title"
 msgid "Settings"
 msgstr "设置"
 
-#: src/app/containers/OrganizationContainer.js:18
+#: src/app/containers/OrganizationContainer.js:19
 msgctxt "Title"
 msgid "Name"
 msgstr "名称"
 
-#: src/app/containers/DomainsContainer.js:22
+#: src/app/containers/DomainsContainer.js:23
 msgctxt "Title"
 msgid "Catch-all"
 msgstr "揽取邮箱"
 
-#: src/app/containers/IdentityContainer.js:12
+#: src/app/containers/IdentityContainer.js:13
 msgctxt "Title"
 msgid "Identity"
 msgstr "身份"
 
-#: src/app/containers/GeneralContainer.js:19
+#: src/app/containers/GeneralContainer.js:26
 msgctxt "Title"
 msgid "Desktop notifications"
 msgstr "推送通知"
 
-#: src/app/containers/AppearanceContainer.js:9
+#: src/app/containers/AppearanceContainer.js:10
 msgctxt "Title"
 msgid "Appearance"
 msgstr "外观"
 
-#: src/app/containers/FiltersContainer.js:9
+#: src/app/containers/FiltersContainer.js:10
 msgctxt "Title"
 msgid "Filters"
 msgstr "筛选规则"
 
-#: src/app/containers/FiltersContainer.js:14
+#: src/app/containers/FiltersContainer.js:15
 msgctxt "Title"
 msgid "Custom filters"
 msgstr "定制筛选规则"
 
-#: src/app/containers/FiltersContainer.js:18
+#: src/app/containers/FiltersContainer.js:19
 msgctxt "Title"
 msgid "Spam filters"
 msgstr "垃圾邮件过滤"
 
-#: src/app/containers/FoldersLabelsContainer.js:9
+#: src/app/containers/FoldersLabelsContainer.js:10
 msgctxt "Title"
 msgid "Folders/labels"
 msgstr "文件夹/标签"
 
-#: src/app/containers/FoldersLabelsContainer.js:14
+#: src/app/containers/FoldersLabelsContainer.js:15
 msgctxt "Title"
 msgid "Folders and labels"
 msgstr "标签与文件夹"
 
-#: src/app/containers/KeysContainer.js:9
+#: src/app/containers/KeysContainer.js:10
 msgctxt "Title"
 msgid "Keys"
 msgstr "密钥"
 
-#: src/app/containers/SecurityContainer.js:9
+#: src/app/containers/SecurityContainer.js:10
 msgctxt "Title"
 msgid "Security"
 msgstr "安全"
 
-#: src/app/containers/SecurityContainer.js:14
+#: src/app/containers/SecurityContainer.js:15
 msgctxt "Title"
 msgid "Session management"
 msgstr "登录设备管理"
 
-#: src/app/containers/SecurityContainer.js:26
+#: src/app/containers/SecurityContainer.js:27
 msgctxt "Title"
 msgid "External PGP settings"
 msgstr "对外 PGP 设置"
 
-#: src/app/containers/AppsContainer.js:12
+#: src/app/containers/AppsContainer.js:13
 msgctxt "Title"
 msgid "Apps"
 msgstr "应用程序"
 
-#: src/app/containers/AppsContainer.js:17
+#: src/app/containers/AppsContainer.js:18
 msgctxt "Title"
 msgid "ProtonMail Bridge"
 msgstr "ProtonMail Bridge"
 
-#: src/app/containers/AppsContainer.js:22
+#: src/app/containers/AppsContainer.js:23
 msgctxt "Title"
 msgid "ProtonMail Beta"
 msgstr "ProtonMail 公测版"
 
-#: src/app/containers/AppsContainer.js:26
+#: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail apps"
 msgstr "ProtonMail 应用程序"
 
-#: src/app/containers/VPNContainer.js:13
+#: src/app/containers/VPNContainer.js:14
 msgctxt "Title"
 msgid "ProtonVPN"
 msgstr "ProtonVPN"
@@ -1481,7 +1480,8 @@ msgstr "验证"
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:8
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:420
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:434
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:142
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
 #: node_modules/react-components/containers/domains/DomainModal.js:157
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
@@ -1724,6 +1724,7 @@ msgctxt "Action"
 msgid "Re-activate"
 msgstr "重新激活"
 
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
@@ -1751,7 +1752,7 @@ msgstr "确定"
 #: node_modules/react-components/components/modal/Input.js:34
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:143
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
@@ -1882,7 +1883,7 @@ msgstr "添加用户"
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
 msgid "Set catch-all"
-msgstr "设置全部接受"
+msgstr "设为揽取邮箱"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:96
 #: node_modules/react-components/containers/domains/DomainActions.js:40
@@ -2043,7 +2044,7 @@ msgstr "查看键盘快捷键"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:32
+#: src/app/components/layout/PrivateLayout.js:65
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "升级"
@@ -2137,12 +2138,12 @@ msgstr "其他设备全部下线"
 #: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
 msgctxt "Action"
 msgid "Next month"
-msgstr "下月"
+msgstr "下个月"
 
 #: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
 msgctxt "Action"
 msgid "Prev month"
-msgstr "上月"
+msgstr "上个月"
 
 #: node_modules/react-components/components/modal/Confirm.js:10
 #: node_modules/react-components/components/modal/Confirm.js:12
@@ -2210,7 +2211,7 @@ msgstr "尚未开通"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:132
 msgctxt "Info"
 msgid "To manage your subscription, customize your current plan or select another one from the plan's table."
-msgstr "要管理您的套餐，请自定义您当前的套餐或从计划表中选择另一个套餐。"
+msgstr "您可以定制当前等级的功能或转至其他等级。"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:153
 msgctxt "Info"
@@ -2347,7 +2348,7 @@ msgstr "同时订购 ProtonMail 和 ProtonVPN 可享八折优惠。"
 #, javascript-format
 msgctxt "Info"
 msgid "You are currently subscribed to ${ names }."
-msgstr "您的当前套餐 ${ names }"
+msgstr "您已订购 ${ names }。"
 
 #: node_modules/react-components/containers/payments/PayPal.js:135
 msgctxt "Info"
@@ -2385,7 +2386,7 @@ msgstr "若您购买或获赠了礼品码，请在此处填写。"
 #, javascript-format
 msgctxt "Info"
 msgid "Top up your account with credits that you can use to subscribe to a new plan or renew your current plan. You get one credit for every ${ i18nCurrency } spent."
-msgstr "充值后您即可使用余额升级账户或增添服务项目。充值 ${ i18nCurrency } 可得一元余额。"
+msgstr "充值后即可使用余额升级账户或增添服务项目。余额与${ i18nCurrency }等额兑换。"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:64
 msgctxt "Info"
@@ -2587,8 +2588,8 @@ msgstr "使用您自己的域名创建并管理电子邮箱子账户。"
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:43
 msgctxt "Info"
-msgid "The name and logo will be visible to your users while they are logged in."
-msgstr "您的用户登录后即可看到机构名称和标志。"
+msgid "The name will be visible to your users while they are logged in."
+msgstr "您的用户登录后即可看到机构名称。"
 
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:40
 msgctxt "Info"
@@ -2653,7 +2654,7 @@ msgctxt "Info"
 msgid "Done"
 msgstr "完成"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:149
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:163
 msgctxt "Info"
 msgid "Before you can start sending and receiving emails from your new addresses you need to create encryption keys for them."
 msgstr "使用新地址收发邮件前，您需要先为其创建密钥。"
@@ -2702,13 +2703,13 @@ msgstr "ProtonMail 地址一经创建无法删除（只能停用），且无论�
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:62
 msgctxt "Info"
 msgid "Premium plans let you add multiple email addresses to your account. All the emails associated with them will appear in the same mailbox. If you are the admin of a Professional or Visionary plan, you can manage email addresses for each user in your organization. The email address at the top of the list will automatically be selected as the default email address."
-msgstr "高级套餐允许您将多个电子邮件地址添加到您的帐户。所有与此相关的电子邮件都会出现在同一个邮箱中。 如果您是专业套餐或梦想者套餐的管理员，您可以管理您组织中每个用户的电子邮件地址。 列表顶部的电子邮件地址将自动被选为默认的电子邮件地址。"
+msgstr "高等级账户可以使用多个邮箱地址，收到的邮件会汇集到一个收件箱中。专业版和尊享版账户的管理员可为机构的各个成员分别配置地址。排在第一位的地址将自动作为发信时首选的地址。"
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
 msgid "address used"
 msgid_plural "addresses used"
-msgstr[0] "地址已使用"
+msgstr[0] "地址用量"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:11
 msgctxt "Info"
@@ -2733,7 +2734,7 @@ msgstr "开启通知后，您可在密保/通知邮箱中得知 ProtonMail 收�
 #: node_modules/react-components/containers/domains/CatchAllSection.js:9
 msgctxt "Info"
 msgid "To select the catch-all email address of a domain, open the action dropdown menu and click on Set catch-all"
-msgstr ""
+msgstr "在地址列表中可设置揽取地址，负责收取其所属域名内所有未分配地址收到的邮件。"
 
 #: node_modules/react-components/containers/domains/SPFSection.js:11
 msgctxt "Info"
@@ -2806,7 +2807,7 @@ msgstr "确定要删除此域名吗？"
 msgctxt "Info"
 msgid "domain used"
 msgid_plural "domains used"
-msgstr[0] "域名已使用"
+msgstr[0] "域名用量"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:18
 #, javascript-format
@@ -2830,7 +2831,7 @@ msgstr "若不安装客户端，例如在 macOS 上使用 Tunnelblick 或在 GNU
 #, javascript-format
 msgctxt "Info"
 msgid "${ usedSpaceFormatted } of ${ maxSpaceFormatted } used"
-msgstr "共 ${ maxSpaceFormatted }，已使用 ${ usedSpaceFormatted }"
+msgstr "已用 ${ usedSpaceFormatted } / ${ maxSpaceFormatted }"
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:81
 msgctxt "Info"
@@ -3037,7 +3038,7 @@ msgstr "文本或匹配规则"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:164
 msgctxt "Info"
 msgid "Custom filters work on all new emails, including incoming emails as well as sent emails. To find out how to write Sieve filters."
-msgstr "自定义过滤器适用于所有新的邮件，包括收到的邮件和已发送的邮件。要找到如何写 Sieve 过滤器。"
+msgstr "自定筛选规则对往后的所有邮件都有效，既包括收到的，也包括发出的。"
 
 #: node_modules/react-components/containers/filters/FilterItemRow.js:35
 msgctxt "Info"
@@ -3064,7 +3065,7 @@ msgstr "确定要永久删除此用户吗？该用户的所有邮件和地址都
 msgctxt "Info"
 msgid "user used"
 msgid_plural "users used"
-msgstr[0] "用户已使用"
+msgstr[0] "用户量"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:93
 #: node_modules/react-components/containers/themes/ThemesSection.js:75
@@ -3187,22 +3188,22 @@ msgctxt "Info"
 msgid "Week"
 msgstr "周"
 
-#: src/app/containers/OrganizationContainer.js:43
+#: src/app/containers/OrganizationContainer.js:44
 msgctxt "Info"
 msgid "Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address."
-msgstr ""
+msgstr "前往域名设置可管理自定域名及揽取邮箱。"
 
-#: src/app/containers/OrganizationContainer.js:50
+#: src/app/containers/OrganizationContainer.js:51
 msgctxt "Info"
 msgid "Go to the user settings if you want to create and manage the users of your organization."
 msgstr "前往用户设置可添加或管理机构用户。"
 
-#: src/app/containers/MembersContainer.js:38
+#: src/app/containers/MembersContainer.js:39
 msgctxt "Info"
 msgid "Go to the address settings if you want to create and manage addresses for your users."
 msgstr "前往地址设置可添加或管理用户。"
 
-#: src/app/containers/DomainsContainer.js:39
+#: src/app/containers/DomainsContainer.js:40
 msgctxt "Info"
 msgid "Go to the User Settings if you want to create and manage users in your organization."
 msgstr "前往用户设置可添加或管理机构用户。"
@@ -3218,29 +3219,29 @@ msgctxt "Info"
 msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
 msgstr "开通支持多用户的付费账户方可添加并管理您的机构成员。"
 
-#: src/app/containers/AddressesContainer.js:31
-#: src/app/containers/AddressesContainer.js:50
+#: src/app/containers/AddressesContainer.js:32
+#: src/app/containers/AddressesContainer.js:51
 msgctxt "Info"
 msgid "Go to the Domain settings if you want to create  and manage custom domains for your users."
 msgstr "前往域名设置可创建或管理自定域名。"
 
-#: src/app/containers/AddressesContainer.js:38
+#: src/app/containers/AddressesContainer.js:39
 msgctxt "Info"
 msgid "Go to User Settings if you want to create and manage the list of users in your organization."
 msgstr "前往用户设置可创建或管理机构用户。"
 
-#: src/app/containers/AddressesContainer.js:57
-#: src/app/containers/AddressesContainer.js:74
+#: src/app/containers/AddressesContainer.js:58
+#: src/app/containers/AddressesContainer.js:75
 msgctxt "Info"
 msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
 msgstr "开通支持多用户的账户方可添加并管理您的机构成员。"
 
-#: src/app/containers/AddressesContainer.js:68
+#: src/app/containers/AddressesContainer.js:69
 msgctxt "Info"
 msgid "Upgrade to a paid plan if you want to create and manage custom domains."
 msgstr "开通付费账户方可添加并管理自定域名。"
 
-#: src/app/containers/AutoReplyContainer.js:38
+#: src/app/containers/AutoReplyContainer.js:39
 msgctxt "Info"
 msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
 msgstr "前往筛选规则设置可根据发件人选择回复的内容。"
@@ -3504,7 +3505,7 @@ msgstr "域名已验证"
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:20
 msgctxt "Success"
 msgid "Catch-all address updated"
-msgstr ""
+msgstr "揽取地址已更改"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:114
 msgctxt "Success"
@@ -3602,7 +3603,7 @@ msgid "Custom domains"
 msgstr "自定域名数"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:85
-#: node_modules/react-components/containers/members/MemberModal.js:218
+#: node_modules/react-components/containers/members/MemberModal.js:220
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
 msgctxt "Label"
@@ -3886,7 +3887,7 @@ msgid "Confirm password"
 msgstr "确认密码"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:206
+#: node_modules/react-components/containers/members/MemberModal.js:208
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
 msgctxt "Label"
 msgid "Account storage"
@@ -4903,9 +4904,9 @@ msgstr "清除浏览器缓存"
 
 #: node_modules/react-components/containers/heading/UpgradeButton.js:13
 #: node_modules/react-components/containers/heading/UpgradeButton.js:21
-#: src/app/containers/AddressesContainer.js:59
-#: src/app/containers/AddressesContainer.js:69
-#: src/app/containers/AddressesContainer.js:76
+#: src/app/containers/AddressesContainer.js:60
+#: src/app/containers/AddressesContainer.js:70
+#: src/app/containers/AddressesContainer.js:77
 #: src/app/containers/DomainsContainer.js:59
 msgctxt "Link"
 msgid "Upgrade"
@@ -4916,28 +4917,28 @@ msgctxt "Link"
 msgid "Learn more"
 msgstr "了解详情"
 
-#: src/app/containers/AddressesContainer.js:33
-#: src/app/containers/AddressesContainer.js:52
-#: src/app/containers/OrganizationContainer.js:45
+#: src/app/containers/AddressesContainer.js:34
+#: src/app/containers/AddressesContainer.js:53
+#: src/app/containers/OrganizationContainer.js:46
 msgctxt "Link"
 msgid "Domain settings"
 msgstr "域名设置"
 
-#: src/app/containers/AddressesContainer.js:40
+#: src/app/containers/AddressesContainer.js:41
 #: src/app/containers/DomainsContainer.js:41
-#: src/app/containers/OrganizationContainer.js:52
+#: src/app/containers/OrganizationContainer.js:53
 msgctxt "Link"
 msgid "User settings"
 msgstr "用户设置"
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
-#: src/app/containers/MembersContainer.js:40
+#: src/app/containers/MembersContainer.js:41
 msgctxt "Link"
 msgid "Address settings"
 msgstr "地址设置"
 
-#: src/app/containers/AutoReplyContainer.js:40
+#: src/app/containers/AutoReplyContainer.js:41
 msgctxt "Link"
 msgid "Filter Settings"
 msgstr "筛选规则设置"
@@ -5210,7 +5211,7 @@ msgstr "确定要删除此地址吗？"
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
-msgstr "此功能只有 ProtonMail 专业版以上等级才能使用"
+msgstr "此功能仅限 ProtonMail 专业版以上等级用户使用"
 
 #: node_modules/react-components/containers/themes/CustomThemeModal.js:23
 msgctxt "Warning"
@@ -5357,14 +5358,14 @@ msgstr "您也可以刷新页面或稍后重试。"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:78
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:71
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 msgctxt "Header for addresses table"
 msgid "Address"
 msgstr "地址"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:80
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:72
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"
@@ -6591,7 +6592,7 @@ msgstr "关"
 #: node_modules/react-components/components/countdown/Countdown.js:27
 msgctxt "Countdown status"
 msgid "Expired"
-msgstr "已过期"
+msgstr "已结束"
 
 #: node_modules/react-components/components/countdown/Countdown.js:39
 #, javascript-format

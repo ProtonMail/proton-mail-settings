@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-01-11 10:20\n"
+"PO-Revision-Date: 2020-01-18 07:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -202,7 +202,7 @@ msgctxt "Error"
 msgid "Error"
 msgstr "Error"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:60
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:61
 msgctxt "Error"
 msgid "Member keys are not set up."
 msgstr "Las claves de los miembros no están configuradas."
@@ -538,8 +538,8 @@ msgid "Add PayPal payment method"
 msgstr "Añadir método de pago de PayPal"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
-#: src/app/containers/SubscriptionContainer.js:27
-#: src/app/containers/SubscriptionContainer.js:37
+#: src/app/containers/SubscriptionContainer.js:28
+#: src/app/containers/SubscriptionContainer.js:38
 msgctxt "Title"
 msgid "Subscription"
 msgstr "Suscripción"
@@ -663,7 +663,7 @@ msgstr "Mi suscripción"
 #: node_modules/react-components/containers/payments/PlansSection.js:106
 #: node_modules/react-components/containers/payments/PlansSection.js:115
 #: node_modules/react-components/containers/payments/PlansSection.js:123
-#: src/app/containers/SubscriptionContainer.js:33
+#: src/app/containers/SubscriptionContainer.js:34
 msgctxt "Title"
 msgid "Plans"
 msgstr "Planes"
@@ -687,7 +687,7 @@ msgstr "Añadir créditos"
 #: node_modules/react-components/containers/payments/BillingSection.js:96
 #: node_modules/react-components/containers/payments/BillingSection.js:105
 #: node_modules/react-components/containers/payments/BillingSection.js:121
-#: src/app/containers/SubscriptionContainer.js:42
+#: src/app/containers/SubscriptionContainer.js:43
 msgctxt "Title"
 msgid "Billing details"
 msgstr "Datos de facturación"
@@ -718,7 +718,7 @@ msgid "Export private key"
 msgstr "Exportar clave privada"
 
 #: node_modules/react-components/containers/keys/UserKeysSection.js:18
-#: src/app/containers/KeysContainer.js:18
+#: src/app/containers/KeysContainer.js:19
 msgctxt "Title"
 msgid "Contact encryption keys"
 msgstr "Claves de cifrado del contacto"
@@ -739,7 +739,7 @@ msgid "Delete key"
 msgstr "Eliminar clave"
 
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:71
-#: src/app/containers/KeysContainer.js:14
+#: src/app/containers/KeysContainer.js:15
 msgctxt "Title"
 msgid "Email encryption keys"
 msgstr "Claves de cifrado de correo"
@@ -750,8 +750,8 @@ msgid "Create auto-reply"
 msgstr "Crear respuesta automática"
 
 #: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
-#: src/app/containers/AutoReplyContainer.js:12
-#: src/app/containers/AutoReplyContainer.js:18
+#: src/app/containers/AutoReplyContainer.js:13
+#: src/app/containers/AutoReplyContainer.js:19
 msgctxt "Title"
 msgid "Auto-reply"
 msgstr "Autorrespuesta"
@@ -792,7 +792,7 @@ msgid "Multi-user support"
 msgstr "Soporte multi usuario"
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:42
-#: src/app/containers/OrganizationContainer.js:12
+#: src/app/containers/OrganizationContainer.js:13
 msgctxt "Title"
 msgid "Organization"
 msgstr "Organización"
@@ -818,18 +818,18 @@ msgid "Change organization keys"
 msgstr "Cambiar claves de la organización"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
-#: src/app/containers/OrganizationContainer.js:22
+#: src/app/containers/OrganizationContainer.js:23
 msgctxt "Title"
 msgid "Password & key"
 msgstr "Contraseña y clave"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:141
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
 msgctxt "Title"
 msgid "Generate missing keys"
 msgstr "Generar claves faltantes"
 
 #: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/containers/IdentityContainer.js:21
+#: src/app/containers/IdentityContainer.js:22
 msgctxt "Title"
 msgid "Short domain (@pm.me)"
 msgstr "Dominio corto (@pm.me)"
@@ -840,7 +840,7 @@ msgid "Edit address"
 msgstr "Editar dirección"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:26
-#: src/app/containers/IdentityContainer.js:17
+#: src/app/containers/IdentityContainer.js:18
 msgctxt "Title"
 msgid "Display name & signature"
 msgstr "Nombre para mostrar y firma"
@@ -851,8 +851,8 @@ msgid "Create address"
 msgstr "Crear dirección"
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:20
-#: src/app/containers/AddressesContainer.js:9
-#: src/app/containers/AddressesContainer.js:14
+#: src/app/containers/AddressesContainer.js:10
+#: src/app/containers/AddressesContainer.js:15
 msgctxt "Title"
 msgid "Addresses"
 msgstr "Direcciones"
@@ -903,26 +903,26 @@ msgid "Delete domain"
 msgstr "Eliminar dominio"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:46
-#: src/app/containers/DomainsContainer.js:12
-#: src/app/containers/DomainsContainer.js:18
+#: src/app/containers/DomainsContainer.js:13
+#: src/app/containers/DomainsContainer.js:19
 msgctxt "Title"
 msgid "Custom domains"
 msgstr "Dominios personalizados"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
-#: src/app/containers/VPNContainer.js:18
+#: src/app/containers/VPNContainer.js:19
 msgctxt "Title"
 msgid "ProtonVPN clients"
 msgstr "Clientes de ProtonVPN"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
-#: src/app/containers/VPNContainer.js:22
+#: src/app/containers/VPNContainer.js:23
 msgctxt "Title"
 msgid "ProtonVPN credentials"
 msgstr "Credenciales de ProtonVPN"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
-#: src/app/containers/VPNContainer.js:30
+#: src/app/containers/VPNContainer.js:31
 msgctxt "Title"
 msgid "ProtonVPN resources"
 msgstr "Recursos de ProtonVPN"
@@ -933,7 +933,7 @@ msgid "Edit OpenVPN / IKEv2 credentials"
 msgstr "Editar credenciales OpenVPN / IKEv2"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
-#: src/app/containers/VPNContainer.js:26
+#: src/app/containers/VPNContainer.js:27
 msgctxt "Title"
 msgid "OpenVPN / IKEv2 username"
 msgstr "Usuario de OpenVPN / IKEv2"
@@ -1026,13 +1026,13 @@ msgstr "Inicie sesión otra vez para continuar"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
-#: src/app/containers/SubscriptionContainer.js:47
+#: src/app/containers/SubscriptionContainer.js:48
 msgctxt "Title"
 msgid "Payment methods"
 msgstr "Métodos de pago"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:34
-#: src/app/containers/SecurityContainer.js:22
+#: src/app/containers/SecurityContainer.js:23
 msgctxt "Title"
 msgid "Address verification"
 msgstr "Verificación de direcciones"
@@ -1095,7 +1095,7 @@ msgid "Human verification"
 msgstr "Verificación humana"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:17
-#: src/app/containers/GeneralContainer.js:23
+#: src/app/containers/GeneralContainer.js:30
 msgctxt "Title"
 msgid "Messages"
 msgstr "Mensajes"
@@ -1111,8 +1111,8 @@ msgid "Add user"
 msgstr "Añadir usuario"
 
 #: node_modules/react-components/containers/members/MembersSection.js:118
-#: src/app/containers/MembersContainer.js:12
-#: src/app/containers/MembersContainer.js:18
+#: src/app/containers/MembersContainer.js:13
+#: src/app/containers/MembersContainer.js:19
 msgctxt "Title"
 msgid "Users"
 msgstr "Usuarios"
@@ -1128,7 +1128,7 @@ msgid "Change theme"
 msgstr "Cambiar tema"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:74
-#: src/app/containers/AppearanceContainer.js:22
+#: src/app/containers/AppearanceContainer.js:23
 msgctxt "Title"
 msgid "Themes"
 msgstr "Temas"
@@ -1139,19 +1139,19 @@ msgid "Clear"
 msgstr "Borrar"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:109
-#: src/app/containers/SecurityContainer.js:18
+#: src/app/containers/SecurityContainer.js:19
 msgctxt "Title"
 msgid "Authentication logs"
 msgstr "Registros de autenticación"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
-#: src/app/containers/AppearanceContainer.js:18
+#: src/app/containers/AppearanceContainer.js:19
 msgctxt "Title"
 msgid "Toolbars"
 msgstr "Barra de herramientas"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:47
-#: src/app/containers/AppearanceContainer.js:14
+#: src/app/containers/AppearanceContainer.js:15
 msgctxt "Title"
 msgid "Layouts"
 msgstr "Diseños"
@@ -1163,7 +1163,7 @@ msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
 #: node_modules/react-components/containers/general/ShortcutsModal.js:12
-#: src/app/containers/GeneralContainer.js:10
+#: src/app/containers/GeneralContainer.js:17
 msgctxt "Title"
 msgid "General"
 msgstr "General"
@@ -1188,7 +1188,6 @@ msgctxt "Title"
 msgid "Jumping"
 msgstr "Saltos"
 
-#: node_modules/react-components/components/sidebar/SubSidebar.js:10
 #: node_modules/react-components/containers/general/ShortcutsModal.js:95
 msgctxt "Title"
 msgid "Navigation"
@@ -1220,13 +1219,13 @@ msgid "Contact details"
 msgstr "Datos de contacto"
 
 #: node_modules/react-components/containers/general/ShortcutsSection.js:24
-#: src/app/containers/GeneralContainer.js:31
+#: src/app/containers/GeneralContainer.js:38
 msgctxt "Title"
 msgid "Shortcuts"
 msgstr "Atajos de teclado"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:54
-#: src/app/containers/GeneralContainer.js:15
+#: src/app/containers/GeneralContainer.js:22
 msgctxt "Title"
 msgid "Language"
 msgstr "Idioma"
@@ -1273,7 +1272,7 @@ msgstr "Añadir detalles de la factura"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:59
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:69
-#: src/app/containers/SubscriptionContainer.js:51
+#: src/app/containers/SubscriptionContainer.js:52
 msgctxt "Title"
 msgid "Invoices"
 msgstr "Facturas"
@@ -1311,7 +1310,7 @@ msgid "Account disabled"
 msgstr "Cuenta desactivada"
 
 #: node_modules/react-components/containers/search/SearchSection.js:24
-#: src/app/containers/GeneralContainer.js:27
+#: src/app/containers/GeneralContainer.js:34
 msgctxt "Title"
 msgid "Search"
 msgstr "Búsqueda"
@@ -1332,11 +1331,11 @@ msgid "Preview"
 msgstr "Previsualizar"
 
 #: node_modules/react-components/components/container/RelatedSettingsSection.js:14
-#: src/app/containers/AddressesContainer.js:18
-#: src/app/containers/AutoReplyContainer.js:22
-#: src/app/containers/DomainsContainer.js:26
-#: src/app/containers/MembersContainer.js:22
-#: src/app/containers/OrganizationContainer.js:26
+#: src/app/containers/AddressesContainer.js:19
+#: src/app/containers/AutoReplyContainer.js:23
+#: src/app/containers/DomainsContainer.js:27
+#: src/app/containers/MembersContainer.js:23
+#: src/app/containers/OrganizationContainer.js:27
 msgctxt "Title"
 msgid "Related settings"
 msgstr "Ajustes relacionados"
@@ -1352,102 +1351,102 @@ msgid "Mailbox"
 msgstr "Buzón"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:39
+#: src/app/components/layout/PrivateLayout.js:72
 msgctxt "Title"
 msgid "Settings"
 msgstr "Ajustes"
 
-#: src/app/containers/OrganizationContainer.js:18
+#: src/app/containers/OrganizationContainer.js:19
 msgctxt "Title"
 msgid "Name"
 msgstr "Nombre"
 
-#: src/app/containers/DomainsContainer.js:22
+#: src/app/containers/DomainsContainer.js:23
 msgctxt "Title"
 msgid "Catch-all"
 msgstr "Catch-all"
 
-#: src/app/containers/IdentityContainer.js:12
+#: src/app/containers/IdentityContainer.js:13
 msgctxt "Title"
 msgid "Identity"
 msgstr "Identidad"
 
-#: src/app/containers/GeneralContainer.js:19
+#: src/app/containers/GeneralContainer.js:26
 msgctxt "Title"
 msgid "Desktop notifications"
 msgstr "Notificaciones de escritorio"
 
-#: src/app/containers/AppearanceContainer.js:9
+#: src/app/containers/AppearanceContainer.js:10
 msgctxt "Title"
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/app/containers/FiltersContainer.js:9
+#: src/app/containers/FiltersContainer.js:10
 msgctxt "Title"
 msgid "Filters"
 msgstr "Filtros"
 
-#: src/app/containers/FiltersContainer.js:14
+#: src/app/containers/FiltersContainer.js:15
 msgctxt "Title"
 msgid "Custom filters"
 msgstr "Filtros personalizados"
 
-#: src/app/containers/FiltersContainer.js:18
+#: src/app/containers/FiltersContainer.js:19
 msgctxt "Title"
 msgid "Spam filters"
 msgstr "Filtros de spam"
 
-#: src/app/containers/FoldersLabelsContainer.js:9
+#: src/app/containers/FoldersLabelsContainer.js:10
 msgctxt "Title"
 msgid "Folders/labels"
 msgstr "Carpetas/Etiquetas"
 
-#: src/app/containers/FoldersLabelsContainer.js:14
+#: src/app/containers/FoldersLabelsContainer.js:15
 msgctxt "Title"
 msgid "Folders and labels"
 msgstr "Carpetas y etiquetas"
 
-#: src/app/containers/KeysContainer.js:9
+#: src/app/containers/KeysContainer.js:10
 msgctxt "Title"
 msgid "Keys"
 msgstr "Claves"
 
-#: src/app/containers/SecurityContainer.js:9
+#: src/app/containers/SecurityContainer.js:10
 msgctxt "Title"
 msgid "Security"
 msgstr "Seguridad"
 
-#: src/app/containers/SecurityContainer.js:14
+#: src/app/containers/SecurityContainer.js:15
 msgctxt "Title"
 msgid "Session management"
 msgstr "Administración de sesiones"
 
-#: src/app/containers/SecurityContainer.js:26
+#: src/app/containers/SecurityContainer.js:27
 msgctxt "Title"
 msgid "External PGP settings"
 msgstr "Ajustes PGP externos"
 
-#: src/app/containers/AppsContainer.js:12
+#: src/app/containers/AppsContainer.js:13
 msgctxt "Title"
 msgid "Apps"
 msgstr "Apps"
 
-#: src/app/containers/AppsContainer.js:17
+#: src/app/containers/AppsContainer.js:18
 msgctxt "Title"
 msgid "ProtonMail Bridge"
 msgstr "ProtonMail Bridge"
 
-#: src/app/containers/AppsContainer.js:22
+#: src/app/containers/AppsContainer.js:23
 msgctxt "Title"
 msgid "ProtonMail Beta"
 msgstr "ProtonMail Beta"
 
-#: src/app/containers/AppsContainer.js:26
+#: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail apps"
 msgstr "Apps de ProtonMail"
 
-#: src/app/containers/VPNContainer.js:13
+#: src/app/containers/VPNContainer.js:14
 msgctxt "Title"
 msgid "ProtonVPN"
 msgstr "ProtonVPN"
@@ -1481,7 +1480,8 @@ msgstr "Verificar"
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:8
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:420
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:434
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:142
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
 #: node_modules/react-components/containers/domains/DomainModal.js:157
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
@@ -1724,6 +1724,7 @@ msgctxt "Action"
 msgid "Re-activate"
 msgstr "Reactivar"
 
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
@@ -1751,7 +1752,7 @@ msgstr "Ok"
 #: node_modules/react-components/components/modal/Input.js:34
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:143
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
@@ -2043,7 +2044,7 @@ msgstr "Mostrar atajos de teclado"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:32
+#: src/app/components/layout/PrivateLayout.js:65
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Mejorar"
@@ -2588,8 +2589,8 @@ msgstr "Cree y administre subcuentas y asígneles direcciones de correo en su do
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:43
 msgctxt "Info"
-msgid "The name and logo will be visible to your users while they are logged in."
-msgstr "El nombre y el logo serán visibles para sus usuarios mientras estén conectados."
+msgid "The name will be visible to your users while they are logged in."
+msgstr ""
 
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:40
 msgctxt "Info"
@@ -2654,7 +2655,7 @@ msgctxt "Info"
 msgid "Done"
 msgstr "Hecho"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:149
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:163
 msgctxt "Info"
 msgid "Before you can start sending and receiving emails from your new addresses you need to create encryption keys for them."
 msgstr "Antes de que pueda enviar y recibir mensajes desde sus direcciones nuevas, necesita crear las claves de cifrado para ellas."
@@ -3192,22 +3193,22 @@ msgctxt "Info"
 msgid "Week"
 msgstr "Semana"
 
-#: src/app/containers/OrganizationContainer.js:43
+#: src/app/containers/OrganizationContainer.js:44
 msgctxt "Info"
 msgid "Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address."
 msgstr "Vaya a ajustes de dominios si desea crear y administrar dominios personalizados, incluyendo la elección de una dirección catch-all."
 
-#: src/app/containers/OrganizationContainer.js:50
+#: src/app/containers/OrganizationContainer.js:51
 msgctxt "Info"
 msgid "Go to the user settings if you want to create and manage the users of your organization."
 msgstr "Vaya a ajustes de usuario si desea crear y administrar los usuarios de su organización."
 
-#: src/app/containers/MembersContainer.js:38
+#: src/app/containers/MembersContainer.js:39
 msgctxt "Info"
 msgid "Go to the address settings if you want to create and manage addresses for your users."
 msgstr "Vaya a ajustes de dirección si desea crear y administrar direcciones para sus usuarios."
 
-#: src/app/containers/DomainsContainer.js:39
+#: src/app/containers/DomainsContainer.js:40
 msgctxt "Info"
 msgid "Go to the User Settings if you want to create and manage users in your organization."
 msgstr "Vaya a los ajustes de usuario si desea crear y administrar usuarios en su organización."
@@ -3223,29 +3224,29 @@ msgctxt "Info"
 msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
 msgstr "Actualice a un plan de pago con soporte multi usuario si desea crear y administrar usuarios en su organización."
 
-#: src/app/containers/AddressesContainer.js:31
-#: src/app/containers/AddressesContainer.js:50
+#: src/app/containers/AddressesContainer.js:32
+#: src/app/containers/AddressesContainer.js:51
 msgctxt "Info"
 msgid "Go to the Domain settings if you want to create  and manage custom domains for your users."
 msgstr "Vaya a los ajustes de Dominio si desea crear y administrar dominios personalizados para sus usuarios."
 
-#: src/app/containers/AddressesContainer.js:38
+#: src/app/containers/AddressesContainer.js:39
 msgctxt "Info"
 msgid "Go to User Settings if you want to create and manage the list of users in your organization."
 msgstr "Vaya a los ajustes de Usuario si desea crear y administrar la list de usuarios en su organización."
 
-#: src/app/containers/AddressesContainer.js:57
-#: src/app/containers/AddressesContainer.js:74
+#: src/app/containers/AddressesContainer.js:58
+#: src/app/containers/AddressesContainer.js:75
 msgctxt "Info"
 msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
 msgstr "Actualice a un plan multi usuario si desea crear y administrar a los usuarios de su organización."
 
-#: src/app/containers/AddressesContainer.js:68
+#: src/app/containers/AddressesContainer.js:69
 msgctxt "Info"
 msgid "Upgrade to a paid plan if you want to create and manage custom domains."
 msgstr "Actualice a un plan de pago si desea crear y administrar dominios personalizados."
 
-#: src/app/containers/AutoReplyContainer.js:38
+#: src/app/containers/AutoReplyContainer.js:39
 msgctxt "Info"
 msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
 msgstr "Vaya a ajustes de filtro si desea crear y administrar respuestas automáticas por correo electrónico."
@@ -3607,7 +3608,7 @@ msgid "Custom domains"
 msgstr "Dominios personalizados"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:85
-#: node_modules/react-components/containers/members/MemberModal.js:218
+#: node_modules/react-components/containers/members/MemberModal.js:220
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
 msgctxt "Label"
@@ -3891,7 +3892,7 @@ msgid "Confirm password"
 msgstr "Confirmar contraseña"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:206
+#: node_modules/react-components/containers/members/MemberModal.js:208
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
 msgctxt "Label"
 msgid "Account storage"
@@ -4913,9 +4914,9 @@ msgstr "vaciar la caché del navegador"
 
 #: node_modules/react-components/containers/heading/UpgradeButton.js:13
 #: node_modules/react-components/containers/heading/UpgradeButton.js:21
-#: src/app/containers/AddressesContainer.js:59
-#: src/app/containers/AddressesContainer.js:69
-#: src/app/containers/AddressesContainer.js:76
+#: src/app/containers/AddressesContainer.js:60
+#: src/app/containers/AddressesContainer.js:70
+#: src/app/containers/AddressesContainer.js:77
 #: src/app/containers/DomainsContainer.js:59
 msgctxt "Link"
 msgid "Upgrade"
@@ -4926,28 +4927,28 @@ msgctxt "Link"
 msgid "Learn more"
 msgstr "Más información"
 
-#: src/app/containers/AddressesContainer.js:33
-#: src/app/containers/AddressesContainer.js:52
-#: src/app/containers/OrganizationContainer.js:45
+#: src/app/containers/AddressesContainer.js:34
+#: src/app/containers/AddressesContainer.js:53
+#: src/app/containers/OrganizationContainer.js:46
 msgctxt "Link"
 msgid "Domain settings"
 msgstr "Ajustes de dominio"
 
-#: src/app/containers/AddressesContainer.js:40
+#: src/app/containers/AddressesContainer.js:41
 #: src/app/containers/DomainsContainer.js:41
-#: src/app/containers/OrganizationContainer.js:52
+#: src/app/containers/OrganizationContainer.js:53
 msgctxt "Link"
 msgid "User settings"
 msgstr "Ajustes de usuario"
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
-#: src/app/containers/MembersContainer.js:40
+#: src/app/containers/MembersContainer.js:41
 msgctxt "Link"
 msgid "Address settings"
 msgstr "Ajustes de dirección"
 
-#: src/app/containers/AutoReplyContainer.js:40
+#: src/app/containers/AutoReplyContainer.js:41
 msgctxt "Link"
 msgid "Filter Settings"
 msgstr "Ajustes de filtro"
@@ -5372,14 +5373,14 @@ msgstr "Actualice la página o vuelva a intentarlo más tarde."
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:78
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:71
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 msgctxt "Header for addresses table"
 msgid "Address"
 msgstr "Dirección"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:80
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:72
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"

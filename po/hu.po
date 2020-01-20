@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-01-11 10:21\n"
+"PO-Revision-Date: 2020-01-19 20:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -202,7 +202,7 @@ msgctxt "Error"
 msgid "Error"
 msgstr "Hiba"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:60
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:61
 msgctxt "Error"
 msgid "Member keys are not set up."
 msgstr "A felhasználói kulcsok nincsenek beállítva."
@@ -538,8 +538,8 @@ msgid "Add PayPal payment method"
 msgstr "PayPal fizetési mód hozzáadása"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
-#: src/app/containers/SubscriptionContainer.js:27
-#: src/app/containers/SubscriptionContainer.js:37
+#: src/app/containers/SubscriptionContainer.js:28
+#: src/app/containers/SubscriptionContainer.js:38
 msgctxt "Title"
 msgid "Subscription"
 msgstr "Előfizetés"
@@ -663,7 +663,7 @@ msgstr "Előfizetéseim"
 #: node_modules/react-components/containers/payments/PlansSection.js:106
 #: node_modules/react-components/containers/payments/PlansSection.js:115
 #: node_modules/react-components/containers/payments/PlansSection.js:123
-#: src/app/containers/SubscriptionContainer.js:33
+#: src/app/containers/SubscriptionContainer.js:34
 msgctxt "Title"
 msgid "Plans"
 msgstr "Csomagok"
@@ -687,7 +687,7 @@ msgstr "Kredit hozzáadása"
 #: node_modules/react-components/containers/payments/BillingSection.js:96
 #: node_modules/react-components/containers/payments/BillingSection.js:105
 #: node_modules/react-components/containers/payments/BillingSection.js:121
-#: src/app/containers/SubscriptionContainer.js:42
+#: src/app/containers/SubscriptionContainer.js:43
 msgctxt "Title"
 msgid "Billing details"
 msgstr "Számlázási adatok"
@@ -718,7 +718,7 @@ msgid "Export private key"
 msgstr "Privát kulcs exportálása"
 
 #: node_modules/react-components/containers/keys/UserKeysSection.js:18
-#: src/app/containers/KeysContainer.js:18
+#: src/app/containers/KeysContainer.js:19
 msgctxt "Title"
 msgid "Contact encryption keys"
 msgstr "Partner titkosítási kulcsai"
@@ -739,7 +739,7 @@ msgid "Delete key"
 msgstr "Kulcs törlése"
 
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:71
-#: src/app/containers/KeysContainer.js:14
+#: src/app/containers/KeysContainer.js:15
 msgctxt "Title"
 msgid "Email encryption keys"
 msgstr "E-mail titkosítási kulcsai"
@@ -750,8 +750,8 @@ msgid "Create auto-reply"
 msgstr "Új automatikus válasz"
 
 #: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
-#: src/app/containers/AutoReplyContainer.js:12
-#: src/app/containers/AutoReplyContainer.js:18
+#: src/app/containers/AutoReplyContainer.js:13
+#: src/app/containers/AutoReplyContainer.js:19
 msgctxt "Title"
 msgid "Auto-reply"
 msgstr "Automatikus válasz"
@@ -792,7 +792,7 @@ msgid "Multi-user support"
 msgstr "Többfelhasználós mód"
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:42
-#: src/app/containers/OrganizationContainer.js:12
+#: src/app/containers/OrganizationContainer.js:13
 msgctxt "Title"
 msgid "Organization"
 msgstr "Szervezet"
@@ -818,18 +818,18 @@ msgid "Change organization keys"
 msgstr "Szervezeti kulcsok megváltoztatása"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
-#: src/app/containers/OrganizationContainer.js:22
+#: src/app/containers/OrganizationContainer.js:23
 msgctxt "Title"
 msgid "Password & key"
 msgstr "Jelszó és kulcs"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:141
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
 msgctxt "Title"
 msgid "Generate missing keys"
 msgstr "Hiányzó kulcsok generálása"
 
 #: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/containers/IdentityContainer.js:21
+#: src/app/containers/IdentityContainer.js:22
 msgctxt "Title"
 msgid "Short domain (@pm.me)"
 msgstr "Rövid domain (@pm.me)"
@@ -840,7 +840,7 @@ msgid "Edit address"
 msgstr "Cím szerkesztése"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:26
-#: src/app/containers/IdentityContainer.js:17
+#: src/app/containers/IdentityContainer.js:18
 msgctxt "Title"
 msgid "Display name & signature"
 msgstr "Megjelenítendő név és aláírás"
@@ -851,8 +851,8 @@ msgid "Create address"
 msgstr "Cím hozzáadása"
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:20
-#: src/app/containers/AddressesContainer.js:9
-#: src/app/containers/AddressesContainer.js:14
+#: src/app/containers/AddressesContainer.js:10
+#: src/app/containers/AddressesContainer.js:15
 msgctxt "Title"
 msgid "Addresses"
 msgstr "Címek"
@@ -903,26 +903,26 @@ msgid "Delete domain"
 msgstr "Domain név törlése"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:46
-#: src/app/containers/DomainsContainer.js:12
-#: src/app/containers/DomainsContainer.js:18
+#: src/app/containers/DomainsContainer.js:13
+#: src/app/containers/DomainsContainer.js:19
 msgctxt "Title"
 msgid "Custom domains"
 msgstr "Egyedi domain nevek"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
-#: src/app/containers/VPNContainer.js:18
+#: src/app/containers/VPNContainer.js:19
 msgctxt "Title"
 msgid "ProtonVPN clients"
 msgstr "ProtonVPN kliensek"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
-#: src/app/containers/VPNContainer.js:22
+#: src/app/containers/VPNContainer.js:23
 msgctxt "Title"
 msgid "ProtonVPN credentials"
 msgstr "ProtonVPN bejelentkezési adatok"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
-#: src/app/containers/VPNContainer.js:30
+#: src/app/containers/VPNContainer.js:31
 msgctxt "Title"
 msgid "ProtonVPN resources"
 msgstr "ProtonVPN információk"
@@ -933,7 +933,7 @@ msgid "Edit OpenVPN / IKEv2 credentials"
 msgstr "Az OpenVPN / IKEv2 hitelesítőadatok módosítása"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
-#: src/app/containers/VPNContainer.js:26
+#: src/app/containers/VPNContainer.js:27
 msgctxt "Title"
 msgid "OpenVPN / IKEv2 username"
 msgstr "OpenVPN / IKEv2 felhasználónév"
@@ -1026,13 +1026,13 @@ msgstr "Lépjen be újból a folytatáshoz"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
-#: src/app/containers/SubscriptionContainer.js:47
+#: src/app/containers/SubscriptionContainer.js:48
 msgctxt "Title"
 msgid "Payment methods"
 msgstr "Fizetési módok"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:34
-#: src/app/containers/SecurityContainer.js:22
+#: src/app/containers/SecurityContainer.js:23
 msgctxt "Title"
 msgid "Address verification"
 msgstr "Cím ellenőrzése"
@@ -1095,7 +1095,7 @@ msgid "Human verification"
 msgstr "Emberi ellenőrzés"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:17
-#: src/app/containers/GeneralContainer.js:23
+#: src/app/containers/GeneralContainer.js:30
 msgctxt "Title"
 msgid "Messages"
 msgstr "Üzenetek"
@@ -1111,8 +1111,8 @@ msgid "Add user"
 msgstr "Új felhasználó"
 
 #: node_modules/react-components/containers/members/MembersSection.js:118
-#: src/app/containers/MembersContainer.js:12
-#: src/app/containers/MembersContainer.js:18
+#: src/app/containers/MembersContainer.js:13
+#: src/app/containers/MembersContainer.js:19
 msgctxt "Title"
 msgid "Users"
 msgstr "Felhasználók"
@@ -1128,7 +1128,7 @@ msgid "Change theme"
 msgstr "Téma megváltoztatása"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:74
-#: src/app/containers/AppearanceContainer.js:22
+#: src/app/containers/AppearanceContainer.js:23
 msgctxt "Title"
 msgid "Themes"
 msgstr "Témák"
@@ -1139,19 +1139,19 @@ msgid "Clear"
 msgstr "Ürítés"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:109
-#: src/app/containers/SecurityContainer.js:18
+#: src/app/containers/SecurityContainer.js:19
 msgctxt "Title"
 msgid "Authentication logs"
 msgstr "Bejelentkezési napló"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
-#: src/app/containers/AppearanceContainer.js:18
+#: src/app/containers/AppearanceContainer.js:19
 msgctxt "Title"
 msgid "Toolbars"
 msgstr "Eszköztárak"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:47
-#: src/app/containers/AppearanceContainer.js:14
+#: src/app/containers/AppearanceContainer.js:15
 msgctxt "Title"
 msgid "Layouts"
 msgstr "Elrendezések"
@@ -1163,7 +1163,7 @@ msgid "Keyboard shortcuts"
 msgstr "Gyorsbillentyűk"
 
 #: node_modules/react-components/containers/general/ShortcutsModal.js:12
-#: src/app/containers/GeneralContainer.js:10
+#: src/app/containers/GeneralContainer.js:17
 msgctxt "Title"
 msgid "General"
 msgstr "Általános"
@@ -1188,7 +1188,6 @@ msgctxt "Title"
 msgid "Jumping"
 msgstr "Ugrás"
 
-#: node_modules/react-components/components/sidebar/SubSidebar.js:10
 #: node_modules/react-components/containers/general/ShortcutsModal.js:95
 msgctxt "Title"
 msgid "Navigation"
@@ -1220,13 +1219,13 @@ msgid "Contact details"
 msgstr "Névjegy részletek"
 
 #: node_modules/react-components/containers/general/ShortcutsSection.js:24
-#: src/app/containers/GeneralContainer.js:31
+#: src/app/containers/GeneralContainer.js:38
 msgctxt "Title"
 msgid "Shortcuts"
 msgstr "Gyorsbillentyűk"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:54
-#: src/app/containers/GeneralContainer.js:15
+#: src/app/containers/GeneralContainer.js:22
 msgctxt "Title"
 msgid "Language"
 msgstr "Nyelv"
@@ -1273,7 +1272,7 @@ msgstr "Számlázási adatok hozzáadása"
 
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:59
 #: node_modules/react-components/containers/invoices/InvoicesSection.js:69
-#: src/app/containers/SubscriptionContainer.js:51
+#: src/app/containers/SubscriptionContainer.js:52
 msgctxt "Title"
 msgid "Invoices"
 msgstr "Számlák"
@@ -1311,7 +1310,7 @@ msgid "Account disabled"
 msgstr "Fiók letiltva"
 
 #: node_modules/react-components/containers/search/SearchSection.js:24
-#: src/app/containers/GeneralContainer.js:27
+#: src/app/containers/GeneralContainer.js:34
 msgctxt "Title"
 msgid "Search"
 msgstr "Keresés"
@@ -1332,11 +1331,11 @@ msgid "Preview"
 msgstr "Előnézet"
 
 #: node_modules/react-components/components/container/RelatedSettingsSection.js:14
-#: src/app/containers/AddressesContainer.js:18
-#: src/app/containers/AutoReplyContainer.js:22
-#: src/app/containers/DomainsContainer.js:26
-#: src/app/containers/MembersContainer.js:22
-#: src/app/containers/OrganizationContainer.js:26
+#: src/app/containers/AddressesContainer.js:19
+#: src/app/containers/AutoReplyContainer.js:23
+#: src/app/containers/DomainsContainer.js:27
+#: src/app/containers/MembersContainer.js:23
+#: src/app/containers/OrganizationContainer.js:27
 msgctxt "Title"
 msgid "Related settings"
 msgstr "Kapcsolódó beállítások"
@@ -1352,102 +1351,102 @@ msgid "Mailbox"
 msgstr "Postafiók"
 
 #: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:39
+#: src/app/components/layout/PrivateLayout.js:72
 msgctxt "Title"
 msgid "Settings"
 msgstr "Beállítások"
 
-#: src/app/containers/OrganizationContainer.js:18
+#: src/app/containers/OrganizationContainer.js:19
 msgctxt "Title"
 msgid "Name"
 msgstr "Név"
 
-#: src/app/containers/DomainsContainer.js:22
+#: src/app/containers/DomainsContainer.js:23
 msgctxt "Title"
 msgid "Catch-all"
 msgstr "Gyűjtő e-mail"
 
-#: src/app/containers/IdentityContainer.js:12
+#: src/app/containers/IdentityContainer.js:13
 msgctxt "Title"
 msgid "Identity"
 msgstr "Személyazonosság"
 
-#: src/app/containers/GeneralContainer.js:19
+#: src/app/containers/GeneralContainer.js:26
 msgctxt "Title"
 msgid "Desktop notifications"
 msgstr "Asztali értesítések"
 
-#: src/app/containers/AppearanceContainer.js:9
+#: src/app/containers/AppearanceContainer.js:10
 msgctxt "Title"
 msgid "Appearance"
 msgstr "Megjelenés"
 
-#: src/app/containers/FiltersContainer.js:9
+#: src/app/containers/FiltersContainer.js:10
 msgctxt "Title"
 msgid "Filters"
 msgstr "Szűrők"
 
-#: src/app/containers/FiltersContainer.js:14
+#: src/app/containers/FiltersContainer.js:15
 msgctxt "Title"
 msgid "Custom filters"
-msgstr "Egyedi szűrők"
+msgstr "Saját szűrők"
 
-#: src/app/containers/FiltersContainer.js:18
+#: src/app/containers/FiltersContainer.js:19
 msgctxt "Title"
 msgid "Spam filters"
 msgstr "Levélszemétszűrők"
 
-#: src/app/containers/FoldersLabelsContainer.js:9
+#: src/app/containers/FoldersLabelsContainer.js:10
 msgctxt "Title"
 msgid "Folders/labels"
 msgstr "Mappák/Címkék"
 
-#: src/app/containers/FoldersLabelsContainer.js:14
+#: src/app/containers/FoldersLabelsContainer.js:15
 msgctxt "Title"
 msgid "Folders and labels"
 msgstr "Mappák és Címkék"
 
-#: src/app/containers/KeysContainer.js:9
+#: src/app/containers/KeysContainer.js:10
 msgctxt "Title"
 msgid "Keys"
 msgstr "Kulcsok"
 
-#: src/app/containers/SecurityContainer.js:9
+#: src/app/containers/SecurityContainer.js:10
 msgctxt "Title"
 msgid "Security"
 msgstr "Biztonság"
 
-#: src/app/containers/SecurityContainer.js:14
+#: src/app/containers/SecurityContainer.js:15
 msgctxt "Title"
 msgid "Session management"
 msgstr "Munkamenet-kezelés"
 
-#: src/app/containers/SecurityContainer.js:26
+#: src/app/containers/SecurityContainer.js:27
 msgctxt "Title"
 msgid "External PGP settings"
 msgstr "Külső PGP beállítások"
 
-#: src/app/containers/AppsContainer.js:12
+#: src/app/containers/AppsContainer.js:13
 msgctxt "Title"
 msgid "Apps"
 msgstr "Alkalmazások"
 
-#: src/app/containers/AppsContainer.js:17
+#: src/app/containers/AppsContainer.js:18
 msgctxt "Title"
 msgid "ProtonMail Bridge"
 msgstr "ProtonMail Bridge"
 
-#: src/app/containers/AppsContainer.js:22
+#: src/app/containers/AppsContainer.js:23
 msgctxt "Title"
 msgid "ProtonMail Beta"
 msgstr "ProtonMail béta"
 
-#: src/app/containers/AppsContainer.js:26
+#: src/app/containers/AppsContainer.js:27
 msgctxt "Title"
 msgid "ProtonMail apps"
 msgstr "ProtonMail alkalmazások"
 
-#: src/app/containers/VPNContainer.js:13
+#: src/app/containers/VPNContainer.js:14
 msgctxt "Title"
 msgid "ProtonVPN"
 msgstr "ProtonVPN"
@@ -1481,7 +1480,8 @@ msgstr "Megerősít"
 #: node_modules/react-components/components/modal/PreviewPDFModal.js:8
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:420
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:434
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:142
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
 #: node_modules/react-components/containers/domains/DomainModal.js:157
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
@@ -1724,6 +1724,7 @@ msgctxt "Action"
 msgid "Re-activate"
 msgstr "Újra aktiválás"
 
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
@@ -1751,7 +1752,7 @@ msgstr "OK"
 #: node_modules/react-components/components/modal/Input.js:34
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:143
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
@@ -2043,7 +2044,7 @@ msgstr "Gyorsbillentyűk megtekintése"
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
 #: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:32
+#: src/app/components/layout/PrivateLayout.js:65
 msgctxt "Action"
 msgid "Upgrade"
 msgstr "Váltás"
@@ -2220,12 +2221,12 @@ msgstr "Nem aktivált"
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:13
 msgctxt "Info"
 msgid "Black Friday 2019 newcomer discount has been applied!"
-msgstr "Fekete Péntek 2019 újonc kedvezmény alkalmazva!"
+msgstr "Fekete Péntek 2019 új előfizetői kedvezmény alkalmazva!"
 
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:20
 msgctxt "Info"
 msgid "Save 20% with annual"
-msgstr "20% megtakarítás az évivel"
+msgstr "20% megtakarítás az éves fizetéssel"
 
 #: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:25
 msgctxt "Info"
@@ -2240,7 +2241,7 @@ msgstr "Kétéves fizetéshez járó 33% kedvezmény automatikusan jóváírásr
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:50
 msgctxt "Info"
 msgid "By using ProtonVPN to browse the web, your Internet connection is encrypted to ensure that your navigation is secure. ProtonVPN has servers located in 30+ countries around the world."
-msgstr "A ProtonVPN használatával az interneten való böngészéshez, az Internet csatlakozása titkosítva van, hogy a böngészés biztonságos legyen. ProtonVPn szerverek 30+ országban találhatók a világ körül."
+msgstr "A ProtonVPN használata titkosítja az adatforgalmát a böngészés közben, bizalmasabbá téve az internetezést. ProtonVPN szerverek harmincnál is több országban találhatók a világ körül."
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:17
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:18
@@ -2417,7 +2418,7 @@ msgstr "A Bitcoin tranzakciók visszaigazolása időbe telhet (akár 24 órába)
 #: node_modules/react-components/containers/payments/Bitcoin.js:73
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
-msgstr "A Bitcoin fizetés után, kövezze a lenti utasításokat a nagyobb csomagra váltáshoz."
+msgstr "A Bitcoin fizetés után, kövesse a lenti utasításokat a nagyobb csomagra váltáshoz."
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:209
 msgctxt "Info"
@@ -2427,7 +2428,7 @@ msgstr "egy tartalék kulcs felöltése"
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:219
 msgctxt "Info"
 msgid "To reactivate keys, you will be prompted to enter your previous login password from before your account was reset"
-msgstr ""
+msgstr "A kulcsok újraaktiválásához, meg kell majd adnia a fiók visszaállítása előtti bejelentkezési jelszavát"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:223
 #, javascript-format
@@ -2499,7 +2500,7 @@ msgstr "Nem létezik névjegy titkosító kulcs"
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:52
 msgctxt "Info"
 msgid "This feature is intended for advanced users only! After deleting this key, you will not be able to decrypt any message that is encrypted with this key. It may lead to data loss. Are you sure you want to continue?"
-msgstr ""
+msgstr "Ezt a funkciót gyakorlott felhasználóknak szánták! Miután törölte ezt a kulcsot nem lesz képes visszafejteni egyetlen üzenetet sem, amit ezzel a kulccsal titkosított. Ez adatvesztéshez vezethet. Biztos, hogy folytatni szeretné?"
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:97
 #, javascript-format
@@ -2517,7 +2518,7 @@ msgstr "Nem léteznek címek"
 #: node_modules/react-components/containers/keys/AddressKeysSection.js:205
 msgctxt "Info"
 msgid "Download your PGP Keys for use with other PGP compatible services. Only incoming messages in inline OpenPGP format are currently supported."
-msgstr ""
+msgstr "Letöltheti a PGP kulcsait hogy más PGP alkalmazásokban is használja. Jelenleg csak az OpenPGP/inline formátumú bejövő üzenetek támogatottak."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:14
 msgctxt "Info"
@@ -2590,8 +2591,8 @@ msgstr "Hozzon létre és kezeljen al-fiókokat és rendeljen hozzájuk e-mail c
 
 #: node_modules/react-components/containers/organization/OrganizationSection.js:43
 msgctxt "Info"
-msgid "The name and logo will be visible to your users while they are logged in."
-msgstr "A név és a logó látható lesz a bejelentkezett felhasználóinak."
+msgid "The name will be visible to your users while they are logged in."
+msgstr "A név látható lesz a bejelentkezett felhasználóinak."
 
 #: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:40
 msgctxt "Info"
@@ -2656,40 +2657,40 @@ msgctxt "Info"
 msgid "Done"
 msgstr "Kész"
 
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:149
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:163
 msgctxt "Info"
 msgid "Before you can start sending and receiving emails from your new addresses you need to create encryption keys for them."
-msgstr ""
+msgstr "Mielőtt elkezdhetne küldeni és fogadni e-maileket az új címével, létre kell hoznia titkosítási kulcsokat hozzá."
 
 #: node_modules/react-components/containers/addresses/PmMePanel.js:21
 msgctxt "Info"
 msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Paid users can add other @pm.me addresses."
-msgstr ""
+msgstr "A ProtonMail már a @pm.me végződésű címeket is támogatja (lehet a ProtonMail rövidítése vagy \"személyes üzenet nekem\": Private Message me). Az előfizetéses csomagokban további @pm.me címek is felvehetők."
 
 #: node_modules/react-components/containers/addresses/PmMePanel.js:30
 msgctxt "Info"
 msgid "You can now also receive and send messages from your @pm.me address (short for ProtonMail me or Private Message me)."
-msgstr ""
+msgstr "Most már a @pm.me címéről is küldhet és fogadhat leveleket (lehet a ProtonMail rövidítése vagy \"személyes üzenet nekem\": Private Message me)."
 
 #: node_modules/react-components/containers/addresses/PmMePanel.js:32
 msgctxt "Info"
 msgid "The short domain @pm.me is active on your account."
-msgstr ""
+msgstr "A @pm.me rövid domain név aktív a fiókjához."
 
 #: node_modules/react-components/containers/addresses/PmMePanel.js:38
 msgctxt "Info"
 msgid "ProtonMail now supports @pm.me email addresses (short for ProtonMail me or Private Message me). Upgrade to a paid account to also send emails from your @pm.me address."
-msgstr ""
+msgstr "A ProtonMail már a @pm.me végződésű címeket is támogatja (lehet a ProtonMail rövidítése vagy \"személyes üzenet nekem\": Private Message me). Válasszon egy előfizetéses csomagot, hogy a @pm.me címéről is küldhessen leveleket."
 
 #: node_modules/react-components/containers/addresses/PMSignatureField.js:39
 msgctxt "Info"
 msgid "A paid plan is required to turn off the ProtonMail signature. Paid plan revenue allows us to continue supporting free accounts."
-msgstr ""
+msgstr "Előfizetés szükséges a ProtonMail aláírás kikapcsolásához. Az előfizetés lehetővé teszi számunkra, hogy továbbra is biztosíthassunk ingyenes fiókokat."
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:67
 msgctxt "Info"
 msgid "Click the Edit button to personalize your email address. Your Display Name appears in the From field when people receive an email from you. Your Signature is appended at the bottom of your messages. Or leave each field empty for more privacy."
-msgstr ""
+msgstr "Kattintson a Szerkesztés gombra az e-mail címének testreszabásához. A Megjelenített név az üzenetek feladójaként jelenik meg a címzetteknél. Az Aláírás az üzenetek aljára kerül hozzáfűzésre. Vagy üresen is hagyhatja ezeket, a megnövelt adatvédelem érdekében."
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:98
 #: node_modules/react-components/containers/notification/RecoveryEmail.js:11
@@ -2700,19 +2701,19 @@ msgstr "Nincs megadva"
 #: node_modules/react-components/containers/addresses/AddressModal.js:88
 msgctxt "Info"
 msgid "ProtonMail addresses can never be deleted (only disabled). ProtonMail addresses will always count towards your address limit whether enabled or not."
-msgstr ""
+msgstr "A ProtonMail címek soha nem törölhetőek (csak kikapcsolhatóak). A ProtonMail címek mindig beleszámítanak a felvehető címek számába, attól függetlenül, hogy be vannak-e kapcsolva."
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:62
 msgctxt "Info"
 msgid "Premium plans let you add multiple email addresses to your account. All the emails associated with them will appear in the same mailbox. If you are the admin of a Professional or Visionary plan, you can manage email addresses for each user in your organization. The email address at the top of the list will automatically be selected as the default email address."
-msgstr ""
+msgstr "Az előfizetéses csomagokban több e-mail címet is felvehet a fiókjához. Ezek bármelyikére küldött levelek ugyanabba a fiókba érkeznek. Amennyiben egy Professional vagy Visionary csomag adminisztrátora, a szervezet minden felhasználójának címeit kezelheti. A listában legfelsőként szerelő cím lesz az alapértelmezett e-mail."
 
 #: node_modules/react-components/containers/addresses/AddressesSection.js:29
 msgctxt "Info"
 msgid "address used"
 msgid_plural "addresses used"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "cím felhasználva"
+msgstr[1] "cím felhasználva"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:11
 msgctxt "Info"
@@ -2737,18 +2738,18 @@ msgstr "Amennyiben engedélyezi az értesítéseket, a ProtonMail fiókjába ér
 #: node_modules/react-components/containers/domains/CatchAllSection.js:9
 msgctxt "Info"
 msgid "To select the catch-all email address of a domain, open the action dropdown menu and click on Set catch-all"
-msgstr ""
+msgstr "A domain névhez tartozó gyűjtő e-mail cím megadásához nyissa meg a műveletek menüt és kattintson a Gyűjtő e-mail beállítása elemre"
 
 #: node_modules/react-components/containers/domains/SPFSection.js:11
 msgctxt "Info"
 msgid "SPF is used to specify who is allowed to send email for the domain so we strongly recommend including ProtonMail in your SPF record. Please add the following TXT record into your DNS. This can typically be done in the control panel of your domain name registrar."
-msgstr ""
+msgstr "Az SPF feladata, hogy meghatározza, kik küldhetnek levelet az adott domain névvel. Emiatt erősen javasolt a ProtonMail felvétele az SPF rekordba. Kérjük vegye fel a következő TXT rekordot a DNS beállításaiban. Ezt általában a domain név regisztrátor adminisztrálási felületén állathatja be."
 
 #: node_modules/react-components/containers/domains/SPFSection.js:28
 #, javascript-format
 msgctxt "Info"
 msgid "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records."
-msgstr ""
+msgstr "Amennyiben meg kívánja tartani a jelenlegi SPF rekordot, csak írja hozzá a ${ spf } értéket a ${ spfValue } után. Ne hozzon létre több különálló SPF rekordot."
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:11
 msgctxt "Info"
@@ -2779,18 +2780,18 @@ msgstr "Ha erre a domain névre már jelenleg is érkeznek e-mailek, hozza létr
 #: node_modules/react-components/containers/domains/DMARCSection.js:11
 msgctxt "Info"
 msgid "If you have set both SPF and DKIM, DMARC allows you to specify how other email services should deliver email for your domain if both SPF and DKIM checks have failed. This can make it harder for spammers pretending to be you but may also cause delivery issues if not done properly. Feel free to ignore and skip DMARC unless you really want strict policies such as \"p=quarantine\" or \"p=reject\"."
-msgstr ""
+msgstr "Amennyiben az SPF és a DKIM rekordokat már beállította, a DMARC beállítása lehetőséget biztosít annak szabályozására, hogy más e-mail szolgáltatások hogyan fogadhatnak levelet a domain nevével, ha mind az SPF, mind a DKIM ellenőrzések meghiúsultak. Ez megnehezítheti, hogy spammerek levélszemetet küldjenek a domain nevével, de az ön leveleinek továbbításában is fennakadásokat okozhat, ha hibásan van beállítva. Nyugodtan hagyja ki a DMARC beállítását, hacsak nem szigorú szabályokat szeretne beállítani, mint a \"p=quarantine\" vagy \"p=reject\"."
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:28
 #, javascript-format
 msgctxt "Info"
 msgid "${ none } has no effect on email delivery."
-msgstr ""
+msgstr "{ none } nincs hatása az email kézbeítésre."
 
 #: node_modules/react-components/containers/domains/DMARCSection.js:30
 msgctxt "Info"
 msgid "${ address } is where you will receive DMARC reports from other email services."
-msgstr ""
+msgstr "${ address } címre fognak érkezni a DMARC jelentések más e-mail szolgáltatóktól."
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:22
 #: node_modules/react-components/containers/domains/DomainStatus.js:49
@@ -2805,7 +2806,7 @@ msgstr[1] "${ n } cím"
 #: node_modules/react-components/containers/domains/DomainActions.js:44
 msgctxt "Info"
 msgid "Are you sure you want to delete this domain?"
-msgstr ""
+msgstr "Biztosan törölni szeretné ezt a domain nevet?"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:63
 msgctxt "Info"
@@ -2818,60 +2819,61 @@ msgstr[1] "domain név használatban"
 #, javascript-format
 msgctxt "Info"
 msgid "Use the following credentials to log into the ${ downloadLink }."
-msgstr ""
+msgstr "Használja a következő adatokat a bejelentkezéshez a ${ downloadLink } címen."
 
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:28
 msgctxt "Info"
 msgid "Same as ProtonMail login password"
-msgstr ""
+msgstr "Ugyanaz, mint a ProtonMail bejelentkezési jelszó"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:33
 msgctxt "Info"
 msgid "Use the following credentials when connecting to ProtonVPN servers without application. Examples use cases include: Tunnelblick on MacOS, OpenVPN on GNU/Linux.\n"
 "Do not use the OpenVPN / IKEv2 credentials in ProtonVPN applications or on the ProtonVPN dashboard."
-msgstr ""
+msgstr "Ezeket a bejelentkezési adatokat akkor használja, ha nem a ProtonVPN alkalmazással kapcsolódik. Például: Tunnelblick MacOS-en, vagy OpenVPN GNU/Linux-on.\n"
+"Ne az OpenVPN / IKEv2 bejelentkezést használja a ProtonVPN alkalmazáshoz és a ProtonVPN vezérlőpulthoz."
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:78
 #, javascript-format
 msgctxt "Info"
 msgid "${ usedSpaceFormatted } of ${ maxSpaceFormatted } used"
-msgstr ""
+msgstr "${ usedSpaceFormatted } felhasználva (Maximum: { maxSpaceFormatted })"
 
 #: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:81
 msgctxt "Info"
 msgid "Your storage space is shared across all Proton products."
-msgstr ""
+msgstr "A tárhelyen az összes Proton termék osztozik."
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:154
 msgctxt "Info"
 msgid "Two-password mode uses separate passwords for login and mailbox decryption. This provides a minor security benefit in some situations, however we recommend one-password mode for most users. To switch to two password mode, first set a login password and then set a mailbox password."
-msgstr ""
+msgstr "A két jelszavas mód különválasztja a bejelentkezési jelszót és a levelek titkosításához használt jelszót. Ez egy kis biztonsági előnnyel járhat bizonyos esetekben, de általában inkább az egy jelszavas módot javasoljuk a legtöbb felhasználónak. A két jelszavas módra váltáshoz, először adja meg a bejelentkezési jelszót és aztán pedig a titkosítási jelszót."
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:284
 msgctxt "Info"
 msgid "ProtonMail can also be used with a single password which replaces both the login and mailbox password. To switch to single password mode, enter the single password you would like to use and click Save."
-msgstr ""
+msgstr "A ProtonMail egy-jelszavas módban is használható, amely leváltja a külön bejelentkezési és e-mail jelszavakat. Egy-jelszavas módra váltáshoz, adja meg a kívánt jelszót, majd kattintson a Mentés gombra."
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:334
 #, javascript-format
 msgctxt "Info"
 msgid "Save your password somewhere safe. Click on the ${ eye } icon to confirm you that have typed your password correctly."
-msgstr ""
+msgstr "A jelszavát tárolja biztonságos helyen. Kattintson az ${ eye } ikonra, annak megerősítésére, hogy helyesen írta be a jelszót."
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:338
 msgctxt "Info"
 msgid "We recommend adding a recovery email address first. Otherwise, you cannot recover your account if something goes wrong."
-msgstr ""
+msgstr "Javasoljuk, hogy először adjon meg egy helyreállítási e-mail címet. Ellenkező esetben nem tudja visszaállítani fiókját, ha valami rosszul sülne el."
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:102
 msgctxt "Info"
 msgid "Warning: This also deletes all connected services"
-msgstr ""
+msgstr "Figyelem: ez minden kapcsolódó szolgáltatást töröl"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:103
 msgctxt "Info"
 msgid "Example: ProtonMail, ProtonContact, ProtonVPN, ProtonDrive, ProtonCalendar"
-msgstr ""
+msgstr "Például: ProtonMail, ProtonContact, ProtonVPN, ProtonDrive, ProtonCalendar"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:106
 msgctxt "Info"
@@ -2881,74 +2883,74 @@ msgstr "Figyelem: ez a törlés visszavonhatatlan"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:107
 msgctxt "Info"
 msgid "If you wish to delete this account in order to combine it with another one, do NOT delete it."
-msgstr ""
+msgstr "Amennyiben azért szeretné törölni a fiókot, hogy egy másikkal összevonja, NE törölje."
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:136
 msgctxt "Info"
 msgid "Please provide an email address in case we need to contact you."
-msgstr ""
+msgstr "Kérjük, adjon meg egy email címet, arra az esetre, ha kapcsolatba kellene lépnünk önnel."
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:150
 msgctxt "Info"
 msgid "Enter your login password to confirm your identity."
-msgstr ""
+msgstr "Írja be a bejelentkezési jelszavát az azonosításhoz."
 
 #: node_modules/react-components/containers/account/DeleteSection.js:45
 #, javascript-format
 msgctxt "Info"
 msgid "Your ProtonVPN and ProtonMail accounts are linked. To delete them both, please log in at ${ loginLink } and delete your account there."
-msgstr ""
+msgstr "A ProtonMail és a ProtonVPN fiókok össze vannak kapcsolva. Mindkettő törléséhez lépjen be a következő címen és ott törölje a fiókokat: ${ loginLink }."
 
 #: node_modules/react-components/containers/account/DeleteSection.js:69
 msgctxt "Info"
 msgid "Deleting your account will permanently delete your emails, and you will lose your email address."
-msgstr ""
+msgstr "A fiók törlésével véglegesen elveszíti az összes levelét és az e-mail címét."
 
 #: node_modules/react-components/containers/account/DeleteSection.js:71
 msgctxt "Info"
 msgid "Deleting your account will permanently delete all data associated with it and it cannot be recovered. You will no longer be able to use the same username should you decide to create a new account."
-msgstr ""
+msgstr "A fiók törlésekor annak összes adata törlődik és nem állítható vissza. Ha a későbbiekben új címet szeretne létrehozni, ugyanezt a bejelentkezési nevet már nem választhatja."
 
 #: node_modules/react-components/containers/account/UsernameSection.js:35
 msgctxt "Info"
 msgid "Log in to ProtonMail to activate your address"
-msgstr ""
+msgstr "Jelentkezzen be a ProtonMailbe a cím aktiválásához"
 
 #: node_modules/react-components/containers/account/MozillaInfoPanel.js:9
 msgctxt "Info"
 msgid "Your subscription is managed by Mozilla. Please contact Mozilla support."
-msgstr ""
+msgstr "Az előfizetését a Mozilla kezeli. Kérjük, forduljon a Mozilla ügyfélszolgálatához az előfizetés lemondásához."
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:20
 msgctxt "Info"
 msgid "Emailing preference updated"
-msgstr ""
+msgstr "E-mail feliratkozások frissítve"
 
 #: node_modules/react-components/containers/account/NewsSection.js:26
 msgctxt "Info"
 msgid "To keep up with the latest development at Proton products, you can subscribe to our various emails and visit our blog from time to time."
-msgstr ""
+msgstr "A Proton termékekről szóló legfrissebb híreinkhez feliratkozhat a különböző hírleveleinkre és meglátogathatja a blogunkat."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:91
 msgctxt "Info"
 msgid "reading our 2FA Guide first"
-msgstr ""
+msgstr "elolvasnia a kétlépcsős azonosításról szóló útmutatót"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:97
 msgctxt "Info"
 msgid "This wizard will enable Two Factor Authentication (2FA) on your Proton account. 2FA will make your Proton account more secure so we recommend enabling it."
-msgstr ""
+msgstr "Ezzel a funkcióval bekapcsolhatja a kétlépcsős azonosítást. A kétlépcsős azonosítás biztonságosabbá teszi a Proton fiókját, ezért javasolt engedélyezni."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:101
 #, javascript-format
 msgctxt "Info"
 msgid "If you have never used 2FA before, we strongly recommend you ${ guideButton }."
-msgstr ""
+msgstr "Ha még sosem használt kétlépcsős azonosítást, javasolt ${ guideButton }."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:118
 msgctxt "Info"
 msgid "Enter key manually instead"
-msgstr ""
+msgstr "Kulcs megadása manuálisan"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:126
 #, javascript-format
@@ -2959,7 +2961,7 @@ msgstr "Fiókjának beállításához olvassa be ezt a kódot a kétlépéses hi
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:141
 msgctxt "Info"
 msgid "Scan QR code instead"
-msgstr ""
+msgstr "QR kód beolvasása"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:149
 #, javascript-format
@@ -2975,7 +2977,7 @@ msgstr "Kétlépéses hitelesítés bekapcsolva"
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:231
 msgctxt "Info"
 msgid "Important: Please make sure you save the recovery codes. Otherwise you can permanently lose access to your account if you lose your 2FA device."
-msgstr ""
+msgstr "Fontos: Mindenképpen mentese el a helyreállító kódokat. Különben véglegesen elveszíti a fiókját, ha elveszik az azonosításhoz használt eszköze."
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:235
 msgctxt "Info"
@@ -3005,7 +3007,7 @@ msgstr "alapértelmezett"
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:36
 msgctxt "Info"
 msgid "Address verification is an advanced security feature. Only turn this on if you know what it does."
-msgstr ""
+msgstr "A cím hitelesítés egy haladó lehetőség. Csak akkor kapcsolja be, ha érti, hogyan működik."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:36
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:65
@@ -3017,12 +3019,12 @@ msgstr "Titkosítási beállítás frissítve"
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:50
 msgctxt "Info"
 msgid "PGP clients are more likely to automatically detect your PGP keys if outgoing messages are signed."
-msgstr ""
+msgstr "PGP-t használó címzettek valószínűbb, hogy automatikusan érzékelik az ön PGP kulcsait, ha a kimenő levelek aláírtak."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:78
 msgctxt "Info"
 msgid "Only change these settings if you are using PGP with non-ProtonMail recipients."
-msgstr ""
+msgstr "Csak akkor változtassa meg ezeket a beállításokat, ha PGP-t használ a nem-ProtonMail címzettekhez."
 
 #: node_modules/react-components/containers/labels/ActionsLabel.js:27
 msgctxt "Info"
@@ -3087,12 +3089,12 @@ msgstr "Másik megjelenés kiválasztása esetén felülírja az aktuális tém�
 #, javascript-format
 msgctxt "Info"
 msgid "Loading ${ appName }"
-msgstr ""
+msgstr "${ appName } betöltése"
 
 #: node_modules/react-components/containers/logs/LogsTable.js:31
 msgctxt "Info"
 msgid "You can enable authentication logging to see when your account is accessed, and from which IP. We will record the IP address that accesses the account and the time, as well as failed attempts."
-msgstr ""
+msgstr "Bekapcsolhatja a bejelentkezési naplót, hogy lássa a fiókba való belépéseket. Tároljuk a fiókba belépéshez használt IP címet, az időpontot és a sikertelen bejelentkezéseket is."
 
 #: node_modules/react-components/containers/logs/LogsTable.js:37
 msgctxt "Info"
@@ -3102,17 +3104,17 @@ msgstr "Még nem történt naplózás."
 #: node_modules/react-components/containers/logs/LogsSection.js:110
 msgctxt "Info"
 msgid "Logs includes authentication attempts for all Proton services that use your Proton credentials."
-msgstr ""
+msgstr "A naplók minden azonosítási kísérletet tárolnak, az összes Proton szolgáltatáshoz, amelyek az ön Proton bejelentkezését használják."
 
 #: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:11
 msgctxt "Info"
 msgid "ProtonMail supports IMAP/SMTP via the ProtonMail Bridge application. Thunderbird, Microsoft Outlook, and Apple Mail are officially supported on both Windows and MacOS."
-msgstr ""
+msgstr "A ProtonMail lehetővé teszi az IMAP/SMTP használatát, a ProtonMail Bridge alkalmazással. A Thunderbird, Microsoft Outlook, és Apple Mail hivatalosan támogatott, mind Windows és MacOS rendszereken."
 
 #: node_modules/react-components/containers/apps/ProtonMailBetaSection.js:9
 msgctxt "Info"
 msgid "Participating in beta programs gives you the opportunity to test new features and improvements before they get released to the general public. It offers a chance to have an active role in shaping the quality of our services."
-msgstr ""
+msgstr "A Béta programokban való részvétellel előbb kipróbálhatja az új funkciókat, mint hogy azok a nagyközönség számára elérhetővé válnának. Ez lehetőséget biztosít, hogy aktívan részt vegyen a szolgáltatásaink minőségének formálásában."
 
 #: node_modules/react-components/containers/overview/PromoteSection.js:44
 msgctxt "Info"
@@ -3159,56 +3161,56 @@ msgstr "Könyveléshez személyre szabhatja és letöltheti számláit."
 #: node_modules/react-components/containers/login/AbuseModal.js:10
 msgctxt "Info"
 msgid "abuse or fraud"
-msgstr ""
+msgstr "visszaélés vagy csalás"
 
 #: node_modules/react-components/containers/login/AbuseModal.js:16
 msgctxt "Info"
 msgid "here"
-msgstr ""
+msgstr "itt"
 
 #: node_modules/react-components/containers/login/AbuseModal.js:23
 #, javascript-format
 msgctxt "Info"
 msgid "Account disabled due to ${ abuseOrFraudLink }."
-msgstr ""
+msgstr "A fiók letiltva ${ abuseOrFraudLink } miatt."
 
 #: node_modules/react-components/containers/login/AbuseModal.js:24
 #, javascript-format
 msgctxt "Info"
 msgid "You can find more information and contact us ${ contactLink }."
-msgstr ""
+msgstr "További információkért lépjen kapcsolatba velünk ${ contactLink }."
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:66
 msgctxt "Info"
 msgid "Do you want to revoke all other sessions than the current one?"
-msgstr ""
+msgstr "Biztos, hogy az aktuálisat leszámítva, minden munkafolyamatot visszavon?"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:81
 msgctxt "Info"
 msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
-msgstr ""
+msgstr "Ha nem lép ki és nem változtat jelszót, a munkafolyamat 6 hónapig maradhat nyitva. A munkafolyamatok 2 hét inaktivitás után lezárulnak."
 
 #: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
 msgctxt "Info"
 msgid "Week"
 msgstr "Hét"
 
-#: src/app/containers/OrganizationContainer.js:43
+#: src/app/containers/OrganizationContainer.js:44
 msgctxt "Info"
 msgid "Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address."
 msgstr "Saját domain nevek létrehozásához, kezeléséhez, illetve catch-all e-mail cím választásához menjen a domain beállításokhoz."
 
-#: src/app/containers/OrganizationContainer.js:50
+#: src/app/containers/OrganizationContainer.js:51
 msgctxt "Info"
 msgid "Go to the user settings if you want to create and manage the users of your organization."
 msgstr "Szervezeten belüli több felhasználó létrehozásához vagy módosításához nyissa meg a felhasználói beállításokat."
 
-#: src/app/containers/MembersContainer.js:38
+#: src/app/containers/MembersContainer.js:39
 msgctxt "Info"
 msgid "Go to the address settings if you want to create and manage addresses for your users."
 msgstr "Címek létrehozását és kezelését a címek beállítása menüpontban tudja megtenni."
 
-#: src/app/containers/DomainsContainer.js:39
+#: src/app/containers/DomainsContainer.js:40
 msgctxt "Info"
 msgid "Go to the User Settings if you want to create and manage users in your organization."
 msgstr "Szervezeten belüli több felhasználó létrehozásához vagy módosításához nyissa meg a felhasználói beállításokat."
@@ -3224,29 +3226,29 @@ msgctxt "Info"
 msgid "Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization."
 msgstr "Amennyiben több felhasználót szeretne szervezetén belül hozzáadni és kezelni, váltson többfelhasználós előfizetésre."
 
-#: src/app/containers/AddressesContainer.js:31
-#: src/app/containers/AddressesContainer.js:50
+#: src/app/containers/AddressesContainer.js:32
+#: src/app/containers/AddressesContainer.js:51
 msgctxt "Info"
 msgid "Go to the Domain settings if you want to create  and manage custom domains for your users."
 msgstr "Felhasználó specifikus domain létrehozásához vagy módosításához nyissa meg a domain beállításokat."
 
-#: src/app/containers/AddressesContainer.js:38
+#: src/app/containers/AddressesContainer.js:39
 msgctxt "Info"
 msgid "Go to User Settings if you want to create and manage the list of users in your organization."
 msgstr "Szervezeten belüli több felhasználó létrehozásához vagy módosításához nyissa meg a felhasználói beállításokat."
 
-#: src/app/containers/AddressesContainer.js:57
-#: src/app/containers/AddressesContainer.js:74
+#: src/app/containers/AddressesContainer.js:58
+#: src/app/containers/AddressesContainer.js:75
 msgctxt "Info"
 msgid "Upgrade to a multi-user plan if you want to create and manage the users of your organization."
 msgstr "Amennyiben több felhasználót szeretne szervezetén belül hozzáadni és kezelni, váltson többfelhasználós előfizetésre."
 
-#: src/app/containers/AddressesContainer.js:68
+#: src/app/containers/AddressesContainer.js:69
 msgctxt "Info"
 msgid "Upgrade to a paid plan if you want to create and manage custom domains."
 msgstr "Egyéni domain címek hozzáadásához és kezeléséhez váltson előfizetést."
 
-#: src/app/containers/AutoReplyContainer.js:38
+#: src/app/containers/AutoReplyContainer.js:39
 msgctxt "Info"
 msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
 msgstr "Automata válaszok létrehozását és kezelését a Szűrők beállítása menüpontban találja."
@@ -3299,7 +3301,7 @@ msgstr "Jelszó"
 #: node_modules/react-components/containers/organization/OrganizationNameModal.js:24
 msgctxt "Placeholder"
 msgid "Choose a name"
-msgstr "Válassz nevet"
+msgstr "Válasszon egy nevet"
 
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:68
 msgctxt "Placeholder"
@@ -3318,17 +3320,17 @@ msgstr "Jóváhagyás"
 #: node_modules/react-components/containers/addresses/EditAddressModal.js:63
 msgctxt "Placeholder"
 msgid "Choose display name"
-msgstr ""
+msgstr "Válasszon egy megjelenített nevet"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:102
 msgctxt "Placeholder"
 msgid "Choose address"
-msgstr ""
+msgstr "Válasszon címet"
 
 #: node_modules/react-components/containers/domains/DomainSection.js:31
 msgctxt "Placeholder"
 msgid "yourdomain.com"
-msgstr ""
+msgstr "domainneve.com"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:378
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:162
@@ -3386,12 +3388,12 @@ msgstr "Proton felhasználónév"
 #: node_modules/react-components/containers/support/BugModal.js:162
 msgctxt "Placeholder"
 msgid "A way to contact you"
-msgstr ""
+msgstr "Kapcsolatfelvételi lehetőség"
 
 #: node_modules/react-components/containers/support/BugModal.js:186
 msgctxt "Placeholder"
 msgid "Please describe the problem and include any error messages"
-msgstr ""
+msgstr "Írja körül a problémát és a kapott hibaüzeneteket"
 
 #: node_modules/react-components/containers/support/BugModal.js:215
 msgctxt "Placeholder"
@@ -3442,12 +3444,12 @@ msgstr "Fizetési mód hozzáadva"
 #: node_modules/react-components/containers/payments/PlansSection.js:51
 msgctxt "Success"
 msgid "You have successfully unsubscribed"
-msgstr "Sikeresen leiratkoztál"
+msgstr "Sikeresen leiratkozott"
 
 #: node_modules/react-components/containers/payments/DonateModal.js:33
 msgctxt "Success"
 msgid "Your support is essential to keeping Proton running. Thank you for supporting internet privacy!"
-msgstr ""
+msgstr "A támogatása elengedhetetlen, hogy a Proton működhessen. Köszönjük, hogy támogatja a személyes adatok védelmét az interneten!"
 
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:39
 msgctxt "Success"
@@ -3462,7 +3464,7 @@ msgstr "Kredit hozzáadva"
 #: node_modules/react-components/containers/autoReply/AutoReplyModal.js:28
 msgctxt "Success"
 msgid "Auto-reply updated"
-msgstr ""
+msgstr "Automatikus válasz frissítve"
 
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:195
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:224
@@ -3510,7 +3512,7 @@ msgstr "Domain név ellenőrizve"
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:20
 msgctxt "Success"
 msgid "Catch-all address updated"
-msgstr ""
+msgstr "Gyűjtő e-mail cím frissítve"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:114
 msgctxt "Success"
@@ -3520,12 +3522,12 @@ msgstr "Jelszó frissítve"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:77
 msgctxt "Success"
 msgid "Account deleted. Logging out..."
-msgstr ""
+msgstr "Fiók törölve. Kijelentkezés..."
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:41
 msgctxt "Success"
 msgid "Payment method deleted"
-msgstr ""
+msgstr "Fizetési mód törölve"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:44
 msgctxt "Success"
@@ -3540,67 +3542,67 @@ msgstr "Felhasználó létrehozva"
 #: node_modules/react-components/containers/themes/ThemesSection.js:41
 msgctxt "Success"
 msgid "Custom theme saved"
-msgstr ""
+msgstr "Egyéni téma mentve"
 
 #: node_modules/react-components/containers/themes/ThemesSection.js:69
 msgctxt "Success"
 msgid "Theme saved"
-msgstr ""
+msgstr "Téma mentve"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:32
 msgctxt "Success"
 msgid "Buttons position saved"
-msgstr ""
+msgstr "Gombok helyzete mentve"
 
 #: node_modules/react-components/containers/general/ShortcutsToggle.js:17
 msgctxt "Success"
 msgid "Hotkeys preferences updated"
-msgstr ""
+msgstr "Gyorsbillentyű beállítások frissítve"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:48
 msgctxt "Success"
 msgid "Locale updated"
-msgstr ""
+msgstr "Nyelv frissítve"
 
 #: node_modules/react-components/containers/support/BugModal.js:120
 msgctxt "Success"
 msgid "Bug reported"
-msgstr ""
+msgstr "Hiba bejelentve"
 
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:29
 msgctxt "Success"
 msgid "Invoice customized"
-msgstr ""
+msgstr "Számlabeállítások mentve"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:60
 msgctxt "Success"
 msgid "Session revoked"
-msgstr ""
+msgstr "Munkafolyamat visszavonva"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:60
 msgctxt "Success"
 msgid "Sessions revoked"
-msgstr ""
+msgstr "Munkafolyamatok visszavonva"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:30
 msgctxt "x of y"
 msgid "of"
-msgstr ""
+msgstr "/"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
 msgctxt "Label"
 msgid "Users"
-msgstr ""
+msgstr "Felhasználók"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
 msgctxt "Label"
 msgid "Email addresses"
-msgstr ""
+msgstr "E-mail cím"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
 msgctxt "Label"
 msgid "Storage capacity"
-msgstr ""
+msgstr "Tárhely"
 
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
 msgctxt "Label"
@@ -3608,7 +3610,7 @@ msgid "Custom domains"
 msgstr "Saját domain nevek"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:85
-#: node_modules/react-components/containers/members/MemberModal.js:218
+#: node_modules/react-components/containers/members/MemberModal.js:220
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
 msgctxt "Label"
@@ -3626,19 +3628,19 @@ msgstr "Részösszeg"
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:107
 msgctxt "Label"
 msgid "Cycle discount +"
-msgstr ""
+msgstr "Ciklus kedvezmény +"
 
 #.  Includes coupon discount and cycle discount
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
 msgctxt "Label"
 msgid "Coupon"
-msgstr ""
+msgstr "Kupon"
 
 #.  Includes coupon discount and cycle discount
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
 msgctxt "Label"
 msgid "Cycle discount"
-msgstr ""
+msgstr "Ciklus kedvezmény"
 
 #.  Includes coupon discount and cycle discount
 #: node_modules/react-components/containers/payments/BillingSection.js:299
@@ -3658,12 +3660,12 @@ msgstr "Kredit"
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:50
 msgctxt "Label"
 msgid "Proration"
-msgstr ""
+msgstr "Arányosítás"
 
 #: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:68
 msgctxt "Label"
 msgid "Gift"
-msgstr ""
+msgstr "Ajándék"
 
 #: node_modules/react-components/containers/invoices/PayInvoiceModal.js:75
 #: node_modules/react-components/containers/payments/BillingSection.js:325
@@ -3683,7 +3685,7 @@ msgstr "Összeg"
 #: node_modules/react-components/containers/payments/GiftCodeModal.js:55
 msgctxt "Label"
 msgid "Enter gift code"
-msgstr ""
+msgstr "Adja meg az ajándék kuponkódot"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:76
 #: node_modules/react-components/containers/payments/BillingSection.js:341
@@ -3699,17 +3701,17 @@ msgstr "ProtonMail csomag"
 #: node_modules/react-components/containers/payments/BillingSection.js:141
 msgctxt "Label"
 msgid "Extra users"
-msgstr ""
+msgstr "További felhasználók"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:161
 msgctxt "Label"
 msgid "Extra email addresses"
-msgstr ""
+msgstr "További e-mail címek"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:181
 msgctxt "Label"
 msgid "Extra storage"
-msgstr ""
+msgstr "További tárhely"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:194
 msgctxt "Label"
@@ -3719,7 +3721,7 @@ msgstr "Bónusz tárhely"
 #: node_modules/react-components/containers/payments/BillingSection.js:203
 msgctxt "Label"
 msgid "Extra domains"
-msgstr ""
+msgstr "További domain nevek"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:227
 msgctxt "Label"
@@ -3729,12 +3731,12 @@ msgstr "ProtonVPN csomag"
 #: node_modules/react-components/containers/payments/BillingSection.js:240
 msgctxt "Label"
 msgid "Extra connections"
-msgstr ""
+msgstr "További kapcsolatok"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:260
 msgctxt "Label"
 msgid "Bonus connections"
-msgstr ""
+msgstr "Bónusz kapcsolatok"
 
 #: node_modules/react-components/containers/payments/BillingSection.js:286
 msgctxt "Label"
@@ -3749,12 +3751,12 @@ msgstr "Számlázási ciklus"
 #: node_modules/react-components/containers/payments/BillingSection.js:318
 msgctxt "Label"
 msgid "Renewal date"
-msgstr ""
+msgstr "Meghosszabbítás időpontja"
 
 #: node_modules/react-components/containers/payments/BitcoinDetails.js:10
 msgctxt "Label"
 msgid "Amount BTC"
-msgstr ""
+msgstr "BTC összege"
 
 #: node_modules/react-components/containers/payments/BitcoinDetails.js:16
 msgctxt "Label"
@@ -3786,29 +3788,29 @@ msgstr "Adja meg a fiók visszaállítása előtti jelszavát:"
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
 msgctxt "Label"
 msgid "Please select files to upload"
-msgstr ""
+msgstr "Válassza ki a fájlokat a feltöltéshez"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:16
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:79
 msgctxt "Label"
 msgid "Timezone"
-msgstr ""
+msgstr "Időzóna"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:14
 msgctxt "Label"
 msgid "Days of the week"
-msgstr ""
+msgstr "A hét napjai"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:76
 msgctxt "Label"
 msgid "Duration"
-msgstr ""
+msgstr "Időtartam"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:17
 msgctxt "Label"
 msgid "Start date"
-msgstr ""
+msgstr "Kezdő dátum"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:20
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:25
@@ -3816,12 +3818,12 @@ msgstr ""
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:24
 msgctxt "Label"
 msgid "Start time"
-msgstr ""
+msgstr "Kezdés"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:30
 msgctxt "Label"
 msgid "End date"
-msgstr ""
+msgstr "Befejező dátum"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:26
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:38
@@ -3829,47 +3831,47 @@ msgstr ""
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:36
 msgctxt "Label"
 msgid "End time"
-msgstr ""
+msgstr "Befejezés"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:17
 msgctxt "Label"
 msgid "Start day of month"
-msgstr ""
+msgstr "A hónap kezdőnapja"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:29
 msgctxt "Label"
 msgid "End day of month"
-msgstr ""
+msgstr "A hónap befejező napja"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:19
 msgctxt "Label"
 msgid "Start weekday"
-msgstr ""
+msgstr "A hét kezdőnapja"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:31
 msgctxt "Label"
 msgid "End weekday"
-msgstr ""
+msgstr "A hét befejező napja"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:77
 msgctxt "Label"
 msgid "Start"
-msgstr ""
+msgstr "Kezdet"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:78
 msgctxt "Label"
 msgid "End"
-msgstr ""
+msgstr "Befejezés"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:80
 msgctxt "Label"
 msgid "Message"
-msgstr ""
+msgstr "Üzenet"
 
 #: node_modules/react-components/containers/autoReply/AutoReplySection.js:50
 msgctxt "Label"
 msgid "Auto-reply"
-msgstr ""
+msgstr "Automatikus válasz"
 
 #: node_modules/react-components/containers/organization/OrganizationNameModal.js:23
 #: node_modules/react-components/containers/organization/OrganizationSection.js:45
@@ -3892,7 +3894,7 @@ msgid "Confirm password"
 msgstr "Jelszó megerősítése"
 
 #: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:206
+#: node_modules/react-components/containers/members/MemberModal.js:208
 #: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
 msgctxt "Label"
 msgid "Account storage"
@@ -3927,28 +3929,28 @@ msgstr "Cím"
 #: node_modules/react-components/containers/addresses/IdentitySection.js:77
 msgctxt "Label"
 msgid "Display name"
-msgstr ""
+msgstr "Megjelenített név"
 
 #: node_modules/react-components/containers/addresses/EditAddressModal.js:69
 #: node_modules/react-components/containers/addresses/IdentitySection.js:90
 msgctxt "Label"
 msgid "Signature"
-msgstr ""
+msgstr "Aláírás"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:70
 msgctxt "Label"
 msgid "Select an address"
-msgstr ""
+msgstr "Válasszon ki egy címet"
 
 #: node_modules/react-components/containers/addresses/IdentitySection.js:106
 msgctxt "Label"
 msgid "ProtonMail signature"
-msgstr ""
+msgstr "ProtonMail aláírás"
 
 #: node_modules/react-components/containers/addresses/AddressModal.js:92
 msgctxt "Label"
 msgid "User"
-msgstr ""
+msgstr "Felhasználó"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
 msgctxt "Label"
@@ -4018,66 +4020,66 @@ msgstr "Jelszó"
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:10
 msgctxt "Label"
 msgid "Download ProtonVPN"
-msgstr ""
+msgstr "ProtonVPN letöltése"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:16
 msgctxt "Label"
 msgid "ProtonVPN homepage"
-msgstr ""
+msgstr "ProtonVPN weboldal"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:22
 msgctxt "Label"
 msgid "Get support for ProtonVPN"
-msgstr ""
+msgstr "ProtonVPN támogatás"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:38
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:53
 msgctxt "Label"
 msgid "OpenVPN / IKEv2 username"
-msgstr ""
+msgstr "OpenVPN / IKEv2 felhasználónév"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:49
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:65
 msgctxt "Label"
 msgid "OpenVPN / IKEv2 password"
-msgstr ""
+msgstr "OpenVPN / IKEv2 jelszó"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:125
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:278
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:308
 msgctxt "Label"
 msgid "Old login password"
-msgstr ""
+msgstr "Korábbi bejelentkezési jelszó"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:126
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:160
 msgctxt "Label"
 msgid "New login password"
-msgstr ""
+msgstr "Új bejelentkezési jelszó"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:127
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:161
 msgctxt "Label"
 msgid "Confirm login password"
-msgstr ""
+msgstr "Bejelentkezési jelszó megerősítése"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:159
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:296
 msgctxt "Label"
 msgid "Old password"
-msgstr ""
+msgstr "Régi jelszó"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:187
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:309
 msgctxt "Label"
 msgid "New mailbox password"
-msgstr ""
+msgstr "Új e-mail jelszó"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:188
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:310
 msgctxt "Label"
 msgid "Confirm mailbox password"
-msgstr ""
+msgstr "E-mail jelszó megerősítése"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:279
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:297
@@ -4096,13 +4098,13 @@ msgstr "Kétlépéses kód"
 #: node_modules/react-components/containers/account/PasswordsSection.js:67
 msgctxt "Label"
 msgid "Two password mode"
-msgstr ""
+msgstr "Két jelszavas mód"
 
 #: node_modules/react-components/containers/account/PasswordsSection.js:86
 #: node_modules/react-components/containers/login/UnlockForm.js:9
 msgctxt "Label"
 msgid "Mailbox password"
-msgstr ""
+msgstr "E-mail jelszó"
 
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:111
 msgctxt "Label"
@@ -4112,7 +4114,7 @@ msgstr "Visszajelzés"
 #: node_modules/react-components/containers/account/DeleteAccountModal.js:140
 msgctxt "Label"
 msgid "Login password"
-msgstr ""
+msgstr "Bejelentkezési jelszó"
 
 #: node_modules/react-components/containers/account/UsernameSection.js:18
 #: node_modules/react-components/containers/members/EditMemberModal.js:61
@@ -4124,22 +4126,22 @@ msgstr "Név"
 #: node_modules/react-components/containers/account/UsernameSection.js:28
 msgctxt "Label"
 msgid "ProtonMail address"
-msgstr ""
+msgstr "ProtonMail cím"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:154
 msgctxt "Label"
 msgid "Key"
-msgstr ""
+msgstr "Kulcs"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:160
 msgctxt "Label"
 msgid "Interval"
-msgstr ""
+msgstr "Intervallum"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:166
 msgctxt "Label"
 msgid "Digits"
-msgstr ""
+msgstr "Számjegy"
 
 #: node_modules/react-components/containers/account/TwoFactorSection.js:32
 msgctxt "Label"
@@ -4161,12 +4163,12 @@ msgstr "Küldés"
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodDetails.js:17
 msgctxt "Label"
 msgid "Cardholder name"
-msgstr ""
+msgstr "Kártyatulajdonos neve"
 
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
 msgctxt "Label"
 msgid "Pay with cash"
-msgstr ""
+msgstr "Készpénzes fizetés"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:41
 msgctxt "Label"
@@ -4207,32 +4209,32 @@ msgstr "Feltételek"
 #: node_modules/react-components/containers/api/HumanVerificationModal.js:22
 msgctxt "Label"
 msgid "Captcha"
-msgstr ""
+msgstr "CAPTCHA kód"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:20
 msgctxt "Label"
 msgid "Auto-load remote content"
-msgstr ""
+msgstr "Távoli tartalom automatikus betöltése"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:29
 msgctxt "Label"
 msgid "Auto-load embedded images"
-msgstr ""
+msgstr "Beágyazott képek automatikus betöltése"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:38
 msgctxt "Label"
 msgid "Sent/Drafts"
-msgstr ""
+msgstr "Elküldött/Piszkozat"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:46
 msgctxt "Label"
 msgid "Include moved"
-msgstr ""
+msgstr "Áthelyezettek megjelenítve"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:50
 msgctxt "Label"
 msgid "Request link confirmation"
-msgstr ""
+msgstr "Link jóváhagyás kérése"
 
 #: node_modules/react-components/containers/members/MemberModal.js:160
 msgctxt "Label"
@@ -4242,12 +4244,12 @@ msgstr "Kulcs erőssége"
 #: node_modules/react-components/containers/themes/CustomThemeModal.js:25
 msgctxt "Label"
 msgid "CSS code"
-msgstr ""
+msgstr "CSS kód"
 
 #: node_modules/react-components/containers/layouts/ToolbarsSection.js:40
 msgctxt "Label"
 msgid "Read/unread order"
-msgstr ""
+msgstr "Olvasott/Olvasatlan sorrendje"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:97
 msgctxt "Label"
@@ -4267,22 +4269,22 @@ msgstr "Beszélgetések"
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:145
 msgctxt "Label"
 msgid "Use sticky labels"
-msgstr ""
+msgstr "Ragadós címkék használata"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:162
 msgctxt "Label"
 msgid "Composer mode"
-msgstr ""
+msgstr "Szerkesztő módja"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:173
 msgctxt "Label"
 msgid "Composer text direction"
-msgstr ""
+msgstr "Szerkesztő szövegiránya"
 
 #: node_modules/react-components/containers/general/LanguageSection.js:56
 msgctxt "Label"
 msgid "Default language"
-msgstr ""
+msgstr "Alapértelmezett nyelv"
 
 #: node_modules/react-components/containers/login/PasswordForm.js:10
 #: node_modules/react-components/containers/overview/SummarySection.js:53
@@ -4293,17 +4295,17 @@ msgstr "Felhasználónév"
 #: node_modules/react-components/containers/overview/SummarySection.js:60
 msgctxt "Label"
 msgid "Recovery email"
-msgstr ""
+msgstr "Helyreállító e-mail"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:69
 msgctxt "Label"
 msgid "Two factor authentication"
-msgstr ""
+msgstr "Kétlépcsős hitelesítés"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:80
 msgctxt "Label"
 msgid "Role"
-msgstr ""
+msgstr "Szerepkör"
 
 #: node_modules/react-components/containers/support/BugModal.js:168
 msgctxt "Label"
@@ -4323,7 +4325,7 @@ msgstr "Rendszerinfromáció"
 #: node_modules/react-components/containers/support/BugModal.js:209
 msgctxt "Label"
 msgid "Operating system"
-msgstr ""
+msgstr "Operációs rendszer"
 
 #: node_modules/react-components/containers/support/BugModal.js:220
 msgctxt "Label"
@@ -4348,7 +4350,7 @@ msgstr "Felhasznált kredit"
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
 msgctxt "Label"
 msgid "Customize invoices"
-msgstr ""
+msgstr "Számlák személyre szabása"
 
 #: node_modules/react-components/containers/search/SearchSection.js:27
 msgctxt "Label"
@@ -4358,7 +4360,7 @@ msgstr "Csak pontos egyezés"
 #: node_modules/react-components/components/button/Copy.js:20
 msgctxt "Label"
 msgid "Copied"
-msgstr ""
+msgstr "Másolva"
 
 #: node_modules/react-components/components/button/Copy.js:20
 msgctxt "Label"
@@ -4368,12 +4370,12 @@ msgstr "Másolás"
 #: node_modules/react-components/components/input/PasswordInput.js:21
 msgctxt "Label"
 msgid "Reveal password"
-msgstr ""
+msgstr "Jelszó felfedése"
 
 #: node_modules/react-components/components/input/PasswordInput.js:21
 msgctxt "Label"
 msgid "Hide password"
-msgstr ""
+msgstr "Jelszó elrejtése"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:19
 #: node_modules/react-components/containers/overview/SummarySection.js:28
@@ -4381,138 +4383,138 @@ msgstr ""
 #: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:167
 msgctxt "Plan"
 msgid "Free"
-msgstr ""
+msgstr "Ingyen"
 
 #: node_modules/react-components/containers/payments/subscription/PlanPrice.js:10
 msgctxt "Suffix"
 msgid "/ month"
-msgstr ""
+msgstr "/ hó"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:70
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:75
 msgctxt "Suffix"
 msgid "/mo"
-msgstr ""
+msgstr "/hó"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:13
 msgctxt "Option"
 msgid "included"
-msgstr ""
+msgstr "tartalmazza"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:15
 #, javascript-format
 msgctxt "Option"
 msgid "${ value } address"
 msgid_plural "${ value } addresses"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ value } cím"
+msgstr[1] "${ value } cím"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:18
 msgctxt "Option"
 msgid "${ value } GB storage"
 msgid_plural "${ value } GB storage"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ value } GB tárhely"
+msgstr[1] "${ value } GB tárhely"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:21
 #, javascript-format
 msgctxt "Option"
 msgid "${ value } custom domain"
 msgid_plural "${ value } custom domains"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ value } saját domain név"
+msgstr[1] "${ value } saját domain név"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:24
 msgctxt "Option"
 msgid "${ value } user"
 msgid_plural "${ value } users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ value } felhasználó"
+msgstr[1] "${ value } felhasználó"
 
 #: node_modules/react-components/containers/payments/subscription/helpers.js:27
 #, javascript-format
 msgctxt "Option"
 msgid "${ value } VPN connection"
 msgid_plural "${ value } VPN connections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ value } VPN kapcsolat"
+msgstr[1] "${ value } VPN kapcsolat"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:16
 #, javascript-format
 msgctxt "Option"
 msgid "${ highSecurity } RSA2048-bit (Older but faster)"
-msgstr ""
+msgstr "${ highSecurity } 2048 bites RSA (régebbi de gyorsabb)"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:20
 msgctxt "Option"
 msgid "${ highestSecurity } RSA 4096-bit (Secure but slow)"
-msgstr ""
+msgstr "${ highestSecurity } 4096 bites RSA (biztonságos de lassú)"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:24
 #, javascript-format
 msgctxt "Option"
 msgid "${ stateOfTheArt } X25519 (Modern, fastest, secure)"
-msgstr ""
+msgstr "${ stateOfTheArt } X25519 (Modern, gyors, biztonságos)"
 
 #: node_modules/react-components/containers/addresses/AddressesToolbar.js:10
 msgctxt "Option"
 msgid "All users"
-msgstr ""
+msgstr "Összes felhasználó"
 
 #: node_modules/react-components/containers/layouts/DraftTypeSelect.js:11
 msgctxt "Option"
 msgid "Normal"
-msgstr ""
+msgstr "Normál"
 
 #: node_modules/react-components/containers/layouts/DraftTypeSelect.js:12
 msgctxt "Option"
 msgid "Plain text"
-msgstr ""
+msgstr "Egyszerű szöveg"
 
 #: node_modules/react-components/containers/layouts/TextDirectionSelect.js:11
 msgctxt "Option"
 msgid "Left to Right"
-msgstr ""
+msgstr "Balról jobbra"
 
 #: node_modules/react-components/containers/layouts/TextDirectionSelect.js:12
 msgctxt "Option"
 msgid "Right to Left"
-msgstr ""
+msgstr "Jobbról balra"
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:44
 msgctxt "Tooltip"
 msgid "For each additional user, 5GB of storage and 5 email addresses are added to your subscription."
-msgstr ""
+msgstr "Az előfizetésben szereplő minden további felhasználónak 5 GB tárhely és 5 e-mail cím kerül hozzáadásra."
 
 #: node_modules/react-components/containers/payments/subscription/CustomProfessionalSection.js:67
 msgctxt "Tooltip"
 msgid "Allows you to host emails for your own domain(s) at ProtonMail, e.g. thomas.anderson@example.com"
-msgstr ""
+msgstr "Lehetővé teszi, hogy a ProtonMailen saját domain névvel fogadjon e-maileket, pl.: thomas.anderson@example.com"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:83
 msgctxt "Tooltip"
 msgid "Download and stream faster with a faster VPN connection."
-msgstr ""
+msgstr "Letöltés és videózás gyorsabb VPN kapcsolaton."
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:92
 msgctxt "Tooltip"
 msgid "More connections allows more devices to use ProtonVPN at the same time."
-msgstr ""
+msgstr "A több kapcsolat lehetővé teszi hogy a ProtonVPN-t egyszerre több eszközről használja."
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:162
 msgctxt "Tooltip"
 msgid "Easily route your traffic through the Tor anonymity network."
-msgstr ""
+msgstr "Könnyedén átküldheti az internetforgalmát a Tor titkosító hálózaton."
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:177
 msgctxt "Tooltip"
 msgid "Additional protection by routing your traffic through multiple locations before leaving the ProtonVPN network."
-msgstr ""
+msgstr "Tovább védelmet biztosít azáltal, hogy az internetforgalmát több különböző helyen irányítja keresztül, mielőtt kilépne a ProtonVPN hálózatából."
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:212
 msgctxt "Tooltip"
 msgid "Order additional connections to provide ProtonVPN to other users with your organization"
-msgstr ""
+msgstr "Rendeljen további kapcsolatokat, hogy a szervezet több tagjának is ProtonVPN védelmet biztosíthasson"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:67
 msgctxt "Tooltip"
@@ -4522,22 +4524,22 @@ msgstr "20% kedvezmény éves fizetés esetén"
 #: node_modules/react-components/containers/payments/PlansTable.js:138
 msgctxt "Tooltip"
 msgid "ProtonMail cannot be used for bulk sending or spamming"
-msgstr ""
+msgstr "A ProtonMail nem használható tömeges e-mailek vagy levélszemét küldésére"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:170
 msgctxt "Tooltip"
 msgid "Use your own domain name"
-msgstr ""
+msgstr "Saját domain név használata"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:182
 msgctxt "Tooltip"
 msgid "Use ProtonMail with a desktop email client"
-msgstr ""
+msgstr "ProtonMail használata különböző e-mail programokkal"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:328
 msgctxt "Tooltip"
 msgid "ProtonVPN keeps your Internet traffic private"
-msgstr ""
+msgstr "A ProtonVPN-nel bizalmassá teheti az internetforgalmát"
 
 #: node_modules/react-components/containers/payments/CycleDiscountBadge.js:15
 msgctxt "Tooltip"
@@ -4552,62 +4554,62 @@ msgstr "Kétéves fizetés kedvezménye jóváírásra került"
 #: node_modules/react-components/containers/keys/KeysStatus.js:9
 msgctxt "Tooltip"
 msgid "ProtonMail users will use this key by default for sending"
-msgstr ""
+msgstr "A ProtonMail felhasználók alapértelmezetten ezt a kulcsot fogják használni a küldéshez"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:15
 msgctxt "Tooltip"
 msgid "You have locally decrypted this key"
-msgstr ""
+msgstr "Ezt a kulcsot helyileg visszafejtette"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:20
 msgctxt "Tooltip"
 msgid "This key is encrypted with an old password"
-msgstr ""
+msgstr "Ez a kulcs egy régebbi jelszóval van titkosítva"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:25
 msgctxt "Tooltip"
 msgid "Signatures produced by this key are treated as invalid and this key cannot be used for encryption"
-msgstr ""
+msgstr "Az ezzel a kulccsal készült aláírások érvénytelenként lesznek kezelve és a kulcs nem használható titkosításra"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:31
 msgctxt "Tooltip"
 msgid "This key cannot be used for encryption"
-msgstr ""
+msgstr "Ez a kulcs nem használható titkosításhoz"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:36
 msgctxt "Tooltip"
 msgid "This address has been disabled"
-msgstr ""
+msgstr "Ez a cím letiltva"
 
 #: node_modules/react-components/containers/labels/ToggleNotify.js:25
 msgctxt "Tooltip"
 msgid "Enable/disable desktop and mobile notifications"
-msgstr ""
+msgstr "Mobil és asztali értesítések ki- és bekapcsolása"
 
 #: node_modules/react-components/containers/messages/MessagesSection.js:40
 msgctxt "Tooltip"
 msgid "Setting to 'Include moved' means that sent / draft messages that have been moved to other folders will continue to appear in the Sent/Drafts folder."
-msgstr ""
+msgstr "Az 'Áthelyezettek megjelenítése' beállítás azt jelenti, hogy a más mappákba áthelyezett elküldött és piszkozat üzenetek továbbra is megjelennek az Elküldött és a Piszkozatok mappákban."
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:100
 msgctxt "Tooltip"
 msgid "This sets the default composer size. Two sizes are available, a smaller popup composer, and a bigger full screen composer."
-msgstr ""
+msgstr "Itt a levél szerkesztő ablak méretét választja ki. Két méret érhető el: egy kisebb, felugró ablakos és egy nagyobb, egész képernyős."
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:116
 msgctxt "Tooltip"
 msgid "ProtonMail supports both column and row layouts for the inbox. Using this setting, it is possible to change between the two layouts."
-msgstr ""
+msgstr "A ProtonMail lehetőséget biztosít mind sor és oszlop elrendezés használatára. Ezzel a beállítással választhat a két elrendezés közül."
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:131
 msgctxt "Tooltip"
 msgid "Conversation grouping automatically groups messages in the same conversation together."
-msgstr ""
+msgstr "A beszélgetés csoportosító automatikusan csoportosítja az azonos beszélgetésből származó üzeneteket."
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:147
 msgctxt "Tooltip"
 msgid "When a label is added to a message in a conversation, all future messages you send or receive will have that same label automatically applied."
-msgstr ""
+msgstr "Ha a címkét a beszélgetésben lévő üzenetre alkalmazza, a beszélgetés minden további beérkező és elküldött üzenete automatikusan el lesz látva ezzel a címkével."
 
 #: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:32
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:238
@@ -4615,122 +4617,122 @@ msgstr ""
 #: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:69
 msgctxt "Price"
 msgid "Free"
-msgstr ""
+msgstr "Ingyenes"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:67
 msgctxt "Header"
 msgid "Pricing"
-msgstr ""
+msgstr "Árlista"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:82
 msgctxt "Header"
 msgid "Speed"
-msgstr ""
+msgstr "Sebesség"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:90
 msgctxt "Header"
 msgid "Simultaneous connections"
-msgstr ""
+msgstr "Egyidejű kapcsolatok"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:101
 msgctxt "Header"
 msgid "Advanced encryption"
-msgstr ""
+msgstr "Fejlett titkosítás"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:113
 msgctxt "Header"
 msgid "No logs policy"
-msgstr ""
+msgstr "Nincs naplózás"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:125
 msgctxt "Header"
 msgid "No data limits"
-msgstr ""
+msgstr "Nincs adatkorlát"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:137
 msgctxt "Header"
 msgid "P2P support"
-msgstr ""
+msgstr "P2P támogatás"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:148
 msgctxt "Header"
 msgid "Secure streaming"
-msgstr ""
+msgstr "Biztonságos videózás"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:159
 msgctxt "Header"
 msgid "Tor over VPN"
-msgstr ""
+msgstr "Tor VPN-en"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:174
 msgctxt "Header"
 msgid "Secure core"
-msgstr ""
+msgstr "Secure Core"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:109
 msgctxt "Header"
 msgid "Users"
-msgstr ""
+msgstr "Felhasználók"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:118
 msgctxt "Header"
 msgid "Email addresses"
-msgstr ""
+msgstr "E-mail címek"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:127
 msgctxt "Header"
 msgid "Storage capacity (GB)"
-msgstr ""
+msgstr "Tárhely (GB)"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:137
 msgctxt "Header"
 msgid "Messages per day"
-msgstr ""
+msgstr "Üzenetek naponta"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:147
 msgctxt "Header"
 msgid "Folders"
-msgstr ""
+msgstr "Mappák"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:158
 msgctxt "Header"
 msgid "Labels"
-msgstr ""
+msgstr "Címkék"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:169
 msgctxt "Header"
 msgid "Custom domains"
-msgstr ""
+msgstr "Saját domain nevek"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:181
 msgctxt "Header"
 msgid "IMAP / SMTP support"
-msgstr ""
+msgstr "IMAP / SMTP támogatás"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:199
 msgctxt "Header"
 msgid "Additional features"
-msgstr ""
+msgstr "További lehetőségek"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:213
 msgctxt "Header"
 msgid "Encrypted contact details"
-msgstr ""
+msgstr "Titkosított névjegy adatok"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:232
 msgctxt "Header"
 msgid "Short address (@pm.me)"
-msgstr ""
+msgstr "Rövid domain (@pm.me)"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:251
 msgctxt "Header"
 msgid "Auto-reply"
-msgstr ""
+msgstr "Automatikus válasz"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:270
 msgctxt "Header"
 msgid "Catch-all email"
-msgstr ""
+msgstr "Gyűjtő e-mail"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:289
 msgctxt "Header"
@@ -4740,7 +4742,7 @@ msgstr "Többfelhasználós mód"
 #: node_modules/react-components/containers/payments/PlansTable.js:308
 msgctxt "Header"
 msgid "Priority customer support"
-msgstr ""
+msgstr "Elsőbbségi felhasználói támogatás"
 
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:136
 msgctxt "Header"
@@ -4750,32 +4752,32 @@ msgstr "Szervezeti kulcs ujjlenyomata"
 #: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:136
 msgctxt "Header"
 msgid "Key type"
-msgstr ""
+msgstr "Kulcs típusa"
 
 #: node_modules/react-components/containers/logs/LogsTable.js:42
 msgctxt "Header"
 msgid "Event"
-msgstr ""
+msgstr "Esemény"
 
 #: node_modules/react-components/containers/logs/LogsTable.js:42
 msgctxt "Header"
 msgid "Time"
-msgstr ""
+msgstr "Időpont"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:85
 msgctxt "VPN speed"
 msgid "High"
-msgstr ""
+msgstr "Gyors"
 
 #: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:86
 msgctxt "VPN speed"
 msgid "Highest"
-msgstr ""
+msgstr "Leggyorsabb"
 
 #: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:177
 msgctxt "Text"
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: node_modules/react-components/containers/payments/CycleSelector.js:15
 msgctxt "Billing cycle option"
@@ -4796,7 +4798,7 @@ msgstr "Kétéves"
 #: node_modules/react-components/containers/payments/PlansTable.js:132
 msgctxt "X / user"
 msgid "user"
-msgstr ""
+msgstr "felhasználó"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:142
 #: node_modules/react-components/containers/payments/PlansTable.js:143
@@ -4806,17 +4808,17 @@ msgstr ""
 #: node_modules/react-components/containers/payments/PlansTable.js:164
 msgctxt "Plan option"
 msgid "Unlimited"
-msgstr ""
+msgstr "Korlátlan"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:202
 msgctxt "Plan option"
 msgid "Only basic email features"
-msgstr ""
+msgstr "Csak alapvető e-mail funkciók"
 
 #: node_modules/react-components/containers/payments/PlansTable.js:203
 msgctxt "Plan option"
 msgid "Folders, Labels, Filters, Encrypted contacts, Auto-responder and more"
-msgstr ""
+msgstr "Mappák, címkék, szűrők, titkosított névjegy adatok, automatikus válasz stb."
 
 #: node_modules/react-components/containers/payments/PlansTable.js:205
 msgctxt "Plan option"
@@ -4826,47 +4828,47 @@ msgstr "Minden Plus lehetőség, Gyűjtő e-mail, többfelhasználós mód és m
 #: node_modules/react-components/containers/payments/PlansTable.js:207
 msgctxt "Plan option"
 msgid "All Professional features, limited to 6 users, includes ProtonVPN"
-msgstr ""
+msgstr "Minden a Professional csomagból, de 6 felhasználóra korlátozva. ProtonVPN-t is tartalmazza."
 
 #: node_modules/react-components/containers/payments/PlansTable.js:345
 msgctxt "Plan option"
 msgid "Included"
-msgstr ""
+msgstr "Tartalmazza"
 
 #: node_modules/react-components/containers/payments/PlansSection.js:46
 msgctxt "Separator, spacing is important"
 msgid " and "
-msgstr ""
+msgstr " és "
 
 #: node_modules/react-components/containers/payments/PlansSection.js:141
 msgctxt "Info concerning plan features"
 msgid "denotes customizable features"
-msgstr ""
+msgstr "testreszabható lehetőségeket jelöl"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:17
 msgctxt "Discount with coupon code"
 msgid "36% discount applied to your subscription"
-msgstr ""
+msgstr "Az előfizetésre 36% kedvezmény került alkalmazásra"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:28
 msgctxt "Discount with coupon code"
 msgid "47% discount applied to your subscription"
-msgstr ""
+msgstr "Az előfizetésre 47% kedvezmény került alkalmazásra"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:36
 msgctxt "Discount with coupon code"
 msgid "20% discount applied to your subscription"
-msgstr ""
+msgstr "Az előfizetésre 20% kedvezmény került alkalmazásra"
 
 #: node_modules/react-components/containers/payments/DiscountBadge.js:46
 msgctxt "Discount with coupon code"
 msgid "Black Friday 2019 newcomer discount has been applied"
-msgstr ""
+msgstr "Fekete Péntek 2019 új előfizetői kedvezmény alkalmazva"
 
 #: node_modules/react-components/containers/payments/PayPal.js:125
 msgctxt "Link"
 msgid "click here"
-msgstr ""
+msgstr "kattintson ide"
 
 #: node_modules/react-components/containers/domains/DomainAddresses.js:26
 #: node_modules/react-components/containers/members/MemberAddresses.js:25
@@ -4879,7 +4881,7 @@ msgstr "Kezelés"
 #: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:11
 msgctxt "Link"
 msgid "ProtonVPN native clients"
-msgstr ""
+msgstr "ProtonVPN kliensek"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:12
 msgctxt "Link"
@@ -4899,7 +4901,7 @@ msgstr "Támogatói oldal"
 #: node_modules/react-components/containers/account/UsernameSection.js:36
 msgctxt "Link"
 msgid "Not activated"
-msgstr ""
+msgstr "Nem aktivált"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:65
 #: node_modules/react-components/containers/overview/SummarySection.js:74
@@ -4914,9 +4916,9 @@ msgstr "böngésző gyorsítótárának ürítése"
 
 #: node_modules/react-components/containers/heading/UpgradeButton.js:13
 #: node_modules/react-components/containers/heading/UpgradeButton.js:21
-#: src/app/containers/AddressesContainer.js:59
-#: src/app/containers/AddressesContainer.js:69
-#: src/app/containers/AddressesContainer.js:76
+#: src/app/containers/AddressesContainer.js:60
+#: src/app/containers/AddressesContainer.js:70
+#: src/app/containers/AddressesContainer.js:77
 #: src/app/containers/DomainsContainer.js:59
 msgctxt "Link"
 msgid "Upgrade"
@@ -4927,28 +4929,28 @@ msgctxt "Link"
 msgid "Learn more"
 msgstr "Tudjon meg többet"
 
-#: src/app/containers/AddressesContainer.js:33
-#: src/app/containers/AddressesContainer.js:52
-#: src/app/containers/OrganizationContainer.js:45
+#: src/app/containers/AddressesContainer.js:34
+#: src/app/containers/AddressesContainer.js:53
+#: src/app/containers/OrganizationContainer.js:46
 msgctxt "Link"
 msgid "Domain settings"
 msgstr "Domain beállítások"
 
-#: src/app/containers/AddressesContainer.js:40
+#: src/app/containers/AddressesContainer.js:41
 #: src/app/containers/DomainsContainer.js:41
-#: src/app/containers/OrganizationContainer.js:52
+#: src/app/containers/OrganizationContainer.js:53
 msgctxt "Link"
 msgid "User settings"
-msgstr ""
+msgstr "Felhasználói beállítások"
 
 #: src/app/containers/DomainsContainer.js:48
 #: src/app/containers/DomainsContainer.js:66
-#: src/app/containers/MembersContainer.js:40
+#: src/app/containers/MembersContainer.js:41
 msgctxt "Link"
 msgid "Address settings"
 msgstr "Cím beállítások"
 
-#: src/app/containers/AutoReplyContainer.js:40
+#: src/app/containers/AutoReplyContainer.js:41
 msgctxt "Link"
 msgid "Filter Settings"
 msgstr "Szűrő beállítások"
@@ -5027,122 +5029,122 @@ msgstr[1] "${ LOYAL_BONUS_CONNECTION } kapcsolat"
 #, javascript-format
 msgctxt "Info for cash payment method"
 msgid "To pay via Cash, please email us at ${ email } for instructions."
-msgstr ""
+msgstr "Készpénzzel való fizetéshez, kérjük írjon a címünkre: ${ email }."
 
 #: node_modules/react-components/containers/keys/KeysActions.js:33
 msgctxt "Keys actions"
 msgid "Reactivate"
-msgstr ""
+msgstr "Újraaktiválás"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:37
 msgctxt "Keys actions"
 msgid "Export"
-msgstr ""
+msgstr "Exportálás"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:41
 msgctxt "Keys actions"
 msgid "Export private key"
-msgstr ""
+msgstr "Titkos kulcs exportálása"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:45
 msgctxt "Keys actions"
 msgid "Make primary"
-msgstr ""
+msgstr "Legyen elsődleges"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:49
 msgctxt "Keys actions"
 msgid "Mark obsolete"
-msgstr ""
+msgstr "Megjelölés elavultként"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:50
 msgctxt "Keys actions"
 msgid "Disables encryption with this key"
-msgstr ""
+msgstr "Letiltja ezzel a kulccsal való titkosítást"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:54
 msgctxt "Keys actions"
 msgid "Mark not obsolete"
-msgstr ""
+msgstr "Megjelölés nem elavultként"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:55
 msgctxt "Keys actions"
 msgid "Enable encryption with this key"
-msgstr ""
+msgstr "Ezzel a kulccsal való titkosítás engedélyezése"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:59
 msgctxt "Keys actions"
 msgid "Mark compromised"
-msgstr ""
+msgstr "Megjelölés kompromittáltként"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:60
 msgctxt "Keys actions"
 msgid "Disables signature verification and encryption with this key"
-msgstr ""
+msgstr "Letiltja ezzel a kulccsal való aláírás ellenőrzést és titkosítást"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:64
 msgctxt "Keys actions"
 msgid "Mark not compromised"
-msgstr ""
+msgstr "Megjelölés nem kompromittáltként"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:65
 msgctxt "Keys actions"
 msgid "Enable signature verification and encryption with this key"
-msgstr ""
+msgstr "Engedélyezi ezzel a kulccsal való aláírás ellenőrzést és titkosítást"
 
 #: node_modules/react-components/containers/keys/KeysActions.js:69
 msgctxt "Keys actions"
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: node_modules/react-components/containers/keys/shared/SelectKeyFiles.js:35
 msgctxt "Select files"
 msgid "Upload"
-msgstr ""
+msgstr "Feltöltés"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:21
 msgctxt "Key state badge"
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:10
 msgctxt "Key state badge"
 msgid "Primary"
-msgstr ""
+msgstr "Elsődleges"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:16
 msgctxt "Key state badge"
 msgid "Active"
-msgstr ""
+msgstr "Aktív"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:21
 msgctxt "Key state badge"
 msgid "Inactive"
-msgstr ""
+msgstr "Kikapcsolva"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:27
 msgctxt "Key state badge"
 msgid "Compromised"
-msgstr ""
+msgstr "Kompromittált"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:32
 msgctxt "Key state badge"
 msgid "Obsolete"
-msgstr ""
+msgstr "Elavult"
 
 #: node_modules/react-components/containers/keys/KeysStatus.js:37
 msgctxt "Key state badge"
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:64
 msgctxt "Key status displayed in a badge"
 msgid "Key uploaded"
-msgstr ""
+msgstr "Kulcs feltöltve"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:109
 msgctxt "Title header for keys table"
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: node_modules/react-components/containers/keys/KeysTable.js:12
 #: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:39
@@ -5156,37 +5158,37 @@ msgstr "Ujjlenyomat"
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:111
 msgctxt "Title header for keys table"
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:112
 msgctxt "Title header for keys table"
 msgid "Action"
-msgstr ""
+msgstr "Művelet"
 
 #: node_modules/react-components/containers/keys/KeysTable.js:13
 msgctxt "Title header for keys table"
 msgid "Key type"
-msgstr ""
+msgstr "Kulcs típusa"
 
 #: node_modules/react-components/containers/keys/KeysTable.js:15
 msgctxt "Title header for keys table"
 msgid "Actions"
-msgstr ""
+msgstr "Műveletek"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:10
 msgctxt "encryption"
 msgid "High security"
-msgstr ""
+msgstr "Magas szintű biztonság"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:11
 msgctxt "encryption"
 msgid "Highest security"
-msgstr ""
+msgstr "Legmagasabb szintű biztonság"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:12
 msgctxt "encryption"
 msgid "State of the art"
-msgstr ""
+msgstr "Különösen korszerű"
 
 #: node_modules/react-components/containers/keys/addKey/SelectEncryption.js:43
 msgctxt "Warning"
@@ -5236,7 +5238,7 @@ msgstr "Harmadik féltől származó témák potenciálisan visszaélhetnek adat
 #: node_modules/react-components/containers/themes/ThemesSection.js:58
 msgctxt "Warning"
 msgid "This action will erase your current custom theme. Are you sure you want to apply this new theme?"
-msgstr ""
+msgstr "Ez a művelet törli a jelenlegi egyéni témáját. Biztos, hogy alkalmazza az új témát?"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:83
 msgctxt "Warning"
@@ -5251,152 +5253,152 @@ msgstr "A hibajelentések nem végpontok közt titkosítottak, kérjük ne küld
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:95
 msgctxt "alert"
 msgid "The encryption keys for your address are being generated. This may take several minutes and temporarily freeze your browser."
-msgstr ""
+msgstr "A címéhez tartozó titkosítási kulcsok létrehozása folyamatban. Ez több percig is eltarthat és átmenetileg megállíthatja a böngészőt."
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:78
 msgctxt "alert"
 msgid "Deleting your keys is irreversible. To be able to access any message encrypted with this key, you might want to make a back up of this key for later use. Do you want to export this key?"
-msgstr ""
+msgstr "A kulcsok törlése nem visszafordítható. Hogy elérhetőek legyenek az üzenetek, melyeket ezzel a kulccsal titkosított, érdemes biztonsági másolatot készíteni a kulcsról későbbi használatra. Szeretné ezt a kulcsot exportálni?"
 
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:89
 msgctxt "alert"
 msgid "The key for your address is now being deleted."
-msgstr ""
+msgstr "A címéhez tartozó kulcs törlése folyamatban."
 
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:177
 msgctxt "Alert"
 msgid "Are you sure you want to import a private key? Importing an insecurely generated or leaked private key can harm the security of your emails."
-msgstr ""
+msgstr "Biztos benne, hogy titkos kulcsot szeretne importálni? A nem biztonságosan generált vagy kiszivárgott titkos kulcsok alááshatják a levelei biztonságát."
 
 #: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:45
 msgctxt "Address action"
 msgid "Export private key"
-msgstr ""
+msgstr "Titkos kulcs exportálása"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:88
 msgctxt "Address action"
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:92
 msgctxt "Address action"
 msgid "Enable"
-msgstr ""
+msgstr "Engedélyezés"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:96
 msgctxt "Address action"
 msgid "Disable"
-msgstr ""
+msgstr "Letiltás"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:100
 msgctxt "Address action"
 msgid "Generate missing keys"
-msgstr ""
+msgstr "Hiányzó kulcsok generálása"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:104
 msgctxt "Address action"
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyForm/useAutoReplyForm.js:29
 msgctxt "Autoresponse"
 msgid "I'm out of the office with limited access to my email."
-msgstr ""
+msgstr "Nem vagyok az irodában, ezért korlátozott a hozzáférésem az e-mailjeimhez."
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:29
 msgctxt "Duration"
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:49
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ weekdays } @ ${ formattedHours }"
-msgstr ""
+msgstr "Minden ${ weekdays } ekkor: ${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:50
 msgctxt "Duration"
 msgid "Every day @ ${ formattedHours }"
-msgstr ""
+msgstr "Minden nap ekkor: ${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:55
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfWeekString } @ ${ formattedHours }"
-msgstr ""
+msgstr "Minden ${ dayOfWeekString } ekkor: ${ formattedHours }"
 
 #: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:60
 #, javascript-format
 msgctxt "Duration"
 msgid "Every ${ dayOfMonthString } @ ${ formattedHours }"
-msgstr ""
+msgstr "Minden ${ dayOfMonthString } ekkor: ${ formattedHours }"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:31
 msgctxt "Restore administrator panel"
 msgid "Due to a password change, your organization administrator privileges have been restricted. The following actions are no longer permitted:"
-msgstr ""
+msgstr "A jelszó megváltoztatása miatt, az ön szervezeti adminisztrátorai jogosultságai korlátozódtak. A következő műveletek már nem engedélyezettek:"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:35
 msgctxt "Restore administrator panel"
 msgid "Creating new sub-users"
-msgstr ""
+msgstr "Új al-felhasználók létrehozása"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:36
 msgctxt "Restore administrator panel"
 msgid "Reading emails of non-private subusers"
-msgstr ""
+msgstr "Olvashatja a nem-privát al-felhasználók leveleit"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:37
 msgctxt "Restore administrator panel"
 msgid "Changing organization password"
-msgstr ""
+msgstr "Szervezeti jelszó megváltoztatása"
 
 #: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:38
 msgctxt "Restore administrator panel"
 msgid "Changing organization keys"
-msgstr ""
+msgstr "Szervezeti kulcsok megváltoztatása"
 
 #: node_modules/react-components/containers/error/GenericError.js:13
 msgctxt "Error message"
 msgid "Aaah! Something went wrong"
-msgstr ""
+msgstr "Valami nem stimmel"
 
 #: node_modules/react-components/containers/error/GenericError.js:16
 msgctxt "Error message"
 msgid "Brace yourself till we get the error fixed."
-msgstr ""
+msgstr "Kérjük várjon, amíg a hibát elhárítjuk."
 
 #: node_modules/react-components/containers/error/GenericError.js:17
 msgctxt "Error message"
 msgid "You may also refresh the page or try again later."
-msgstr ""
+msgstr "Megpróbálhatja frissíteni az oldalt vagy később újra próbálni."
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:78
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:71
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 msgctxt "Header for addresses table"
 msgid "Address"
-msgstr ""
+msgstr "Cím"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:80
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:72
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:154
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:171
 #: node_modules/react-components/containers/domains/DomainsTable.js:17
 msgctxt "Header for addresses table"
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:81
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:73
 #: node_modules/react-components/containers/domains/DomainsTable.js:19
 msgctxt "Header for addresses table"
 msgid "Actions"
-msgstr ""
+msgstr "Műveletek"
 
 #: node_modules/react-components/containers/addresses/AddressesWithMembers.js:79
 msgctxt "Header for addresses table"
 msgid "Username"
-msgstr ""
+msgstr "Felhasználónév"
 
 #: node_modules/react-components/containers/domains/DomainsTable.js:16
 msgctxt "Header for addresses table"
@@ -5406,53 +5408,53 @@ msgstr "Domain név"
 #: node_modules/react-components/containers/domains/DomainsTable.js:18
 msgctxt "Header for addresses table"
 msgid "Addresses"
-msgstr ""
+msgstr "Címek"
 
 #: node_modules/react-components/containers/addresses/AddressStatus.js:9
 msgctxt "Address status"
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: node_modules/react-components/containers/addresses/AddressStatus.js:13
 msgctxt "Address status"
 msgid "Active"
-msgstr ""
+msgstr "Aktív"
 
 #: node_modules/react-components/containers/addresses/AddressStatus.js:17
 msgctxt "Address status"
 msgid "Disabled"
-msgstr ""
+msgstr "Kikapcsolva"
 
 #: node_modules/react-components/containers/addresses/AddressStatus.js:21
 msgctxt "Address status"
 msgid "Orphan"
-msgstr ""
+msgstr "Árva"
 
 #: node_modules/react-components/containers/addresses/AddressStatus.js:25
 msgctxt "Address status"
 msgid "Missing keys"
-msgstr ""
+msgstr "Hiányzó kulcsok"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:46
 msgctxt "Success notification"
 msgid "Address deleted"
-msgstr ""
+msgstr "Cím törölve"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:52
 msgctxt "Success notification"
 msgid "Address enabled"
-msgstr ""
+msgstr "Cím engedélyezve"
 
 #: node_modules/react-components/containers/addresses/AddressActions.js:70
 msgctxt "Success notification"
 msgid "Address disabled"
-msgstr ""
+msgstr "Cím letiltva"
 
 #: node_modules/react-components/containers/labels/ActionsLabel.js:52
 #, javascript-format
 msgctxt "Success notification"
 msgid "${ label.Name } removed"
-msgstr ""
+msgstr "${ label.Name } törölve"
 
 #: node_modules/react-components/containers/filters/FilterItemRow.js:45
 msgctxt "Success notification"
@@ -5467,12 +5469,12 @@ msgstr "Szűrő eltávolítva"
 #: node_modules/react-components/containers/addresses/AddressesWithUser.js:43
 msgctxt "Notification"
 msgid "A disabled address cannot be primary"
-msgstr ""
+msgstr "Egy kikapcsolt cím nem lehet alapértelmezett"
 
 #: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:39
 msgctxt "Notification"
 msgid "OpenVPN / IKEv2 credentials updated"
-msgstr ""
+msgstr "OpenVPN / IKEv2 azonosító frissítve"
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:45
 #, javascript-format
@@ -5483,52 +5485,52 @@ msgstr "${ Filter.Name } létrehozva"
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:39
 msgctxt "Desktop notification status"
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 #: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:41
 msgctxt "Desktop notification status"
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: node_modules/react-components/containers/domains/DomainSection.js:19
 msgctxt "Label for adding a new custom domain"
 msgid "Add a domain that you own to your ProtonMail account."
-msgstr ""
+msgstr "Adjon hozzá tulajdonában lévő domaint a ProtonMail fiókjához."
 
 #: node_modules/react-components/containers/domains/DomainSection.js:39
 msgctxt "Domain modal"
 msgid "'www' subdomains are typically not used for email. Are you sure you want to use this domain value?"
-msgstr ""
+msgstr "Az e-mailhez használt domain nevek általában nem tartalmazzák a \"www'\"részt. Biztos, hogy folytatja ezzel a domain névvel?"
 
 #: node_modules/react-components/containers/domains/VerifySection.js:10
 msgctxt "Info for domain modal"
 msgid "For security reasons, we need to verify that you are the owner of your domain. Please add the following code into your DNS record."
-msgstr ""
+msgstr "Biztonsági okoból ellenőriznünk kell, hogy ön a domain tulajdonosa. Kérjük, adja hozzá a következő DNS rekordot."
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:26
 msgctxt "Info for domain modal"
 msgid "Please add addresses to send and receive email with this domain."
-msgstr ""
+msgstr "Vegyen fel címeket, hogy ezen a domainen leveleket küldhessen és fogadhasson."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:14
 msgctxt "Warning for domain modal"
 msgid "Do not remove it even after successful verification."
-msgstr ""
+msgstr "Sikeres ellenőrzés után se távolítása el."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:16
 msgctxt "Warning for domain modal"
 msgid "This can typically be done in the control panel of your domain name registrar."
-msgstr ""
+msgstr "Általában ezt a domian regisztrátor adminisztrációs felületén teheti meg."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:32
 msgctxt "Warning for domain modal"
 msgid "It can take up to a day for DNS changes to update."
-msgstr ""
+msgstr "A DNS frissülése akár egy napig is eltarthat."
 
 #: node_modules/react-components/containers/domains/VerifySection.js:19
 msgctxt "Label for domain modal"
 msgid "Please add the following TXT record:"
-msgstr ""
+msgstr "Vegye fel a következő TXT rekordot:"
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:19
 #: node_modules/react-components/containers/domains/DMARCSection.js:18
@@ -5537,7 +5539,7 @@ msgstr ""
 #: node_modules/react-components/containers/domains/VerifySection.js:23
 msgctxt "Header for domain modal"
 msgid "Type"
-msgstr ""
+msgstr "Típus"
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:20
 #: node_modules/react-components/containers/domains/DMARCSection.js:19
@@ -5546,7 +5548,7 @@ msgstr ""
 #: node_modules/react-components/containers/domains/VerifySection.js:24
 msgctxt "Header for domain modal"
 msgid "Host name"
-msgstr ""
+msgstr "Hoszt név"
 
 #: node_modules/react-components/containers/domains/DKIMSection.js:21
 #: node_modules/react-components/containers/domains/DMARCSection.js:20
@@ -5555,22 +5557,22 @@ msgstr ""
 #: node_modules/react-components/containers/domains/VerifySection.js:25
 msgctxt "Header for domain modal"
 msgid "Value / Data / Points to"
-msgstr ""
+msgstr "Érték / Adat / Cél cím"
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:36
 msgctxt "Header for domain modal"
 msgid "User"
-msgstr ""
+msgstr "Felhasználó"
 
 #: node_modules/react-components/containers/domains/AddressesSection.js:36
 msgctxt "Header for domain modal"
 msgid "Address"
-msgstr ""
+msgstr "Cím"
 
 #: node_modules/react-components/containers/domains/MXSection.js:25
 msgctxt "Header for domain modal"
 msgid "Priority"
-msgstr ""
+msgstr "Prioritás"
 
 #: node_modules/react-components/containers/domains/DomainModal.js:67
 msgctxt "Label in domain modal"
@@ -5590,73 +5592,73 @@ msgstr "Címek"
 #: node_modules/react-components/containers/domains/DomainStatus.js:47
 msgctxt "Domain label"
 msgid "Verified"
-msgstr ""
+msgstr "Ellenőrizve"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:11
 msgctxt "Badge for domain"
 msgid "Missing keys"
-msgstr ""
+msgstr "Hiányzó kulcsok"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:15
 msgctxt "Badge for domain"
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 #: node_modules/react-components/containers/domains/AddressStatus.js:19
 msgctxt "Badge for domain"
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:33
 msgctxt "Title header for addresses domain table"
 msgid "Address"
-msgstr ""
+msgstr "Címek"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:34
 msgctxt "Title header for addresses domain table"
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:35
 msgctxt "Title header for addresses domain table"
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: node_modules/react-components/containers/domains/AddressesTable.js:37
 msgctxt "Title header for addresses domain table"
 msgid "Catch all"
-msgstr ""
+msgstr "Gyűjtő e-mail"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:27
 msgctxt "Success message"
 msgid "Domain deleted"
-msgstr ""
+msgstr "Domain név törölve"
 
 #: node_modules/react-components/containers/members/MemberActions.js:34
 msgctxt "Success message"
 msgid "User deleted"
-msgstr ""
+msgstr "Felhasználó törölve"
 
 #: node_modules/react-components/containers/members/MemberActions.js:52
 #: node_modules/react-components/containers/members/MemberActions.js:58
 msgctxt "Success message"
 msgid "Role updated"
-msgstr ""
+msgstr "Szerep frissítve"
 
 #: node_modules/react-components/containers/members/MemberActions.js:64
 msgctxt "Success message"
 msgid "Status updated"
-msgstr ""
+msgstr "Állapot frissítve"
 
 #: node_modules/react-components/containers/members/MemberActions.js:70
 msgctxt "Success message"
 msgid "Sessions revoked"
-msgstr ""
+msgstr "Munkafolyamatok visszavonva"
 
 #: node_modules/react-components/containers/domains/DomainsSection.js:48
 msgctxt "Message"
 msgid "Add a domain to receive emails to your custom email addresses and to add more users to your organization (Visionary and Professional accounts only)."
-msgstr ""
+msgstr "Felvehet egy domain nevet, hogy saját egyéni e-mail címére fogadhasson leveleket és felvehet további felhasználókat a szervezetbe (csak Visionary és Professional csomagok esetén)."
 
 #: node_modules/react-components/containers/account/DisableTwoFactorModal.js:34
 msgctxt "Message"
@@ -5666,92 +5668,92 @@ msgstr "Biztosan ki szeretné kapcsolni a kétlépéses hitelesítést?"
 #: node_modules/react-components/containers/logs/WipeLogsButton.js:17
 msgctxt "Message"
 msgid "Are you sure you want to clear all your logs?"
-msgstr ""
+msgstr "Biztosan törölni szeretné az összes naplót?"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:12
 msgctxt "VPNClient"
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:17
 msgctxt "VPNClient"
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:22
 msgctxt "VPNClient"
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:26
 msgctxt "VPNClient"
 msgid "MacOS"
-msgstr ""
+msgstr "MacOS"
 
 #: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:28
 msgctxt "VPNClient"
 msgid "GNU/Linux"
-msgstr ""
+msgstr "GNU/Linux"
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:26
 msgctxt "Label for news"
 msgid "Major announcements (2-3 per year)"
-msgstr ""
+msgstr "Legfontosabb bejelentések (évente 2-3 levél)"
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:27
 msgctxt "Label for news"
 msgid "Major features (3-4 per year)"
-msgstr ""
+msgstr "Főbb új lehetőségek (évente 3-4 levél)"
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:28
 msgctxt "Label for news"
 msgid "Proton for business (4-5 per year)"
-msgstr ""
+msgstr "Üzleti Proton szolgáltatások (évente 4-5 levél)"
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:29
 msgctxt "Label for news"
 msgid "Proton newsletter (5-6 per year)"
-msgstr ""
+msgstr "Proton hírlevél (évente 5-6 levél)"
 
 #: node_modules/react-components/containers/account/NewsCheckboxes.js:30
 msgctxt "Label for news"
 msgid "Proton Beta (10-12 per year)"
-msgstr ""
+msgstr "Proton béta (évente 10-12 levél)"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:68
 msgctxt "Confirmation title"
 msgid "Delete payment method"
-msgstr ""
+msgstr "Fizetési mód törlése"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:69
 msgctxt "Confirmation message to delete payment method"
 msgid "Are you sure you want to delete this payment method?"
-msgstr ""
+msgstr "Biztos, hogy törölni szeretné ezt a fizetési módot?"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodState.js:10
 msgctxt "Label on payment method"
 msgid "Expired"
-msgstr ""
+msgstr "Lejárt"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodState.js:17
 msgctxt "Label on payment method"
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:30
 msgctxt "Title for payment methods table"
 msgid "Method"
-msgstr ""
+msgstr "Mód"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:31
 msgctxt "Title for payment methods table"
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsTable.js:32
 msgctxt "Title for payment methods table"
 msgid "Actions"
-msgstr ""
+msgstr "Műveletek"
 
 #: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:58
 msgctxt "Info for payment methods"
@@ -5771,55 +5773,55 @@ msgstr "Fizetés bankkártyával"
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:56
 msgctxt "Payment method option"
 msgid "Pay with PayPal"
-msgstr ""
+msgstr "Fizetés PayPallal"
 
 #: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:63
 msgctxt "Payment method option"
 msgid "Pay with Bitcoin"
-msgstr ""
+msgstr "Fizetés Bitcoinnal"
 
 #: node_modules/react-components/containers/security/AddressVerificationSection.js:44
 msgctxt "Tooltip prompt to trust keys"
 msgid "When receiving an internal message from a sender that has no trusted keys in your contacts, show a banner asking if you want to enable trusted keys."
-msgstr ""
+msgstr "Amikor olyan belső feladótól érkezik levél, akihez a névjegyekben még nem tartozik megbízható kulcs, megjelenik egy kérdés a kulcs megbízhatóként való megjelöléséről."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:85
 msgctxt "Tooltip sign external messages"
 msgid "Automatically sign all your outgoing messages so users can verify the authenticity of your messages. This is done in combination with the Default PGP Scheme that is selected down below."
-msgstr ""
+msgstr "Bekapcsolásakor a kimenő üzenetek automatikusan aláírásra kerülnek, így a címzettek ellenőrizhetik az üzenet hitelességét. Ez együtt működik a lentebb kiválasztott alapértelmezett PGP sémával."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:103
 msgctxt "Tooltip automatically attach public key"
 msgid "This automatically adds your public key to each message you send. Recipients can use this to verify the authenticity of your messages and send encrypted messages to you."
-msgstr ""
+msgstr "Bekapcsolásakor a nyilvános kulcs automatikusan csatolásra kerül minden kimenő üzenethez. A címzettek ezt használhatják a levél hitelességének ellenőrzésére és titkosított üzenetek küldésére önnek."
 
 #: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:121
 msgctxt "Tooltip default pgp scheme"
 msgid "Select the default PGP scheme to be used when signing or encrypting to an user. Note that PGP/Inline forces plain text messages. Click for more info."
-msgstr ""
+msgstr "Megadható a partnernek küldött titkosított vagy aláírt levelekben használandó alapértelmezett PGP séma. PGP/Inline esetén az üzenet mindig Egyszerű Szöveg formátumú lesz. További információkért kattintson."
 
 #: node_modules/react-components/containers/labels/ToggleNotify.js:21
 #, javascript-format
 msgctxt "label/folder notification"
 msgid "${ label.Name } updated"
-msgstr ""
+msgstr "${ label.Name } frissítve"
 
 #: node_modules/react-components/containers/labels/modals/Edit.js:45
 #, javascript-format
 msgctxt "label/folder notification"
 msgid "${ Label.Name } created"
-msgstr ""
+msgstr "${ Label.Name } létrehozva"
 
 #: node_modules/react-components/containers/labels/NewLabelForm.js:10
 #: node_modules/react-components/containers/labels/NewLabelForm.js:16
 msgctxt "New Label form"
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: node_modules/react-components/containers/labels/NewLabelForm.js:22
 msgctxt "New Label form"
 msgid "Color"
-msgstr ""
+msgstr "Szín"
 
 #: node_modules/react-components/containers/filters/editor/Actions.js:113
 msgctxt "New Label form"
@@ -5829,22 +5831,22 @@ msgstr "Műveletek"
 #: node_modules/react-components/containers/labels/modals/Edit.js:21
 msgctxt "Label/folder modal"
 msgid "Edit label"
-msgstr ""
+msgstr "Címke szerkesztése"
 
 #: node_modules/react-components/containers/labels/modals/Edit.js:23
 msgctxt "Label/folder modal"
 msgid "Edit folder"
-msgstr ""
+msgstr "Mappa szerkesztése"
 
 #: node_modules/react-components/containers/labels/modals/Edit.js:27
 msgctxt "Label/folder modal"
 msgid "Create a new label"
-msgstr ""
+msgstr "Új címke létrehozása"
 
 #: node_modules/react-components/containers/labels/modals/Edit.js:29
 msgctxt "Label/folder modal"
 msgid "Create a new folder"
-msgstr ""
+msgstr "Új mappa létrehozása"
 
 #: node_modules/react-components/containers/labels/modals/Edit.js:55
 #, javascript-format
@@ -5861,37 +5863,37 @@ msgstr "${ Filter.Name } szűrő frissítve"
 #: node_modules/react-components/containers/labels/LabelSortableList.js:12
 msgctxt "Settings/labels"
 msgid "Labels/Folders"
-msgstr ""
+msgstr "Címkék és mappák"
 
 #: node_modules/react-components/containers/labels/LabelSortableList.js:17
 msgctxt "Settings/labels - table"
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: node_modules/react-components/containers/labels/LabelSortableList.js:19
 msgctxt "Settings/labels - table"
 msgid "Notification"
-msgstr ""
+msgstr "Értesítés"
 
 #: node_modules/react-components/containers/labels/LabelSortableList.js:20
 msgctxt "Settings/labels - table"
 msgid "Actions"
-msgstr ""
+msgstr "Műveletek"
 
 #: node_modules/react-components/containers/labels/LabelsSection.js:43
 msgctxt "LabelSettings"
 msgid "Folders and labels"
-msgstr ""
+msgstr "Mappák és Címkék"
 
 #: node_modules/react-components/containers/labels/LabelsSection.js:49
 msgctxt "LabelSettings"
 msgid "Multiple labels can be applied to a single message, but a message can only be in a single folder."
-msgstr ""
+msgstr "Egy üzenethez több címke is tartozhat, de csak egy mappában szerepelhet."
 
 #: node_modules/react-components/containers/labels/LabelsSection.js:61
 msgctxt "LabelSettings"
 msgid "No labels/folders available"
-msgstr ""
+msgstr "Nincsenek címkék és mappák"
 
 #: node_modules/react-components/containers/filters/editor/EditConditionValue.js:12
 msgctxt "Filter condition"
@@ -5942,12 +5944,12 @@ msgstr "Megjelölés olvasottként"
 #: node_modules/react-components/containers/filters/editor/Actions.js:52
 msgctxt "Filter Actions"
 msgid "Mark as starred"
-msgstr ""
+msgstr "Megjelölés csillagozottként"
 
 #: node_modules/react-components/containers/filters/editor/Preview.js:13
 msgctxt "Filter preview"
 msgid "starred"
-msgstr ""
+msgstr "csillagozott"
 
 #: node_modules/react-components/containers/filters/editor/Preview.js:17
 msgctxt "Filter preview"
@@ -5972,7 +5974,7 @@ msgstr "Címke hozzáadása:"
 #: node_modules/react-components/containers/filters/editor/Preview.js:83
 msgctxt "Filter preview"
 msgid "Custom filter work on all new emails, including incoming emails as well as sent emails."
-msgstr "Az egyedi szűrők az összes új e-mailre működnek, beleértve a bejövő leveleket és az elküldötteket is."
+msgstr "A saját szűrők az összes új e-mailre működnek, beleértve a bejövő leveleket és az elküldötteket is."
 
 #: node_modules/react-components/containers/filters/editor/Preview.js:87
 msgctxt "Filter preview"
@@ -6017,12 +6019,12 @@ msgstr "Mellékletet tartalmaz"
 #: node_modules/react-components/containers/filters/AddFilterModal.js:156
 msgctxt "Add filter modal"
 msgid "Custom filter"
-msgstr "Egyedi szűrő"
+msgstr "Saját szűrő"
 
 #: node_modules/react-components/containers/filters/AddFilterModal.js:156
 msgctxt "Add filter modal"
 msgid "Custom filter (preview)"
-msgstr "Egyedi szűrő (előnézet)"
+msgstr "Saját szűrő (előnézet)"
 
 #: node_modules/react-components/containers/filters/SortableList.js:10
 msgctxt "Settings/filters"
@@ -6047,12 +6049,12 @@ msgstr "Művelet"
 #: node_modules/react-components/containers/filters/FiltersSection.js:38
 msgctxt "FilterSettings"
 msgid "Custom Filters"
-msgstr "Egyedi szűrők"
+msgstr "Saját szűrők"
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:40
 msgctxt "FilterSettings"
 msgid "Add a custom filter to perform actions such as automatically labeling or archiving messages."
-msgstr "Címkék automatikus hozzáadásához, archiváláshoz és más hasonló feladatokhoz adjon hozzá egyedi szűrőket."
+msgstr "Címkék automatikus hozzáadásához, archiváláshoz és más hasonló feladatokhoz adjon hozzá saját szűrőket."
 
 #: node_modules/react-components/containers/filters/FiltersSection.js:53
 msgctxt "FilterSettings"
@@ -6067,7 +6069,7 @@ msgstr "Engedélyezési-/tiltólista keresése"
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:56
 msgctxt "FilterSettings"
 msgid "Spam Filters"
-msgstr ""
+msgstr "Levélszemét szűrők"
 
 #: node_modules/react-components/containers/filters/SpamFiltersSection.js:58
 msgctxt "FilterSettings"
@@ -6095,27 +6097,27 @@ msgstr "${ email } hozzáadva ide: ${ I18N[type] }"
 #: node_modules/react-components/containers/members/MemberActions.js:100
 msgctxt "Member action"
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: node_modules/react-components/containers/members/MemberActions.js:104
 msgctxt "Member action"
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: node_modules/react-components/containers/members/MemberActions.js:108
 msgctxt "Member action"
 msgid "Make admin"
-msgstr ""
+msgstr "Legyen admin"
 
 #: node_modules/react-components/containers/members/MemberActions.js:112
 msgctxt "Member action"
 msgid "Revoke admin"
-msgstr ""
+msgstr "Admin visszavonása"
 
 #: node_modules/react-components/containers/members/MemberActions.js:116
 msgctxt "Member action"
 msgid "Login"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: node_modules/react-components/containers/members/MemberActions.js:120
 msgctxt "Member action"
@@ -6125,22 +6127,22 @@ msgstr "Legyen magánfiók"
 #: node_modules/react-components/containers/members/MemberActions.js:124
 msgctxt "Member action"
 msgid "Revoke sessions"
-msgstr ""
+msgstr "Munkafolyamatok visszavonása"
 
 #: node_modules/react-components/containers/members/MemberRole.js:8
 msgctxt "User role"
 msgid "Admin"
-msgstr ""
+msgstr "Adminisztrátor"
 
 #: node_modules/react-components/containers/members/MemberRole.js:9
 msgctxt "User role"
 msgid "Member"
-msgstr ""
+msgstr "Tag"
 
 #: node_modules/react-components/containers/members/MemberRole.js:10
 msgctxt "User role"
 msgid "Primary admin"
-msgstr ""
+msgstr "Elsődleges adminisztrátor"
 
 #: node_modules/react-components/containers/members/MemberModal.js:154
 msgctxt "Label for new member"
@@ -6150,17 +6152,17 @@ msgstr "Magánfiók"
 #: node_modules/react-components/containers/members/MembersSection.js:119
 msgctxt "Info for members section"
 msgid "Add, remove, and manage users within your organization. Here you can adjust their allocated storage space, grant admin rights, and more."
-msgstr ""
+msgstr "A szervezet felhasználóinak felvétele, törlése és szerkesztése. Szerkeszthető a felhasználók tárhelye, adminisztrátori jogaik és egyebek."
 
 #: node_modules/react-components/containers/members/MembersSection.js:140
 msgctxt "Title header for members table"
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: node_modules/react-components/containers/members/MembersSection.js:142
 msgctxt "Title header for members table"
 msgid "Role"
-msgstr ""
+msgstr "Szerepkör"
 
 #: node_modules/react-components/containers/members/MembersSection.js:146
 msgctxt "Title header for members table"
@@ -6170,266 +6172,266 @@ msgstr "Magánfiók"
 #: node_modules/react-components/containers/members/MembersSection.js:149
 msgctxt "Title header for members table"
 msgid "Addresses"
-msgstr ""
+msgstr "Címek"
 
 #: node_modules/react-components/containers/members/MembersSection.js:150
 msgctxt "Title header for members table"
 msgid "Features"
-msgstr ""
+msgstr "Funkciók"
 
 #: node_modules/react-components/containers/members/MembersSection.js:151
 msgctxt "Title header for members table"
 msgid "Actions"
-msgstr ""
+msgstr "Műveletek"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:31
 #: node_modules/react-components/containers/logs/LogsTable.js:19
 msgctxt "Log event"
 msgid "Login failure (password)"
-msgstr ""
+msgstr "Bejelentkezési hiba (jelszó)"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:32
 #: node_modules/react-components/containers/logs/LogsTable.js:20
 msgctxt "Log event"
 msgid "Login success"
-msgstr ""
+msgstr "Sikeres bejelentkezés"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:33
 #: node_modules/react-components/containers/logs/LogsTable.js:21
 msgctxt "Log event"
 msgid "Logout"
-msgstr ""
+msgstr "Kijelentkezés"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:34
 #: node_modules/react-components/containers/logs/LogsSection.js:35
 #: node_modules/react-components/containers/logs/LogsTable.js:22
 msgctxt "Log event"
 msgid "Login failure (2FA)"
-msgstr ""
+msgstr "Bejelentkezési hiba (kétlépcsős)"
 
 #: node_modules/react-components/containers/logs/LogsTable.js:23
 msgctxt "Log event"
 msgid "Login success (2FA)"
-msgstr ""
+msgstr "Sikeres bejelentkezés (képlépcsős)"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:118
 msgctxt "Log preference"
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:119
 msgctxt "Log preference"
 msgid "Basic"
-msgstr ""
+msgstr "Alapszintű"
 
 #: node_modules/react-components/containers/logs/LogsSection.js:125
 msgctxt "Log preference"
 msgid "Advanced"
-msgstr ""
+msgstr "Részletes"
 
 #: node_modules/react-components/containers/layouts/ComposerModeRadios.js:18
 msgctxt "Label to change composer mode"
 msgid "Popup"
-msgstr ""
+msgstr "Felugró ablak"
 
 #: node_modules/react-components/containers/layouts/ComposerModeRadios.js:30
 msgctxt "Label to change composer mode"
 msgid "Maximized"
-msgstr ""
+msgstr "Teljes méretű"
 
 #: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:18
 msgctxt "Label to change view layout"
 msgid "Column"
-msgstr ""
+msgstr "Oszlop"
 
 #: node_modules/react-components/containers/layouts/ViewLayoutRadios.js:30
 msgctxt "Label to change view layout"
 msgid "Row"
-msgstr ""
+msgstr "Sor"
 
 #: node_modules/react-components/containers/layouts/ViewModeRadios.js:18
 msgctxt "Label to change view mode"
 msgid "Conversation group"
-msgstr ""
+msgstr "Beszélgetések csoportosítása"
 
 #: node_modules/react-components/containers/layouts/ViewModeRadios.js:30
 msgctxt "Label to change view mode"
 msgid "Single messages"
-msgstr ""
+msgstr "Külön üzenetek"
 
 #: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:28
 msgctxt "Title for downloads section"
 msgid "Platform"
-msgstr ""
+msgstr "Platform"
 
 #: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:29
 msgctxt "Title for downloads section"
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 #: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:30
 msgctxt "Title for downloads section"
 msgid "Action"
-msgstr ""
+msgstr "Művelet"
 
 #: node_modules/react-components/containers/overview/LinkItem.js:12
 msgctxt "Tag"
 msgid "Premium feature"
-msgstr ""
+msgstr "Prémium funkció"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:45
 msgctxt "Role"
 msgid "Member"
-msgstr ""
+msgstr "Tag"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:46
 msgctxt "Role"
 msgid "Administrator"
-msgstr ""
+msgstr "Adminisztrátor"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:62
 msgctxt "Status"
 msgid "Not set"
-msgstr ""
+msgstr "Nincs megadva"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:71
 msgctxt "Status"
 msgid "Disabled"
-msgstr ""
+msgstr "Kikapcsolva"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:23
 msgctxt "Error notification in the bug report modal when the user upload file"
 msgid "No image selected"
-msgstr ""
+msgstr "Nincs kép kiválasztva"
 
 #: node_modules/react-components/containers/support/BugModal.js:38
 #: node_modules/react-components/containers/support/BugModal.js:52
 msgctxt "Bug category"
 msgid "Login problem"
-msgstr ""
+msgstr "Bejelentkezési probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:39
 msgctxt "Bug category"
 msgid "Sign up problem"
-msgstr ""
+msgstr "Probléma a regisztrációval"
 
 #: node_modules/react-components/containers/support/BugModal.js:40
 msgctxt "Bug category"
 msgid "Bridge problem"
-msgstr ""
+msgstr "A Birdge-zsel kapcsolatos probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:41
 msgctxt "Bug category"
 msgid "Import / export problem"
-msgstr ""
+msgstr "Importálási vagy exportálási probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:42
 msgctxt "Bug category"
 msgid "Custom domains problem"
-msgstr ""
+msgstr "Probléma saját domain névvel"
 
 #: node_modules/react-components/containers/support/BugModal.js:43
 #: node_modules/react-components/containers/support/BugModal.js:54
 msgctxt "Bug category"
 msgid "Payments problem"
-msgstr ""
+msgstr "Fizetéssel kapcsolatos probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:44
 #: node_modules/react-components/containers/support/BugModal.js:58
 msgctxt "Bug category"
 msgid "Connection problem"
-msgstr ""
+msgstr "Kapcsolódási probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:45
 msgctxt "Bug category"
 msgid "Slow speed problem"
-msgstr ""
+msgstr "Túl lassú működés"
 
 #: node_modules/react-components/containers/support/BugModal.js:46
 msgctxt "Bug category"
 msgid "VPN problem"
-msgstr ""
+msgstr "VPN probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:47
 #: node_modules/react-components/containers/support/BugModal.js:63
 msgctxt "Bug category"
 msgid "Feature request"
-msgstr ""
+msgstr "Ötlet, javaslat"
 
 #: node_modules/react-components/containers/support/BugModal.js:48
 msgctxt "Bug category"
 msgid "Other"
-msgstr ""
+msgstr "Egyéb"
 
 #: node_modules/react-components/containers/support/BugModal.js:53
 msgctxt "Bug category"
 msgid "Signup problem"
-msgstr ""
+msgstr "Probléma a regisztrációval"
 
 #: node_modules/react-components/containers/support/BugModal.js:55
 msgctxt "Bug category"
 msgid "Installation problem"
-msgstr ""
+msgstr "Telepítési probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:56
 msgctxt "Bug category"
 msgid "Update problem"
-msgstr ""
+msgstr "Frissítési probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:57
 msgctxt "Bug category"
 msgid "Application problem"
-msgstr ""
+msgstr "Probléma az alkalmazással"
 
 #: node_modules/react-components/containers/support/BugModal.js:59
 msgctxt "Bug category"
 msgid "Speed problem"
-msgstr ""
+msgstr "Probléma a sebességgel"
 
 #: node_modules/react-components/containers/support/BugModal.js:60
 msgctxt "Bug category"
 msgid "Manual setup problem"
-msgstr ""
+msgstr "Probléma a kézi beállítással"
 
 #: node_modules/react-components/containers/support/BugModal.js:61
 msgctxt "Bug category"
 msgid "Website access problem"
-msgstr ""
+msgstr "Probléma a weboldal elérésével"
 
 #: node_modules/react-components/containers/support/BugModal.js:62
 msgctxt "Bug category"
 msgid "Streaming problem"
-msgstr ""
+msgstr "Videó nézési probléma"
 
 #: node_modules/react-components/containers/support/BugModal.js:80
 msgctxt "Action to select a title for the bug report modal"
 msgid "Select"
-msgstr ""
+msgstr "Válasszon"
 
 #: node_modules/react-components/containers/support/BugModal.js:193
 msgctxt "Label, make it short please"
 msgid "Attach screenshot(s)"
-msgstr ""
+msgstr "Képernyőkép csatolása"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:7
 msgctxt "Invoice type display as badge"
 msgid "Other"
-msgstr ""
+msgstr "Egyéb"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:8
 msgctxt "Invoice type display as badge"
 msgid "Subscription"
-msgstr ""
+msgstr "Előfizetés"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:9
 msgctxt "Invoice type display as badge"
 msgid "Cancellation"
-msgstr ""
+msgstr "Felmondás"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:10
 msgctxt "Invoice type display as badge"
@@ -6439,47 +6441,47 @@ msgstr "Kredit"
 #: node_modules/react-components/containers/invoices/InvoiceType.js:11
 msgctxt "Invoice type display as badge"
 msgid "Donation"
-msgstr ""
+msgstr "Adományozás"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:12
 msgctxt "Invoice type display as badge"
 msgid "Chargeback"
-msgstr ""
+msgstr "Visszaterhelések"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:13
 msgctxt "Invoice type display as badge"
 msgid "Renewal"
-msgstr ""
+msgstr "Megújítás"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:14
 msgctxt "Invoice type display as badge"
 msgid "Refund"
-msgstr ""
+msgstr "Visszatérítés"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:15
 msgctxt "Invoice type display as badge"
 msgid "Modification"
-msgstr ""
+msgstr "Módosítás"
 
 #: node_modules/react-components/containers/invoices/InvoiceType.js:16
 msgctxt "Invoice type display as badge"
 msgid "Addition"
-msgstr ""
+msgstr "Kiegészítés"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:16
 msgctxt "Invoice state display as badge"
 msgid "Unpaid"
-msgstr ""
+msgstr "Nincs fizetve"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:17
 msgctxt "Invoice state display as badge"
 msgid "Paid"
-msgstr ""
+msgstr "Fizetve"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:18
 msgctxt "Invoice state display as badge"
 msgid "Void"
-msgstr ""
+msgstr "Sztornó"
 
 #: node_modules/react-components/containers/invoices/InvoiceState.js:19
 msgctxt "Invoice state display as badge"
@@ -6489,155 +6491,155 @@ msgstr "Számlázva"
 #: node_modules/react-components/containers/invoices/InvoiceState.js:20
 msgctxt "Invoice state display as badge"
 msgid "Writeoff"
-msgstr ""
+msgstr "Leírt"
 
 #: node_modules/react-components/containers/invoices/InvoiceActions.js:12
 msgctxt "Title for PDF file"
 msgid "ProtonMail invoice"
-msgstr ""
+msgstr "ProtonMail számla"
 
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:43
 msgctxt "Info message for custom invoice modal"
 msgid "Add your name (or company name) and address to your invoices."
-msgstr ""
+msgstr "Adja hozzá a nevét (vagy cégnevét) és címét a számlákhoz."
 
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:52
 msgctxt "Placeholder for custom invoice text"
 msgid "Add your name (or company name) and address to your invoices"
-msgstr ""
+msgstr "Adja hozzá a nevét (vagy cégnevét) és címét a számlákhoz"
 
 #: node_modules/react-components/containers/sessions/SessionAction.js:8
 msgctxt "Badge for user sessions table"
 msgid "Current session"
-msgstr ""
+msgstr "Jelenlegi munkamenet"
 
 #: node_modules/react-components/containers/sessions/SessionAction.js:11
 msgctxt "Action for user session"
 msgid "Revoke"
-msgstr ""
+msgstr "Visszavonás"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:28
 msgctxt "Badge"
 msgid "ProtonMail for web"
-msgstr ""
+msgstr "Webes ProtonMail"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:29
 msgctxt "Badge"
 msgid "ProtonMail settings for web"
-msgstr ""
+msgstr "Webes ProtonMail beállításai"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:30
 msgctxt "Badge"
 msgid "ProtonMail for iOS"
-msgstr ""
+msgstr "ProtonMail iOS-re"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:31
 msgctxt "Badge"
 msgid "ProtonMail for Android"
-msgstr ""
+msgstr "ProtonMail Androidra"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:32
 msgctxt "Badge"
 msgid "ProtonMail import-export"
-msgstr ""
+msgstr "ProtonMail importálás-exportálás"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:33
 msgctxt "Badge"
 msgid "ProtonMail Bridge"
-msgstr ""
+msgstr "ProtonMail Bridge"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:34
 msgctxt "Badge"
 msgid "ProtonVPN for web"
-msgstr ""
+msgstr "Webes ProtonVPN"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:35
 msgctxt "Badge"
 msgid "ProtonVPN for Windows"
-msgstr ""
+msgstr "ProtonVPN Windowsra"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:36
 msgctxt "Badge"
 msgid "ProtonVPN for macOS"
-msgstr ""
+msgstr "ProtonVPN macOS-re"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:37
 msgctxt "Badge"
 msgid "ProtonVPN for iOS"
-msgstr ""
+msgstr "ProtonVPN iOS-re"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:38
 msgctxt "Badge"
 msgid "ProtonVPN for Android"
-msgstr ""
+msgstr "ProtonVPN Androidra"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:39
 msgctxt "Badge"
 msgid "Admin"
-msgstr ""
+msgstr "Adminisztrátor"
 
 #: node_modules/react-components/containers/sessions/SessionsSection.js:40
 msgctxt "Badge"
 msgid "ProtonVPN settings for web"
-msgstr ""
+msgstr "Webes ProtonVPN beállításai"
 
 #: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
 msgctxt "Time unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } óra"
+msgstr[1] "${ hours } óra"
 
 #: node_modules/react-components/components/input/TimeInput.js:27
 msgctxt "Time unit"
 msgid "${ minutes } minutes"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } perc"
+msgstr[1] "${ minutes } perc"
 
 #: node_modules/react-components/components/toggle/Toggle.js:10
 msgctxt "Toggle button"
 msgid "On"
-msgstr ""
+msgstr "Be"
 
 #: node_modules/react-components/components/toggle/Toggle.js:11
 msgctxt "Toggle button"
 msgid "Off"
-msgstr ""
+msgstr "Ki"
 
 #: node_modules/react-components/components/countdown/Countdown.js:27
 msgctxt "Countdown status"
 msgid "Expired"
-msgstr ""
+msgstr "Lejárt"
 
 #: node_modules/react-components/components/countdown/Countdown.js:39
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ days } day"
 msgid_plural "${ days } days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ days } nap"
+msgstr[1] "${ days } nap"
 
 #: node_modules/react-components/components/countdown/Countdown.js:40
 msgctxt "Countdown unit"
 msgid "${ hours } hour"
 msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ hours } óra"
+msgstr[1] "${ hours } óra"
 
 #: node_modules/react-components/components/countdown/Countdown.js:41
 #, javascript-format
 msgctxt "Countdown unit"
 msgid "${ minutes } minute"
 msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ minutes } perc"
+msgstr[1] "${ minutes } perc"
 
 #: node_modules/react-components/components/countdown/Countdown.js:42
 msgctxt "Countdown unit"
 msgid "${ seconds } second"
 msgid_plural "${ seconds } seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "${ seconds } másodperc"
+msgstr[1] "${ seconds } másodperc"
 
