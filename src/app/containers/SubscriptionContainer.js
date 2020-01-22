@@ -21,7 +21,7 @@ export const getSubscriptionPage = (user = {}) => {
         icon: 'dashboard',
         permissions: [UPGRADER],
         sections: [
-            !user.isPaid && {
+            !user.hasPaidMail && {
                 text: c('Title').t`Plans`,
                 id: 'plans'
             },
@@ -52,7 +52,7 @@ const SubscriptionContainer = () => {
     if (loadingUser) {
         return null;
     }
-    if (user.isPaid) {
+    if (user.hasPaidMail) {
         return (
             <Page config={getSubscriptionPage(user)}>
                 <SubscriptionSection />
