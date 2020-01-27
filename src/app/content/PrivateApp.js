@@ -15,7 +15,6 @@ import {
 } from 'proton-shared/lib/models';
 
 import PrivateLayout from '../components/layout/PrivateLayout';
-import locales from '../locales';
 
 const EVENT_MODELS = [
     UserModel,
@@ -34,12 +33,7 @@ const PRELOAD_MODELS = [UserSettingsModel, UserModel, MailSettingsModel];
 
 const PrivateApp = ({ onLogout }) => {
     return (
-        <StandardPrivateApp
-            onLogout={onLogout}
-            locales={locales}
-            preloadModels={PRELOAD_MODELS}
-            eventModels={EVENT_MODELS}
-        >
+        <StandardPrivateApp onLogout={onLogout} preloadModels={PRELOAD_MODELS} eventModels={EVENT_MODELS}>
             <PrivateLayout />
         </StandardPrivateApp>
     );
