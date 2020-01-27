@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-01-19 20:21\n"
+"PO-Revision-Date: 2020-01-26 19:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -34,6 +34,21 @@ msgstr "Aláírás ellenőrzése sikertelen"
 msgctxt "Error"
 msgid "Incorrect decryption password"
 msgstr "Hibás visszafejtési jelszó"
+
+#: node_modules/react-components/components/input/Input.js:32
+msgctxt "Error"
+msgid "This field is required"
+msgstr "A mező kitöltése kötelező"
+
+#: node_modules/react-components/components/input/EmailInput.js:9
+msgctxt "Error"
+msgid "Email address invalid"
+msgstr "Érvénytelen e-mail cím"
+
+#: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
+msgctxt "Error"
+msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
+msgstr "Az Ön által használt böngésző nem támogatja a kívánt fizetési módot. Kérjük, használjon másik böngészőt, vagy jelentkezzen be egy számítógépről."
 
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:32
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:128
@@ -351,21 +366,6 @@ msgctxt "Error"
 msgid "Your account or organization currently has an overdue invoice. Please pay all unpaid invoices."
 msgstr "Az ön fiókja vagy a szervezet késedelmes számlát tartalmaz. Kérjük, egyenlítse ki valamennyi számláját."
 
-#: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
-msgctxt "Error"
-msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr "Az Ön által használt böngésző nem támogatja a kívánt fizetési módot. Kérjük, használjon másik böngészőt, vagy jelentkezzen be egy számítógépről."
-
-#: node_modules/react-components/components/input/Input.js:32
-msgctxt "Error"
-msgid "This field is required"
-msgstr "A mező kitöltése kötelező"
-
-#: node_modules/react-components/components/input/EmailInput.js:9
-msgctxt "Error"
-msgid "Email address invalid"
-msgstr "Érvénytelen e-mail cím"
-
 #: node_modules/proton-shared/lib/filters/factory.js:11
 msgctxt "Filter modal type"
 msgid "Select ..."
@@ -476,1686 +476,813 @@ msgctxt "Theme"
 msgid "Dark theme"
 msgstr "Sötét téma"
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
-msgctxt "Title"
-msgid "Unsupported browser"
-msgstr "Nem támogatott böngésző"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
-msgctxt "Title"
-msgid "Card verification"
-msgstr "Bankkártya ellenőrzés"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
-msgctxt "Title"
-msgid "Payment verification"
-msgstr "Fizetés ellenőrzése"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:46
-msgctxt "Title"
-msgid "Processing..."
-msgstr "Feldolgozás..."
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:48
-msgctxt "Title"
-msgid "Card verification in progress"
-msgstr "Bankkártya ellenőrzése folyamatban"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:49
-msgctxt "Title"
-msgid "Payment verification in progress"
-msgstr "Fizetés ellenőrzése folyamatban"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:50
-msgctxt "Title"
-msgid "3-D Secure verification failed"
-msgstr "A 3D Secure hitelesítés nem sikerült"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:16
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
-msgctxt "Title"
-msgid "Error"
-msgstr "Hiba"
-
-#: node_modules/react-components/containers/payments/Card.js:80
-msgctxt "Title"
-msgid "ZIP / postal code"
-msgstr "Irányítószám"
-
-#: node_modules/react-components/containers/payments/EditCardModal.js:18
-msgctxt "Title"
-msgid "Edit credit/debit card"
-msgstr "Bankkártya szerkesztése"
-
-#: node_modules/react-components/containers/payments/EditCardModal.js:18
-msgctxt "Title"
-msgid "Add credit/debit card"
-msgstr "Bankkártya hozzáadása"
-
-#: node_modules/react-components/containers/payments/PayPalModal.js:23
-msgctxt "Title"
-msgid "Add PayPal payment method"
-msgstr "PayPal fizetési mód hozzáadása"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
-#: src/app/containers/SubscriptionContainer.js:28
-#: src/app/containers/SubscriptionContainer.js:38
-msgctxt "Title"
-msgid "Subscription"
-msgstr "Előfizetés"
-
-#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
-msgctxt "Title"
-msgid "ProtonMail total"
-msgstr "ProtonMail összesen"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:92
-msgctxt "Title"
-msgid "Subscription details"
-msgstr "Előfizetés részletei"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
-msgctxt "Title"
-msgid "Payment details"
-msgstr "Fizetés részletei"
-
-#: node_modules/react-components/containers/payments/subscription/Thanks.js:17
-msgctxt "Title"
-msgid "Thank you!"
-msgstr "Köszönjük!"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:136
-msgctxt "Title"
-msgid "Order summary"
-msgstr "A rendelés összegzése"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:163
-msgctxt "Title"
-msgid "Upgrading account"
-msgstr "Csomag váltása"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:177
-msgctxt "Title"
-msgid "VPN protection"
-msgstr "VPN védelem"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:190
-msgctxt "Title"
-msgid "Customization"
-msgstr "Testreszabás"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:36
-msgctxt "Title"
-msgid "1 month deal"
-msgstr "1 hónapos ajánlat"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:37
-msgctxt "Title"
-msgid "1 year deal"
-msgstr "1 éves ajánlat"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:38
-msgctxt "Title"
-msgid "2 year deal"
-msgstr "2 éves ajánlat"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:43
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
-msgctxt "Title"
-msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
-msgstr "Havonta ${ amount } terhelve ${ NOTICES[notice] }"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
-#, javascript-format
-msgctxt "Title"
-msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
-msgstr "Évente ${ amount } terhelve ${ NOTICES[notice] }"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
-msgctxt "Title"
-msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
-msgstr "Kétévente ${ amount } terhelve ${ NOTICES[notice] }"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
-#, javascript-format
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
-msgstr "${ NOTICES[notice] } Egy évet követően megújul a következő kedvezményes éves díjjal ${ amount } (20% kedvezmény)."
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
-#, javascript-format
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
-msgstr "${ NOTICES[notice] } Két évente megújul a következő kedvezményes kétéves díjjal ${ amount } (33% kedvezmény)."
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
-msgstr "${ NOTICES[notice] } Két évente megújul a következő kedvezményes kétéves csomagdíjjal ${ amount } (47% kedvezmény)."
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
-msgctxt "Title"
-msgid "Black Friday sale"
-msgstr "Black Friday ajánlat"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:164
-msgctxt "Title"
-msgid "Most popular"
-msgstr "Legnépszerűbb"
-
-#: node_modules/react-components/containers/payments/DowngradeModal.js:7
-msgctxt "Title"
-msgid "Confirm downgrade"
-msgstr "Lemondás megerősítése"
-
-#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:9
-msgctxt "Title"
-msgid "Confirm loss of Proton bonuses"
-msgstr "Proton-bónuszok elvesztésének megerősítése"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:34
-msgctxt "Title"
-msgid "My subscription"
-msgstr "Előfizetéseim"
-
-#: node_modules/react-components/containers/payments/PlansSection.js:106
-#: node_modules/react-components/containers/payments/PlansSection.js:115
-#: node_modules/react-components/containers/payments/PlansSection.js:123
-#: src/app/containers/SubscriptionContainer.js:34
-msgctxt "Title"
-msgid "Plans"
-msgstr "Csomagok"
-
-#: node_modules/react-components/containers/payments/DonateModal.js:42
-msgctxt "Title"
-msgid "Make a donation"
-msgstr "Adományozás"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
-msgctxt "Title"
-msgid "Gift code"
-msgstr "Ajándék kód"
-
-#: node_modules/react-components/containers/payments/CreditsModal.js:68
-msgctxt "Title"
-msgid "Add credits"
-msgstr "Kredit hozzáadása"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:63
-#: node_modules/react-components/containers/payments/BillingSection.js:96
-#: node_modules/react-components/containers/payments/BillingSection.js:105
-#: node_modules/react-components/containers/payments/BillingSection.js:121
-#: src/app/containers/SubscriptionContainer.js:43
-msgctxt "Title"
-msgid "Billing details"
-msgstr "Számlázási adatok"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:35
-msgctxt "Title"
-msgid "Decrypt key"
-msgstr "Kulcs visszafejtése"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:368
-msgctxt "Title"
-msgid "Re-activate keys"
-msgstr "Kulcsok újraaktiválása"
-
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:122
-msgctxt "Title"
-msgid "Create key"
-msgstr "Kulcs létrehozása"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:20
-msgctxt "Title"
-msgid "Export public key"
-msgstr "Nyilvános kulcs exportálása"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:38
-msgctxt "Title"
-msgid "Export private key"
-msgstr "Privát kulcs exportálása"
-
-#: node_modules/react-components/containers/keys/UserKeysSection.js:18
-#: src/app/containers/KeysContainer.js:19
-msgctxt "Title"
-msgid "Contact encryption keys"
-msgstr "Partner titkosítási kulcsai"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:19
-msgctxt "Title"
-msgid "Success"
-msgstr "Sikeres"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:230
-msgctxt "Title"
-msgid "Import key"
-msgstr "Kulcs importálása"
-
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:113
-msgctxt "Title"
-msgid "Delete key"
-msgstr "Kulcs törlése"
-
-#: node_modules/react-components/containers/keys/AddressKeysSection.js:71
-#: src/app/containers/KeysContainer.js:15
-msgctxt "Title"
-msgid "Email encryption keys"
-msgstr "E-mail titkosítási kulcsai"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:33
-msgctxt "Title"
-msgid "Create auto-reply"
-msgstr "Új automatikus válasz"
-
-#: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
-#: src/app/containers/AutoReplyContainer.js:13
-#: src/app/containers/AutoReplyContainer.js:19
-msgctxt "Title"
-msgid "Auto-reply"
-msgstr "Automatikus válasz"
-
-#: node_modules/react-components/containers/organization/OrganizationNameModal.js:22
-msgctxt "Title"
-msgid "Change organization name"
-msgstr "Szervezet nevének megváltoztatása"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:63
-msgctxt "Title"
-msgid "Name your organization"
-msgstr "Szervezet nevének megadása"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:84
-msgctxt "Title"
-msgid "Set organization keys"
-msgstr "Szervezeti kulcsok beállítása"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:100
-msgctxt "Title"
-msgid "Set organization password"
-msgstr "Szervezeti jelszó beállítása"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:170
-msgctxt "Title"
-msgid "Allocate storage"
-msgstr "Tárhely lefoglalása"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:203
-msgctxt "Title"
-msgid "Allocate VPN connections"
-msgstr "VPN kapcsolatok lefoglalása"
-
-#: node_modules/react-components/containers/organization/OrganizationSection.js:31
-msgctxt "Title"
-msgid "Multi-user support"
-msgstr "Többfelhasználós mód"
-
-#: node_modules/react-components/containers/organization/OrganizationSection.js:42
-#: src/app/containers/OrganizationContainer.js:13
-msgctxt "Title"
-msgid "Organization"
-msgstr "Szervezet"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:39
-msgctxt "Title"
-msgid "Activate organization key"
-msgstr "Szervezeti kulcs aktiválása"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:53
-msgctxt "Title"
-msgid "Restore administrator privileges"
-msgstr "Adminisztrátori jogok visszaállítása"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:56
-msgctxt "Title"
-msgid "Change organization password"
-msgstr "Szervezeti jelszó megváltoztatása"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:163
-msgctxt "Title"
-msgid "Change organization keys"
-msgstr "Szervezeti kulcsok megváltoztatása"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
-#: src/app/containers/OrganizationContainer.js:23
-msgctxt "Title"
-msgid "Password & key"
-msgstr "Jelszó és kulcs"
-
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
-msgctxt "Title"
-msgid "Generate missing keys"
-msgstr "Hiányzó kulcsok generálása"
-
-#: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/containers/IdentityContainer.js:22
-msgctxt "Title"
-msgid "Short domain (@pm.me)"
-msgstr "Rövid domain (@pm.me)"
-
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:49
-msgctxt "Title"
-msgid "Edit address"
-msgstr "Cím szerkesztése"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:26
-#: src/app/containers/IdentityContainer.js:18
-msgctxt "Title"
-msgid "Display name & signature"
-msgstr "Megjelenítendő név és aláírás"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:79
-msgctxt "Title"
-msgid "Create address"
-msgstr "Cím hozzáadása"
-
-#: node_modules/react-components/containers/addresses/AddressesSection.js:20
-#: src/app/containers/AddressesContainer.js:10
-#: src/app/containers/AddressesContainer.js:15
-msgctxt "Title"
-msgid "Addresses"
-msgstr "Címek"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
-msgctxt "Title"
-msgid "Desktop notification"
-msgstr "Asztali értesítések"
-
-#: node_modules/react-components/containers/notification/EmailModal.js:33
-msgctxt "Title"
-msgid "Confirm address"
-msgstr "Cím megerősítése"
-
-#: node_modules/react-components/containers/notification/EmailModal.js:70
-msgctxt "Title"
-msgid "Update recovery/notification email"
-msgstr "Helyreállítási-/értesítési e-mail frissítése"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:62
-msgctxt "Title"
-msgid "Recovery & notification"
-msgstr "Helyreállítás és értesítés"
-
-#: node_modules/react-components/containers/domains/CatchAllSection.js:8
-msgctxt "Title"
-msgid "Catch all "
-msgstr "Gyűjtő e-mail "
-
-#: node_modules/react-components/containers/domains/DomainModal.js:159
-msgctxt "Title"
-msgid "Edit domain"
-msgstr "Domain szerkesztése"
-
-#: node_modules/react-components/containers/domains/DomainModal.js:159
-msgctxt "Title"
-msgid "Add domain"
-msgstr "Domain hozzáadása"
-
-#: node_modules/react-components/containers/domains/CatchAllModal.js:13
-msgctxt "Title"
-msgid "Catch all address"
-msgstr "Gyűjtő e-mail cím"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:43
-msgctxt "Title"
-msgid "Delete domain"
-msgstr "Domain név törlése"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:46
-#: src/app/containers/DomainsContainer.js:13
-#: src/app/containers/DomainsContainer.js:19
-msgctxt "Title"
-msgid "Custom domains"
-msgstr "Egyedi domain nevek"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
-#: src/app/containers/VPNContainer.js:19
-msgctxt "Title"
-msgid "ProtonVPN clients"
-msgstr "ProtonVPN kliensek"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
-#: src/app/containers/VPNContainer.js:23
-msgctxt "Title"
-msgid "ProtonVPN credentials"
-msgstr "ProtonVPN bejelentkezési adatok"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
-#: src/app/containers/VPNContainer.js:31
-msgctxt "Title"
-msgid "ProtonVPN resources"
-msgstr "ProtonVPN információk"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:22
-msgctxt "Title"
-msgid "Edit OpenVPN / IKEv2 credentials"
-msgstr "Az OpenVPN / IKEv2 hitelesítőadatok módosítása"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
-#: src/app/containers/VPNContainer.js:27
-msgctxt "Title"
-msgid "OpenVPN / IKEv2 username"
-msgstr "OpenVPN / IKEv2 felhasználónév"
-
-#: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:77
-msgctxt "Title"
-msgid "Storage"
-msgstr "Tárhely"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:123
-#: node_modules/react-components/containers/account/PasswordsSection.js:38
-msgctxt "Title"
-msgid "Change login password"
-msgstr "Belépési jelszó megváltoztatása"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:151
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:185
-msgctxt "Title"
-msgid "Switch to two-password mode"
-msgstr "Kétjelszavas módra váltás"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:276
-msgctxt "Title"
-msgid "Switch to one-password mode"
-msgstr "Egyjelszavas módra váltás"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:294
-#: node_modules/react-components/containers/account/PasswordsSection.js:38
-msgctxt "Title"
-msgid "Change password"
-msgstr "Jelszó módosítása"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:306
-msgctxt "Title"
-msgid "Change mailbox password"
-msgstr "Postaládajelszó megváltoztatása"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:23
-msgctxt "Title"
-msgid "Passwords"
-msgstr "Jelszavak"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:37
-msgctxt "Title"
-msgid "Password"
-msgstr "Jelszó"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:37
-msgctxt "Title"
-msgid "Login password"
-msgstr "Belépési jelszó"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
-#: node_modules/react-components/containers/account/DeleteSection.js:33
-msgctxt "Title"
-msgid "Delete account"
-msgstr "Fiók törlése"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:16
-msgctxt "Title"
-msgid "Username"
-msgstr "Felhasználónév"
-
-#: node_modules/react-components/containers/account/NewsSection.js:17
-#: node_modules/react-components/containers/account/NewsSection.js:25
-msgctxt "Title"
-msgid "Email subscriptions"
-msgstr "E-mail feliratkozás"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:272
-msgctxt "Title"
-msgid "Set up two-factor authentication"
-msgstr "Kétlépéses hitelesítés beállítása"
-
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:82
-msgctxt "Title"
-msgid "Disable two-factor authentication"
-msgstr "Kétlépéses hitelesítés kikapcsolása"
-
-#: node_modules/react-components/containers/account/TwoFactorSection.js:29
-msgctxt "Title"
-msgid "Two-factor authentication"
-msgstr "Kétlépéses hitelesítés"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:33
-#: node_modules/react-components/containers/password/AskAuthModal.js:17
-msgctxt "Title"
-msgid "Sign in again to continue"
-msgstr "Lépjen be újból a folytatáshoz"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
-#: src/app/containers/SubscriptionContainer.js:48
-msgctxt "Title"
-msgid "Payment methods"
-msgstr "Fizetési módok"
-
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:34
-#: src/app/containers/SecurityContainer.js:23
-msgctxt "Title"
-msgid "Address verification"
-msgstr "Cím ellenőrzése"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:45
-msgctxt "Title"
-msgid "Automatically sign outgoing messages?"
-msgstr "Automatikusan aláírja a kimenő üzeneteket?"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:76
-msgctxt "Title"
-msgid "External PGP settings (optional)"
-msgstr "Külső PGP-beállítások (elhagyható)"
-
-#: node_modules/react-components/containers/labels/ActionsLabel.js:26
-msgctxt "Title"
-msgid "Delete label"
-msgstr "Címke törlése"
-
-#: node_modules/react-components/containers/labels/ActionsLabel.js:31
-msgctxt "Title"
-msgid "Delete folder"
-msgstr "Mappa törlése"
-
-#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:18
-#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:13
-msgctxt "Title"
-msgid "blacklist"
-msgstr "tiltólista"
-
-#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:19
-#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:14
-msgctxt "Title"
-msgid "whitelist"
-msgstr "engedélyezett lista"
-
-#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:15
-msgctxt "Title"
-msgid "Whitelist"
-msgstr "Engedélyezett Lista"
-
-#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:16
-msgctxt "Title"
-msgid "BlackList"
-msgstr "Tiltólista"
-
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:16
-msgctxt "Title"
-msgid "Add to Blacklist"
-msgstr "Hozzáadás a tiltólistához"
-
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:17
-msgctxt "Title"
-msgid "Add to Whitelist"
-msgstr "Hozzáadás az engedélyezett listához"
-
-#: node_modules/react-components/containers/api/HumanVerificationModal.js:9
-msgctxt "Title"
-msgid "Human verification"
-msgstr "Emberi ellenőrzés"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:17
-#: src/app/containers/GeneralContainer.js:30
-msgctxt "Title"
-msgid "Messages"
-msgstr "Üzenetek"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:56
-msgctxt "Title"
-msgid "Edit user"
-msgstr "Felhasználó szerkesztése"
-
-#: node_modules/react-components/containers/members/MemberModal.js:135
-msgctxt "Title"
-msgid "Add user"
-msgstr "Új felhasználó"
-
-#: node_modules/react-components/containers/members/MembersSection.js:118
-#: src/app/containers/MembersContainer.js:13
-#: src/app/containers/MembersContainer.js:19
-msgctxt "Title"
+msgctxt "Time unit"
+msgid "${ hours } hour"
+msgid_plural "${ hours } hours"
+msgstr[0] "${ hours } óra"
+msgstr[1] "${ hours } óra"
+
+#: node_modules/react-components/components/input/TimeInput.js:27
+msgctxt "Time unit"
+msgid "${ minutes } minutes"
+msgid_plural "${ minutes } minutes"
+msgstr[0] "${ minutes } perc"
+msgstr[1] "${ minutes } perc"
+
+#: node_modules/react-components/components/input/PasswordInput.js:21
+msgctxt "Label"
+msgid "Reveal password"
+msgstr "Jelszó felfedése"
+
+#: node_modules/react-components/components/input/PasswordInput.js:21
+msgctxt "Label"
+msgid "Hide password"
+msgstr "Jelszó elrejtése"
+
+#: node_modules/react-components/components/button/Copy.js:20
+msgctxt "Label"
+msgid "Copied"
+msgstr "Másolva"
+
+#: node_modules/react-components/components/button/Copy.js:20
+msgctxt "Label"
+msgid "Copy"
+msgstr "Másolás"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
+msgctxt "Label"
 msgid "Users"
 msgstr "Felhasználók"
 
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:19
-msgctxt "Title"
-msgid "Custom Theme"
-msgstr "Egyéni téma"
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
+msgctxt "Label"
+msgid "Email addresses"
+msgstr "E-mail cím"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:54
-msgctxt "Title"
-msgid "Change theme"
-msgstr "Téma megváltoztatása"
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
+msgctxt "Label"
+msgid "Storage capacity"
+msgstr "Tárhely"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:74
-#: src/app/containers/AppearanceContainer.js:23
-msgctxt "Title"
-msgid "Themes"
-msgstr "Témák"
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
+msgctxt "Label"
+msgid "Custom domains"
+msgstr "Saját domain nevek"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:82
-msgctxt "Title"
-msgid "Clear"
-msgstr "Ürítés"
+#: node_modules/react-components/containers/members/EditMemberModal.js:85
+#: node_modules/react-components/containers/members/MemberModal.js:220
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
+msgctxt "Label"
+msgid "VPN connections"
+msgstr "VPN kapcsolatok"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:109
-#: src/app/containers/SecurityContainer.js:19
-msgctxt "Title"
-msgid "Authentication logs"
-msgstr "Bejelentkezési napló"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/BillingSection.js:279
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
+msgctxt "Label"
+msgid "Sub-total"
+msgstr "Részösszeg"
 
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
-#: src/app/containers/AppearanceContainer.js:19
-msgctxt "Title"
-msgid "Toolbars"
-msgstr "Eszköztárak"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:107
+msgctxt "Label"
+msgid "Cycle discount +"
+msgstr "Ciklus kedvezmény +"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:47
-#: src/app/containers/AppearanceContainer.js:15
-msgctxt "Title"
-msgid "Layouts"
-msgstr "Elrendezések"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
+msgctxt "Label"
+msgid "Coupon"
+msgstr "Kupon"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/general/ShortcutsSection.js:26
-msgctxt "Title"
-msgid "Keyboard shortcuts"
-msgstr "Gyorsbillentyűk"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
+msgctxt "Label"
+msgid "Cycle discount"
+msgstr "Ciklus kedvezmény"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:12
-#: src/app/containers/GeneralContainer.js:17
-msgctxt "Title"
-msgid "General"
-msgstr "Általános"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/BillingSection.js:299
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:28
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:144
+msgctxt "Label"
+msgid "Total"
+msgstr "Összesen"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:15
-msgctxt "Title"
-msgid "Application"
-msgstr "Alkalmazás"
+#: node_modules/react-components/containers/payments/BillingSection.js:67
+#: node_modules/react-components/containers/payments/BillingSection.js:332
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:39
+msgctxt "Label"
+msgid "Credits"
+msgstr "Kredit"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:35
-msgctxt "Title"
-msgid "Composer"
-msgstr "Szerkesztő"
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:50
+msgctxt "Label"
+msgid "Proration"
+msgstr "Arányosítás"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:66
-msgctxt "Title"
-msgid "Mail"
-msgstr "Lelevelezés"
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:68
+msgctxt "Label"
+msgid "Gift"
+msgstr "Ajándék"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:69
-msgctxt "Title"
-msgid "Jumping"
-msgstr "Ugrás"
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:75
+#: node_modules/react-components/containers/payments/BillingSection.js:325
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:77
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:211
+msgctxt "Label"
+msgid "Amount due"
+msgstr "Esedékes összeg"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:95
-msgctxt "Title"
-msgid "Navigation"
-msgstr "Navigáció"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:126
-msgctxt "Title"
-msgid "Threadlist"
-msgstr "Témalista"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:161
-msgctxt "Title"
-msgid "Actions"
-msgstr "Műveletek"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:177
-msgctxt "Title"
-msgid "Contacts"
-msgstr "Névjegyek"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:180
-msgctxt "Title"
-msgid "Contact list"
-msgstr "Névjegylista"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:195
-msgctxt "Title"
-msgid "Contact details"
-msgstr "Névjegy részletek"
-
-#: node_modules/react-components/containers/general/ShortcutsSection.js:24
-#: src/app/containers/GeneralContainer.js:38
-msgctxt "Title"
-msgid "Shortcuts"
-msgstr "Gyorsbillentyűk"
-
-#: node_modules/react-components/containers/general/LanguageSection.js:54
-#: src/app/containers/GeneralContainer.js:22
-msgctxt "Title"
-msgid "Language"
-msgstr "Nyelv"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:43
-msgctxt "Title"
-msgid "Need help?"
-msgstr "Segíthetünk?"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:48
-msgctxt "Title"
-msgid "Upgrade to a paid plan"
-msgstr "Fizetős csomagra váltás"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:55
-msgctxt "Title"
-msgid "Thanks for your support"
-msgstr "Köszönjük a támogatást"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:63
-msgctxt "Title"
-msgid "Get 20% discount"
-msgstr "Szerezzen 20%-os kedvezményt"
-
-#: node_modules/react-components/containers/support/BugModal.js:136
-msgctxt "Title"
-msgid "Report bug"
-msgstr "Hibajelentés"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:51
-msgctxt "Title"
-msgid "Pay invoice"
-msgstr "Számla kifizetése"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
-msgctxt "Title"
-msgid "Preview invoice"
-msgstr "Számla előnézete"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
-msgctxt "Title"
-msgid "Add invoice details"
-msgstr "Számlázási adatok hozzáadása"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:59
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:69
-#: src/app/containers/SubscriptionContainer.js:52
-msgctxt "Title"
-msgid "Invoices"
-msgstr "Számlák"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:116
-msgctxt "Title"
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:57
+#: node_modules/react-components/containers/payments/CreditsModal.js:81
+#: node_modules/react-components/containers/payments/DonateModal.js:48
+msgctxt "Label"
 msgid "Amount"
 msgstr "Összeg"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:117
-msgctxt "Title"
-msgid "Type"
-msgstr "Típus"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:118
-msgctxt "Title"
-msgid "Status"
-msgstr "Állapot"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:119
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "Date"
-msgstr "Dátum"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:120
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "Action"
-msgstr "Művelet"
-
-#: node_modules/react-components/containers/login/AbuseModal.js:6
-msgctxt "Title"
-msgid "Account disabled"
-msgstr "Fiók letiltva"
-
-#: node_modules/react-components/containers/search/SearchSection.js:24
-#: src/app/containers/GeneralContainer.js:34
-msgctxt "Title"
-msgid "Search"
-msgstr "Keresés"
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:80
-msgctxt "Title"
-msgid "Sessions"
-msgstr "Munkamenetek"
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "App"
-msgstr "Alkalmazás"
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:6
-msgctxt "Title"
-msgid "Preview"
-msgstr "Előnézet"
-
-#: node_modules/react-components/components/container/RelatedSettingsSection.js:14
-#: src/app/containers/AddressesContainer.js:19
-#: src/app/containers/AutoReplyContainer.js:23
-#: src/app/containers/DomainsContainer.js:27
-#: src/app/containers/MembersContainer.js:23
-#: src/app/containers/OrganizationContainer.js:27
-msgctxt "Title"
-msgid "Related settings"
-msgstr "Kapcsolódó beállítások"
-
-#: node_modules/react-components/components/dropdown/DropdownActions.js:48
-msgctxt "Title"
-msgid "Open actions dropdown"
-msgstr "Műveletek legördülő megnyitása"
-
-#: src/app/components/layout/PrivateHeader.js:38
-msgctxt "Title"
-msgid "Mailbox"
-msgstr "Postafiók"
-
-#: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:72
-msgctxt "Title"
-msgid "Settings"
-msgstr "Beállítások"
-
-#: src/app/containers/OrganizationContainer.js:19
-msgctxt "Title"
-msgid "Name"
-msgstr "Név"
-
-#: src/app/containers/DomainsContainer.js:23
-msgctxt "Title"
-msgid "Catch-all"
-msgstr "Gyűjtő e-mail"
-
-#: src/app/containers/IdentityContainer.js:13
-msgctxt "Title"
-msgid "Identity"
-msgstr "Személyazonosság"
-
-#: src/app/containers/GeneralContainer.js:26
-msgctxt "Title"
-msgid "Desktop notifications"
-msgstr "Asztali értesítések"
-
-#: src/app/containers/AppearanceContainer.js:10
-msgctxt "Title"
-msgid "Appearance"
-msgstr "Megjelenés"
-
-#: src/app/containers/FiltersContainer.js:10
-msgctxt "Title"
-msgid "Filters"
-msgstr "Szűrők"
-
-#: src/app/containers/FiltersContainer.js:15
-msgctxt "Title"
-msgid "Custom filters"
-msgstr "Saját szűrők"
-
-#: src/app/containers/FiltersContainer.js:19
-msgctxt "Title"
-msgid "Spam filters"
-msgstr "Levélszemétszűrők"
-
-#: src/app/containers/FoldersLabelsContainer.js:10
-msgctxt "Title"
-msgid "Folders/labels"
-msgstr "Mappák/Címkék"
-
-#: src/app/containers/FoldersLabelsContainer.js:15
-msgctxt "Title"
-msgid "Folders and labels"
-msgstr "Mappák és Címkék"
-
-#: src/app/containers/KeysContainer.js:10
-msgctxt "Title"
-msgid "Keys"
-msgstr "Kulcsok"
-
-#: src/app/containers/SecurityContainer.js:10
-msgctxt "Title"
-msgid "Security"
-msgstr "Biztonság"
-
-#: src/app/containers/SecurityContainer.js:15
-msgctxt "Title"
-msgid "Session management"
-msgstr "Munkamenet-kezelés"
-
-#: src/app/containers/SecurityContainer.js:27
-msgctxt "Title"
-msgid "External PGP settings"
-msgstr "Külső PGP beállítások"
-
-#: src/app/containers/AppsContainer.js:13
-msgctxt "Title"
-msgid "Apps"
-msgstr "Alkalmazások"
-
-#: src/app/containers/AppsContainer.js:18
-msgctxt "Title"
-msgid "ProtonMail Bridge"
-msgstr "ProtonMail Bridge"
-
-#: src/app/containers/AppsContainer.js:23
-msgctxt "Title"
-msgid "ProtonMail Beta"
-msgstr "ProtonMail béta"
-
-#: src/app/containers/AppsContainer.js:27
-msgctxt "Title"
-msgid "ProtonMail apps"
-msgstr "ProtonMail alkalmazások"
-
-#: src/app/containers/VPNContainer.js:14
-msgctxt "Title"
-msgid "ProtonVPN"
-msgstr "ProtonVPN"
-
-#: src/app/containers/OverviewContainer.js:23
-msgctxt "Title"
-msgid "Overview - ProtonMail"
-msgstr "Áttekintés - ProtonMail"
-
-#: node_modules/react-components/components/modal/Confirm.js:11
-#: node_modules/react-components/components/modal/FormModal.js:19
-#: node_modules/react-components/components/modal/Input.js:33
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
-#: node_modules/react-components/containers/addresses/AddressModal.js:81
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:75
-#: node_modules/react-components/containers/login/LoginForm.js:216
-#: node_modules/react-components/containers/payments/PayPal.js:137
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:101
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:255
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:46
-msgctxt "Action"
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:102
-msgctxt "Action"
-msgid "Verify"
-msgstr "Megerősít"
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:420
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:434
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
-#: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
-#: node_modules/react-components/containers/filters/AddFilterModal.js:137
-#: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:49
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:123
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:39
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:21
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:231
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:369
-#: node_modules/react-components/containers/login/AbuseModal.js:21
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:164
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:57
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:93
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
-#: node_modules/react-components/containers/payments/CreditsModal.js:67
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:258
-msgctxt "Action"
-msgid "Close"
-msgstr "Bezár"
-
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
-#: node_modules/react-components/containers/payments/PayPal.js:105
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
-msgctxt "Action"
-msgid "Try again"
-msgstr "Próbálja újra"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:171
-msgctxt "Action"
-msgid "Use a different card"
-msgstr "Másik bankkártya használata"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:172
-msgctxt "Action"
-msgid "Use a different payment method"
-msgstr "Más fizetési mód választása"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:435
-#: node_modules/react-components/containers/addresses/AddressModal.js:80
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:50
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:40
-#: node_modules/react-components/containers/filters/AddFilterModal.js:130
-#: node_modules/react-components/containers/filters/AddFilterModal.js:143
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
-#: node_modules/react-components/containers/members/EditMemberModal.js:55
-#: node_modules/react-components/containers/members/MemberModal.js:139
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:165
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:58
-#: node_modules/react-components/containers/payments/EditCardModal.js:51
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
-msgctxt "Action"
-msgid "Save"
-msgstr "Mentés"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:101
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:142
-msgctxt "Action"
-msgid "Customize"
-msgstr "Testreszabás"
-
-#: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:21
-msgctxt "Action"
-msgid "Switch now"
-msgstr "Váltson most"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:350
-#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
-msgctxt "Action"
-msgid "Hide additional features"
-msgstr "Kiegészítő funkciók elrejtése"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:350
-#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
-msgctxt "Action"
-msgid "Compare all features"
-msgstr "Összes lehetőség összehasonlítása"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:50
-#: node_modules/react-components/containers/payments/subscription/CouponForm.js:27
-#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:26
-#: node_modules/react-components/containers/themes/ThemesSection.js:53
-msgctxt "Action"
-msgid "Apply"
-msgstr "Alkalmazás"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
-msgctxt "Action"
-msgid "Remove coupon"
-msgstr "Kupon eltávolítása"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:154
-msgctxt "Action"
-msgid "Add coupon"
-msgstr "Kupon hozzáadása"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:87
-msgctxt "Action"
-msgid "Add gift code"
-msgstr "Ajándék kód hozzáadása"
-
-#: node_modules/react-components/containers/payments/subscription/Thanks.js:23
-msgctxt "Action"
-msgid "Got it"
-msgstr "Rendben!"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:191
-msgctxt "Action"
-msgid "Next"
-msgstr "Következő"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
-msgctxt "Action"
-msgid "Continue"
-msgstr "Folytatás"
-
-#.  Insert it before the last one
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:238
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:261
-msgctxt "Action"
-msgid "Previous"
-msgstr "Előző"
-
-#.  Insert it before the last one
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:45
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:50
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:239
-msgctxt "Action"
-msgid "Pay"
-msgstr "Fizetés"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:189
-msgctxt "Action"
-msgid "Get the deal"
-msgstr "Érdekel az ajánlat"
-
-#: node_modules/react-components/containers/payments/DowngradeModal.js:7
-msgctxt "Action"
-msgid "Downgrade"
-msgstr "Kisebb csomagra váltás"
-
-#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:10
-msgctxt "Action"
-msgid "Remove bonuses"
-msgstr "Kedvezmények törlése"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:332
-#: node_modules/react-components/containers/payments/PlansTable.js:337
-#: node_modules/react-components/containers/payments/PlansTable.js:342
-msgctxt "Action"
-msgid "Edit VPN"
-msgstr "VPN szerkesztése"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:332
-#: node_modules/react-components/containers/payments/PlansTable.js:337
-#: node_modules/react-components/containers/payments/PlansTable.js:342
-msgctxt "Action"
-msgid "Add VPN"
-msgstr "VPN hozzáadása"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:37
-#: node_modules/react-components/containers/payments/PlansTable.js:359
-#: node_modules/react-components/containers/payments/PlansTable.js:367
-#: node_modules/react-components/containers/payments/PlansTable.js:375
-#: node_modules/react-components/containers/payments/PlansTable.js:383
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
-msgctxt "Action"
-msgid "Update"
-msgstr "Frissítés"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:359
-#: node_modules/react-components/containers/payments/PlansTable.js:367
-#: node_modules/react-components/containers/payments/PlansTable.js:375
-#: node_modules/react-components/containers/payments/PlansTable.js:383
-msgctxt "Action"
-msgid "Select"
-msgstr "Kiválasztás"
-
-#: node_modules/react-components/containers/payments/PayPal.js:149
-#: node_modules/react-components/containers/payments/PayPal.js:178
-msgctxt "Action"
-msgid "Check out with PayPal"
-msgstr "Fizetés PayPal-al"
-
-#: node_modules/react-components/containers/payments/PayPal.js:164
-msgctxt "Action"
-msgid "Add PayPal payment method"
-msgstr "PayPal fizetési mód hozzáadása"
-
-#: node_modules/react-components/containers/payments/DonateModal.js:43
-msgctxt "Action"
-msgid "Donate"
-msgstr "Adományozás"
-
-#: node_modules/react-components/containers/payments/CreditsModal.js:66
-msgctxt "Action"
-msgid "Top up"
-msgstr "Feltöltés"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:69
-#: node_modules/react-components/containers/payments/BillingSection.js:334
-msgctxt "Action"
-msgid "Add credits"
-msgstr "Egyenleg feltöltése"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:83
-#: node_modules/react-components/containers/payments/BillingSection.js:348
-msgctxt "Action"
-msgid "Use gift code"
-msgstr "Ajándék kuponkód felhasználása"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:311
-msgctxt "Action"
-msgid "Pay annually and save 20%!"
-msgstr "Fizessen egy évet és takarítson meg 20%-ot!"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
-msgctxt "Action"
-msgid "Decrypt"
-msgstr "Dekódolás"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
-msgctxt "Action"
-msgid "Upload"
-msgstr "Feltöltés"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:214
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:272
-msgctxt "Action"
-msgid "Re-activate"
-msgstr "Újra aktiválás"
-
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:96
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:205
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:213
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:328
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:343
-msgctxt "Action"
-msgid "Done"
-msgstr "Kész"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:421
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:358
-msgctxt "Action"
-msgid "Ok"
-msgstr "OK"
-
-#: node_modules/react-components/components/modal/FormModal.js:20
-#: node_modules/react-components/components/modal/Input.js:34
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
-#: node_modules/react-components/containers/login/LoginForm.js:239
-#: node_modules/react-components/containers/login/LoginForm.js:267
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
-#: node_modules/react-components/containers/support/BugModal.js:135
-msgctxt "Action"
-msgid "Submit"
-msgstr "Elküldés"
-
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:38
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:79
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:114
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:171
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:43
-msgctxt "Action"
-msgid "Yes"
-msgstr "Igen"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:41
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:40
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:22
-msgctxt "Action"
-msgid "Export"
-msgstr "Exportálás"
-
-#: node_modules/react-components/containers/keys/UserKeysSection.js:79
-msgctxt "Action"
-msgid "Export private key"
-msgstr "Privát kulcs exportálása"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:186
-msgctxt "Action"
-msgid "Select files"
-msgstr "Fájlok kiválasztása"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:30
-msgctxt "Action"
-msgid "Create key"
-msgstr "Kulcs létrehozása"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:34
-msgctxt "Action"
-msgid "Import key"
-msgstr "Kulcs importálása"
-
-#: node_modules/react-components/containers/keys/AddressKeysSection.js:215
-msgctxt "Action"
-msgid "Reactivate keys"
-msgstr "Kulcsok újraaktiválása"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:86
-#: node_modules/react-components/containers/addresses/IdentitySection.js:102
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:87
-#: node_modules/react-components/containers/domains/DomainActions.js:32
-#: node_modules/react-components/containers/filters/FilterItemRow.js:62
-#: node_modules/react-components/containers/labels/ActionsLabel.js:63
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:15
-#: node_modules/react-components/containers/organization/OrganizationSection.js:50
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
-msgctxt "Action"
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:218
-#: node_modules/react-components/containers/filters/AddFilterModal.js:129
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:109
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
-msgctxt "Action"
-msgid "Back"
-msgstr "Vissza"
-
-#: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:27
-msgctxt "Action"
-msgid "Enable multi-user support"
-msgstr "Többfelhasználós mód engedélyezése"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:115
-#: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:45
-msgctxt "Action"
-msgid "Restore administrator privileges"
-msgstr "Adminisztrátori jogok visszaállítása"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:98
-msgctxt "Action"
-msgid "Change password"
-msgstr "Jelszó megváltoztatása"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:101
-msgctxt "Action"
-msgid "Change organization keys"
-msgstr "Szervezeti kulcsok megváltoztatása"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:129
-msgctxt "Action"
-msgid "Activate organization key"
-msgstr "Szervezeti kulcs aktiválása"
-
-#: node_modules/react-components/containers/addresses/PmMeButton.js:12
-msgctxt "Action"
-msgid "Activate"
-msgstr "Aktiválás"
-
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:34
-#: node_modules/react-components/containers/domains/AddressesSection.js:29
-msgctxt "Action"
-msgid "Add address"
-msgstr "Cím hozzáadása"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:31
-msgctxt "Action"
-msgid "Send test notification"
-msgstr "Tesztértesítés küldése"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:33
-msgctxt "Action"
-msgid "Enable desktop notification"
-msgstr "Asztali értesítések engedélyezése"
-
-#: node_modules/react-components/containers/domains/AddressesSection.js:31
-#: node_modules/react-components/containers/members/MembersSection.js:126
-msgctxt "Action"
-msgid "Add user"
-msgstr "Felhasználó hozzáadása"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:36
-msgctxt "Action"
-msgid "Set catch-all"
-msgstr "Gyűjtő e-mail beállítása"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:96
-#: node_modules/react-components/containers/domains/DomainActions.js:40
-#: node_modules/react-components/containers/filters/FilterItemRow.js:70
-#: node_modules/react-components/containers/filters/editor/EditConditionValue.js:14
-#: node_modules/react-components/containers/labels/ActionsLabel.js:67
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:65
-msgctxt "Action"
-msgid "Delete"
-msgstr "Törlés"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:53
-msgctxt "Action"
-msgid "Add domain"
-msgstr "Domain hozzáadása"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:55
-msgctxt "Action"
-msgid "Refresh status"
-msgstr "Állapot frissítése"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:257
-#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:39
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:38
-#: node_modules/react-components/containers/logs/LogsSection.js:130
-#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/VPNClientCard.js:14
-msgctxt "Action"
-msgid "Download"
-msgstr "Letöltés"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:54
-msgctxt "Action"
-msgid "Edit credentials"
-msgstr "Hitelesítő adatok szerkesztése"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
-msgctxt "Action"
-msgid "Hide"
-msgstr "Elrejtés"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
-msgctxt "Action"
-msgid "Show"
-msgstr "Megjelenítés"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:93
-msgctxt "Action"
-msgid "Change mailbox password"
-msgstr "Postaláda-jelszó módosítása"
-
-#: node_modules/react-components/containers/account/DeleteSection.js:75
-msgctxt "Action"
-msgid "Delete your account"
-msgstr "Fiók törlése"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:61
-msgctxt "Action"
-msgid "Mark as default"
-msgstr "Megjelölés alapértelmezettként"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:61
-msgctxt "Action"
-msgid "Add credit / debit card"
-msgstr "Bank-/hitelkártya hozzáadása"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:63
-msgctxt "Action"
-msgid "Add PayPal"
-msgstr "PayPal hozzáadása"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:44
-msgctxt "Action"
-msgid "No"
-msgstr "Nem"
-
-#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:19
-msgctxt "Action"
-msgid "Add folder"
-msgstr "Új mappa"
-
-#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:21
-msgctxt "Action"
-msgid "Add label"
-msgstr "Új címke"
-
-#: node_modules/react-components/containers/filters/editor/AddConditionValue.js:32
-#: node_modules/react-components/containers/filters/spamlist/AddEmailFilterListButton.js:17
-msgctxt "Action"
-msgid "Add"
-msgstr "Hozzáadás"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:179
-msgctxt "Action"
-msgid "Remove condition"
-msgstr "Feltétel eltávolítása"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:191
-msgctxt "Action"
-msgid "Add a new condition"
-msgstr "Új feltétel hozzáadása"
-
-#: node_modules/react-components/containers/filters/editor/LabelActions.js:42
-msgctxt "Action"
-msgid "Remove"
-msgstr "Eltávolítás"
-
-#: node_modules/react-components/containers/filters/AddFilterModal.js:139
-msgctxt "Action"
-msgid "Preview"
-msgstr "Előnézet"
-
-#: node_modules/react-components/containers/filters/FilterItemRow.js:66
-msgctxt "Action"
-msgid "Edit sieve"
-msgstr "Sieve szűrő szerkesztése"
-
-#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:16
-msgctxt "Action"
-msgid "Add Filter"
-msgstr "Új szűrő"
-
-#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:18
-msgctxt "Action"
-msgid "Add sieve filter"
-msgstr "Új sieve szűrő"
-
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:30
-msgctxt "Action"
-msgid "Insert CSS code here"
-msgstr "CSS-kód beillesztése ide"
-
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
-msgctxt "Action"
-msgid "Wipe"
-msgstr "Ürítés"
-
-#: node_modules/react-components/containers/logs/LogsSection.js:127
-msgctxt "Action"
-msgid "Refresh"
-msgstr "Frissítés"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:50
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:64
-msgctxt "Action"
-msgid "Read"
-msgstr "Olvasott"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:63
-msgctxt "Action"
-msgid "Unread"
-msgstr "Olvasatlan"
-
-#: node_modules/react-components/containers/general/ShortcutsSection.js:33
-msgctxt "Action"
-msgid "View keyboard shortcuts"
-msgstr "Gyorsbillentyűk megtekintése"
-
-#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
-#: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:65
-msgctxt "Action"
-msgid "Upgrade"
-msgstr "Váltás"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:52
-msgctxt "Action"
-msgid "Upgrade ProtonMail"
-msgstr "Váltás nagyobb csomagra"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:60
-msgctxt "Action"
-msgid "Join"
-msgstr "Csatlakozás"
-
-#: node_modules/react-components/containers/support/AttachScreenshot.js:46
-msgctxt "Action"
-msgid "Clear"
-msgstr "Törlés"
-
-#: node_modules/react-components/containers/support/AttachScreenshot.js:53
-msgctxt "Action"
-msgid "Add screenshot(s)"
-msgstr "Képernyőmentés(ek) hozzáadása"
-
-#: node_modules/react-components/containers/support/BugModal.js:203
-msgctxt "Action"
-msgid "Hide info"
-msgstr "Információ elrejtése"
-
-#: node_modules/react-components/containers/support/BugModal.js:203
-msgctxt "Action"
-msgid "Show info"
-msgstr "Információ mutatása"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:84
-#: node_modules/react-components/containers/heading/UserDropdown.js:92
-msgctxt "Action"
-msgid "Settings"
-msgstr "Beállítások"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:109
-msgctxt "Action"
-msgid "I have a question"
-msgstr "Kérdésem van"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:119
-msgctxt "Action"
-msgid "Report bug"
-msgstr "Hiba jelentése"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:130
-msgctxt "Action"
-msgid "Proton shop"
-msgstr "Proton üzlet"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:140
-msgctxt "Action"
-msgid "Support us"
-msgstr "Támogasson"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:149
-msgctxt "Action"
-msgid "Logout"
-msgstr "Kilépés"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:24
-msgctxt "Action"
-msgid "View"
-msgstr "Megtekintés"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:92
-msgctxt "Action"
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:55
+msgctxt "Label"
+msgid "Enter gift code"
+msgstr "Adja meg az ajándék kuponkódot"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:76
+#: node_modules/react-components/containers/payments/BillingSection.js:341
+msgctxt "Label"
+msgid "Gift code"
+msgstr "Ajándékutalvány"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:128
+msgctxt "Label"
+msgid "ProtonMail plan"
+msgstr "ProtonMail csomag"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:141
+msgctxt "Label"
+msgid "Extra users"
+msgstr "További felhasználók"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:161
+msgctxt "Label"
+msgid "Extra email addresses"
+msgstr "További e-mail címek"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:181
+msgctxt "Label"
+msgid "Extra storage"
+msgstr "További tárhely"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:194
+msgctxt "Label"
+msgid "Bonus storage"
+msgstr "Bónusz tárhely"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:203
+msgctxt "Label"
+msgid "Extra domains"
+msgstr "További domain nevek"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:227
+msgctxt "Label"
+msgid "ProtonVPN plan"
+msgstr "ProtonVPN csomag"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:240
+msgctxt "Label"
+msgid "Extra connections"
+msgstr "További kapcsolatok"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:260
+msgctxt "Label"
+msgid "Bonus connections"
+msgstr "Bónusz kapcsolatok"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:286
+msgctxt "Label"
+msgid "Discount"
+msgstr "Kedvezmény"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:308
+msgctxt "Label"
+msgid "Billing cycle"
+msgstr "Számlázási ciklus"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:318
+msgctxt "Label"
+msgid "Renewal date"
+msgstr "Meghosszabbítás időpontja"
+
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+msgctxt "Label"
+msgid "Amount BTC"
+msgstr "BTC összege"
+
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+msgctxt "Label"
+msgid "BTC address"
+msgstr "BTC cím"
+
+#: node_modules/react-components/containers/payments/Payment.js:74
+msgctxt "Label"
+msgid "Payment method"
+msgstr "Fizetési mód"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:42
+#, javascript-format
+msgctxt "Label"
+msgid "Enter the password for key with fingerprint: ${ fingerprintCode }"
+msgstr "Írja be a következő ujjlenyomattal rendelkező kulcshoz tartozó jelszót: ${ fingerprintCode }"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:51
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:44
+msgctxt "Label"
+msgid "Enter password"
+msgstr "Jelszó megadása"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:309
+msgctxt "Label"
+msgid "Enter your previous password from before your account was reset:"
+msgstr "Adja meg a fiók visszaállítása előtti jelszavát:"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
+msgctxt "Label"
+msgid "Please select files to upload"
+msgstr "Válassza ki a fájlokat a feltöltéshez"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:16
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:79
+msgctxt "Label"
+msgid "Timezone"
+msgstr "Időzóna"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:14
+msgctxt "Label"
+msgid "Days of the week"
+msgstr "A hét napjai"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:76
+msgctxt "Label"
+msgid "Duration"
+msgstr "Időtartam"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:17
+msgctxt "Label"
+msgid "Start date"
+msgstr "Kezdő dátum"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:20
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:25
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:24
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:24
+msgctxt "Label"
+msgid "Start time"
+msgstr "Kezdés"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:30
+msgctxt "Label"
+msgid "End date"
+msgstr "Befejező dátum"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:26
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:38
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:36
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:36
+msgctxt "Label"
+msgid "End time"
+msgstr "Befejezés"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:17
+msgctxt "Label"
+msgid "Start day of month"
+msgstr "A hónap kezdőnapja"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:29
+msgctxt "Label"
+msgid "End day of month"
+msgstr "A hónap befejező napja"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:19
+msgctxt "Label"
+msgid "Start weekday"
+msgstr "A hét kezdőnapja"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:31
+msgctxt "Label"
+msgid "End weekday"
+msgstr "A hét befejező napja"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:77
+msgctxt "Label"
+msgid "Start"
+msgstr "Kezdet"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:78
+msgctxt "Label"
+msgid "End"
+msgstr "Befejezés"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:80
+msgctxt "Label"
+msgid "Message"
+msgstr "Üzenet"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:50
+msgctxt "Label"
+msgid "Auto-reply"
+msgstr "Automatikus válasz"
+
+#: node_modules/react-components/containers/organization/OrganizationNameModal.js:23
+#: node_modules/react-components/containers/organization/OrganizationSection.js:45
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:66
+msgctxt "Label"
+msgid "Organization name"
+msgstr "Szervezet neve"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:102
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:113
+msgctxt "Label"
+msgid "Organization password"
+msgstr "Szervezeti jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:280
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:298
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:125
+msgctxt "Label"
+msgid "Confirm password"
+msgstr "Jelszó megerősítése"
+
+#: node_modules/react-components/containers/members/EditMemberModal.js:73
+#: node_modules/react-components/containers/members/MemberModal.js:208
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
+msgctxt "Label"
+msgid "Account storage"
+msgstr "Fiók tárhely"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:209
+msgctxt "Label"
+msgid "VPN Connections"
+msgstr "VPN kapcsolatok"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:118
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:69
+msgctxt "Label"
+msgid "New organization password"
+msgstr "Új szervezeti jelszó"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:132
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:83
+msgctxt "Label"
+msgid "Confirm organization password"
+msgstr "Szervezeti jelszó újra"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:96
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:188
+msgctxt "Label"
+msgid "Address"
+msgstr "Cím"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:114
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
+#: node_modules/react-components/containers/addresses/IdentitySection.js:77
+msgctxt "Label"
+msgid "Display name"
+msgstr "Megjelenített név"
+
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:69
+#: node_modules/react-components/containers/addresses/IdentitySection.js:90
+msgctxt "Label"
+msgid "Signature"
+msgstr "Aláírás"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:70
+msgctxt "Label"
+msgid "Select an address"
+msgstr "Válasszon ki egy címet"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:106
+msgctxt "Label"
+msgid "ProtonMail signature"
+msgstr "ProtonMail aláírás"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:92
+msgctxt "Label"
 msgid "User"
 msgstr "Felhasználó"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:98
-msgctxt "Action"
-msgid "Organization"
-msgstr "Szervezet"
+#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
+msgctxt "Label"
+msgid "Desktop notification"
+msgstr "Asztali értesítések"
 
-#: node_modules/react-components/containers/login/LoginForm.js:207
-msgctxt "Action"
-msgid "Log in"
-msgstr "Belépés"
+#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:17
+#: node_modules/react-components/containers/notification/EmailModal.js:74
+msgctxt "Label"
+msgid "Email"
+msgstr "E-mail"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
-msgctxt "Action"
-msgid "Revoke all other sessions"
-msgstr "Minden más munkamenet kijelentkeztetése"
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:125
+#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
+#: node_modules/react-components/containers/notification/EmailSection.js:66
+#: node_modules/react-components/containers/support/BugModal.js:156
+msgctxt "Label"
+msgid "Email address"
+msgstr "E-mail cím"
 
-#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
-msgctxt "Action"
-msgid "Next month"
-msgstr "Következő hónap"
+#: node_modules/react-components/containers/notification/EmailSection.js:70
+msgctxt "Label"
+msgid "Allow password reset"
+msgstr "Jelszó visszaállítás engedélyezése"
 
-#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
-msgctxt "Action"
-msgid "Prev month"
-msgstr "Előző hónap"
+#: node_modules/react-components/containers/notification/EmailSection.js:83
+msgctxt "Label"
+msgid "Daily email notifications"
+msgstr "Napi e-mail értesítések"
 
-#: node_modules/react-components/components/modal/Confirm.js:10
-#: node_modules/react-components/components/modal/Confirm.js:12
-msgctxt "Action"
-msgid "Confirm"
-msgstr "Megerősítés"
+#: node_modules/react-components/containers/domains/DomainSection.js:22
+msgctxt "Label"
+msgid "Enter your domain"
+msgstr "Adja meg a domain címét"
 
-#: node_modules/react-components/components/modal/Header.js:11
-#: node_modules/react-components/components/modal/Header.js:13
-msgctxt "Action"
-msgid "Close modal"
-msgstr "Ablak bezárása"
+#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/SPFSection.js:14
+msgctxt "Label"
+msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
+msgstr "Kérjük, adja hozzá a következő TXT rekordot. Vegye figyelembe, hogy a DNS rekordok frissülése akár órákig is eltarthat."
+
+#: node_modules/react-components/containers/domains/MXSection.js:17
+msgctxt "Label"
+msgid "Please add the following MX record. Note, DNS records can take several hours to update."
+msgstr "Kérjük, adja hozzá a következő MX rekordot. Vegye figyelembe, hogy a DNS rekordok frissülése akár órákig is eltarthat."
+
+#: node_modules/react-components/containers/domains/DMARCSection.js:14
+msgctxt "Label"
+msgid "Here is a basic DMARC record that does nothing except email you reports."
+msgstr "Ez egy alapszintű DMARC rekord, ami nem csinál mást mint e-mail jelentéseket küld Önnek."
+
+#: node_modules/react-components/containers/support/BugModal.js:144
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
+msgctxt "Label"
+msgid "Proton username"
+msgstr "Proton felhasználónév"
+
+#: node_modules/react-components/containers/login/PasswordForm.js:28
+#: node_modules/react-components/containers/login/UnlockModal.js:41
+#: node_modules/react-components/containers/members/MemberModal.js:167
+#: node_modules/react-components/containers/password/PasswordTotpInputs.js:10
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:26
+msgctxt "Label"
+msgid "Password"
+msgstr "Jelszó"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:10
+msgctxt "Label"
+msgid "Download ProtonVPN"
+msgstr "ProtonVPN letöltése"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:16
+msgctxt "Label"
+msgid "ProtonVPN homepage"
+msgstr "ProtonVPN weboldal"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:22
+msgctxt "Label"
+msgid "Get support for ProtonVPN"
+msgstr "ProtonVPN támogatás"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:38
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:53
+msgctxt "Label"
+msgid "OpenVPN / IKEv2 username"
+msgstr "OpenVPN / IKEv2 felhasználónév"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:49
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:65
+msgctxt "Label"
+msgid "OpenVPN / IKEv2 password"
+msgstr "OpenVPN / IKEv2 jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:125
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:278
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:308
+msgctxt "Label"
+msgid "Old login password"
+msgstr "Korábbi bejelentkezési jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:126
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:160
+msgctxt "Label"
+msgid "New login password"
+msgstr "Új bejelentkezési jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:127
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:161
+msgctxt "Label"
+msgid "Confirm login password"
+msgstr "Bejelentkezési jelszó megerősítése"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:159
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:296
+msgctxt "Label"
+msgid "Old password"
+msgstr "Régi jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:187
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:309
+msgctxt "Label"
+msgid "New mailbox password"
+msgstr "Új e-mail jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:188
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:310
+msgctxt "Label"
+msgid "Confirm mailbox password"
+msgstr "E-mail jelszó megerősítése"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:279
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:297
+msgctxt "Label"
+msgid "New password"
+msgstr "Új jelszó"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:371
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
+#: node_modules/react-components/containers/login/TOTPForm.js:9
+#: node_modules/react-components/containers/password/PasswordTotpInputs.js:26
+msgctxt "Label"
+msgid "Two-factor code"
+msgstr "Kétlépéses kód"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:67
+msgctxt "Label"
+msgid "Two password mode"
+msgstr "Két jelszavas mód"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:86
+#: node_modules/react-components/containers/login/UnlockForm.js:9
+msgctxt "Label"
+msgid "Mailbox password"
+msgstr "E-mail jelszó"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:111
+msgctxt "Label"
+msgid "Feedback"
+msgstr "Visszajelzés"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
+msgctxt "Label"
+msgid "Login password"
+msgstr "Bejelentkezési jelszó"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:18
+#: node_modules/react-components/containers/members/EditMemberModal.js:61
+#: node_modules/react-components/containers/members/MemberModal.js:143
+msgctxt "Label"
+msgid "Name"
+msgstr "Név"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:28
+msgctxt "Label"
+msgid "ProtonMail address"
+msgstr "ProtonMail cím"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:154
+msgctxt "Label"
+msgid "Key"
+msgstr "Kulcs"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:160
+msgctxt "Label"
+msgid "Interval"
+msgstr "Intervallum"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:166
+msgctxt "Label"
+msgid "Digits"
+msgstr "Számjegy"
+
+#: node_modules/react-components/containers/account/TwoFactorSection.js:32
+msgctxt "Label"
+msgid "Two-factor authentication"
+msgstr "Kétlépéses hitelesítés"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:34
+#: node_modules/react-components/containers/password/AskAuthModal.js:18
+msgctxt "Label"
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:35
+#: node_modules/react-components/containers/password/AskAuthModal.js:19
+msgctxt "Label"
+msgid "Submit"
+msgstr "Küldés"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodDetails.js:17
+msgctxt "Label"
+msgid "Cardholder name"
+msgstr "Kártyatulajdonos neve"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+msgctxt "Label"
+msgid "Pay with cash"
+msgstr "Készpénzes fizetés"
+
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:41
+msgctxt "Label"
+msgid "Prompt to trust keys"
+msgstr "Kérdezzen rá a kulcsok megbízhatóként jelölésére"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:82
+msgctxt "Label"
+msgid "Sign external messages"
+msgstr "Külső üzenetek aláírása"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:100
+msgctxt "Label"
+msgid "Attach public key"
+msgstr "Nyilvános kulcs csatolása"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:118
+msgctxt "Label"
+msgid "Default PGP Scheme"
+msgstr "Alapértelmezett PGP séma"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:123
+#, javascript-format
+msgctxt "Label"
+msgid "Conditions ${ n }"
+msgstr "Feltétel ${ n }"
+
+#: node_modules/react-components/containers/filters/editor/AutoReplyAction.js:27
+msgctxt "Label"
+msgid "Send auto reply"
+msgstr "Automatikus válasz küldése"
+
+#: node_modules/react-components/containers/filters/editor/Operator.js:20
+msgctxt "Label"
+msgid "Logic"
+msgstr "Feltételek"
+
+#: node_modules/react-components/containers/api/HumanVerificationModal.js:22
+msgctxt "Label"
+msgid "Captcha"
+msgstr "CAPTCHA kód"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:20
+msgctxt "Label"
+msgid "Auto-load remote content"
+msgstr "Távoli tartalom automatikus betöltése"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:29
+msgctxt "Label"
+msgid "Auto-load embedded images"
+msgstr "Beágyazott képek automatikus betöltése"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:38
+msgctxt "Label"
+msgid "Sent/Drafts"
+msgstr "Elküldött/Piszkozat"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:46
+msgctxt "Label"
+msgid "Include moved"
+msgstr "Áthelyezettek megjelenítve"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:50
+msgctxt "Label"
+msgid "Request link confirmation"
+msgstr "Link jóváhagyás kérése"
+
+#: node_modules/react-components/containers/members/MemberModal.js:160
+msgctxt "Label"
+msgid "Key strength"
+msgstr "Kulcs erőssége"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:25
+msgctxt "Label"
+msgid "CSS code"
+msgstr "CSS kód"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:40
+msgctxt "Label"
+msgid "Read/unread order"
+msgstr "Olvasott/Olvasatlan sorrendje"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
+msgctxt "Label"
+msgid "Default Composer"
+msgstr "Alapértelmezett szövegszerkesztő"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
+msgctxt "Label"
+msgid "Default Inbox"
+msgstr "Bejövő üzenetek elrendezése"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:129
+msgctxt "Label"
+msgid "Conversations"
+msgstr "Beszélgetések"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
+msgctxt "Label"
+msgid "Use sticky labels"
+msgstr "Ragadós címkék használata"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:162
+msgctxt "Label"
+msgid "Composer mode"
+msgstr "Szerkesztő módja"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:173
+msgctxt "Label"
+msgid "Composer text direction"
+msgstr "Szerkesztő szövegiránya"
+
+#: node_modules/react-components/containers/general/LanguageSection.js:56
+msgctxt "Label"
+msgid "Default language"
+msgstr "Alapértelmezett nyelv"
+
+#: node_modules/react-components/containers/login/PasswordForm.js:10
+#: node_modules/react-components/containers/overview/SummarySection.js:53
+msgctxt "Label"
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:60
+msgctxt "Label"
+msgid "Recovery email"
+msgstr "Helyreállító e-mail"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:69
+msgctxt "Label"
+msgid "Two factor authentication"
+msgstr "Kétlépcsős hitelesítés"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Label"
+msgid "Role"
+msgstr "Szerepkör"
+
+#: node_modules/react-components/containers/support/BugModal.js:168
+msgctxt "Label"
+msgid "Category"
+msgstr "Kategória"
+
+#: node_modules/react-components/containers/support/BugModal.js:180
+msgctxt "Label"
+msgid "What happened?"
+msgstr "Mi történt?"
+
+#: node_modules/react-components/containers/support/BugModal.js:201
+msgctxt "Label"
+msgid "System information"
+msgstr "Rendszerinfromáció"
+
+#: node_modules/react-components/containers/support/BugModal.js:209
+msgctxt "Label"
+msgid "Operating system"
+msgstr "Operációs rendszer"
+
+#: node_modules/react-components/containers/support/BugModal.js:220
+msgctxt "Label"
+msgid "Operating system version"
+msgstr "Az operációs rendszer verziója"
+
+#: node_modules/react-components/containers/support/BugModal.js:231
+msgctxt "Label"
+msgid "Browser"
+msgstr "Böngésző"
+
+#: node_modules/react-components/containers/support/BugModal.js:242
+msgctxt "Label"
+msgid "Browser version"
+msgstr "Böngészőverzió"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:66
+msgctxt "Label"
+msgid "Credits used"
+msgstr "Felhasznált kredit"
+
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
+msgctxt "Label"
+msgid "Customize invoices"
+msgstr "Számlák személyre szabása"
+
+#: node_modules/react-components/containers/search/SearchSection.js:27
+msgctxt "Label"
+msgid "Require exact match"
+msgstr "Csak pontos egyezés"
+
+#: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
+msgctxt "Info"
+msgid "Week"
+msgstr "Hét"
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:112
 msgctxt "Info"
@@ -3075,12 +2202,12 @@ msgstr[0] "felhasználó használatban"
 msgstr[1] "felhasználó használatban"
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:93
-#: node_modules/react-components/containers/themes/ThemesSection.js:75
+#: node_modules/react-components/containers/themes/ThemesSection.js:80
 msgctxt "Info"
 msgid "Choose the look and feel of your mailbox."
 msgstr "Válassza ki a postafiók megjelenését és hangulatát."
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:76
+#: node_modules/react-components/containers/themes/ThemesSection.js:81
 msgctxt "Info"
 msgid "Selecting another theme will override your current theme and any customization will be lost."
 msgstr "Másik megjelenés kiválasztása esetén felülírja az aktuális témát, és minden korábbi testreszabás elveszik."
@@ -3190,11 +2317,6 @@ msgctxt "Info"
 msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
 msgstr "Ha nem lép ki és nem változtat jelszót, a munkafolyamat 6 hónapig maradhat nyitva. A munkafolyamatok 2 hét inaktivitás után lezárulnak."
 
-#: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
-msgctxt "Info"
-msgid "Week"
-msgstr "Hét"
-
 #: src/app/containers/OrganizationContainer.js:44
 msgctxt "Info"
 msgid "Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address."
@@ -3252,6 +2374,1822 @@ msgstr "Egyéni domain címek hozzáadásához és kezeléséhez váltson előfi
 msgctxt "Info"
 msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
 msgstr "Automata válaszok létrehozását és kezelését a Szűrők beállítása menüpontban találja."
+
+#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
+msgctxt "Action"
+msgid "Next month"
+msgstr "Következő hónap"
+
+#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
+msgctxt "Action"
+msgid "Prev month"
+msgstr "Előző hónap"
+
+#: node_modules/react-components/components/modal/Confirm.js:11
+#: node_modules/react-components/components/modal/FormModal.js:19
+#: node_modules/react-components/components/modal/Input.js:33
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
+#: node_modules/react-components/containers/addresses/AddressModal.js:81
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:75
+#: node_modules/react-components/containers/login/LoginForm.js:216
+#: node_modules/react-components/containers/payments/PayPal.js:137
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:101
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:255
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:46
+msgctxt "Action"
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: node_modules/react-components/components/modal/FormModal.js:20
+#: node_modules/react-components/components/modal/Input.js:34
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
+#: node_modules/react-components/containers/login/LoginForm.js:239
+#: node_modules/react-components/containers/login/LoginForm.js:267
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
+#: node_modules/react-components/containers/support/BugModal.js:135
+msgctxt "Action"
+msgid "Submit"
+msgstr "Elküldés"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:420
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:434
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
+#: node_modules/react-components/containers/domains/CatchAllModal.js:12
+#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/filters/AddFilterModal.js:137
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:49
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:123
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:39
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:21
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:231
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:369
+#: node_modules/react-components/containers/login/AbuseModal.js:21
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:164
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:57
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:93
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
+#: node_modules/react-components/containers/payments/CreditsModal.js:67
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:258
+msgctxt "Action"
+msgid "Close"
+msgstr "Bezár"
+
+#: node_modules/react-components/components/modal/Confirm.js:10
+#: node_modules/react-components/components/modal/Confirm.js:12
+msgctxt "Action"
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: node_modules/react-components/components/modal/Header.js:11
+#: node_modules/react-components/components/modal/Header.js:13
+msgctxt "Action"
+msgid "Close modal"
+msgstr "Ablak bezárása"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:102
+msgctxt "Action"
+msgid "Verify"
+msgstr "Megerősít"
+
+#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/PayPal.js:105
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
+msgctxt "Action"
+msgid "Try again"
+msgstr "Próbálja újra"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:171
+msgctxt "Action"
+msgid "Use a different card"
+msgstr "Másik bankkártya használata"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:172
+msgctxt "Action"
+msgid "Use a different payment method"
+msgstr "Más fizetési mód választása"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:435
+#: node_modules/react-components/containers/addresses/AddressModal.js:80
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:50
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:40
+#: node_modules/react-components/containers/filters/AddFilterModal.js:130
+#: node_modules/react-components/containers/filters/AddFilterModal.js:143
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/members/EditMemberModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:139
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:165
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:58
+#: node_modules/react-components/containers/payments/EditCardModal.js:51
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
+msgctxt "Action"
+msgid "Save"
+msgstr "Mentés"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:101
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:142
+msgctxt "Action"
+msgid "Customize"
+msgstr "Testreszabás"
+
+#: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:21
+msgctxt "Action"
+msgid "Switch now"
+msgstr "Váltson most"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:350
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
+msgctxt "Action"
+msgid "Hide additional features"
+msgstr "Kiegészítő funkciók elrejtése"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:350
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
+msgctxt "Action"
+msgid "Compare all features"
+msgstr "Összes lehetőség összehasonlítása"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:50
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:27
+#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:26
+#: node_modules/react-components/containers/themes/ThemesSection.js:58
+msgctxt "Action"
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
+msgctxt "Action"
+msgid "Remove coupon"
+msgstr "Kupon eltávolítása"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:154
+msgctxt "Action"
+msgid "Add coupon"
+msgstr "Kupon hozzáadása"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:87
+msgctxt "Action"
+msgid "Add gift code"
+msgstr "Ajándék kód hozzáadása"
+
+#: node_modules/react-components/containers/payments/subscription/Thanks.js:23
+msgctxt "Action"
+msgid "Got it"
+msgstr "Rendben!"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
+#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:191
+msgctxt "Action"
+msgid "Next"
+msgstr "Következő"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+msgctxt "Action"
+msgid "Continue"
+msgstr "Folytatás"
+
+#.  Insert it before the last one
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:238
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:261
+msgctxt "Action"
+msgid "Previous"
+msgstr "Előző"
+
+#.  Insert it before the last one
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:45
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:50
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:239
+msgctxt "Action"
+msgid "Pay"
+msgstr "Fizetés"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:189
+msgctxt "Action"
+msgid "Get the deal"
+msgstr "Érdekel az ajánlat"
+
+#: node_modules/react-components/containers/payments/DowngradeModal.js:7
+msgctxt "Action"
+msgid "Downgrade"
+msgstr "Kisebb csomagra váltás"
+
+#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:10
+msgctxt "Action"
+msgid "Remove bonuses"
+msgstr "Kedvezmények törlése"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:332
+#: node_modules/react-components/containers/payments/PlansTable.js:337
+#: node_modules/react-components/containers/payments/PlansTable.js:342
+msgctxt "Action"
+msgid "Edit VPN"
+msgstr "VPN szerkesztése"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:332
+#: node_modules/react-components/containers/payments/PlansTable.js:337
+#: node_modules/react-components/containers/payments/PlansTable.js:342
+msgctxt "Action"
+msgid "Add VPN"
+msgstr "VPN hozzáadása"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:36
+#: node_modules/react-components/containers/payments/PlansTable.js:359
+#: node_modules/react-components/containers/payments/PlansTable.js:367
+#: node_modules/react-components/containers/payments/PlansTable.js:375
+#: node_modules/react-components/containers/payments/PlansTable.js:383
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
+msgctxt "Action"
+msgid "Update"
+msgstr "Frissítés"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:359
+#: node_modules/react-components/containers/payments/PlansTable.js:367
+#: node_modules/react-components/containers/payments/PlansTable.js:375
+#: node_modules/react-components/containers/payments/PlansTable.js:383
+msgctxt "Action"
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: node_modules/react-components/containers/payments/PayPal.js:149
+#: node_modules/react-components/containers/payments/PayPal.js:178
+msgctxt "Action"
+msgid "Check out with PayPal"
+msgstr "Fizetés PayPal-al"
+
+#: node_modules/react-components/containers/payments/PayPal.js:164
+msgctxt "Action"
+msgid "Add PayPal payment method"
+msgstr "PayPal fizetési mód hozzáadása"
+
+#: node_modules/react-components/containers/payments/DonateModal.js:43
+msgctxt "Action"
+msgid "Donate"
+msgstr "Adományozás"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:66
+msgctxt "Action"
+msgid "Top up"
+msgstr "Feltöltés"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:69
+#: node_modules/react-components/containers/payments/BillingSection.js:334
+msgctxt "Action"
+msgid "Add credits"
+msgstr "Egyenleg feltöltése"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:83
+#: node_modules/react-components/containers/payments/BillingSection.js:348
+msgctxt "Action"
+msgid "Use gift code"
+msgstr "Ajándék kuponkód felhasználása"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:311
+msgctxt "Action"
+msgid "Pay annually and save 20%!"
+msgstr "Fizessen egy évet és takarítson meg 20%-ot!"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
+msgctxt "Action"
+msgid "Decrypt"
+msgstr "Dekódolás"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
+msgctxt "Action"
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:214
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:272
+msgctxt "Action"
+msgid "Re-activate"
+msgstr "Újra aktiválás"
+
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:96
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:205
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:213
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:328
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:343
+msgctxt "Action"
+msgid "Done"
+msgstr "Kész"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:421
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
+#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:358
+msgctxt "Action"
+msgid "Ok"
+msgstr "OK"
+
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:38
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:79
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:114
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:171
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:43
+msgctxt "Action"
+msgid "Yes"
+msgstr "Igen"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:41
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:40
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:22
+msgctxt "Action"
+msgid "Export"
+msgstr "Exportálás"
+
+#: node_modules/react-components/containers/keys/UserKeysSection.js:79
+msgctxt "Action"
+msgid "Export private key"
+msgstr "Privát kulcs exportálása"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:186
+msgctxt "Action"
+msgid "Select files"
+msgstr "Fájlok kiválasztása"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:30
+msgctxt "Action"
+msgid "Create key"
+msgstr "Kulcs létrehozása"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:34
+msgctxt "Action"
+msgid "Import key"
+msgstr "Kulcs importálása"
+
+#: node_modules/react-components/containers/keys/AddressKeysSection.js:215
+msgctxt "Action"
+msgid "Reactivate keys"
+msgstr "Kulcsok újraaktiválása"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:86
+#: node_modules/react-components/containers/addresses/IdentitySection.js:102
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:87
+#: node_modules/react-components/containers/domains/DomainActions.js:32
+#: node_modules/react-components/containers/filters/FilterItemRow.js:62
+#: node_modules/react-components/containers/labels/ActionsLabel.js:63
+#: node_modules/react-components/containers/notification/RecoveryEmail.js:15
+#: node_modules/react-components/containers/organization/OrganizationSection.js:50
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
+msgctxt "Action"
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:218
+#: node_modules/react-components/containers/filters/AddFilterModal.js:129
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:109
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
+msgctxt "Action"
+msgid "Back"
+msgstr "Vissza"
+
+#: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:27
+msgctxt "Action"
+msgid "Enable multi-user support"
+msgstr "Többfelhasználós mód engedélyezése"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:115
+#: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:45
+msgctxt "Action"
+msgid "Restore administrator privileges"
+msgstr "Adminisztrátori jogok visszaállítása"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:98
+msgctxt "Action"
+msgid "Change password"
+msgstr "Jelszó megváltoztatása"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:101
+msgctxt "Action"
+msgid "Change organization keys"
+msgstr "Szervezeti kulcsok megváltoztatása"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:129
+msgctxt "Action"
+msgid "Activate organization key"
+msgstr "Szervezeti kulcs aktiválása"
+
+#: node_modules/react-components/containers/addresses/PmMeButton.js:12
+msgctxt "Action"
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:34
+#: node_modules/react-components/containers/domains/AddressesSection.js:29
+msgctxt "Action"
+msgid "Add address"
+msgstr "Cím hozzáadása"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:31
+msgctxt "Action"
+msgid "Send test notification"
+msgstr "Tesztértesítés küldése"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:33
+msgctxt "Action"
+msgid "Enable desktop notification"
+msgstr "Asztali értesítések engedélyezése"
+
+#: node_modules/react-components/containers/domains/AddressesSection.js:31
+#: node_modules/react-components/containers/members/MembersSection.js:126
+msgctxt "Action"
+msgid "Add user"
+msgstr "Felhasználó hozzáadása"
+
+#: node_modules/react-components/containers/domains/DomainActions.js:36
+msgctxt "Action"
+msgid "Set catch-all"
+msgstr "Gyűjtő e-mail beállítása"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:96
+#: node_modules/react-components/containers/domains/DomainActions.js:40
+#: node_modules/react-components/containers/filters/FilterItemRow.js:70
+#: node_modules/react-components/containers/filters/editor/EditConditionValue.js:14
+#: node_modules/react-components/containers/labels/ActionsLabel.js:68
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:65
+msgctxt "Action"
+msgid "Delete"
+msgstr "Törlés"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:53
+msgctxt "Action"
+msgid "Add domain"
+msgstr "Domain hozzáadása"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:55
+msgctxt "Action"
+msgid "Refresh status"
+msgstr "Állapot frissítése"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:257
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:39
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:38
+#: node_modules/react-components/containers/logs/LogsSection.js:130
+#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/VPNClientCard.js:14
+msgctxt "Action"
+msgid "Download"
+msgstr "Letöltés"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:54
+msgctxt "Action"
+msgid "Edit credentials"
+msgstr "Hitelesítő adatok szerkesztése"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
+msgctxt "Action"
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
+msgctxt "Action"
+msgid "Show"
+msgstr "Megjelenítés"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:93
+msgctxt "Action"
+msgid "Change mailbox password"
+msgstr "Postaláda-jelszó módosítása"
+
+#: node_modules/react-components/containers/account/DeleteSection.js:75
+msgctxt "Action"
+msgid "Delete your account"
+msgstr "Fiók törlése"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:61
+msgctxt "Action"
+msgid "Mark as default"
+msgstr "Megjelölés alapértelmezettként"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:61
+msgctxt "Action"
+msgid "Add credit / debit card"
+msgstr "Bank-/hitelkártya hozzáadása"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:63
+msgctxt "Action"
+msgid "Add PayPal"
+msgstr "PayPal hozzáadása"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:44
+msgctxt "Action"
+msgid "No"
+msgstr "Nem"
+
+#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:19
+msgctxt "Action"
+msgid "Add folder"
+msgstr "Új mappa"
+
+#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:21
+msgctxt "Action"
+msgid "Add label"
+msgstr "Új címke"
+
+#: node_modules/react-components/containers/filters/editor/AddConditionValue.js:32
+#: node_modules/react-components/containers/filters/spamlist/AddEmailFilterListButton.js:17
+msgctxt "Action"
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:179
+msgctxt "Action"
+msgid "Remove condition"
+msgstr "Feltétel eltávolítása"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:191
+msgctxt "Action"
+msgid "Add a new condition"
+msgstr "Új feltétel hozzáadása"
+
+#: node_modules/react-components/containers/filters/editor/LabelActions.js:42
+msgctxt "Action"
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: node_modules/react-components/containers/filters/AddFilterModal.js:139
+msgctxt "Action"
+msgid "Preview"
+msgstr "Előnézet"
+
+#: node_modules/react-components/containers/filters/FilterItemRow.js:66
+msgctxt "Action"
+msgid "Edit sieve"
+msgstr "Sieve szűrő szerkesztése"
+
+#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:16
+msgctxt "Action"
+msgid "Add Filter"
+msgstr "Új szűrő"
+
+#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:18
+msgctxt "Action"
+msgid "Add sieve filter"
+msgstr "Új sieve szűrő"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:30
+msgctxt "Action"
+msgid "Insert CSS code here"
+msgstr "CSS-kód beillesztése ide"
+
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
+msgctxt "Action"
+msgid "Wipe"
+msgstr "Ürítés"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:127
+msgctxt "Action"
+msgid "Refresh"
+msgstr "Frissítés"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:50
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:64
+msgctxt "Action"
+msgid "Read"
+msgstr "Olvasott"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:63
+msgctxt "Action"
+msgid "Unread"
+msgstr "Olvasatlan"
+
+#: node_modules/react-components/containers/general/ShortcutsSection.js:33
+msgctxt "Action"
+msgid "View keyboard shortcuts"
+msgstr "Gyorsbillentyűk megtekintése"
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
+#: node_modules/react-components/containers/overview/PromoteSection.js:67
+#: src/app/components/layout/PrivateLayout.js:65
+msgctxt "Action"
+msgid "Upgrade"
+msgstr "Váltás"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:52
+msgctxt "Action"
+msgid "Upgrade ProtonMail"
+msgstr "Váltás nagyobb csomagra"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:60
+msgctxt "Action"
+msgid "Join"
+msgstr "Csatlakozás"
+
+#: node_modules/react-components/containers/support/AttachScreenshot.js:46
+msgctxt "Action"
+msgid "Clear"
+msgstr "Törlés"
+
+#: node_modules/react-components/containers/support/AttachScreenshot.js:53
+msgctxt "Action"
+msgid "Add screenshot(s)"
+msgstr "Képernyőmentés(ek) hozzáadása"
+
+#: node_modules/react-components/containers/support/BugModal.js:203
+msgctxt "Action"
+msgid "Hide info"
+msgstr "Információ elrejtése"
+
+#: node_modules/react-components/containers/support/BugModal.js:203
+msgctxt "Action"
+msgid "Show info"
+msgstr "Információ mutatása"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:84
+#: node_modules/react-components/containers/heading/UserDropdown.js:92
+msgctxt "Action"
+msgid "Settings"
+msgstr "Beállítások"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:109
+msgctxt "Action"
+msgid "I have a question"
+msgstr "Kérdésem van"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:119
+msgctxt "Action"
+msgid "Report bug"
+msgstr "Hiba jelentése"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:130
+msgctxt "Action"
+msgid "Proton shop"
+msgstr "Proton üzlet"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:140
+msgctxt "Action"
+msgid "Support us"
+msgstr "Támogasson"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:149
+msgctxt "Action"
+msgid "Logout"
+msgstr "Kilépés"
+
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:24
+msgctxt "Action"
+msgid "View"
+msgstr "Megtekintés"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:92
+msgctxt "Action"
+msgid "User"
+msgstr "Felhasználó"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:98
+msgctxt "Action"
+msgid "Organization"
+msgstr "Szervezet"
+
+#: node_modules/react-components/containers/login/LoginForm.js:207
+msgctxt "Action"
+msgid "Log in"
+msgstr "Belépés"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+msgctxt "Action"
+msgid "Revoke all other sessions"
+msgstr "Minden más munkamenet kijelentkeztetése"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:6
+msgctxt "Title"
+msgid "Preview"
+msgstr "Előnézet"
+
+#: node_modules/react-components/components/container/RelatedSettingsSection.js:14
+#: src/app/containers/AddressesContainer.js:19
+#: src/app/containers/AutoReplyContainer.js:23
+#: src/app/containers/DomainsContainer.js:27
+#: src/app/containers/MembersContainer.js:23
+#: src/app/containers/OrganizationContainer.js:27
+msgctxt "Title"
+msgid "Related settings"
+msgstr "Kapcsolódó beállítások"
+
+#: node_modules/react-components/components/dropdown/DropdownActions.js:48
+msgctxt "Title"
+msgid "Open actions dropdown"
+msgstr "Műveletek legördülő megnyitása"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
+msgctxt "Title"
+msgid "Unsupported browser"
+msgstr "Nem támogatott böngésző"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
+msgctxt "Title"
+msgid "Card verification"
+msgstr "Bankkártya ellenőrzés"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
+msgctxt "Title"
+msgid "Payment verification"
+msgstr "Fizetés ellenőrzése"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:46
+msgctxt "Title"
+msgid "Processing..."
+msgstr "Feldolgozás..."
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:48
+msgctxt "Title"
+msgid "Card verification in progress"
+msgstr "Bankkártya ellenőrzése folyamatban"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:49
+msgctxt "Title"
+msgid "Payment verification in progress"
+msgstr "Fizetés ellenőrzése folyamatban"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:50
+msgctxt "Title"
+msgid "3-D Secure verification failed"
+msgstr "A 3D Secure hitelesítés nem sikerült"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:16
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
+msgctxt "Title"
+msgid "Error"
+msgstr "Hiba"
+
+#: node_modules/react-components/containers/payments/Card.js:80
+msgctxt "Title"
+msgid "ZIP / postal code"
+msgstr "Irányítószám"
+
+#: node_modules/react-components/containers/payments/EditCardModal.js:18
+msgctxt "Title"
+msgid "Edit credit/debit card"
+msgstr "Bankkártya szerkesztése"
+
+#: node_modules/react-components/containers/payments/EditCardModal.js:18
+msgctxt "Title"
+msgid "Add credit/debit card"
+msgstr "Bankkártya hozzáadása"
+
+#: node_modules/react-components/containers/payments/PayPalModal.js:23
+msgctxt "Title"
+msgid "Add PayPal payment method"
+msgstr "PayPal fizetési mód hozzáadása"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
+#: src/app/containers/SubscriptionContainer.js:28
+#: src/app/containers/SubscriptionContainer.js:38
+msgctxt "Title"
+msgid "Subscription"
+msgstr "Előfizetés"
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
+msgctxt "Title"
+msgid "ProtonMail total"
+msgstr "ProtonMail összesen"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:92
+msgctxt "Title"
+msgid "Subscription details"
+msgstr "Előfizetés részletei"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
+msgctxt "Title"
+msgid "Payment details"
+msgstr "Fizetés részletei"
+
+#: node_modules/react-components/containers/payments/subscription/Thanks.js:17
+msgctxt "Title"
+msgid "Thank you!"
+msgstr "Köszönjük!"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:136
+msgctxt "Title"
+msgid "Order summary"
+msgstr "A rendelés összegzése"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:163
+msgctxt "Title"
+msgid "Upgrading account"
+msgstr "Csomag váltása"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:177
+msgctxt "Title"
+msgid "VPN protection"
+msgstr "VPN védelem"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:190
+msgctxt "Title"
+msgid "Customization"
+msgstr "Testreszabás"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:36
+msgctxt "Title"
+msgid "1 month deal"
+msgstr "1 hónapos ajánlat"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:37
+msgctxt "Title"
+msgid "1 year deal"
+msgstr "1 éves ajánlat"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:38
+msgctxt "Title"
+msgid "2 year deal"
+msgstr "2 éves ajánlat"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:43
+#, javascript-format
+msgctxt "Title"
+msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
+msgstr "Havonta ${ amount } terhelve ${ NOTICES[notice] }"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
+#, javascript-format
+msgctxt "Title"
+msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
+msgstr "Évente ${ amount } terhelve ${ NOTICES[notice] }"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
+msgctxt "Title"
+msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
+msgstr "Kétévente ${ amount } terhelve ${ NOTICES[notice] }"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
+#, javascript-format
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
+msgstr "${ NOTICES[notice] } Egy évet követően megújul a következő kedvezményes éves díjjal ${ amount } (20% kedvezmény)."
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
+#, javascript-format
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
+msgstr "${ NOTICES[notice] } Két évente megújul a következő kedvezményes kétéves díjjal ${ amount } (33% kedvezmény)."
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
+msgstr "${ NOTICES[notice] } Két évente megújul a következő kedvezményes kétéves csomagdíjjal ${ amount } (47% kedvezmény)."
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
+msgctxt "Title"
+msgid "Black Friday sale"
+msgstr "Black Friday ajánlat"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:164
+msgctxt "Title"
+msgid "Most popular"
+msgstr "Legnépszerűbb"
+
+#: node_modules/react-components/containers/payments/DowngradeModal.js:7
+msgctxt "Title"
+msgid "Confirm downgrade"
+msgstr "Lemondás megerősítése"
+
+#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:9
+msgctxt "Title"
+msgid "Confirm loss of Proton bonuses"
+msgstr "Proton-bónuszok elvesztésének megerősítése"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:34
+msgctxt "Title"
+msgid "My subscription"
+msgstr "Előfizetéseim"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:106
+#: node_modules/react-components/containers/payments/PlansSection.js:115
+#: node_modules/react-components/containers/payments/PlansSection.js:123
+#: src/app/containers/SubscriptionContainer.js:34
+msgctxt "Title"
+msgid "Plans"
+msgstr "Csomagok"
+
+#: node_modules/react-components/containers/payments/DonateModal.js:42
+msgctxt "Title"
+msgid "Make a donation"
+msgstr "Adományozás"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
+msgctxt "Title"
+msgid "Gift code"
+msgstr "Ajándék kód"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:68
+msgctxt "Title"
+msgid "Add credits"
+msgstr "Kredit hozzáadása"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:63
+#: node_modules/react-components/containers/payments/BillingSection.js:96
+#: node_modules/react-components/containers/payments/BillingSection.js:105
+#: node_modules/react-components/containers/payments/BillingSection.js:121
+#: src/app/containers/SubscriptionContainer.js:43
+msgctxt "Title"
+msgid "Billing details"
+msgstr "Számlázási adatok"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:35
+msgctxt "Title"
+msgid "Decrypt key"
+msgstr "Kulcs visszafejtése"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:368
+msgctxt "Title"
+msgid "Re-activate keys"
+msgstr "Kulcsok újraaktiválása"
+
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:122
+msgctxt "Title"
+msgid "Create key"
+msgstr "Kulcs létrehozása"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:20
+msgctxt "Title"
+msgid "Export public key"
+msgstr "Nyilvános kulcs exportálása"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:38
+msgctxt "Title"
+msgid "Export private key"
+msgstr "Privát kulcs exportálása"
+
+#: node_modules/react-components/containers/keys/UserKeysSection.js:18
+#: src/app/containers/KeysContainer.js:19
+msgctxt "Title"
+msgid "Contact encryption keys"
+msgstr "Partner titkosítási kulcsai"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:19
+msgctxt "Title"
+msgid "Success"
+msgstr "Sikeres"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:230
+msgctxt "Title"
+msgid "Import key"
+msgstr "Kulcs importálása"
+
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:113
+msgctxt "Title"
+msgid "Delete key"
+msgstr "Kulcs törlése"
+
+#: node_modules/react-components/containers/keys/AddressKeysSection.js:71
+#: src/app/containers/KeysContainer.js:15
+msgctxt "Title"
+msgid "Email encryption keys"
+msgstr "E-mail titkosítási kulcsai"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:32
+msgctxt "Title"
+msgid "Create auto-reply"
+msgstr "Új automatikus válasz"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
+#: src/app/containers/AutoReplyContainer.js:13
+#: src/app/containers/AutoReplyContainer.js:19
+msgctxt "Title"
+msgid "Auto-reply"
+msgstr "Automatikus válasz"
+
+#: node_modules/react-components/containers/organization/OrganizationNameModal.js:22
+msgctxt "Title"
+msgid "Change organization name"
+msgstr "Szervezet nevének megváltoztatása"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:63
+msgctxt "Title"
+msgid "Name your organization"
+msgstr "Szervezet nevének megadása"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:84
+msgctxt "Title"
+msgid "Set organization keys"
+msgstr "Szervezeti kulcsok beállítása"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:100
+msgctxt "Title"
+msgid "Set organization password"
+msgstr "Szervezeti jelszó beállítása"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:170
+msgctxt "Title"
+msgid "Allocate storage"
+msgstr "Tárhely lefoglalása"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:203
+msgctxt "Title"
+msgid "Allocate VPN connections"
+msgstr "VPN kapcsolatok lefoglalása"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:31
+msgctxt "Title"
+msgid "Multi-user support"
+msgstr "Többfelhasználós mód"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:42
+#: src/app/containers/OrganizationContainer.js:13
+msgctxt "Title"
+msgid "Organization"
+msgstr "Szervezet"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:39
+msgctxt "Title"
+msgid "Activate organization key"
+msgstr "Szervezeti kulcs aktiválása"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:53
+msgctxt "Title"
+msgid "Restore administrator privileges"
+msgstr "Adminisztrátori jogok visszaállítása"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:56
+msgctxt "Title"
+msgid "Change organization password"
+msgstr "Szervezeti jelszó megváltoztatása"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:163
+msgctxt "Title"
+msgid "Change organization keys"
+msgstr "Szervezeti kulcsok megváltoztatása"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
+#: src/app/containers/OrganizationContainer.js:23
+msgctxt "Title"
+msgid "Password & key"
+msgstr "Jelszó és kulcs"
+
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
+msgctxt "Title"
+msgid "Generate missing keys"
+msgstr "Hiányzó kulcsok generálása"
+
+#: node_modules/react-components/containers/addresses/PmMeSection.js:9
+#: src/app/containers/IdentityContainer.js:22
+msgctxt "Title"
+msgid "Short domain (@pm.me)"
+msgstr "Rövid domain (@pm.me)"
+
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:49
+msgctxt "Title"
+msgid "Edit address"
+msgstr "Cím szerkesztése"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:26
+#: src/app/containers/IdentityContainer.js:18
+msgctxt "Title"
+msgid "Display name & signature"
+msgstr "Megjelenítendő név és aláírás"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:79
+msgctxt "Title"
+msgid "Create address"
+msgstr "Cím hozzáadása"
+
+#: node_modules/react-components/containers/addresses/AddressesSection.js:20
+#: src/app/containers/AddressesContainer.js:10
+#: src/app/containers/AddressesContainer.js:15
+msgctxt "Title"
+msgid "Addresses"
+msgstr "Címek"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
+msgctxt "Title"
+msgid "Desktop notification"
+msgstr "Asztali értesítések"
+
+#: node_modules/react-components/containers/notification/EmailModal.js:33
+msgctxt "Title"
+msgid "Confirm address"
+msgstr "Cím megerősítése"
+
+#: node_modules/react-components/containers/notification/EmailModal.js:70
+msgctxt "Title"
+msgid "Update recovery/notification email"
+msgstr "Helyreállítási-/értesítési e-mail frissítése"
+
+#: node_modules/react-components/containers/notification/EmailSection.js:62
+msgctxt "Title"
+msgid "Recovery & notification"
+msgstr "Helyreállítás és értesítés"
+
+#: node_modules/react-components/containers/domains/CatchAllSection.js:8
+msgctxt "Title"
+msgid "Catch all "
+msgstr "Gyűjtő e-mail "
+
+#: node_modules/react-components/containers/domains/DomainModal.js:159
+msgctxt "Title"
+msgid "Edit domain"
+msgstr "Domain szerkesztése"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:159
+msgctxt "Title"
+msgid "Add domain"
+msgstr "Domain hozzáadása"
+
+#: node_modules/react-components/containers/domains/CatchAllModal.js:13
+msgctxt "Title"
+msgid "Catch all address"
+msgstr "Gyűjtő e-mail cím"
+
+#: node_modules/react-components/containers/domains/DomainActions.js:43
+msgctxt "Title"
+msgid "Delete domain"
+msgstr "Domain név törlése"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:46
+#: src/app/containers/DomainsContainer.js:13
+#: src/app/containers/DomainsContainer.js:19
+msgctxt "Title"
+msgid "Custom domains"
+msgstr "Egyedi domain nevek"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
+#: src/app/containers/VPNContainer.js:19
+msgctxt "Title"
+msgid "ProtonVPN clients"
+msgstr "ProtonVPN kliensek"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
+#: src/app/containers/VPNContainer.js:23
+msgctxt "Title"
+msgid "ProtonVPN credentials"
+msgstr "ProtonVPN bejelentkezési adatok"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
+#: src/app/containers/VPNContainer.js:31
+msgctxt "Title"
+msgid "ProtonVPN resources"
+msgstr "ProtonVPN információk"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:22
+msgctxt "Title"
+msgid "Edit OpenVPN / IKEv2 credentials"
+msgstr "Az OpenVPN / IKEv2 hitelesítőadatok módosítása"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
+#: src/app/containers/VPNContainer.js:27
+msgctxt "Title"
+msgid "OpenVPN / IKEv2 username"
+msgstr "OpenVPN / IKEv2 felhasználónév"
+
+#: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:77
+msgctxt "Title"
+msgid "Storage"
+msgstr "Tárhely"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:123
+#: node_modules/react-components/containers/account/PasswordsSection.js:38
+msgctxt "Title"
+msgid "Change login password"
+msgstr "Belépési jelszó megváltoztatása"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:151
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:185
+msgctxt "Title"
+msgid "Switch to two-password mode"
+msgstr "Kétjelszavas módra váltás"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:276
+msgctxt "Title"
+msgid "Switch to one-password mode"
+msgstr "Egyjelszavas módra váltás"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:294
+#: node_modules/react-components/containers/account/PasswordsSection.js:38
+msgctxt "Title"
+msgid "Change password"
+msgstr "Jelszó módosítása"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:306
+msgctxt "Title"
+msgid "Change mailbox password"
+msgstr "Postaládajelszó megváltoztatása"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:23
+msgctxt "Title"
+msgid "Passwords"
+msgstr "Jelszavak"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:37
+msgctxt "Title"
+msgid "Password"
+msgstr "Jelszó"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:37
+msgctxt "Title"
+msgid "Login password"
+msgstr "Belépési jelszó"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
+#: node_modules/react-components/containers/account/DeleteSection.js:33
+msgctxt "Title"
+msgid "Delete account"
+msgstr "Fiók törlése"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:16
+msgctxt "Title"
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: node_modules/react-components/containers/account/NewsSection.js:17
+#: node_modules/react-components/containers/account/NewsSection.js:25
+msgctxt "Title"
+msgid "Email subscriptions"
+msgstr "E-mail feliratkozás"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:272
+msgctxt "Title"
+msgid "Set up two-factor authentication"
+msgstr "Kétlépéses hitelesítés beállítása"
+
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:82
+msgctxt "Title"
+msgid "Disable two-factor authentication"
+msgstr "Kétlépéses hitelesítés kikapcsolása"
+
+#: node_modules/react-components/containers/account/TwoFactorSection.js:29
+msgctxt "Title"
+msgid "Two-factor authentication"
+msgstr "Kétlépéses hitelesítés"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:33
+#: node_modules/react-components/containers/password/AskAuthModal.js:17
+msgctxt "Title"
+msgid "Sign in again to continue"
+msgstr "Lépjen be újból a folytatáshoz"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
+#: src/app/containers/SubscriptionContainer.js:48
+msgctxt "Title"
+msgid "Payment methods"
+msgstr "Fizetési módok"
+
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:34
+#: src/app/containers/SecurityContainer.js:23
+msgctxt "Title"
+msgid "Address verification"
+msgstr "Cím ellenőrzése"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:45
+msgctxt "Title"
+msgid "Automatically sign outgoing messages?"
+msgstr "Automatikusan aláírja a kimenő üzeneteket?"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:76
+msgctxt "Title"
+msgid "External PGP settings (optional)"
+msgstr "Külső PGP-beállítások (elhagyható)"
+
+#: node_modules/react-components/containers/labels/ActionsLabel.js:26
+msgctxt "Title"
+msgid "Delete label"
+msgstr "Címke törlése"
+
+#: node_modules/react-components/containers/labels/ActionsLabel.js:31
+msgctxt "Title"
+msgid "Delete folder"
+msgstr "Mappa törlése"
+
+#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:18
+#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:13
+msgctxt "Title"
+msgid "blacklist"
+msgstr "tiltólista"
+
+#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:19
+#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:14
+msgctxt "Title"
+msgid "whitelist"
+msgstr "engedélyezett lista"
+
+#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:15
+msgctxt "Title"
+msgid "Whitelist"
+msgstr "Engedélyezett Lista"
+
+#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:16
+msgctxt "Title"
+msgid "BlackList"
+msgstr "Tiltólista"
+
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:16
+msgctxt "Title"
+msgid "Add to Blacklist"
+msgstr "Hozzáadás a tiltólistához"
+
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:17
+msgctxt "Title"
+msgid "Add to Whitelist"
+msgstr "Hozzáadás az engedélyezett listához"
+
+#: node_modules/react-components/containers/api/HumanVerificationModal.js:9
+msgctxt "Title"
+msgid "Human verification"
+msgstr "Emberi ellenőrzés"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:17
+#: src/app/containers/GeneralContainer.js:30
+msgctxt "Title"
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: node_modules/react-components/containers/members/EditMemberModal.js:56
+msgctxt "Title"
+msgid "Edit user"
+msgstr "Felhasználó szerkesztése"
+
+#: node_modules/react-components/containers/members/MemberModal.js:135
+msgctxt "Title"
+msgid "Add user"
+msgstr "Új felhasználó"
+
+#: node_modules/react-components/containers/members/MembersSection.js:118
+#: src/app/containers/MembersContainer.js:13
+#: src/app/containers/MembersContainer.js:19
+msgctxt "Title"
+msgid "Users"
+msgstr "Felhasználók"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:19
+msgctxt "Title"
+msgid "Custom Theme"
+msgstr "Egyéni téma"
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:59
+msgctxt "Title"
+msgid "Change theme"
+msgstr "Téma megváltoztatása"
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:79
+#: src/app/containers/AppearanceContainer.js:23
+msgctxt "Title"
+msgid "Themes"
+msgstr "Témák"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:82
+msgctxt "Title"
+msgid "Clear"
+msgstr "Ürítés"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:109
+#: src/app/containers/SecurityContainer.js:19
+msgctxt "Title"
+msgid "Authentication logs"
+msgstr "Bejelentkezési napló"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
+#: src/app/containers/AppearanceContainer.js:19
+msgctxt "Title"
+msgid "Toolbars"
+msgstr "Eszköztárak"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:47
+#: src/app/containers/AppearanceContainer.js:15
+msgctxt "Title"
+msgid "Layouts"
+msgstr "Elrendezések"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/general/ShortcutsSection.js:26
+msgctxt "Title"
+msgid "Keyboard shortcuts"
+msgstr "Gyorsbillentyűk"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:12
+#: src/app/containers/GeneralContainer.js:17
+msgctxt "Title"
+msgid "General"
+msgstr "Általános"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:15
+msgctxt "Title"
+msgid "Application"
+msgstr "Alkalmazás"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:35
+msgctxt "Title"
+msgid "Composer"
+msgstr "Szerkesztő"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:66
+msgctxt "Title"
+msgid "Mail"
+msgstr "Lelevelezés"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:69
+msgctxt "Title"
+msgid "Jumping"
+msgstr "Ugrás"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:95
+msgctxt "Title"
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:126
+msgctxt "Title"
+msgid "Threadlist"
+msgstr "Témalista"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:161
+msgctxt "Title"
+msgid "Actions"
+msgstr "Műveletek"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:177
+msgctxt "Title"
+msgid "Contacts"
+msgstr "Névjegyek"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:180
+msgctxt "Title"
+msgid "Contact list"
+msgstr "Névjegylista"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:195
+msgctxt "Title"
+msgid "Contact details"
+msgstr "Névjegy részletek"
+
+#: node_modules/react-components/containers/general/ShortcutsSection.js:24
+#: src/app/containers/GeneralContainer.js:38
+msgctxt "Title"
+msgid "Shortcuts"
+msgstr "Gyorsbillentyűk"
+
+#: node_modules/react-components/containers/general/LanguageSection.js:54
+#: src/app/containers/GeneralContainer.js:22
+msgctxt "Title"
+msgid "Language"
+msgstr "Nyelv"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:43
+msgctxt "Title"
+msgid "Need help?"
+msgstr "Segíthetünk?"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:48
+msgctxt "Title"
+msgid "Upgrade to a paid plan"
+msgstr "Fizetős csomagra váltás"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:55
+msgctxt "Title"
+msgid "Thanks for your support"
+msgstr "Köszönjük a támogatást"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:63
+msgctxt "Title"
+msgid "Get 20% discount"
+msgstr "Szerezzen 20%-os kedvezményt"
+
+#: node_modules/react-components/containers/support/BugModal.js:136
+msgctxt "Title"
+msgid "Report bug"
+msgstr "Hibajelentés"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:51
+msgctxt "Title"
+msgid "Pay invoice"
+msgstr "Számla kifizetése"
+
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
+msgctxt "Title"
+msgid "Preview invoice"
+msgstr "Számla előnézete"
+
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
+msgctxt "Title"
+msgid "Add invoice details"
+msgstr "Számlázási adatok hozzáadása"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:59
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:69
+#: src/app/containers/SubscriptionContainer.js:52
+msgctxt "Title"
+msgid "Invoices"
+msgstr "Számlák"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:116
+msgctxt "Title"
+msgid "Amount"
+msgstr "Összeg"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:117
+msgctxt "Title"
+msgid "Type"
+msgstr "Típus"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:118
+msgctxt "Title"
+msgid "Status"
+msgstr "Állapot"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:119
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "Date"
+msgstr "Dátum"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:120
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "Action"
+msgstr "Művelet"
+
+#: node_modules/react-components/containers/login/AbuseModal.js:6
+msgctxt "Title"
+msgid "Account disabled"
+msgstr "Fiók letiltva"
+
+#: node_modules/react-components/containers/search/SearchSection.js:24
+#: src/app/containers/GeneralContainer.js:34
+msgctxt "Title"
+msgid "Search"
+msgstr "Keresés"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:80
+msgctxt "Title"
+msgid "Sessions"
+msgstr "Munkamenetek"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "App"
+msgstr "Alkalmazás"
+
+#: src/app/components/layout/PrivateHeader.js:38
+msgctxt "Title"
+msgid "Mailbox"
+msgstr "Postafiók"
+
+#: src/app/components/layout/PrivateHeader.js:43
+#: src/app/components/layout/PrivateLayout.js:72
+msgctxt "Title"
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/app/containers/OrganizationContainer.js:19
+msgctxt "Title"
+msgid "Name"
+msgstr "Név"
+
+#: src/app/containers/DomainsContainer.js:23
+msgctxt "Title"
+msgid "Catch-all"
+msgstr "Gyűjtő e-mail"
+
+#: src/app/containers/IdentityContainer.js:13
+msgctxt "Title"
+msgid "Identity"
+msgstr "Személyazonosság"
+
+#: src/app/containers/GeneralContainer.js:26
+msgctxt "Title"
+msgid "Desktop notifications"
+msgstr "Asztali értesítések"
+
+#: src/app/containers/AppearanceContainer.js:10
+msgctxt "Title"
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: src/app/containers/FiltersContainer.js:10
+msgctxt "Title"
+msgid "Filters"
+msgstr "Szűrők"
+
+#: src/app/containers/FiltersContainer.js:15
+msgctxt "Title"
+msgid "Custom filters"
+msgstr "Saját szűrők"
+
+#: src/app/containers/FiltersContainer.js:19
+msgctxt "Title"
+msgid "Spam filters"
+msgstr "Levélszemétszűrők"
+
+#: src/app/containers/FoldersLabelsContainer.js:10
+msgctxt "Title"
+msgid "Folders/labels"
+msgstr "Mappák/Címkék"
+
+#: src/app/containers/FoldersLabelsContainer.js:15
+msgctxt "Title"
+msgid "Folders and labels"
+msgstr "Mappák és Címkék"
+
+#: src/app/containers/KeysContainer.js:10
+msgctxt "Title"
+msgid "Keys"
+msgstr "Kulcsok"
+
+#: src/app/containers/SecurityContainer.js:10
+msgctxt "Title"
+msgid "Security"
+msgstr "Biztonság"
+
+#: src/app/containers/SecurityContainer.js:15
+msgctxt "Title"
+msgid "Session management"
+msgstr "Munkamenet-kezelés"
+
+#: src/app/containers/SecurityContainer.js:27
+msgctxt "Title"
+msgid "External PGP settings"
+msgstr "Külső PGP beállítások"
+
+#: src/app/containers/AppsContainer.js:13
+msgctxt "Title"
+msgid "Apps"
+msgstr "Alkalmazások"
+
+#: src/app/containers/AppsContainer.js:18
+msgctxt "Title"
+msgid "ProtonMail Bridge"
+msgstr "ProtonMail Bridge"
+
+#: src/app/containers/AppsContainer.js:23
+msgctxt "Title"
+msgid "ProtonMail Beta"
+msgstr "ProtonMail béta"
+
+#: src/app/containers/AppsContainer.js:27
+msgctxt "Title"
+msgid "ProtonMail apps"
+msgstr "ProtonMail alkalmazások"
+
+#: src/app/containers/VPNContainer.js:14
+msgctxt "Title"
+msgid "ProtonVPN"
+msgstr "ProtonVPN"
+
+#: src/app/containers/OverviewContainer.js:23
+msgctxt "Title"
+msgid "Overview - ProtonMail"
+msgstr "Áttekintés - ProtonMail"
+
+#: node_modules/react-components/components/link/LearnMore.js:7
+msgctxt "Link"
+msgid "Learn more"
+msgstr "Tudjon meg többet"
+
+#: node_modules/react-components/containers/payments/PayPal.js:125
+msgctxt "Link"
+msgid "click here"
+msgstr "kattintson ide"
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:26
+#: node_modules/react-components/containers/members/MemberAddresses.js:25
+#: node_modules/react-components/containers/overview/SummarySection.js:22
+#: node_modules/react-components/containers/overview/SummarySection.js:31
+msgctxt "Link"
+msgid "Manage"
+msgstr "Kezelés"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:11
+msgctxt "Link"
+msgid "ProtonVPN native clients"
+msgstr "ProtonVPN kliensek"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:12
+msgctxt "Link"
+msgid "Download page"
+msgstr "Oldal letöltése"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:18
+msgctxt "Link"
+msgid "Homepage"
+msgstr "Kezdőlap"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:24
+msgctxt "Link"
+msgid "Support page"
+msgstr "Támogatói oldal"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:36
+msgctxt "Link"
+msgid "Not activated"
+msgstr "Nem aktivált"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:65
+#: node_modules/react-components/containers/overview/SummarySection.js:74
+msgctxt "Link"
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: node_modules/react-components/containers/support/BugModal.js:89
+msgctxt "Link"
+msgid "clearing your browser cache"
+msgstr "böngésző gyorsítótárának ürítése"
+
+#: node_modules/react-components/containers/heading/UpgradeButton.js:13
+#: node_modules/react-components/containers/heading/UpgradeButton.js:21
+#: src/app/containers/AddressesContainer.js:60
+#: src/app/containers/AddressesContainer.js:70
+#: src/app/containers/AddressesContainer.js:77
+#: src/app/containers/DomainsContainer.js:59
+msgctxt "Link"
+msgid "Upgrade"
+msgstr "Váltás nagyobb csomagra"
+
+#: src/app/containers/AddressesContainer.js:34
+#: src/app/containers/AddressesContainer.js:53
+#: src/app/containers/OrganizationContainer.js:46
+msgctxt "Link"
+msgid "Domain settings"
+msgstr "Domain beállítások"
+
+#: src/app/containers/AddressesContainer.js:41
+#: src/app/containers/DomainsContainer.js:41
+#: src/app/containers/OrganizationContainer.js:53
+msgctxt "Link"
+msgid "User settings"
+msgstr "Felhasználói beállítások"
+
+#: src/app/containers/DomainsContainer.js:48
+#: src/app/containers/DomainsContainer.js:66
+#: src/app/containers/MembersContainer.js:41
+msgctxt "Link"
+msgid "Address settings"
+msgstr "Cím beállítások"
+
+#: src/app/containers/AutoReplyContainer.js:41
+msgctxt "Link"
+msgid "Filter Settings"
+msgstr "Szűrő beállítások"
+
+#: node_modules/react-components/components/toggle/Toggle.js:10
+msgctxt "Toggle button"
+msgid "On"
+msgstr "Be"
+
+#: node_modules/react-components/components/toggle/Toggle.js:11
+msgctxt "Toggle button"
+msgid "Off"
+msgstr "Ki"
+
+#: node_modules/react-components/components/countdown/Countdown.js:27
+msgctxt "Countdown status"
+msgid "Expired"
+msgstr "Lejárt"
+
+#: node_modules/react-components/components/countdown/Countdown.js:39
+#, javascript-format
+msgctxt "Countdown unit"
+msgid "${ days } day"
+msgid_plural "${ days } days"
+msgstr[0] "${ days } nap"
+msgstr[1] "${ days } nap"
+
+#: node_modules/react-components/components/countdown/Countdown.js:40
+msgctxt "Countdown unit"
+msgid "${ hours } hour"
+msgid_plural "${ hours } hours"
+msgstr[0] "${ hours } óra"
+msgstr[1] "${ hours } óra"
+
+#: node_modules/react-components/components/countdown/Countdown.js:41
+#, javascript-format
+msgctxt "Countdown unit"
+msgid "${ minutes } minute"
+msgid_plural "${ minutes } minutes"
+msgstr[0] "${ minutes } perc"
+msgstr[1] "${ minutes } perc"
+
+#: node_modules/react-components/components/countdown/Countdown.js:42
+msgctxt "Countdown unit"
+msgid "${ seconds } second"
+msgid_plural "${ seconds } seconds"
+msgstr[0] "${ seconds } másodperc"
+msgstr[1] "${ seconds } másodperc"
 
 #: node_modules/react-components/containers/payments/CardNumberInput.js:48
 msgctxt "Placeholder"
@@ -3461,7 +4399,7 @@ msgctxt "Success"
 msgid "Credits added"
 msgstr "Kredit hozzáadva"
 
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:28
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:27
 msgctxt "Success"
 msgid "Auto-reply updated"
 msgstr "Automatikus válasz frissítve"
@@ -3539,12 +4477,12 @@ msgctxt "Success"
 msgid "User created"
 msgstr "Felhasználó létrehozva"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:41
+#: node_modules/react-components/containers/themes/ThemesSection.js:46
 msgctxt "Success"
 msgid "Custom theme saved"
 msgstr "Egyéni téma mentve"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:69
+#: node_modules/react-components/containers/themes/ThemesSection.js:74
 msgctxt "Success"
 msgid "Theme saved"
 msgstr "Téma mentve"
@@ -3588,794 +4526,6 @@ msgstr "Munkafolyamatok visszavonva"
 msgctxt "x of y"
 msgid "of"
 msgstr "/"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
-msgctxt "Label"
-msgid "Users"
-msgstr "Felhasználók"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
-msgctxt "Label"
-msgid "Email addresses"
-msgstr "E-mail cím"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
-msgctxt "Label"
-msgid "Storage capacity"
-msgstr "Tárhely"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
-msgctxt "Label"
-msgid "Custom domains"
-msgstr "Saját domain nevek"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:85
-#: node_modules/react-components/containers/members/MemberModal.js:220
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
-msgctxt "Label"
-msgid "VPN connections"
-msgstr "VPN kapcsolatok"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/BillingSection.js:279
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
-msgctxt "Label"
-msgid "Sub-total"
-msgstr "Részösszeg"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:107
-msgctxt "Label"
-msgid "Cycle discount +"
-msgstr "Ciklus kedvezmény +"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
-msgctxt "Label"
-msgid "Coupon"
-msgstr "Kupon"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
-msgctxt "Label"
-msgid "Cycle discount"
-msgstr "Ciklus kedvezmény"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/BillingSection.js:299
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:28
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:144
-msgctxt "Label"
-msgid "Total"
-msgstr "Összesen"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:67
-#: node_modules/react-components/containers/payments/BillingSection.js:332
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:39
-msgctxt "Label"
-msgid "Credits"
-msgstr "Kredit"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:50
-msgctxt "Label"
-msgid "Proration"
-msgstr "Arányosítás"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:68
-msgctxt "Label"
-msgid "Gift"
-msgstr "Ajándék"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:75
-#: node_modules/react-components/containers/payments/BillingSection.js:325
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:77
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:211
-msgctxt "Label"
-msgid "Amount due"
-msgstr "Esedékes összeg"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:57
-#: node_modules/react-components/containers/payments/CreditsModal.js:81
-#: node_modules/react-components/containers/payments/DonateModal.js:48
-msgctxt "Label"
-msgid "Amount"
-msgstr "Összeg"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:55
-msgctxt "Label"
-msgid "Enter gift code"
-msgstr "Adja meg az ajándék kuponkódot"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:76
-#: node_modules/react-components/containers/payments/BillingSection.js:341
-msgctxt "Label"
-msgid "Gift code"
-msgstr "Ajándékutalvány"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:128
-msgctxt "Label"
-msgid "ProtonMail plan"
-msgstr "ProtonMail csomag"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:141
-msgctxt "Label"
-msgid "Extra users"
-msgstr "További felhasználók"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:161
-msgctxt "Label"
-msgid "Extra email addresses"
-msgstr "További e-mail címek"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:181
-msgctxt "Label"
-msgid "Extra storage"
-msgstr "További tárhely"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:194
-msgctxt "Label"
-msgid "Bonus storage"
-msgstr "Bónusz tárhely"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:203
-msgctxt "Label"
-msgid "Extra domains"
-msgstr "További domain nevek"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:227
-msgctxt "Label"
-msgid "ProtonVPN plan"
-msgstr "ProtonVPN csomag"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:240
-msgctxt "Label"
-msgid "Extra connections"
-msgstr "További kapcsolatok"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:260
-msgctxt "Label"
-msgid "Bonus connections"
-msgstr "Bónusz kapcsolatok"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:286
-msgctxt "Label"
-msgid "Discount"
-msgstr "Kedvezmény"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:308
-msgctxt "Label"
-msgid "Billing cycle"
-msgstr "Számlázási ciklus"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:318
-msgctxt "Label"
-msgid "Renewal date"
-msgstr "Meghosszabbítás időpontja"
-
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
-msgctxt "Label"
-msgid "Amount BTC"
-msgstr "BTC összege"
-
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
-msgctxt "Label"
-msgid "BTC address"
-msgstr "BTC cím"
-
-#: node_modules/react-components/containers/payments/Payment.js:74
-msgctxt "Label"
-msgid "Payment method"
-msgstr "Fizetési mód"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:42
-#, javascript-format
-msgctxt "Label"
-msgid "Enter the password for key with fingerprint: ${ fingerprintCode }"
-msgstr "Írja be a következő ujjlenyomattal rendelkező kulcshoz tartozó jelszót: ${ fingerprintCode }"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:51
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:44
-msgctxt "Label"
-msgid "Enter password"
-msgstr "Jelszó megadása"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:309
-msgctxt "Label"
-msgid "Enter your previous password from before your account was reset:"
-msgstr "Adja meg a fiók visszaállítása előtti jelszavát:"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
-msgctxt "Label"
-msgid "Please select files to upload"
-msgstr "Válassza ki a fájlokat a feltöltéshez"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:16
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:79
-msgctxt "Label"
-msgid "Timezone"
-msgstr "Időzóna"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:14
-msgctxt "Label"
-msgid "Days of the week"
-msgstr "A hét napjai"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:76
-msgctxt "Label"
-msgid "Duration"
-msgstr "Időtartam"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:17
-msgctxt "Label"
-msgid "Start date"
-msgstr "Kezdő dátum"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:20
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:25
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:24
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:24
-msgctxt "Label"
-msgid "Start time"
-msgstr "Kezdés"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:30
-msgctxt "Label"
-msgid "End date"
-msgstr "Befejező dátum"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:26
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:38
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:36
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:36
-msgctxt "Label"
-msgid "End time"
-msgstr "Befejezés"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:17
-msgctxt "Label"
-msgid "Start day of month"
-msgstr "A hónap kezdőnapja"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:29
-msgctxt "Label"
-msgid "End day of month"
-msgstr "A hónap befejező napja"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:19
-msgctxt "Label"
-msgid "Start weekday"
-msgstr "A hét kezdőnapja"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:31
-msgctxt "Label"
-msgid "End weekday"
-msgstr "A hét befejező napja"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:77
-msgctxt "Label"
-msgid "Start"
-msgstr "Kezdet"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:78
-msgctxt "Label"
-msgid "End"
-msgstr "Befejezés"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:80
-msgctxt "Label"
-msgid "Message"
-msgstr "Üzenet"
-
-#: node_modules/react-components/containers/autoReply/AutoReplySection.js:50
-msgctxt "Label"
-msgid "Auto-reply"
-msgstr "Automatikus válasz"
-
-#: node_modules/react-components/containers/organization/OrganizationNameModal.js:23
-#: node_modules/react-components/containers/organization/OrganizationSection.js:45
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:66
-msgctxt "Label"
-msgid "Organization name"
-msgstr "Szervezet neve"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:102
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:113
-msgctxt "Label"
-msgid "Organization password"
-msgstr "Szervezeti jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:280
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:298
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:125
-msgctxt "Label"
-msgid "Confirm password"
-msgstr "Jelszó megerősítése"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:208
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
-msgctxt "Label"
-msgid "Account storage"
-msgstr "Fiók tárhely"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:209
-msgctxt "Label"
-msgid "VPN Connections"
-msgstr "VPN kapcsolatok"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:118
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:69
-msgctxt "Label"
-msgid "New organization password"
-msgstr "Új szervezeti jelszó"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:132
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:83
-msgctxt "Label"
-msgid "Confirm organization password"
-msgstr "Szervezeti jelszó újra"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:96
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:55
-#: node_modules/react-components/containers/members/MemberModal.js:188
-msgctxt "Label"
-msgid "Address"
-msgstr "Cím"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:114
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
-#: node_modules/react-components/containers/addresses/IdentitySection.js:77
-msgctxt "Label"
-msgid "Display name"
-msgstr "Megjelenített név"
-
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:69
-#: node_modules/react-components/containers/addresses/IdentitySection.js:90
-msgctxt "Label"
-msgid "Signature"
-msgstr "Aláírás"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:70
-msgctxt "Label"
-msgid "Select an address"
-msgstr "Válasszon ki egy címet"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:106
-msgctxt "Label"
-msgid "ProtonMail signature"
-msgstr "ProtonMail aláírás"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:92
-msgctxt "Label"
-msgid "User"
-msgstr "Felhasználó"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
-msgctxt "Label"
-msgid "Desktop notification"
-msgstr "Asztali értesítések"
-
-#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:17
-#: node_modules/react-components/containers/notification/EmailModal.js:74
-msgctxt "Label"
-msgid "Email"
-msgstr "E-mail"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:125
-#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
-#: node_modules/react-components/containers/notification/EmailSection.js:66
-#: node_modules/react-components/containers/support/BugModal.js:156
-msgctxt "Label"
-msgid "Email address"
-msgstr "E-mail cím"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:70
-msgctxt "Label"
-msgid "Allow password reset"
-msgstr "Jelszó visszaállítás engedélyezése"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:83
-msgctxt "Label"
-msgid "Daily email notifications"
-msgstr "Napi e-mail értesítések"
-
-#: node_modules/react-components/containers/domains/DomainSection.js:22
-msgctxt "Label"
-msgid "Enter your domain"
-msgstr "Adja meg a domain címét"
-
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
-#: node_modules/react-components/containers/domains/SPFSection.js:14
-msgctxt "Label"
-msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
-msgstr "Kérjük, adja hozzá a következő TXT rekordot. Vegye figyelembe, hogy a DNS rekordok frissülése akár órákig is eltarthat."
-
-#: node_modules/react-components/containers/domains/MXSection.js:17
-msgctxt "Label"
-msgid "Please add the following MX record. Note, DNS records can take several hours to update."
-msgstr "Kérjük, adja hozzá a következő MX rekordot. Vegye figyelembe, hogy a DNS rekordok frissülése akár órákig is eltarthat."
-
-#: node_modules/react-components/containers/domains/DMARCSection.js:14
-msgctxt "Label"
-msgid "Here is a basic DMARC record that does nothing except email you reports."
-msgstr "Ez egy alapszintű DMARC rekord, ami nem csinál mást mint e-mail jelentéseket küld Önnek."
-
-#: node_modules/react-components/containers/support/BugModal.js:144
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
-msgctxt "Label"
-msgid "Proton username"
-msgstr "Proton felhasználónév"
-
-#: node_modules/react-components/containers/login/PasswordForm.js:28
-#: node_modules/react-components/containers/login/UnlockModal.js:41
-#: node_modules/react-components/containers/members/MemberModal.js:167
-#: node_modules/react-components/containers/password/PasswordTotpInputs.js:10
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:26
-msgctxt "Label"
-msgid "Password"
-msgstr "Jelszó"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:10
-msgctxt "Label"
-msgid "Download ProtonVPN"
-msgstr "ProtonVPN letöltése"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:16
-msgctxt "Label"
-msgid "ProtonVPN homepage"
-msgstr "ProtonVPN weboldal"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:22
-msgctxt "Label"
-msgid "Get support for ProtonVPN"
-msgstr "ProtonVPN támogatás"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:38
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:53
-msgctxt "Label"
-msgid "OpenVPN / IKEv2 username"
-msgstr "OpenVPN / IKEv2 felhasználónév"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:49
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:65
-msgctxt "Label"
-msgid "OpenVPN / IKEv2 password"
-msgstr "OpenVPN / IKEv2 jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:125
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:278
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:308
-msgctxt "Label"
-msgid "Old login password"
-msgstr "Korábbi bejelentkezési jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:126
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:160
-msgctxt "Label"
-msgid "New login password"
-msgstr "Új bejelentkezési jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:127
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:161
-msgctxt "Label"
-msgid "Confirm login password"
-msgstr "Bejelentkezési jelszó megerősítése"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:159
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:296
-msgctxt "Label"
-msgid "Old password"
-msgstr "Régi jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:187
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:309
-msgctxt "Label"
-msgid "New mailbox password"
-msgstr "Új e-mail jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:188
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:310
-msgctxt "Label"
-msgid "Confirm mailbox password"
-msgstr "E-mail jelszó megerősítése"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:279
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:297
-msgctxt "Label"
-msgid "New password"
-msgstr "Új jelszó"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:371
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
-#: node_modules/react-components/containers/login/TOTPForm.js:9
-#: node_modules/react-components/containers/password/PasswordTotpInputs.js:26
-msgctxt "Label"
-msgid "Two-factor code"
-msgstr "Kétlépéses kód"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:67
-msgctxt "Label"
-msgid "Two password mode"
-msgstr "Két jelszavas mód"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:86
-#: node_modules/react-components/containers/login/UnlockForm.js:9
-msgctxt "Label"
-msgid "Mailbox password"
-msgstr "E-mail jelszó"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:111
-msgctxt "Label"
-msgid "Feedback"
-msgstr "Visszajelzés"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
-msgctxt "Label"
-msgid "Login password"
-msgstr "Bejelentkezési jelszó"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:18
-#: node_modules/react-components/containers/members/EditMemberModal.js:61
-#: node_modules/react-components/containers/members/MemberModal.js:143
-msgctxt "Label"
-msgid "Name"
-msgstr "Név"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:28
-msgctxt "Label"
-msgid "ProtonMail address"
-msgstr "ProtonMail cím"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:154
-msgctxt "Label"
-msgid "Key"
-msgstr "Kulcs"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:160
-msgctxt "Label"
-msgid "Interval"
-msgstr "Intervallum"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:166
-msgctxt "Label"
-msgid "Digits"
-msgstr "Számjegy"
-
-#: node_modules/react-components/containers/account/TwoFactorSection.js:32
-msgctxt "Label"
-msgid "Two-factor authentication"
-msgstr "Kétlépéses hitelesítés"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:34
-#: node_modules/react-components/containers/password/AskAuthModal.js:18
-msgctxt "Label"
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:35
-#: node_modules/react-components/containers/password/AskAuthModal.js:19
-msgctxt "Label"
-msgid "Submit"
-msgstr "Küldés"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodDetails.js:17
-msgctxt "Label"
-msgid "Cardholder name"
-msgstr "Kártyatulajdonos neve"
-
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
-msgctxt "Label"
-msgid "Pay with cash"
-msgstr "Készpénzes fizetés"
-
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:41
-msgctxt "Label"
-msgid "Prompt to trust keys"
-msgstr "Kérdezzen rá a kulcsok megbízhatóként jelölésére"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:82
-msgctxt "Label"
-msgid "Sign external messages"
-msgstr "Külső üzenetek aláírása"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:100
-msgctxt "Label"
-msgid "Attach public key"
-msgstr "Nyilvános kulcs csatolása"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:118
-msgctxt "Label"
-msgid "Default PGP Scheme"
-msgstr "Alapértelmezett PGP séma"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:123
-#, javascript-format
-msgctxt "Label"
-msgid "Conditions ${ n }"
-msgstr "Feltétel ${ n }"
-
-#: node_modules/react-components/containers/filters/editor/AutoReplyAction.js:27
-msgctxt "Label"
-msgid "Send auto reply"
-msgstr "Automatikus válasz küldése"
-
-#: node_modules/react-components/containers/filters/editor/Operator.js:20
-msgctxt "Label"
-msgid "Logic"
-msgstr "Feltételek"
-
-#: node_modules/react-components/containers/api/HumanVerificationModal.js:22
-msgctxt "Label"
-msgid "Captcha"
-msgstr "CAPTCHA kód"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:20
-msgctxt "Label"
-msgid "Auto-load remote content"
-msgstr "Távoli tartalom automatikus betöltése"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:29
-msgctxt "Label"
-msgid "Auto-load embedded images"
-msgstr "Beágyazott képek automatikus betöltése"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:38
-msgctxt "Label"
-msgid "Sent/Drafts"
-msgstr "Elküldött/Piszkozat"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:46
-msgctxt "Label"
-msgid "Include moved"
-msgstr "Áthelyezettek megjelenítve"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:50
-msgctxt "Label"
-msgid "Request link confirmation"
-msgstr "Link jóváhagyás kérése"
-
-#: node_modules/react-components/containers/members/MemberModal.js:160
-msgctxt "Label"
-msgid "Key strength"
-msgstr "Kulcs erőssége"
-
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:25
-msgctxt "Label"
-msgid "CSS code"
-msgstr "CSS kód"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:40
-msgctxt "Label"
-msgid "Read/unread order"
-msgstr "Olvasott/Olvasatlan sorrendje"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
-msgctxt "Label"
-msgid "Default Composer"
-msgstr "Alapértelmezett szövegszerkesztő"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
-msgctxt "Label"
-msgid "Default Inbox"
-msgstr "Bejövő üzenetek elrendezése"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:129
-msgctxt "Label"
-msgid "Conversations"
-msgstr "Beszélgetések"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
-msgctxt "Label"
-msgid "Use sticky labels"
-msgstr "Ragadós címkék használata"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:162
-msgctxt "Label"
-msgid "Composer mode"
-msgstr "Szerkesztő módja"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:173
-msgctxt "Label"
-msgid "Composer text direction"
-msgstr "Szerkesztő szövegiránya"
-
-#: node_modules/react-components/containers/general/LanguageSection.js:56
-msgctxt "Label"
-msgid "Default language"
-msgstr "Alapértelmezett nyelv"
-
-#: node_modules/react-components/containers/login/PasswordForm.js:10
-#: node_modules/react-components/containers/overview/SummarySection.js:53
-msgctxt "Label"
-msgid "Username"
-msgstr "Felhasználónév"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:60
-msgctxt "Label"
-msgid "Recovery email"
-msgstr "Helyreállító e-mail"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:69
-msgctxt "Label"
-msgid "Two factor authentication"
-msgstr "Kétlépcsős hitelesítés"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:80
-msgctxt "Label"
-msgid "Role"
-msgstr "Szerepkör"
-
-#: node_modules/react-components/containers/support/BugModal.js:168
-msgctxt "Label"
-msgid "Category"
-msgstr "Kategória"
-
-#: node_modules/react-components/containers/support/BugModal.js:180
-msgctxt "Label"
-msgid "What happened?"
-msgstr "Mi történt?"
-
-#: node_modules/react-components/containers/support/BugModal.js:201
-msgctxt "Label"
-msgid "System information"
-msgstr "Rendszerinfromáció"
-
-#: node_modules/react-components/containers/support/BugModal.js:209
-msgctxt "Label"
-msgid "Operating system"
-msgstr "Operációs rendszer"
-
-#: node_modules/react-components/containers/support/BugModal.js:220
-msgctxt "Label"
-msgid "Operating system version"
-msgstr "Az operációs rendszer verziója"
-
-#: node_modules/react-components/containers/support/BugModal.js:231
-msgctxt "Label"
-msgid "Browser"
-msgstr "Böngésző"
-
-#: node_modules/react-components/containers/support/BugModal.js:242
-msgctxt "Label"
-msgid "Browser version"
-msgstr "Böngészőverzió"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:66
-msgctxt "Label"
-msgid "Credits used"
-msgstr "Felhasznált kredit"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
-msgctxt "Label"
-msgid "Customize invoices"
-msgstr "Számlák személyre szabása"
-
-#: node_modules/react-components/containers/search/SearchSection.js:27
-msgctxt "Label"
-msgid "Require exact match"
-msgstr "Csak pontos egyezés"
-
-#: node_modules/react-components/components/button/Copy.js:20
-msgctxt "Label"
-msgid "Copied"
-msgstr "Másolva"
-
-#: node_modules/react-components/components/button/Copy.js:20
-msgctxt "Label"
-msgid "Copy"
-msgstr "Másolás"
-
-#: node_modules/react-components/components/input/PasswordInput.js:21
-msgctxt "Label"
-msgid "Reveal password"
-msgstr "Jelszó felfedése"
-
-#: node_modules/react-components/components/input/PasswordInput.js:21
-msgctxt "Label"
-msgid "Hide password"
-msgstr "Jelszó elrejtése"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:19
 #: node_modules/react-components/containers/overview/SummarySection.js:28
@@ -4865,96 +5015,6 @@ msgctxt "Discount with coupon code"
 msgid "Black Friday 2019 newcomer discount has been applied"
 msgstr "Fekete Péntek 2019 új előfizetői kedvezmény alkalmazva"
 
-#: node_modules/react-components/containers/payments/PayPal.js:125
-msgctxt "Link"
-msgid "click here"
-msgstr "kattintson ide"
-
-#: node_modules/react-components/containers/domains/DomainAddresses.js:26
-#: node_modules/react-components/containers/members/MemberAddresses.js:25
-#: node_modules/react-components/containers/overview/SummarySection.js:22
-#: node_modules/react-components/containers/overview/SummarySection.js:31
-msgctxt "Link"
-msgid "Manage"
-msgstr "Kezelés"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:11
-msgctxt "Link"
-msgid "ProtonVPN native clients"
-msgstr "ProtonVPN kliensek"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:12
-msgctxt "Link"
-msgid "Download page"
-msgstr "Oldal letöltése"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:18
-msgctxt "Link"
-msgid "Homepage"
-msgstr "Kezdőlap"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:24
-msgctxt "Link"
-msgid "Support page"
-msgstr "Támogatói oldal"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:36
-msgctxt "Link"
-msgid "Not activated"
-msgstr "Nem aktivált"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:65
-#: node_modules/react-components/containers/overview/SummarySection.js:74
-msgctxt "Link"
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#: node_modules/react-components/containers/support/BugModal.js:89
-msgctxt "Link"
-msgid "clearing your browser cache"
-msgstr "böngésző gyorsítótárának ürítése"
-
-#: node_modules/react-components/containers/heading/UpgradeButton.js:13
-#: node_modules/react-components/containers/heading/UpgradeButton.js:21
-#: src/app/containers/AddressesContainer.js:60
-#: src/app/containers/AddressesContainer.js:70
-#: src/app/containers/AddressesContainer.js:77
-#: src/app/containers/DomainsContainer.js:59
-msgctxt "Link"
-msgid "Upgrade"
-msgstr "Váltás nagyobb csomagra"
-
-#: node_modules/react-components/components/link/LearnMore.js:7
-msgctxt "Link"
-msgid "Learn more"
-msgstr "Tudjon meg többet"
-
-#: src/app/containers/AddressesContainer.js:34
-#: src/app/containers/AddressesContainer.js:53
-#: src/app/containers/OrganizationContainer.js:46
-msgctxt "Link"
-msgid "Domain settings"
-msgstr "Domain beállítások"
-
-#: src/app/containers/AddressesContainer.js:41
-#: src/app/containers/DomainsContainer.js:41
-#: src/app/containers/OrganizationContainer.js:53
-msgctxt "Link"
-msgid "User settings"
-msgstr "Felhasználói beállítások"
-
-#: src/app/containers/DomainsContainer.js:48
-#: src/app/containers/DomainsContainer.js:66
-#: src/app/containers/MembersContainer.js:41
-msgctxt "Link"
-msgid "Address settings"
-msgstr "Cím beállítások"
-
-#: src/app/containers/AutoReplyContainer.js:41
-msgctxt "Link"
-msgid "Filter Settings"
-msgstr "Szűrő beállítások"
-
 #: node_modules/react-components/containers/payments/CreditsModal.js:27
 msgctxt "Monetary unit"
 msgid "Euro"
@@ -5235,7 +5295,7 @@ msgctxt "Warning"
 msgid "Custom themes from third parties can potentially betray your privacy. Only use themes from trusted sources."
 msgstr "Harmadik féltől származó témák potenciálisan visszaélhetnek adataival. Csak megbízható forrásból származó témát használjon!"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:58
+#: node_modules/react-components/containers/themes/ThemesSection.js:63
 msgctxt "Warning"
 msgid "This action will erase your current custom theme. Are you sure you want to apply this new theme?"
 msgstr "Ez a művelet törli a jelenlegi egyéni témáját. Biztos, hogy alkalmazza az új témát?"
@@ -5818,7 +5878,7 @@ msgctxt "New Label form"
 msgid "Name"
 msgstr "Név"
 
-#: node_modules/react-components/containers/labels/NewLabelForm.js:22
+#: node_modules/react-components/containers/labels/NewLabelForm.js:23
 msgctxt "New Label form"
 msgid "Color"
 msgstr "Szín"
@@ -6582,64 +6642,4 @@ msgstr "Adminisztrátor"
 msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Webes ProtonVPN beállításai"
-
-#: node_modules/react-components/components/input/TimeInput.js:26
-#, javascript-format
-msgctxt "Time unit"
-msgid "${ hours } hour"
-msgid_plural "${ hours } hours"
-msgstr[0] "${ hours } óra"
-msgstr[1] "${ hours } óra"
-
-#: node_modules/react-components/components/input/TimeInput.js:27
-msgctxt "Time unit"
-msgid "${ minutes } minutes"
-msgid_plural "${ minutes } minutes"
-msgstr[0] "${ minutes } perc"
-msgstr[1] "${ minutes } perc"
-
-#: node_modules/react-components/components/toggle/Toggle.js:10
-msgctxt "Toggle button"
-msgid "On"
-msgstr "Be"
-
-#: node_modules/react-components/components/toggle/Toggle.js:11
-msgctxt "Toggle button"
-msgid "Off"
-msgstr "Ki"
-
-#: node_modules/react-components/components/countdown/Countdown.js:27
-msgctxt "Countdown status"
-msgid "Expired"
-msgstr "Lejárt"
-
-#: node_modules/react-components/components/countdown/Countdown.js:39
-#, javascript-format
-msgctxt "Countdown unit"
-msgid "${ days } day"
-msgid_plural "${ days } days"
-msgstr[0] "${ days } nap"
-msgstr[1] "${ days } nap"
-
-#: node_modules/react-components/components/countdown/Countdown.js:40
-msgctxt "Countdown unit"
-msgid "${ hours } hour"
-msgid_plural "${ hours } hours"
-msgstr[0] "${ hours } óra"
-msgstr[1] "${ hours } óra"
-
-#: node_modules/react-components/components/countdown/Countdown.js:41
-#, javascript-format
-msgctxt "Countdown unit"
-msgid "${ minutes } minute"
-msgid_plural "${ minutes } minutes"
-msgstr[0] "${ minutes } perc"
-msgstr[1] "${ minutes } perc"
-
-#: node_modules/react-components/components/countdown/Countdown.js:42
-msgctxt "Countdown unit"
-msgid "${ seconds } second"
-msgid_plural "${ seconds } seconds"
-msgstr[0] "${ seconds } másodperc"
-msgstr[1] "${ seconds } másodperc"
 

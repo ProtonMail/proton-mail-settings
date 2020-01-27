@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2020-01-18 09:20\n"
+"PO-Revision-Date: 2020-01-26 07:21\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -34,6 +34,21 @@ msgstr ""
 msgctxt "Error"
 msgid "Incorrect decryption password"
 msgstr "Неправильный пароль расшифровки"
+
+#: node_modules/react-components/components/input/Input.js:32
+msgctxt "Error"
+msgid "This field is required"
+msgstr "Это обязательное поле"
+
+#: node_modules/react-components/components/input/EmailInput.js:9
+msgctxt "Error"
+msgid "Email address invalid"
+msgstr "Адрес электронной почты некорректен"
+
+#: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
+msgctxt "Error"
+msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
+msgstr ""
 
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:32
 #: node_modules/react-components/containers/payments/paymentTokenHelper.js:128
@@ -351,21 +366,6 @@ msgctxt "Error"
 msgid "Your account or organization currently has an overdue invoice. Please pay all unpaid invoices."
 msgstr "Ваша учётная запись или организация имеет просроченный счёт. Пожалуйста, оплатите все неоплаченные счета."
 
-#: node_modules/react-components/components/alert/DoNotWindowOpenAlertError.js:7
-msgctxt "Error"
-msgid "The browser you are using does not allow the payment to be fully authorized. Please use a different browser or log in via a computer."
-msgstr ""
-
-#: node_modules/react-components/components/input/Input.js:32
-msgctxt "Error"
-msgid "This field is required"
-msgstr "Это обязательное поле"
-
-#: node_modules/react-components/components/input/EmailInput.js:9
-msgctxt "Error"
-msgid "Email address invalid"
-msgstr "Адрес электронной почты некорректен"
-
 #: node_modules/proton-shared/lib/filters/factory.js:11
 msgctxt "Filter modal type"
 msgid "Select ..."
@@ -476,1686 +476,817 @@ msgctxt "Theme"
 msgid "Dark theme"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
-msgctxt "Title"
-msgid "Unsupported browser"
-msgstr "Неподдерживаемый браузер"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
-msgctxt "Title"
-msgid "Card verification"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
-msgctxt "Title"
-msgid "Payment verification"
-msgstr "Проверка платежа"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:46
-msgctxt "Title"
-msgid "Processing..."
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:48
-msgctxt "Title"
-msgid "Card verification in progress"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:49
-msgctxt "Title"
-msgid "Payment verification in progress"
-msgstr "Производится проверка платежа"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:50
-msgctxt "Title"
-msgid "3-D Secure verification failed"
-msgstr ""
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:16
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
-msgctxt "Title"
-msgid "Error"
-msgstr "Ошибка"
-
-#: node_modules/react-components/containers/payments/Card.js:80
-msgctxt "Title"
-msgid "ZIP / postal code"
-msgstr "Почтовый индекс / код"
-
-#: node_modules/react-components/containers/payments/EditCardModal.js:18
-msgctxt "Title"
-msgid "Edit credit/debit card"
-msgstr "Изменение банковской/дебетовой карты"
-
-#: node_modules/react-components/containers/payments/EditCardModal.js:18
-msgctxt "Title"
-msgid "Add credit/debit card"
-msgstr "Добавление банковской/дебетовой карты"
-
-#: node_modules/react-components/containers/payments/PayPalModal.js:23
-msgctxt "Title"
-msgid "Add PayPal payment method"
-msgstr "Добавить способ оплаты PayPal"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
-#: src/app/containers/SubscriptionContainer.js:28
-#: src/app/containers/SubscriptionContainer.js:38
-msgctxt "Title"
-msgid "Subscription"
-msgstr "Тариф"
-
-#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
-msgctxt "Title"
-msgid "ProtonMail total"
-msgstr "ProtonMail - итого"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:92
-msgctxt "Title"
-msgid "Subscription details"
-msgstr "Сведения о тарифе"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
-msgctxt "Title"
-msgid "Payment details"
-msgstr "Реквизиты платежа"
-
-#: node_modules/react-components/containers/payments/subscription/Thanks.js:17
-msgctxt "Title"
-msgid "Thank you!"
-msgstr "Спасибо!"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:136
-msgctxt "Title"
-msgid "Order summary"
-msgstr "Заказ - итого"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:163
-msgctxt "Title"
-msgid "Upgrading account"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:177
-msgctxt "Title"
-msgid "VPN protection"
-msgstr "Защита VPN"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:190
-msgctxt "Title"
-msgid "Customization"
-msgstr "Настройка"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:36
-msgctxt "Title"
-msgid "1 month deal"
-msgstr "Предложение на 1 месяц"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:37
-msgctxt "Title"
-msgid "1 year deal"
-msgstr "Предложение на 1 год"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:38
-msgctxt "Title"
-msgid "2 year deal"
-msgstr "Предложение на 2 года"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:43
+#: node_modules/react-components/components/input/TimeInput.js:26
 #, javascript-format
-msgctxt "Title"
-msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
-#, javascript-format
-msgctxt "Title"
-msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
-msgctxt "Title"
-msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
-#, javascript-format
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
-#, javascript-format
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
-msgctxt "Title"
-msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
-msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
-msgctxt "Title"
-msgid "Black Friday sale"
-msgstr "Распродажа в Чёрную пятницу"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:164
-msgctxt "Title"
-msgid "Most popular"
-msgstr "Самый популярный"
-
-#: node_modules/react-components/containers/payments/DowngradeModal.js:7
-msgctxt "Title"
-msgid "Confirm downgrade"
-msgstr "Подтвердите понижение"
-
-#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:9
-msgctxt "Title"
-msgid "Confirm loss of Proton bonuses"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PlansTable.js:34
-msgctxt "Title"
-msgid "My subscription"
-msgstr "Мой тариф"
-
-#: node_modules/react-components/containers/payments/PlansSection.js:106
-#: node_modules/react-components/containers/payments/PlansSection.js:115
-#: node_modules/react-components/containers/payments/PlansSection.js:123
-#: src/app/containers/SubscriptionContainer.js:34
-msgctxt "Title"
-msgid "Plans"
-msgstr "Тарифы"
-
-#: node_modules/react-components/containers/payments/DonateModal.js:42
-msgctxt "Title"
-msgid "Make a donation"
-msgstr "Сделать пожертвование"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
-msgctxt "Title"
-msgid "Gift code"
-msgstr "Подарочный код"
-
-#: node_modules/react-components/containers/payments/CreditsModal.js:68
-msgctxt "Title"
-msgid "Add credits"
-msgstr "Пополнение счёта"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:63
-#: node_modules/react-components/containers/payments/BillingSection.js:96
-#: node_modules/react-components/containers/payments/BillingSection.js:105
-#: node_modules/react-components/containers/payments/BillingSection.js:121
-#: src/app/containers/SubscriptionContainer.js:43
-msgctxt "Title"
-msgid "Billing details"
-msgstr "Платёжная информация"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:35
-msgctxt "Title"
-msgid "Decrypt key"
-msgstr "Расшифровать ключ"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:368
-msgctxt "Title"
-msgid "Re-activate keys"
-msgstr "Повторная активация ключей"
-
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:122
-msgctxt "Title"
-msgid "Create key"
-msgstr "Создание ключа"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:20
-msgctxt "Title"
-msgid "Export public key"
-msgstr "Экспорт публичного ключа"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:38
-msgctxt "Title"
-msgid "Export private key"
-msgstr "Экспорт закрытого ключа"
-
-#: node_modules/react-components/containers/keys/UserKeysSection.js:18
-#: src/app/containers/KeysContainer.js:19
-msgctxt "Title"
-msgid "Contact encryption keys"
-msgstr "Ключи шифрования контакта"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:19
-msgctxt "Title"
-msgid "Success"
-msgstr "Успешно"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:230
-msgctxt "Title"
-msgid "Import key"
-msgstr "Импорт ключа"
-
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:113
-msgctxt "Title"
-msgid "Delete key"
-msgstr "Удаление ключа"
-
-#: node_modules/react-components/containers/keys/AddressKeysSection.js:71
-#: src/app/containers/KeysContainer.js:15
-msgctxt "Title"
-msgid "Email encryption keys"
-msgstr "Ключи шифрования эл. почты"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:33
-msgctxt "Title"
-msgid "Create auto-reply"
-msgstr "Создать автоответчик"
-
-#: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
-#: src/app/containers/AutoReplyContainer.js:13
-#: src/app/containers/AutoReplyContainer.js:19
-msgctxt "Title"
-msgid "Auto-reply"
-msgstr "Автоответчик"
-
-#: node_modules/react-components/containers/organization/OrganizationNameModal.js:22
-msgctxt "Title"
-msgid "Change organization name"
-msgstr "Изменить название организации"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:63
-msgctxt "Title"
-msgid "Name your organization"
-msgstr "Задайте имя для вашей организации"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:84
-msgctxt "Title"
-msgid "Set organization keys"
-msgstr "Настройка ключей организации"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:100
-msgctxt "Title"
-msgid "Set organization password"
-msgstr "Задать пароль организации"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:170
-msgctxt "Title"
-msgid "Allocate storage"
-msgstr "Выделение объёма в хранилище"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:203
-msgctxt "Title"
-msgid "Allocate VPN connections"
-msgstr "Выделить VPN-подключения"
-
-#: node_modules/react-components/containers/organization/OrganizationSection.js:31
-msgctxt "Title"
-msgid "Multi-user support"
-msgstr "Многопользовательский режим"
-
-#: node_modules/react-components/containers/organization/OrganizationSection.js:42
-#: src/app/containers/OrganizationContainer.js:13
-msgctxt "Title"
-msgid "Organization"
-msgstr "Организация"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:39
-msgctxt "Title"
-msgid "Activate organization key"
-msgstr "Активировать ключ организации"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:53
-msgctxt "Title"
-msgid "Restore administrator privileges"
-msgstr "Восстановить полномочия администратора"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:56
-msgctxt "Title"
-msgid "Change organization password"
-msgstr "Изменение пароля организации"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:163
-msgctxt "Title"
-msgid "Change organization keys"
-msgstr "Изменение ключей организации"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
-#: src/app/containers/OrganizationContainer.js:23
-msgctxt "Title"
-msgid "Password & key"
-msgstr "Пароль и ключ"
-
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
-msgctxt "Title"
-msgid "Generate missing keys"
-msgstr "Создать недостающие ключи"
-
-#: node_modules/react-components/containers/addresses/PmMeSection.js:9
-#: src/app/containers/IdentityContainer.js:22
-msgctxt "Title"
-msgid "Short domain (@pm.me)"
-msgstr "Короткий домен (@pm.me)"
-
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:49
-msgctxt "Title"
-msgid "Edit address"
-msgstr "Изменить адрес"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:26
-#: src/app/containers/IdentityContainer.js:18
-msgctxt "Title"
-msgid "Display name & signature"
-msgstr "Отображаемое имя и подпись"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:79
-msgctxt "Title"
-msgid "Create address"
-msgstr "Создать адрес"
-
-#: node_modules/react-components/containers/addresses/AddressesSection.js:20
-#: src/app/containers/AddressesContainer.js:10
-#: src/app/containers/AddressesContainer.js:15
-msgctxt "Title"
-msgid "Addresses"
-msgstr "Адреса"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
-msgctxt "Title"
-msgid "Desktop notification"
-msgstr "Уведомление на рабочем столе"
-
-#: node_modules/react-components/containers/notification/EmailModal.js:33
-msgctxt "Title"
-msgid "Confirm address"
-msgstr ""
-
-#: node_modules/react-components/containers/notification/EmailModal.js:70
-msgctxt "Title"
-msgid "Update recovery/notification email"
-msgstr "Обновить адрес эл. почты для восстановления/уведомлений"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:62
-msgctxt "Title"
-msgid "Recovery & notification"
-msgstr "Восстановление и уведомление"
-
-#: node_modules/react-components/containers/domains/CatchAllSection.js:8
-msgctxt "Title"
-msgid "Catch all "
-msgstr "Catch-all "
-
-#: node_modules/react-components/containers/domains/DomainModal.js:159
-msgctxt "Title"
-msgid "Edit domain"
-msgstr "Изменить домен"
-
-#: node_modules/react-components/containers/domains/DomainModal.js:159
-msgctxt "Title"
-msgid "Add domain"
-msgstr "Добавить домен"
-
-#: node_modules/react-components/containers/domains/CatchAllModal.js:13
-msgctxt "Title"
-msgid "Catch all address"
-msgstr "Catch-all-адрес"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:43
-msgctxt "Title"
-msgid "Delete domain"
-msgstr "Удалить домен"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:46
-#: src/app/containers/DomainsContainer.js:13
-#: src/app/containers/DomainsContainer.js:19
-msgctxt "Title"
-msgid "Custom domains"
-msgstr "Свои домены"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
-#: src/app/containers/VPNContainer.js:19
-msgctxt "Title"
-msgid "ProtonVPN clients"
-msgstr "Клиенты ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
-#: src/app/containers/VPNContainer.js:23
-msgctxt "Title"
-msgid "ProtonVPN credentials"
-msgstr "Учётные данные ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
-#: src/app/containers/VPNContainer.js:31
-msgctxt "Title"
-msgid "ProtonVPN resources"
-msgstr "Ресурсы ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:22
-msgctxt "Title"
-msgid "Edit OpenVPN / IKEv2 credentials"
-msgstr "Изменить учётные данные OpenVPN / IKEv2"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
-#: src/app/containers/VPNContainer.js:27
-msgctxt "Title"
-msgid "OpenVPN / IKEv2 username"
-msgstr "Имя пользователя OpenVPN / IKEv2"
-
-#: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:77
-msgctxt "Title"
-msgid "Storage"
-msgstr "Хранилище"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:123
-#: node_modules/react-components/containers/account/PasswordsSection.js:38
-msgctxt "Title"
-msgid "Change login password"
-msgstr "Изменить пароль учётной записи"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:151
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:185
-msgctxt "Title"
-msgid "Switch to two-password mode"
-msgstr "Переключить в режим двух паролей"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:276
-msgctxt "Title"
-msgid "Switch to one-password mode"
-msgstr "Переключить в режим одного пароля"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:294
-#: node_modules/react-components/containers/account/PasswordsSection.js:38
-msgctxt "Title"
-msgid "Change password"
-msgstr "Изменение пароля"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:306
-msgctxt "Title"
-msgid "Change mailbox password"
-msgstr "Изменить пароль почтового ящика"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:23
-msgctxt "Title"
-msgid "Passwords"
-msgstr "Пароли"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:37
-msgctxt "Title"
-msgid "Password"
-msgstr "Пароль"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:37
-msgctxt "Title"
-msgid "Login password"
-msgstr "Пароль для входа"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
-#: node_modules/react-components/containers/account/DeleteSection.js:33
-msgctxt "Title"
-msgid "Delete account"
-msgstr "Удалить учётную запись"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:16
-msgctxt "Title"
-msgid "Username"
-msgstr "Имя пользователя"
-
-#: node_modules/react-components/containers/account/NewsSection.js:17
-#: node_modules/react-components/containers/account/NewsSection.js:25
-msgctxt "Title"
-msgid "Email subscriptions"
-msgstr "Подписки на рассылки"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:272
-msgctxt "Title"
-msgid "Set up two-factor authentication"
-msgstr "Настройка двухфакторной аутентификации"
-
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:82
-msgctxt "Title"
-msgid "Disable two-factor authentication"
-msgstr "Отключение двухфакторной аутентификации"
-
-#: node_modules/react-components/containers/account/TwoFactorSection.js:29
-msgctxt "Title"
-msgid "Two-factor authentication"
-msgstr "Двухфакторная аутентификация"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:33
-#: node_modules/react-components/containers/password/AskAuthModal.js:17
-msgctxt "Title"
-msgid "Sign in again to continue"
-msgstr "Чтобы продолжить, повторно войдите ещё раз"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
-#: src/app/containers/SubscriptionContainer.js:48
-msgctxt "Title"
-msgid "Payment methods"
-msgstr "Способы оплаты"
-
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:34
-#: src/app/containers/SecurityContainer.js:23
-msgctxt "Title"
-msgid "Address verification"
-msgstr "Проверка адреса"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:45
-msgctxt "Title"
-msgid "Automatically sign outgoing messages?"
-msgstr "Подписывать ли исходящие сообщения автоматически?"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:76
-msgctxt "Title"
-msgid "External PGP settings (optional)"
-msgstr "Настройки внешнего PGP (необязательно)"
-
-#: node_modules/react-components/containers/labels/ActionsLabel.js:26
-msgctxt "Title"
-msgid "Delete label"
-msgstr "Удалить ярлык"
-
-#: node_modules/react-components/containers/labels/ActionsLabel.js:31
-msgctxt "Title"
-msgid "Delete folder"
-msgstr "Удалить папку"
-
-#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:18
-#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:13
-msgctxt "Title"
-msgid "blacklist"
-msgstr "чёрный список"
-
-#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:19
-#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:14
-msgctxt "Title"
-msgid "whitelist"
-msgstr "белый список"
-
-#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:15
-msgctxt "Title"
-msgid "Whitelist"
-msgstr "Белый список"
-
-#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:16
-msgctxt "Title"
-msgid "BlackList"
-msgstr "Чёрный список"
-
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:16
-msgctxt "Title"
-msgid "Add to Blacklist"
-msgstr "Добавить в чёрный список"
-
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:17
-msgctxt "Title"
-msgid "Add to Whitelist"
-msgstr "Добавить в белый список"
-
-#: node_modules/react-components/containers/api/HumanVerificationModal.js:9
-msgctxt "Title"
-msgid "Human verification"
-msgstr "Проверка \"Я не робот\""
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:17
-#: src/app/containers/GeneralContainer.js:30
-msgctxt "Title"
-msgid "Messages"
-msgstr "Сообщения"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:56
-msgctxt "Title"
-msgid "Edit user"
-msgstr "Изменить пользователя"
-
-#: node_modules/react-components/containers/members/MemberModal.js:135
-msgctxt "Title"
-msgid "Add user"
-msgstr "Добавить пользователя"
-
-#: node_modules/react-components/containers/members/MembersSection.js:118
-#: src/app/containers/MembersContainer.js:13
-#: src/app/containers/MembersContainer.js:19
-msgctxt "Title"
+msgctxt "Time unit"
+msgid "${ hours } hour"
+msgid_plural "${ hours } hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: node_modules/react-components/components/input/TimeInput.js:27
+msgctxt "Time unit"
+msgid "${ minutes } minutes"
+msgid_plural "${ minutes } minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: node_modules/react-components/components/input/PasswordInput.js:21
+msgctxt "Label"
+msgid "Reveal password"
+msgstr "Показать пароль"
+
+#: node_modules/react-components/components/input/PasswordInput.js:21
+msgctxt "Label"
+msgid "Hide password"
+msgstr "Скрыть пароль"
+
+#: node_modules/react-components/components/button/Copy.js:20
+msgctxt "Label"
+msgid "Copied"
+msgstr "Скопировано"
+
+#: node_modules/react-components/components/button/Copy.js:20
+msgctxt "Label"
+msgid "Copy"
+msgstr "Копировать"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
+msgctxt "Label"
 msgid "Users"
 msgstr "Пользователи"
 
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:19
-msgctxt "Title"
-msgid "Custom Theme"
-msgstr "Пользовательская тема"
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
+msgctxt "Label"
+msgid "Email addresses"
+msgstr "Адреса электронной почты"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:54
-msgctxt "Title"
-msgid "Change theme"
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
+msgctxt "Label"
+msgid "Storage capacity"
+msgstr "Объём хранилища"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
+msgctxt "Label"
+msgid "Custom domains"
+msgstr "Свои домены"
+
+#: node_modules/react-components/containers/members/EditMemberModal.js:85
+#: node_modules/react-components/containers/members/MemberModal.js:220
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
+msgctxt "Label"
+msgid "VPN connections"
+msgstr "VPN-подключения"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/BillingSection.js:279
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
+msgctxt "Label"
+msgid "Sub-total"
+msgstr "Промежуточный итог"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:107
+msgctxt "Label"
+msgid "Cycle discount +"
 msgstr ""
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:74
-#: src/app/containers/AppearanceContainer.js:23
-msgctxt "Title"
-msgid "Themes"
-msgstr "Темы"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
+msgctxt "Label"
+msgid "Coupon"
+msgstr "Купон"
 
-#: node_modules/react-components/containers/logs/LogsSection.js:82
-msgctxt "Title"
-msgid "Clear"
-msgstr "Очистить"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
+msgctxt "Label"
+msgid "Cycle discount"
+msgstr ""
 
-#: node_modules/react-components/containers/logs/LogsSection.js:109
-#: src/app/containers/SecurityContainer.js:19
-msgctxt "Title"
-msgid "Authentication logs"
-msgstr "Журнал авторизации"
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/BillingSection.js:299
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:28
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:144
+msgctxt "Label"
+msgid "Total"
+msgstr "Всего"
 
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
-#: src/app/containers/AppearanceContainer.js:19
-msgctxt "Title"
-msgid "Toolbars"
-msgstr "Панели инструментов"
+#: node_modules/react-components/containers/payments/BillingSection.js:67
+#: node_modules/react-components/containers/payments/BillingSection.js:332
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:39
+msgctxt "Label"
+msgid "Credits"
+msgstr "Кредиты"
 
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:47
-#: src/app/containers/AppearanceContainer.js:15
-msgctxt "Title"
-msgid "Layouts"
-msgstr "Схемы расположения"
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:50
+msgctxt "Label"
+msgid "Proration"
+msgstr "Распределение"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/general/ShortcutsSection.js:26
-msgctxt "Title"
-msgid "Keyboard shortcuts"
-msgstr "Сочетания клавиш"
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:68
+msgctxt "Label"
+msgid "Gift"
+msgstr "Подарок"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:12
-#: src/app/containers/GeneralContainer.js:17
-msgctxt "Title"
-msgid "General"
-msgstr "Общие"
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:75
+#: node_modules/react-components/containers/payments/BillingSection.js:325
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:77
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:211
+msgctxt "Label"
+msgid "Amount due"
+msgstr "К оплате"
 
-#: node_modules/react-components/containers/general/ShortcutsModal.js:15
-msgctxt "Title"
-msgid "Application"
-msgstr "Приложение"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:35
-msgctxt "Title"
-msgid "Composer"
-msgstr "Редактор писем"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:66
-msgctxt "Title"
-msgid "Mail"
-msgstr "Почта"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:69
-msgctxt "Title"
-msgid "Jumping"
-msgstr "Переходы"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:95
-msgctxt "Title"
-msgid "Navigation"
-msgstr "Навигация"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:126
-msgctxt "Title"
-msgid "Threadlist"
-msgstr "Список тем"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:161
-msgctxt "Title"
-msgid "Actions"
-msgstr "Действия"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:177
-msgctxt "Title"
-msgid "Contacts"
-msgstr "Контакты"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:180
-msgctxt "Title"
-msgid "Contact list"
-msgstr "Список контактов"
-
-#: node_modules/react-components/containers/general/ShortcutsModal.js:195
-msgctxt "Title"
-msgid "Contact details"
-msgstr "Контактные данные"
-
-#: node_modules/react-components/containers/general/ShortcutsSection.js:24
-#: src/app/containers/GeneralContainer.js:38
-msgctxt "Title"
-msgid "Shortcuts"
-msgstr "Сочетания клавиш"
-
-#: node_modules/react-components/containers/general/LanguageSection.js:54
-#: src/app/containers/GeneralContainer.js:22
-msgctxt "Title"
-msgid "Language"
-msgstr "Язык"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:43
-msgctxt "Title"
-msgid "Need help?"
-msgstr "Нужна помощь?"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:48
-msgctxt "Title"
-msgid "Upgrade to a paid plan"
-msgstr "Переход на платный тариф"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:55
-msgctxt "Title"
-msgid "Thanks for your support"
-msgstr "Благодарим за вашу поддержку"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:63
-msgctxt "Title"
-msgid "Get 20% discount"
-msgstr "Получить 20% скидку"
-
-#: node_modules/react-components/containers/support/BugModal.js:136
-msgctxt "Title"
-msgid "Report bug"
-msgstr "Сообщить об ошибке"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:51
-msgctxt "Title"
-msgid "Pay invoice"
-msgstr "Оплатить счёт"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
-msgctxt "Title"
-msgid "Preview invoice"
-msgstr "Предпросмотр счёта"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
-msgctxt "Title"
-msgid "Add invoice details"
-msgstr "Добавить сведения к счёту"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:59
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:69
-#: src/app/containers/SubscriptionContainer.js:52
-msgctxt "Title"
-msgid "Invoices"
-msgstr "Счета"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:116
-msgctxt "Title"
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:57
+#: node_modules/react-components/containers/payments/CreditsModal.js:81
+#: node_modules/react-components/containers/payments/DonateModal.js:48
+msgctxt "Label"
 msgid "Amount"
 msgstr "Сумма"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:117
-msgctxt "Title"
-msgid "Type"
-msgstr "Тип"
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:55
+msgctxt "Label"
+msgid "Enter gift code"
+msgstr "Введите подарочный код"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:118
-msgctxt "Title"
-msgid "Status"
-msgstr "Состояние"
+#: node_modules/react-components/containers/payments/BillingSection.js:76
+#: node_modules/react-components/containers/payments/BillingSection.js:341
+msgctxt "Label"
+msgid "Gift code"
+msgstr "Подарочный код"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:119
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "Date"
-msgstr "Дата"
+#: node_modules/react-components/containers/payments/BillingSection.js:128
+msgctxt "Label"
+msgid "ProtonMail plan"
+msgstr "Тариф ProtonMail"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:120
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "Action"
-msgstr "Действие"
+#: node_modules/react-components/containers/payments/BillingSection.js:141
+msgctxt "Label"
+msgid "Extra users"
+msgstr "Доп. пользователи"
 
-#: node_modules/react-components/containers/login/AbuseModal.js:6
-msgctxt "Title"
-msgid "Account disabled"
-msgstr "Учётная запись отключена"
+#: node_modules/react-components/containers/payments/BillingSection.js:161
+msgctxt "Label"
+msgid "Extra email addresses"
+msgstr "Доп. адреса эл. почты"
 
-#: node_modules/react-components/containers/search/SearchSection.js:24
-#: src/app/containers/GeneralContainer.js:34
-msgctxt "Title"
-msgid "Search"
+#: node_modules/react-components/containers/payments/BillingSection.js:181
+msgctxt "Label"
+msgid "Extra storage"
+msgstr "Доп. хранилище"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:194
+msgctxt "Label"
+msgid "Bonus storage"
+msgstr "Бонусное хранилище"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:203
+msgctxt "Label"
+msgid "Extra domains"
+msgstr "Доп. домены"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:227
+msgctxt "Label"
+msgid "ProtonVPN plan"
+msgstr "Тариф ProtonVPN"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:240
+msgctxt "Label"
+msgid "Extra connections"
+msgstr "Дополнительные подключения"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:260
+msgctxt "Label"
+msgid "Bonus connections"
+msgstr "Бонусные подключения"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:286
+msgctxt "Label"
+msgid "Discount"
+msgstr "Скидка"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:308
+msgctxt "Label"
+msgid "Billing cycle"
+msgstr "Платёжный цикл"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:318
+msgctxt "Label"
+msgid "Renewal date"
 msgstr ""
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:80
-msgctxt "Title"
-msgid "Sessions"
-msgstr "Сессии"
-
-#: node_modules/react-components/containers/sessions/SessionsSection.js:97
-msgctxt "Title"
-msgid "App"
-msgstr "Приложение"
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:6
-msgctxt "Title"
-msgid "Preview"
-msgstr "Предпросмотр"
-
-#: node_modules/react-components/components/container/RelatedSettingsSection.js:14
-#: src/app/containers/AddressesContainer.js:19
-#: src/app/containers/AutoReplyContainer.js:23
-#: src/app/containers/DomainsContainer.js:27
-#: src/app/containers/MembersContainer.js:23
-#: src/app/containers/OrganizationContainer.js:27
-msgctxt "Title"
-msgid "Related settings"
-msgstr "Связанные настройки"
-
-#: node_modules/react-components/components/dropdown/DropdownActions.js:48
-msgctxt "Title"
-msgid "Open actions dropdown"
-msgstr "Открыть выпадающее меню действий"
-
-#: src/app/components/layout/PrivateHeader.js:38
-msgctxt "Title"
-msgid "Mailbox"
-msgstr "Почтовый ящик"
-
-#: src/app/components/layout/PrivateHeader.js:43
-#: src/app/components/layout/PrivateLayout.js:72
-msgctxt "Title"
-msgid "Settings"
-msgstr "Настройки"
-
-#: src/app/containers/OrganizationContainer.js:19
-msgctxt "Title"
-msgid "Name"
-msgstr "Название"
-
-#: src/app/containers/DomainsContainer.js:23
-msgctxt "Title"
-msgid "Catch-all"
-msgstr "Catch-all"
-
-#: src/app/containers/IdentityContainer.js:13
-msgctxt "Title"
-msgid "Identity"
-msgstr "Псевдоним"
-
-#: src/app/containers/GeneralContainer.js:26
-msgctxt "Title"
-msgid "Desktop notifications"
-msgstr "Уведомления на рабочем столе"
-
-#: src/app/containers/AppearanceContainer.js:10
-msgctxt "Title"
-msgid "Appearance"
-msgstr "Внешний вид"
-
-#: src/app/containers/FiltersContainer.js:10
-msgctxt "Title"
-msgid "Filters"
-msgstr "Фильтры"
-
-#: src/app/containers/FiltersContainer.js:15
-msgctxt "Title"
-msgid "Custom filters"
-msgstr "Настраиваемые фильтры"
-
-#: src/app/containers/FiltersContainer.js:19
-msgctxt "Title"
-msgid "Spam filters"
-msgstr "Фильтры спама"
-
-#: src/app/containers/FoldersLabelsContainer.js:10
-msgctxt "Title"
-msgid "Folders/labels"
-msgstr "Папки/ярлыки"
-
-#: src/app/containers/FoldersLabelsContainer.js:15
-msgctxt "Title"
-msgid "Folders and labels"
-msgstr "Папки и ярлыки"
-
-#: src/app/containers/KeysContainer.js:10
-msgctxt "Title"
-msgid "Keys"
-msgstr "Ключи"
-
-#: src/app/containers/SecurityContainer.js:10
-msgctxt "Title"
-msgid "Security"
-msgstr "Безопасность"
-
-#: src/app/containers/SecurityContainer.js:15
-msgctxt "Title"
-msgid "Session management"
-msgstr "Управление сессиями"
-
-#: src/app/containers/SecurityContainer.js:27
-msgctxt "Title"
-msgid "External PGP settings"
-msgstr "Настройки внешнего PGP"
-
-#: src/app/containers/AppsContainer.js:13
-msgctxt "Title"
-msgid "Apps"
-msgstr "Приложения"
-
-#: src/app/containers/AppsContainer.js:18
-msgctxt "Title"
-msgid "ProtonMail Bridge"
-msgstr "ProtonMail Bridge"
-
-#: src/app/containers/AppsContainer.js:23
-msgctxt "Title"
-msgid "ProtonMail Beta"
-msgstr "ProtonMail Beta"
-
-#: src/app/containers/AppsContainer.js:27
-msgctxt "Title"
-msgid "ProtonMail apps"
-msgstr ""
-
-#: src/app/containers/VPNContainer.js:14
-msgctxt "Title"
-msgid "ProtonVPN"
-msgstr "ProtonVPN"
-
-#: src/app/containers/OverviewContainer.js:23
-msgctxt "Title"
-msgid "Overview - ProtonMail"
-msgstr ""
-
-#: node_modules/react-components/components/modal/Confirm.js:11
-#: node_modules/react-components/components/modal/FormModal.js:19
-#: node_modules/react-components/components/modal/Input.js:33
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
-#: node_modules/react-components/containers/addresses/AddressModal.js:81
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:75
-#: node_modules/react-components/containers/login/LoginForm.js:216
-#: node_modules/react-components/containers/payments/PayPal.js:137
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:101
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:255
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:46
-msgctxt "Action"
-msgid "Cancel"
-msgstr "Отменить"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:102
-msgctxt "Action"
-msgid "Verify"
-msgstr ""
-
-#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:420
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:434
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
-#: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
-#: node_modules/react-components/containers/filters/AddFilterModal.js:137
-#: node_modules/react-components/containers/general/ShortcutsModal.js:10
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:49
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:123
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:39
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:21
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:231
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:369
-#: node_modules/react-components/containers/login/AbuseModal.js:21
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:164
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:57
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:93
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
-#: node_modules/react-components/containers/payments/CreditsModal.js:67
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:258
-msgctxt "Action"
-msgid "Close"
-msgstr "Закрыть"
-
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
-#: node_modules/react-components/containers/payments/PayPal.js:105
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
-msgctxt "Action"
-msgid "Try again"
-msgstr "Попробовать снова"
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:171
-msgctxt "Action"
-msgid "Use a different card"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:172
-msgctxt "Action"
-msgid "Use a different payment method"
-msgstr ""
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:435
-#: node_modules/react-components/containers/addresses/AddressModal.js:80
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:50
-#: node_modules/react-components/containers/filters/AddEmailToListModal.js:40
-#: node_modules/react-components/containers/filters/AddFilterModal.js:130
-#: node_modules/react-components/containers/filters/AddFilterModal.js:143
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
-#: node_modules/react-components/containers/members/EditMemberModal.js:55
-#: node_modules/react-components/containers/members/MemberModal.js:139
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:165
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:58
-#: node_modules/react-components/containers/payments/EditCardModal.js:51
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
-msgctxt "Action"
-msgid "Save"
-msgstr "Сохранить"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:101
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:142
-msgctxt "Action"
-msgid "Customize"
-msgstr "Настроить"
-
-#: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:21
-msgctxt "Action"
-msgid "Switch now"
-msgstr "Перейти сейчас"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:350
-#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
-msgctxt "Action"
-msgid "Hide additional features"
-msgstr "Скрыть дополнительные функции"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:350
-#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
-msgctxt "Action"
-msgid "Compare all features"
-msgstr "Сравнить все функции"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:50
-#: node_modules/react-components/containers/payments/subscription/CouponForm.js:27
-#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:26
-#: node_modules/react-components/containers/themes/ThemesSection.js:53
-msgctxt "Action"
-msgid "Apply"
-msgstr "Применить"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
-msgctxt "Action"
-msgid "Remove coupon"
-msgstr "Убрать купон"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:154
-msgctxt "Action"
-msgid "Add coupon"
-msgstr "Добавить купон"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:87
-msgctxt "Action"
-msgid "Add gift code"
-msgstr "Добавить подарочный код"
-
-#: node_modules/react-components/containers/payments/subscription/Thanks.js:23
-msgctxt "Action"
-msgid "Got it"
-msgstr "Понятно"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:191
-msgctxt "Action"
-msgid "Next"
-msgstr "Далее"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
-msgctxt "Action"
-msgid "Continue"
-msgstr ""
-
-#.  Insert it before the last one
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:238
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:261
-msgctxt "Action"
-msgid "Previous"
-msgstr "Назад"
-
-#.  Insert it before the last one
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:45
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:50
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:239
-msgctxt "Action"
-msgid "Pay"
-msgstr "Оплатить"
-
-#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:189
-msgctxt "Action"
-msgid "Get the deal"
-msgstr "Воспользоваться предложением"
-
-#: node_modules/react-components/containers/payments/DowngradeModal.js:7
-msgctxt "Action"
-msgid "Downgrade"
-msgstr "Понизить"
-
-#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:10
-msgctxt "Action"
-msgid "Remove bonuses"
-msgstr "Удалить бонусы"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:332
-#: node_modules/react-components/containers/payments/PlansTable.js:337
-#: node_modules/react-components/containers/payments/PlansTable.js:342
-msgctxt "Action"
-msgid "Edit VPN"
-msgstr "Изменить VPN"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:332
-#: node_modules/react-components/containers/payments/PlansTable.js:337
-#: node_modules/react-components/containers/payments/PlansTable.js:342
-msgctxt "Action"
-msgid "Add VPN"
-msgstr "Добавить VPN"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:37
-#: node_modules/react-components/containers/payments/PlansTable.js:359
-#: node_modules/react-components/containers/payments/PlansTable.js:367
-#: node_modules/react-components/containers/payments/PlansTable.js:375
-#: node_modules/react-components/containers/payments/PlansTable.js:383
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
-msgctxt "Action"
-msgid "Update"
-msgstr "Обновить"
-
-#: node_modules/react-components/containers/payments/PlansTable.js:359
-#: node_modules/react-components/containers/payments/PlansTable.js:367
-#: node_modules/react-components/containers/payments/PlansTable.js:375
-#: node_modules/react-components/containers/payments/PlansTable.js:383
-msgctxt "Action"
-msgid "Select"
-msgstr "Выбрать"
-
-#: node_modules/react-components/containers/payments/PayPal.js:149
-#: node_modules/react-components/containers/payments/PayPal.js:178
-msgctxt "Action"
-msgid "Check out with PayPal"
-msgstr "Оплатить при помощи PayPal"
-
-#: node_modules/react-components/containers/payments/PayPal.js:164
-msgctxt "Action"
-msgid "Add PayPal payment method"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/DonateModal.js:43
-msgctxt "Action"
-msgid "Donate"
-msgstr "Пожертвовать"
-
-#: node_modules/react-components/containers/payments/CreditsModal.js:66
-msgctxt "Action"
-msgid "Top up"
-msgstr "Пополнить"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:69
-#: node_modules/react-components/containers/payments/BillingSection.js:334
-msgctxt "Action"
-msgid "Add credits"
-msgstr "Пополнить счёт"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:83
-#: node_modules/react-components/containers/payments/BillingSection.js:348
-msgctxt "Action"
-msgid "Use gift code"
-msgstr "Использовать подарочный код"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:311
-msgctxt "Action"
-msgid "Pay annually and save 20%!"
-msgstr "Платите ежегодно и сэкономьте 20%!"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
-msgctxt "Action"
-msgid "Decrypt"
-msgstr "Расшифровать"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
-msgctxt "Action"
-msgid "Upload"
-msgstr "Загрузить"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:214
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:272
-msgctxt "Action"
-msgid "Re-activate"
-msgstr "Активировать повторно"
-
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:96
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:205
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:213
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:328
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:343
-msgctxt "Action"
-msgid "Done"
-msgstr "Готово"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:421
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:358
-msgctxt "Action"
-msgid "Ok"
-msgstr "Ok"
-
-#: node_modules/react-components/components/modal/FormModal.js:20
-#: node_modules/react-components/components/modal/Input.js:34
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
-#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
-#: node_modules/react-components/containers/login/LoginForm.js:239
-#: node_modules/react-components/containers/login/LoginForm.js:267
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
-#: node_modules/react-components/containers/support/BugModal.js:135
-msgctxt "Action"
-msgid "Submit"
-msgstr "Отправить"
-
-#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:38
-#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:79
-#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:114
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:171
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:43
-msgctxt "Action"
-msgid "Yes"
-msgstr "Да"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:41
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:40
-#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:22
-msgctxt "Action"
-msgid "Export"
-msgstr "Экспорт"
-
-#: node_modules/react-components/containers/keys/UserKeysSection.js:79
-msgctxt "Action"
-msgid "Export private key"
-msgstr "Экспортировать закрытый ключ"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:186
-msgctxt "Action"
-msgid "Select files"
-msgstr "Выбрать файлы"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:30
-msgctxt "Action"
-msgid "Create key"
-msgstr "Создать ключ"
-
-#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:34
-msgctxt "Action"
-msgid "Import key"
-msgstr "Импортировать ключ"
-
-#: node_modules/react-components/containers/keys/AddressKeysSection.js:215
-msgctxt "Action"
-msgid "Reactivate keys"
-msgstr "Повторно активировать ключи"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:86
-#: node_modules/react-components/containers/addresses/IdentitySection.js:102
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:87
-#: node_modules/react-components/containers/domains/DomainActions.js:32
-#: node_modules/react-components/containers/filters/FilterItemRow.js:62
-#: node_modules/react-components/containers/labels/ActionsLabel.js:63
-#: node_modules/react-components/containers/notification/RecoveryEmail.js:15
-#: node_modules/react-components/containers/organization/OrganizationSection.js:50
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
-msgctxt "Action"
-msgid "Edit"
-msgstr "Изменить"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:218
-#: node_modules/react-components/containers/filters/AddFilterModal.js:129
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:109
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
-msgctxt "Action"
-msgid "Back"
-msgstr "Назад"
-
-#: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:27
-msgctxt "Action"
-msgid "Enable multi-user support"
-msgstr "Включить многопользовательский режим"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:115
-#: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:45
-msgctxt "Action"
-msgid "Restore administrator privileges"
-msgstr "Восстановить полномочия администратора"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:98
-msgctxt "Action"
-msgid "Change password"
-msgstr "Изменить пароль"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:101
-msgctxt "Action"
-msgid "Change organization keys"
-msgstr "Изменить ключи организации"
-
-#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:129
-msgctxt "Action"
-msgid "Activate organization key"
-msgstr "Активировать ключ организации"
-
-#: node_modules/react-components/containers/addresses/PmMeButton.js:12
-msgctxt "Action"
-msgid "Activate"
-msgstr "Включить"
-
-#: node_modules/react-components/containers/addresses/AddressesToolbar.js:34
-#: node_modules/react-components/containers/domains/AddressesSection.js:29
-msgctxt "Action"
-msgid "Add address"
-msgstr "Добавить адрес"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:31
-msgctxt "Action"
-msgid "Send test notification"
-msgstr "Отправить тестовое уведомление"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:33
-msgctxt "Action"
-msgid "Enable desktop notification"
-msgstr "Включить уведомление на рабочем столе"
-
-#: node_modules/react-components/containers/domains/AddressesSection.js:31
-#: node_modules/react-components/containers/members/MembersSection.js:126
-msgctxt "Action"
-msgid "Add user"
-msgstr "Добавить пользователя"
-
-#: node_modules/react-components/containers/domains/DomainActions.js:36
-msgctxt "Action"
-msgid "Set catch-all"
-msgstr "Задать catch-all"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:96
-#: node_modules/react-components/containers/domains/DomainActions.js:40
-#: node_modules/react-components/containers/filters/FilterItemRow.js:70
-#: node_modules/react-components/containers/filters/editor/EditConditionValue.js:14
-#: node_modules/react-components/containers/labels/ActionsLabel.js:67
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:65
-msgctxt "Action"
-msgid "Delete"
-msgstr "Удалить"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:53
-msgctxt "Action"
-msgid "Add domain"
-msgstr "Добавить домен"
-
-#: node_modules/react-components/containers/domains/DomainsSection.js:55
-msgctxt "Action"
-msgid "Refresh status"
-msgstr "Обновить статус"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:257
-#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:39
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:38
-#: node_modules/react-components/containers/logs/LogsSection.js:130
-#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/VPNClientCard.js:14
-msgctxt "Action"
-msgid "Download"
-msgstr "Скачать"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:54
-msgctxt "Action"
-msgid "Edit credentials"
-msgstr "Изменить учётные данные"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
-msgctxt "Action"
-msgid "Hide"
-msgstr "Скрыть"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
-msgctxt "Action"
-msgid "Show"
-msgstr "Показать"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:93
-msgctxt "Action"
-msgid "Change mailbox password"
-msgstr "Изменить пароль почтового ящика"
-
-#: node_modules/react-components/containers/account/DeleteSection.js:75
-msgctxt "Action"
-msgid "Delete your account"
-msgstr "Удалить свою учётную запись"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:61
-msgctxt "Action"
-msgid "Mark as default"
-msgstr "Установить по умолчанию"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:61
-msgctxt "Action"
-msgid "Add credit / debit card"
-msgstr "Добавить банковскую / дебетовую карту"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:63
-msgctxt "Action"
-msgid "Add PayPal"
-msgstr "Добавить PayPal"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:44
-msgctxt "Action"
-msgid "No"
-msgstr "Нет"
-
-#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:19
-msgctxt "Action"
-msgid "Add folder"
-msgstr "Добавить папку"
-
-#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:21
-msgctxt "Action"
-msgid "Add label"
-msgstr "Добавить ярлык"
-
-#: node_modules/react-components/containers/filters/editor/AddConditionValue.js:32
-#: node_modules/react-components/containers/filters/spamlist/AddEmailFilterListButton.js:17
-msgctxt "Action"
-msgid "Add"
-msgstr "Добавить"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:179
-msgctxt "Action"
-msgid "Remove condition"
-msgstr "Удалить условие"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:191
-msgctxt "Action"
-msgid "Add a new condition"
-msgstr "Добавить новое условие"
-
-#: node_modules/react-components/containers/filters/editor/LabelActions.js:42
-msgctxt "Action"
-msgid "Remove"
-msgstr "Удалить"
-
-#: node_modules/react-components/containers/filters/AddFilterModal.js:139
-msgctxt "Action"
-msgid "Preview"
-msgstr "Предпросмотр"
-
-#: node_modules/react-components/containers/filters/FilterItemRow.js:66
-msgctxt "Action"
-msgid "Edit sieve"
-msgstr "Изменить фильтр Sieve"
-
-#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:16
-msgctxt "Action"
-msgid "Add Filter"
-msgstr "Добавить фильтр"
-
-#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:18
-msgctxt "Action"
-msgid "Add sieve filter"
-msgstr "Добавить фильтр Sieve"
-
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:30
-msgctxt "Action"
-msgid "Insert CSS code here"
-msgstr "Вставьте сюда код CSS"
-
-#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
-msgctxt "Action"
-msgid "Wipe"
-msgstr "Стереть"
-
-#: node_modules/react-components/containers/logs/LogsSection.js:127
-msgctxt "Action"
-msgid "Refresh"
-msgstr "Обновить"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:50
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:64
-msgctxt "Action"
-msgid "Read"
-msgstr "Прочитанное"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:63
-msgctxt "Action"
-msgid "Unread"
-msgstr "Непрочитанное"
-
-#: node_modules/react-components/containers/general/ShortcutsSection.js:33
-msgctxt "Action"
-msgid "View keyboard shortcuts"
-msgstr "Посмотреть сочетания клавиш"
-
-#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
-#: node_modules/react-components/containers/overview/PromoteSection.js:67
-#: src/app/components/layout/PrivateLayout.js:65
-msgctxt "Action"
-msgid "Upgrade"
-msgstr "Повысить"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:52
-msgctxt "Action"
-msgid "Upgrade ProtonMail"
-msgstr "Улучшить ProtonMail"
-
-#: node_modules/react-components/containers/overview/PromoteSection.js:60
-msgctxt "Action"
-msgid "Join"
-msgstr "Присоединиться"
-
-#: node_modules/react-components/containers/support/AttachScreenshot.js:46
-msgctxt "Action"
-msgid "Clear"
-msgstr "Очистить"
-
-#: node_modules/react-components/containers/support/AttachScreenshot.js:53
-msgctxt "Action"
-msgid "Add screenshot(s)"
-msgstr "Добавить снимки экрана"
-
-#: node_modules/react-components/containers/support/BugModal.js:203
-msgctxt "Action"
-msgid "Hide info"
-msgstr "Скрыть информацию"
-
-#: node_modules/react-components/containers/support/BugModal.js:203
-msgctxt "Action"
-msgid "Show info"
-msgstr "Показать информацию"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:84
-#: node_modules/react-components/containers/heading/UserDropdown.js:92
-msgctxt "Action"
-msgid "Settings"
-msgstr "Настройки"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:109
-msgctxt "Action"
-msgid "I have a question"
-msgstr "У меня есть вопрос"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:119
-msgctxt "Action"
-msgid "Report bug"
-msgstr "Сообщить об ошибке"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:130
-msgctxt "Action"
-msgid "Proton shop"
-msgstr "Магазин Proton"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:140
-msgctxt "Action"
-msgid "Support us"
-msgstr "Поддержать нас"
-
-#: node_modules/react-components/containers/heading/UserDropdown.js:149
-msgctxt "Action"
-msgid "Logout"
-msgstr "Выйти"
-
-#: node_modules/react-components/containers/invoices/InvoiceActions.js:24
-msgctxt "Action"
-msgid "View"
-msgstr "Просмотреть"
-
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:92
-msgctxt "Action"
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+msgctxt "Label"
+msgid "Amount BTC"
+msgstr "Количество BTC"
+
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+msgctxt "Label"
+msgid "BTC address"
+msgstr "BTC адрес"
+
+#: node_modules/react-components/containers/payments/Payment.js:74
+msgctxt "Label"
+msgid "Payment method"
+msgstr "Способ оплаты"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:42
+#, javascript-format
+msgctxt "Label"
+msgid "Enter the password for key with fingerprint: ${ fingerprintCode }"
+msgstr "Введите пароль для ключа с отпечатком: ${ fingerprintCode }"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:51
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:44
+msgctxt "Label"
+msgid "Enter password"
+msgstr "Введите пароль"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:309
+msgctxt "Label"
+msgid "Enter your previous password from before your account was reset:"
+msgstr "Введите свой предыдущий пароль, который был до сброса учётной записи:"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
+msgctxt "Label"
+msgid "Please select files to upload"
+msgstr "Пожалуйста, выберите файлы для загрузки"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:16
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:79
+msgctxt "Label"
+msgid "Timezone"
+msgstr "Часовой пояс"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:14
+msgctxt "Label"
+msgid "Days of the week"
+msgstr "Дни недели"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:76
+msgctxt "Label"
+msgid "Duration"
+msgstr "Длительность"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:17
+msgctxt "Label"
+msgid "Start date"
+msgstr "Дата начала"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:20
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:25
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:24
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:24
+msgctxt "Label"
+msgid "Start time"
+msgstr "Время начала"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:30
+msgctxt "Label"
+msgid "End date"
+msgstr "Дата окончания"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:26
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:38
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:36
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:36
+msgctxt "Label"
+msgid "End time"
+msgstr "Время окончания"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:17
+msgctxt "Label"
+msgid "Start day of month"
+msgstr "День месяца начала"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:29
+msgctxt "Label"
+msgid "End day of month"
+msgstr "День месяца окончания"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:19
+msgctxt "Label"
+msgid "Start weekday"
+msgstr "День недели начала"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:31
+msgctxt "Label"
+msgid "End weekday"
+msgstr "День недели окончания"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:77
+msgctxt "Label"
+msgid "Start"
+msgstr "Начало"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:78
+msgctxt "Label"
+msgid "End"
+msgstr "Окончание"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:80
+msgctxt "Label"
+msgid "Message"
+msgstr "Сообщение"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:50
+msgctxt "Label"
+msgid "Auto-reply"
+msgstr "Автоответчик"
+
+#: node_modules/react-components/containers/organization/OrganizationNameModal.js:23
+#: node_modules/react-components/containers/organization/OrganizationSection.js:45
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:66
+msgctxt "Label"
+msgid "Organization name"
+msgstr "Название организации"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:102
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:113
+msgctxt "Label"
+msgid "Organization password"
+msgstr "Пароль организации"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:280
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:298
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:125
+msgctxt "Label"
+msgid "Confirm password"
+msgstr "Подтвердите пароль"
+
+#: node_modules/react-components/containers/members/EditMemberModal.js:73
+#: node_modules/react-components/containers/members/MemberModal.js:208
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
+msgctxt "Label"
+msgid "Account storage"
+msgstr "Хранилище учётной записи"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:209
+msgctxt "Label"
+msgid "VPN Connections"
+msgstr "VPN-подключения"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:118
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:69
+msgctxt "Label"
+msgid "New organization password"
+msgstr "Новый пароль организации"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:132
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:83
+msgctxt "Label"
+msgid "Confirm organization password"
+msgstr "Подтвердите пароль организации"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:96
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:188
+msgctxt "Label"
+msgid "Address"
+msgstr "Адрес"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:114
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
+#: node_modules/react-components/containers/addresses/IdentitySection.js:77
+msgctxt "Label"
+msgid "Display name"
+msgstr "Отображаемое имя"
+
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:69
+#: node_modules/react-components/containers/addresses/IdentitySection.js:90
+msgctxt "Label"
+msgid "Signature"
+msgstr "Подпись"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:70
+msgctxt "Label"
+msgid "Select an address"
+msgstr "Выберите адрес"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:106
+msgctxt "Label"
+msgid "ProtonMail signature"
+msgstr "Подпись ProtonMail"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:92
+msgctxt "Label"
 msgid "User"
 msgstr "Пользователь"
 
-#: node_modules/react-components/containers/invoices/InvoicesSection.js:98
-msgctxt "Action"
-msgid "Organization"
-msgstr "Организация"
+#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
+msgctxt "Label"
+msgid "Desktop notification"
+msgstr "Уведомление на рабочем столе"
 
-#: node_modules/react-components/containers/login/LoginForm.js:207
-msgctxt "Action"
-msgid "Log in"
-msgstr "Войти"
+#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:17
+#: node_modules/react-components/containers/notification/EmailModal.js:74
+msgctxt "Label"
+msgid "Email"
+msgstr "Эл. почта"
 
-#: node_modules/react-components/containers/sessions/SessionsSection.js:85
-msgctxt "Action"
-msgid "Revoke all other sessions"
-msgstr "Прервать все другие сессии"
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:125
+#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
+#: node_modules/react-components/containers/notification/EmailSection.js:66
+#: node_modules/react-components/containers/support/BugModal.js:156
+msgctxt "Label"
+msgid "Email address"
+msgstr "Адрес эл. почты"
 
-#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
-msgctxt "Action"
-msgid "Next month"
+#: node_modules/react-components/containers/notification/EmailSection.js:70
+msgctxt "Label"
+msgid "Allow password reset"
+msgstr "Разрешить сброс пароля"
+
+#: node_modules/react-components/containers/notification/EmailSection.js:83
+msgctxt "Label"
+msgid "Daily email notifications"
+msgstr "Ежедневные уведомления по электронной почте"
+
+#: node_modules/react-components/containers/domains/DomainSection.js:22
+msgctxt "Label"
+msgid "Enter your domain"
+msgstr "Введите свой домен"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/SPFSection.js:14
+msgctxt "Label"
+msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
+msgstr "Добавьте, пожалуйста, эту TXT-запись. Заметьте, что обновление DNS-записей может занять несколько часов."
+
+#: node_modules/react-components/containers/domains/MXSection.js:17
+msgctxt "Label"
+msgid "Please add the following MX record. Note, DNS records can take several hours to update."
+msgstr "Добавьте, пожалуйста, эту MX-запись. Заметьте, что обновление DNS-записей может занять несколько часов."
+
+#: node_modules/react-components/containers/domains/DMARCSection.js:14
+msgctxt "Label"
+msgid "Here is a basic DMARC record that does nothing except email you reports."
+msgstr "Это - базовая DMARC-запись, которая не делает ничего, кроме отправки вам отчётов."
+
+#: node_modules/react-components/containers/support/BugModal.js:144
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
+msgctxt "Label"
+msgid "Proton username"
+msgstr "Имя пользователя в Proton"
+
+#: node_modules/react-components/containers/login/PasswordForm.js:28
+#: node_modules/react-components/containers/login/UnlockModal.js:41
+#: node_modules/react-components/containers/members/MemberModal.js:167
+#: node_modules/react-components/containers/password/PasswordTotpInputs.js:10
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:26
+msgctxt "Label"
+msgid "Password"
+msgstr "Пароль"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:10
+msgctxt "Label"
+msgid "Download ProtonVPN"
+msgstr "Скачать ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:16
+msgctxt "Label"
+msgid "ProtonVPN homepage"
+msgstr "Домашняя страница ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:22
+msgctxt "Label"
+msgid "Get support for ProtonVPN"
+msgstr "Получить поддержку для ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:38
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:53
+msgctxt "Label"
+msgid "OpenVPN / IKEv2 username"
+msgstr "Имя пользователя OpenVPN / IKEv2"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:49
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:65
+msgctxt "Label"
+msgid "OpenVPN / IKEv2 password"
+msgstr "Пароль OpenVPN / IKEv2"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:125
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:278
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:308
+msgctxt "Label"
+msgid "Old login password"
+msgstr "Старый пароль учётной записи"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:126
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:160
+msgctxt "Label"
+msgid "New login password"
+msgstr "Новый пароль учётной записи"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:127
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:161
+msgctxt "Label"
+msgid "Confirm login password"
+msgstr "Подтвердить входной пароль"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:159
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:296
+msgctxt "Label"
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:187
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:309
+msgctxt "Label"
+msgid "New mailbox password"
+msgstr "Новый пароль почтового ящика"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:188
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:310
+msgctxt "Label"
+msgid "Confirm mailbox password"
+msgstr "Подтвердите пароль почтового ящика"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:279
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:297
+msgctxt "Label"
+msgid "New password"
+msgstr "Новый пароль"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:371
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
+#: node_modules/react-components/containers/login/TOTPForm.js:9
+#: node_modules/react-components/containers/password/PasswordTotpInputs.js:26
+msgctxt "Label"
+msgid "Two-factor code"
+msgstr "Двухфакторный код"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:67
+msgctxt "Label"
+msgid "Two password mode"
+msgstr "Режим двух паролей"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:86
+#: node_modules/react-components/containers/login/UnlockForm.js:9
+msgctxt "Label"
+msgid "Mailbox password"
+msgstr "Пароль почтового ящика"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:111
+msgctxt "Label"
+msgid "Feedback"
+msgstr "Обратная связь"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
+msgctxt "Label"
+msgid "Login password"
+msgstr "Пароль для входа"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:18
+#: node_modules/react-components/containers/members/EditMemberModal.js:61
+#: node_modules/react-components/containers/members/MemberModal.js:143
+msgctxt "Label"
+msgid "Name"
+msgstr "Имя"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:28
+msgctxt "Label"
+msgid "ProtonMail address"
+msgstr "Адрес ProtonMail"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:154
+msgctxt "Label"
+msgid "Key"
+msgstr "Ключ"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:160
+msgctxt "Label"
+msgid "Interval"
+msgstr "Интервал"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:166
+msgctxt "Label"
+msgid "Digits"
+msgstr "Знаков"
+
+#: node_modules/react-components/containers/account/TwoFactorSection.js:32
+msgctxt "Label"
+msgid "Two-factor authentication"
+msgstr "Двухфакторная аутентификация"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:34
+#: node_modules/react-components/containers/password/AskAuthModal.js:18
+msgctxt "Label"
+msgid "Cancel"
+msgstr "Отменить"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:35
+#: node_modules/react-components/containers/password/AskAuthModal.js:19
+msgctxt "Label"
+msgid "Submit"
+msgstr "Отправить"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodDetails.js:17
+msgctxt "Label"
+msgid "Cardholder name"
+msgstr "Имя владельца карты"
+
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+msgctxt "Label"
+msgid "Pay with cash"
+msgstr "Оплатить наличными"
+
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:41
+msgctxt "Label"
+msgid "Prompt to trust keys"
+msgstr "Спрашивать о доверии ключам"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:82
+msgctxt "Label"
+msgid "Sign external messages"
+msgstr "Подписывать сообщения, отправляемые вовне"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:100
+msgctxt "Label"
+msgid "Attach public key"
+msgstr "Присоединить публичный ключ"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:118
+msgctxt "Label"
+msgid "Default PGP Scheme"
+msgstr "Схема PGP по умолчанию"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:123
+#, javascript-format
+msgctxt "Label"
+msgid "Conditions ${ n }"
+msgstr "Условия ${ n }"
+
+#: node_modules/react-components/containers/filters/editor/AutoReplyAction.js:27
+msgctxt "Label"
+msgid "Send auto reply"
 msgstr ""
 
-#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
-msgctxt "Action"
-msgid "Prev month"
+#: node_modules/react-components/containers/filters/editor/Operator.js:20
+msgctxt "Label"
+msgid "Logic"
+msgstr "Логика"
+
+#: node_modules/react-components/containers/api/HumanVerificationModal.js:22
+msgctxt "Label"
+msgid "Captcha"
+msgstr "CAPTCHA"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:20
+msgctxt "Label"
+msgid "Auto-load remote content"
+msgstr "Авто-показ внешнего содержимого"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:29
+msgctxt "Label"
+msgid "Auto-load embedded images"
+msgstr "Авто-показ встроенных изображений"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:38
+msgctxt "Label"
+msgid "Sent/Drafts"
+msgstr "Отправленные/Черновики"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:46
+msgctxt "Label"
+msgid "Include moved"
+msgstr "Включить перемещённые"
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:50
+msgctxt "Label"
+msgid "Request link confirmation"
+msgstr "Запрашивать подтверждение при переходе по ссылкам"
+
+#: node_modules/react-components/containers/members/MemberModal.js:160
+msgctxt "Label"
+msgid "Key strength"
+msgstr "Стойкость ключа"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:25
+msgctxt "Label"
+msgid "CSS code"
+msgstr "Код CSS"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:40
+msgctxt "Label"
+msgid "Read/unread order"
+msgstr "Порядок прочитанных/непрочитанных"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
+msgctxt "Label"
+msgid "Default Composer"
+msgstr "Вид по умолчанию для редактора писем"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
+msgctxt "Label"
+msgid "Default Inbox"
+msgstr "Вид по умолчанию для почтового ящика"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:129
+msgctxt "Label"
+msgid "Conversations"
+msgstr "Цепочки писем"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
+msgctxt "Label"
+msgid "Use sticky labels"
+msgstr "Применять \"липкие\" ярлыки"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:162
+msgctxt "Label"
+msgid "Composer mode"
+msgstr "Режим редактора"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:173
+msgctxt "Label"
+msgid "Composer text direction"
+msgstr "Направление текста в редакторе"
+
+#: node_modules/react-components/containers/general/LanguageSection.js:56
+msgctxt "Label"
+msgid "Default language"
+msgstr "Язык по умолчанию"
+
+#: node_modules/react-components/containers/login/PasswordForm.js:10
+#: node_modules/react-components/containers/overview/SummarySection.js:53
+msgctxt "Label"
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:60
+msgctxt "Label"
+msgid "Recovery email"
+msgstr "Адрес резервной эл. почты"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:69
+msgctxt "Label"
+msgid "Two factor authentication"
+msgstr "Двухфакторная аутентификация"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:80
+msgctxt "Label"
+msgid "Role"
+msgstr "Роль"
+
+#: node_modules/react-components/containers/support/BugModal.js:168
+msgctxt "Label"
+msgid "Category"
+msgstr "Категория"
+
+#: node_modules/react-components/containers/support/BugModal.js:180
+msgctxt "Label"
+msgid "What happened?"
+msgstr "Что случилось?"
+
+#: node_modules/react-components/containers/support/BugModal.js:201
+msgctxt "Label"
+msgid "System information"
+msgstr "Сведения о системе"
+
+#: node_modules/react-components/containers/support/BugModal.js:209
+msgctxt "Label"
+msgid "Operating system"
+msgstr "Операционная система"
+
+#: node_modules/react-components/containers/support/BugModal.js:220
+msgctxt "Label"
+msgid "Operating system version"
+msgstr "Версия операционной системы"
+
+#: node_modules/react-components/containers/support/BugModal.js:231
+msgctxt "Label"
+msgid "Browser"
+msgstr "Браузер"
+
+#: node_modules/react-components/containers/support/BugModal.js:242
+msgctxt "Label"
+msgid "Browser version"
+msgstr "Версия браузера"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:66
+msgctxt "Label"
+msgid "Credits used"
+msgstr "Кредитов используется"
+
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
+msgctxt "Label"
+msgid "Customize invoices"
+msgstr "Настройка счетов"
+
+#: node_modules/react-components/containers/search/SearchSection.js:27
+msgctxt "Label"
+msgid "Require exact match"
 msgstr ""
 
-#: node_modules/react-components/components/modal/Confirm.js:10
-#: node_modules/react-components/components/modal/Confirm.js:12
-msgctxt "Action"
-msgid "Confirm"
-msgstr "Подтвердить"
-
-#: node_modules/react-components/components/modal/Header.js:11
-#: node_modules/react-components/components/modal/Header.js:13
-msgctxt "Action"
-msgid "Close modal"
-msgstr "Закрыть окно"
+#: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
+msgctxt "Info"
+msgid "Week"
+msgstr ""
 
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:112
 msgctxt "Info"
@@ -3080,12 +2211,12 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: node_modules/react-components/containers/layouts/LayoutsSection.js:93
-#: node_modules/react-components/containers/themes/ThemesSection.js:75
+#: node_modules/react-components/containers/themes/ThemesSection.js:80
 msgctxt "Info"
 msgid "Choose the look and feel of your mailbox."
 msgstr "Выберите внешний вид своего почтового ящика."
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:76
+#: node_modules/react-components/containers/themes/ThemesSection.js:81
 msgctxt "Info"
 msgid "Selecting another theme will override your current theme and any customization will be lost."
 msgstr "Выбор другой темы приведёт к замене вашей текущей темы и любые её изменения будут потеряны."
@@ -3195,11 +2326,6 @@ msgctxt "Info"
 msgid "Unless you explicitly logout or change your password, sessions can last for up to 6 months. Sessions expire after 2 weeks of inactivity."
 msgstr "До тех пор, пока вы явным образом не выйдете либо не измените свой пароль, сессии могут существовать до 6 месяцев. Срок действия сессий истекает после 2 недель бездействия."
 
-#: node_modules/react-components/components/miniCalendar/WeekNumbers.js:36
-msgctxt "Info"
-msgid "Week"
-msgstr ""
-
 #: src/app/containers/OrganizationContainer.js:44
 msgctxt "Info"
 msgid "Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address."
@@ -3257,6 +2383,1830 @@ msgstr "Перейдите на платный тариф, если вы хот�
 msgctxt "Info"
 msgid "Go to Filter Settings if you want to create and manage auto-replies by email address."
 msgstr "Перейдите в настройки фильтров, если вы хотите создавать автоответы и управлять ими для адресов эл. почты."
+
+#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:31
+msgctxt "Action"
+msgid "Next month"
+msgstr ""
+
+#: node_modules/react-components/components/miniCalendar/LocalizedMiniCalendar.js:32
+msgctxt "Action"
+msgid "Prev month"
+msgstr ""
+
+#: node_modules/react-components/components/modal/Confirm.js:11
+#: node_modules/react-components/components/modal/FormModal.js:19
+#: node_modules/react-components/components/modal/Input.js:33
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:95
+#: node_modules/react-components/containers/addresses/AddressModal.js:81
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:75
+#: node_modules/react-components/containers/login/LoginForm.js:216
+#: node_modules/react-components/containers/payments/PayPal.js:137
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:101
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:143
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:255
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:46
+msgctxt "Action"
+msgid "Cancel"
+msgstr "Отменить"
+
+#: node_modules/react-components/components/modal/FormModal.js:20
+#: node_modules/react-components/components/modal/Input.js:34
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:76
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:222
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:150
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:124
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:232
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:370
+#: node_modules/react-components/containers/login/LoginForm.js:239
+#: node_modules/react-components/containers/login/LoginForm.js:267
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:94
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:234
+#: node_modules/react-components/containers/support/BugModal.js:135
+msgctxt "Action"
+msgid "Submit"
+msgstr "Отправить"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:8
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:420
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:434
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
+#: node_modules/react-components/containers/domains/CatchAllModal.js:12
+#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/filters/AddFilterModal.js:137
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:49
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:123
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:39
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:21
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:231
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:369
+#: node_modules/react-components/containers/login/AbuseModal.js:21
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:164
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:57
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:93
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
+#: node_modules/react-components/containers/payments/CreditsModal.js:67
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:49
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:155
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:258
+msgctxt "Action"
+msgid "Close"
+msgstr "Закрыть"
+
+#: node_modules/react-components/components/modal/Confirm.js:10
+#: node_modules/react-components/components/modal/Confirm.js:12
+msgctxt "Action"
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: node_modules/react-components/components/modal/Header.js:11
+#: node_modules/react-components/components/modal/Header.js:13
+msgctxt "Action"
+msgid "Close modal"
+msgstr "Закрыть окно"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:102
+msgctxt "Action"
+msgid "Verify"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/PayPal.js:105
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
+msgctxt "Action"
+msgid "Try again"
+msgstr "Попробовать снова"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:171
+msgctxt "Action"
+msgid "Use a different card"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:172
+msgctxt "Action"
+msgid "Use a different payment method"
+msgstr ""
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:435
+#: node_modules/react-components/containers/addresses/AddressModal.js:80
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:50
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:40
+#: node_modules/react-components/containers/filters/AddFilterModal.js:130
+#: node_modules/react-components/containers/filters/AddFilterModal.js:143
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:39
+#: node_modules/react-components/containers/members/EditMemberModal.js:55
+#: node_modules/react-components/containers/members/MemberModal.js:139
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:165
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:58
+#: node_modules/react-components/containers/payments/EditCardModal.js:51
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:17
+msgctxt "Action"
+msgid "Save"
+msgstr "Сохранить"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:101
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:142
+msgctxt "Action"
+msgid "Customize"
+msgstr "Настроить"
+
+#: node_modules/react-components/containers/payments/subscription/AlertPromotion.js:21
+msgctxt "Action"
+msgid "Switch now"
+msgstr "Перейти сейчас"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:350
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
+msgctxt "Action"
+msgid "Hide additional features"
+msgstr "Скрыть дополнительные функции"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:350
+#: node_modules/react-components/containers/payments/subscription/CustomVPNSection.js:191
+msgctxt "Action"
+msgid "Compare all features"
+msgstr "Сравнить все функции"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:50
+#: node_modules/react-components/containers/payments/subscription/CouponForm.js:27
+#: node_modules/react-components/containers/payments/subscription/GiftCodeForm.js:26
+#: node_modules/react-components/containers/themes/ThemesSection.js:58
+msgctxt "Action"
+msgid "Apply"
+msgstr "Применить"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:112
+msgctxt "Action"
+msgid "Remove coupon"
+msgstr "Убрать купон"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:154
+msgctxt "Action"
+msgid "Add coupon"
+msgstr "Добавить купон"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:87
+msgctxt "Action"
+msgid "Add gift code"
+msgstr "Добавить подарочный код"
+
+#: node_modules/react-components/containers/payments/subscription/Thanks.js:23
+msgctxt "Action"
+msgid "Got it"
+msgstr "Понятно"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
+#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:191
+msgctxt "Action"
+msgid "Next"
+msgstr "Далее"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
+msgctxt "Action"
+msgid "Continue"
+msgstr ""
+
+#.  Insert it before the last one
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:238
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:261
+msgctxt "Action"
+msgid "Previous"
+msgstr "Назад"
+
+#.  Insert it before the last one
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:45
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:50
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:239
+msgctxt "Action"
+msgid "Pay"
+msgstr "Оплатить"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:189
+msgctxt "Action"
+msgid "Get the deal"
+msgstr "Воспользоваться предложением"
+
+#: node_modules/react-components/containers/payments/DowngradeModal.js:7
+msgctxt "Action"
+msgid "Downgrade"
+msgstr "Понизить"
+
+#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:10
+msgctxt "Action"
+msgid "Remove bonuses"
+msgstr "Удалить бонусы"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:332
+#: node_modules/react-components/containers/payments/PlansTable.js:337
+#: node_modules/react-components/containers/payments/PlansTable.js:342
+msgctxt "Action"
+msgid "Edit VPN"
+msgstr "Изменить VPN"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:332
+#: node_modules/react-components/containers/payments/PlansTable.js:337
+#: node_modules/react-components/containers/payments/PlansTable.js:342
+msgctxt "Action"
+msgid "Add VPN"
+msgstr "Добавить VPN"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:36
+#: node_modules/react-components/containers/payments/PlansTable.js:359
+#: node_modules/react-components/containers/payments/PlansTable.js:367
+#: node_modules/react-components/containers/payments/PlansTable.js:375
+#: node_modules/react-components/containers/payments/PlansTable.js:383
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:47
+msgctxt "Action"
+msgid "Update"
+msgstr "Обновить"
+
+#: node_modules/react-components/containers/payments/PlansTable.js:359
+#: node_modules/react-components/containers/payments/PlansTable.js:367
+#: node_modules/react-components/containers/payments/PlansTable.js:375
+#: node_modules/react-components/containers/payments/PlansTable.js:383
+msgctxt "Action"
+msgid "Select"
+msgstr "Выбрать"
+
+#: node_modules/react-components/containers/payments/PayPal.js:149
+#: node_modules/react-components/containers/payments/PayPal.js:178
+msgctxt "Action"
+msgid "Check out with PayPal"
+msgstr "Оплатить при помощи PayPal"
+
+#: node_modules/react-components/containers/payments/PayPal.js:164
+msgctxt "Action"
+msgid "Add PayPal payment method"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/DonateModal.js:43
+msgctxt "Action"
+msgid "Donate"
+msgstr "Пожертвовать"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:66
+msgctxt "Action"
+msgid "Top up"
+msgstr "Пополнить"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:69
+#: node_modules/react-components/containers/payments/BillingSection.js:334
+msgctxt "Action"
+msgid "Add credits"
+msgstr "Пополнить счёт"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:83
+#: node_modules/react-components/containers/payments/BillingSection.js:348
+msgctxt "Action"
+msgid "Use gift code"
+msgstr "Использовать подарочный код"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:311
+msgctxt "Action"
+msgid "Pay annually and save 20%!"
+msgstr "Платите ежегодно и сэкономьте 20%!"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:37
+msgctxt "Action"
+msgid "Decrypt"
+msgstr "Расшифровать"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysList.js:72
+msgctxt "Action"
+msgid "Upload"
+msgstr "Загрузить"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:214
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:272
+msgctxt "Action"
+msgid "Re-activate"
+msgstr "Активировать повторно"
+
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:145
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:91
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:105
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:87
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:96
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:205
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:213
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:328
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:343
+msgctxt "Action"
+msgid "Done"
+msgstr "Готово"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:421
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
+#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:358
+msgctxt "Action"
+msgid "Ok"
+msgstr "Ok"
+
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:38
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:79
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:114
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:171
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:43
+msgctxt "Action"
+msgid "Yes"
+msgstr "Да"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:41
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:40
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:22
+msgctxt "Action"
+msgid "Export"
+msgstr "Экспорт"
+
+#: node_modules/react-components/containers/keys/UserKeysSection.js:79
+msgctxt "Action"
+msgid "Export private key"
+msgstr "Экспортировать закрытый ключ"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:186
+msgctxt "Action"
+msgid "Select files"
+msgstr "Выбрать файлы"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:30
+msgctxt "Action"
+msgid "Create key"
+msgstr "Создать ключ"
+
+#: node_modules/react-components/containers/keys/AddressKeysHeaderActions.js:34
+msgctxt "Action"
+msgid "Import key"
+msgstr "Импортировать ключ"
+
+#: node_modules/react-components/containers/keys/AddressKeysSection.js:215
+msgctxt "Action"
+msgid "Reactivate keys"
+msgstr "Повторно активировать ключи"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:86
+#: node_modules/react-components/containers/addresses/IdentitySection.js:102
+#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:87
+#: node_modules/react-components/containers/domains/DomainActions.js:32
+#: node_modules/react-components/containers/filters/FilterItemRow.js:62
+#: node_modules/react-components/containers/labels/ActionsLabel.js:63
+#: node_modules/react-components/containers/notification/RecoveryEmail.js:15
+#: node_modules/react-components/containers/organization/OrganizationSection.js:50
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:56
+msgctxt "Action"
+msgid "Edit"
+msgstr "Изменить"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:218
+#: node_modules/react-components/containers/filters/AddFilterModal.js:129
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:109
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:238
+msgctxt "Action"
+msgid "Back"
+msgstr "Назад"
+
+#: node_modules/react-components/containers/organization/ActivateOrganizationButton.js:27
+msgctxt "Action"
+msgid "Enable multi-user support"
+msgstr "Включить многопользовательский режим"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:115
+#: node_modules/react-components/containers/organization/RestoreAdministratorPrivileges.js:45
+msgctxt "Action"
+msgid "Restore administrator privileges"
+msgstr "Восстановить полномочия администратора"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:98
+msgctxt "Action"
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:101
+msgctxt "Action"
+msgid "Change organization keys"
+msgstr "Изменить ключи организации"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:129
+msgctxt "Action"
+msgid "Activate organization key"
+msgstr "Активировать ключ организации"
+
+#: node_modules/react-components/containers/addresses/PmMeButton.js:12
+msgctxt "Action"
+msgid "Activate"
+msgstr "Включить"
+
+#: node_modules/react-components/containers/addresses/AddressesToolbar.js:34
+#: node_modules/react-components/containers/domains/AddressesSection.js:29
+msgctxt "Action"
+msgid "Add address"
+msgstr "Добавить адрес"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:31
+msgctxt "Action"
+msgid "Send test notification"
+msgstr "Отправить тестовое уведомление"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationPanel.js:33
+msgctxt "Action"
+msgid "Enable desktop notification"
+msgstr "Включить уведомление на рабочем столе"
+
+#: node_modules/react-components/containers/domains/AddressesSection.js:31
+#: node_modules/react-components/containers/members/MembersSection.js:126
+msgctxt "Action"
+msgid "Add user"
+msgstr "Добавить пользователя"
+
+#: node_modules/react-components/containers/domains/DomainActions.js:36
+msgctxt "Action"
+msgid "Set catch-all"
+msgstr "Задать catch-all"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:96
+#: node_modules/react-components/containers/domains/DomainActions.js:40
+#: node_modules/react-components/containers/filters/FilterItemRow.js:70
+#: node_modules/react-components/containers/filters/editor/EditConditionValue.js:14
+#: node_modules/react-components/containers/labels/ActionsLabel.js:68
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:65
+msgctxt "Action"
+msgid "Delete"
+msgstr "Удалить"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:53
+msgctxt "Action"
+msgid "Add domain"
+msgstr "Добавить домен"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:55
+msgctxt "Action"
+msgid "Refresh status"
+msgstr "Обновить статус"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:257
+#: node_modules/react-components/containers/apps/ProtonMailAppsSection.js:39
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:38
+#: node_modules/react-components/containers/logs/LogsSection.js:130
+#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/VPNClientCard.js:14
+msgctxt "Action"
+msgid "Download"
+msgstr "Скачать"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:54
+msgctxt "Action"
+msgid "Edit credentials"
+msgstr "Изменить учётные данные"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
+msgctxt "Action"
+msgid "Hide"
+msgstr "Скрыть"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:62
+msgctxt "Action"
+msgid "Show"
+msgstr "Показать"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:93
+msgctxt "Action"
+msgid "Change mailbox password"
+msgstr "Изменить пароль почтового ящика"
+
+#: node_modules/react-components/containers/account/DeleteSection.js:75
+msgctxt "Action"
+msgid "Delete your account"
+msgstr "Удалить свою учётную запись"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodActions.js:61
+msgctxt "Action"
+msgid "Mark as default"
+msgstr "Установить по умолчанию"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:61
+msgctxt "Action"
+msgid "Add credit / debit card"
+msgstr "Добавить банковскую / дебетовую карту"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:63
+msgctxt "Action"
+msgid "Add PayPal"
+msgstr "Добавить PayPal"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:44
+msgctxt "Action"
+msgid "No"
+msgstr "Нет"
+
+#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:19
+msgctxt "Action"
+msgid "Add folder"
+msgstr "Добавить папку"
+
+#: node_modules/react-components/containers/labels/ActionsLabelToolbar.js:21
+msgctxt "Action"
+msgid "Add label"
+msgstr "Добавить ярлык"
+
+#: node_modules/react-components/containers/filters/editor/AddConditionValue.js:32
+#: node_modules/react-components/containers/filters/spamlist/AddEmailFilterListButton.js:17
+msgctxt "Action"
+msgid "Add"
+msgstr "Добавить"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:179
+msgctxt "Action"
+msgid "Remove condition"
+msgstr "Удалить условие"
+
+#: node_modules/react-components/containers/filters/editor/Conditions.js:191
+msgctxt "Action"
+msgid "Add a new condition"
+msgstr "Добавить новое условие"
+
+#: node_modules/react-components/containers/filters/editor/LabelActions.js:42
+msgctxt "Action"
+msgid "Remove"
+msgstr "Удалить"
+
+#: node_modules/react-components/containers/filters/AddFilterModal.js:139
+msgctxt "Action"
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: node_modules/react-components/containers/filters/FilterItemRow.js:66
+msgctxt "Action"
+msgid "Edit sieve"
+msgstr "Изменить фильтр Sieve"
+
+#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:16
+msgctxt "Action"
+msgid "Add Filter"
+msgstr "Добавить фильтр"
+
+#: node_modules/react-components/containers/filters/ActionsFilterToolbar.js:18
+msgctxt "Action"
+msgid "Add sieve filter"
+msgstr "Добавить фильтр Sieve"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:30
+msgctxt "Action"
+msgid "Insert CSS code here"
+msgstr "Вставьте сюда код CSS"
+
+#: node_modules/react-components/containers/logs/WipeLogsButton.js:22
+msgctxt "Action"
+msgid "Wipe"
+msgstr "Стереть"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:127
+msgctxt "Action"
+msgid "Refresh"
+msgstr "Обновить"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:50
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:64
+msgctxt "Action"
+msgid "Read"
+msgstr "Прочитанное"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:51
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:63
+msgctxt "Action"
+msgid "Unread"
+msgstr "Непрочитанное"
+
+#: node_modules/react-components/containers/general/ShortcutsSection.js:33
+msgctxt "Action"
+msgid "View keyboard shortcuts"
+msgstr "Посмотреть сочетания клавиш"
+
+#: node_modules/react-components/containers/apps/ProtonMailBridgeSection.js:14
+#: node_modules/react-components/containers/overview/PromoteSection.js:67
+#: src/app/components/layout/PrivateLayout.js:65
+msgctxt "Action"
+msgid "Upgrade"
+msgstr "Повысить"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:52
+msgctxt "Action"
+msgid "Upgrade ProtonMail"
+msgstr "Улучшить ProtonMail"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:60
+msgctxt "Action"
+msgid "Join"
+msgstr "Присоединиться"
+
+#: node_modules/react-components/containers/support/AttachScreenshot.js:46
+msgctxt "Action"
+msgid "Clear"
+msgstr "Очистить"
+
+#: node_modules/react-components/containers/support/AttachScreenshot.js:53
+msgctxt "Action"
+msgid "Add screenshot(s)"
+msgstr "Добавить снимки экрана"
+
+#: node_modules/react-components/containers/support/BugModal.js:203
+msgctxt "Action"
+msgid "Hide info"
+msgstr "Скрыть информацию"
+
+#: node_modules/react-components/containers/support/BugModal.js:203
+msgctxt "Action"
+msgid "Show info"
+msgstr "Показать информацию"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:84
+#: node_modules/react-components/containers/heading/UserDropdown.js:92
+msgctxt "Action"
+msgid "Settings"
+msgstr "Настройки"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:109
+msgctxt "Action"
+msgid "I have a question"
+msgstr "У меня есть вопрос"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:119
+msgctxt "Action"
+msgid "Report bug"
+msgstr "Сообщить об ошибке"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:130
+msgctxt "Action"
+msgid "Proton shop"
+msgstr "Магазин Proton"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:140
+msgctxt "Action"
+msgid "Support us"
+msgstr "Поддержать нас"
+
+#: node_modules/react-components/containers/heading/UserDropdown.js:149
+msgctxt "Action"
+msgid "Logout"
+msgstr "Выйти"
+
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:24
+msgctxt "Action"
+msgid "View"
+msgstr "Просмотреть"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:92
+msgctxt "Action"
+msgid "User"
+msgstr "Пользователь"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:98
+msgctxt "Action"
+msgid "Organization"
+msgstr "Организация"
+
+#: node_modules/react-components/containers/login/LoginForm.js:207
+msgctxt "Action"
+msgid "Log in"
+msgstr "Войти"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:85
+msgctxt "Action"
+msgid "Revoke all other sessions"
+msgstr "Прервать все другие сессии"
+
+#: node_modules/react-components/components/modal/PreviewPDFModal.js:6
+msgctxt "Title"
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: node_modules/react-components/components/container/RelatedSettingsSection.js:14
+#: src/app/containers/AddressesContainer.js:19
+#: src/app/containers/AutoReplyContainer.js:23
+#: src/app/containers/DomainsContainer.js:27
+#: src/app/containers/MembersContainer.js:23
+#: src/app/containers/OrganizationContainer.js:27
+msgctxt "Title"
+msgid "Related settings"
+msgstr "Связанные настройки"
+
+#: node_modules/react-components/components/dropdown/DropdownActions.js:48
+msgctxt "Title"
+msgid "Open actions dropdown"
+msgstr "Открыть выпадающее меню действий"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:44
+msgctxt "Title"
+msgid "Unsupported browser"
+msgstr "Неподдерживаемый браузер"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
+msgctxt "Title"
+msgid "Card verification"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:45
+msgctxt "Title"
+msgid "Payment verification"
+msgstr "Проверка платежа"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:46
+msgctxt "Title"
+msgid "Processing..."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:48
+msgctxt "Title"
+msgid "Card verification in progress"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:49
+msgctxt "Title"
+msgid "Payment verification in progress"
+msgstr "Производится проверка платежа"
+
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:50
+msgctxt "Title"
+msgid "3-D Secure verification failed"
+msgstr ""
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:16
+#: node_modules/react-components/containers/payments/PaymentVerificationModal.js:162
+msgctxt "Title"
+msgid "Error"
+msgstr "Ошибка"
+
+#: node_modules/react-components/containers/payments/Card.js:80
+msgctxt "Title"
+msgid "ZIP / postal code"
+msgstr "Почтовый индекс / код"
+
+#: node_modules/react-components/containers/payments/EditCardModal.js:18
+msgctxt "Title"
+msgid "Edit credit/debit card"
+msgstr "Изменение банковской/дебетовой карты"
+
+#: node_modules/react-components/containers/payments/EditCardModal.js:18
+msgctxt "Title"
+msgid "Add credit/debit card"
+msgstr "Добавление банковской/дебетовой карты"
+
+#: node_modules/react-components/containers/payments/PayPalModal.js:23
+msgctxt "Title"
+msgid "Add PayPal payment method"
+msgstr "Добавить способ оплаты PayPal"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:54
+#: src/app/containers/SubscriptionContainer.js:28
+#: src/app/containers/SubscriptionContainer.js:38
+msgctxt "Title"
+msgid "Subscription"
+msgstr "Тариф"
+
+#: node_modules/react-components/containers/payments/subscription/CustomMailSection.js:26
+msgctxt "Title"
+msgid "ProtonMail total"
+msgstr "ProtonMail - итого"
+
+#.  Includes coupon discount and cycle discount
+#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:92
+msgctxt "Title"
+msgid "Subscription details"
+msgstr "Сведения о тарифе"
+
+#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:24
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:204
+msgctxt "Title"
+msgid "Payment details"
+msgstr "Реквизиты платежа"
+
+#: node_modules/react-components/containers/payments/subscription/Thanks.js:17
+msgctxt "Title"
+msgid "Thank you!"
+msgstr "Спасибо!"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:136
+msgctxt "Title"
+msgid "Order summary"
+msgstr "Заказ - итого"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:163
+msgctxt "Title"
+msgid "Upgrading account"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:177
+msgctxt "Title"
+msgid "VPN protection"
+msgstr "Защита VPN"
+
+#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:190
+msgctxt "Title"
+msgid "Customization"
+msgstr "Настройка"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:36
+msgctxt "Title"
+msgid "1 month deal"
+msgstr "Предложение на 1 месяц"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:37
+msgctxt "Title"
+msgid "1 year deal"
+msgstr "Предложение на 1 год"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:38
+msgctxt "Title"
+msgid "2 year deal"
+msgstr "Предложение на 2 года"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:43
+#, javascript-format
+msgctxt "Title"
+msgid "Billed as ${ amount } for 1 month ${ NOTICES[notice] }"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:44
+#, javascript-format
+msgctxt "Title"
+msgid "Billed as ${ amount } for 1 year ${ NOTICES[notice] }"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:45
+msgctxt "Title"
+msgid "Billed as ${ amount } for 2 years ${ NOTICES[notice] }"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:50
+#, javascript-format
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 1 year at a discounted annual price of ${ amount } per year (20% discount)."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:52
+#, javascript-format
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year price of ${ amount } every 2 years (33% discount)."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:54
+msgctxt "Title"
+msgid "${ NOTICES[notice] } Renews after 2 years at a discounted 2-year & bundle price of ${ amount } every 2 years (47% discount)."
+msgstr ""
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:117
+msgctxt "Title"
+msgid "Black Friday sale"
+msgstr "Распродажа в Чёрную пятницу"
+
+#: node_modules/react-components/containers/payments/subscription/BlackFridayModal.js:164
+msgctxt "Title"
+msgid "Most popular"
+msgstr "Самый популярный"
+
+#: node_modules/react-components/containers/payments/DowngradeModal.js:7
+msgctxt "Title"
+msgid "Confirm downgrade"
+msgstr "Подтвердите понижение"
+
+#: node_modules/react-components/containers/payments/LossLoyaltyModal.js:9
+msgctxt "Title"
+msgid "Confirm loss of Proton bonuses"
+msgstr ""
+
+#: node_modules/react-components/containers/payments/PlansTable.js:34
+msgctxt "Title"
+msgid "My subscription"
+msgstr "Мой тариф"
+
+#: node_modules/react-components/containers/payments/PlansSection.js:106
+#: node_modules/react-components/containers/payments/PlansSection.js:115
+#: node_modules/react-components/containers/payments/PlansSection.js:123
+#: src/app/containers/SubscriptionContainer.js:34
+msgctxt "Title"
+msgid "Plans"
+msgstr "Тарифы"
+
+#: node_modules/react-components/containers/payments/DonateModal.js:42
+msgctxt "Title"
+msgid "Make a donation"
+msgstr "Сделать пожертвование"
+
+#: node_modules/react-components/containers/payments/GiftCodeModal.js:48
+msgctxt "Title"
+msgid "Gift code"
+msgstr "Подарочный код"
+
+#: node_modules/react-components/containers/payments/CreditsModal.js:68
+msgctxt "Title"
+msgid "Add credits"
+msgstr "Пополнение счёта"
+
+#: node_modules/react-components/containers/payments/BillingSection.js:63
+#: node_modules/react-components/containers/payments/BillingSection.js:96
+#: node_modules/react-components/containers/payments/BillingSection.js:105
+#: node_modules/react-components/containers/payments/BillingSection.js:121
+#: src/app/containers/SubscriptionContainer.js:43
+msgctxt "Title"
+msgid "Billing details"
+msgstr "Платёжная информация"
+
+#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:35
+msgctxt "Title"
+msgid "Decrypt key"
+msgstr "Расшифровать ключ"
+
+#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:368
+msgctxt "Title"
+msgid "Re-activate keys"
+msgstr "Повторная активация ключей"
+
+#: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:122
+msgctxt "Title"
+msgid "Create key"
+msgstr "Создание ключа"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPublicKeyModal.js:20
+msgctxt "Title"
+msgid "Export public key"
+msgstr "Экспорт публичного ключа"
+
+#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:38
+msgctxt "Title"
+msgid "Export private key"
+msgstr "Экспорт закрытого ключа"
+
+#: node_modules/react-components/containers/keys/UserKeysSection.js:18
+#: src/app/containers/KeysContainer.js:19
+msgctxt "Title"
+msgid "Contact encryption keys"
+msgstr "Ключи шифрования контакта"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeysList.js:19
+msgctxt "Title"
+msgid "Success"
+msgstr "Успешно"
+
+#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:230
+msgctxt "Title"
+msgid "Import key"
+msgstr "Импорт ключа"
+
+#: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:113
+msgctxt "Title"
+msgid "Delete key"
+msgstr "Удаление ключа"
+
+#: node_modules/react-components/containers/keys/AddressKeysSection.js:71
+#: src/app/containers/KeysContainer.js:15
+msgctxt "Title"
+msgid "Email encryption keys"
+msgstr "Ключи шифрования эл. почты"
+
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:32
+msgctxt "Title"
+msgid "Create auto-reply"
+msgstr "Создать автоответчик"
+
+#: node_modules/react-components/containers/autoReply/AutoReplySection.js:43
+#: src/app/containers/AutoReplyContainer.js:13
+#: src/app/containers/AutoReplyContainer.js:19
+msgctxt "Title"
+msgid "Auto-reply"
+msgstr "Автоответчик"
+
+#: node_modules/react-components/containers/organization/OrganizationNameModal.js:22
+msgctxt "Title"
+msgid "Change organization name"
+msgstr "Изменить название организации"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:63
+msgctxt "Title"
+msgid "Name your organization"
+msgstr "Задайте имя для вашей организации"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:84
+msgctxt "Title"
+msgid "Set organization keys"
+msgstr "Настройка ключей организации"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:100
+msgctxt "Title"
+msgid "Set organization password"
+msgstr "Задать пароль организации"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:170
+msgctxt "Title"
+msgid "Allocate storage"
+msgstr "Выделение объёма в хранилище"
+
+#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:203
+msgctxt "Title"
+msgid "Allocate VPN connections"
+msgstr "Выделить VPN-подключения"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:31
+msgctxt "Title"
+msgid "Multi-user support"
+msgstr "Многопользовательский режим"
+
+#: node_modules/react-components/containers/organization/OrganizationSection.js:42
+#: src/app/containers/OrganizationContainer.js:13
+msgctxt "Title"
+msgid "Organization"
+msgstr "Организация"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:39
+msgctxt "Title"
+msgid "Activate organization key"
+msgstr "Активировать ключ организации"
+
+#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:53
+msgctxt "Title"
+msgid "Restore administrator privileges"
+msgstr "Восстановить полномочия администратора"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:56
+msgctxt "Title"
+msgid "Change organization password"
+msgstr "Изменение пароля организации"
+
+#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:163
+msgctxt "Title"
+msgid "Change organization keys"
+msgstr "Изменение ключей организации"
+
+#: node_modules/react-components/containers/organization/OrganizationPasswordSection.js:34
+#: src/app/containers/OrganizationContainer.js:23
+msgctxt "Title"
+msgid "Password & key"
+msgstr "Пароль и ключ"
+
+#: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:155
+msgctxt "Title"
+msgid "Generate missing keys"
+msgstr "Создать недостающие ключи"
+
+#: node_modules/react-components/containers/addresses/PmMeSection.js:9
+#: src/app/containers/IdentityContainer.js:22
+msgctxt "Title"
+msgid "Short domain (@pm.me)"
+msgstr "Короткий домен (@pm.me)"
+
+#: node_modules/react-components/containers/addresses/EditAddressModal.js:49
+msgctxt "Title"
+msgid "Edit address"
+msgstr "Изменить адрес"
+
+#: node_modules/react-components/containers/addresses/IdentitySection.js:26
+#: src/app/containers/IdentityContainer.js:18
+msgctxt "Title"
+msgid "Display name & signature"
+msgstr "Отображаемое имя и подпись"
+
+#: node_modules/react-components/containers/addresses/AddressModal.js:79
+msgctxt "Title"
+msgid "Create address"
+msgstr "Создать адрес"
+
+#: node_modules/react-components/containers/addresses/AddressesSection.js:20
+#: src/app/containers/AddressesContainer.js:10
+#: src/app/containers/AddressesContainer.js:15
+msgctxt "Title"
+msgid "Addresses"
+msgstr "Адреса"
+
+#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:9
+msgctxt "Title"
+msgid "Desktop notification"
+msgstr "Уведомление на рабочем столе"
+
+#: node_modules/react-components/containers/notification/EmailModal.js:33
+msgctxt "Title"
+msgid "Confirm address"
+msgstr ""
+
+#: node_modules/react-components/containers/notification/EmailModal.js:70
+msgctxt "Title"
+msgid "Update recovery/notification email"
+msgstr "Обновить адрес эл. почты для восстановления/уведомлений"
+
+#: node_modules/react-components/containers/notification/EmailSection.js:62
+msgctxt "Title"
+msgid "Recovery & notification"
+msgstr "Восстановление и уведомление"
+
+#: node_modules/react-components/containers/domains/CatchAllSection.js:8
+msgctxt "Title"
+msgid "Catch all "
+msgstr "Catch-all "
+
+#: node_modules/react-components/containers/domains/DomainModal.js:159
+msgctxt "Title"
+msgid "Edit domain"
+msgstr "Изменить домен"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:159
+msgctxt "Title"
+msgid "Add domain"
+msgstr "Добавить домен"
+
+#: node_modules/react-components/containers/domains/CatchAllModal.js:13
+msgctxt "Title"
+msgid "Catch all address"
+msgstr "Catch-all-адрес"
+
+#: node_modules/react-components/containers/domains/DomainActions.js:43
+msgctxt "Title"
+msgid "Delete domain"
+msgstr "Удалить домен"
+
+#: node_modules/react-components/containers/domains/DomainsSection.js:46
+#: src/app/containers/DomainsContainer.js:13
+#: src/app/containers/DomainsContainer.js:19
+msgctxt "Title"
+msgid "Custom domains"
+msgstr "Свои домены"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNClientsSection/ProtonVPNClientsSection.js:9
+#: src/app/containers/VPNContainer.js:19
+msgctxt "Title"
+msgid "ProtonVPN clients"
+msgstr "Клиенты ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:17
+#: src/app/containers/VPNContainer.js:23
+msgctxt "Title"
+msgid "ProtonVPN credentials"
+msgstr "Учётные данные ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:8
+#: src/app/containers/VPNContainer.js:31
+msgctxt "Title"
+msgid "ProtonVPN resources"
+msgstr "Ресурсы ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:22
+msgctxt "Title"
+msgid "Edit OpenVPN / IKEv2 credentials"
+msgstr "Изменить учётные данные OpenVPN / IKEv2"
+
+#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:31
+#: src/app/containers/VPNContainer.js:27
+msgctxt "Title"
+msgid "OpenVPN / IKEv2 username"
+msgstr "Имя пользователя OpenVPN / IKEv2"
+
+#: node_modules/react-components/containers/sidebar/StorageSpaceStatus.js:77
+msgctxt "Title"
+msgid "Storage"
+msgstr "Хранилище"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:123
+#: node_modules/react-components/containers/account/PasswordsSection.js:38
+msgctxt "Title"
+msgid "Change login password"
+msgstr "Изменить пароль учётной записи"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:151
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:185
+msgctxt "Title"
+msgid "Switch to two-password mode"
+msgstr "Переключить в режим двух паролей"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:276
+msgctxt "Title"
+msgid "Switch to one-password mode"
+msgstr "Переключить в режим одного пароля"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:294
+#: node_modules/react-components/containers/account/PasswordsSection.js:38
+msgctxt "Title"
+msgid "Change password"
+msgstr "Изменение пароля"
+
+#: node_modules/react-components/containers/account/ChangePasswordModal.js:306
+msgctxt "Title"
+msgid "Change mailbox password"
+msgstr "Изменить пароль почтового ящика"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:23
+msgctxt "Title"
+msgid "Passwords"
+msgstr "Пароли"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:37
+msgctxt "Title"
+msgid "Password"
+msgstr "Пароль"
+
+#: node_modules/react-components/containers/account/PasswordsSection.js:37
+msgctxt "Title"
+msgid "Login password"
+msgstr "Пароль для входа"
+
+#: node_modules/react-components/containers/account/DeleteAccountModal.js:97
+#: node_modules/react-components/containers/account/DeleteSection.js:33
+msgctxt "Title"
+msgid "Delete account"
+msgstr "Удалить учётную запись"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:16
+msgctxt "Title"
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: node_modules/react-components/containers/account/NewsSection.js:17
+#: node_modules/react-components/containers/account/NewsSection.js:25
+msgctxt "Title"
+msgid "Email subscriptions"
+msgstr "Подписки на рассылки"
+
+#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:272
+msgctxt "Title"
+msgid "Set up two-factor authentication"
+msgstr "Настройка двухфакторной аутентификации"
+
+#: node_modules/react-components/containers/account/DisableTwoFactorModal.js:82
+msgctxt "Title"
+msgid "Disable two-factor authentication"
+msgstr "Отключение двухфакторной аутентификации"
+
+#: node_modules/react-components/containers/account/TwoFactorSection.js:29
+msgctxt "Title"
+msgid "Two-factor authentication"
+msgstr "Двухфакторная аутентификация"
+
+#: node_modules/react-components/containers/login/UnlockModal.js:33
+#: node_modules/react-components/containers/password/AskAuthModal.js:17
+msgctxt "Title"
+msgid "Sign in again to continue"
+msgstr "Чтобы продолжить, повторно войдите ещё раз"
+
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:33
+#: node_modules/react-components/containers/paymentMethods/PaymentMethodsSection.js:51
+#: src/app/containers/SubscriptionContainer.js:48
+msgctxt "Title"
+msgid "Payment methods"
+msgstr "Способы оплаты"
+
+#: node_modules/react-components/containers/security/AddressVerificationSection.js:34
+#: src/app/containers/SecurityContainer.js:23
+msgctxt "Title"
+msgid "Address verification"
+msgstr "Проверка адреса"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:45
+msgctxt "Title"
+msgid "Automatically sign outgoing messages?"
+msgstr "Подписывать ли исходящие сообщения автоматически?"
+
+#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:76
+msgctxt "Title"
+msgid "External PGP settings (optional)"
+msgstr "Настройки внешнего PGP (необязательно)"
+
+#: node_modules/react-components/containers/labels/ActionsLabel.js:26
+msgctxt "Title"
+msgid "Delete label"
+msgstr "Удалить ярлык"
+
+#: node_modules/react-components/containers/labels/ActionsLabel.js:31
+msgctxt "Title"
+msgid "Delete folder"
+msgstr "Удалить папку"
+
+#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:18
+#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:13
+msgctxt "Title"
+msgid "blacklist"
+msgstr "чёрный список"
+
+#: node_modules/react-components/containers/filters/spamlist/MoveEmailFilteredList.js:19
+#: node_modules/react-components/containers/filters/spamlist/RemoveEmailFilteredList.js:14
+msgctxt "Title"
+msgid "whitelist"
+msgstr "белый список"
+
+#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:15
+msgctxt "Title"
+msgid "Whitelist"
+msgstr "Белый список"
+
+#: node_modules/react-components/containers/filters/spamlist/SpamListItem.js:16
+msgctxt "Title"
+msgid "BlackList"
+msgstr "Чёрный список"
+
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:16
+msgctxt "Title"
+msgid "Add to Blacklist"
+msgstr "Добавить в чёрный список"
+
+#: node_modules/react-components/containers/filters/AddEmailToListModal.js:17
+msgctxt "Title"
+msgid "Add to Whitelist"
+msgstr "Добавить в белый список"
+
+#: node_modules/react-components/containers/api/HumanVerificationModal.js:9
+msgctxt "Title"
+msgid "Human verification"
+msgstr "Проверка \"Я не робот\""
+
+#: node_modules/react-components/containers/messages/MessagesSection.js:17
+#: src/app/containers/GeneralContainer.js:30
+msgctxt "Title"
+msgid "Messages"
+msgstr "Сообщения"
+
+#: node_modules/react-components/containers/members/EditMemberModal.js:56
+msgctxt "Title"
+msgid "Edit user"
+msgstr "Изменить пользователя"
+
+#: node_modules/react-components/containers/members/MemberModal.js:135
+msgctxt "Title"
+msgid "Add user"
+msgstr "Добавить пользователя"
+
+#: node_modules/react-components/containers/members/MembersSection.js:118
+#: src/app/containers/MembersContainer.js:13
+#: src/app/containers/MembersContainer.js:19
+msgctxt "Title"
+msgid "Users"
+msgstr "Пользователи"
+
+#: node_modules/react-components/containers/themes/CustomThemeModal.js:19
+msgctxt "Title"
+msgid "Custom Theme"
+msgstr "Пользовательская тема"
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:59
+msgctxt "Title"
+msgid "Change theme"
+msgstr ""
+
+#: node_modules/react-components/containers/themes/ThemesSection.js:79
+#: src/app/containers/AppearanceContainer.js:23
+msgctxt "Title"
+msgid "Themes"
+msgstr "Темы"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:82
+msgctxt "Title"
+msgid "Clear"
+msgstr "Очистить"
+
+#: node_modules/react-components/containers/logs/LogsSection.js:109
+#: src/app/containers/SecurityContainer.js:19
+msgctxt "Title"
+msgid "Authentication logs"
+msgstr "Журнал авторизации"
+
+#: node_modules/react-components/containers/layouts/ToolbarsSection.js:38
+#: src/app/containers/AppearanceContainer.js:19
+msgctxt "Title"
+msgid "Toolbars"
+msgstr "Панели инструментов"
+
+#: node_modules/react-components/containers/layouts/LayoutsSection.js:47
+#: src/app/containers/AppearanceContainer.js:15
+msgctxt "Title"
+msgid "Layouts"
+msgstr "Схемы расположения"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:10
+#: node_modules/react-components/containers/general/ShortcutsSection.js:26
+msgctxt "Title"
+msgid "Keyboard shortcuts"
+msgstr "Сочетания клавиш"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:12
+#: src/app/containers/GeneralContainer.js:17
+msgctxt "Title"
+msgid "General"
+msgstr "Общие"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:15
+msgctxt "Title"
+msgid "Application"
+msgstr "Приложение"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:35
+msgctxt "Title"
+msgid "Composer"
+msgstr "Редактор писем"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:66
+msgctxt "Title"
+msgid "Mail"
+msgstr "Почта"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:69
+msgctxt "Title"
+msgid "Jumping"
+msgstr "Переходы"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:95
+msgctxt "Title"
+msgid "Navigation"
+msgstr "Навигация"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:126
+msgctxt "Title"
+msgid "Threadlist"
+msgstr "Список тем"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:161
+msgctxt "Title"
+msgid "Actions"
+msgstr "Действия"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:177
+msgctxt "Title"
+msgid "Contacts"
+msgstr "Контакты"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:180
+msgctxt "Title"
+msgid "Contact list"
+msgstr "Список контактов"
+
+#: node_modules/react-components/containers/general/ShortcutsModal.js:195
+msgctxt "Title"
+msgid "Contact details"
+msgstr "Контактные данные"
+
+#: node_modules/react-components/containers/general/ShortcutsSection.js:24
+#: src/app/containers/GeneralContainer.js:38
+msgctxt "Title"
+msgid "Shortcuts"
+msgstr "Сочетания клавиш"
+
+#: node_modules/react-components/containers/general/LanguageSection.js:54
+#: src/app/containers/GeneralContainer.js:22
+msgctxt "Title"
+msgid "Language"
+msgstr "Язык"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:43
+msgctxt "Title"
+msgid "Need help?"
+msgstr "Нужна помощь?"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:48
+msgctxt "Title"
+msgid "Upgrade to a paid plan"
+msgstr "Переход на платный тариф"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:55
+msgctxt "Title"
+msgid "Thanks for your support"
+msgstr "Благодарим за вашу поддержку"
+
+#: node_modules/react-components/containers/overview/PromoteSection.js:63
+msgctxt "Title"
+msgid "Get 20% discount"
+msgstr "Получить 20% скидку"
+
+#: node_modules/react-components/containers/support/BugModal.js:136
+msgctxt "Title"
+msgid "Report bug"
+msgstr "Сообщить об ошибке"
+
+#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:51
+msgctxt "Title"
+msgid "Pay invoice"
+msgstr "Оплатить счёт"
+
+#: node_modules/react-components/containers/invoices/InvoiceActions.js:31
+msgctxt "Title"
+msgid "Preview invoice"
+msgstr "Предпросмотр счёта"
+
+#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:40
+msgctxt "Title"
+msgid "Add invoice details"
+msgstr "Добавить сведения к счёту"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:59
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:69
+#: src/app/containers/SubscriptionContainer.js:52
+msgctxt "Title"
+msgid "Invoices"
+msgstr "Счета"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:116
+msgctxt "Title"
+msgid "Amount"
+msgstr "Сумма"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:117
+msgctxt "Title"
+msgid "Type"
+msgstr "Тип"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:118
+msgctxt "Title"
+msgid "Status"
+msgstr "Состояние"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:119
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "Date"
+msgstr "Дата"
+
+#: node_modules/react-components/containers/invoices/InvoicesSection.js:120
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "Action"
+msgstr "Действие"
+
+#: node_modules/react-components/containers/login/AbuseModal.js:6
+msgctxt "Title"
+msgid "Account disabled"
+msgstr "Учётная запись отключена"
+
+#: node_modules/react-components/containers/search/SearchSection.js:24
+#: src/app/containers/GeneralContainer.js:34
+msgctxt "Title"
+msgid "Search"
+msgstr ""
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:80
+msgctxt "Title"
+msgid "Sessions"
+msgstr "Сессии"
+
+#: node_modules/react-components/containers/sessions/SessionsSection.js:97
+msgctxt "Title"
+msgid "App"
+msgstr "Приложение"
+
+#: src/app/components/layout/PrivateHeader.js:38
+msgctxt "Title"
+msgid "Mailbox"
+msgstr "Почтовый ящик"
+
+#: src/app/components/layout/PrivateHeader.js:43
+#: src/app/components/layout/PrivateLayout.js:72
+msgctxt "Title"
+msgid "Settings"
+msgstr "Настройки"
+
+#: src/app/containers/OrganizationContainer.js:19
+msgctxt "Title"
+msgid "Name"
+msgstr "Название"
+
+#: src/app/containers/DomainsContainer.js:23
+msgctxt "Title"
+msgid "Catch-all"
+msgstr "Catch-all"
+
+#: src/app/containers/IdentityContainer.js:13
+msgctxt "Title"
+msgid "Identity"
+msgstr "Псевдоним"
+
+#: src/app/containers/GeneralContainer.js:26
+msgctxt "Title"
+msgid "Desktop notifications"
+msgstr "Уведомления на рабочем столе"
+
+#: src/app/containers/AppearanceContainer.js:10
+msgctxt "Title"
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: src/app/containers/FiltersContainer.js:10
+msgctxt "Title"
+msgid "Filters"
+msgstr "Фильтры"
+
+#: src/app/containers/FiltersContainer.js:15
+msgctxt "Title"
+msgid "Custom filters"
+msgstr "Настраиваемые фильтры"
+
+#: src/app/containers/FiltersContainer.js:19
+msgctxt "Title"
+msgid "Spam filters"
+msgstr "Фильтры спама"
+
+#: src/app/containers/FoldersLabelsContainer.js:10
+msgctxt "Title"
+msgid "Folders/labels"
+msgstr "Папки/ярлыки"
+
+#: src/app/containers/FoldersLabelsContainer.js:15
+msgctxt "Title"
+msgid "Folders and labels"
+msgstr "Папки и ярлыки"
+
+#: src/app/containers/KeysContainer.js:10
+msgctxt "Title"
+msgid "Keys"
+msgstr "Ключи"
+
+#: src/app/containers/SecurityContainer.js:10
+msgctxt "Title"
+msgid "Security"
+msgstr "Безопасность"
+
+#: src/app/containers/SecurityContainer.js:15
+msgctxt "Title"
+msgid "Session management"
+msgstr "Управление сессиями"
+
+#: src/app/containers/SecurityContainer.js:27
+msgctxt "Title"
+msgid "External PGP settings"
+msgstr "Настройки внешнего PGP"
+
+#: src/app/containers/AppsContainer.js:13
+msgctxt "Title"
+msgid "Apps"
+msgstr "Приложения"
+
+#: src/app/containers/AppsContainer.js:18
+msgctxt "Title"
+msgid "ProtonMail Bridge"
+msgstr "ProtonMail Bridge"
+
+#: src/app/containers/AppsContainer.js:23
+msgctxt "Title"
+msgid "ProtonMail Beta"
+msgstr "ProtonMail Beta"
+
+#: src/app/containers/AppsContainer.js:27
+msgctxt "Title"
+msgid "ProtonMail apps"
+msgstr ""
+
+#: src/app/containers/VPNContainer.js:14
+msgctxt "Title"
+msgid "ProtonVPN"
+msgstr "ProtonVPN"
+
+#: src/app/containers/OverviewContainer.js:23
+msgctxt "Title"
+msgid "Overview - ProtonMail"
+msgstr ""
+
+#: node_modules/react-components/components/link/LearnMore.js:7
+msgctxt "Link"
+msgid "Learn more"
+msgstr "Узнать больше"
+
+#: node_modules/react-components/containers/payments/PayPal.js:125
+msgctxt "Link"
+msgid "click here"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DomainAddresses.js:26
+#: node_modules/react-components/containers/members/MemberAddresses.js:25
+#: node_modules/react-components/containers/overview/SummarySection.js:22
+#: node_modules/react-components/containers/overview/SummarySection.js:31
+msgctxt "Link"
+msgid "Manage"
+msgstr "Управление"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:11
+msgctxt "Link"
+msgid "ProtonVPN native clients"
+msgstr "Фирменные клиенты ProtonVPN"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:12
+msgctxt "Link"
+msgid "Download page"
+msgstr "Страница загрузки"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:18
+msgctxt "Link"
+msgid "Homepage"
+msgstr "Домашняя страница"
+
+#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:24
+msgctxt "Link"
+msgid "Support page"
+msgstr "Страница поддержки"
+
+#: node_modules/react-components/containers/account/UsernameSection.js:36
+msgctxt "Link"
+msgid "Not activated"
+msgstr "Не активировано"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:65
+#: node_modules/react-components/containers/overview/SummarySection.js:74
+msgctxt "Link"
+msgid "Edit"
+msgstr "Изменить"
+
+#: node_modules/react-components/containers/support/BugModal.js:89
+msgctxt "Link"
+msgid "clearing your browser cache"
+msgstr "очистка кэша вашего браузера"
+
+#: node_modules/react-components/containers/heading/UpgradeButton.js:13
+#: node_modules/react-components/containers/heading/UpgradeButton.js:21
+#: src/app/containers/AddressesContainer.js:60
+#: src/app/containers/AddressesContainer.js:70
+#: src/app/containers/AddressesContainer.js:77
+#: src/app/containers/DomainsContainer.js:59
+msgctxt "Link"
+msgid "Upgrade"
+msgstr "Повысить"
+
+#: src/app/containers/AddressesContainer.js:34
+#: src/app/containers/AddressesContainer.js:53
+#: src/app/containers/OrganizationContainer.js:46
+msgctxt "Link"
+msgid "Domain settings"
+msgstr "Настройки домена"
+
+#: src/app/containers/AddressesContainer.js:41
+#: src/app/containers/DomainsContainer.js:41
+#: src/app/containers/OrganizationContainer.js:53
+msgctxt "Link"
+msgid "User settings"
+msgstr ""
+
+#: src/app/containers/DomainsContainer.js:48
+#: src/app/containers/DomainsContainer.js:66
+#: src/app/containers/MembersContainer.js:41
+msgctxt "Link"
+msgid "Address settings"
+msgstr "Настройки адреса"
+
+#: src/app/containers/AutoReplyContainer.js:41
+msgctxt "Link"
+msgid "Filter Settings"
+msgstr "Настройки фильтров"
+
+#: node_modules/react-components/components/toggle/Toggle.js:10
+msgctxt "Toggle button"
+msgid "On"
+msgstr "Вкл"
+
+#: node_modules/react-components/components/toggle/Toggle.js:11
+msgctxt "Toggle button"
+msgid "Off"
+msgstr "Выкл"
+
+#: node_modules/react-components/components/countdown/Countdown.js:27
+msgctxt "Countdown status"
+msgid "Expired"
+msgstr ""
+
+#: node_modules/react-components/components/countdown/Countdown.js:39
+#, javascript-format
+msgctxt "Countdown unit"
+msgid "${ days } day"
+msgid_plural "${ days } days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: node_modules/react-components/components/countdown/Countdown.js:40
+msgctxt "Countdown unit"
+msgid "${ hours } hour"
+msgid_plural "${ hours } hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: node_modules/react-components/components/countdown/Countdown.js:41
+#, javascript-format
+msgctxt "Countdown unit"
+msgid "${ minutes } minute"
+msgid_plural "${ minutes } minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: node_modules/react-components/components/countdown/Countdown.js:42
+msgctxt "Countdown unit"
+msgid "${ seconds } second"
+msgid_plural "${ seconds } seconds"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: node_modules/react-components/containers/payments/CardNumberInput.js:48
 msgctxt "Placeholder"
@@ -3466,7 +4416,7 @@ msgctxt "Success"
 msgid "Credits added"
 msgstr "Кредиты добавлены"
 
-#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:28
+#: node_modules/react-components/containers/autoReply/AutoReplyModal.js:27
 msgctxt "Success"
 msgid "Auto-reply updated"
 msgstr "Автоответчик обновлён"
@@ -3544,12 +4494,12 @@ msgctxt "Success"
 msgid "User created"
 msgstr "Пользователь создан"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:41
+#: node_modules/react-components/containers/themes/ThemesSection.js:46
 msgctxt "Success"
 msgid "Custom theme saved"
 msgstr "Пользовательская тема сохранена"
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:69
+#: node_modules/react-components/containers/themes/ThemesSection.js:74
 msgctxt "Success"
 msgid "Theme saved"
 msgstr ""
@@ -3593,794 +4543,6 @@ msgstr "Сессии прерваны"
 msgctxt "x of y"
 msgid "of"
 msgstr ""
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:114
-msgctxt "Label"
-msgid "Users"
-msgstr "Пользователи"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:115
-msgctxt "Label"
-msgid "Email addresses"
-msgstr "Адреса электронной почты"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:117
-msgctxt "Label"
-msgid "Storage capacity"
-msgstr "Объём хранилища"
-
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:123
-msgctxt "Label"
-msgid "Custom domains"
-msgstr "Свои домены"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:85
-#: node_modules/react-components/containers/members/MemberModal.js:220
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:124
-#: node_modules/react-components/containers/payments/subscription/SubscriptionSection.js:127
-msgctxt "Label"
-msgid "VPN connections"
-msgstr "VPN-подключения"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/BillingSection.js:279
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:97
-msgctxt "Label"
-msgid "Sub-total"
-msgstr "Промежуточный итог"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:107
-msgctxt "Label"
-msgid "Cycle discount +"
-msgstr ""
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:108
-msgctxt "Label"
-msgid "Coupon"
-msgstr "Купон"
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:130
-msgctxt "Label"
-msgid "Cycle discount"
-msgstr ""
-
-#.  Includes coupon discount and cycle discount
-#: node_modules/react-components/containers/payments/BillingSection.js:299
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:28
-#: node_modules/react-components/containers/payments/subscription/SubscriptionDetails.js:144
-msgctxt "Label"
-msgid "Total"
-msgstr "Всего"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:67
-#: node_modules/react-components/containers/payments/BillingSection.js:332
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:39
-msgctxt "Label"
-msgid "Credits"
-msgstr "Кредиты"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:50
-msgctxt "Label"
-msgid "Proration"
-msgstr "Распределение"
-
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:68
-msgctxt "Label"
-msgid "Gift"
-msgstr "Подарок"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:75
-#: node_modules/react-components/containers/payments/BillingSection.js:325
-#: node_modules/react-components/containers/payments/subscription/PaymentDetails.js:77
-#: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:211
-msgctxt "Label"
-msgid "Amount due"
-msgstr "К оплате"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:57
-#: node_modules/react-components/containers/payments/CreditsModal.js:81
-#: node_modules/react-components/containers/payments/DonateModal.js:48
-msgctxt "Label"
-msgid "Amount"
-msgstr "Сумма"
-
-#: node_modules/react-components/containers/payments/GiftCodeModal.js:55
-msgctxt "Label"
-msgid "Enter gift code"
-msgstr "Введите подарочный код"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:76
-#: node_modules/react-components/containers/payments/BillingSection.js:341
-msgctxt "Label"
-msgid "Gift code"
-msgstr "Подарочный код"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:128
-msgctxt "Label"
-msgid "ProtonMail plan"
-msgstr "Тариф ProtonMail"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:141
-msgctxt "Label"
-msgid "Extra users"
-msgstr "Доп. пользователи"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:161
-msgctxt "Label"
-msgid "Extra email addresses"
-msgstr "Доп. адреса эл. почты"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:181
-msgctxt "Label"
-msgid "Extra storage"
-msgstr "Доп. хранилище"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:194
-msgctxt "Label"
-msgid "Bonus storage"
-msgstr "Бонусное хранилище"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:203
-msgctxt "Label"
-msgid "Extra domains"
-msgstr "Доп. домены"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:227
-msgctxt "Label"
-msgid "ProtonVPN plan"
-msgstr "Тариф ProtonVPN"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:240
-msgctxt "Label"
-msgid "Extra connections"
-msgstr "Дополнительные подключения"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:260
-msgctxt "Label"
-msgid "Bonus connections"
-msgstr "Бонусные подключения"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:286
-msgctxt "Label"
-msgid "Discount"
-msgstr "Скидка"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:308
-msgctxt "Label"
-msgid "Billing cycle"
-msgstr "Платёжный цикл"
-
-#: node_modules/react-components/containers/payments/BillingSection.js:318
-msgctxt "Label"
-msgid "Renewal date"
-msgstr ""
-
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
-msgctxt "Label"
-msgid "Amount BTC"
-msgstr "Количество BTC"
-
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
-msgctxt "Label"
-msgid "BTC address"
-msgstr "BTC адрес"
-
-#: node_modules/react-components/containers/payments/Payment.js:74
-msgctxt "Label"
-msgid "Payment method"
-msgstr "Способ оплаты"
-
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:42
-#, javascript-format
-msgctxt "Label"
-msgid "Enter the password for key with fingerprint: ${ fingerprintCode }"
-msgstr "Введите пароль для ключа с отпечатком: ${ fingerprintCode }"
-
-#: node_modules/react-components/containers/keys/exportKey/ExportPrivateKeyModal.js:51
-#: node_modules/react-components/containers/keys/shared/DecryptFileKeyModal.js:44
-msgctxt "Label"
-msgid "Enter password"
-msgstr "Введите пароль"
-
-#: node_modules/react-components/containers/keys/reactivateKeys/ReactivateKeysModal.js:309
-msgctxt "Label"
-msgid "Enter your previous password from before your account was reset:"
-msgstr "Введите свой предыдущий пароль, который был до сброса учётной записи:"
-
-#: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:190
-msgctxt "Label"
-msgid "Please select files to upload"
-msgstr "Пожалуйста, выберите файлы для загрузки"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/TimeZoneField.js:16
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:79
-msgctxt "Label"
-msgid "Timezone"
-msgstr "Часовой пояс"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DaysOfWeekField.js:14
-msgctxt "Label"
-msgid "Days of the week"
-msgstr "Дни недели"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/fields/DurationField.js:12
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:76
-msgctxt "Label"
-msgid "Duration"
-msgstr "Длительность"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:17
-msgctxt "Label"
-msgid "Start date"
-msgstr "Дата начала"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:20
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:25
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:24
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:24
-msgctxt "Label"
-msgid "Start time"
-msgstr "Время начала"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:30
-msgctxt "Label"
-msgid "End date"
-msgstr "Дата окончания"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormDaily.js:26
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormFixed.js:38
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:36
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:36
-msgctxt "Label"
-msgid "End time"
-msgstr "Время окончания"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:17
-msgctxt "Label"
-msgid "Start day of month"
-msgstr "День месяца начала"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormMonthly.js:29
-msgctxt "Label"
-msgid "End day of month"
-msgstr "День месяца окончания"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:19
-msgctxt "Label"
-msgid "Start weekday"
-msgstr "День недели начала"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyForm/AutoReplyFormWeekly.js:31
-msgctxt "Label"
-msgid "End weekday"
-msgstr "День недели окончания"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:77
-msgctxt "Label"
-msgid "Start"
-msgstr "Начало"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:78
-msgctxt "Label"
-msgid "End"
-msgstr "Окончание"
-
-#: node_modules/react-components/containers/autoReply/AutoReplyTemplate.js:80
-msgctxt "Label"
-msgid "Message"
-msgstr "Сообщение"
-
-#: node_modules/react-components/containers/autoReply/AutoReplySection.js:50
-msgctxt "Label"
-msgid "Auto-reply"
-msgstr "Автоответчик"
-
-#: node_modules/react-components/containers/organization/OrganizationNameModal.js:23
-#: node_modules/react-components/containers/organization/OrganizationSection.js:45
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:66
-msgctxt "Label"
-msgid "Organization name"
-msgstr "Название организации"
-
-#: node_modules/react-components/containers/organization/ReactivateOrganizationKeysModal.js:102
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:113
-msgctxt "Label"
-msgid "Organization password"
-msgstr "Пароль организации"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:280
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:298
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:125
-msgctxt "Label"
-msgid "Confirm password"
-msgstr "Подтвердите пароль"
-
-#: node_modules/react-components/containers/members/EditMemberModal.js:73
-#: node_modules/react-components/containers/members/MemberModal.js:208
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:176
-msgctxt "Label"
-msgid "Account storage"
-msgstr "Хранилище учётной записи"
-
-#: node_modules/react-components/containers/organization/SetupOrganizationModal.js:209
-msgctxt "Label"
-msgid "VPN Connections"
-msgstr "VPN-подключения"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:118
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:69
-msgctxt "Label"
-msgid "New organization password"
-msgstr "Новый пароль организации"
-
-#: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:132
-#: node_modules/react-components/containers/organization/ChangeOrganizationPasswordModal.js:83
-msgctxt "Label"
-msgid "Confirm organization password"
-msgstr "Подтвердите пароль организации"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:96
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:55
-#: node_modules/react-components/containers/members/MemberModal.js:188
-msgctxt "Label"
-msgid "Address"
-msgstr "Адрес"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:114
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:59
-#: node_modules/react-components/containers/addresses/IdentitySection.js:77
-msgctxt "Label"
-msgid "Display name"
-msgstr "Отображаемое имя"
-
-#: node_modules/react-components/containers/addresses/EditAddressModal.js:69
-#: node_modules/react-components/containers/addresses/IdentitySection.js:90
-msgctxt "Label"
-msgid "Signature"
-msgstr "Подпись"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:70
-msgctxt "Label"
-msgid "Select an address"
-msgstr "Выберите адрес"
-
-#: node_modules/react-components/containers/addresses/IdentitySection.js:106
-msgctxt "Label"
-msgid "ProtonMail signature"
-msgstr "Подпись ProtonMail"
-
-#: node_modules/react-components/containers/addresses/AddressModal.js:92
-msgctxt "Label"
-msgid "User"
-msgstr "Пользователь"
-
-#: node_modules/react-components/containers/notification/DesktopNotificationSection.js:12
-msgctxt "Label"
-msgid "Desktop notification"
-msgstr "Уведомление на рабочем столе"
-
-#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:17
-#: node_modules/react-components/containers/notification/EmailModal.js:74
-msgctxt "Label"
-msgid "Email"
-msgstr "Эл. почта"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:125
-#: node_modules/react-components/containers/filters/spamlist/AddEmailToList.js:22
-#: node_modules/react-components/containers/notification/EmailSection.js:66
-#: node_modules/react-components/containers/support/BugModal.js:156
-msgctxt "Label"
-msgid "Email address"
-msgstr "Адрес эл. почты"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:70
-msgctxt "Label"
-msgid "Allow password reset"
-msgstr "Разрешить сброс пароля"
-
-#: node_modules/react-components/containers/notification/EmailSection.js:83
-msgctxt "Label"
-msgid "Daily email notifications"
-msgstr "Ежедневные уведомления по электронной почте"
-
-#: node_modules/react-components/containers/domains/DomainSection.js:22
-msgctxt "Label"
-msgid "Enter your domain"
-msgstr "Введите свой домен"
-
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
-#: node_modules/react-components/containers/domains/SPFSection.js:14
-msgctxt "Label"
-msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
-msgstr "Добавьте, пожалуйста, эту TXT-запись. Заметьте, что обновление DNS-записей может занять несколько часов."
-
-#: node_modules/react-components/containers/domains/MXSection.js:17
-msgctxt "Label"
-msgid "Please add the following MX record. Note, DNS records can take several hours to update."
-msgstr "Добавьте, пожалуйста, эту MX-запись. Заметьте, что обновление DNS-записей может занять несколько часов."
-
-#: node_modules/react-components/containers/domains/DMARCSection.js:14
-msgctxt "Label"
-msgid "Here is a basic DMARC record that does nothing except email you reports."
-msgstr "Это - базовая DMARC-запись, которая не делает ничего, кроме отправки вам отчётов."
-
-#: node_modules/react-components/containers/support/BugModal.js:144
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:20
-msgctxt "Label"
-msgid "Proton username"
-msgstr "Имя пользователя в Proton"
-
-#: node_modules/react-components/containers/login/PasswordForm.js:28
-#: node_modules/react-components/containers/login/UnlockModal.js:41
-#: node_modules/react-components/containers/members/MemberModal.js:167
-#: node_modules/react-components/containers/password/PasswordTotpInputs.js:10
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:26
-msgctxt "Label"
-msgid "Password"
-msgstr "Пароль"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:10
-msgctxt "Label"
-msgid "Download ProtonVPN"
-msgstr "Скачать ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:16
-msgctxt "Label"
-msgid "ProtonVPN homepage"
-msgstr "Домашняя страница ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:22
-msgctxt "Label"
-msgid "Get support for ProtonVPN"
-msgstr "Получить поддержку для ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:38
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:53
-msgctxt "Label"
-msgid "OpenVPN / IKEv2 username"
-msgstr "Имя пользователя OpenVPN / IKEv2"
-
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNAccountSection.js:49
-#: node_modules/react-components/containers/vpn/OpenVPNAccountSection/OpenVPNCredentialsModal.js:65
-msgctxt "Label"
-msgid "OpenVPN / IKEv2 password"
-msgstr "Пароль OpenVPN / IKEv2"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:125
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:278
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:308
-msgctxt "Label"
-msgid "Old login password"
-msgstr "Старый пароль учётной записи"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:126
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:160
-msgctxt "Label"
-msgid "New login password"
-msgstr "Новый пароль учётной записи"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:127
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:161
-msgctxt "Label"
-msgid "Confirm login password"
-msgstr "Подтвердить входной пароль"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:159
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:296
-msgctxt "Label"
-msgid "Old password"
-msgstr "Старый пароль"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:187
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:309
-msgctxt "Label"
-msgid "New mailbox password"
-msgstr "Новый пароль почтового ящика"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:188
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:310
-msgctxt "Label"
-msgid "Confirm mailbox password"
-msgstr "Подтвердите пароль почтового ящика"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:279
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:297
-msgctxt "Label"
-msgid "New password"
-msgstr "Новый пароль"
-
-#: node_modules/react-components/containers/account/ChangePasswordModal.js:371
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:155
-#: node_modules/react-components/containers/login/TOTPForm.js:9
-#: node_modules/react-components/containers/password/PasswordTotpInputs.js:26
-msgctxt "Label"
-msgid "Two-factor code"
-msgstr "Двухфакторный код"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:67
-msgctxt "Label"
-msgid "Two password mode"
-msgstr "Режим двух паролей"
-
-#: node_modules/react-components/containers/account/PasswordsSection.js:86
-#: node_modules/react-components/containers/login/UnlockForm.js:9
-msgctxt "Label"
-msgid "Mailbox password"
-msgstr "Пароль почтового ящика"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:111
-msgctxt "Label"
-msgid "Feedback"
-msgstr "Обратная связь"
-
-#: node_modules/react-components/containers/account/DeleteAccountModal.js:140
-msgctxt "Label"
-msgid "Login password"
-msgstr "Пароль для входа"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:18
-#: node_modules/react-components/containers/members/EditMemberModal.js:61
-#: node_modules/react-components/containers/members/MemberModal.js:143
-msgctxt "Label"
-msgid "Name"
-msgstr "Имя"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:28
-msgctxt "Label"
-msgid "ProtonMail address"
-msgstr "Адрес ProtonMail"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:154
-msgctxt "Label"
-msgid "Key"
-msgstr "Ключ"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:160
-msgctxt "Label"
-msgid "Interval"
-msgstr "Интервал"
-
-#: node_modules/react-components/containers/account/EnableTwoFactorModal.js:166
-msgctxt "Label"
-msgid "Digits"
-msgstr "Знаков"
-
-#: node_modules/react-components/containers/account/TwoFactorSection.js:32
-msgctxt "Label"
-msgid "Two-factor authentication"
-msgstr "Двухфакторная аутентификация"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:34
-#: node_modules/react-components/containers/password/AskAuthModal.js:18
-msgctxt "Label"
-msgid "Cancel"
-msgstr "Отменить"
-
-#: node_modules/react-components/containers/login/UnlockModal.js:35
-#: node_modules/react-components/containers/password/AskAuthModal.js:19
-msgctxt "Label"
-msgid "Submit"
-msgstr "Отправить"
-
-#: node_modules/react-components/containers/paymentMethods/PaymentMethodDetails.js:17
-msgctxt "Label"
-msgid "Cardholder name"
-msgstr "Имя владельца карты"
-
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
-msgctxt "Label"
-msgid "Pay with cash"
-msgstr "Оплатить наличными"
-
-#: node_modules/react-components/containers/security/AddressVerificationSection.js:41
-msgctxt "Label"
-msgid "Prompt to trust keys"
-msgstr "Спрашивать о доверии ключам"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:82
-msgctxt "Label"
-msgid "Sign external messages"
-msgstr "Подписывать сообщения, отправляемые вовне"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:100
-msgctxt "Label"
-msgid "Attach public key"
-msgstr "Присоединить публичный ключ"
-
-#: node_modules/react-components/containers/security/ExternalPGPSettingsSection.js:118
-msgctxt "Label"
-msgid "Default PGP Scheme"
-msgstr "Схема PGP по умолчанию"
-
-#: node_modules/react-components/containers/filters/editor/Conditions.js:123
-#, javascript-format
-msgctxt "Label"
-msgid "Conditions ${ n }"
-msgstr "Условия ${ n }"
-
-#: node_modules/react-components/containers/filters/editor/AutoReplyAction.js:27
-msgctxt "Label"
-msgid "Send auto reply"
-msgstr ""
-
-#: node_modules/react-components/containers/filters/editor/Operator.js:20
-msgctxt "Label"
-msgid "Logic"
-msgstr "Логика"
-
-#: node_modules/react-components/containers/api/HumanVerificationModal.js:22
-msgctxt "Label"
-msgid "Captcha"
-msgstr "CAPTCHA"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:20
-msgctxt "Label"
-msgid "Auto-load remote content"
-msgstr "Авто-показ внешнего содержимого"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:29
-msgctxt "Label"
-msgid "Auto-load embedded images"
-msgstr "Авто-показ встроенных изображений"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:38
-msgctxt "Label"
-msgid "Sent/Drafts"
-msgstr "Отправленные/Черновики"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:46
-msgctxt "Label"
-msgid "Include moved"
-msgstr "Включить перемещённые"
-
-#: node_modules/react-components/containers/messages/MessagesSection.js:50
-msgctxt "Label"
-msgid "Request link confirmation"
-msgstr "Запрашивать подтверждение при переходе по ссылкам"
-
-#: node_modules/react-components/containers/members/MemberModal.js:160
-msgctxt "Label"
-msgid "Key strength"
-msgstr "Стойкость ключа"
-
-#: node_modules/react-components/containers/themes/CustomThemeModal.js:25
-msgctxt "Label"
-msgid "CSS code"
-msgstr "Код CSS"
-
-#: node_modules/react-components/containers/layouts/ToolbarsSection.js:40
-msgctxt "Label"
-msgid "Read/unread order"
-msgstr "Порядок прочитанных/непрочитанных"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:97
-msgctxt "Label"
-msgid "Default Composer"
-msgstr "Вид по умолчанию для редактора писем"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:113
-msgctxt "Label"
-msgid "Default Inbox"
-msgstr "Вид по умолчанию для почтового ящика"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:129
-msgctxt "Label"
-msgid "Conversations"
-msgstr "Цепочки писем"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:145
-msgctxt "Label"
-msgid "Use sticky labels"
-msgstr "Применять \"липкие\" ярлыки"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:162
-msgctxt "Label"
-msgid "Composer mode"
-msgstr "Режим редактора"
-
-#: node_modules/react-components/containers/layouts/LayoutsSection.js:173
-msgctxt "Label"
-msgid "Composer text direction"
-msgstr "Направление текста в редакторе"
-
-#: node_modules/react-components/containers/general/LanguageSection.js:56
-msgctxt "Label"
-msgid "Default language"
-msgstr "Язык по умолчанию"
-
-#: node_modules/react-components/containers/login/PasswordForm.js:10
-#: node_modules/react-components/containers/overview/SummarySection.js:53
-msgctxt "Label"
-msgid "Username"
-msgstr "Имя пользователя"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:60
-msgctxt "Label"
-msgid "Recovery email"
-msgstr "Адрес резервной эл. почты"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:69
-msgctxt "Label"
-msgid "Two factor authentication"
-msgstr "Двухфакторная аутентификация"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:80
-msgctxt "Label"
-msgid "Role"
-msgstr "Роль"
-
-#: node_modules/react-components/containers/support/BugModal.js:168
-msgctxt "Label"
-msgid "Category"
-msgstr "Категория"
-
-#: node_modules/react-components/containers/support/BugModal.js:180
-msgctxt "Label"
-msgid "What happened?"
-msgstr "Что случилось?"
-
-#: node_modules/react-components/containers/support/BugModal.js:201
-msgctxt "Label"
-msgid "System information"
-msgstr "Сведения о системе"
-
-#: node_modules/react-components/containers/support/BugModal.js:209
-msgctxt "Label"
-msgid "Operating system"
-msgstr "Операционная система"
-
-#: node_modules/react-components/containers/support/BugModal.js:220
-msgctxt "Label"
-msgid "Operating system version"
-msgstr "Версия операционной системы"
-
-#: node_modules/react-components/containers/support/BugModal.js:231
-msgctxt "Label"
-msgid "Browser"
-msgstr "Браузер"
-
-#: node_modules/react-components/containers/support/BugModal.js:242
-msgctxt "Label"
-msgid "Browser version"
-msgstr "Версия браузера"
-
-#: node_modules/react-components/containers/invoices/PayInvoiceModal.js:66
-msgctxt "Label"
-msgid "Credits used"
-msgstr "Кредитов используется"
-
-#: node_modules/react-components/containers/invoices/InvoiceTextModal.js:46
-msgctxt "Label"
-msgid "Customize invoices"
-msgstr "Настройка счетов"
-
-#: node_modules/react-components/containers/search/SearchSection.js:27
-msgctxt "Label"
-msgid "Require exact match"
-msgstr ""
-
-#: node_modules/react-components/components/button/Copy.js:20
-msgctxt "Label"
-msgid "Copied"
-msgstr "Скопировано"
-
-#: node_modules/react-components/components/button/Copy.js:20
-msgctxt "Label"
-msgid "Copy"
-msgstr "Копировать"
-
-#: node_modules/react-components/components/input/PasswordInput.js:21
-msgctxt "Label"
-msgid "Reveal password"
-msgstr "Показать пароль"
-
-#: node_modules/react-components/components/input/PasswordInput.js:21
-msgctxt "Label"
-msgid "Hide password"
-msgstr "Скрыть пароль"
 
 #: node_modules/react-components/containers/overview/SummarySection.js:19
 #: node_modules/react-components/containers/overview/SummarySection.js:28
@@ -4880,96 +5042,6 @@ msgctxt "Discount with coupon code"
 msgid "Black Friday 2019 newcomer discount has been applied"
 msgstr ""
 
-#: node_modules/react-components/containers/payments/PayPal.js:125
-msgctxt "Link"
-msgid "click here"
-msgstr ""
-
-#: node_modules/react-components/containers/domains/DomainAddresses.js:26
-#: node_modules/react-components/containers/members/MemberAddresses.js:25
-#: node_modules/react-components/containers/overview/SummarySection.js:22
-#: node_modules/react-components/containers/overview/SummarySection.js:31
-msgctxt "Link"
-msgid "Manage"
-msgstr "Управление"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNCredentialsSection/ProtonVPNCredentialsSection.js:11
-msgctxt "Link"
-msgid "ProtonVPN native clients"
-msgstr "Фирменные клиенты ProtonVPN"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:12
-msgctxt "Link"
-msgid "Download page"
-msgstr "Страница загрузки"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:18
-msgctxt "Link"
-msgid "Homepage"
-msgstr "Домашняя страница"
-
-#: node_modules/react-components/containers/vpn/ProtonVPNResourcesSection/ProtonVPNResourcesSection.js:24
-msgctxt "Link"
-msgid "Support page"
-msgstr "Страница поддержки"
-
-#: node_modules/react-components/containers/account/UsernameSection.js:36
-msgctxt "Link"
-msgid "Not activated"
-msgstr "Не активировано"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:65
-#: node_modules/react-components/containers/overview/SummarySection.js:74
-msgctxt "Link"
-msgid "Edit"
-msgstr "Изменить"
-
-#: node_modules/react-components/containers/support/BugModal.js:89
-msgctxt "Link"
-msgid "clearing your browser cache"
-msgstr "очистка кэша вашего браузера"
-
-#: node_modules/react-components/containers/heading/UpgradeButton.js:13
-#: node_modules/react-components/containers/heading/UpgradeButton.js:21
-#: src/app/containers/AddressesContainer.js:60
-#: src/app/containers/AddressesContainer.js:70
-#: src/app/containers/AddressesContainer.js:77
-#: src/app/containers/DomainsContainer.js:59
-msgctxt "Link"
-msgid "Upgrade"
-msgstr "Повысить"
-
-#: node_modules/react-components/components/link/LearnMore.js:7
-msgctxt "Link"
-msgid "Learn more"
-msgstr "Узнать больше"
-
-#: src/app/containers/AddressesContainer.js:34
-#: src/app/containers/AddressesContainer.js:53
-#: src/app/containers/OrganizationContainer.js:46
-msgctxt "Link"
-msgid "Domain settings"
-msgstr "Настройки домена"
-
-#: src/app/containers/AddressesContainer.js:41
-#: src/app/containers/DomainsContainer.js:41
-#: src/app/containers/OrganizationContainer.js:53
-msgctxt "Link"
-msgid "User settings"
-msgstr ""
-
-#: src/app/containers/DomainsContainer.js:48
-#: src/app/containers/DomainsContainer.js:66
-#: src/app/containers/MembersContainer.js:41
-msgctxt "Link"
-msgid "Address settings"
-msgstr "Настройки адреса"
-
-#: src/app/containers/AutoReplyContainer.js:41
-msgctxt "Link"
-msgid "Filter Settings"
-msgstr "Настройки фильтров"
-
 #: node_modules/react-components/containers/payments/CreditsModal.js:27
 msgctxt "Monetary unit"
 msgid "Euro"
@@ -5260,7 +5332,7 @@ msgctxt "Warning"
 msgid "Custom themes from third parties can potentially betray your privacy. Only use themes from trusted sources."
 msgstr "Сторонние темы от третьих лиц вполне способны нарушить вашу конфиденциальность. Используйте темы только из доверенных источников."
 
-#: node_modules/react-components/containers/themes/ThemesSection.js:58
+#: node_modules/react-components/containers/themes/ThemesSection.js:63
 msgctxt "Warning"
 msgid "This action will erase your current custom theme. Are you sure you want to apply this new theme?"
 msgstr ""
@@ -5843,7 +5915,7 @@ msgctxt "New Label form"
 msgid "Name"
 msgstr "Название"
 
-#: node_modules/react-components/containers/labels/NewLabelForm.js:22
+#: node_modules/react-components/containers/labels/NewLabelForm.js:23
 msgctxt "New Label form"
 msgid "Color"
 msgstr "Цвет"
@@ -6607,76 +6679,4 @@ msgstr "Администратор"
 msgctxt "Badge"
 msgid "ProtonVPN settings for web"
 msgstr "Настройки ProtonVPN через браузер"
-
-#: node_modules/react-components/components/input/TimeInput.js:26
-#, javascript-format
-msgctxt "Time unit"
-msgid "${ hours } hour"
-msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: node_modules/react-components/components/input/TimeInput.js:27
-msgctxt "Time unit"
-msgid "${ minutes } minutes"
-msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: node_modules/react-components/components/toggle/Toggle.js:10
-msgctxt "Toggle button"
-msgid "On"
-msgstr "Вкл"
-
-#: node_modules/react-components/components/toggle/Toggle.js:11
-msgctxt "Toggle button"
-msgid "Off"
-msgstr "Выкл"
-
-#: node_modules/react-components/components/countdown/Countdown.js:27
-msgctxt "Countdown status"
-msgid "Expired"
-msgstr ""
-
-#: node_modules/react-components/components/countdown/Countdown.js:39
-#, javascript-format
-msgctxt "Countdown unit"
-msgid "${ days } day"
-msgid_plural "${ days } days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: node_modules/react-components/components/countdown/Countdown.js:40
-msgctxt "Countdown unit"
-msgid "${ hours } hour"
-msgid_plural "${ hours } hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: node_modules/react-components/components/countdown/Countdown.js:41
-#, javascript-format
-msgctxt "Countdown unit"
-msgid "${ minutes } minute"
-msgid_plural "${ minutes } minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: node_modules/react-components/components/countdown/Countdown.js:42
-msgctxt "Countdown unit"
-msgid "${ seconds } second"
-msgid_plural "${ seconds } seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
