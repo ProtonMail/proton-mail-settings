@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
 import { StandardPublicApp, LoginForm } from 'react-components';
 
-import locales from '../locales';
 import PublicLayout from '../components/layout/PublicLayout';
 
 const PublicApp = ({ onLogin }) => {
     return (
-        <StandardPublicApp locales={locales}>
+        <StandardPublicApp>
             <PublicLayout>
                 <Switch>
                     <Route render={() => <LoginForm onLogin={onLogin} />} />
