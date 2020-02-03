@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
-"PO-Revision-Date: 2020-01-26 07:20\n"
+"PO-Revision-Date: 2020-01-30 07:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -135,7 +135,7 @@ msgctxt "Error"
 msgid "Amount above the maximum."
 msgstr "Beløb overstiger maksimum."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:51
+#: node_modules/react-components/containers/payments/Bitcoin.js:53
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "Fejl under forbindelsesoprettelse til Bitcoin-API."
@@ -234,12 +234,12 @@ msgctxt "Error"
 msgid "Please set a recovery/notification email"
 msgstr "Angiv en gendannelses-/notifikations-e-mail"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:30
+#: node_modules/react-components/containers/domains/DomainModal.js:40
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "Bekræftelse mislykkedes, forsøg igen om en time."
 
-#: node_modules/react-components/containers/domains/DomainModal.js:34
+#: node_modules/react-components/containers/domains/DomainModal.js:44
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "Forkert bekræftelseskode. Sørg for, at du har kopieret bekræftelseskoden korrekt, og fotsøg igen. Ændringseffektueringer kan tage op til 24 timer."
@@ -501,12 +501,12 @@ msgctxt "Label"
 msgid "Hide password"
 msgstr "Skjul adgangskode"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copied"
 msgstr "Kopieret"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copy"
 msgstr "Kopiér"
@@ -675,12 +675,12 @@ msgctxt "Label"
 msgid "Renewal date"
 msgstr "Fornyelsesdato"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:11
 msgctxt "Label"
-msgid "Amount BTC"
-msgstr "Bitcoin-beløb"
+msgid "BTC amount"
+msgstr ""
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:20
 msgctxt "Label"
 msgid "BTC address"
 msgstr "Bitcoin-adresse"
@@ -908,11 +908,31 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "Angiv dit domæne"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/DKIMSection.js:75
 #: node_modules/react-components/containers/domains/SPFSection.js:14
 msgctxt "Label"
 msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
 msgstr "Tilføj flg. TXT-post. Bemærk, at DNS-poster kan tage flere timer at opdatere."
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:38
+msgctxt "Label"
+msgid "2048 RSA key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:50
+msgctxt "Label"
+msgid "1024 RSA key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:91
+msgctxt "Label"
+msgid "Key:"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:95
+msgctxt "Label"
+msgid "Active since:"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/MXSection.js:17
 msgctxt "Label"
@@ -1087,7 +1107,7 @@ msgctxt "Label"
 msgid "Cardholder name"
 msgstr "Kortholders navn"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:70
 msgctxt "Label"
 msgid "Pay with cash"
 msgstr "Betal kontant"
@@ -1531,18 +1551,18 @@ msgctxt "Info"
 msgid "We always use credits before charging your saved payment method."
 msgstr "Vi bruger altid kredit, før vi debiterer din gemte betalingsmetode."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:40
+#: node_modules/react-components/containers/payments/Bitcoin.js:42
 #, javascript-format
 msgctxt "Info"
-msgid "Amount below minimum. (${ amount })"
-msgstr "Beløb under minimum. (${ amount })"
+msgid "Amount below minimum (${ amount })."
+msgstr ""
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:64
+#: node_modules/react-components/containers/payments/Bitcoin.js:66
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "Bitcoin-transaktioner kan tage noget tid at bekræfte (op til 24 timer). Efter bekræftelsen kreditere kreditten din konto. Efter transaktionsbekræftelsen kan du betale din faktura med kreditten."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:73
+#: node_modules/react-components/containers/payments/Bitcoin.js:75
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
 msgstr "Når du har foretaget din Bitcoin-betaling, så følg anvisningerne nedenfor for at opgradere."
@@ -1876,16 +1896,30 @@ msgctxt "Info"
 msgid "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records."
 msgstr "Vil du beholde en eksisterende SPF-post, kan du blot tilføje ${ spf } til den efter ${ spfValue }. Opret ikke flere SPF-poster."
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:11
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:30
 msgctxt "Info"
-msgid "ProtonMail supports DKIM signing for custom domains! To use DKIM authentication, please add the following TXT record into your DNS for this domain. This can typically be done in the control panel of your domain name registrar."
-msgstr "ProtonMail understøtter DKIM-signering for tilpassede domæner! For at benytte DKIM-godkendelse, så tilføj flg. TXT-post til din DNS for dette domæne. Du kan typisk gøre dette i webkontrolpanelet hos dit domæneregistrator."
+msgid "Please select the type of key you want to generate:"
+msgstr ""
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:28
-#, javascript-format
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:39
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to ${ off } to disable DKIM."
-msgstr "Behold denne post i din DNS så længe du vil benytte DKIM. Du kan ændre værdien til ${ off } for at deaktivere DKIM."
+msgid "We recommend using this key. It is longer and therefore more secure."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:52
+msgctxt "Info"
+msgid "You should use this key if your registrar does not support long TXT records and you’re unable to use 2048."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:72
+msgctxt "Info"
+msgid "ProtonMail supports DKIM signing for custom domains. To use DKIM authentication, please add the following TXT record into your DNS settings for this domain. This can typically be done in the control panel of your domain name registrar."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:140
+msgctxt "Info"
+msgid "Keep this record in your DNS for as long as you want to use DKIM."
+msgstr ""
 
 #: node_modules/react-components/containers/domains/MXSection.js:9
 msgctxt "Info"
@@ -2422,7 +2456,7 @@ msgstr "Indsend"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/domains/DomainModal.js:215
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
@@ -2462,7 +2496,7 @@ msgctxt "Action"
 msgid "Verify"
 msgstr "Bekræft"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/Bitcoin.js:54
 #: node_modules/react-components/containers/payments/PayPal.js:105
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
 msgctxt "Action"
@@ -2550,7 +2584,7 @@ msgid "Got it"
 msgstr "Forstået"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/domains/DomainModal.js:216
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
@@ -2695,7 +2729,7 @@ msgstr "Udført"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:421
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/domains/DomainModal.js:199
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
@@ -2818,6 +2852,16 @@ msgstr "Aktivér computernotifikationer"
 msgctxt "Action"
 msgid "Add user"
 msgstr "Tilføj bruger"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:27
+msgctxt "Action"
+msgid "Generate"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:139
+msgctxt "Action"
+msgid "Generate a new key"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
@@ -3500,12 +3544,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "Fang alle "
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:26
+msgctxt "Title"
+msgid "Generate key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "Redigér domæne"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Add domain"
 msgstr "Tilføj domæne"
@@ -4055,6 +4104,7 @@ msgid "Overview - ProtonMail"
 msgstr "Overblik - ProtonMail"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:54
 msgctxt "Link"
 msgid "Learn more"
 msgstr "Yderligere oplysninger"
@@ -4214,7 +4264,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Kupon"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:47
+#: node_modules/react-components/containers/payments/PaymentSelector.js:51
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Andre"
@@ -4440,7 +4490,17 @@ msgctxt "Success"
 msgid "Email updated"
 msgstr "E-mail opdateret"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:107
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:18
+msgctxt "Success"
+msgid "Key successfully generated"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:67
+msgctxt "Success"
+msgid "Key copied to clipboard!"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DomainModal.js:158
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "Domæne bekræftet"
@@ -5283,6 +5343,11 @@ msgctxt "Warning"
 msgid "Are you sure you want to delete the address?"
 msgstr "Sikker på, at du vil slette denne adresse?"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:106
+msgctxt "Warning"
+msgid "Please check this DNS entry. It's not set properly. Most common problems include wrong format, having multiple entries with the same selector or having a wrong public key."
+msgstr ""
+
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
@@ -5590,7 +5655,7 @@ msgctxt "Label for domain modal"
 msgid "Please add the following TXT record:"
 msgstr "Tilføj flg. TXT-post:"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:19
+#: node_modules/react-components/containers/domains/DKIMSection.js:112
 #: node_modules/react-components/containers/domains/DMARCSection.js:18
 #: node_modules/react-components/containers/domains/MXSection.js:22
 #: node_modules/react-components/containers/domains/SPFSection.js:19
@@ -5599,7 +5664,7 @@ msgctxt "Header for domain modal"
 msgid "Type"
 msgstr "Type"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:20
+#: node_modules/react-components/containers/domains/DKIMSection.js:113
 #: node_modules/react-components/containers/domains/DMARCSection.js:19
 #: node_modules/react-components/containers/domains/MXSection.js:23
 #: node_modules/react-components/containers/domains/SPFSection.js:20
@@ -5608,7 +5673,6 @@ msgctxt "Header for domain modal"
 msgid "Host name"
 msgstr "Værtsnavn"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:21
 #: node_modules/react-components/containers/domains/DMARCSection.js:20
 #: node_modules/react-components/containers/domains/MXSection.js:24
 #: node_modules/react-components/containers/domains/SPFSection.js:21
@@ -5627,22 +5691,82 @@ msgctxt "Header for domain modal"
 msgid "Address"
 msgstr "E-mail"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:114
+msgctxt "Header for domain modal"
+msgid "Value"
+msgstr ""
+
 #: node_modules/react-components/containers/domains/MXSection.js:25
 msgctxt "Header for domain modal"
 msgid "Priority"
 msgstr "Prioritet"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DKIMSection.js:33
+msgctxt "Description"
+msgid "This is the key we currently use for signing your emails."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:40
+msgctxt "Description"
+msgid "We are waiting for you to insert this record correctly in your DNS."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:47
+msgctxt "Description"
+msgid "This key is no longer used for DKIM signing."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:57
+msgctxt "Description"
+msgid "There is a problem with this record. Please check your DNS."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:35
+msgctxt "Status"
+msgid "Active"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:42
+msgctxt "Status"
+msgid "Pending"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:49
+msgctxt "Status"
+msgid "Retired"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:59
+msgctxt "Status"
+msgid "Warning"
+msgstr ""
+
+#: node_modules/react-components/containers/overview/SummarySection.js:62
+msgctxt "Status"
+msgid "Not set"
+msgstr "Ikke opsat"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Enabled"
+msgstr "Aktiveret"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Disabled"
+msgstr "Deaktiveret"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:66
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "Domæne"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:68
+#: node_modules/react-components/containers/domains/DomainModal.js:67
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "Bekræft"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:69
+#: node_modules/react-components/containers/domains/DomainModal.js:68
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "Adresser"
@@ -5833,7 +5957,7 @@ msgctxt "Payment method option"
 msgid "Pay with PayPal"
 msgstr "Betal via PayPal"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:63
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:64
 msgctxt "Payment method option"
 msgid "Pay with Bitcoin"
 msgstr "Betal med Bitcoin"
@@ -6346,21 +6470,6 @@ msgstr "Medlem"
 msgctxt "Role"
 msgid "Administrator"
 msgstr "Administrator"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:62
-msgctxt "Status"
-msgid "Not set"
-msgstr "Ikke opsat"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Enabled"
-msgstr "Aktiveret"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Disabled"
-msgstr "Deaktiveret"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:23
 msgctxt "Error notification in the bug report modal when the user upload file"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-01-27 05:21\n"
+"PO-Revision-Date: 2020-01-30 16:22\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -135,7 +135,7 @@ msgctxt "Error"
 msgid "Amount above the maximum."
 msgstr "金额太大。"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:51
+#: node_modules/react-components/containers/payments/Bitcoin.js:53
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "连接比特币 API 时出错。"
@@ -234,12 +234,12 @@ msgctxt "Error"
 msgid "Please set a recovery/notification email"
 msgstr "请先设置一个密保/通知邮箱"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:30
+#: node_modules/react-components/containers/domains/DomainModal.js:40
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "验证失败，请等待一小时后重试。"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:34
+#: node_modules/react-components/containers/domains/DomainModal.js:44
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "验证代码错误，请确认正确复制代码后重试。更改该记录可能需要 24 小时才能生效。"
@@ -499,12 +499,12 @@ msgctxt "Label"
 msgid "Hide password"
 msgstr "隐藏密码"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copied"
 msgstr "已复制"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copy"
 msgstr "复制"
@@ -673,12 +673,12 @@ msgctxt "Label"
 msgid "Renewal date"
 msgstr "续费日期"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:11
 msgctxt "Label"
-msgid "Amount BTC"
+msgid "BTC amount"
 msgstr "比特币金额"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:20
 msgctxt "Label"
 msgid "BTC address"
 msgstr "比特币地址"
@@ -906,11 +906,31 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "输入您的域名"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/DKIMSection.js:75
 #: node_modules/react-components/containers/domains/SPFSection.js:14
 msgctxt "Label"
 msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
 msgstr "请添加下面的 TXT 记录。注意：DNS 记录更新可能需要若干小时。"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:38
+msgctxt "Label"
+msgid "2048 RSA key"
+msgstr "2048 位 RSA 密钥"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:50
+msgctxt "Label"
+msgid "1024 RSA key"
+msgstr "1024 位 RSA 密钥"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:91
+msgctxt "Label"
+msgid "Key:"
+msgstr "密钥："
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:95
+msgctxt "Label"
+msgid "Active since:"
+msgstr "生效时间："
 
 #: node_modules/react-components/containers/domains/MXSection.js:17
 msgctxt "Label"
@@ -1085,7 +1105,7 @@ msgctxt "Label"
 msgid "Cardholder name"
 msgstr "持卡人姓名"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:70
 msgctxt "Label"
 msgid "Pay with cash"
 msgstr "现金支付"
@@ -1529,18 +1549,18 @@ msgctxt "Info"
 msgid "We always use credits before charging your saved payment method."
 msgstr "我们总是会优先扣除您的账户余额，再使用您添加的支付方式。"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:40
+#: node_modules/react-components/containers/payments/Bitcoin.js:42
 #, javascript-format
 msgctxt "Info"
-msgid "Amount below minimum. (${ amount })"
-msgstr "数额低于最小值（${ amount }）。"
+msgid "Amount below minimum (${ amount })."
+msgstr "金额 ${ amount } 过小。"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:64
+#: node_modules/react-components/containers/payments/Bitcoin.js:66
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "比特币付款需要一段时间（最长 24 小时）来确认交易，确认后金额将充入您的账户余额中，然后您就可以用余额支付了。"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:73
+#: node_modules/react-components/containers/payments/Bitcoin.js:75
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
 msgstr "使用比特币支付后，请按下面的说明升级账户。"
@@ -1872,16 +1892,30 @@ msgctxt "Info"
 msgid "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records."
 msgstr "若您需要保留现有的 SPF 记录，可在 ${ spfValue } 之后插入 ${ spf }，但不要创建多个 SPF 记录。"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:11
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:30
 msgctxt "Info"
-msgid "ProtonMail supports DKIM signing for custom domains! To use DKIM authentication, please add the following TXT record into your DNS for this domain. This can typically be done in the control panel of your domain name registrar."
-msgstr "ProtonMail 现已支持对自有域名予以 DKIM 数字签名！将下面的 TXT 记录加入您的域名 DNS 中即可使用 DKIM。通常可以在域名注册商网站上设置。"
+msgid "Please select the type of key you want to generate:"
+msgstr "请选择您想要生成的密钥类型："
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:28
-#, javascript-format
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:39
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to ${ off } to disable DKIM."
-msgstr "若要使用 DKIM，请将此记录保留在 DNS 中。您可以将值改为 ${ off } 停用 DKIM。"
+msgid "We recommend using this key. It is longer and therefore more secure."
+msgstr "我们推荐使用此密钥。其长度更长且更安全。"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:52
+msgctxt "Info"
+msgid "You should use this key if your registrar does not support long TXT records and you’re unable to use 2048."
+msgstr "如果您的域名注册商限制了 TXT 记录的长度，无法使用 2048 位密钥，可以使用这个密钥。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:72
+msgctxt "Info"
+msgid "ProtonMail supports DKIM signing for custom domains. To use DKIM authentication, please add the following TXT record into your DNS settings for this domain. This can typically be done in the control panel of your domain name registrar."
+msgstr "ProtonMail 支持对自有域名予以 DKIM 数字签名。在您的域名 DNS 中加入下面的 TXT 记录即可使用 DKIM，通常可以在域名注册商网站上设置。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:140
+msgctxt "Info"
+msgid "Keep this record in your DNS for as long as you want to use DKIM."
+msgstr "若要使用 DKIM，请将此记录保留在 DNS 中。"
 
 #: node_modules/react-components/containers/domains/MXSection.js:9
 msgctxt "Info"
@@ -2415,7 +2449,7 @@ msgstr "提交"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/domains/DomainModal.js:215
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
@@ -2455,7 +2489,7 @@ msgctxt "Action"
 msgid "Verify"
 msgstr "验证"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/Bitcoin.js:54
 #: node_modules/react-components/containers/payments/PayPal.js:105
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
 msgctxt "Action"
@@ -2543,7 +2577,7 @@ msgid "Got it"
 msgstr "知道了"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/domains/DomainModal.js:216
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
@@ -2688,7 +2722,7 @@ msgstr "完成"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:421
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/domains/DomainModal.js:199
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
@@ -2811,6 +2845,16 @@ msgstr "启用推送通知"
 msgctxt "Action"
 msgid "Add user"
 msgstr "添加用户"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:27
+msgctxt "Action"
+msgid "Generate"
+msgstr "生成"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:139
+msgctxt "Action"
+msgid "Generate a new key"
+msgstr "生成新密钥"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
@@ -3493,12 +3537,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "揽取邮箱"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:26
+msgctxt "Title"
+msgid "Generate key"
+msgstr "生成密钥"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "调整域名"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Add domain"
 msgstr "添加域名"
@@ -4048,6 +4097,7 @@ msgid "Overview - ProtonMail"
 msgstr "总览 - ProtonMail"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:54
 msgctxt "Link"
 msgid "Learn more"
 msgstr "了解详情"
@@ -4203,7 +4253,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "优惠券"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:47
+#: node_modules/react-components/containers/payments/PaymentSelector.js:51
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "其他"
@@ -4429,7 +4479,17 @@ msgctxt "Success"
 msgid "Email updated"
 msgstr "邮箱已更改"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:107
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:18
+msgctxt "Success"
+msgid "Key successfully generated"
+msgstr "生成密钥成功"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:67
+msgctxt "Success"
+msgid "Key copied to clipboard!"
+msgstr "密钥已复制"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:158
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "域名已验证"
@@ -5262,6 +5322,11 @@ msgctxt "Warning"
 msgid "Are you sure you want to delete the address?"
 msgstr "确定要删除此地址吗？"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:106
+msgctxt "Warning"
+msgid "Please check this DNS entry. It's not set properly. Most common problems include wrong format, having multiple entries with the same selector or having a wrong public key."
+msgstr "此 DNS 记录未设置正确，请检查。常见的问题包括格式不当、公钥有误以及同一选择器存在多个记录。"
+
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
@@ -5569,7 +5634,7 @@ msgctxt "Label for domain modal"
 msgid "Please add the following TXT record:"
 msgstr "请添加下面的 TXT 记录："
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:19
+#: node_modules/react-components/containers/domains/DKIMSection.js:112
 #: node_modules/react-components/containers/domains/DMARCSection.js:18
 #: node_modules/react-components/containers/domains/MXSection.js:22
 #: node_modules/react-components/containers/domains/SPFSection.js:19
@@ -5578,7 +5643,7 @@ msgctxt "Header for domain modal"
 msgid "Type"
 msgstr "类型"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:20
+#: node_modules/react-components/containers/domains/DKIMSection.js:113
 #: node_modules/react-components/containers/domains/DMARCSection.js:19
 #: node_modules/react-components/containers/domains/MXSection.js:23
 #: node_modules/react-components/containers/domains/SPFSection.js:20
@@ -5587,7 +5652,6 @@ msgctxt "Header for domain modal"
 msgid "Host name"
 msgstr "主机名"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:21
 #: node_modules/react-components/containers/domains/DMARCSection.js:20
 #: node_modules/react-components/containers/domains/MXSection.js:24
 #: node_modules/react-components/containers/domains/SPFSection.js:21
@@ -5606,22 +5670,82 @@ msgctxt "Header for domain modal"
 msgid "Address"
 msgstr "地址"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:114
+msgctxt "Header for domain modal"
+msgid "Value"
+msgstr "内容"
+
 #: node_modules/react-components/containers/domains/MXSection.js:25
 msgctxt "Header for domain modal"
 msgid "Priority"
 msgstr "优先级"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DKIMSection.js:33
+msgctxt "Description"
+msgid "This is the key we currently use for signing your emails."
+msgstr "这是当前用于给您的邮件签名的密钥。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:40
+msgctxt "Description"
+msgid "We are waiting for you to insert this record correctly in your DNS."
+msgstr "正在等待您添加此 DNS 记录。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:47
+msgctxt "Description"
+msgid "This key is no longer used for DKIM signing."
+msgstr "此密钥已不再用于 DKIM 签名。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:57
+msgctxt "Description"
+msgid "There is a problem with this record. Please check your DNS."
+msgstr "DNS 记录存在问题，请检查。"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:35
+msgctxt "Status"
+msgid "Active"
+msgstr "正常"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:42
+msgctxt "Status"
+msgid "Pending"
+msgstr "等待"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:49
+msgctxt "Status"
+msgid "Retired"
+msgstr "废弃"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:59
+msgctxt "Status"
+msgid "Warning"
+msgstr "警告"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:62
+msgctxt "Status"
+msgid "Not set"
+msgstr "未设置"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Enabled"
+msgstr "已开启"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Disabled"
+msgstr "已关闭"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:66
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "域名"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:68
+#: node_modules/react-components/containers/domains/DomainModal.js:67
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "验证"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:69
+#: node_modules/react-components/containers/domains/DomainModal.js:68
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "地址"
@@ -5812,7 +5936,7 @@ msgctxt "Payment method option"
 msgid "Pay with PayPal"
 msgstr "PayPal 支付"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:63
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:64
 msgctxt "Payment method option"
 msgid "Pay with Bitcoin"
 msgstr "比特币支付"
@@ -6325,21 +6449,6 @@ msgstr "成员"
 msgctxt "Role"
 msgid "Administrator"
 msgstr "管理员"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:62
-msgctxt "Status"
-msgid "Not set"
-msgstr "未设置"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Enabled"
-msgstr "已开启"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Disabled"
-msgstr "已关闭"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:23
 msgctxt "Error notification in the bug report modal when the user upload file"

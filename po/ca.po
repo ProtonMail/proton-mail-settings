@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Catalan\n"
 "Language: ca_ES\n"
-"PO-Revision-Date: 2020-01-26 07:20\n"
+"PO-Revision-Date: 2020-01-30 08:20\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -135,7 +135,7 @@ msgctxt "Error"
 msgid "Amount above the maximum."
 msgstr "Quantitat per sobre del màxim."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:51
+#: node_modules/react-components/containers/payments/Bitcoin.js:53
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "Error en connectar-se a l'API de Bitcoin."
@@ -234,12 +234,12 @@ msgctxt "Error"
 msgid "Please set a recovery/notification email"
 msgstr "Si us plau, estableixi un correu electrònic de recuperació/notificació"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:30
+#: node_modules/react-components/containers/domains/DomainModal.js:40
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "La verificació no s'ha pogut realitzar amb èxit, si us plau intenteu-ho de nou d'aquí una hora."
 
-#: node_modules/react-components/containers/domains/DomainModal.js:34
+#: node_modules/react-components/containers/domains/DomainModal.js:44
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "Codi de verificació erroni. Si us plau assegureu-vos que heu copiat el codi de verificació correctament i intenteu-ho de nou. Els canvis poden trigar fins a 24 hores a produir-se."
@@ -501,12 +501,12 @@ msgctxt "Label"
 msgid "Hide password"
 msgstr "Oculta la contrasenya"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copied"
 msgstr "Copiat"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copy"
 msgstr "Copia"
@@ -675,12 +675,12 @@ msgctxt "Label"
 msgid "Renewal date"
 msgstr "Data de renovació"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:11
 msgctxt "Label"
-msgid "Amount BTC"
-msgstr "Quantitat de BTC"
+msgid "BTC amount"
+msgstr "Import de BTC"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:20
 msgctxt "Label"
 msgid "BTC address"
 msgstr "Adreça BTC"
@@ -908,11 +908,31 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "Afegir el vostre domini"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/DKIMSection.js:75
 #: node_modules/react-components/containers/domains/SPFSection.js:14
 msgctxt "Label"
 msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
 msgstr "Si us plau afegiu el següent registre TXT. Recordeu que els registres DNS poden trigar diverses hores a actualitzar-se."
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:38
+msgctxt "Label"
+msgid "2048 RSA key"
+msgstr "Clau 2048 RSA"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:50
+msgctxt "Label"
+msgid "1024 RSA key"
+msgstr "Clau 1024 RSA"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:91
+msgctxt "Label"
+msgid "Key:"
+msgstr "Clau:"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:95
+msgctxt "Label"
+msgid "Active since:"
+msgstr "Actiu des de:"
 
 #: node_modules/react-components/containers/domains/MXSection.js:17
 msgctxt "Label"
@@ -1087,7 +1107,7 @@ msgctxt "Label"
 msgid "Cardholder name"
 msgstr "Nom del titular de la tarja"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:70
 msgctxt "Label"
 msgid "Pay with cash"
 msgstr "Pagar amb efectiu"
@@ -1531,18 +1551,18 @@ msgctxt "Info"
 msgid "We always use credits before charging your saved payment method."
 msgstr "Sempre utilitzem crèdits abans de carregar el vostre mètode de pagament desat."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:40
+#: node_modules/react-components/containers/payments/Bitcoin.js:42
 #, javascript-format
 msgctxt "Info"
-msgid "Amount below minimum. (${ amount })"
-msgstr "Import inferior al mínim. (${ amount })"
+msgid "Amount below minimum (${ amount })."
+msgstr "Import inferior al mínim (${ amount })."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:64
+#: node_modules/react-components/containers/payments/Bitcoin.js:66
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "Les transaccions en Bitcoins poden trigar una estona en ser confirmades (fins a 24 hores). Un cop confirmada, afegirem els crèdits al seu compte. Després de la confirmació podrà efectuar el pagament del rebut amb els crèdits."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:73
+#: node_modules/react-components/containers/payments/Bitcoin.js:75
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
 msgstr "Després de fer el pagament amb Bitcoin, seguiu les següents instruccions per actualitzar."
@@ -1879,16 +1899,30 @@ msgctxt "Info"
 msgid "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records."
 msgstr "Si voleu conservar un registre SPF existent, només podeu afegir-hi ${ spf } després del ${ spfValue }. No creeu diversos registres SPF."
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:11
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:30
 msgctxt "Info"
-msgid "ProtonMail supports DKIM signing for custom domains! To use DKIM authentication, please add the following TXT record into your DNS for this domain. This can typically be done in the control panel of your domain name registrar."
-msgstr "ProtonMail suporta DKIM signatura de dominis personalitzats! Per utilitzar l'autenticació DKIM, si us plau, afegiu el registre TXT següent al vostre DNS per a aquest domini. Això normalment es pot fer en el panell de control del seu registrador de noms de domini."
+msgid "Please select the type of key you want to generate:"
+msgstr "Si us plau, seleccioni el tipus de clau que desitges generar:"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:28
-#, javascript-format
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:39
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to ${ off } to disable DKIM."
-msgstr "Manteniu aquest registre en el DNS mentre vulgueu emprar el DKIM. Podeu canviar el seu valor a ${ off } per inhabilitar-lo."
+msgid "We recommend using this key. It is longer and therefore more secure."
+msgstr "Recomanam utilitzar aquesta clau. Es mes llarga i per lo tant mes segura."
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:52
+msgctxt "Info"
+msgid "You should use this key if your registrar does not support long TXT records and you’re unable to use 2048."
+msgstr "Heu d'utilitzar aquesta clau si el vostre registrador no admet registres TXT llargs i no podeu fer servir el 2048."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:72
+msgctxt "Info"
+msgid "ProtonMail supports DKIM signing for custom domains. To use DKIM authentication, please add the following TXT record into your DNS settings for this domain. This can typically be done in the control panel of your domain name registrar."
+msgstr "ProtonMail admet la signatura DKIM per a dominis personalitzats! Per utilitzar l'autenticació DKIM, afegiu el següent registre TXT en el seu DNS per a aquest domini. Això normalment es pot fer en el panell de control del seu registrador de noms de domini."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:140
+msgctxt "Info"
+msgid "Keep this record in your DNS for as long as you want to use DKIM."
+msgstr "Mantingueu aquest registre al DNS durant el temps que vulgueu fer servir el DKIM."
 
 #: node_modules/react-components/containers/domains/MXSection.js:9
 msgctxt "Info"
@@ -2425,7 +2459,7 @@ msgstr "Enviar"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/domains/DomainModal.js:215
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
@@ -2465,7 +2499,7 @@ msgctxt "Action"
 msgid "Verify"
 msgstr "Verifica"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/Bitcoin.js:54
 #: node_modules/react-components/containers/payments/PayPal.js:105
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
 msgctxt "Action"
@@ -2553,7 +2587,7 @@ msgid "Got it"
 msgstr "Ho tinc"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/domains/DomainModal.js:216
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
@@ -2698,7 +2732,7 @@ msgstr "Fet"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:421
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/domains/DomainModal.js:199
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
@@ -2821,6 +2855,16 @@ msgstr "Per activar les notificacions d'escriptori"
 msgctxt "Action"
 msgid "Add user"
 msgstr "Afegir usuari"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:27
+msgctxt "Action"
+msgid "Generate"
+msgstr "Generar"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:139
+msgctxt "Action"
+msgid "Generate a new key"
+msgstr "Generar una nova clau"
 
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
@@ -3503,12 +3547,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "Captura tot "
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:26
+msgctxt "Title"
+msgid "Generate key"
+msgstr "Generar clau"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "Editar el domini"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Add domain"
 msgstr "Afegeix domini"
@@ -4058,6 +4107,7 @@ msgid "Overview - ProtonMail"
 msgstr "Visió General - ProtonMail"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:54
 msgctxt "Link"
 msgid "Learn more"
 msgstr "Sebre més"
@@ -4217,7 +4267,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Cupó"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:47
+#: node_modules/react-components/containers/payments/PaymentSelector.js:51
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Altres"
@@ -4443,7 +4493,17 @@ msgctxt "Success"
 msgid "Email updated"
 msgstr "Adreça de correu electronic actualitzada"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:107
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:18
+msgctxt "Success"
+msgid "Key successfully generated"
+msgstr "Clau generada satisfactòriament"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:67
+msgctxt "Success"
+msgid "Key copied to clipboard!"
+msgstr "Clau copiada al porta-retalls!"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:158
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "Domini verificat"
@@ -5286,6 +5346,11 @@ msgctxt "Warning"
 msgid "Are you sure you want to delete the address?"
 msgstr "Esteu segur que voleu eliminar l'adreça?"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:106
+msgctxt "Warning"
+msgid "Please check this DNS entry. It's not set properly. Most common problems include wrong format, having multiple entries with the same selector or having a wrong public key."
+msgstr "Comproveu aquesta entrada DNS. No està configurada correctament. Els problemes més comuns inclouen un format erroni, tenir diverses entrades amb el mateix selector o tenir una clau pública incorrecta."
+
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
@@ -5593,7 +5658,7 @@ msgctxt "Label for domain modal"
 msgid "Please add the following TXT record:"
 msgstr "Si us plau afegiu el següent registre TXT:"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:19
+#: node_modules/react-components/containers/domains/DKIMSection.js:112
 #: node_modules/react-components/containers/domains/DMARCSection.js:18
 #: node_modules/react-components/containers/domains/MXSection.js:22
 #: node_modules/react-components/containers/domains/SPFSection.js:19
@@ -5602,7 +5667,7 @@ msgctxt "Header for domain modal"
 msgid "Type"
 msgstr "Tipus"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:20
+#: node_modules/react-components/containers/domains/DKIMSection.js:113
 #: node_modules/react-components/containers/domains/DMARCSection.js:19
 #: node_modules/react-components/containers/domains/MXSection.js:23
 #: node_modules/react-components/containers/domains/SPFSection.js:20
@@ -5611,7 +5676,6 @@ msgctxt "Header for domain modal"
 msgid "Host name"
 msgstr "Nom d'amfitrió"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:21
 #: node_modules/react-components/containers/domains/DMARCSection.js:20
 #: node_modules/react-components/containers/domains/MXSection.js:24
 #: node_modules/react-components/containers/domains/SPFSection.js:21
@@ -5630,22 +5694,82 @@ msgctxt "Header for domain modal"
 msgid "Address"
 msgstr "Adreça"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:114
+msgctxt "Header for domain modal"
+msgid "Value"
+msgstr "Valor"
+
 #: node_modules/react-components/containers/domains/MXSection.js:25
 msgctxt "Header for domain modal"
 msgid "Priority"
 msgstr "Prioritat"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DKIMSection.js:33
+msgctxt "Description"
+msgid "This is the key we currently use for signing your emails."
+msgstr "Aquesta es la clau que utilitzes actualment per signat els teus correus electrònics."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:40
+msgctxt "Description"
+msgid "We are waiting for you to insert this record correctly in your DNS."
+msgstr "Estem esperant que inseriu aquest registre correctament al DNS."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:47
+msgctxt "Description"
+msgid "This key is no longer used for DKIM signing."
+msgstr "Aquesta clau ja no s’utilitza per a la signatura de DKIM."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:57
+msgctxt "Description"
+msgid "There is a problem with this record. Please check your DNS."
+msgstr "Hi ha un problema amb aquest registre. Comproveu el DNS."
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:35
+msgctxt "Status"
+msgid "Active"
+msgstr "Actiu"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:42
+msgctxt "Status"
+msgid "Pending"
+msgstr "Pendent"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:49
+msgctxt "Status"
+msgid "Retired"
+msgstr "Retirat"
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:59
+msgctxt "Status"
+msgid "Warning"
+msgstr "Atenció"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:62
+msgctxt "Status"
+msgid "Not set"
+msgstr "No establert"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Enabled"
+msgstr "Activat"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Disabled"
+msgstr "Desactivat"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:66
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "Domini"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:68
+#: node_modules/react-components/containers/domains/DomainModal.js:67
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "Verifica"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:69
+#: node_modules/react-components/containers/domains/DomainModal.js:68
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "Adreçes"
@@ -5836,7 +5960,7 @@ msgctxt "Payment method option"
 msgid "Pay with PayPal"
 msgstr "Pagar amb PayPal"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:63
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:64
 msgctxt "Payment method option"
 msgid "Pay with Bitcoin"
 msgstr "Pagar amb Bitcoin"
@@ -6349,21 +6473,6 @@ msgstr "Membre"
 msgctxt "Role"
 msgid "Administrator"
 msgstr "Administrador"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:62
-msgctxt "Status"
-msgid "Not set"
-msgstr "No establert"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Enabled"
-msgstr "Activat"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Disabled"
-msgstr "Desactivat"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:23
 msgctxt "Error notification in the bug report modal when the user upload file"

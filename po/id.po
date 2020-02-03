@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: protonmail\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2020-01-27 05:21\n"
+"PO-Revision-Date: 2020-01-30 07:22\n"
 
 #: node_modules/proton-shared/lib/helpers/humanSize.js:13
 msgctxt "file size format"
@@ -135,7 +135,7 @@ msgctxt "Error"
 msgid "Amount above the maximum."
 msgstr "Jumlah di atas maksimum."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:51
+#: node_modules/react-components/containers/payments/Bitcoin.js:53
 msgctxt "Error"
 msgid "Error connecting to the Bitcoin API."
 msgstr "Gagal sambung ke API Bitcoin."
@@ -234,12 +234,12 @@ msgctxt "Error"
 msgid "Please set a recovery/notification email"
 msgstr "Mohon atur surel pemulihan/pemberitahuan"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:30
+#: node_modules/react-components/containers/domains/DomainModal.js:40
 msgctxt "Error"
 msgid "Verification did not succeed, please try again in an hour."
 msgstr "Verifikasi gagal, silakan coba satu jam lagi."
 
-#: node_modules/react-components/containers/domains/DomainModal.js:34
+#: node_modules/react-components/containers/domains/DomainModal.js:44
 msgctxt "Error"
 msgid "Wrong verification code. Please make sure you copied the verification code correctly and try again. It can take up to 24 hours for changes to take effect."
 msgstr "Kode verifikasi salah. Pastikan Anda menyalin kode verifikasi dengan benar dan coba lagi. Perubahan memerlukan waktu hingga 24 jam."
@@ -499,12 +499,12 @@ msgctxt "Label"
 msgid "Hide password"
 msgstr "Sembunyikan kata sandi"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copied"
 msgstr "Tersalin"
 
-#: node_modules/react-components/components/button/Copy.js:20
+#: node_modules/react-components/components/button/Copy.js:21
 msgctxt "Label"
 msgid "Copy"
 msgstr "Salin"
@@ -673,12 +673,12 @@ msgctxt "Label"
 msgid "Renewal date"
 msgstr "Tanggal pembaruan"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:10
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:11
 msgctxt "Label"
-msgid "Amount BTC"
+msgid "BTC amount"
 msgstr "Jumlah BTC"
 
-#: node_modules/react-components/containers/payments/BitcoinDetails.js:16
+#: node_modules/react-components/containers/payments/BitcoinDetails.js:20
 msgctxt "Label"
 msgid "BTC address"
 msgstr "Alamat BTC"
@@ -906,11 +906,31 @@ msgctxt "Label"
 msgid "Enter your domain"
 msgstr "Masukkan domain Anda"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:14
+#: node_modules/react-components/containers/domains/DKIMSection.js:75
 #: node_modules/react-components/containers/domains/SPFSection.js:14
 msgctxt "Label"
 msgid "Please add the following TXT record. Note, DNS records can take several hours to update."
 msgstr "Sila tambah rekam TXT berikut. Catatan, rekam DNS perlu beberapa jam untuk pembaruan."
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:38
+msgctxt "Label"
+msgid "2048 RSA key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:50
+msgctxt "Label"
+msgid "1024 RSA key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:91
+msgctxt "Label"
+msgid "Key:"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:95
+msgctxt "Label"
+msgid "Active since:"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/MXSection.js:17
 msgctxt "Label"
@@ -1085,7 +1105,7 @@ msgctxt "Label"
 msgid "Cardholder name"
 msgstr "Nama pemegang kartu"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:68
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:70
 msgctxt "Label"
 msgid "Pay with cash"
 msgstr "Bayar secara tunai"
@@ -1529,18 +1549,18 @@ msgctxt "Info"
 msgid "We always use credits before charging your saved payment method."
 msgstr "Kami selalu menggunakan kredit sebelum membebankan metode pembayaran Anda yang disimpan."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:40
+#: node_modules/react-components/containers/payments/Bitcoin.js:42
 #, javascript-format
 msgctxt "Info"
-msgid "Amount below minimum. (${ amount })"
-msgstr "Di bawah jumlah minimum. (${ amount })"
+msgid "Amount below minimum (${ amount })."
+msgstr "Di bawah jumlah minimum (${ amount })."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:64
+#: node_modules/react-components/containers/payments/Bitcoin.js:66
 msgctxt "Info"
 msgid "Bitcoin transactions can take some time to be confirmed (up to 24 hours). Once confirmed, we will add credits to your account. After transaction confirmation, you can pay your invoice with the credits."
 msgstr "Transaksi bitcoin membutuhkan waktu untuk dikonfirmasi (hingga 24 jam). Setelah dikonfirmasi, kami akan menambahkan kredit ke akun Anda. Setelah konfirmasi transaksi, Anda dapat membayar tagihan Anda dengan kredit."
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:73
+#: node_modules/react-components/containers/payments/Bitcoin.js:75
 msgctxt "Info"
 msgid "After making your Bitcoin payment, please follow the instructions below to upgrade."
 msgstr "Usai melakukan pembayaran dengan Bitcoin, harap ikuti instruksi di bawah untuk meningkatkan akun."
@@ -1872,16 +1892,30 @@ msgctxt "Info"
 msgid "If you want to keep an existing SPF record, you can just add ${ spf } to it after the ${ spfValue }. Do not create multiple SPF records."
 msgstr "Jika Anda ingin mempertahankan data SPF yang sudah ada, Anda dapat menambahkan ${ spf } setelah ${ spfValue }. Jangan buat banyak data SPF."
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:11
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:30
 msgctxt "Info"
-msgid "ProtonMail supports DKIM signing for custom domains! To use DKIM authentication, please add the following TXT record into your DNS for this domain. This can typically be done in the control panel of your domain name registrar."
-msgstr "ProtonMail mendukung penandatanganan DKIM untuk domain khusus! Untuk menggunakan autentikasi DKIM, tambahkan data TXT berikut ke dalam DNS untuk domain ini. Hal ini biasanya dapat dilakukan di panel kontrol registrar nama domain Anda."
+msgid "Please select the type of key you want to generate:"
+msgstr ""
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:28
-#, javascript-format
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:39
 msgctxt "Info"
-msgid "Keep this record in your DNS for as long as you want to use DKIM. You can change its Value to ${ off } to disable DKIM."
-msgstr "Simpanlah catatan ini di DNS Anda selama Anda ingin menggunakan DKIM. Anda dapat mengubah nilainya menjadi ${ off } untuk menonaktifkan DKIM."
+msgid "We recommend using this key. It is longer and therefore more secure."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:52
+msgctxt "Info"
+msgid "You should use this key if your registrar does not support long TXT records and you’re unable to use 2048."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:72
+msgctxt "Info"
+msgid "ProtonMail supports DKIM signing for custom domains. To use DKIM authentication, please add the following TXT record into your DNS settings for this domain. This can typically be done in the control panel of your domain name registrar."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:140
+msgctxt "Info"
+msgid "Keep this record in your DNS for as long as you want to use DKIM."
+msgstr ""
 
 #: node_modules/react-components/containers/domains/MXSection.js:9
 msgctxt "Info"
@@ -2415,7 +2449,7 @@ msgstr "Kirim"
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:148
 #: node_modules/react-components/containers/addresses/CreateMissingKeysAddressModal.js:156
 #: node_modules/react-components/containers/domains/CatchAllModal.js:12
-#: node_modules/react-components/containers/domains/DomainModal.js:157
+#: node_modules/react-components/containers/domains/DomainModal.js:215
 #: node_modules/react-components/containers/filters/AddFilterModal.js:137
 #: node_modules/react-components/containers/general/ShortcutsModal.js:10
 #: node_modules/react-components/containers/invoices/InvoiceTextModal.js:38
@@ -2455,7 +2489,7 @@ msgctxt "Action"
 msgid "Verify"
 msgstr "Memeriksa"
 
-#: node_modules/react-components/containers/payments/Bitcoin.js:52
+#: node_modules/react-components/containers/payments/Bitcoin.js:54
 #: node_modules/react-components/containers/payments/PayPal.js:105
 #: node_modules/react-components/containers/payments/PaymentVerificationModal.js:165
 msgctxt "Action"
@@ -2543,7 +2577,7 @@ msgid "Got it"
 msgstr "Dimengerti"
 
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:273
-#: node_modules/react-components/containers/domains/DomainModal.js:158
+#: node_modules/react-components/containers/domains/DomainModal.js:216
 #: node_modules/react-components/containers/organization/ChangeOrganizationKeysModal.js:93
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:140
 #: node_modules/react-components/containers/payments/subscription/SubscriptionModal.js:178
@@ -2688,7 +2722,7 @@ msgstr "Selesai"
 
 #: node_modules/react-components/containers/account/ChangePasswordModal.js:421
 #: node_modules/react-components/containers/account/EnableTwoFactorModal.js:265
-#: node_modules/react-components/containers/domains/DomainModal.js:148
+#: node_modules/react-components/containers/domains/DomainModal.js:199
 #: node_modules/react-components/containers/keys/addKey/AddKeyModal.js:112
 #: node_modules/react-components/containers/keys/deleteKey/DeleteKeyModal.js:103
 #: node_modules/react-components/containers/keys/importKeys/ImportKeyModal.js:220
@@ -2811,6 +2845,16 @@ msgstr "Aktifkan pemberitahuan desktop"
 msgctxt "Action"
 msgid "Add user"
 msgstr "Tambahkan pengguna"
+
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:27
+msgctxt "Action"
+msgid "Generate"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:139
+msgctxt "Action"
+msgid "Generate a new key"
+msgstr ""
 
 #: node_modules/react-components/containers/domains/DomainActions.js:36
 msgctxt "Action"
@@ -3493,12 +3537,17 @@ msgctxt "Title"
 msgid "Catch all "
 msgstr "Tangkap semua "
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:26
+msgctxt "Title"
+msgid "Generate key"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Edit domain"
 msgstr "Edit domain"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:159
+#: node_modules/react-components/containers/domains/DomainModal.js:217
 msgctxt "Title"
 msgid "Add domain"
 msgstr "Tambah domain"
@@ -4048,6 +4097,7 @@ msgid "Overview - ProtonMail"
 msgstr "Ikhtisar - ProtonMail"
 
 #: node_modules/react-components/components/link/LearnMore.js:7
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:54
 msgctxt "Link"
 msgid "Learn more"
 msgstr "Pelajari lebih lanjut"
@@ -4203,7 +4253,7 @@ msgctxt "Placeholder"
 msgid "Coupon"
 msgstr "Kupon"
 
-#: node_modules/react-components/containers/payments/PaymentSelector.js:47
+#: node_modules/react-components/containers/payments/PaymentSelector.js:51
 msgctxt "Placeholder"
 msgid "Other"
 msgstr "Lainnya"
@@ -4429,7 +4479,17 @@ msgctxt "Success"
 msgid "Email updated"
 msgstr "Surel berhasil diperbarui"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:107
+#: node_modules/react-components/containers/domains/GenerateKeyModal.js:18
+msgctxt "Success"
+msgid "Key successfully generated"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:67
+msgctxt "Success"
+msgid "Key copied to clipboard!"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DomainModal.js:158
 msgctxt "Success"
 msgid "Domain verified"
 msgstr "Domain berhasil diverifikasi"
@@ -5262,6 +5322,11 @@ msgctxt "Warning"
 msgid "Are you sure you want to delete the address?"
 msgstr "Anda yakin ingin menghapus alamat ini?"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:106
+msgctxt "Warning"
+msgid "Please check this DNS entry. It's not set properly. Most common problems include wrong format, having multiple entries with the same selector or having a wrong public key."
+msgstr ""
+
 #: node_modules/react-components/containers/domains/AddressCatchAll.js:29
 msgctxt "Warning"
 msgid "This feature is only available for ProtonMail Professional plans or higher"
@@ -5569,7 +5634,7 @@ msgctxt "Label for domain modal"
 msgid "Please add the following TXT record:"
 msgstr "Harap tambahkan data TXT berikut ini:"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:19
+#: node_modules/react-components/containers/domains/DKIMSection.js:112
 #: node_modules/react-components/containers/domains/DMARCSection.js:18
 #: node_modules/react-components/containers/domains/MXSection.js:22
 #: node_modules/react-components/containers/domains/SPFSection.js:19
@@ -5578,7 +5643,7 @@ msgctxt "Header for domain modal"
 msgid "Type"
 msgstr "Tipe"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:20
+#: node_modules/react-components/containers/domains/DKIMSection.js:113
 #: node_modules/react-components/containers/domains/DMARCSection.js:19
 #: node_modules/react-components/containers/domains/MXSection.js:23
 #: node_modules/react-components/containers/domains/SPFSection.js:20
@@ -5587,7 +5652,6 @@ msgctxt "Header for domain modal"
 msgid "Host name"
 msgstr "Nama hos"
 
-#: node_modules/react-components/containers/domains/DKIMSection.js:21
 #: node_modules/react-components/containers/domains/DMARCSection.js:20
 #: node_modules/react-components/containers/domains/MXSection.js:24
 #: node_modules/react-components/containers/domains/SPFSection.js:21
@@ -5606,22 +5670,82 @@ msgctxt "Header for domain modal"
 msgid "Address"
 msgstr "Alamat"
 
+#: node_modules/react-components/containers/domains/DKIMSection.js:114
+msgctxt "Header for domain modal"
+msgid "Value"
+msgstr ""
+
 #: node_modules/react-components/containers/domains/MXSection.js:25
 msgctxt "Header for domain modal"
 msgid "Priority"
 msgstr "Prioritas"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:67
+#: node_modules/react-components/containers/domains/DKIMSection.js:33
+msgctxt "Description"
+msgid "This is the key we currently use for signing your emails."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:40
+msgctxt "Description"
+msgid "We are waiting for you to insert this record correctly in your DNS."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:47
+msgctxt "Description"
+msgid "This key is no longer used for DKIM signing."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:57
+msgctxt "Description"
+msgid "There is a problem with this record. Please check your DNS."
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:35
+msgctxt "Status"
+msgid "Active"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:42
+msgctxt "Status"
+msgid "Pending"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:49
+msgctxt "Status"
+msgid "Retired"
+msgstr ""
+
+#: node_modules/react-components/containers/domains/DKIMSection.js:59
+msgctxt "Status"
+msgid "Warning"
+msgstr ""
+
+#: node_modules/react-components/containers/overview/SummarySection.js:62
+msgctxt "Status"
+msgid "Not set"
+msgstr "Tidak diatur"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Enabled"
+msgstr "Diaktifkan"
+
+#: node_modules/react-components/containers/overview/SummarySection.js:71
+msgctxt "Status"
+msgid "Disabled"
+msgstr "Dinonaktifkan"
+
+#: node_modules/react-components/containers/domains/DomainModal.js:66
 msgctxt "Label in domain modal"
 msgid "Domain"
 msgstr "Domain"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:68
+#: node_modules/react-components/containers/domains/DomainModal.js:67
 msgctxt "Label in domain modal"
 msgid "Verify"
 msgstr "Verifikasi"
 
-#: node_modules/react-components/containers/domains/DomainModal.js:69
+#: node_modules/react-components/containers/domains/DomainModal.js:68
 msgctxt "Label in domain modal"
 msgid "Addresses"
 msgstr "Alamat"
@@ -5812,7 +5936,7 @@ msgctxt "Payment method option"
 msgid "Pay with PayPal"
 msgstr "Bayar dengan PayPal"
 
-#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:63
+#: node_modules/react-components/containers/paymentMethods/usePaymentMethods.js:64
 msgctxt "Payment method option"
 msgid "Pay with Bitcoin"
 msgstr "Bayar dengan Bitcoin"
@@ -6325,21 +6449,6 @@ msgstr "Anggota"
 msgctxt "Role"
 msgid "Administrator"
 msgstr "Administrator"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:62
-msgctxt "Status"
-msgid "Not set"
-msgstr "Tidak diatur"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Enabled"
-msgstr "Diaktifkan"
-
-#: node_modules/react-components/containers/overview/SummarySection.js:71
-msgctxt "Status"
-msgid "Disabled"
-msgstr "Dinonaktifkan"
 
 #: node_modules/react-components/containers/support/AttachScreenshot.js:23
 msgctxt "Error notification in the bug report modal when the user upload file"
