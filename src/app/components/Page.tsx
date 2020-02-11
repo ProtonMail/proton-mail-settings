@@ -4,9 +4,12 @@ import { ObserverSections, SettingsTitle, usePermissions, Paragraph } from 'reac
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
+import { getLightOrDark } from 'proton-shared/lib/themes/helpers';
 import { c } from 'ttag';
-import upgradeSvg from 'design-system/assets/img/pm-images/upgrade2.svg';
-import passwordSvg from 'design-system/assets/img/pm-images/password.svg';
+import upgradeSvgLight from 'design-system/assets/img/shared/no-organization.svg';
+import upgradeSvgDark from 'design-system/assets/img/shared/no-organization-dark.svg';
+import passwordSvgLight from 'design-system/assets/img/shared/no-access-page.svg';
+import passwordSvgDark from 'design-system/assets/img/shared/no-access-page-dark.svg';
 
 import Main from './Main';
 
@@ -67,6 +70,7 @@ const Page = ({ config, location, children, setActiveSection }: Props) => {
     }, [location.hash]);
 
     if (userPermissions.includes(MEMBER) && pagePermissions.includes(ADMIN)) {
+        const passwordSvg = getLightOrDark(passwordSvgLight, passwordSvgDark);
         return (
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
@@ -83,6 +87,7 @@ const Page = ({ config, location, children, setActiveSection }: Props) => {
     }
 
     if (!hasPermission(userPermissions, pagePermissions)) {
+        const upgradeSvg = getLightOrDark(upgradeSvgLight, upgradeSvgDark);
         return (
             <Main>
                 <SettingsTitle>{text}</SettingsTitle>
