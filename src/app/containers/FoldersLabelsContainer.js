@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { LabelsSection } from 'react-components';
+import { LabelsSection, FoldersSection } from 'react-components';
 
 import Page from '../components/Page';
 
@@ -12,8 +12,12 @@ export const getLabelsPage = () => {
         icon: 'folder-label',
         sections: [
             {
-                text: c('Title').t`Folders and labels`,
+                text: c('Title').t`Folders`,
                 id: 'folderlist'
+            },
+            {
+                text: c('Title').t`Labels`,
+                id: 'labellist'
             }
         ]
     };
@@ -22,6 +26,7 @@ export const getLabelsPage = () => {
 const FoldersLabelsContainer = ({ setActiveSection }) => {
     return (
         <Page config={getLabelsPage()} setActiveSection={setActiveSection}>
+            <FoldersSection />
             <LabelsSection />
         </Page>
     );
