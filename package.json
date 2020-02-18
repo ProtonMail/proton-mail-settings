@@ -13,8 +13,7 @@
         "lint": "eslint src --ext .js,.ts,.tsx --quiet --cache",
         "i18n:validate": "proton-i18n validate lint-functions",
         "i18n:validate:context": "proton-i18n extract && proton-i18n validate",
-        "i18n:getlatest": "proton-i18n upgrade --custom",
-        "i18n:upgrade": "proton-i18n extract --verbose && proton-i18n crowdin -u --verbose",
+        "i18n:upgrade": "proton-i18n extract --verbose && proton-i18n crowdin --verbose",
         "pretty": "prettier --write  $(find src -type f -name '*.js' -o -name '*.ts' -o -name '*.tsx')",
         "preversion": "git update-index --no-assume-unchanged package-lock.json",
         "postversion": "git update-index --assume-unchanged package-lock.json && git push --tags",
@@ -25,7 +24,8 @@
         "e2e": "cypress run",
         "e2e-dev": "cypress open",
         "check-types": "tsc",
-        "test": "echo 123"
+        "test": "echo 123",
+        "postinstall": "proton-i18n post-install"
     },
     "repository": {
         "type": "git",
@@ -50,8 +50,8 @@
         "husky": "^1.3.1",
         "lint-staged": "^8.1.5",
         "prettier": "^1.16.4",
-        "proton-bundler": "github:ProtonMail/proton-bundler#semver:^1.0.0",
-        "proton-i18n": "github:ProtonMail/proton-i18n#semver:^1.0.0",
+        "proton-bundler": "github:ProtonMail/proton-bundler#semver:^1.9.0",
+        "proton-i18n": "github:ProtonMail/proton-i18n#semver:^2.0.0",
         "typescript": "^3.6.3"
     },
     "dependencies": {
