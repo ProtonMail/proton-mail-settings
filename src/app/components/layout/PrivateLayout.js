@@ -33,6 +33,7 @@ import FiltersContainer from '../../containers/FiltersContainer';
 import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import VPNContainer from '../../containers/VPNContainer';
+import SidebarVersion from '../../content/SidebarVersion';
 
 const PrivateLayout = ({ location }) => {
     const [user] = useUser();
@@ -92,6 +93,7 @@ const PrivateLayout = ({ location }) => {
                         render={() => (
                             <Sidebar
                                 url="/inbox"
+                                version={<SidebarVersion />}
                                 mobileLinks={mobileLinks}
                                 expanded={expanded}
                                 onToggleExpand={onToggleExpand}
