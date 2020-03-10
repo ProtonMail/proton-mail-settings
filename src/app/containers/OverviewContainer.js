@@ -37,7 +37,7 @@ const OverviewContainer = ({ history }) => {
                     <PromoteSection subscription={subscription} user={user} />
                 </div>
             </div>
-            <IndexSection pages={getPages()} subscription={subscription} user={user} history={history} />
+            <IndexSection pages={getPages(user)} subscription={subscription} user={user} history={history} />
         </Main>
     );
 };

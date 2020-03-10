@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Link, Switch, withRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import { Sidebar, AppsSidebar, MainAreaContext, StorageSpaceStatus, ErrorBoundary, useToggle } from 'react-components';
+import {
+    Sidebar,
+    AppsSidebar,
+    MainAreaContext,
+    StorageSpaceStatus,
+    ErrorBoundary,
+    useToggle,
+    useUser
+} from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
@@ -27,10 +35,11 @@ import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import VPNContainer from '../../containers/VPNContainer';
 
 const PrivateLayout = ({ location }) => {
+    const [user] = useUser();
     const mainAreaRef = useRef();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
-    const list = getPages().map(({ text, route: link, icon, sections = [] }) => ({
+    const list = getPages(user).map(({ text, route: link, icon, sections = [] }) => ({
         text,
         link,
         icon,

@@ -15,8 +15,8 @@ import { getAppsPage } from './containers/AppsContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
 import { getVPNPage } from './containers/VPNContainer';
 
-export const getPages = () => [
-    getSubscriptionPage(),
+export const getPages = (user) => [
+    getSubscriptionPage(user),
     getAccountPage(),
     getOrganizationPage(),
     getMembersPage(),
