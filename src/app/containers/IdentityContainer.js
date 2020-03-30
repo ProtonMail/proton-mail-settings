@@ -6,7 +6,7 @@ import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import Page from '../components/Page';
 
-const { PAID_MAIL } = PERMISSIONS;
+const { UPGRADER } = PERMISSIONS;
 
 export const getIdentityPage = () => {
     return {
@@ -21,7 +21,7 @@ export const getIdentityPage = () => {
             {
                 text: c('Title').t`Short domain (@pm.me)`,
                 id: 'pmme',
-                permissions: [PAID_MAIL]
+                permissions: [UPGRADER]
             }
         ]
     };
