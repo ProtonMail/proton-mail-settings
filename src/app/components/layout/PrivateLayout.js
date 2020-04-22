@@ -10,7 +10,10 @@ import {
     StorageSpaceStatus,
     ErrorBoundary,
     useToggle,
-    useUser
+    useUser,
+    useModals,
+    ShortcutsModal,
+    useHotkeys
 } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
@@ -38,6 +41,7 @@ import SidebarVersion from '../../content/SidebarVersion';
 const PrivateLayout = ({ location }) => {
     const [user] = useUser();
     const mainAreaRef = useRef();
+    const { createModal, resetModals } = useModals();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
     const list = getPages(user).map(({ text, route: link, icon, sections = [] }) => ({
@@ -65,6 +69,25 @@ const PrivateLayout = ({ location }) => {
         setExpand(false);
         mainAreaRef.current.scrollTop = 0;
     }, [location.pathname]);
+
+    useHotkeys((e) => {
+        const { target, key } = e;
+
+        if (key === 'Escape' || key === 'Esc') {
+            resetModals();
+            return;
+        }
+
+        const ignoreTags = ['input', 'select', 'textarea'];
+
+        // ignore if event comes from an input, select, textarea or contenteditable element
+        if (ignoreTags.includes(target.tagName.toLowerCase()) || target.isContentEditable) return;
+
+        if (key === '?') {
+            createModal(<ShortcutsModal />);
+            return;
+        }
+    });
 
     return (
         <div className="flex flex-nowrap no-scroll">
