@@ -13,7 +13,8 @@ import {
     useUser,
     useModals,
     ShortcutsModal,
-    useHotkeys
+    useHotkeys,
+    useDelinquent
 } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
@@ -40,6 +41,7 @@ import SidebarVersion from '../../content/SidebarVersion';
 
 const PrivateLayout = ({ location }) => {
     const [user] = useUser();
+    useDelinquent();
     const mainAreaRef = useRef();
     const { createModal, resetModals } = useModals();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
