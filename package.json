@@ -40,7 +40,6 @@
     "homepage": "https://github.com/ProtonMail/protonmail-settings#readme",
     "devDependencies": {
         "@testing-library/cypress": "^4.0.4",
-        "@types/moment-timezone": "^0.5.12",
         "@types/react-router-dom": "^4.3.5",
         "@typescript-eslint/eslint-plugin": "^2.3.2",
         "@typescript-eslint/parser": "^2.3.2",
