@@ -39,7 +39,7 @@ export interface PageConfig {
 interface Props extends RouteComponentProps {
     config: PageConfig;
     children?: React.ReactNode;
-    setActiveSection?: () => void;
+    setActiveSection?: (newActiveSection: string) => void;
 }
 
 const Page = ({ config, location, children, setActiveSection }: Props) => {

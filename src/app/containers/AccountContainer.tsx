@@ -46,7 +46,7 @@ export const getAccountPage = (): PageConfig => {
 };
 
 interface Props {
-    setActiveSection: () => void;
+    setActiveSection: (newActiveSection: string) => void;
 }
 
 const AccountContainer = ({ setActiveSection }: Props) => {
