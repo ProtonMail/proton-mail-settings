@@ -45,7 +45,7 @@ const FiltersContainer = ({ setActiveSection }) => {
                     {
                         icon: 'auto-reply',
                         text: c('Info')
-                            .t`Go to Auto-reply settings if you want to create and manage auto-replys and notify anyone who tries to send you a message while you are out of the office.`,
+                            .t`Go to Auto-reply settings if you want to create and manage auto-replies and notify anyone who tries to send you a message while you are out of the office.`,
                         link: c('Link').t`Auto-reply settings`,
                         to: '/settings/auto-reply'
                     }
