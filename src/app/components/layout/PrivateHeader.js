@@ -10,7 +10,8 @@ import {
     useActiveBreakpoint,
     BlackFridayNavbarLink,
     MailBlackFridayModal,
-    useBlackFriday
+    useBlackFriday,
+    AppsDropdown
 } from 'react-components';
 import { c } from 'ttag';
 
@@ -22,7 +23,10 @@ const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
 
     return (
         <header className="header flex flex-items-center flex-nowrap reset4print">
-            <MainLogo url="/inbox" className="nomobile" external={true} />
+            <div className="logo-container flex flex-spacebetween flex-items-center flex-nowrap nomobile">
+                <MainLogo url="/inbox" external={true} />
+                <AppsDropdown />
+            </div>
             <Hamburger expanded={expanded} onToggle={onToggleExpand} />
             {title && isNarrow ? <span className="h3 mb0 ellipsis lh-standard">{title}</span> : null}
             <TopNavbar>

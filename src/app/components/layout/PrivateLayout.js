@@ -1,18 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { Route, Link, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import {
-    Sidebar,
-    AppsSidebar,
-    MainAreaContext,
-    StorageSpaceStatus,
-    ErrorBoundary,
-    useToggle,
-    useUser,
-    useDelinquent
-} from 'react-components';
+import { Sidebar, MainAreaContext, ErrorBoundary, useToggle, useUser, useDelinquent } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
@@ -70,18 +61,6 @@ const PrivateLayout = ({ location }) => {
 
     return (
         <div className="flex flex-nowrap no-scroll">
-            <AppsSidebar
-                items={[
-                    <StorageSpaceStatus
-                        key="storage"
-                        upgradeButton={
-                            <Link to="/settings/subscription" className="pm-button pm-button--primary pm-button--small">
-                                {c('Action').t`Upgrade`}
-                            </Link>
-                        }
-                    />
-                ]}
-            />
             <div className="content flex-item-fluid reset4print">
                 <PrivateHeader
                     title={c('Title').t`Settings`}
