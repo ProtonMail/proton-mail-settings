@@ -59,9 +59,9 @@ const PrivateLayout = ({ location }) => {
     }, [location.pathname]);
 
     return (
-        <div className="flex flex-nowrap no-scroll">
+        <div className="flex flex-column flex-nowrap no-scroll">
             <TopBanners />
-            <div className="content flex-item-fluid reset4print">
+            <div className="content flex-item-fluid-auto reset4print">
                 <PrivateHeader
                     title={c('Title').t`Settings`}
                     location={location}
