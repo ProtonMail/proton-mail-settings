@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import { Sidebar, MainAreaContext, ErrorBoundary, useToggle, useUser, useDelinquent } from 'react-components';
+import { Sidebar, MainAreaContext, ErrorBoundary, TopBanners, useToggle, useUser } from 'react-components';
 
 import PrivateHeader from './PrivateHeader';
 import { getPages } from '../../pages';
@@ -29,7 +29,6 @@ import SidebarVersion from '../../content/SidebarVersion';
 
 const PrivateLayout = ({ location }) => {
     const [user] = useUser();
-    useDelinquent();
     const mainAreaRef = useRef();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
@@ -60,183 +59,195 @@ const PrivateLayout = ({ location }) => {
     }, [location.pathname]);
 
     return (
-        <div className="flex flex-nowrap no-scroll">
-            <div className="content flex-item-fluid reset4print">
-                <PrivateHeader
-                    title={c('Title').t`Settings`}
-                    location={location}
-                    expanded={expanded}
-                    onToggleExpand={onToggleExpand}
-                />
-                <div className="flex flex-nowrap">
-                    <Route
-                        path="/:path"
-                        render={() => (
-                            <Sidebar
-                                url="/inbox"
-                                version={<SidebarVersion />}
-                                mobileLinks={mobileLinks}
-                                expanded={expanded}
-                                onToggleExpand={onToggleExpand}
-                                list={list}
-                                activeSection={activeSection}
-                            />
-                        )}
+        <>
+            <TopBanners />
+            <div className="flex flex-nowrap no-scroll">
+                <div className="content flex-item-fluid reset4print">
+                    <PrivateHeader
+                        title={c('Title').t`Settings`}
+                        location={location}
+                        expanded={expanded}
+                        onToggleExpand={onToggleExpand}
                     />
-                    <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
-                        <div className="flex flex-reverse h100">
-                            <MainAreaContext.Provider value={mainAreaRef}>
-                                <ErrorBoundary key={location.pathname}>
-                                    <Switch>
-                                        <Route
-                                            path="/settings"
-                                            exact
-                                            render={({ history }) => <OverviewContainer history={history} />}
-                                        />
-                                        <Route
-                                            path="/settings/account"
-                                            render={({ history }) => (
-                                                <AccountContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/organization"
-                                            render={({ history }) => (
-                                                <OrganizationContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/members"
-                                            render={({ history }) => (
-                                                <MembersContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/subscription"
-                                            render={({ history }) => (
-                                                <SubscriptionContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/addresses/:memberID?"
-                                            render={({ history }) => (
-                                                <AddressesContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/domains"
-                                            render={({ history }) => (
-                                                <DomainsContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/identity"
-                                            render={({ history }) => (
-                                                <IdentityContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/security"
-                                            render={({ history }) => (
-                                                <SecurityContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/appearance"
-                                            render={({ history }) => (
-                                                <AppearanceContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/keys"
-                                            render={({ history }) => (
-                                                <KeysContainer history={history} setActiveSection={setActiveSection} />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/apps"
-                                            render={({ history }) => (
-                                                <AppsContainer history={history} setActiveSection={setActiveSection} />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/general"
-                                            render={({ history }) => (
-                                                <GeneralContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/filters"
-                                            render={({ history }) => (
-                                                <FiltersContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/labels"
-                                            render={({ history }) => (
-                                                <FoldersLabelsContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/auto-reply"
-                                            render={({ history }) => (
-                                                <AutoReplyContainer
-                                                    history={history}
-                                                    setActiveSection={setActiveSection}
-                                                />
-                                            )}
-                                        />
-                                        <Route
-                                            path="/settings/vpn"
-                                            render={({ history }) => (
-                                                <VPNContainer history={history} setActiveSection={setActiveSection} />
-                                            )}
-                                        />
-                                        <Redirect to="/settings" />
-                                    </Switch>
-                                </ErrorBoundary>
-                            </MainAreaContext.Provider>
+                    <div className="flex flex-nowrap">
+                        <Route
+                            path="/:path"
+                            render={() => (
+                                <Sidebar
+                                    url="/inbox"
+                                    version={<SidebarVersion />}
+                                    mobileLinks={mobileLinks}
+                                    expanded={expanded}
+                                    onToggleExpand={onToggleExpand}
+                                    list={list}
+                                    activeSection={activeSection}
+                                />
+                            )}
+                        />
+                        <div className="main flex-item-fluid main-area" ref={mainAreaRef}>
+                            <div className="flex flex-reverse h100">
+                                <MainAreaContext.Provider value={mainAreaRef}>
+                                    <ErrorBoundary key={location.pathname}>
+                                        <Switch>
+                                            <Route
+                                                path="/settings"
+                                                exact
+                                                render={({ history }) => <OverviewContainer history={history} />}
+                                            />
+                                            <Route
+                                                path="/settings/account"
+                                                render={({ history }) => (
+                                                    <AccountContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/organization"
+                                                render={({ history }) => (
+                                                    <OrganizationContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/members"
+                                                render={({ history }) => (
+                                                    <MembersContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/subscription"
+                                                render={({ history }) => (
+                                                    <SubscriptionContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/addresses/:memberID?"
+                                                render={({ history }) => (
+                                                    <AddressesContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/domains"
+                                                render={({ history }) => (
+                                                    <DomainsContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/identity"
+                                                render={({ history }) => (
+                                                    <IdentityContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/security"
+                                                render={({ history }) => (
+                                                    <SecurityContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/appearance"
+                                                render={({ history }) => (
+                                                    <AppearanceContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/keys"
+                                                render={({ history }) => (
+                                                    <KeysContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/apps"
+                                                render={({ history }) => (
+                                                    <AppsContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/general"
+                                                render={({ history }) => (
+                                                    <GeneralContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/filters"
+                                                render={({ history }) => (
+                                                    <FiltersContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/labels"
+                                                render={({ history }) => (
+                                                    <FoldersLabelsContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/auto-reply"
+                                                render={({ history }) => (
+                                                    <AutoReplyContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Route
+                                                path="/settings/vpn"
+                                                render={({ history }) => (
+                                                    <VPNContainer
+                                                        history={history}
+                                                        setActiveSection={setActiveSection}
+                                                    />
+                                                )}
+                                            />
+                                            <Redirect to="/settings" />
+                                        </Switch>
+                                    </ErrorBoundary>
+                                </MainAreaContext.Provider>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
