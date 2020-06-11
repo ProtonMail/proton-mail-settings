@@ -1,16 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { FiltersSection, SpamFiltersSection, RelatedSettingsSection } from 'react-components';
+import { FiltersSection, SpamFiltersSection, RelatedSettingsSection, SettingsPropsShared } from 'react-components';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getFiltersPage = () => {
     return {
         text: c('Title').t`Filters`,
-        route: '/settings/filters',
+        link: '/settings/filters',
         icon: 'filter',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Custom filters`,
                 id: 'custom'
@@ -28,9 +27,13 @@ export const getFiltersPage = () => {
     };
 };
 
-const FiltersContainer = ({ setActiveSection }) => {
+const FiltersContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getFiltersPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getFiltersPage()}
+            setActiveSection={setActiveSection}
+        >
             <FiltersSection />
             <SpamFiltersSection />
             <RelatedSettingsSection
@@ -51,12 +54,8 @@ const FiltersContainer = ({ setActiveSection }) => {
                     }
                 ]}
             />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-FiltersContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default FiltersContainer;

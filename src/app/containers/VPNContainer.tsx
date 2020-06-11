@@ -1,20 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import {
     ProtonVPNClientsSection,
     OpenVPNAccountSection,
     ProtonVPNResourcesSection,
-    ProtonVPNCredentialsSection
+    ProtonVPNCredentialsSection,
+    SettingsPropsShared
 } from 'react-components';
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getVPNPage = () => {
     return {
         text: c('Title').t`ProtonVPN`,
-        route: '/settings/vpn',
+        link: '/settings/vpn',
         icon: 'protonvpn',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`ProtonVPN clients`,
                 id: 'protonvpn-clients'
@@ -35,19 +35,19 @@ export const getVPNPage = () => {
     };
 };
 
-const VPNContainer = ({ setActiveSection }) => {
+const VPNContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getVPNPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getVPNPage()}
+            setActiveSection={setActiveSection}
+        >
             <ProtonVPNClientsSection />
             <ProtonVPNCredentialsSection />
             <OpenVPNAccountSection />
             <ProtonVPNResourcesSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-VPNContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default VPNContainer;

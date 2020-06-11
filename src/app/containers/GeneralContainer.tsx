@@ -1,17 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { LanguageSection, DesktopNotificationSection, MessagesSection, ShortcutsSection } from 'react-components';
+import {
+    LanguageSection,
+    DesktopNotificationSection,
+    MessagesSection,
+    ShortcutsSection,
+    SettingsPropsShared
+} from 'react-components';
 
 import locales from '../locales';
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getGeneralPage = () => {
     return {
         text: c('Title').t`General`,
-        route: '/settings/general',
+        link: '/settings/general',
         icon: 'general',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Language`,
                 id: 'language'
@@ -32,19 +37,19 @@ export const getGeneralPage = () => {
     };
 };
 
-const GeneralContainer = ({ setActiveSection }) => {
+const GeneralContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getGeneralPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getGeneralPage()}
+            setActiveSection={setActiveSection}
+        >
             <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
             <ShortcutsSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-GeneralContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default GeneralContainer;

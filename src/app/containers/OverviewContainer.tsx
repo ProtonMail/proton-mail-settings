@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { c } from 'ttag';
 import {
     Loader,
@@ -8,42 +7,41 @@ import {
     PromoteSection,
     useSubscription,
     useUser,
-    useUserSettings
+    useUserSettings,
+    PrivateMainArea,
+    useAppTitle
 } from 'react-components';
 
 import { getPages } from '../pages';
-import Main from '../components/Main';
 
-const OverviewContainer = ({ history }) => {
+const OverviewContainer = () => {
     const [subscription, loading] = useSubscription();
     const [userSettings] = useUserSettings();
     const [user] = useUser();
 
-    useEffect(() => {
-        document.title = c('Title').t`Overview - ProtonMail`;
-    }, []);
+    useAppTitle(c('Title').t`Overview`, 'ProtonMail');
 
     if (loading) {
-        return <Loader />;
+        return (
+            <PrivateMainArea>
+                <Loader />
+            </PrivateMainArea>
+        );
     }
 
     return (
-        <Main className="p2">
+        <PrivateMainArea className="p2">
             <div className="flex-autogrid onmobile-flex-column">
                 <div className="flex-item-fluid flex-autogrid-item flex">
                     <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
                 </div>
                 <div className="flex-item-fluid flex-autogrid-item flex">
-                    <PromoteSection subscription={subscription} user={user} />
+                    <PromoteSection user={user} />
                 </div>
             </div>
-            <IndexSection pages={getPages(user)} subscription={subscription} user={user} history={history} />
-        </Main>
+            <IndexSection pages={getPages(user)} />
+        </PrivateMainArea>
     );
-};
-
-OverviewContainer.propTypes = {
-    history: PropTypes.object
 };
 
 export default OverviewContainer;

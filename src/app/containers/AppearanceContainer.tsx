@@ -1,16 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { LayoutsSection, ThemesSection, ToolbarsSection } from 'react-components';
+import { LayoutsSection, ThemesSection, ToolbarsSection, SettingsPropsShared } from 'react-components';
 import { c } from 'ttag';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getAppearancePage = () => {
     return {
         text: c('Title').t`Appearance`,
-        route: '/settings/appearance',
+        link: '/settings/appearance',
         icon: 'apparence',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Layouts`,
                 id: 'layouts'
@@ -27,18 +26,18 @@ export const getAppearancePage = () => {
     };
 };
 
-const AppearanceContainer = ({ setActiveSection }) => {
+const AppearanceContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getAppearancePage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getAppearancePage()}
+            setActiveSection={setActiveSection}
+        >
             <LayoutsSection />
             <ToolbarsSection />
             <ThemesSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-AppearanceContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AppearanceContainer;

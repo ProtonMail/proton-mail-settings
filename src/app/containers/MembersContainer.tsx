@@ -1,20 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { MembersSection, RelatedSettingsSection } from 'react-components';
+import { MembersSection, RelatedSettingsSection, SettingsPropsShared } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { ADMIN } = PERMISSIONS;
 
 export const getMembersPage = () => {
     return {
         text: c('Title').t`Users`,
-        route: '/settings/members',
+        link: '/settings/members',
         icon: 'contacts-group-people',
         permissions: [ADMIN],
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Users`,
                 id: 'members'
@@ -28,9 +27,13 @@ export const getMembersPage = () => {
     };
 };
 
-const MembersContainer = ({ setActiveSection }) => {
+const MembersContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getMembersPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getMembersPage()}
+            setActiveSection={setActiveSection}
+        >
             <MembersSection />
             <RelatedSettingsSection
                 list={[
@@ -43,12 +46,8 @@ const MembersContainer = ({ setActiveSection }) => {
                     }
                 ]}
             />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-MembersSection.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default MembersContainer;

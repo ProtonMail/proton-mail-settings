@@ -1,10 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { DomainsSection, RelatedSettingsSection, CatchAllSection, useOrganization } from 'react-components';
+import {
+    DomainsSection,
+    RelatedSettingsSection,
+    CatchAllSection,
+    useOrganization,
+    SettingsPropsShared
+} from 'react-components';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { ADMIN, PAID_MAIL } = PERMISSIONS;
 
@@ -12,9 +17,9 @@ export const getDomainsPage = () => {
     return {
         text: c('Title').t`Custom domains`,
         icon: 'domains',
-        route: '/settings/domains',
+        link: '/settings/domains',
         permissions: [ADMIN, PAID_MAIL],
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Custom domains`,
                 id: 'domains'
@@ -68,20 +73,19 @@ const getList = ({ MaxMembers = 0 } = {}) => {
         }
     ];
 };
-
-const DomainsContainer = ({ setActiveSection }) => {
+const DomainsContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     const [organization] = useOrganization();
     return (
-        <Page config={getDomainsPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getDomainsPage()}
+            setActiveSection={setActiveSection}
+        >
             <DomainsSection />
             <CatchAllSection />
             <RelatedSettingsSection list={getList(organization)} />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-DomainsContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default DomainsContainer;

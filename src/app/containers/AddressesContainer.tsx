@@ -1,16 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
-import { AddressesSection, RelatedSettingsSection, useOrganization } from 'react-components';
+import { AddressesSection, RelatedSettingsSection, useOrganization, SettingsPropsShared } from 'react-components';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getAddressesPage = () => {
     return {
         text: c('Title').t`Addresses`,
-        route: '/settings/addresses',
+        link: '/settings/addresses',
         icon: 'addresses',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Addresses`,
                 id: 'addresses'
@@ -80,18 +79,18 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     ];
 };
 
-const AddressesContainer = ({ setActiveSection }) => {
+const AddressesContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     const [organization] = useOrganization();
     return (
-        <Page config={getAddressesPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getAddressesPage()}
+            setActiveSection={setActiveSection}
+        >
             <AddressesSection />
             <RelatedSettingsSection list={getList(organization)} />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-AddressesContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AddressesContainer;

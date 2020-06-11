@@ -1,19 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
-import { ProtonMailBridgeSection, ProtonMailBetaSection, ProtonMailAppsSection } from 'react-components';
+import {
+    ProtonMailBridgeSection,
+    ProtonMailBetaSection,
+    ProtonMailAppsSection,
+    SettingsPropsShared
+} from 'react-components';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { PAID_MAIL } = PERMISSIONS;
 
 export const getAppsPage = () => {
     return {
         text: c('Title').t`Apps`,
-        route: '/settings/apps',
+        link: '/settings/apps',
         icon: 'apps',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`ProtonMail Bridge`,
                 id: 'protonmail-bridge',
@@ -31,18 +35,18 @@ export const getAppsPage = () => {
     };
 };
 
-const AppsContainer = ({ setActiveSection }) => {
+const AppsContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getAppsPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getAppsPage()}
+            setActiveSection={setActiveSection}
+        >
             <ProtonMailBridgeSection />
             <ProtonMailBetaSection />
             <ProtonMailAppsSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-AppsContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AppsContainer;

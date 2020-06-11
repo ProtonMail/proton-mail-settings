@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
     MainLogo,
     TopNavbar,
@@ -14,9 +13,16 @@ import {
     AppsDropdown
 } from 'react-components';
 import { c } from 'ttag';
+import * as H from 'history';
 
-const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
-    const [user = {}] = useUser();
+interface Props {
+    title: string;
+    location: H.Location;
+    expanded: boolean;
+    onToggleExpand: () => void;
+}
+const PrivateHeader = ({ title, location, expanded, onToggleExpand }: Props) => {
+    const [user] = useUser();
     const { hasPaidMail } = user;
     const { isNarrow } = useActiveBreakpoint();
     const isBlackFriday = useBlackFriday();
@@ -34,7 +40,9 @@ const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
                     <BlackFridayNavbarLink
                         to="/settings/subscription"
                         location={location}
-                        getModal={({ plans, onSelect }) => <MailBlackFridayModal plans={plans} onSelect={onSelect} />}
+                        getModal={({ plans, onSelect }: any) => (
+                            <MailBlackFridayModal plans={plans} onSelect={onSelect} />
+                        )}
                     />
                 ) : (
                     <UpgradeButton />
@@ -51,13 +59,6 @@ const PrivateHeader = ({ title, location, expanded, onToggleExpand }) => {
             </TopNavbar>
         </header>
     );
-};
-
-PrivateHeader.propTypes = {
-    title: PropTypes.string,
-    expanded: PropTypes.bool,
-    onToggleExpand: PropTypes.func,
-    location: PropTypes.object.isRequired
 };
 
 export default PrivateHeader;

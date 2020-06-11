@@ -1,23 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { OrganizationSection, OrganizationPasswordSection, RelatedSettingsSection } from 'react-components';
+import {
+    OrganizationSection,
+    OrganizationPasswordSection,
+    RelatedSettingsSection,
+    SettingsPropsShared
+} from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { ADMIN } = PERMISSIONS;
 
 export const getOrganizationPage = () => {
     return {
         text: c('Title').t`Organization`,
-        route: '/settings/organization',
+        link: '/settings/organization',
         icon: 'organization',
         permissions: [ADMIN],
-        sections: [
+        subsections: [
             {
-                text: c('Title').t`Name`,
-                id: 'name'
+                text: c('Title').t`Organization`,
+                id: 'organization'
             },
             {
                 text: c('Title').t`Password & key`,
@@ -32,9 +36,13 @@ export const getOrganizationPage = () => {
     };
 };
 
-const OrganizationContainer = ({ setActiveSection }) => {
+const OrganizationContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getOrganizationPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getOrganizationPage()}
+            setActiveSection={setActiveSection}
+        >
             <OrganizationSection />
             <OrganizationPasswordSection />
             <RelatedSettingsSection
@@ -55,12 +63,8 @@ const OrganizationContainer = ({ setActiveSection }) => {
                     }
                 ]}
             />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-OrganizationContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default OrganizationContainer;

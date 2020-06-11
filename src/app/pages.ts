@@ -1,3 +1,6 @@
+import { UserModel } from 'proton-shared/lib/interfaces';
+import { SectionConfig } from 'react-components';
+
 import { getSubscriptionPage } from './containers/SubscriptionContainer';
 import { getAccountPage } from './containers/AccountContainer';
 import { getOrganizationPage } from './containers/OrganizationContainer';
@@ -15,7 +18,7 @@ import { getAppsPage } from './containers/AppsContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
 import { getVPNPage } from './containers/VPNContainer';
 
-export const getPages = (user) => [
+export const getPages = (user: UserModel): SectionConfig[] => [
     getSubscriptionPage(user),
     getAccountPage(),
     getOrganizationPage(),

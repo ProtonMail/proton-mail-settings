@@ -1,20 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { AutoReplySection, RelatedSettingsSection } from 'react-components';
+import { AutoReplySection, RelatedSettingsSection, SettingsPropsShared } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { PAID_MAIL } = PERMISSIONS;
 
 export const getAutoReply = () => {
     return {
         text: c('Title').t`Auto-reply`,
-        route: '/settings/auto-reply',
+        link: '/settings/auto-reply',
         icon: 'auto-reply',
         permissions: [PAID_MAIL],
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Auto-reply`,
                 id: 'auto-reply'
@@ -28,10 +27,14 @@ export const getAutoReply = () => {
     };
 };
 
-const AutoReplyContainer = ({ setActiveSection }) => {
+const AutoReplyContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getAutoReply()} setActiveSection={setActiveSection}>
-            <AutoReplySection id="auto-reply" />
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getAutoReply()}
+            setActiveSection={setActiveSection}
+        >
+            <AutoReplySection />
             <RelatedSettingsSection
                 list={[
                     {
@@ -43,12 +46,8 @@ const AutoReplyContainer = ({ setActiveSection }) => {
                     }
                 ]}
             />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-AutoReplyContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default AutoReplyContainer;

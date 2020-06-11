@@ -1,16 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { SessionsSection, LogsSection, AddressVerificationSection, ExternalPGPSettingsSection } from 'react-components';
+import {
+    SessionsSection,
+    LogsSection,
+    AddressVerificationSection,
+    ExternalPGPSettingsSection,
+    SettingsPropsShared
+} from 'react-components';
 import { c } from 'ttag';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getSecurityPage = () => {
     return {
         text: c('Title').t`Security`,
-        route: '/settings/security',
+        link: '/settings/security',
         icon: 'security',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Session management`,
                 id: 'sessions'
@@ -31,19 +36,19 @@ export const getSecurityPage = () => {
     };
 };
 
-const SecurityContainer = ({ setActiveSection }) => {
+const SecurityContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getSecurityPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getSecurityPage()}
+            setActiveSection={setActiveSection}
+        >
             <SessionsSection />
             <LogsSection />
             <AddressVerificationSection />
             <ExternalPGPSettingsSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-SecurityContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default SecurityContainer;

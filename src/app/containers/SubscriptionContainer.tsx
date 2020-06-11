@@ -1,27 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
     PaymentMethodsSection,
     InvoicesSection,
     PlansSection,
     BillingSection,
     SubscriptionSection,
-    useUser
+    useUser,
+    SettingsPropsShared
 } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
+import isTruthy from 'proton-shared/lib/helpers/isTruthy';
+import { UserModel } from 'proton-shared/lib/interfaces';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { UPGRADER, PAID } = PERMISSIONS;
 
-export const getSubscriptionPage = (user = {}) => {
+export const getSubscriptionPage = (user: UserModel) => {
     return {
         text: c('Title').t`Subscription`,
-        route: '/settings/subscription',
+        link: '/settings/subscription',
         icon: 'dashboard',
         permissions: [UPGRADER],
-        sections: [
+        subsections: [
             !user.hasPaidMail && {
                 text: c('Title').t`Plans`,
                 id: 'plans'
@@ -44,38 +46,25 @@ export const getSubscriptionPage = (user = {}) => {
                 text: c('Title').t`Invoices`,
                 id: 'invoices'
             }
-        ].filter(Boolean)
+        ].filter(isTruthy)
     };
 };
 
-const SubscriptionContainer = ({ setActiveSection }) => {
-    const [user, loadingUser] = useUser();
-    if (loadingUser) {
-        return null;
-    }
-    if (user.hasPaidMail) {
-        return (
-            <Page config={getSubscriptionPage(user)} setActiveSection={setActiveSection}>
-                <SubscriptionSection />
-                <BillingSection />
-                <PaymentMethodsSection />
-                <InvoicesSection />
-            </Page>
-        );
-    }
+const SubscriptionContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
+    const [user] = useUser();
     return (
-        <Page config={getSubscriptionPage(user)} setActiveSection={setActiveSection}>
-            <PlansSection />
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getSubscriptionPage(user)}
+            setActiveSection={setActiveSection}
+        >
+            {!user.hasPaidMail ? <PlansSection /> : null}
             <SubscriptionSection />
             <BillingSection />
             <PaymentMethodsSection />
             <InvoicesSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-SubscriptionContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default SubscriptionContainer;

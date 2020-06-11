@@ -1,19 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { IdentitySection, PmMeSection } from 'react-components';
+import { IdentitySection, PmMeSection, SettingsPropsShared } from 'react-components';
 import { c } from 'ttag';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
-import Page from '../components/Page';
+import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { UPGRADER } = PERMISSIONS;
 
 export const getIdentityPage = () => {
     return {
         text: c('Title').t`Identity`,
-        route: '/settings/identity',
+        link: '/settings/identity',
         icon: 'identity',
-        sections: [
+        subsections: [
             {
                 text: c('Title').t`Display name & signature`,
                 id: 'name-signature'
@@ -27,17 +26,17 @@ export const getIdentityPage = () => {
     };
 };
 
-const IdentityContainer = ({ setActiveSection }) => {
+const IdentityContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     return (
-        <Page config={getIdentityPage()} setActiveSection={setActiveSection}>
+        <PrivateMainSettingsAreaWithPermissions
+            location={location}
+            config={getIdentityPage()}
+            setActiveSection={setActiveSection}
+        >
             <IdentitySection />
             <PmMeSection />
-        </Page>
+        </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-IdentityContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
 };
 
 export default IdentityContainer;
