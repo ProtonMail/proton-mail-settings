@@ -35,7 +35,7 @@ const PrivateMainSettingsAreaWithPermissions = ({ config, location, children, se
                     <h3 className="bold">{c('Title').t`Sorry, you can't access this page`}</h3>
                     <Paragraph>
                         {c('Info')
-                            .t`Users can't make changes to organization settings. If you need admin priviledges, reach out to your system administrator.`}
+                            .t`Users can't make changes to organization settings. If you need admin privileges, reach out to your system administrator.`}
                     </Paragraph>
                 </div>
             );
