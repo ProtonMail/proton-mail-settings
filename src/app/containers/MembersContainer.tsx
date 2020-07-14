@@ -10,7 +10,7 @@ const { ADMIN } = PERMISSIONS;
 export const getMembersPage = () => {
     return {
         text: c('Title').t`Users`,
-        link: '/settings/members',
+        to: '/settings/members',
         icon: 'contacts-group-people',
         permissions: [ADMIN],
         subsections: [

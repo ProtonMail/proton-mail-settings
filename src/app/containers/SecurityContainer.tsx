@@ -13,7 +13,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getSecurityPage = () => {
     return {
         text: c('Title').t`Security`,
-        link: '/settings/security',
+        to: '/settings/security',
         icon: 'security',
         subsections: [
             {

@@ -15,7 +15,7 @@ const { ADMIN } = PERMISSIONS;
 export const getOrganizationPage = () => {
     return {
         text: c('Title').t`Organization`,
-        link: '/settings/organization',
+        to: '/settings/organization',
         icon: 'organization',
         permissions: [ADMIN],
         subsections: [

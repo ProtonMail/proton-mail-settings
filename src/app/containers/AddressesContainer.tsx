@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getAddressesPage = () => {
     return {
         text: c('Title').t`Addresses`,
-        link: '/settings/addresses',
+        to: '/settings/addresses',
         icon: 'addresses',
         subsections: [
             {

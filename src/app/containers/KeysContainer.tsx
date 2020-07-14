@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getKeysPage = () => {
     return {
         text: c('Title').t`Keys`,
-        link: '/settings/keys',
+        to: '/settings/keys',
         icon: 'keys',
         subsections: [
             {

@@ -12,7 +12,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getVPNPage = () => {
     return {
         text: c('Title').t`ProtonVPN`,
-        link: '/settings/vpn',
+        to: '/settings/vpn',
         icon: 'protonvpn',
         subsections: [
             {

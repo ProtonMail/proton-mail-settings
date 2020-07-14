@@ -17,7 +17,7 @@ export const getDomainsPage = () => {
     return {
         text: c('Title').t`Custom domains`,
         icon: 'domains',
-        link: '/settings/domains',
+        to: '/settings/domains',
         permissions: [ADMIN, PAID_MAIL],
         subsections: [
             {

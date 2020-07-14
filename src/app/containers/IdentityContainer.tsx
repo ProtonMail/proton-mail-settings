@@ -10,7 +10,7 @@ const { UPGRADER } = PERMISSIONS;
 export const getIdentityPage = () => {
     return {
         text: c('Title').t`Identity`,
-        link: '/settings/identity',
+        to: '/settings/identity',
         icon: 'identity',
         subsections: [
             {

@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getFiltersPage = () => {
     return {
         text: c('Title').t`Filters`,
-        link: '/settings/filters',
+        to: '/settings/filters',
         icon: 'filter',
         subsections: [
             {

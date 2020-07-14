@@ -2,10 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { c } from 'ttag';
 import { Route, RouteComponentProps, Switch, withRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import { Sidebar, useToggle, useUser, getSectionConfigProps, PrivateAppContainer } from 'react-components';
-
-import PrivateHeader from './PrivateHeader';
-import { getPages } from '../../pages';
+import {
+    Sidebar,
+    PrivateHeader,
+    useToggle,
+    useUser,
+    PrivateAppContainer,
+    SidebarBackButton,
+    useActiveBreakpoint,
+    FloatingButton,
+    SidebarList,
+    SidebarNav,
+    SidebarListItemsWithSubsections
+} from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
 import DomainsContainer from '../../containers/DomainsContainer';
@@ -25,33 +34,51 @@ import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import VPNContainer from '../../containers/VPNContainer';
 import SidebarVersion from '../../content/SidebarVersion';
+import { getPages } from '../../pages';
 
 const PrivateLayout = ({ location }: RouteComponentProps) => {
     const [user] = useUser();
+    const { isNarrow } = useActiveBreakpoint();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
-    const list = getSectionConfigProps(getPages(user), location.pathname, activeSection);
 
     useEffect(() => {
         setExpand(false);
     }, [location.pathname]);
 
+    const base = '/inbox';
+    const goBack = () => (window.location.href = base);
+
     const header = (
         <PrivateHeader
+            url={base}
+            externalUrl={true}
             title={c('Title').t`Settings`}
-            location={location}
             expanded={expanded}
             onToggleExpand={onToggleExpand}
+            isNarrow={isNarrow}
+            floatingButton={<FloatingButton onClick={goBack} icon="arrow-left" />}
         />
     );
+
     const sidebar = (
         <Sidebar
-            url="/inbox"
-            version={<SidebarVersion />}
+            url={base}
             expanded={expanded}
             onToggleExpand={onToggleExpand}
-            list={list}
-        />
+            primary={<SidebarBackButton onClick={goBack}>{c('Action').t`Back to Mailbox`}</SidebarBackButton>}
+            version={<SidebarVersion />}
+        >
+            <SidebarNav>
+                <SidebarList>
+                    <SidebarListItemsWithSubsections
+                        list={getPages(user)}
+                        pathname={window.location.pathname}
+                        activeSection={activeSection}
+                    />
+                </SidebarList>
+            </SidebarNav>
+        </Sidebar>
     );
 
     return (

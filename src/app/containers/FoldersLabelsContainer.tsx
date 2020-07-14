@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getLabelsPage = () => {
     return {
         text: c('Title').t`Folders/labels`,
-        link: '/settings/labels',
+        to: '/settings/labels',
         icon: 'folder-label',
         subsections: [
             {

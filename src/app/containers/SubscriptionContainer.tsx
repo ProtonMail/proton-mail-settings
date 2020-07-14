@@ -20,7 +20,7 @@ const { UPGRADER, PAID } = PERMISSIONS;
 export const getSubscriptionPage = (user: UserModel) => {
     return {
         text: c('Title').t`Subscription`,
-        link: '/settings/subscription',
+        to: '/settings/subscription',
         icon: 'dashboard',
         permissions: [UPGRADER],
         subsections: [

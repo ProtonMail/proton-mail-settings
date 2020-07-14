@@ -10,7 +10,7 @@ const { PAID_MAIL } = PERMISSIONS;
 export const getAutoReply = () => {
     return {
         text: c('Title').t`Auto-reply`,
-        link: '/settings/auto-reply',
+        to: '/settings/auto-reply',
         icon: 'auto-reply',
         permissions: [PAID_MAIL],
         subsections: [
