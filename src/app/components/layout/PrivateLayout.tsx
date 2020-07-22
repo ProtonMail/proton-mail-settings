@@ -13,7 +13,8 @@ import {
     FloatingButton,
     SidebarList,
     SidebarNav,
-    SidebarListItemsWithSubsections
+    SidebarListItemsWithSubsections,
+    MainLogo
 } from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
@@ -68,6 +69,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
             onToggleExpand={onToggleExpand}
             primary={<SidebarBackButton onClick={goBack}>{c('Action').t`Back to Mailbox`}</SidebarBackButton>}
             version={<SidebarVersion />}
+            mainLogo={<MainLogo url={base} external={true} />}
         >
             <SidebarNav>
                 <SidebarList>
