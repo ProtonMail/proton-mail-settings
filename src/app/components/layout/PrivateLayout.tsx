@@ -10,7 +10,6 @@ import {
     PrivateAppContainer,
     SidebarBackButton,
     useActiveBreakpoint,
-    FloatingButton,
     SidebarList,
     SidebarNav,
     SidebarListItemsWithSubsections,
@@ -58,7 +57,6 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
             expanded={expanded}
             onToggleExpand={onToggleExpand}
             isNarrow={isNarrow}
-            floatingButton={<FloatingButton onClick={goBack} icon="arrow-left" />}
         />
     );
 
