@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getAppearancePage = () => {
     return {
         text: c('Title').t`Appearance`,
-        to: '/settings/appearance',
+        to: '/appearance',
         icon: 'apparence',
         subsections: [
             {

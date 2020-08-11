@@ -10,7 +10,7 @@ const { ADMIN } = PERMISSIONS;
 export const getMembersPage = () => {
     return {
         text: c('Title').t`Users`,
-        to: '/settings/members',
+        to: '/members',
         icon: 'contacts-group-people',
         permissions: [ADMIN],
         subsections: [
@@ -42,7 +42,7 @@ const MembersContainer = ({ setActiveSection, location }: SettingsPropsShared) =
                         text: c('Info')
                             .t`Go to the address settings if you want to create and manage addresses for your users.`,
                         link: c('Link').t`Address settings`,
-                        to: '/settings/addresses'
+                        to: '/addresses'
                     }
                 ]}
             />

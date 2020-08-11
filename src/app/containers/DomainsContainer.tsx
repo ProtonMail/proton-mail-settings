@@ -17,7 +17,7 @@ export const getDomainsPage = () => {
     return {
         text: c('Title').t`Custom domains`,
         icon: 'domains',
-        to: '/settings/domains',
+        to: '/domains',
         permissions: [ADMIN, PAID_MAIL],
         subsections: [
             {
@@ -44,14 +44,14 @@ const getList = ({ MaxMembers = 0 } = {}) => {
                 icon: 'contacts-group-people',
                 text: c('Info').t`Go to the User Settings if you want to create and manage users in your organization.`,
                 link: c('Link').t`User settings`,
-                to: '/settings/members'
+                to: '/members'
             },
             {
                 icon: 'addresses',
                 text: c('Info')
                     .t`Go to the address settings if you want to create and manage addresses to your custom domain. `,
                 link: c('Link').t`Address settings`,
-                to: '/settings/addresses'
+                to: '/addresses'
             }
         ];
     }
@@ -62,14 +62,14 @@ const getList = ({ MaxMembers = 0 } = {}) => {
             text: c('Info')
                 .t`Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization.`,
             link: c('Link').t`Upgrade`,
-            to: '/settings/subscription'
+            to: '/subscription'
         },
         {
             icon: 'addresses',
             text: c('Info')
                 .t`Go to the address settings if you want to create and manage addresses to your custom domain. `,
             link: c('Link').t`Address settings`,
-            to: '/settings/addresses'
+            to: '/addresses'
         }
     ];
 };

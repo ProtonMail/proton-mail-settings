@@ -10,7 +10,7 @@ const { PAID_MAIL } = PERMISSIONS;
 export const getAutoReply = () => {
     return {
         text: c('Title').t`Auto-reply`,
-        to: '/settings/auto-reply',
+        to: '/auto-reply',
         icon: 'auto-reply',
         permissions: [PAID_MAIL],
         subsections: [
@@ -42,7 +42,7 @@ const AutoReplyContainer = ({ setActiveSection, location }: SettingsPropsShared)
                         text: c('Info')
                             .t`Go to Filter Settings if you want to create and manage auto-replies by email address.`,
                         link: c('Link').t`Filter Settings`,
-                        to: '/settings/filters'
+                        to: '/filters'
                     }
                 ]}
             />

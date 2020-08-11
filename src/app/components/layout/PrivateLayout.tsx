@@ -35,6 +35,7 @@ import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import VPNContainer from '../../containers/VPNContainer';
 import SidebarVersion from '../../content/SidebarVersion';
 import { getPages } from '../../pages';
+import { APPS } from 'proton-shared/lib/constants';
 
 const PrivateLayout = ({ location }: RouteComponentProps) => {
     const [user] = useUser();
@@ -47,12 +48,11 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     }, [location.pathname, location.hash]);
 
     const base = '/inbox';
-    const goBack = () => (window.location.href = base);
+    const logo = <MainLogo to={base} toApp={APPS.PROTONMAIL} />;
 
     const header = (
         <PrivateHeader
-            url={base}
-            externalUrl={true}
+            logo={logo}
             title={c('Title').t`Settings`}
             expanded={expanded}
             onToggleExpand={onToggleExpand}
@@ -62,12 +62,14 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
 
     const sidebar = (
         <Sidebar
-            url={base}
+            logo={logo}
             expanded={expanded}
             onToggleExpand={onToggleExpand}
-            primary={<SidebarBackButton onClick={goBack}>{c('Action').t`Back to Mailbox`}</SidebarBackButton>}
+            primary={
+                <SidebarBackButton to={base} toApp={APPS.PROTONMAIL} target="_self">{c('Action')
+                    .t`Back to Mailbox`}</SidebarBackButton>
+            }
             version={<SidebarVersion />}
-            mainLogo={<MainLogo url={base} external={true} />}
         >
             <SidebarNav>
                 <SidebarList>
@@ -84,98 +86,98 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     return (
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
-                <Route path="/settings" exact render={() => <OverviewContainer />} />
+                <Route path="/" exact render={() => <OverviewContainer />} />
                 <Route
-                    path="/settings/account"
+                    path="/account"
                     render={({ location }) => (
                         <AccountContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/organization"
+                    path="/organization"
                     render={({ location }) => (
                         <OrganizationContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/members"
+                    path="/members"
                     render={({ location }) => (
                         <MembersContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/subscription"
+                    path="/subscription"
                     render={({ location }) => (
                         <SubscriptionContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/addresses/:memberID?"
+                    path="/addresses/:memberID?"
                     render={({ location }) => (
                         <AddressesContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/domains"
+                    path="/domains"
                     render={({ location }) => (
                         <DomainsContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/identity"
+                    path="/identity"
                     render={({ location }) => (
                         <IdentityContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/security"
+                    path="/security"
                     render={({ location }) => (
                         <SecurityContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/appearance"
+                    path="/appearance"
                     render={({ location }) => (
                         <AppearanceContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/keys"
+                    path="/keys"
                     render={({ location }) => <KeysContainer location={location} setActiveSection={setActiveSection} />}
                 />
                 <Route
-                    path="/settings/apps"
+                    path="/apps"
                     render={({ location }) => <AppsContainer location={location} setActiveSection={setActiveSection} />}
                 />
                 <Route
-                    path="/settings/general"
+                    path="/general"
                     render={({ location }) => (
                         <GeneralContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/filters"
+                    path="/filters"
                     render={({ location }) => (
                         <FiltersContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/labels"
+                    path="/labels"
                     render={({ location }) => (
                         <FoldersLabelsContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/auto-reply"
+                    path="/auto-reply"
                     render={({ location }) => (
                         <AutoReplyContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
-                    path="/settings/vpn"
+                    path="/vpn"
                     render={({ location }) => <VPNContainer location={location} setActiveSection={setActiveSection} />}
                 />
-                <Redirect to="/settings" />
+                <Redirect to="/" />
             </Switch>
         </PrivateAppContainer>
     );

@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getAddressesPage = () => {
     return {
         text: c('Title').t`Addresses`,
-        to: '/settings/addresses',
+        to: '/addresses',
         icon: 'addresses',
         subsections: [
             {
@@ -31,14 +31,14 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 text: c('Info')
                     .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
                 link: c('Link').t`Domain settings`,
-                to: '/settings/domains'
+                to: '/domains'
             },
             {
                 icon: 'contacts-group-people',
                 text: c('Info')
                     .t`Go to User Settings if you want to create and manage the list of users in your organization.`,
                 link: c('Link').t`User settings`,
-                to: '/settings/members'
+                to: '/members'
             }
         ];
     }
@@ -50,14 +50,14 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 text: c('Info')
                     .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
                 link: c('Link').t`Domain settings`,
-                to: '/settings/domains'
+                to: '/domains'
             },
             {
                 icon: 'contacts-group-people',
                 text: c('Info')
                     .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
                 link: c('Link').t`Upgrade`,
-                to: '/settings/subscription'
+                to: '/subscription'
             }
         ];
     }
@@ -67,14 +67,14 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
             icon: 'domains',
             text: c('Info').t`Upgrade to a paid plan if you want to create and manage custom domains.`,
             link: c('Link').t`Upgrade`,
-            to: '/settings/subscription'
+            to: '/subscription'
         },
         {
             icon: 'contacts-group-people',
             text: c('Info')
                 .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
             link: c('Link').t`Upgrade`,
-            to: '/settings/subscription'
+            to: '/subscription'
         }
     ];
 };

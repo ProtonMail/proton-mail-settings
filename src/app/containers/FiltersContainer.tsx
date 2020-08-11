@@ -7,7 +7,7 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 export const getFiltersPage = () => {
     return {
         text: c('Title').t`Filters`,
-        to: '/settings/filters',
+        to: '/filters',
         icon: 'filter',
         subsections: [
             {
@@ -43,14 +43,14 @@ const FiltersContainer = ({ setActiveSection, location }: SettingsPropsShared) =
                         text: c('Info')
                             .t`Go to Folders/labels settings if you want to create and manage mailbox folders and labels.`,
                         link: c('Link').t`Folders/labels settings`,
-                        to: '/settings/labels'
+                        to: '/labels'
                     },
                     {
                         icon: 'auto-reply',
                         text: c('Info')
                             .t`Go to Auto-reply settings if you want to create and manage auto-replies and notify anyone who tries to send you a message while you are out of the office.`,
                         link: c('Link').t`Auto-reply settings`,
-                        to: '/settings/auto-reply'
+                        to: '/auto-reply'
                     }
                 ]}
             />

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { StandardPrivateApp } from 'react-components';
 import {
     UserModel,
@@ -14,9 +13,9 @@ import {
     SubscriptionModel,
     PaymentMethodsModel
 } from 'proton-shared/lib/models';
+import { TtagLocaleMap } from 'proton-shared/lib/interfaces/Locale';
 
 import PrivateLayout from '../components/layout/PrivateLayout';
-import locales from '../locales';
 
 const EVENT_MODELS = [
     UserModel,
@@ -34,7 +33,11 @@ const EVENT_MODELS = [
 
 const PRELOAD_MODELS = [UserSettingsModel, UserModel, MailSettingsModel];
 
-const PrivateApp = ({ onLogout }) => {
+interface Props {
+    onLogout: () => void;
+    locales: TtagLocaleMap;
+}
+const PrivateApp = ({ onLogout, locales }: Props) => {
     return (
         <StandardPrivateApp
             onLogout={onLogout}
@@ -45,10 +48,6 @@ const PrivateApp = ({ onLogout }) => {
             <PrivateLayout />
         </StandardPrivateApp>
     );
-};
-
-PrivateApp.propTypes = {
-    onLogout: PropTypes.func.isRequired
 };
 
 export default PrivateApp;

@@ -15,7 +15,7 @@ const { PAID_MAIL } = PERMISSIONS;
 export const getAppsPage = () => {
     return {
         text: c('Title').t`Apps`,
-        to: '/settings/apps',
+        to: '/apps',
         icon: 'apps',
         subsections: [
             {

@@ -15,7 +15,7 @@ const { ADMIN } = PERMISSIONS;
 export const getOrganizationPage = () => {
     return {
         text: c('Title').t`Organization`,
-        to: '/settings/organization',
+        to: '/organization',
         icon: 'organization',
         permissions: [ADMIN],
         subsections: [
@@ -52,14 +52,14 @@ const OrganizationContainer = ({ setActiveSection, location }: SettingsPropsShar
                         text: c('Info')
                             .t`Go to the domain settings if you want to create and manage custom domains, including electing a catch-all email address.`,
                         link: c('Link').t`Domain settings`,
-                        to: '/settings/domains'
+                        to: '/domains'
                     },
                     {
                         icon: 'contacts-group-people',
                         text: c('Info')
                             .t`Go to the user settings if you want to create and manage the users of your organization.`,
                         link: c('Link').t`User settings`,
-                        to: '/settings/members'
+                        to: '/members'
                     }
                 ]}
             />

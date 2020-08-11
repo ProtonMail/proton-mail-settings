@@ -7,14 +7,14 @@ import {
     ShortcutsSection,
     SettingsPropsShared
 } from 'react-components';
+import locales from 'proton-shared/lib/i18n/locales';
 
-import locales from '../locales';
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getGeneralPage = () => {
     return {
         text: c('Title').t`General`,
-        to: '/settings/general',
+        to: '/general',
         icon: 'general',
         subsections: [
             {
