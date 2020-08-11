@@ -48,7 +48,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     }, [location.pathname, location.hash]);
 
     const base = '/inbox';
-    const logo = <MainLogo to={base} toApp={APPS.PROTONMAIL} />;
+    const logo = <MainLogo to={base} toApp={APPS.PROTONMAIL} target="_self" />;
 
     const header = (
         <PrivateHeader
