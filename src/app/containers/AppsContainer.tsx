@@ -16,7 +16,7 @@ export const getAppsPage = () => {
     return {
         text: c('Title').t`Apps`,
         to: '/apps',
-        icon: 'apps',
+        icon: 'vpn-connx',
         subsections: [
             {
                 text: c('Title').t`ProtonMail Bridge`,

@@ -11,7 +11,7 @@ export const getAutoReply = () => {
     return {
         text: c('Title').t`Auto-reply`,
         to: '/auto-reply',
-        icon: 'auto-reply',
+        icon: 'mailbox',
         permissions: [PAID_MAIL],
         subsections: [
             {

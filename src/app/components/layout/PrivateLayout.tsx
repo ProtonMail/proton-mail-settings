@@ -6,7 +6,6 @@ import {
     Sidebar,
     PrivateHeader,
     useToggle,
-    useUser,
     PrivateAppContainer,
     SidebarBackButton,
     useActiveBreakpoint,
@@ -17,13 +16,8 @@ import {
 } from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
-import DomainsContainer from '../../containers/DomainsContainer';
-import OrganizationContainer from '../../containers/OrganizationContainer';
-import MembersContainer from '../../containers/MembersContainer';
 import IdentityContainer from '../../containers/IdentityContainer';
 import AddressesContainer from '../../containers/AddressesContainer';
-import SubscriptionContainer from '../../containers/SubscriptionContainer';
-import AccountContainer from '../../containers/AccountContainer';
 import SecurityContainer from '../../containers/SecurityContainer';
 import AppearanceContainer from '../../containers/AppearanceContainer';
 import AppsContainer from '../../containers/AppsContainer';
@@ -32,13 +26,11 @@ import GeneralContainer from '../../containers/GeneralContainer';
 import FiltersContainer from '../../containers/FiltersContainer';
 import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../../containers/AutoReplyContainer';
-import VPNContainer from '../../containers/VPNContainer';
 import SidebarVersion from '../../content/SidebarVersion';
 import { getPages } from '../../pages';
 import { APPS } from 'proton-shared/lib/constants';
 
 const PrivateLayout = ({ location }: RouteComponentProps) => {
-    const [user] = useUser();
     const { isNarrow } = useActiveBreakpoint();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
@@ -74,7 +66,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
             <SidebarNav>
                 <SidebarList>
                     <SidebarListItemsWithSubsections
-                        list={getPages(user)}
+                        list={getPages()}
                         pathname={window.location.pathname}
                         activeSection={activeSection}
                     />
@@ -86,41 +78,11 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     return (
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
-                <Route path="/" exact render={() => <OverviewContainer />} />
-                <Route
-                    path="/account"
-                    render={({ location }) => (
-                        <AccountContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/organization"
-                    render={({ location }) => (
-                        <OrganizationContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/members"
-                    render={({ location }) => (
-                        <MembersContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/subscription"
-                    render={({ location }) => (
-                        <SubscriptionContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
+                <Route path="/overview" exact render={() => <OverviewContainer />} />
                 <Route
                     path="/addresses/:memberID?"
                     render={({ location }) => (
                         <AddressesContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/domains"
-                    render={({ location }) => (
-                        <DomainsContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Route
@@ -173,11 +135,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
                         <AutoReplyContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
-                <Route
-                    path="/vpn"
-                    render={({ location }) => <VPNContainer location={location} setActiveSection={setActiveSection} />}
-                />
-                <Redirect to="/" />
+                <Redirect to="/overview" />
             </Switch>
         </PrivateAppContainer>
     );

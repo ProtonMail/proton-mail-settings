@@ -1,38 +1,25 @@
-import { UserModel } from 'proton-shared/lib/interfaces';
 import { SectionConfig } from 'react-components';
 
-import { getSubscriptionPage } from './containers/SubscriptionContainer';
-import { getAccountPage } from './containers/AccountContainer';
-import { getOrganizationPage } from './containers/OrganizationContainer';
-import { getMembersPage } from './containers/MembersContainer';
-import { getDomainsPage } from './containers/DomainsContainer';
+import { getOverviewPage } from './containers/OverviewContainer';
 import { getAddressesPage } from './containers/AddressesContainer';
 import { getIdentityPage } from './containers/IdentityContainer';
 import { getGeneralPage } from './containers/GeneralContainer';
 import { getAppearancePage } from './containers/AppearanceContainer';
 import { getFiltersPage } from './containers/FiltersContainer';
 import { getLabelsPage } from './containers/FoldersLabelsContainer';
-import { getKeysPage } from './containers/KeysContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
-import { getVPNPage } from './containers/VPNContainer';
 
-export const getPages = (user: UserModel): SectionConfig[] => [
-    getSubscriptionPage(user),
-    getAccountPage(),
-    getOrganizationPage(),
-    getMembersPage(),
-    getDomainsPage(),
+export const getPages = (): SectionConfig[] => [
+    getOverviewPage(),
+    getGeneralPage(),
     getAddressesPage(),
     getIdentityPage(),
-    getGeneralPage(),
     getAppearancePage(),
-    getFiltersPage(),
     getLabelsPage(),
+    getFiltersPage(),
     getAutoReply(),
-    getKeysPage(),
     getSecurityPage(),
-    getVPNPage(),
     getAppsPage()
 ];

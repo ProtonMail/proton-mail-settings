@@ -1,45 +1,24 @@
 import React from 'react';
 import { c } from 'ttag';
-import {
-    Loader,
-    IndexSection,
-    SummarySection,
-    PromoteSection,
-    useSubscription,
-    useUser,
-    useUserSettings,
-    PrivateMainArea,
-    useAppTitle
-} from 'react-components';
+import { PrivateMainArea, useAppTitle, OverviewLayout } from 'react-components';
 
 import { getPages } from '../pages';
 
-const OverviewContainer = () => {
-    const [subscription, loading] = useSubscription();
-    const [userSettings] = useUserSettings();
-    const [user] = useUser();
+export const getOverviewPage = () => {
+    return {
+        text: c('Title').t`Overview`,
+        to: '/settings/overview',
+        icon: 'apps'
+    };
+};
 
+const OverviewContainer = () => {
+    const pages = getPages().filter(({ to }) => to !== '/settings/overview');
     useAppTitle(c('Title').t`Overview`, 'ProtonMail');
 
-    if (loading) {
-        return (
-            <PrivateMainArea>
-                <Loader />
-            </PrivateMainArea>
-        );
-    }
-
     return (
-        <PrivateMainArea className="p2">
-            <div className="flex-autogrid onmobile-flex-column">
-                <div className="flex-item-fluid flex-autogrid-item flex">
-                    <SummarySection subscription={subscription} user={user} userSettings={userSettings} />
-                </div>
-                <div className="flex-item-fluid flex-autogrid-item flex">
-                    <PromoteSection user={user} />
-                </div>
-            </div>
-            <IndexSection pages={getPages(user)} />
+        <PrivateMainArea className="flex">
+            <OverviewLayout pages={pages} title={c('Title').t`Mail settings`} />
         </PrivateMainArea>
     );
 };

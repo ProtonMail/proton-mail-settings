@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-    SessionsSection,
-    LogsSection,
     AddressVerificationSection,
     ExternalPGPSettingsSection,
+    AddressKeysSection,
+    UserKeysSection,
     SettingsPropsShared
 } from 'react-components';
 import { c } from 'ttag';
@@ -12,18 +12,10 @@ import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSet
 
 export const getSecurityPage = () => {
     return {
-        text: c('Title').t`Security`,
+        text: c('Title').t`Security & keys`,
         to: '/security',
         icon: 'security',
         subsections: [
-            {
-                text: c('Title').t`Session management`,
-                id: 'sessions'
-            },
-            {
-                text: c('Title').t`Authentication logs`,
-                id: 'logs'
-            },
             {
                 text: c('Title').t`Address verification`,
                 id: 'address-verification'
@@ -31,6 +23,14 @@ export const getSecurityPage = () => {
             {
                 text: c('Title').t`External PGP settings`,
                 id: 'pgp-settings'
+            },
+            {
+                text: c('Title').t`Email encryption keys`,
+                id: 'addresses'
+            },
+            {
+                text: c('Title').t`Contact encryption keys`,
+                id: 'user'
             }
         ]
     };
@@ -43,10 +43,10 @@ const SecurityContainer = ({ setActiveSection, location }: SettingsPropsShared) 
             config={getSecurityPage()}
             setActiveSection={setActiveSection}
         >
-            <SessionsSection />
-            <LogsSection />
             <AddressVerificationSection />
             <ExternalPGPSettingsSection />
+            <AddressKeysSection />
+            <UserKeysSection />
         </PrivateMainSettingsAreaWithPermissions>
     );
 };

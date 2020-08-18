@@ -1,11 +1,8 @@
 import React from 'react';
-import { IdentitySection, PmMeSection, SettingsPropsShared } from 'react-components';
+import { IdentitySection, ProtonFooterSection, SettingsPropsShared } from 'react-components';
 import { c } from 'ttag';
-import { PERMISSIONS } from 'proton-shared/lib/constants';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
-
-const { UPGRADER } = PERMISSIONS;
 
 export const getIdentityPage = () => {
     return {
@@ -18,9 +15,8 @@ export const getIdentityPage = () => {
                 id: 'name-signature'
             },
             {
-                text: c('Title').t`Short domain (@pm.me)`,
-                id: 'pmme',
-                permissions: [UPGRADER]
+                text: c('Title').t`ProtonMail footer `,
+                id: 'proton-footer'
             }
         ]
     };
@@ -34,7 +30,7 @@ const IdentityContainer = ({ setActiveSection, location }: SettingsPropsShared) 
             setActiveSection={setActiveSection}
         >
             <IdentitySection />
-            <PmMeSection />
+            <ProtonFooterSection />
         </PrivateMainSettingsAreaWithPermissions>
     );
 };

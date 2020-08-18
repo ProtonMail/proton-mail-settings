@@ -1,13 +1,6 @@
 import React from 'react';
 import { c } from 'ttag';
-import {
-    LanguageSection,
-    DesktopNotificationSection,
-    MessagesSection,
-    ShortcutsSection,
-    SettingsPropsShared
-} from 'react-components';
-import locales from 'proton-shared/lib/i18n/locales';
+import { DesktopNotificationSection, MessagesSection, ShortcutsSection, SettingsPropsShared } from 'react-components';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
@@ -17,10 +10,6 @@ export const getGeneralPage = () => {
         to: '/general',
         icon: 'general',
         subsections: [
-            {
-                text: c('Title').t`Language`,
-                id: 'language'
-            },
             {
                 text: c('Title').t`Desktop notifications`,
                 id: 'desktop-notifications'
@@ -44,7 +33,6 @@ const GeneralContainer = ({ setActiveSection, location }: SettingsPropsShared) =
             config={getGeneralPage()}
             setActiveSection={setActiveSection}
         >
-            <LanguageSection locales={locales} />
             <DesktopNotificationSection />
             <MessagesSection />
             <ShortcutsSection />
