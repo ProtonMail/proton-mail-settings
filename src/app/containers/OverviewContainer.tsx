@@ -14,7 +14,7 @@ export const getOverviewPage = () => {
 
 const OverviewContainer = () => {
     const pages = getPages().filter(({ to }) => to !== '/settings/overview');
-    useAppTitle(c('Title').t`Overview`, 'ProtonMail');
+    useAppTitle(c('Title').t`Overview`);
 
     return (
         <PrivateMainArea className="flex">

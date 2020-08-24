@@ -77,7 +77,6 @@ const PrivateMainSettingsAreaWithPermissions = ({ config, location, children, se
         <PrivateMainSettingsArea
             title={text}
             location={location}
-            appName="ProtonMail"
             setActiveSection={setActiveSection}
             subsections={noPermissionChild ? [] : subsections}
         >
