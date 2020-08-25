@@ -15,7 +15,7 @@ export const getIdentityPage = () => {
                 id: 'name-signature'
             },
             {
-                text: c('Title').t`ProtonMail footer `,
+                text: c('Title').t`Signature footer `,
                 id: 'proton-footer'
             }
         ]
