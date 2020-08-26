@@ -7,13 +7,13 @@ import { getPages } from '../pages';
 export const getOverviewPage = () => {
     return {
         text: c('Title').t`Overview`,
-        to: '/settings/overview',
+        to: '/overview',
         icon: 'apps'
     };
 };
 
 const OverviewContainer = () => {
-    const pages = getPages().filter(({ to }) => to !== '/settings/overview');
+    const pages = getPages().filter(({ to }) => to !== '/overview');
     useAppTitle(c('Title').t`Overview`);
 
     return (
