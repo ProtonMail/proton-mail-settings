@@ -1,15 +1,9 @@
 import React from 'react';
 import { c } from 'ttag';
-import {
-    AddressesWithUser,
-    PmMeSection,
-    RelatedSettingsSection,
-    useOrganization,
-    useUser,
-    SettingsPropsShared
-} from 'react-components';
+import { PmMeSection, RelatedSettingsSection, useOrganization, SettingsPropsShared } from 'react-components';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
 
+import MyAddressesSection from './MyAddressesSection';
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 const { UPGRADER } = PERMISSIONS;
@@ -96,14 +90,13 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
 
 const AddressesContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     const [organization] = useOrganization();
-    const [user] = useUser();
     return (
         <PrivateMainSettingsAreaWithPermissions
             location={location}
             config={getAddressesPage()}
             setActiveSection={setActiveSection}
         >
-            <AddressesWithUser user={user} />
+            <MyAddressesSection />
             <PmMeSection />
             <RelatedSettingsSection list={getList(organization)} />
         </PrivateMainSettingsAreaWithPermissions>
