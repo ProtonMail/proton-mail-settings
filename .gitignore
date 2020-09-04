@@ -7,9 +7,6 @@
 
 # testing
 /coverage
-/cypress/fixtures/accounts.json
-/cypress/videos/*
-/cypress/screenshots/*
 
 # production
 /build
