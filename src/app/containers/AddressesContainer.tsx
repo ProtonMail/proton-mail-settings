@@ -1,14 +1,13 @@
 import React from 'react';
 import { c } from 'ttag';
 import { PmMeSection, RelatedSettingsSection, useOrganization, SettingsPropsShared } from 'react-components';
-import { PERMISSIONS } from 'proton-shared/lib/constants';
+import { UserModel } from 'proton-shared/lib/interfaces';
+import isTruthy from 'proton-shared/lib/helpers/isTruthy';
 
 import MyAddressesSection from './MyAddressesSection';
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
-const { UPGRADER } = PERMISSIONS;
-
-export const getAddressesPage = () => {
+export const getAddressesPage = (user: UserModel) => {
     return {
         text: c('Title').t`Addresses`,
         to: '/addresses',
@@ -18,17 +17,16 @@ export const getAddressesPage = () => {
                 text: c('Title').t`My addresses`,
                 id: 'addresses'
             },
-            {
+            user.canPay && {
                 text: c('Title').t`Short domain (@pm.me)`,
-                id: 'pmme',
-                permissions: [UPGRADER]
+                id: 'pmme'
             },
             {
                 text: c('Title').t`Related settings`,
                 id: 'related-settings',
                 hide: true
             }
-        ]
+        ].filter(isTruthy)
     };
 };
 
@@ -88,16 +86,20 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     ];
 };
 
-const AddressesContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
+interface Props extends SettingsPropsShared {
+    user: UserModel;
+}
+
+const AddressesContainer = ({ setActiveSection, location, user }: Props) => {
     const [organization] = useOrganization();
     return (
         <PrivateMainSettingsAreaWithPermissions
             location={location}
-            config={getAddressesPage()}
+            config={getAddressesPage(user)}
             setActiveSection={setActiveSection}
         >
             <MyAddressesSection />
-            <PmMeSection />
+            <PmMeSection user={user} />
             <RelatedSettingsSection list={getList(organization)} />
         </PrivateMainSettingsAreaWithPermissions>
     );

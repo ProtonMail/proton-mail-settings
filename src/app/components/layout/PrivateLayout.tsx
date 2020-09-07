@@ -12,7 +12,8 @@ import {
     SidebarList,
     SidebarNav,
     SidebarListItemsWithSubsections,
-    MainLogo
+    MainLogo,
+    useUser
 } from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
@@ -32,6 +33,7 @@ import { getPages } from '../../pages';
 import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
 
 const PrivateLayout = ({ location }: RouteComponentProps) => {
+    const [user] = useUser();
     const { isNarrow } = useActiveBreakpoint();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
@@ -67,7 +69,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
             <SidebarNav>
                 <SidebarList>
                     <SidebarListItemsWithSubsections
-                        list={getPages()}
+                        list={getPages(user)}
                         pathname={window.location.pathname}
                         activeSection={activeSection}
                     />
@@ -79,7 +81,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     return (
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
-                <Route path="/overview" exact render={() => <OverviewContainer />} />
+                <Route path="/overview" exact render={() => <OverviewContainer user={user} />} />
                 {FEATURE_FLAGS.includes('mail-import') && (
                     <Route
                         path="/import"
@@ -91,7 +93,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
                 <Route
                     path="/addresses/:memberID?"
                     render={({ location }) => (
-                        <AddressesContainer location={location} setActiveSection={setActiveSection} />
+                        <AddressesContainer location={location} setActiveSection={setActiveSection} user={user} />
                     )}
                 />
                 <Route

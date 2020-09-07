@@ -1,6 +1,7 @@
 import React from 'react';
 import { c } from 'ttag';
 import { PrivateMainArea, useAppTitle, OverviewLayout } from 'react-components';
+import { UserModel } from 'proton-shared/lib/interfaces';
 
 import { getPages } from '../pages';
 
@@ -12,8 +13,12 @@ export const getOverviewPage = () => {
     };
 };
 
-const OverviewContainer = () => {
-    const pages = getPages().filter(({ to }) => to !== '/overview');
+interface Props {
+    user: UserModel;
+}
+
+const OverviewContainer = ({ user }: Props) => {
+    const pages = getPages(user).filter(({ to }) => to !== '/overview');
     useAppTitle(c('Title').t`Overview`);
 
     return (
