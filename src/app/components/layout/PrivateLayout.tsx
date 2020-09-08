@@ -16,6 +16,7 @@ import {
 } from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
+import ImportContainer from '../../containers/ImportContainer';
 import IdentityContainer from '../../containers/IdentityContainer';
 import AddressesContainer from '../../containers/AddressesContainer';
 import SecurityContainer from '../../containers/SecurityContainer';
@@ -28,7 +29,7 @@ import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import SidebarVersion from '../../content/SidebarVersion';
 import { getPages } from '../../pages';
-import { APPS } from 'proton-shared/lib/constants';
+import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
 
 const PrivateLayout = ({ location }: RouteComponentProps) => {
     const { isNarrow } = useActiveBreakpoint();
@@ -79,6 +80,14 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
                 <Route path="/overview" exact render={() => <OverviewContainer />} />
+                {FEATURE_FLAGS.includes('mail-import') && (
+                    <Route
+                        path="/import"
+                        render={({ location }) => (
+                            <ImportContainer location={location} setActiveSection={setActiveSection} />
+                        )}
+                    />
+                )}
                 <Route
                     path="/addresses/:memberID?"
                     render={({ location }) => (
