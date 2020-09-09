@@ -43,9 +43,14 @@ export const getImportPage = () => {
 
 const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
     const currentImportsRef = useRef<any>();
+    const pastImportsRef = useRef<any>();
 
-    const handleImportCallback = () => {
+    const fetchCurrentImports = () => {
         currentImportsRef?.current?.fetch();
+    };
+
+    const fetchPastImports = () => {
+        pastImportsRef?.current?.fetch();
     };
 
     return (
@@ -54,9 +59,9 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
             setActiveSection={setActiveSection}
             location={location}
         >
-            <StartImportSection onImportComplete={handleImportCallback} />
-            <CurrentImportsSection ref={currentImportsRef} />
-            <PastImportSection />
+            <StartImportSection fetchCurrentImports={fetchCurrentImports} />
+            <CurrentImportsSection fetchPastImports={fetchPastImports} ref={currentImportsRef} />
+            <PastImportSection ref={pastImportsRef} />
             <RelatedSettingsSection
                 list={[
                     {
