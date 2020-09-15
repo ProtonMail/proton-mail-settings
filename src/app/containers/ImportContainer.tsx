@@ -68,7 +68,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                         icon: 'contacts',
                         text: c('Info').t`Import your contacts from another email service.`,
                         link: (
-                            <AppLink to="/settings" toApp={APPS.PROTONCONTACTS} className="pm-button--primary mtauto">
+                            <AppLink to="/" toApp={APPS.PROTONCONTACTS} className="pm-button--primary mtauto">
                                 {c('Action').t`Import Contacts`}
                             </AppLink>
                         )
