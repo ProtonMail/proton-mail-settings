@@ -38,7 +38,7 @@ const MyAddressesSection = () => {
         <>
             <Alert>{c('Info')
                 .t`Premium plans let you add multiple email addresses to your account. All the emails associated with them will appear in the same mailbox. If you are the admin of a Professional or Visionary plan, you can manage email addresses for each user in your organization. The email address at the top of the list will automatically be selected as the default email address.`}</Alert>
-            {user.isAdmin ? (
+            {user.isAdmin && !user.isSubUser ? (
                 <Block>
                     <PrimaryButton onClick={() => handleAddAddress()}>{c('Action').t`Add address`}</PrimaryButton>
                 </Block>
