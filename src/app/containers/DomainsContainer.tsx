@@ -1,6 +1,7 @@
 import React from 'react';
 import { c } from 'ttag';
 import {
+    AppLink,
     DomainsSection,
     RelatedSettingsSection,
     CatchAllSection,
@@ -8,6 +9,7 @@ import {
     SettingsPropsShared
 } from 'react-components';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
+import { getAccountSettingsApp } from 'proton-shared/lib/apps/helper';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
@@ -61,8 +63,11 @@ const getList = ({ MaxMembers = 0 } = {}) => {
             icon: 'contacts-group-people',
             text: c('Info')
                 .t`Upgrade to a paid plan with multi-user support if you want to create and manage users in your organization.`,
-            link: c('Link').t`Upgrade`,
-            to: '/subscription'
+            link: (
+                <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
+                    {c('Action').t`Upgrade`}
+                </AppLink>
+            )
         },
         {
             icon: 'addresses',

@@ -1,8 +1,9 @@
 import React from 'react';
 import { c } from 'ttag';
-import { PmMeSection, RelatedSettingsSection, useOrganization, SettingsPropsShared } from 'react-components';
+import { PmMeSection, RelatedSettingsSection, useOrganization, SettingsPropsShared, AppLink } from 'react-components';
 import { UserModel } from 'proton-shared/lib/interfaces';
 import isTruthy from 'proton-shared/lib/helpers/isTruthy';
+import { getAccountSettingsApp } from 'proton-shared/lib/apps/helper';
 
 import MyAddressesSection from './MyAddressesSection';
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
@@ -34,18 +35,21 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     if (MaxMembers > 1) {
         return [
             {
-                icon: 'domains',
+                icon: 'identity',
                 text: c('Info')
-                    .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
-                link: c('Link').t`Domain settings`,
-                to: '/domains'
+                    .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
+                link: c('Link').t`Identity setting`,
+                to: '/identity'
             },
             {
                 icon: 'contacts-group-people',
                 text: c('Info')
-                    .t`Go to User Settings if you want to create and manage the list of users in your organization.`,
-                link: c('Link').t`User settings`,
-                to: '/members'
+                    .t`Go to Organization settings if you want to manage your custom domains and addresses for your entire organization.`,
+                link: (
+                    <AppLink to="/organization" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
+                        {c('Action').t`Organization settings`}
+                    </AppLink>
+                )
             }
         ];
     }
@@ -53,18 +57,21 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
     if (MaxAddresses > 1) {
         return [
             {
-                icon: 'domains',
+                icon: 'identity',
                 text: c('Info')
-                    .t`Go to the Domain settings if you want to create  and manage custom domains for your users.`,
-                link: c('Link').t`Domain settings`,
-                to: '/domains'
+                    .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
+                link: c('Link').t`Identity setting`,
+                to: '/identity'
             },
             {
                 icon: 'contacts-group-people',
                 text: c('Info')
                     .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
-                link: c('Link').t`Upgrade`,
-                to: '/subscription'
+                link: (
+                    <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
+                        {c('Action').t`Upgrade`}
+                    </AppLink>
+                )
             }
         ];
     }
@@ -73,15 +80,21 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
         {
             icon: 'domains',
             text: c('Info').t`Upgrade to a paid plan if you want to create and manage custom domains.`,
-            link: c('Link').t`Upgrade`,
-            to: '/subscription'
+            link: (
+                <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
+                    {c('Action').t`Upgrade`}
+                </AppLink>
+            )
         },
         {
             icon: 'contacts-group-people',
             text: c('Info')
                 .t`Upgrade to a multi-user plan if you want to create and manage the users of your organization.`,
-            link: c('Link').t`Upgrade`,
-            to: '/subscription'
+            link: (
+                <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
+                    {c('Action').t`Upgrade`}
+                </AppLink>
+            )
         }
     ];
 };
