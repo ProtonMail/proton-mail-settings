@@ -22,7 +22,7 @@ export const getAddressesPage = (user: UserModel) => {
                 text: c('Title').t`Short domain (@pm.me)`,
                 id: 'pmme'
             },
-            {
+            user.canPay && {
                 text: c('Title').t`Related settings`,
                 id: 'related-settings',
                 hide: true
@@ -113,7 +113,7 @@ const AddressesContainer = ({ setActiveSection, location, user }: Props) => {
         >
             <MyAddressesSection />
             <PmMeSection user={user} />
-            <RelatedSettingsSection list={getList(organization)} />
+            {user.canPay ? <RelatedSettingsSection list={getList(organization)} /> : null}
         </PrivateMainSettingsAreaWithPermissions>
     );
 };
