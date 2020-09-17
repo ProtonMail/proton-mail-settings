@@ -18,10 +18,11 @@ export const getAddressesPage = (user: UserModel) => {
                 text: c('Title').t`My addresses`,
                 id: 'addresses'
             },
-            user.canPay && {
-                text: c('Title').t`Short domain (@pm.me)`,
-                id: 'pmme'
-            },
+            user.canPay &&
+                !user.isSubUser && {
+                    text: c('Title').t`Short domain (@pm.me)`,
+                    id: 'pmme'
+                },
             user.canPay && {
                 text: c('Title').t`Related settings`,
                 id: 'related-settings',
