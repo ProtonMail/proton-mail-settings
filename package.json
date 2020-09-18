@@ -23,8 +23,7 @@
         "deploy:prod": "proton-bundler --remote --branch=deploy-prod",
         "bundle": "proton-bundler",
         "check-types": "tsc",
-        "test": "echo 123",
-        "postinstall": "proton-i18n post-install"
+        "test": "echo 123"
     },
     "repository": {
         "type": "git",
@@ -55,6 +54,7 @@
         "design-system": "github:ProtonMail/design-system.git#master",
         "proton-pack": "github:ProtonMail/proton-pack#semver:^3.0.0",
         "proton-shared": "github:ProtonMail/proton-shared.git#master",
+        "proton-translations": "github:ProtonMail/proton-translations#fe-mail-settings",
         "proton-version": "github:ProtonMail/proton-version#semver:^1.0.0",
         "react-components": "github:ProtonMail/react-components.git#master",
         "ttag": "^1.7.5",
