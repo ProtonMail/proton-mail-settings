@@ -5,7 +5,7 @@ import {
     SettingsPropsShared,
     PrivateMainSettingsArea,
     SectionConfig,
-    AppLink
+    AppLink,
 } from 'react-components';
 import { hasPermission } from 'proton-shared/lib/helpers/permissions';
 import { PERMISSIONS } from 'proton-shared/lib/constants';
@@ -67,9 +67,9 @@ const PrivateMainSettingsAreaWithPermissions = ({ config, location, children, se
         .map((child, index) => {
             const { permissions: sectionPermissions } = subsections[index] || {};
             return React.cloneElement(child, {
-                // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
-                permission: hasPermission(userPermissions, sectionPermissions)
+                permission: hasPermission(userPermissions, sectionPermissions),
             });
         });
 
