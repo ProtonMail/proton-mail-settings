@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { c } from 'ttag';
-import { Route, RouteComponentProps, Switch, withRouter } from 'react-router-dom';
-import { Redirect } from 'react-router';
+import { Redirect, Route, useLocation, Switch } from 'react-router-dom';
 import {
     Sidebar,
     PrivateHeader,
@@ -13,7 +12,7 @@ import {
     SidebarNav,
     SidebarListItemsWithSubsections,
     MainLogo,
-    useUser
+    useUser,
 } from 'react-components';
 
 import OverviewContainer from '../../containers/OverviewContainer';
@@ -32,8 +31,9 @@ import SidebarVersion from '../../content/SidebarVersion';
 import { getPages } from '../../pages';
 import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
 
-const PrivateLayout = ({ location }: RouteComponentProps) => {
+const PrivateLayout = () => {
     const [user] = useUser();
+    const location = useLocation();
     const { isNarrow } = useActiveBreakpoint();
     const { state: expanded, toggle: onToggleExpand, set: setExpand } = useToggle();
     const [activeSection, setActiveSection] = useState('');
@@ -70,7 +70,7 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
                 <SidebarList>
                     <SidebarListItemsWithSubsections
                         list={getPages(user)}
-                        pathname={window.location.pathname}
+                        pathname={location.pathname}
                         activeSection={activeSection}
                     />
                 </SidebarList>
@@ -152,4 +152,4 @@ const PrivateLayout = ({ location }: RouteComponentProps) => {
     );
 };
 
-export default withRouter(PrivateLayout);
+export default PrivateLayout;

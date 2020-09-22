@@ -37,7 +37,6 @@
     },
     "homepage": "https://github.com/ProtonMail/protonmail-settings#readme",
     "devDependencies": {
-        "@types/react-router-dom": "^4.3.5",
         "cross-env": "^5.2.0",
         "eslint": "^7.3.1",
         "eslint-config-proton-lint": "github:ProtonMail/proton-lint#semver:^0.0.6",
