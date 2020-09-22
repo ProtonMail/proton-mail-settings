@@ -39,7 +39,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 icon: 'identity',
                 text: c('Info')
                     .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
-                link: c('Link').t`Identity setting`,
+                link: c('Link').t`Identity settings`,
                 to: '/identity'
             },
             {
@@ -61,7 +61,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 icon: 'identity',
                 text: c('Info')
                     .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
-                link: c('Link').t`Identity setting`,
+                link: c('Link').t`Identity settings`,
                 to: '/identity'
             },
             {
