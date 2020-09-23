@@ -5,14 +5,6 @@ import { UserModel } from 'proton-shared/lib/interfaces';
 
 import { getPages } from '../pages';
 
-export const getOverviewPage = () => {
-    return {
-        text: c('Title').t`Overview`,
-        to: '/overview',
-        icon: 'apps'
-    };
-};
-
 interface Props {
     user: UserModel;
 }

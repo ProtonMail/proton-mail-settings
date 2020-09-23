@@ -1,8 +1,8 @@
+import { c } from 'ttag';
 import { SectionConfig } from 'react-components';
 import { FEATURE_FLAGS } from 'proton-shared/lib/constants';
 import { UserModel } from 'proton-shared/lib/interfaces';
 
-import { getOverviewPage } from './containers/OverviewContainer';
 import { getImportPage } from './containers/ImportContainer';
 import { getAddressesPage } from './containers/AddressesContainer';
 import { getIdentityPage } from './containers/IdentityContainer';
@@ -13,6 +13,14 @@ import { getLabelsPage } from './containers/FoldersLabelsContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
+
+export const getOverviewPage = () => {
+    return {
+        text: c('Title').t`Overview`,
+        to: '/overview',
+        icon: 'apps',
+    };
+};
 
 export const getPages = (user: UserModel): SectionConfig[] => {
     const pages = [
@@ -25,7 +33,7 @@ export const getPages = (user: UserModel): SectionConfig[] => {
         getFiltersPage(),
         getAutoReply(),
         getSecurityPage(),
-        getAppsPage()
+        getAppsPage(),
     ];
 
     if (FEATURE_FLAGS.includes('mail-import')) {

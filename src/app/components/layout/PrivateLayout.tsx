@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { c } from 'ttag';
 import { Redirect, Route, useLocation, Switch } from 'react-router-dom';
+import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
 import {
     Sidebar,
     PrivateHeader,
@@ -29,7 +30,6 @@ import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
 import AutoReplyContainer from '../../containers/AutoReplyContainer';
 import SidebarVersion from '../../content/SidebarVersion';
 import { getPages } from '../../pages';
-import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
 
 const PrivateLayout = () => {
     const [user] = useUser();
