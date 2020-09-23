@@ -11,11 +11,9 @@ import {
     OrganizationModel,
     MembersModel,
     SubscriptionModel,
-    PaymentMethodsModel
+    PaymentMethodsModel,
 } from 'proton-shared/lib/models';
 import { TtagLocaleMap } from 'proton-shared/lib/interfaces/Locale';
-
-import PrivateLayout from '../components/layout/PrivateLayout';
 
 const EVENT_MODELS = [
     UserModel,
@@ -28,10 +26,12 @@ const EVENT_MODELS = [
     SubscriptionModel,
     OrganizationModel,
     MembersModel,
-    PaymentMethodsModel
+    PaymentMethodsModel,
 ];
 
 const PRELOAD_MODELS = [UserSettingsModel, UserModel, MailSettingsModel];
+
+const getAppContainer = () => import('./MainContainer');
 
 interface Props {
     onLogout: () => void;
@@ -46,9 +46,8 @@ const PrivateApp = ({ onLogout, locales }: Props) => {
             eventModels={EVENT_MODELS}
             hasPrivateMemberKeyGeneration
             hasReadableMemberKeyActivation
-        >
-            <PrivateLayout />
-        </StandardPrivateApp>
+            app={getAppContainer}
+        />
     );
 };
 

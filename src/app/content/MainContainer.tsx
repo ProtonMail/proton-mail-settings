@@ -16,22 +16,22 @@ import {
     useUser,
 } from 'react-components';
 
-import OverviewContainer from '../../containers/OverviewContainer';
-import ImportContainer from '../../containers/ImportContainer';
-import IdentityContainer from '../../containers/IdentityContainer';
-import AddressesContainer from '../../containers/AddressesContainer';
-import SecurityContainer from '../../containers/SecurityContainer';
-import AppearanceContainer from '../../containers/AppearanceContainer';
-import AppsContainer from '../../containers/AppsContainer';
-import KeysContainer from '../../containers/KeysContainer';
-import GeneralContainer from '../../containers/GeneralContainer';
-import FiltersContainer from '../../containers/FiltersContainer';
-import FoldersLabelsContainer from '../../containers/FoldersLabelsContainer';
-import AutoReplyContainer from '../../containers/AutoReplyContainer';
-import SidebarVersion from '../../content/SidebarVersion';
-import { getPages } from '../../pages';
+import OverviewContainer from '../containers/OverviewContainer';
+import ImportContainer from '../containers/ImportContainer';
+import IdentityContainer from '../containers/IdentityContainer';
+import AddressesContainer from '../containers/AddressesContainer';
+import SecurityContainer from '../containers/SecurityContainer';
+import AppearanceContainer from '../containers/AppearanceContainer';
+import AppsContainer from '../containers/AppsContainer';
+import KeysContainer from '../containers/KeysContainer';
+import GeneralContainer from '../containers/GeneralContainer';
+import FiltersContainer from '../containers/FiltersContainer';
+import FoldersLabelsContainer from '../containers/FoldersLabelsContainer';
+import AutoReplyContainer from '../containers/AutoReplyContainer';
+import SidebarVersion from './SidebarVersion';
+import { getPages } from '../pages';
 
-const PrivateLayout = () => {
+const MainContainer = () => {
     const [user] = useUser();
     const location = useLocation();
     const { isNarrow } = useActiveBreakpoint();
@@ -152,4 +152,4 @@ const PrivateLayout = () => {
     );
 };
 
-export default PrivateLayout;
+export default MainContainer;
