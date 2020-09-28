@@ -1,4 +1,4 @@
-# [4.1.0 - beta 1] - 2020-09-30
+# [4.1.0] - 2020-09-30
 ## New features
 - Folders/labels: separation of folders and labels tables
 - Folders/labels: support for sub-folders added (up to 3 levels)
