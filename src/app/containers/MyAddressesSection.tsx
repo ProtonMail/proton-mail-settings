@@ -11,8 +11,10 @@ import {
     useMembers,
     useModals,
     useOrganization,
-    useOrganizationKey
+    useOrganizationKey,
+    useNotifications,
 } from 'react-components';
+import { MEMBER_PRIVATE } from 'proton-shared/lib/constants';
 
 const MyAddressesSection = () => {
     const [user] = useUser();
@@ -22,10 +24,15 @@ const MyAddressesSection = () => {
     const [organizationKey, loadingOrganizationKey] = useOrganizationKey(organization);
     const member = (members || []).find(({ Self }) => Self);
     const loading = loadingMembers || loadingOrganization || loadingOrganizationKey;
+    const { createNotification } = useNotifications();
 
     const handleAddAddress = () => {
         if (!member) {
-            throw new Error('No self member found');
+            throw new Error('Missing member');
+        }
+        if (member.Private === MEMBER_PRIVATE.READABLE && !organizationKey?.privateKey) {
+            createNotification({ type: 'error', text: c('Error').t`The organization key must be activated first.` });
+            throw new Error('Organization key is not decrypted');
         }
         createModal(<AddressModal member={member} organizationKey={organizationKey} />);
     };
