@@ -1,11 +1,17 @@
 import React from 'react';
 import { c } from 'ttag';
-import { PmMeSection, RelatedSettingsSection, useOrganization, SettingsPropsShared, AppLink } from 'react-components';
+import {
+    PmMeSection,
+    AddressesSection,
+    RelatedSettingsSection,
+    useOrganization,
+    SettingsPropsShared,
+    AppLink,
+} from 'react-components';
 import { UserModel } from 'proton-shared/lib/interfaces';
 import isTruthy from 'proton-shared/lib/helpers/isTruthy';
 import { getAccountSettingsApp } from 'proton-shared/lib/apps/helper';
 
-import MyAddressesSection from './MyAddressesSection';
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
 
 export const getAddressesPage = (user: UserModel) => {
@@ -16,19 +22,19 @@ export const getAddressesPage = (user: UserModel) => {
         subsections: [
             {
                 text: c('Title').t`My addresses`,
-                id: 'addresses'
+                id: 'addresses',
             },
             user.canPay &&
                 !user.isSubUser && {
                     text: c('Title').t`Short domain (@pm.me)`,
-                    id: 'pmme'
+                    id: 'pmme',
                 },
             user.canPay && {
                 text: c('Title').t`Related settings`,
                 id: 'related-settings',
-                hide: true
-            }
-        ].filter(isTruthy)
+                hide: true,
+            },
+        ].filter(isTruthy),
     };
 };
 
@@ -40,7 +46,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 text: c('Info')
                     .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
                 link: c('Link').t`Identity settings`,
-                to: '/identity'
+                to: '/identity',
             },
             {
                 icon: 'contacts-group-people',
@@ -50,8 +56,8 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                     <AppLink to="/organization" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
                         {c('Action').t`Organization settings`}
                     </AppLink>
-                )
-            }
+                ),
+            },
         ];
     }
 
@@ -62,7 +68,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 text: c('Info')
                     .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
                 link: c('Link').t`Identity settings`,
-                to: '/identity'
+                to: '/identity',
             },
             {
                 icon: 'contacts-group-people',
@@ -72,8 +78,8 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                     <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
                         {c('Action').t`Upgrade`}
                     </AppLink>
-                )
-            }
+                ),
+            },
         ];
     }
 
@@ -85,7 +91,7 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
                     {c('Action').t`Upgrade`}
                 </AppLink>
-            )
+            ),
         },
         {
             icon: 'contacts-group-people',
@@ -95,8 +101,8 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
                 <AppLink to="/subscription" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
                     {c('Action').t`Upgrade`}
                 </AppLink>
-            )
-        }
+            ),
+        },
     ];
 };
 
@@ -112,7 +118,7 @@ const AddressesContainer = ({ setActiveSection, location, user }: Props) => {
             config={getAddressesPage(user)}
             setActiveSection={setActiveSection}
         >
-            <MyAddressesSection />
+            <AddressesSection isOnlySelf />
             <PmMeSection user={user} />
             {user.canPay ? <RelatedSettingsSection list={getList(organization)} /> : null}
         </PrivateMainSettingsAreaWithPermissions>
