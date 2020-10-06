@@ -5,7 +5,7 @@ import {
     ProtonMailBridgeSection,
     ProtonMailBetaSection,
     ProtonMailAppsSection,
-    SettingsPropsShared
+    SettingsPropsShared,
 } from 'react-components';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
@@ -21,17 +21,17 @@ export const getAppsPage = () => {
             {
                 text: c('Title').t`ProtonMail Bridge`,
                 id: 'protonmail-bridge',
-                permissions: [PAID_MAIL]
-            },
-            {
-                text: c('Title').t`ProtonMail Beta`,
-                id: 'protonmail-beta'
+                permissions: [PAID_MAIL],
             },
             {
                 text: c('Title').t`ProtonMail apps`,
-                id: 'protonmail-apps'
-            }
-        ]
+                id: 'protonmail-apps',
+            },
+            {
+                text: c('Title').t`ProtonMail Beta`,
+                id: 'protonmail-beta',
+            },
+        ],
     };
 };
 
@@ -43,8 +43,8 @@ const AppsContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
             setActiveSection={setActiveSection}
         >
             <ProtonMailBridgeSection />
-            <ProtonMailBetaSection />
             <ProtonMailAppsSection />
+            <ProtonMailBetaSection />
         </PrivateMainSettingsAreaWithPermissions>
     );
 };
