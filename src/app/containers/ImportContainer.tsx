@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
@@ -8,7 +8,7 @@ import {
     PastImportSection,
     SettingsPropsShared,
     RelatedSettingsSection,
-    AppLink
+    AppLink,
 } from 'react-components';
 import { APPS } from 'proton-shared/lib/constants';
 
@@ -22,46 +22,35 @@ export const getImportPage = () => {
         subsections: [
             {
                 text: c('Title').t`New import`,
-                id: 'start-import'
+                id: 'start-import',
             },
             {
                 text: c('Title').t`Current imports`,
-                id: 'current-import'
+                id: 'current-import',
             },
             {
                 text: c('Title').t`Past imports`,
-                id: 'past-import'
+                id: 'past-import',
             },
             {
                 text: c('Title').t`Related settings`,
                 id: 'related-settings',
-                hide: true
-            }
-        ]
+                hide: true,
+            },
+        ],
     };
 };
 
 const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
-    const currentImportsRef = useRef<any>();
-    const pastImportsRef = useRef<any>();
-
-    const fetchCurrentImports = () => {
-        currentImportsRef?.current?.fetch();
-    };
-
-    const fetchPastImports = () => {
-        pastImportsRef?.current?.fetch();
-    };
-
     return (
         <PrivateMainSettingsAreaWithPermissions
             config={getImportPage()}
             setActiveSection={setActiveSection}
             location={location}
         >
-            <StartImportSection fetchCurrentImports={fetchCurrentImports} />
-            <CurrentImportsSection fetchPastImports={fetchPastImports} ref={currentImportsRef} />
-            <PastImportSection ref={pastImportsRef} />
+            <StartImportSection />
+            <CurrentImportsSection />
+            <PastImportSection />
             <RelatedSettingsSection
                 list={[
                     {
@@ -71,7 +60,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                             <AppLink to="/" toApp={APPS.PROTONCONTACTS} className="pm-button--primary mtauto">
                                 {c('Action').t`Import Contacts`}
                             </AppLink>
-                        )
+                        ),
                     },
                     {
                         icon: 'calendar',
@@ -80,8 +69,8 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                             <AppLink to="/settings" toApp={APPS.PROTONCALENDAR} className="pm-button--primary mtauto">
                                 {c('Action').t`Import Events`}
                             </AppLink>
-                        )
-                    }
+                        ),
+                    },
                 ]}
             />
         </PrivateMainSettingsAreaWithPermissions>
@@ -89,7 +78,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
 };
 
 ImportContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired
+    setActiveSection: PropTypes.func.isRequired,
 };
 
 export default ImportContainer;
