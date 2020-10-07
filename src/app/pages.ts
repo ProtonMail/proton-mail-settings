@@ -12,6 +12,7 @@ import { getFiltersPage } from './containers/FiltersContainer';
 import { getLabelsPage } from './containers/FoldersLabelsContainer';
 import { getSecurityPage } from './containers/SecurityContainer';
 import { getAppsPage } from './containers/AppsContainer';
+import { getBridgePage } from './containers/BridgeContainer';
 import { getAutoReply } from './containers/AutoReplyContainer';
 
 export const getOverviewPage = () => {
@@ -34,6 +35,7 @@ export const getPages = (user: UserModel): SectionConfig[] => {
         getAutoReply(),
         getSecurityPage(),
         getAppsPage(),
+        getBridgePage(),
     ];
 
     if (FEATURE_FLAGS.includes('mail-import')) {

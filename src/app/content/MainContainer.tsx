@@ -23,6 +23,7 @@ import AddressesContainer from '../containers/AddressesContainer';
 import SecurityContainer from '../containers/SecurityContainer';
 import AppearanceContainer from '../containers/AppearanceContainer';
 import AppsContainer from '../containers/AppsContainer';
+import BridgeContainer from '../containers/BridgeContainer';
 import KeysContainer from '../containers/KeysContainer';
 import GeneralContainer from '../containers/GeneralContainer';
 import FiltersContainer from '../containers/FiltersContainer';
@@ -144,6 +145,12 @@ const MainContainer = () => {
                     path="/auto-reply"
                     render={({ location }) => (
                         <AutoReplyContainer location={location} setActiveSection={setActiveSection} />
+                    )}
+                />
+                <Route
+                    path="/bridge"
+                    render={({ location }) => (
+                        <BridgeContainer location={location} setActiveSection={setActiveSection} />
                     )}
                 />
                 <Redirect to="/overview" />
