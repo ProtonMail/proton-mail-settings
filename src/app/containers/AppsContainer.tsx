@@ -1,16 +1,9 @@
 import React from 'react';
 import { c } from 'ttag';
-import { PERMISSIONS } from 'proton-shared/lib/constants';
-import {
-    ProtonMailBridgeSection,
-    ProtonMailBetaSection,
-    ProtonMailAppsSection,
-    SettingsPropsShared
-} from 'react-components';
+
+import { ProtonMailBetaSection, ProtonMailAppsSection, SettingsPropsShared } from 'react-components';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
-
-const { PAID_MAIL } = PERMISSIONS;
 
 export const getAppsPage = () => {
     return {
@@ -19,19 +12,14 @@ export const getAppsPage = () => {
         icon: 'vpn-connx',
         subsections: [
             {
-                text: c('Title').t`ProtonMail Bridge`,
-                id: 'protonmail-bridge',
-                permissions: [PAID_MAIL]
+                text: c('Title').t`Mobile apps`,
+                id: 'protonmail-apps',
             },
             {
-                text: c('Title').t`ProtonMail Beta`,
-                id: 'protonmail-beta'
+                text: c('Title').t`Beta program`,
+                id: 'protonmail-beta',
             },
-            {
-                text: c('Title').t`ProtonMail apps`,
-                id: 'protonmail-apps'
-            }
-        ]
+        ],
     };
 };
 
@@ -42,9 +30,8 @@ const AppsContainer = ({ setActiveSection, location }: SettingsPropsShared) => {
             config={getAppsPage()}
             setActiveSection={setActiveSection}
         >
-            <ProtonMailBridgeSection />
-            <ProtonMailBetaSection />
             <ProtonMailAppsSection />
+            <ProtonMailBetaSection />
         </PrivateMainSettingsAreaWithPermissions>
     );
 };

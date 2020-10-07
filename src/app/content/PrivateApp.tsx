@@ -12,6 +12,8 @@ import {
     MembersModel,
     SubscriptionModel,
     PaymentMethodsModel,
+    ImportersModel,
+    ImportHistoriesModel,
 } from 'proton-shared/lib/models';
 import { TtagLocaleMap } from 'proton-shared/lib/interfaces/Locale';
 
@@ -27,6 +29,8 @@ const EVENT_MODELS = [
     OrganizationModel,
     MembersModel,
     PaymentMethodsModel,
+    ImportersModel,
+    ImportHistoriesModel,
 ];
 
 const PRELOAD_MODELS = [UserSettingsModel, UserModel, MailSettingsModel];
