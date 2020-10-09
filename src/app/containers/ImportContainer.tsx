@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { c } from 'ttag';
 
 import {
@@ -11,18 +10,15 @@ import {
     RelatedSettingsSection,
     AppLink,
 } from 'react-components';
-import { APPS, PERMISSIONS } from 'proton-shared/lib/constants';
+import { APPS } from 'proton-shared/lib/constants';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
-
-const { PAID_MAIL } = PERMISSIONS;
 
 export const getImportPage = () => {
     return {
         text: c('Title').t`Import & export`,
         to: '/import',
         icon: 'import',
-        permissions: [PAID_MAIL],
         subsections: [
             {
                 text: c('Title').t`Import Assistant`,
@@ -84,10 +80,6 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
             />
         </PrivateMainSettingsAreaWithPermissions>
     );
-};
-
-ImportContainer.propTypes = {
-    setActiveSection: PropTypes.func.isRequired,
 };
 
 export default ImportContainer;

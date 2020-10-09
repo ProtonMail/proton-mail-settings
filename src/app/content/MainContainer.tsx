@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { c } from 'ttag';
 import { Redirect, Route, useLocation, Switch } from 'react-router-dom';
-import { APPS, FEATURE_FLAGS } from 'proton-shared/lib/constants';
+import { APPS } from 'proton-shared/lib/constants';
 import {
     Sidebar,
     PrivateHeader,
@@ -83,7 +83,7 @@ const MainContainer = () => {
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
                 <Route path="/overview" exact render={() => <OverviewContainer user={user} />} />
-                {FEATURE_FLAGS.includes('mail-import') && (
+                {user.hasPaidMail && (
                     <Route
                         path="/import"
                         render={({ location }) => (
