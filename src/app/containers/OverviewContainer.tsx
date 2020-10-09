@@ -15,7 +15,7 @@ const OverviewContainer = ({ user }: Props) => {
 
     return (
         <PrivateMainArea className="flex">
-            <OverviewLayout pages={pages} title={c('Title').t`Mail settings`} />
+            <OverviewLayout pages={pages} title={c('Title').t`Mail settings`} limit={5} />
         </PrivateMainArea>
     );
 };
