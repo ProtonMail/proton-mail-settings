@@ -1,7 +1,7 @@
 import { c } from 'ttag';
 import { SectionConfig } from 'react-components';
-import { FEATURE_FLAGS } from 'proton-shared/lib/constants';
 import { UserModel } from 'proton-shared/lib/interfaces';
+import isTruthy from 'proton-shared/lib/helpers/isTruthy';
 
 import { getImportPage } from './containers/ImportContainer';
 import { getAddressesPage } from './containers/AddressesContainer';
@@ -27,6 +27,7 @@ export const getPages = (user: UserModel): SectionConfig[] => {
     const pages = [
         getOverviewPage(),
         getGeneralPage(),
+        user.hasPaidMail && getImportPage(),
         getAddressesPage(user),
         getIdentityPage(),
         getAppearancePage(),
@@ -36,11 +37,7 @@ export const getPages = (user: UserModel): SectionConfig[] => {
         getSecurityPage(),
         getAppsPage(),
         getBridgePage(),
-    ];
-
-    if (FEATURE_FLAGS.includes('mail-import')) {
-        pages.splice(2, 0, getImportPage());
-    }
+    ].filter(isTruthy);
 
     return pages;
 };
