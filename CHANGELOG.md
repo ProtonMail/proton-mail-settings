@@ -1,8 +1,16 @@
-# [4.0.0-beta.12] - 2020-10-13
+# [4.0.0-beta.12] - 2020-10-14
 
 ## New features
 
--   Import Assistant tool - allows connecting external email provider and imports selected messages and folders (accessible by paid users only). [Learn More](Learn more -> https://protonmail.com/support/knowledge-base/import-assistant).
+-   Import Assistant tool that allows connecting external email provider and imports selected messages and folders (accessible by paid users only). [Learn More](Learn more -> https://protonmail.com/support/knowledge-base/import-assistant).
+
+## Improvements
+
+-   Added a dedicated import/export page (accessible by paid users only)
+
+## Fixes
+
+-   Various bug fixes
 
 # [4.0.0-beta.11] - 2020-10-07
 
