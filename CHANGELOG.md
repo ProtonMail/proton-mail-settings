@@ -2,7 +2,7 @@
 
 ## New features
 
--   Import Assistant tool that allows connecting external email provider and imports selected messages and folders (accessible by paid users only). [Learn More](Learn more -> https://protonmail.com/support/knowledge-base/import-assistant).
+-   Import Assistant tool that allows connecting external email provider and imports selected messages and folders (accessible by paid users only). [Learn More](https://protonmail.com/support/knowledge-base/import-assistant).
 
 ## Improvements
 
