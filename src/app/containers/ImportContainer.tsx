@@ -10,9 +10,11 @@ import {
     RelatedSettingsSection,
     AppLink,
 } from 'react-components';
-import { APPS } from 'proton-shared/lib/constants';
+import { APPS, PERMISSIONS } from 'proton-shared/lib/constants';
 
 import PrivateMainSettingsAreaWithPermissions from '../components/PrivateMainSettingsAreaWithPermissions';
+
+const { PAID_MAIL } = PERMISSIONS;
 
 export const getImportPage = () => {
     return {
@@ -35,6 +37,7 @@ export const getImportPage = () => {
             {
                 text: c('Title').t`Import-Export app`,
                 id: 'import-export',
+                permissions: [PAID_MAIL],
             },
             {
                 text: c('Title').t`Related features`,
@@ -60,7 +63,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                 list={[
                     {
                         icon: 'contacts',
-                        text: c('Info').t`Import your contacts from another email service.`,
+                        text: c('Info').t`Import your address book or individual contacts into ProtonContacts.`,
                         link: (
                             <AppLink to="/" toApp={APPS.PROTONCONTACTS} className="pm-button--primary mtauto">
                                 {c('Action').t`Import contacts`}
@@ -69,7 +72,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                     },
                     {
                         icon: 'calendar',
-                        text: c('Info').t`Go to Calendar settings if you want to import and manage your events.`,
+                        text: c('Info').t`Import your entire calendar or individual events into ProtonCalendar.`,
                         link: (
                             <AppLink to="/settings/calendars" toApp={APPS.PROTONCALENDAR} className="pm-button--primary mtauto">
                                 {c('Action').t`Import calendar`}
