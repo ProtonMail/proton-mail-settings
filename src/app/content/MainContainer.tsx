@@ -82,77 +82,47 @@ const MainContainer = () => {
     return (
         <PrivateAppContainer header={header} sidebar={sidebar}>
             <Switch>
-                <Route path="/overview" exact render={() => <OverviewContainer user={user} />} />
+                <Route path="/overview" exact>
+                    <OverviewContainer user={user} />
+                </Route>
                 {user.hasPaidMail && (
-                    <Route
-                        path="/import"
-                        render={({ location }) => (
-                            <ImportContainer location={location} setActiveSection={setActiveSection} />
-                        )}
-                    />
+                    <Route path="/import">
+                        <ImportContainer location={location} setActiveSection={setActiveSection} />
+                    </Route>
                 )}
-                <Route
-                    path="/addresses/:memberID?"
-                    render={({ location }) => (
-                        <AddressesContainer location={location} setActiveSection={setActiveSection} user={user} />
-                    )}
-                />
-                <Route
-                    path="/identity"
-                    render={({ location }) => (
-                        <IdentityContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/security"
-                    render={({ location }) => (
-                        <SecurityContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/appearance"
-                    render={({ location }) => (
-                        <AppearanceContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/keys"
-                    render={({ location }) => <KeysContainer location={location} setActiveSection={setActiveSection} />}
-                />
-                <Route
-                    path="/apps"
-                    render={({ location }) => <AppsContainer location={location} setActiveSection={setActiveSection} />}
-                />
-                <Route
-                    path="/general"
-                    render={({ location }) => (
-                        <GeneralContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/filters"
-                    render={({ location }) => (
-                        <FiltersContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/labels"
-                    render={({ location }) => (
-                        <FoldersLabelsContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/auto-reply"
-                    render={({ location }) => (
-                        <AutoReplyContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
-                <Route
-                    path="/bridge"
-                    render={({ location }) => (
-                        <BridgeContainer location={location} setActiveSection={setActiveSection} />
-                    )}
-                />
+                <Route path="/addresses/:memberID?">
+                    <AddressesContainer location={location} setActiveSection={setActiveSection} user={user} />
+                </Route>
+                <Route path="/identity">
+                    <IdentityContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/security">
+                    <SecurityContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/appearance">
+                    <AppearanceContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/keys">
+                    <KeysContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/apps">
+                    <AppsContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/general">
+                    <GeneralContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/filters">
+                    <FiltersContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/labels">
+                    <FoldersLabelsContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/auto-reply">
+                    <AutoReplyContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
+                <Route path="/bridge">
+                    <BridgeContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
                 <Redirect to="/overview" />
             </Switch>
         </PrivateAppContainer>
