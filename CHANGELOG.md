@@ -1,3 +1,9 @@
+# [4.0.0 - Beta 14] - 2020-11-04
+
+## Improvements
+
+-   Added a more descriptive error message when failing to authenticate to another email service provider while using the import assistant
+
 # [4.0.0-beta.13] - 2020-10-26
 
 ## Improvements
