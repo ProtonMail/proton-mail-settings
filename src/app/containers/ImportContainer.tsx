@@ -71,7 +71,7 @@ const ImportContainer = ({ setActiveSection, location }: SettingsPropsShared) =>
                         icon: 'calendar',
                         text: c('Info').t`Go to Calendar settings if you want to import and manage your events.`,
                         link: (
-                            <AppLink to="/settings" toApp={APPS.PROTONCALENDAR} className="pm-button--primary mtauto">
+                            <AppLink to="/settings/calendars" toApp={APPS.PROTONCALENDAR} className="pm-button--primary mtauto">
                                 {c('Action').t`Import calendar`}
                             </AppLink>
                         ),
