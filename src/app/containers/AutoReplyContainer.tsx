@@ -16,14 +16,14 @@ export const getAutoReply = () => {
         subsections: [
             {
                 text: c('Title').t`Auto-reply`,
-                id: 'auto-reply'
+                id: 'auto-reply',
             },
             {
-                text: c('Title').t`Related settings`,
-                id: 'related-settings',
-                hide: true
-            }
-        ]
+                text: c('Title').t` Related features`,
+                id: 'related-features',
+                hide: true,
+            },
+        ],
     };
 };
 
@@ -39,11 +39,10 @@ const AutoReplyContainer = ({ setActiveSection, location }: SettingsPropsShared)
                 list={[
                     {
                         icon: 'filter',
-                        text: c('Info')
-                            .t`Go to Filter Settings if you want to create and manage auto-replies by email address.`,
-                        link: c('Link').t`Filter Settings`,
-                        to: '/filters'
-                    }
+                        text: c('Info').t`Customize and manage additional auto-replies with dedicated filters.`,
+                        link: c('Link').t`Customize auto-replies`,
+                        to: '/filters',
+                    },
                 ]}
             />
         </PrivateMainSettingsAreaWithPermissions>

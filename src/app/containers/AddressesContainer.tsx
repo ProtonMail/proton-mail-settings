@@ -30,8 +30,8 @@ export const getAddressesPage = (user: UserModel) => {
                     id: 'pmme',
                 },
             user.canPay && {
-                text: c('Title').t`Related settings`,
-                id: 'related-settings',
+                text: c('Title').t`Related features`,
+                id: 'related-features',
                 hide: true,
             },
         ].filter(isTruthy),
@@ -43,18 +43,16 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
         return [
             {
                 icon: 'identity',
-                text: c('Info')
-                    .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
-                link: c('Link').t`Identity settings`,
+                text: c('Info').t`Edit the display name and signature for each of your email addresses.`,
+                link: c('Link').t`Manage identity`,
                 to: '/identity',
             },
             {
                 icon: 'contacts-group-people',
-                text: c('Info')
-                    .t`Go to Organization settings if you want to manage your custom domains and addresses for your entire organization.`,
+                text: c('Info').t`Manage all custom domains and addresses for your organization.`,
                 link: (
                     <AppLink to="/organization" toApp={getAccountSettingsApp()} className="pm-button--primary mtauto">
-                        {c('Action').t`Organization settings`}
+                        {c('Action').t`Manage organization`}
                     </AppLink>
                 ),
             },
@@ -65,9 +63,8 @@ const getList = ({ MaxMembers = 0, MaxAddresses = 0 } = {}) => {
         return [
             {
                 icon: 'identity',
-                text: c('Info')
-                    .t`Go to Identity settings if you want to update the display name and signature associated to each address.`,
-                link: c('Link').t`Identity settings`,
+                text: c('Info').t`Edit the display name and signature for each of your email addresses.`,
+                link: c('Link').t`Manage identity`,
                 to: '/identity',
             },
             {
