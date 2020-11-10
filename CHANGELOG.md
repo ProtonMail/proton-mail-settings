@@ -1,3 +1,10 @@
+# [4.0.0 - Beta 15] - 2020-11-12
+
+## Improvements
+
+-   Improved warning when leaving a flow without saving changes
+-   Improved handling of member permissions when accessing restricted areas
+
 # [4.0.0 - Beta 14] - 2020-11-04
 
 ## Improvements

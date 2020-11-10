@@ -12,18 +12,18 @@ export const getFiltersPage = () => {
         subsections: [
             {
                 text: c('Title').t`Custom filters`,
-                id: 'custom'
+                id: 'custom',
             },
             {
                 text: c('Title').t`Spam filters`,
-                id: 'spam'
+                id: 'spam',
             },
             {
-                text: c('Title').t`Related settings`,
-                id: 'related-settings',
-                hide: true
-            }
-        ]
+                text: c('Title').t`Related features`,
+                id: 'related-features',
+                hide: true,
+            },
+        ],
     };
 };
 
@@ -40,18 +40,17 @@ const FiltersContainer = ({ setActiveSection, location }: SettingsPropsShared) =
                 list={[
                     {
                         icon: 'folder-label',
-                        text: c('Info')
-                            .t`Go to Folders/labels settings if you want to create and manage mailbox folders and labels.`,
-                        link: c('Link').t`Folders/labels settings`,
-                        to: '/labels'
+                        text: c('Info').t`Create and manage your folders and labels.`,
+                        link: c('Link').t`Manage folders and labels`,
+                        to: '/labels',
                     },
                     {
                         icon: 'auto-reply',
                         text: c('Info')
-                            .t`Go to Auto-reply settings if you want to create and manage auto-replies and notify anyone who tries to send you a message while you are out of the office.`,
-                        link: c('Link').t`Auto-reply settings`,
-                        to: '/auto-reply'
-                    }
+                            .t`Create automatic email replies while you're away from your ProtonMail account.`,
+                        link: c('Link').t`Create auto-reply`,
+                        to: '/auto-reply',
+                    },
                 ]}
             />
         </PrivateMainSettingsAreaWithPermissions>
