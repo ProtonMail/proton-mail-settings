@@ -85,11 +85,9 @@ const MainContainer = () => {
                 <Route path="/overview" exact>
                     <OverviewContainer user={user} />
                 </Route>
-                {user.hasPaidMail && (
-                    <Route path="/import">
-                        <ImportContainer location={location} setActiveSection={setActiveSection} />
-                    </Route>
-                )}
+                <Route path="/import">
+                    <ImportContainer location={location} setActiveSection={setActiveSection} />
+                </Route>
                 <Route path="/addresses/:memberID?">
                     <AddressesContainer location={location} setActiveSection={setActiveSection} user={user} />
                 </Route>
