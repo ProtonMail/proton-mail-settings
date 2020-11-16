@@ -1,3 +1,19 @@
+# [4.0.0 - Beta 16] - 2020-11-18
+
+## New feature
+
+-   Making the Import Assistant feature available to all users, including users on the Free subscription plan.
+-   Import Assistant is a tool that allows user to connect to an external email provider and import selected messages and folders. [Learn More](https://protonmail.com/support/knowledge-base/import-assistant).
+
+## Improvements
+
+-   Updated the content of the Import Assistant page
+
+## Fixes
+
+-   Fixed an issue that made the error message disappear upon submitting a wrong port number during the import process
+-   Fixed an issue whereby when saving the name of a folder during the import process, other names being edited would also get saved
+
 # [4.0.0 - Beta 15] - 2020-11-12
 
 ## Improvements
