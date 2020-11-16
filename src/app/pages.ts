@@ -1,7 +1,6 @@
 import { c } from 'ttag';
 import { SectionConfig } from 'react-components';
 import { UserModel } from 'proton-shared/lib/interfaces';
-import isTruthy from 'proton-shared/lib/helpers/isTruthy';
 
 import { getImportPage } from './containers/ImportContainer';
 import { getAddressesPage } from './containers/AddressesContainer';
@@ -23,21 +22,17 @@ export const getOverviewPage = () => {
     };
 };
 
-export const getPages = (user: UserModel): SectionConfig[] => {
-    const pages = [
-        getOverviewPage(),
-        getGeneralPage(),
-        user.hasPaidMail && getImportPage(),
-        getAddressesPage(user),
-        getIdentityPage(),
-        getAppearancePage(),
-        getLabelsPage(),
-        getFiltersPage(),
-        getAutoReply(),
-        getSecurityPage(),
-        getAppsPage(),
-        getBridgePage(),
-    ].filter(isTruthy);
-
-    return pages;
-};
+export const getPages = (user: UserModel): SectionConfig[] => [
+    getOverviewPage(),
+    getGeneralPage(),
+    getImportPage(),
+    getAddressesPage(user),
+    getIdentityPage(),
+    getAppearancePage(),
+    getLabelsPage(),
+    getFiltersPage(),
+    getAutoReply(),
+    getSecurityPage(),
+    getAppsPage(),
+    getBridgePage(),
+];
